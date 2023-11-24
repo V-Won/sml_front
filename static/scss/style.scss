@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+@import "_root.scss";
+@import url("https://fonts.cdnfonts.com/css/open-sans");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+/* basic-reset */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #006a80;
+	border-radius: 6px;
+}
+body::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+body {
+	font-family:
+		"Open Sans",
+		"Roboto",
+		Arial,
+		Dotum,
+		serif,
+		-apple-system,
+		BlinkMacSystemFont,
+		system-ui,
+		Roboto,
+		"Helvetica Neue",
+		"Segoe UI",
+		"Apple SD Gothic Neo",
+		"Noto Sans KR",
+		"Malgun Gothic",
+		"Apple Color Emoji",
+		"Segoe UI Emoji",
+		"Segoe UI Symbol",
+		sans-serif;
+	-webkit-text-size-adjust: none;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 14px;
+	// color:;
+	/*-webkit-touch-callout:none;-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);*/
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button,
+figure,
+figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+}
+
+fieldset,
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+em {
+	font-style: normal;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+textarea {
+	overflow: auto;
+	appearance: none;
+	resize: vertical;
+	font-size: 100%;
+}
+
+input,
+select {
+	appearance: none;
+	font-family: inherit;
+	border-radius: 0;
+	font-size: 100%;
+	outline: none;
+}
+
+button {
+	font-family: inherit;
+	font-size: 100%;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	color: inherit;
+	font-weight: inherit;
+}
+
+button[disabled],
+input[disabled] {
+	cursor: default;
+}
+
+caption {
+	display: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+	font-style: normal;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+	appearance: none;
+}
+
+input:checked[type="checkbox"] {
+	background-color: #666;
+	appearance: checkbox;
+}
+
+input:checked[type="checkbox"] {
+	appearance: checkbox;
+}
+
+input[type="search"] {
+	appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	appearance: none;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"],
+[type="file"] {
+	appearance: button;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+button {
+	font-family: inherit;
+	font-size: 100%;
+}
+
+input,
+select,
+textarea,
+button,
+pre {
+	font-family: "Open Sans", "Roboto", Arial, Dotum, serif;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+.hidden {
+	font-size: 0;
+	height: 0;
+	width: 0;
+}
+
+// 공통 input focus border none
+input {
+	outline: none;
+}
+
+// 공통 pc mobile show hide
+.pc-show {
+	display: none;
+}
+.mo-show {
+	display: block;
+}
+
+// 공통 header
+.box-header {
+	.inner {
+		text-align: center;
+	}
+}
+
+// 공통 footer
+.box-footer {
+	.inner {
+		text-align: center;
+	}
+}
+
+// 공통 GUIDE
+.box-wrap {
+	.inner-wrap {
+	}
+}
+
+// 공통 title
+.common-title-1 {
+}
+
+// 공통 btn
+.common-btn-1 {
+}
+
+// 공통 table
+.common-table-1 {
+}
+
+// 공통 mixin include
+@include imgHolder;
+
+// main
+
+/* 1024 이상 */
+@media all and (min-width: 1024px) {
+	
+}
+/* //1024 이상 */
