@@ -25,10 +25,10 @@ function includeHTML() {
 includeHTML();
 
 // sub page menu select
-const menuSelectKey = (item) => {
-  const key = item['depth'];
+// const menuSelectKey = (item) => {
+//   const key = item['depth'];
 
-  setTimeout(() => {
-    document.querySelector('[data-include="header"] [data-page="' + key + '"]').classList.add('is-active')
-  }, 100)
-}
+//   setTimeout(() => {
+//     document.querySelector('[data-include="header"] [data-page="' + key + '"]').classList.add('is-active')
+//   }, 100)
+// }
