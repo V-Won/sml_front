@@ -66,6 +66,46 @@
       </div>
       <!-- //main-kv-swiper -->
 
+      <!-- SML ABOUT -->
+      <div class="main-smlAbout">
+        <div class="inner-gap-1">
+          <h3 class="common-title-1"><span>SML</span> ABOUT</h3>
+          <div class="smlAbout-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/sml_about_1.png" alt="" class="mo-show">
+                    <img src="static/images/@/sml_about_1_pc.png" alt="" class="pc-show">
+                  </span>
+                </div>
+                <div class="text-box">
+                  <p class="txt-1">Quality Control</p>
+                  <p class="txt-2">정도 관리</p>
+                  <p class="txt-3">임상검사실간의 표준화를 실시하여 검사결과의 질적 향상을 도모합니다</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/sml_about_1.png" alt="" class="mo-show">
+                    <img src="static/images/@/sml_about_1_pc.png" alt="" class="pc-show">
+                  </span>
+                </div>
+                <div class="text-box">
+                  <p class="txt-1">Quality Control</p>
+                  <p class="txt-2">정도 관리</p>
+                  <p class="txt-3">임상검사실간의 표준화를 실시하여 검사결과의 질적 향상을 도모합니다</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <!-- //SML ABOUT -->
     </div>
   </div>
   <!-- //inner-wrap -->
@@ -125,6 +165,29 @@
       }
     });
     // //상단 KV main-kv-swiper
+
+    // SML ABOUT swiper
+    var swiper = new Swiper(".smlAbout-swiper", {
+      slidesPerView: 1.06,
+      spaceBetween: 20,
+      centeredSlides: false,
+      loop: false,
+      speed: 600,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          slidesPerView: 1.092,
+        },
+      },
+    });
+    // //SML ABOUT swiper
   </script>
 
 </body>

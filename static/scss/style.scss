@@ -543,9 +543,9 @@ input {
 						height: 44px;
 						position: relative;
 						border-radius: 2px;
-						border: 1px solid rgba(255, 255, 255, 0.3);
+						border: 1px solid #C5C5C5;
 						padding: 12px 20px;
-						color: var(--primary-6-white, #fff);
+						color: rgba(0, 0, 0, 0.60);
 						font-size: 14px;
 						font-weight: 500;
 						line-height: 14px;
@@ -586,7 +586,7 @@ input {
 					&.family {
 						margin-top: 8px;
 						.button {
-							background: rgba(255, 255, 255, 0.20);
+							background: rgba(0, 0, 0, 0.05);
 						}
 					}
 					&.is-active {
@@ -603,7 +603,7 @@ input {
 			}
 		}
 		.copyright {
-			color: rgba(255, 255, 255, 0.30);
+			color: rgba(0, 0, 0, 0.30);
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 100%; /* 12px */
@@ -728,6 +728,16 @@ input {
 
 // 공통 title
 .common-title-1 {
+	color: #000;
+	font-size: 28px;
+	font-weight: 200;
+	line-height: 100%;
+	letter-spacing: -0.56px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	> span {
+		font-weight: 700;
+	}
 }
 
 // 공통 btn
@@ -746,11 +756,10 @@ input {
 	position: relative;
 	.swiper-slide {
 		position: relative;
-		.img-holder {
-			span {
-				padding-top: 140%;
-			}
-		}
+		height: 505px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 		.box-text {
 			position: absolute;
 			top: 0;
@@ -825,17 +834,12 @@ input {
 			margin-bottom: 31px;
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='11' viewBox='0 0 14 11' fill='none'%3E%3Cpath d='M8.59091 0L7.63756 0.969375L11.4104 4.8125H0L0 6.1875H11.4104L7.63756 10.0306L8.59091 11L14 5.5L8.59091 0Z' fill='white'/%3E%3C/svg%3E");
 			span {
-				// border: 2px solid rgba(255, 255, 255, 10);
 				width: 44px;
 				height: 44px;
 				display: block;
-				//border-radius: 999px;
 				position: relative;
 			}
 			.autoplay-progress {
-				// position: absolute;
-				// right: 16px;
-				// bottom: 16px;
 				z-index: 10;
 				width: 44px;
 				height: 44px;
@@ -866,8 +870,78 @@ input {
 	}
 }
 
+.main-smlAbout {
+	.inner-gap-1 {
+		padding-top: 60px;
+		position: relative;
+		overflow: hidden;
+		.smlAbout-swiper {
+			width: calc(100% + 40px);
+			margin-left: -20px;
+			padding: 0 20px;
+			position: relative;
+			.swiper-slide {
+				position: relative;
+				border-radius: 2px;
+				overflow: hidden;
+				.img-holder {
+					span {
+						padding-top: 93%;
+					}
+				}
+				.text-box {
+					width: 100%;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 0;
+					right: 0;
+					text-align: center;
+					padding: 0 22px;
+					.txt-1 {
+						color: #FFF;
+						text-align: center;
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: -0.28px;
+						margin-bottom: 4px;
+					}
+					.txt-2 {
+						color: #FFF;
+						text-align: center;
+						font-size: 24px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: -0.48px;
+						margin-bottom: 24px;
+					}
+					.txt-3 {
+						color: #FFF;
+						text-align: center;
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: -0.28px;
+					}
+				}
+			}
+			.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+				display: none;
+			}
+		}
+	}
+}
+
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
+	.common-title-1 {
+		font-size: 32px;
+		letter-spacing: -0.64px;
+		padding-bottom: 24px;
+	}
+
 	.inner-gap-1 {
 		max-width: 1600px;
 		padding-left: 100px;
@@ -957,13 +1031,9 @@ input {
 						align-items: center;
 						gap: 0 16px;
 						li {
-							color: rgba(255, 255, 255, 0.80);
 							font-size: 14px;
 							line-height: 100%;
 							letter-spacing: 0;
-							&.bold {
-								color: rgba(255, 255, 255, 0.80);
-							}
 						}
 					}
 				}
@@ -989,6 +1059,76 @@ input {
 			.copyright {
 				text-align: left;
 				letter-spacing: 0;
+			}
+		}
+	}
+
+	// main
+	.main-smlAbout {
+		.inner-gap-1 {
+			padding-top: 120px;
+			.smlAbout-swiper {
+				width: 100%;
+				margin-left: 0;
+				padding: 0;
+				.swiper-wrapper {
+					width: 100%;
+					overflow: hidden;
+				}
+				.swiper-slide {
+					border-radius: 8px;
+					.img-holder {
+						span {
+							padding-top: 21.22%;
+						}
+					}
+					.text-box {
+						width: 100%;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 0;
+						right: 0;
+						text-align: center;
+						padding: 0 100px;
+						.txt-1 {
+							font-size: 18px;
+							letter-spacing: -0.36px;
+						}
+						.txt-2 {
+							font-size: 40px;
+							letter-spacing: -0.8px;
+							margin-bottom: 32px;
+						}
+						.txt-3 {
+							font-size: 18px;
+							letter-spacing: -0.36px;
+						}
+					}
+				}
+				.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+					display: block;
+				}
+				.swiper-pagination {
+					width: fit-content;
+					bottom: auto;
+					top: -36px;
+					right: 52px;
+					left: auto;
+					color: #999;
+					font-size: 14px;
+					font-weight: 300;
+					line-height: 100%;
+					letter-spacing: -0.28px;
+					.swiper-pagination-current {
+						color: #006477;
+						font-weight: 600;
+						padding-right: 2px;
+					}
+					.swiper-pagination-total {
+						padding-left: 2px;
+					}
+				}
 			}
 		}
 	}
