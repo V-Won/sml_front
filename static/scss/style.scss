@@ -303,6 +303,7 @@ input {
 	right: 0;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.36) -22.4%, rgba(0, 0, 0, 0) 100%);
 	background-blend-mode: multiply;
+	z-index: 1000;
 	.inner {
 		display: flex;
 		justify-content: space-between;
@@ -372,7 +373,6 @@ input {
 
 // main
 .main-kv-swiper {
-	background-color: red;
 	
 }
 
