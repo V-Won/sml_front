@@ -99,7 +99,41 @@ if (window.console == undefined) { console = { log: () => { } } }
 			me._click();
 		},
 		_click: () => {
+			const tg = '[data-event="selectBox"]',
+						selectBoxs = document.querySelectorAll(tg);
 
+			for( const selectBox of selectBoxs ){
+				selectBox.querySelector('.ft-select > button').onclick = e => {
+					let parent = e.target.parentElement;
+					
+					if( !parent.classList.contains('is-active') ){
+						selectBoxs.forEach(e => {
+							if( e.classList.contains('is-active') ){
+								e.classList.remove('is-active');
+							}
+						});
+						if( !parent.classList.contains('disabled') ){
+							parent.classList.add('is-active');
+						}
+					}else{
+						parent.classList.remove('is-active');
+					}
+				}
+			}
+
+			document.querySelectorAll('.selectBox li button').forEach(e => {
+				e.onclick = () => {
+					e.parentNode.parentNode.parentNode.querySelector('.selectBox > button').innerText = e.innerText;
+				}
+			});
+
+			window.onclick = (e) => {
+				if( !e.target.classList.contains('button') ){
+					selectBoxs.forEach(e => {
+						e.classList.remove('is-active');
+					});
+				}
+			}
 		}
 	};
 
