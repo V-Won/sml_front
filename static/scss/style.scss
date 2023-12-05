@@ -425,8 +425,11 @@ input {
 	.inner {
 		width: 100%;
 		position: relative;
-		padding: 32px 20px 60px;
-		background: #7f8485;
+		background: #E6E6E6;
+		.inner-gap-1 {
+			padding-top: 32px;
+			padding-bottom: 60px;
+		}
 		.ft-flex {
 			display: flex;
 			flex-direction: column;
@@ -441,7 +444,7 @@ input {
 		.ft-top {
 			padding-bottom: 32px;
 			margin-bottom: 32px;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 			.list {
 				width: 100%;
 				display: flex;
@@ -457,7 +460,7 @@ input {
 						display: block;
 						width: 100%;
 						height: 14px;
-						color: rgba(255, 255, 255, 0.6);
+						color: rgba(0, 0, 0, 0.50);
 						text-align: left;
 						font-size: 14px;
 						font-weight: 600;
@@ -466,7 +469,7 @@ input {
 					}
 					&.bold {
 						a {
-							color: #fff;
+							color: rgba(0, 0, 0, 0.60);
 							font-weight: 700;
 						}
 					}
@@ -494,7 +497,7 @@ input {
 				}
 			}
 			.tel-num {
-				color: #fff;
+				color: rgba(0, 0, 0, 0.60);
 				font-size: 18px;
 				font-weight: 700;
 				line-height: 120%; /* 21.6px */
@@ -509,7 +512,7 @@ input {
 					width: 131px;
 					height: 48px;
 					position: relative;
-					background: url(../images/logo/logo_white.png) no-repeat;
+					background: url(../images/logo/logo_footer.png) no-repeat;
 					background-size: contain;
 					background-position: center;
 				}
@@ -522,15 +525,12 @@ input {
 					align-items: flex-start;
 					gap: 8px 0;
 					li {
-						color: rgba(255, 255, 255, 0.6);
+						color: rgba(0, 0, 0, 0.50);
 						font-size: 12px;
 						font-weight: 400;
 						line-height: 12px;
 						letter-spacing: -0.24px;
 						text-transform: capitalize;
-						&.bold {
-							color: #fff;
-						}
 					}
 				}
 			}
@@ -543,9 +543,9 @@ input {
 						height: 44px;
 						position: relative;
 						border-radius: 2px;
-						border: 1px solid rgba(255, 255, 255, 0.30);
+						border: 1px solid #C5C5C5;
 						padding: 12px 20px;
-						color: var(--primary-6-white, #FFF);
+						color: rgba(0, 0, 0, 0.60);
 						font-size: 14px;
 						font-weight: 500;
 						line-height: 14px;
@@ -556,7 +556,7 @@ input {
 							content: '';
 							width: 20px;
 							height: 20px;
-							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6.175 6.91248L10 10.7291L13.825 6.91248L15 8.08748L10 13.0875L5 8.08748L6.175 6.91248Z' fill='white'/%3E%3C/svg%3E");
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6.175 6.91248L10 10.7291L13.825 6.91248L15 8.08748L10 13.0875L5 8.08748L6.175 6.91248Z' fill='black' fill-opacity='0.6'/%3E%3C/svg%3E");
 							position: absolute;
 							right: 20px;
 							top: 50%;
@@ -586,7 +586,7 @@ input {
 					&.family {
 						margin-top: 8px;
 						.button {
-							background: rgba(255, 255, 255, 0.20);
+							background: rgba(0, 0, 0, 0.05);
 						}
 					}
 					&.is-active {
@@ -603,7 +603,7 @@ input {
 			}
 		}
 		.copyright {
-			color: rgba(255, 255, 255, 0.30);
+			color: rgba(0, 0, 0, 0.30);
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 100%; /* 12px */
@@ -778,8 +778,8 @@ input {
 		margin-top: 120px;
 		.inner {
 			.inner-gap-1 {
-				padding-top: 28px;
-				padding-bottom: 100px;
+				padding-top: 48px;
+				padding-bottom: 80px;
 			}
 			.ft-flex {
 				flex-direction: row;
@@ -787,8 +787,8 @@ input {
 				justify-content: space-between;
 			}
 			.ft-top {
-				padding-bottom: 28px;
-				margin-bottom: 60px;
+				padding-bottom: 23px;
+				margin-bottom: 32px;
 				.list {
 					width: fit-content;
 					align-items: center;
@@ -798,10 +798,6 @@ input {
 					li {
 						width: fit-content;
 						position: relative;
-						a {
-							color: rgba(255, 255, 255, 0.8);
-							font-weight: 500;
-						}
 						&:first-child {
 							order: 1;
 						}
@@ -860,13 +856,9 @@ input {
 						align-items: center;
 						gap: 0 16px;
 						li {
-							color: rgba(255, 255, 255, 0.80);
 							font-size: 14px;
 							line-height: 100%;
 							letter-spacing: 0;
-							&.bold {
-								color: rgba(255, 255, 255, 0.80);
-							}
 						}
 					}
 				}
@@ -891,7 +883,7 @@ input {
 			}
 			.copyright {
 				text-align: left;
-				letter-spacing: -0.1px;
+				letter-spacing: 0;
 			}
 		}
 	}
