@@ -387,11 +387,8 @@ input {
 .box-footer .inner {
   width: 100%;
   position: relative;
-  background: #7F8485;
-}
-.box-footer .inner .inner-gap-1 {
-  padding-top: 32px;
-  padding-bottom: 60px;
+  padding: 32px 20px 60px;
+  background: #7f8485;
 }
 .box-footer .inner .ft-flex {
   display: flex;
@@ -459,7 +456,7 @@ input {
   order: 6;
 }
 .box-footer .inner .ft-top .tel-num {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 700;
   line-height: 120%; /* 21.6px */
@@ -593,8 +590,14 @@ input {
   height: 100%;
 }
 
+.main-kv-swiper {
+  position: relative;
+}
 .main-kv-swiper .swiper-slide {
   position: relative;
+}
+.main-kv-swiper .swiper-slide .img-holder span {
+  padding-top: 140%;
 }
 .main-kv-swiper .swiper-slide .box-text {
   position: absolute;
@@ -606,6 +609,7 @@ input {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: translateY(-21px);
 }
 .main-kv-swiper .swiper-slide .box-text * {
   text-align: center;
@@ -618,6 +622,7 @@ input {
   font-weight: 600;
   line-height: 28.8px;
   letter-spacing: 0.36px;
+  padding-bottom: 20px;
 }
 .main-kv-swiper .swiper-slide .box-text .text-2 {
   color: var(--primary-5, #fff);
@@ -632,6 +637,68 @@ input {
   font-weight: 600;
   line-height: 36px;
   letter-spacing: -1.2px;
+}
+.main-kv-swiper .box-swiperControl {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.main-kv-swiper .box-swiperControl .swiper-pagination {
+  bottom: 0;
+  color: var(--primary-5, #fff);
+  font-family: Outfit;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 12px;
+  font-weight: 300;
+  letter-spacing: -0.24px;
+}
+.main-kv-swiper .box-swiperControl .swiper-pagination .swiper-pagination-current {
+  font-weight: 800;
+}
+.main-kv-swiper .box-swiperControl .loadingBar {
+  background-size: 14px 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-bottom: 31px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='11' viewBox='0 0 14 11' fill='none'%3E%3Cpath d='M8.59091 0L7.63756 0.969375L11.4104 4.8125H0L0 6.1875H11.4104L7.63756 10.0306L8.59091 11L14 5.5L8.59091 0Z' fill='white'/%3E%3C/svg%3E");
+}
+.main-kv-swiper .box-swiperControl .loadingBar span {
+  width: 44px;
+  height: 44px;
+  display: block;
+  position: relative;
+}
+.main-kv-swiper .box-swiperControl .loadingBar .progress {
+  transform: rotate(270deg) scale(0.92);
+}
+.main-kv-swiper .box-swiperControl .loadingBar .progress #inner {
+  stroke-dasharray: 157;
+  stroke-dashoffset: 157;
+  animation: dash 12s infinite;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+.main-kv-swiper .box-swiperControl .loadingBar .progress {
+  position: absolute;
+  top: 12px;
+  left: -12px;
 }
 
 /* 1024 이상 */

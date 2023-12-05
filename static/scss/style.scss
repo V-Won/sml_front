@@ -2,59 +2,83 @@
 
 @import "_root.scss";
 @font-face {
-	font-family: 'Pretendard';
+	font-family: "Pretendard";
 	font-weight: 900;
 	font-display: swap;
-	src: local('Pretendard Black'), url('../font/Pretendard-Black.woff2') format('woff2'), url('../font/Pretendard-Black.woff') format('woff');
+	src:
+		local("Pretendard Black"),
+		url("../font/Pretendard-Black.woff2") format("woff2"),
+		url("../font/Pretendard-Black.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Pretendard';
+	font-family: "Pretendard";
 	font-weight: 800;
 	font-display: swap;
-	src: local('Pretendard ExtraBold'), url('../font/Pretendard-ExtraBold.woff2') format('woff2'), url('../font/Pretendard-ExtraBold.woff') format('woff');
+	src:
+		local("Pretendard ExtraBold"),
+		url("../font/Pretendard-ExtraBold.woff2") format("woff2"),
+		url("../font/Pretendard-ExtraBold.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Pretendard';
+	font-family: "Pretendard";
 	font-weight: 700;
 	font-display: swap;
-	src: local('Pretendard Bold'), url('../font/Pretendard-Bold.woff2') format('woff2'), url('../font/Pretendard-Bold.woff') format('woff');
+	src:
+		local("Pretendard Bold"),
+		url("../font/Pretendard-Bold.woff2") format("woff2"),
+		url("../font/Pretendard-Bold.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Pretendard';
+	font-family: "Pretendard";
 	font-weight: 600;
 	font-display: swap;
-	src: local('Pretendard SemiBold'), url('../font/Pretendard-SemiBold.woff2') format('woff2'), url('../font/Pretendard-SemiBold.woff') format('woff');
+	src:
+		local("Pretendard SemiBold"),
+		url("../font/Pretendard-SemiBold.woff2") format("woff2"),
+		url("../font/Pretendard-SemiBold.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Pretendard';
+	font-family: "Pretendard";
 	font-weight: 500;
 	font-display: swap;
-	src: local('Pretendard Medium'), url('../font/Pretendard-Medium.woff2') format('woff2'), url('../font/Pretendard-Medium.woff') format('woff');
+	src:
+		local("Pretendard Medium"),
+		url("../font/Pretendard-Medium.woff2") format("woff2"),
+		url("../font/Pretendard-Medium.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Pretendard';
+	font-family: "Pretendard";
 	font-weight: 400;
 	font-display: swap;
-	src: local('Pretendard Regular'), url('../font/Pretendard-Regular.woff2') format('woff2'), url('../font/Pretendard-Regular.woff') format('woff');
+	src:
+		local("Pretendard Regular"),
+		url("../font/Pretendard-Regular.woff2") format("woff2"),
+		url("../font/Pretendard-Regular.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Pretendard';
+	font-family: "Pretendard";
 	font-weight: 300;
 	font-display: swap;
-	src: local('Pretendard Light'), url('../font/Pretendard-Light.woff2') format('woff2'), url('../font/Pretendard-Light.woff') format('woff');
+	src:
+		local("Pretendard Light"),
+		url("../font/Pretendard-Light.woff2") format("woff2"),
+		url("../font/Pretendard-Light.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Pretendard';
+	font-family: "Pretendard";
 	font-weight: 200;
 	font-display: swap;
-	src: local('Pretendard ExtraLight'), url('../font/Pretendard-ExtraLight.woff2') format('woff2'), url('../font/Pretendard-ExtraLight.woff') format('woff');
+	src:
+		local("Pretendard ExtraLight"),
+		url("../font/Pretendard-ExtraLight.woff2") format("woff2"),
+		url("../font/Pretendard-ExtraLight.woff") format("woff");
 }
 
 /* basic-reset */
@@ -401,11 +425,8 @@ input {
 	.inner {
 		width: 100%;
 		position: relative;
-		background: #7F8485;
-		.inner-gap-1 {
-			padding-top: 32px;
-			padding-bottom: 60px;
-		}
+		padding: 32px 20px 60px;
+		background: #7f8485;
 		.ft-flex {
 			display: flex;
 			flex-direction: column;
@@ -420,7 +441,7 @@ input {
 		.ft-top {
 			padding-bottom: 32px;
 			margin-bottom: 32px;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 			.list {
 				width: 100%;
 				display: flex;
@@ -436,7 +457,7 @@ input {
 						display: block;
 						width: 100%;
 						height: 14px;
-						color: rgba(255, 255, 255, 0.60);
+						color: rgba(255, 255, 255, 0.6);
 						text-align: left;
 						font-size: 14px;
 						font-weight: 600;
@@ -473,7 +494,7 @@ input {
 				}
 			}
 			.tel-num {
-				color: #FFF;
+				color: #fff;
 				font-size: 18px;
 				font-weight: 700;
 				line-height: 120%; /* 21.6px */
@@ -501,7 +522,7 @@ input {
 					align-items: flex-start;
 					gap: 8px 0;
 					li {
-						color: rgba(255, 255, 255, 0.60);
+						color: rgba(255, 255, 255, 0.6);
 						font-size: 12px;
 						font-weight: 400;
 						line-height: 12px;
@@ -622,8 +643,14 @@ input {
 
 // main
 .main-kv-swiper {
+	position: relative;
 	.swiper-slide {
 		position: relative;
+		.img-holder {
+			span {
+				padding-top: 140%;
+			}
+		}
 		.box-text {
 			position: absolute;
 			top: 0;
@@ -634,6 +661,7 @@ input {
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
+			transform: translateY(-21px);
 			* {
 				text-align: center;
 			}
@@ -645,6 +673,7 @@ input {
 				font-weight: 600;
 				line-height: 28.8px;
 				letter-spacing: 0.36px;
+				padding-bottom: 20px;
 			}
 			.text-2 {
 				color: var(--primary-5, #fff);
@@ -659,6 +688,77 @@ input {
 					line-height: 36px;
 					letter-spacing: -1.2px;
 				}
+			}
+		}
+	}
+	.box-swiperControl {
+		position: absolute;
+		bottom: 80px;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 5;
+		.swiper-pagination {
+			bottom: 0;
+			color: var(--primary-5, #fff);
+			font-family: Outfit;
+			font-size: 12px;
+			font-style: normal;
+			line-height: 12px;
+			font-weight: 300;
+			letter-spacing: -0.24px;
+			.swiper-pagination-current {
+				font-weight: 800;
+			}
+		}
+		.loadingBar {
+			background-size: 14px 11px;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 44px;
+			height: 44px;
+			border-radius: 999px;
+			background-color: rgba(0, 0, 0, 0.3);
+			display: block;
+			margin-bottom: 31px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='11' viewBox='0 0 14 11' fill='none'%3E%3Cpath d='M8.59091 0L7.63756 0.969375L11.4104 4.8125H0L0 6.1875H11.4104L7.63756 10.0306L8.59091 11L14 5.5L8.59091 0Z' fill='white'/%3E%3C/svg%3E");
+			span {
+				// border: 2px solid rgba(255, 255, 255, 10);
+				width: 44px;
+				height: 44px;
+				display: block;
+				//border-radius: 999px;
+				position: relative;
+			}
+
+			$offset: 157;
+
+			.progress {
+				transform: rotate(270deg) scale(0.92);
+			}
+
+			.progress #inner {
+				stroke-dasharray: $offset;
+				stroke-dashoffset: $offset;
+				animation: dash 12s infinite;
+			}
+
+			@keyframes dash {
+				0% {
+					stroke-dashoffset: 0;
+				}
+				100% {
+					stroke-dashoffset: -$offset;
+				}
+			}
+
+			// Below stuff for position only
+			.progress {
+				position: absolute;
+				top: 12px;
+				left: -12px;
 			}
 		}
 	}

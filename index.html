@@ -50,8 +50,20 @@
           <!-- <div class="swiper-scrollbar"></div> -->
         </div>
         <div class="box-swiperControl">
+          <!-- <div class="loadingBar"><span></span></div> -->
+          <button class="btn-swiper-next">
+            <div class="loadingBar">
+              <span>
+                <span class="progress progress--thin">
+                  <svg height="70" width="70">
+                    <circle id="outer" cx="35" cy="35" r="25" stroke-width="2" fill="none" />
+                    <circle id="inner" cx="35" cy="35" r="25" stroke-width="2" fill="none" stroke="white" />
+                  </svg>
+                </span>
+              </span>
+            </div>
+          </button>
           <div class="swiper-pagination"></div>
-          <div class="loadingBar"><span></span></div>
         </div>
       </div>
       <!-- //main-kv-swiper -->
@@ -80,24 +92,9 @@
   <!-- //swiper.js -->
 
   <script>
-    // 페이지 활성화 is-active
-    // menuSelectKey({
-    //   depth: "1"
-    // })
-
-    // 
     // 상단 KV main-kv-swiper
-    document.querySelector('.main-kv-swiper .box-swiperControl').style.opacity = '1';
-
     let itemSp = 800,   // slide speed
       itemSp2 = 6000; // autoplay speed
-
-    function ldBar() {
-      // loading
-      console.log('ldBar');
-    }
-
-    ldBar();
 
     var swiper = new Swiper(".main-kv-swiper .mySwiper", {
       slidesPerView: 1,
@@ -109,37 +106,16 @@
         delay: itemSp2,
         disableOnInteraction: true,
       },
-      // effect: 'fade',
-      // fadeEffect: { crossFade: true },
+      navigation: {
+        nextEl: '.main-kv-swiper .btn-swiper-next',
+      },
       pagination: {
         el: '.main-kv-swiper .swiper-pagination',
         type: 'fraction',
         renderBullet: function (index, className) {
           return '<div class="' + className + '"><span>' + (index) + '</span></div>';
         }
-      },
-      simulateTouch: false,
-      on: {
-        slideChange: function () {
-          ldBar();
-
-          let idx = this.realIndex;
-
-          // document.querySelector('#bg-type').classList.remove('bg-0');
-          // document.querySelector('#bg-type').classList.remove('bg-1');
-          // document.querySelector('#bg-type').classList.remove('bg-2');
-
-          // document.querySelector('#bg-type').classList.add('bg-' + idx);
-        }
       }
-      // navigation: {
-      //   prevEl: '.main-kv-swiper .swiper-button-prev',
-      //   nextEl: '.main-kv-swiper .swiper-button-next'
-      // },
-      // scrollbar: {
-      //   el: '.main-kv-swiper .swiper-scrollbar',
-      //   dragSize: 395
-      // },
     });
     // //상단 KV main-kv-swiper
   </script>
