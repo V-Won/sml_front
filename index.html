@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport"
     content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-  <title>Hancha</title>
+  <title>삼광의료재단</title>
   <link rel="stylesheet" href="static/css/style.css"><!-- 공통 css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
 </head>
@@ -47,19 +47,17 @@
               </div>
             </div>
           </div>
-          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
         <div class="box-swiperControl">
-          <!-- <div class="loadingBar"><span></span></div> -->
           <button class="btn-swiper-next">
             <div class="loadingBar">
               <span>
-                <span class="progress progress--thin">
-                  <svg height="70" width="70">
-                    <circle id="outer" cx="35" cy="35" r="25" stroke-width="2" fill="none" />
-                    <circle id="inner" cx="35" cy="35" r="25" stroke-width="2" fill="none" stroke="white" />
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
                   </svg>
-                </span>
+                  <span></span>
+                </div>
               </span>
             </div>
           </button>
@@ -93,7 +91,10 @@
 
   <script>
     // 상단 KV main-kv-swiper
-    let itemSp = 800,   // slide speed
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    //const progressContent = document.querySelector(".autoplay-progress span");
+
+    let itemSp = 800, // slide speed
       itemSp2 = 6000; // autoplay speed
 
     var swiper = new Swiper(".main-kv-swiper .mySwiper", {
@@ -104,7 +105,7 @@
       speed: itemSp,
       autoplay: {
         delay: itemSp2,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
       },
       navigation: {
         nextEl: '.main-kv-swiper .btn-swiper-next',
@@ -114,6 +115,12 @@
         type: 'fraction',
         renderBullet: function (index, className) {
           return '<div class="' + className + '"><span>' + (index) + '</span></div>';
+        }
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          //progressContent.textContent = `${Math.ceil(time / 1000)}s`;
         }
       }
     });

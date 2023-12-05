@@ -96,7 +96,8 @@ if (window.console == undefined) { console = { log: () => { } } }
 		initialize: function () {
 			const me = this;
 
-			me._click();
+			me._click(); // family
+			me._floatingClick(); // floating btn
 		},
 		_click: () => {
 			const tg = '[data-event="selectBox"]',
@@ -134,6 +135,35 @@ if (window.console == undefined) { console = { log: () => { } } }
 					});
 				}
 			}
+		},
+		_floatingClick: () => {
+			const tg = document.querySelector('.btn-quick'),
+						floating = document.querySelector('.box-floating'),
+						btnTop = document.querySelector('.btn-top');
+
+			// btn quick click
+			tg.addEventListener('click', () => {
+				floating.classList.toggle('open');
+			})
+
+			// scroll
+			window.addEventListener('scroll', () => {
+				if( window.scrollY >= 200 ){
+					floating.classList.add('scroll');
+				}else{
+					floating.classList.remove('scroll');
+				}
+
+				floating.classList.remove('open');
+			})
+
+			// btnTop click
+			btnTop.addEventListener('click', () => {
+				window.scrollTo({
+					top:0,
+					behavior:'smooth',
+				})
+			})
 		}
 	};
 
