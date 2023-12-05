@@ -546,9 +546,9 @@ input {
 						height: 44px;
 						position: relative;
 						border-radius: 2px;
-						border: 1px solid #C5C5C5;
+						border: 1px solid #c5c5c5;
 						padding: 12px 20px;
-						color: rgba(0, 0, 0, 0.60);
+						color: rgba(0, 0, 0, 0.6);
 						font-size: 14px;
 						font-weight: 500;
 						line-height: 14px;
@@ -606,7 +606,7 @@ input {
 			}
 		}
 		.copyright {
-			color: rgba(0, 0, 0, 0.30);
+			color: rgba(0, 0, 0, 0.3);
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 100%; /* 12px */
@@ -902,7 +902,7 @@ input {
 					text-align: center;
 					padding: 0 22px;
 					.txt-1 {
-						color: #FFF;
+						color: #fff;
 						text-align: center;
 						font-size: 14px;
 						font-weight: 600;
@@ -911,7 +911,7 @@ input {
 						margin-bottom: 4px;
 					}
 					.txt-2 {
-						color: #FFF;
+						color: #fff;
 						text-align: center;
 						font-size: 24px;
 						font-weight: 600;
@@ -920,7 +920,7 @@ input {
 						margin-bottom: 24px;
 					}
 					.txt-3 {
-						color: #FFF;
+						color: #fff;
 						text-align: center;
 						font-size: 14px;
 						font-weight: 600;
@@ -929,16 +929,25 @@ input {
 					}
 				}
 			}
-			.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+			.swiper-button-next,
+			.swiper-button-prev,
+			.swiper-pagination {
 				display: none;
 			}
 		}
 	}
 }
 
-
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
+	// 공통 pc mobile show hide
+	.pc-show {
+		display: block;
+	}
+	.mo-show {
+		display: none;
+	}
+
 	.common-title-1 {
 		font-size: 32px;
 		letter-spacing: -0.64px;
@@ -1109,7 +1118,9 @@ input {
 						}
 					}
 				}
-				.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+				.swiper-button-next,
+				.swiper-button-prev,
+				.swiper-pagination {
 					display: block;
 				}
 				.swiper-pagination {
@@ -1137,6 +1148,46 @@ input {
 					height: 36px;
 					top: -25px;
 					right: 0;
+				}
+			}
+		}
+	}
+
+	// main
+	.main-kv-swiper {
+		.swiper-slide {
+			height: 920px;
+			.box-text {
+				* {
+				}
+				.text-1 {
+					font-size: 24px;
+				}
+				.text-2 {
+					font-size: 56px;
+					font-weight: 100;
+					line-height: 120%;
+					letter-spacing: -2.24px;
+					strong {
+						font-weight: 600;
+						line-height: 67.2px;
+						letter-spacing: -2.24px;
+					}
+				}
+			}
+		}
+		.box-swiperControl {
+			.swiper-pagination {
+				.swiper-pagination-current {
+				}
+			}
+			.loadingBar {
+				span {
+				}
+				.autoplay-progress {
+				}
+
+				.autoplay-progress svg {
 				}
 			}
 		}
