@@ -25,22 +25,19 @@
       <div class="main-kv-swiper">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <p class="img-holder"><span><img src="static/images/@/kv.jpg" alt=""></span></p>
+            <div class="swiper-slide" style="background-image: url(static/images/@/kv.jpg);">
               <div class="box-text">
                 <p class="text-1">Smart Medical Life</p>
                 <p class="text-2"><strong>삼광의료재단은</strong><br> 높은 신뢰를 바탕으로<br> 메디컬 라이프를 선도합니다</p>
               </div>
             </div>
-            <div class="swiper-slide">
-              <p class="img-holder"><span><img src="static/images/@/kv.jpg" alt=""></span></p>
+            <div class="swiper-slide" style="background-image: url(static/images/@/kv.jpg);">
               <div class="box-text">
                 <p class="text-1">Smart Medical Life</p>
                 <p class="text-2"><strong>삼광의료재단은</strong><br> 높은 신뢰를 바탕으로<br> 메디컬 라이프를 선도합니다</p>
               </div>
             </div>
-            <div class="swiper-slide">
-              <p class="img-holder"><span><img src="static/images/@/kv.jpg" alt=""></span></p>
+            <div class="swiper-slide" style="background-image: url(static/images/@/kv.jpg);">
               <div class="box-text">
                 <p class="text-1">Smart Medical Life</p>
                 <p class="text-2"><strong>삼광의료재단은</strong><br> 높은 신뢰를 바탕으로<br> 메디컬 라이프를 선도합니다</p>
@@ -149,6 +146,10 @@
       },
       navigation: {
         nextEl: '.main-kv-swiper .btn-swiper-next',
+      },
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: false
       },
       pagination: {
         el: '.main-kv-swiper .swiper-pagination',

@@ -148,7 +148,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			// scroll
 			window.addEventListener('scroll', () => {
-				if( window.scrollY >= 200 ){
+				if( window.scrollY >= 100 ){
 					floating.classList.add('scroll');
 				}else{
 					floating.classList.remove('scroll');
