@@ -1068,5 +1068,11 @@ input {
   .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-pagination .swiper-pagination-total {
     padding-left: 2px;
   }
+  .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-button-next, .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    top: -25px;
+    right: 0;
+  }
 }
 /* //1024 이상 *//*# sourceMappingURL=style.css.map */

@@ -1132,6 +1132,12 @@ input {
 						padding-left: 2px;
 					}
 				}
+				.swiper-button-next, .swiper-button-prev {
+					width: 36px;
+					height: 36px;
+					top: -25px;
+					right: 0;
+				}
 			}
 		}
 	}
