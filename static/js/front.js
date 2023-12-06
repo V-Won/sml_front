@@ -68,7 +68,12 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 		},
 		_scroll: () => {
-
+			window.addEventListener('scroll', () => {
+				if( window.scrollY > 100 ){
+					document.querySelector('.box-header').classList.add('type-2');
+				}else
+				document.querySelector('.box-header').classList.remove('type-2');{}
+			})
 		}
 	};
 
