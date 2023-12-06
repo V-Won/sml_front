@@ -221,14 +221,14 @@ if (window.console == undefined) { console = { log: () => { } } }
 			document.querySelectorAll('.common-selectbox > ul > li button').forEach(e => {
 				e.onclick = () => {
 					e.parentNode.parentNode.parentNode.querySelector('.common-selectbox > button').innerText = e.innerText;
+					e.parentNode.parentNode.parentNode.classList.add('font');
 				}
 			});
-
+			
 			window.addEventListener('click', (e) => {
 				if (!e.target.classList.contains('button')) {
 					selectBoxs.forEach(e => {
 						e.classList.remove('is-active');
-						console.log(123);
 					});
 				}
 			})
@@ -236,6 +236,49 @@ if (window.console == undefined) { console = { log: () => { } } }
 	};
 
 	window.selectBox = selectBox;
+}(window));
+
+/* main tab */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description 메인 검사 btn tab
+	 * @modify
+			@20231206 추가
+	*/
+	var mainSearchBtn = {
+		/** 플러그인명 */
+		bind: mainSearchBtn,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '.main-inspectionSearch .btn'
+		},
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: function () {
+			const me = this,
+				tg = me.selectors.tg;
+
+				document.querySelectorAll(tg).forEach((item) => {
+					item.addEventListener('click', (e) => {
+
+						document.querySelectorAll(tg).forEach((item) => {
+							item.parentNode.classList.remove('is-active');
+						})
+						
+						e.target.parentNode.classList.toggle('is-active');
+					})
+				})
+		}
+	};
+
+	window.mainSearchBtn = mainSearchBtn;
 }(window));
 
 /**
@@ -251,7 +294,6 @@ window.onload = () => {
 
 // 공통 js 호출
 device.initialize();
-selectBox.initialize();
 
 // body scroll smooth
 const lenis = new Lenis()
