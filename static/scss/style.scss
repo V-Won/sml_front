@@ -851,12 +851,12 @@ input {
 					}
 				}
 			}
-			.swiper-button-next,
-			.swiper-button-prev,
-			.swiper-pagination {
-				display: none;
-			}
 		}
+	}
+	.swiper-button-next,
+	.swiper-button-prev,
+	.swiper-pagination {
+		display: none;
 	}
 }
 
@@ -999,21 +999,25 @@ input {
 
 	// main
 	.main-smlAbout {
+		position: relative;
 		.inner-gap-1 {
 			padding-top: 120px;
+			.common-title-1 {
+				padding-bottom: 26px;
+			}
 			.smlAbout-swiper {
 				width: 100%;
 				margin-left: 0;
 				padding: 0;
+				overflow: hidden;
 				.swiper-wrapper {
 					width: 100%;
-					overflow: hidden;
 				}
 				.swiper-slide {
 					border-radius: 8px;
 					.img-holder {
 						span {
-							padding-top: 21.22%;
+							padding-top: 22%;
 						}
 					}
 					.text-box {
@@ -1040,48 +1044,83 @@ input {
 						}
 					}
 				}
-				.swiper-button-next,
-				.swiper-button-prev,
-				.swiper-pagination {
-					display: block;
+			}
+		}
+		.swiper-button-next,
+		.swiper-button-prev,
+		.swiper-pagination {
+			display: block;
+		}
+		.swiper-pagination {
+			width: fit-content;
+			bottom: auto;
+			top: 129px;
+			right: 153px;
+			left: auto;
+			color: #999;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 100%;
+			letter-spacing: -0.28px;
+			.swiper-pagination-current {
+				color: #006477;
+				font-weight: 600;
+				padding-right: 3px;
+			}
+			.swiper-pagination-total {
+				padding-left: 3px;
+			}
+		}
+		.swiper-button-next, .swiper-button-prev {
+			width: 36px;
+			height: 36px;
+			top: 140px;
+			right: 0;
+			left: auto;
+		}
+		.swiper-button-prev {
+			right: 200px;
+			&::after {
+				display: block;
+				width: 16px;
+				height: 12px;
+				content: '';
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M6.18182 12L7.27136 10.9425L2.95955 6.75L16 6.75L16 5.25L2.95955 5.25L7.27136 1.0575L6.18182 0L0 6L6.18182 12Z' fill='%23006477'/%3E%3C/svg%3E");
+				background-repeat: no-repeat !important;
+				background-size: contain !important;
+				background-position: center !important;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&.swiper-button-disabled {
+				opacity: 1;
+				&::after {
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M6.18182 12L7.27136 10.9425L2.95955 6.75L16 6.75L16 5.25L2.95955 5.25L7.27136 1.0575L6.18182 0L0 6L6.18182 12Z' fill='%23DDDDDD'/%3E%3C/svg%3E");
 				}
-				.swiper-pagination {
-					width: fit-content;
-					bottom: auto;
-					top: -36px;
-					right: 52px;
-					left: auto;
-					color: #999;
-					font-size: 14px;
-					font-weight: 300;
-					line-height: 100%;
-					letter-spacing: -0.28px;
-					.swiper-pagination-current {
-						color: #006477;
-						font-weight: 600;
-						padding-right: 2px;
-					}
-					.swiper-pagination-total {
-						padding-left: 2px;
-					}
-				}
-				.swiper-button-next, .swiper-button-prev {
-					width: 36px;
-					height: 36px;
-					top: -25px;
-					right: 0;
-				}
-				.swiper-button-prev {
-					&::after {
-						display: block;
-						width: 100%;
-						height: 100%;
-						content: '';
-						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M9.81818 0L8.72864 1.0575L13.0405 5.25L0 5.25L0 6.75L13.0405 6.75L8.72864 10.9425L9.81818 12L16 6L9.81818 0Z' fill='%23006477'/%3E%3C/svg%3E");
-						background-repeat: no-repeat;
-						background-size: contain;
-						background-position: center;
-					}
+			}
+		}
+		.swiper-button-next {
+			right: 100px;
+			&::after {
+				display: block;
+				width: 16px;
+				height: 12px;
+				content: '';
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M9.81818 0L8.72864 1.0575L13.0405 5.25L0 5.25L0 6.75L13.0405 6.75L8.72864 10.9425L9.81818 12L16 6L9.81818 0Z' fill='%23006477'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&.swiper-button-disabled {
+				opacity: 1;
+				&::after {
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M9.81818 0L8.72864 1.0575L13.0405 5.25L0 5.25L0 6.75L13.0405 6.75L8.72864 10.9425L9.81818 12L16 6L9.81818 0Z' fill='%23DDDDDD'/%3E%3C/svg%3E");
 				}
 			}
 		}
