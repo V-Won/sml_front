@@ -687,6 +687,7 @@ input {
   align-items: center;
   gap: 60px;
   align-self: stretch;
+  width: 100%;
 }
 .common-input-1 input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -714,7 +715,7 @@ input {
 }
 
 .common-selectbox > button {
-  padding: 10px 25px 8px 12px;
+  padding: 10px 25px 9px 12px;
   position: relative;
   width: 100%;
   text-align: left;
@@ -1120,12 +1121,12 @@ input {
   align-items: center;
   gap: 10px;
   position: absolute;
-  top: 2px;
+  bottom: 0;
   right: 0;
 }
 .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct {
   position: absolute;
-  top: 53px;
+  bottom: 0;
   left: 0;
   right: 0;
   padding-right: 92px;
@@ -1135,13 +1136,16 @@ input {
   margin-bottom: 14px;
 }
 .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct.ct-gap {
-  top: 56px;
+  bottom: 0;
 }
 .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct.ct-gap .common-input-1 {
   margin-bottom: 14px;
 }
+.main-inspectionSearch .inner-gap-1 .gap > ul > li .ct.ct-gap .common-input-1 + .common-input-1 {
+  margin-bottom: 0;
+}
 .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct.ct-gap button.btn-search {
-  top: -1px;
+  bottom: 0;
 }
 .main-inspectionSearch .inner-gap-1 .gap > ul > li.is-active .ct {
   display: block;
