@@ -622,6 +622,7 @@ input {
 
 .inner-gap-1 {
   width: 100%;
+  position: relative;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -768,6 +769,13 @@ input {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.hoverImg .img-holder img {
+  transition: 0.5s;
+}
+.hoverImg:hover .img-holder img {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .main-kv-swiper {
@@ -1122,6 +1130,7 @@ input {
   width: calc(100% + 40px);
   margin: 0 0 20px -20px;
   padding: 0 20px;
+  overflow: hidden;
 }
 .main-academic .academic-sort .sort-btn-swiper li {
   width: -moz-fit-content;
@@ -1165,9 +1174,6 @@ input {
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span {
   border-radius: 2px;
 }
-.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span img {
-  transition: 0.5s;
-}
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box {
   width: 100%;
   position: relative;
@@ -1207,8 +1213,76 @@ input {
   line-height: 140%;
   letter-spacing: -0.24px;
 }
-.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide:hover .img-holder img {
-  transform: translate(-50%, -50%) scale(1.2);
+
+.gray-bg {
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+  background: #FAFAFA;
+}
+
+.main-official {
+  width: 100%;
+  padding-top: 60px;
+  position: relative;
+}
+.main-official .official-swiper {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+.main-official .official-swiper .swiper-slide {
+  width: 100%;
+}
+.main-official .official-swiper .swiper-slide > a {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 24px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff;
+}
+.main-official .official-swiper .swiper-slide .txt-1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #28A688;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.28px;
+}
+.main-official .official-swiper .swiper-slide .txt-2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.28px;
+}
+.main-official .official-swiper .swiper-slide .txt-3 {
+  margin-top: 14px;
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+}
+.main-official .official-swiper .swiper-slide.swiper-slide-active > a {
+  background: #28A688;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.main-official .official-swiper .swiper-slide.swiper-slide-active .txt-1, .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-2, .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-3 {
+  color: #fff;
 }
 
 /* 1024 이상 */
@@ -1222,7 +1296,7 @@ input {
   .common-title-1 {
     font-size: 32px;
     letter-spacing: -0.64px;
-    padding-bottom: 24px;
+    padding-bottom: 27px;
   }
   .inner-gap-1 {
     max-width: 1600px;
@@ -1240,7 +1314,7 @@ input {
     width: -moz-fit-content;
     width: fit-content;
     bottom: auto;
-    top: 129px;
+    top: 132px;
     right: 153px;
     left: auto;
     color: #999;
@@ -1261,7 +1335,7 @@ input {
   .common-swiper-button-next-1 {
     width: 36px;
     height: 36px;
-    top: 118px;
+    top: 121px;
     right: 0;
     left: auto;
     cursor: pointer;
@@ -1378,7 +1452,7 @@ input {
     content: "";
     width: 1px;
     height: 6px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1439,7 +1513,7 @@ input {
     position: relative;
   }
   .main-smlAbout .inner-gap-1 {
-    padding-top: 120px;
+    padding-top: 123px;
   }
   .main-smlAbout .inner-gap-1 .common-title-1 {
     padding-bottom: 26px;
@@ -1570,14 +1644,14 @@ input {
     display: none;
   }
   .main-academic {
-    padding-top: 120px;
+    padding-top: 124px;
   }
   .main-academic .common-title-1 {
     padding-bottom: 27px;
   }
   .main-academic .academic-sort .sort-btn-swiper {
     width: 100%;
-    margin: 0 0 25px;
+    margin: 0 0 23px;
     padding: 0;
   }
   .main-academic .academic-sort .sort-btn-swiper li button {
@@ -1626,6 +1700,66 @@ input {
   .main-academic .academic-sort .sort-wrap .common-swiper-pagination-1 {
     top: -110px;
     right: 53px;
+  }
+  .gray-bg {
+    padding: 120px 0;
+    background: #FAFAFA;
+  }
+  .main-official {
+    padding-top: 120px;
+  }
+  .main-official .official-swiper {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+  .main-official .official-swiper .swiper-slide > a {
+    padding: 36px 40px 36px 28px;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+  .main-official .official-swiper .swiper-slide .txt-1 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    transform: 0.5s;
+  }
+  .main-official .official-swiper .swiper-slide .txt-2 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    transform: 0.5s;
+  }
+  .main-official .official-swiper .swiper-slide .txt-3 {
+    margin-top: 11px;
+    line-height: 160%;
+    transform: 0.5s;
+  }
+  .main-official .official-swiper .swiper-slide.swiper-slide-active > a {
+    background: #fff;
+    box-shadow: none;
+  }
+  .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-1 {
+    color: #28A688;
+  }
+  .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-2 {
+    color: #000;
+  }
+  .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-3 {
+    color: #999;
+  }
+  .main-official .official-swiper .swiper-slide:hover > a {
+    background: #28A688;
+    box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+  .main-official .official-swiper .swiper-slide:hover .txt-1, .main-official .official-swiper .swiper-slide:hover .txt-2, .main-official .official-swiper .swiper-slide:hover .txt-3 {
+    color: #fff;
+  }
+  .main-official .common-swiper-button-prev-1, .main-official .common-swiper-button-next-1 {
+    top: -2px;
+  }
+  .main-official .common-swiper-pagination-1.swiper-pagination-fraction {
+    top: 10px;
   }
   .box-floating .inner button {
     width: 60px;
