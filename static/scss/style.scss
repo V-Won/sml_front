@@ -838,6 +838,7 @@ input {
 // 공통 mixin include
 @include imgHolder;
 
+// 공통 img hover 확대
 .hoverImg {
 	.img-holder {
 		img {
