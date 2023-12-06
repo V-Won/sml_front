@@ -3,7 +3,7 @@
 @import "_root.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
 /* basic-reset */
 *,
@@ -576,7 +576,7 @@ input {
 			opacity: 0;
 			pointer-events: none;
 			padding: 0 18px;
-			background: #F4F4F4;
+			background: #f4f4f4;
 			border-radius: 10px;
 			position: absolute;
 			bottom: 132px;
@@ -676,6 +676,92 @@ input {
 
 // 공통 table
 .common-table-1 {
+}
+
+// 공통 input
+.common-input-1 {
+	border-bottom: 1px solid #aacbd2;
+	input {
+		border: 0;
+		background-color: transparent;
+		color: rgba(255, 255, 255, 1);
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.6);
+			font-family: Pretendard;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 16.8px;
+		}
+	}
+}
+
+// 공통 common-selectbox
+.common-selectbox {
+	position: relative;
+	border-bottom: 1px solid #aacbd2;
+}
+.common-selectbox > button {
+	padding: 10px 25px 10px 10px;
+	position: relative;
+	width: 100%;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: Pretendard;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16.8px;
+}
+.common-selectbox > button:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translate(0, -50%);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8L12 16L20 8' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	transition: transform 0.4s;
+	transform: rotate(0deg);
+}
+.common-selectbox ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	left: -1px;
+	right: -1px;
+	margin-top: -1px;
+	border-radius: 0 0 4px 4px;
+}
+.common-selectbox ul li button {
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+}
+
+.common-selectbox.is-active {
+	z-index: 10;
+	border-radius: 4px 4px 0 0;
+}
+.common-selectbox.is-active > button:after {
+	transform: rotate(-180deg);
+}
+.common-selectbox.is-active ul {
+	display: block;
+}
+
+.common-selectbox.disabled {
+	background: #ccc;
+}
+.common-selectbox.disabled button:hover {
+	cursor: default;
 }
 
 // 공통 mixin include
@@ -952,6 +1038,67 @@ input {
 	}
 }
 
+.main-inspectionSearch {
+	.inner-gap-1 {
+		background: linear-gradient(281deg, rgba(0, 100, 119, 0.2) 7.35%, rgba(230, 252, 84, 0.2) 126.55%),
+			rgba(13, 109, 128, 0.85);
+	}
+	ul {
+		padding:32px 20px;
+		height: 194px;
+		position: relative;
+		li {
+			button {
+				&.btn {
+					display: flex;
+					padding: 8px 20px;
+					align-items: center;
+					gap: 10px;
+					border-radius: 999px;
+					border: 1px solid rgba(255, 255, 255, 0.8);
+					opacity: 0.8;
+					color: #fff;
+					font-family: Pretendard;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 16.8px;
+					letter-spacing: -0.28px;
+					text-transform: uppercase;
+				}
+				&.is-active {
+					background: #fff;
+					opacity: 1;
+					color: #006477;
+				}
+				&.btn-search {
+					color: #fff;
+					font-family: Pretendard;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 19.2px;
+					border-radius: 4px;
+					border: 1px solid #9dc3ca;
+					background: #448e9c;
+					display: flex;
+					width: 72px;
+					height: 72px;
+					padding: 10px;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+				}
+			}
+			.ct{
+				position: absolute;
+				top:20px;
+				
+			}
+		}
+	}
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
 	// 공통 pc mobile show hide
@@ -1168,7 +1315,8 @@ input {
 				padding-left: 3px;
 			}
 		}
-		.swiper-button-next, .swiper-button-prev {
+		.swiper-button-next,
+		.swiper-button-prev {
 			width: 36px;
 			height: 36px;
 			top: 140px;
@@ -1181,7 +1329,7 @@ input {
 				display: block;
 				width: 16px;
 				height: 12px;
-				content: '';
+				content: "";
 				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M6.18182 12L7.27136 10.9425L2.95955 6.75L16 6.75L16 5.25L2.95955 5.25L7.27136 1.0575L6.18182 0L0 6L6.18182 12Z' fill='%23006477'/%3E%3C/svg%3E");
 				background-repeat: no-repeat !important;
 				background-size: contain !important;
@@ -1204,7 +1352,7 @@ input {
 				display: block;
 				width: 16px;
 				height: 12px;
-				content: '';
+				content: "";
 				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M9.81818 0L8.72864 1.0575L13.0405 5.25L0 5.25L0 6.75L13.0405 6.75L8.72864 10.9425L9.81818 12L16 6L9.81818 0Z' fill='%23006477'/%3E%3C/svg%3E");
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -1223,12 +1371,11 @@ input {
 		}
 	}
 
-	// main
 	.main-kv-swiper {
 		.swiper-slide {
 			height: 920px;
 			.box-text {
-				transform:translateY(-68px);
+				transform: translateY(-68px);
 				* {
 				}
 				.text-1 {
@@ -1248,7 +1395,10 @@ input {
 			}
 		}
 		.box-swiperControl {
+			bottom: 323px;
 			.swiper-pagination {
+				font-size: 16px;
+				bottom: -7px;
 				.swiper-pagination-current {
 				}
 			}
@@ -1334,6 +1484,51 @@ input {
 			.swiper-pagination {
 				display: none;
 			}
+		}
+	}
+
+	.box-floating {
+		.inner {
+			button {
+				width: 60px;
+				height: 60px;
+				&.btn-quick {
+				}
+				&.btn-top {
+				}
+			}
+			.list-quick {
+				bottom: 136px;
+				width: 160px;
+				padding: 0 30px;
+				ul {
+					li {
+						&:first-child,
+						&.tel {
+							margin: 0 -30px;
+						}
+						a {
+							padding: 24px 0 23px 0;
+						}
+						&.tel {
+						}
+					}
+				}
+			}
+		}
+		.dim {
+		}
+		&.open {
+			.inner {
+				.list-quick {
+				}
+				.btn-quick {
+				}
+			}
+			.dim {
+			}
+		}
+		&.scroll {
 		}
 	}
 }

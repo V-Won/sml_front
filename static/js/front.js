@@ -154,7 +154,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 					floating.classList.remove('scroll');
 				}
 
-				floating.classList.remove('open');
+				//floating.classList.remove('open');
 			})
 
 			// btnTop click
@@ -170,6 +170,73 @@ if (window.console == undefined) { console = { log: () => { } } }
 	window.footer = footer;
 }(window));
 
+/* selectBox */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description selectBox
+	 * @modify
+			@20231206 추가
+	*/
+	var selectBox = {
+		/** 플러그인명 */
+		bind: selectBox,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="commonSelectBox"]'
+		},
+		initialize: function() {
+			const me = this;
+
+			me._click();
+		},
+		_click: function(){
+			const me = this,
+						tg = me.selectors.tg;
+
+			const selectBoxs = document.querySelectorAll(tg);
+
+			for( const selectBox of selectBoxs ){
+				selectBox.querySelector('.common-selectbox > button').onclick = e => {
+					let parent = e.target.parentElement;
+					
+					if( !parent.classList.contains('is-active') ){
+						selectBoxs.forEach(e => {
+							if( e.classList.contains('is-active') ){
+								e.classList.remove('is-active');
+							}
+						});
+						if( !parent.classList.contains('disabled') ){
+							parent.classList.add('is-active');
+						}
+					}else{
+						parent.classList.remove('is-active');
+					}
+				}
+			}
+
+			document.querySelectorAll('.common-selectbox li button').forEach(e => {
+				e.onclick = () => {
+					e.parentNode.parentNode.parentNode.querySelector('.common-selectbox > button').innerText = e.innerText;
+				}
+			});
+
+			window.onclick = (e) => {
+				if( !e.target.classList.contains('button') ){
+					selectBoxs.forEach(e => {
+						e.classList.remove('is-active');
+					});
+				}
+			}
+		}
+	};
+
+	window.selectBox = selectBox;
+}(window));
+
 /**
  * front.js 하단에 위치
  */
@@ -183,6 +250,7 @@ window.onload = () => {
 
 // 공통 js 호출
 device.initialize();
+selectBox.initialize();
 
 // body scroll smooth
 const lenis = new Lenis()

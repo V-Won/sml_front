@@ -560,7 +560,7 @@ input {
   opacity: 0;
   pointer-events: none;
   padding: 0 18px;
-  background: #F4F4F4;
+  background: #f4f4f4;
   border-radius: 10px;
   position: absolute;
   bottom: 132px;
@@ -637,6 +637,105 @@ input {
 }
 .common-title-1 > span {
   font-weight: 700;
+}
+
+.common-input-1 {
+  border-bottom: 1px solid #aacbd2;
+}
+.common-input-1 input {
+  border: 0;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.common-input-1 input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+.common-input-1 input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+
+.common-selectbox {
+  position: relative;
+  border-bottom: 1px solid #aacbd2;
+}
+
+.common-selectbox > button {
+  padding: 10px 25px 10px 10px;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.8px;
+}
+
+.common-selectbox > button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8L12 16L20 8' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  transition: transform 0.4s;
+  transform: rotate(0deg);
+}
+
+.common-selectbox ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  left: -1px;
+  right: -1px;
+  margin-top: -1px;
+  border-radius: 0 0 4px 4px;
+}
+
+.common-selectbox ul li button {
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.common-selectbox.is-active {
+  z-index: 10;
+  border-radius: 4px 4px 0 0;
+}
+
+.common-selectbox.is-active > button:after {
+  transform: rotate(-180deg);
+}
+
+.common-selectbox.is-active ul {
+  display: block;
+}
+
+.common-selectbox.disabled {
+  background: #ccc;
+}
+
+.common-selectbox.disabled button:hover {
+  cursor: default;
 }
 
 .img-holder span,
@@ -919,6 +1018,59 @@ input {
   opacity: 1;
 }
 
+.main-inspectionSearch .inner-gap-1 {
+  background: linear-gradient(281deg, rgba(0, 100, 119, 0.2) 7.35%, rgba(230, 252, 84, 0.2) 126.55%), rgba(13, 109, 128, 0.85);
+}
+.main-inspectionSearch ul {
+  padding: 32px 20px;
+  height: 194px;
+  position: relative;
+}
+.main-inspectionSearch ul li button.btn {
+  display: flex;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.8px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+}
+.main-inspectionSearch ul li button.is-active {
+  background: #fff;
+  opacity: 1;
+  color: #006477;
+}
+.main-inspectionSearch ul li button.btn-search {
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.2px;
+  border-radius: 4px;
+  border: 1px solid #9dc3ca;
+  background: #448e9c;
+  display: flex;
+  width: 72px;
+  height: 72px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-inspectionSearch ul li .ct {
+  position: absolute;
+  top: 20px;
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
   .pc-show {
@@ -1131,7 +1283,8 @@ input {
   .main-smlAbout .swiper-pagination .swiper-pagination-total {
     padding-left: 3px;
   }
-  .main-smlAbout .swiper-button-next, .main-smlAbout .swiper-button-prev {
+  .main-smlAbout .swiper-button-next,
+  .main-smlAbout .swiper-button-prev {
     width: 36px;
     height: 36px;
     top: 140px;
@@ -1204,6 +1357,13 @@ input {
     line-height: 67.2px;
     letter-spacing: -2.24px;
   }
+  .main-kv-swiper .box-swiperControl {
+    bottom: 323px;
+  }
+  .main-kv-swiper .box-swiperControl .swiper-pagination {
+    font-size: 16px;
+    bottom: -7px;
+  }
   .main-smlSpecialty {
     padding-top: 120px;
   }
@@ -1257,6 +1417,21 @@ input {
   }
   .main-smlSpecialty .specialty-swiper .swiper-pagination {
     display: none;
+  }
+  .box-floating .inner button {
+    width: 60px;
+    height: 60px;
+  }
+  .box-floating .inner .list-quick {
+    bottom: 136px;
+    width: 160px;
+    padding: 0 30px;
+  }
+  .box-floating .inner .list-quick ul li:first-child, .box-floating .inner .list-quick ul li.tel {
+    margin: 0 -30px;
+  }
+  .box-floating .inner .list-quick ul li a {
+    padding: 24px 0 23px 0;
   }
 }
 /* //1024 이상 *//*# sourceMappingURL=style.css.map */
