@@ -506,7 +506,7 @@ input {
   margin-top: 8px;
 }
 .box-footer .inner .ft-bottom .right .ft-select.family .button {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.05);
 }
 .box-footer .inner .ft-bottom .right .ft-select.is-active .button::after {
   transform: translateY(-50%) rotate(-180deg);
@@ -1093,6 +1093,108 @@ input {
   color: #006477;
 }
 
+.main-academic {
+  width: 100%;
+  position: relative;
+  padding-top: 60px;
+}
+.main-academic .academic-sort {
+  width: 100%;
+  position: relative;
+}
+.main-academic .academic-sort .sort-btn-swiper {
+  width: calc(100% + 40px);
+  margin: 0 0 20px -20px;
+  padding: 0 20px;
+}
+.main-academic .academic-sort .sort-btn-swiper li {
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-shrink: 0;
+}
+.main-academic .academic-sort .sort-btn-swiper li button {
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: #F5F5F5;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.1px;
+}
+.main-academic .academic-sort .sort-btn-swiper li.is-active button {
+  background: #006477;
+  color: #fff;
+}
+.main-academic .academic-sort .sort-wrap {
+  width: 100%;
+  position: relative;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide {
+  width: 100%;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide > a {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span {
+  border-radius: 2px;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span img {
+  transition: 0.5s;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box {
+  width: 100%;
+  position: relative;
+  padding: 20px 20px 20px 0;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .tag {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid #D5D5D5;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+  display: block;
+  margin-bottom: 8px;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .txt-1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.28px;
+  margin-bottom: 12px;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .txt-2 {
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide:hover .img-holder img {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
   .pc-show {
@@ -1444,6 +1546,64 @@ input {
   }
   .main-smlSpecialty .specialty-swiper .swiper-pagination {
     display: none;
+  }
+  .main-academic {
+    padding-top: 120px;
+  }
+  .main-academic .common-title-1 {
+    padding-bottom: 27px;
+  }
+  .main-academic .academic-sort .sort-btn-swiper {
+    width: 100%;
+    margin: 0 0 25px;
+    padding: 0;
+  }
+  .main-academic .academic-sort .sort-btn-swiper li button {
+    padding: 9px 24px;
+  }
+  .main-academic .academic-sort .sort-wrap .academic-swiper {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+  .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span {
+    padding-top: 83%;
+    border-radius: 8px;
+  }
+  .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box {
+    padding: 24px 24px 24px 0;
+  }
+  .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .tag {
+    padding: 5px 11px;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    margin-bottom: 12px;
+  }
+  .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .txt-1 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    margin-bottom: 16px;
+    min-height: 48px;
+  }
+  .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .txt-2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.28px;
+  }
+  .main-academic .academic-sort .sort-wrap .common-swiper-button-prev-1, .main-academic .academic-sort .sort-wrap .common-swiper-button-next-1 {
+    top: -120px;
+  }
+  .main-academic .academic-sort .sort-wrap .common-swiper-button-next-1 {
+    right: 0;
+  }
+  .main-academic .academic-sort .sort-wrap .common-swiper-button-prev-1 {
+    right: 100px;
+  }
+  .main-academic .academic-sort .sort-wrap .common-swiper-pagination-1 {
+    top: -110px;
+    right: 53px;
   }
   .box-floating .inner button {
     width: 60px;

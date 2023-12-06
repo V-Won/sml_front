@@ -515,7 +515,7 @@ input {
 					&.family {
 						margin-top: 8px;
 						.button {
-							background: rgba(255, 255, 255, 0.2);
+							background: rgba(0, 0, 0, 0.05);
 						}
 					}
 					&.is-active {
@@ -1126,6 +1126,110 @@ input {
 	}
 }
 
+.main-academic {
+	width: 100%;
+	position: relative;
+	padding-top: 60px;
+	.academic-sort {
+		width: 100%;
+		position: relative;
+		.sort-btn-swiper {
+			width: calc(100% + 40px);
+			margin: 0 0 20px -20px;
+			padding: 0 20px;
+			li {
+				width: fit-content;
+				flex-shrink: 0;
+				button {
+					padding: 8px 20px;
+					border-radius: 999px;
+					background: #F5F5F5;
+					color: #000;
+					text-align: center;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 120%;
+					letter-spacing: 0.1px;
+				}
+				&.is-active {
+					button {
+						background: #006477;
+						color: #fff;
+					}
+				}
+			}
+		}
+		.sort-wrap {
+			width: 100%;
+			position: relative;
+			.academic-swiper {
+				width: calc(100% + 40px);
+				margin-left: -20px;
+				padding: 0 20px;
+				position: relative;
+				overflow: hidden;
+				.swiper-slide {
+					width: 100%;
+					> a {
+						width: 100%;
+						position: relative;
+						display: block;
+					}
+					.img-holder {
+						span {
+							border-radius: 2px;
+							img {
+								transition: 0.5s;
+							}
+						}
+					}
+					.text-box {
+						width: 100%;
+						position: relative;
+						padding: 20px 20px 20px 0;
+						.tag {
+							width: fit-content;
+							padding: 3px 10px;
+							border-radius: 999px;
+							border: 1px solid #D5D5D5;
+							color: #000;
+							font-size: 12px;
+							font-weight: 600;
+							line-height: 120%;
+							letter-spacing: -0.24px;
+							display: block;
+							margin-bottom: 8px;
+						}
+						.txt-1 {
+							@include text-line-2;
+							color: #000;
+							font-size: 14px;
+							font-weight: 600;
+							line-height: 120%;
+							letter-spacing: -0.28px;
+							margin-bottom: 12px;
+						}
+						.txt-2 {
+							color: #999;
+							font-size: 12px;
+							font-weight: 500;
+							line-height: 140%;
+							letter-spacing: -0.24px;
+						}
+					}
+					&:hover {
+						.img-holder {
+							img {
+								transform: translate(-50%,-50%) scale(1.2);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
 	// 공통 pc mobile show hide
@@ -1525,6 +1629,75 @@ input {
 			}
 			.swiper-pagination {
 				display: none;
+			}
+		}
+	}
+
+	.main-academic {
+		padding-top: 120px;
+		.common-title-1 {
+			padding-bottom: 27px;
+		}
+		.academic-sort {
+			.sort-btn-swiper {
+				width: 100%;
+				margin: 0 0 25px;
+				padding: 0;
+				li {
+					button {
+						padding: 9px 24px;
+					}
+				}
+			}
+			.sort-wrap {
+				.academic-swiper {
+					width: 100%;
+					margin-left: 0;
+					padding: 0;
+					.swiper-slide {
+						.img-holder {
+							span {
+								padding-top: 83%;
+								border-radius: 8px;
+							}
+						}
+						.text-box {
+							padding: 24px 24px 24px 0;
+							.tag {
+								padding: 5px 11px;
+								font-size: 14px;
+								letter-spacing: -0.28px;
+								margin-bottom: 12px;
+							}
+							.txt-1 {
+								font-size: 20px;
+								font-weight: 500;
+								letter-spacing: -0.4px;
+								margin-bottom: 16px;
+								min-height: 48px;
+							}
+							.txt-2 {
+								font-size: 14px;
+								font-weight: 400;
+								line-height: 120%;
+								letter-spacing: -0.28px;
+							}
+						}
+					}
+				}
+				.common-swiper-button-prev-1, .common-swiper-button-next-1 {
+					top: -120px;
+				}
+				.common-swiper-button-next-1 {
+					right: 0;
+				}
+				.common-swiper-button-prev-1 {
+					right: 100px;
+				}
+				.common-swiper-pagination-1 {
+					top: -110px;
+					right: 53px;
+				}
 			}
 		}
 	}
