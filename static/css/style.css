@@ -265,6 +265,11 @@ pre {
   font-family: "Pretendard", "Open Sans", "Roboto", Arial, Dotum, serif;
 }
 
+a,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 input:focus,
 textarea:focus {
   outline: none;
@@ -511,7 +516,7 @@ input {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6.175 6.91248L10 10.7291L13.825 6.91248L15 8.08748L10 13.0875L5 8.08748L6.175 6.91248Z' fill='black' fill-opacity='0.6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M13.825 13.0875L10 9.27084L6.175 13.0875L5 11.9125L10 6.91251L15 11.9125L13.825 13.0875Z' fill='black' fill-opacity='0.6'/%3E%3C/svg%3E");
   position: absolute;
   right: 20px;
   top: 50%;
