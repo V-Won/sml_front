@@ -1368,8 +1368,9 @@ input {
     padding-top: 120px;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide {
-    width: 25% !important;
-    transition: width 0.5s;
+    display: flex;
+    flex: 1 1 content;
+    transition: flex 0.2s;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide .img-holder span {
     padding-top: 0;
@@ -1404,7 +1405,7 @@ input {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.53%, rgba(0, 0, 0, 0.3) 105.2%);
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide:hover {
-    width: 50% !important;
+    flex: 0 0 50%;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide:hover .img-holder span::after {
     background: linear-gradient(281deg, rgba(0, 100, 119, 0.2) 7.35%, rgba(230, 252, 84, 0.2) 126.55%), linear-gradient(0deg, rgba(13, 109, 128, 0.6) 0%, rgba(13, 109, 128, 0.6) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.53%, rgba(0, 0, 0, 0.3) 105.2%);

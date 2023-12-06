@@ -1418,8 +1418,10 @@ input {
 		padding-top: 120px;
 		.specialty-swiper {
 			.swiper-slide {
-				width: 25% !important;
-				transition: width 0.5s;
+				//width: 25% !important;
+				display: flex;
+				flex:1 1 content;
+				transition: flex 0.2s;
 				.img-holder {
 					span {
 						padding-top: 0;
@@ -1463,7 +1465,8 @@ input {
 					}
 				}
 				&:hover {
-					width: 50% !important;
+					//width: 50% !important;
+					flex:0 0 50%;
 					.img-holder {
 						span {
 							&::after {
