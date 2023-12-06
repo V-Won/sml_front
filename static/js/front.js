@@ -101,22 +101,22 @@ if (window.console == undefined) { console = { log: () => { } } }
 		},
 		_click: () => {
 			const tg = '[data-event="selectBox"]',
-						selectBoxs = document.querySelectorAll(tg);
+				selectBoxs = document.querySelectorAll(tg);
 
-			for( const selectBox of selectBoxs ){
+			for (const selectBox of selectBoxs) {
 				selectBox.querySelector('.ft-select > button').onclick = e => {
 					let parent = e.target.parentElement;
-					
-					if( !parent.classList.contains('is-active') ){
+
+					if (!parent.classList.contains('is-active')) {
 						selectBoxs.forEach(e => {
-							if( e.classList.contains('is-active') ){
+							if (e.classList.contains('is-active')) {
 								e.classList.remove('is-active');
 							}
 						});
-						if( !parent.classList.contains('disabled') ){
+						if (!parent.classList.contains('disabled')) {
 							parent.classList.add('is-active');
 						}
-					}else{
+					} else {
 						parent.classList.remove('is-active');
 					}
 				}
@@ -128,18 +128,18 @@ if (window.console == undefined) { console = { log: () => { } } }
 				}
 			});
 
-			window.onclick = (e) => {
-				if( !e.target.classList.contains('button') ){
+			window.addEventListener('click', (e) => {
+				if (!e.target.classList.contains('button')) {
 					selectBoxs.forEach(e => {
 						e.classList.remove('is-active');
 					});
 				}
-			}
+			})
 		},
 		_floatingClick: () => {
 			const tg = document.querySelector('.btn-quick'),
-						floating = document.querySelector('.box-floating'),
-						btnTop = document.querySelector('.btn-top');
+				floating = document.querySelector('.box-floating'),
+				btnTop = document.querySelector('.btn-top');
 
 			// btn quick click
 			tg.addEventListener('click', () => {
@@ -148,9 +148,9 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			// scroll
 			window.addEventListener('scroll', () => {
-				if( window.scrollY >= 100 ){
+				if (window.scrollY >= 100) {
 					floating.classList.add('scroll');
-				}else{
+				} else {
 					floating.classList.remove('scroll');
 				}
 
@@ -160,8 +160,8 @@ if (window.console == undefined) { console = { log: () => { } } }
 			// btnTop click
 			btnTop.addEventListener('click', () => {
 				window.scrollTo({
-					top:0,
-					behavior:'smooth',
+					top: 0,
+					behavior: 'smooth',
 				})
 			})
 		}
@@ -188,49 +188,50 @@ if (window.console == undefined) { console = { log: () => { } } }
 		selectors: {
 			tg: '[data-event="commonSelectBox"]'
 		},
-		initialize: function() {
+		initialize: function () {
 			const me = this;
 
 			me._click();
 		},
-		_click: function(){
+		_click: function () {
 			const me = this,
-						tg = me.selectors.tg;
+				tg = me.selectors.tg;
 
 			const selectBoxs = document.querySelectorAll(tg);
 
-			for( const selectBox of selectBoxs ){
+			for (const selectBox of selectBoxs) {
 				selectBox.querySelector('.common-selectbox > button').onclick = e => {
 					let parent = e.target.parentElement;
-					
-					if( !parent.classList.contains('is-active') ){
+
+					if (!parent.classList.contains('is-active')) {
 						selectBoxs.forEach(e => {
-							if( e.classList.contains('is-active') ){
+							if (e.classList.contains('is-active')) {
 								e.classList.remove('is-active');
 							}
 						});
-						if( !parent.classList.contains('disabled') ){
+						if (!parent.classList.contains('disabled')) {
 							parent.classList.add('is-active');
 						}
-					}else{
+					} else {
 						parent.classList.remove('is-active');
 					}
 				}
 			}
 
-			document.querySelectorAll('.common-selectbox li button').forEach(e => {
+			document.querySelectorAll('.common-selectbox > ul > li button').forEach(e => {
 				e.onclick = () => {
 					e.parentNode.parentNode.parentNode.querySelector('.common-selectbox > button').innerText = e.innerText;
 				}
 			});
 
-			window.onclick = (e) => {
-				if( !e.target.classList.contains('button') ){
+			window.addEventListener('click', (e) => {
+				if (!e.target.classList.contains('button')) {
 					selectBoxs.forEach(e => {
 						e.classList.remove('is-active');
+						console.log(123);
 					});
 				}
-			}
+			})
 		}
 	};
 

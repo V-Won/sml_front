@@ -646,6 +646,11 @@ input {
   border: 0;
   background-color: transparent;
   color: rgb(255, 255, 255);
+  display: flex;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
 }
 .common-input-1 input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -670,7 +675,7 @@ input {
 }
 
 .common-selectbox > button {
-  padding: 10px 25px 10px 10px;
+  padding: 10px 25px 10px 12px;
   position: relative;
   width: 100%;
   text-align: left;
@@ -687,17 +692,16 @@ input {
   display: block;
   position: absolute;
   top: 50%;
-  right: 10px;
-  transform: translate(0, -50%);
+  right: 12px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 8L12 16L20 8' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
   transition: transform 0.4s;
-  transform: rotate(0deg);
+  transform: translate(0, -50%) rotate(0deg);
 }
 
-.common-selectbox ul {
+.common-selectbox > ul {
   display: none;
   position: absolute;
   top: 100%;
@@ -711,7 +715,7 @@ input {
   border-radius: 0 0 4px 4px;
 }
 
-.common-selectbox ul li button {
+.common-selectbox > ul > li button {
   padding: 10px;
   width: 100%;
   text-align: left;
@@ -723,10 +727,10 @@ input {
 }
 
 .common-selectbox.is-active > button:after {
-  transform: rotate(-180deg);
+  transform: translate(0, -50%) rotate(-180deg);
 }
 
-.common-selectbox.is-active ul {
+.common-selectbox.is-active > ul {
   display: block;
 }
 
@@ -983,7 +987,7 @@ input {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  color: var(--primary-6-white, #FFF);
+  color: var(--primary-6-white, #fff);
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -993,7 +997,7 @@ input {
   padding-bottom: 12px;
 }
 .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-2 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -1022,14 +1026,17 @@ input {
 .main-inspectionSearch .inner-gap-1 {
   background: linear-gradient(281deg, rgba(0, 100, 119, 0.2) 7.35%, rgba(230, 252, 84, 0.2) 126.55%), rgba(13, 109, 128, 0.85);
 }
-.main-inspectionSearch ul {
-  padding: 32px 20px;
+.main-inspectionSearch .inner-gap-1 > ul {
+  padding: 32px 0px;
   height: 194px;
   position: relative;
 }
-.main-inspectionSearch ul li button.btn {
+.main-inspectionSearch .inner-gap-1 > ul > li {
+  display: inline-flex;
+}
+.main-inspectionSearch .inner-gap-1 > ul > li button.btn {
   display: flex;
-  padding: 8px 20px;
+  padding: 7px 20px;
   align-items: center;
   gap: 10px;
   border-radius: 999px;
@@ -1043,13 +1050,9 @@ input {
   line-height: 16.8px;
   letter-spacing: -0.28px;
   text-transform: uppercase;
+  margin-right: 5px;
 }
-.main-inspectionSearch ul li button.is-active {
-  background: #fff;
-  opacity: 1;
-  color: #006477;
-}
-.main-inspectionSearch ul li button.btn-search {
+.main-inspectionSearch .inner-gap-1 > ul > li button.btn-search {
   color: #fff;
   font-family: Pretendard;
   font-size: 16px;
@@ -1066,10 +1069,28 @@ input {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-.main-inspectionSearch ul li .ct {
   position: absolute;
-  top: 20px;
+  top: 7px;
+  right: 0;
+}
+.main-inspectionSearch .inner-gap-1 > ul > li .ct {
+  position: absolute;
+  top: 83px;
+  left: 0;
+  right: 0;
+  padding-right: 92px;
+  display: none;
+}
+.main-inspectionSearch .inner-gap-1 > ul > li .ct .common-selectbox {
+  margin-bottom: 12px;
+}
+.main-inspectionSearch .inner-gap-1 > ul > li.is-active .ct {
+  display: block;
+}
+.main-inspectionSearch .inner-gap-1 > ul > li.is-active button.btn {
+  background: #fff;
+  opacity: 1;
+  color: #006477;
 }
 
 /* 1024 이상 */
