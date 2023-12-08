@@ -61,11 +61,23 @@ if (window.console == undefined) { console = { log: () => { } } }
 		initialize: function () {
 			const me = this;
 
-			me._click();
 			me._scroll();
+			me._hover();
 		},
-		_click: () => {
+		_hover: () => {
+			const headerGnb = '.box-header';
 
+			document.querySelector(headerGnb + ' .gnb-menu').addEventListener('mouseover', (e) => {
+				document.querySelector(headerGnb).classList.add('is-hover');
+			})
+
+			document.querySelector(headerGnb + ' .dim').addEventListener('mouseover', (e) => {
+				document.querySelector(headerGnb).classList.remove('is-hover');
+			})
+
+			document.querySelector(headerGnb).addEventListener('mouseleave', (e) => {
+				document.querySelector(headerGnb).classList.remove('is-hover');
+			})
 		},
 		_scroll: () => {
 			window.addEventListener('scroll', () => {
