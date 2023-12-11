@@ -595,8 +595,21 @@ input {
   margin-top: 8px;
 }
 .box-floating .inner button.btn-quick {
-  background-size: 32px 18px;
+  background: linear-gradient(294deg, rgba(74, 119, 0, 0.48) -3.94%, rgba(0, 119, 55, 0.48) -3.93%, rgba(230, 252, 84, 0.48) 79.9%), linear-gradient(0deg, #32A868 0%, #32A868 100%);
+  position: relative;
+}
+.box-floating .inner button.btn-quick::after {
+  content: "";
+  width: 32px;
+  height: 18px;
   background-image: url(../images/text/text_quick.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .box-floating .inner button.btn-top {
   background-size: 24px;
@@ -654,8 +667,9 @@ input {
   opacity: 1;
   pointer-events: all;
 }
-.box-floating.open .inner .btn-quick {
-  background-size: 24px;
+.box-floating.open .inner .btn-quick::after {
+  width: 24px;
+  height: 24px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect x='19.7773' y='18.364' width='2' height='20' transform='rotate(135 19.7773 18.364)' fill='white'/%3E%3Crect x='5.63672' y='19.7781' width='2' height='20' transform='rotate(-135 5.63672 19.7781)' fill='white'/%3E%3C/svg%3E");
 }
 .box-floating.open .dim {
@@ -1223,6 +1237,16 @@ input {
 }
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span {
   border-radius: 2px;
+}
+.main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 100%);
 }
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box {
   width: 100%;
@@ -1848,6 +1872,7 @@ input {
   }
   .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .img-holder span {
     padding-top: 22%;
+    min-height: 200px;
   }
   .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box {
     width: 100%;
