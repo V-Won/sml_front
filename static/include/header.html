@@ -1,6 +1,9 @@
 <!-- **
-  * scroll class="box-header type-2"
-  * hover class="box-header is-hover"
+  * MO
+    * btn-menu click class="box-header is-menuOpen"
+  * PC
+    * scroll class="box-header type-2"
+    * hover class="box-header is-hover"
   * -->
 <div class="box-header">
   <!-- inner-gap-1 -->
@@ -32,7 +35,13 @@
           <button class="btn-lang">Kor</button>
         </div>
         <button class="btn-search" title="검색 버튼"></button>
-        <button class="btn-menu" title="메뉴 버튼"></button>
+        <button class="btn-menu" title="메뉴 버튼">
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </button>
       </div>
     </div>
   </div>
@@ -156,7 +165,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="mo-order">
           <h3>재단 안내</h3>
           <ul>
             <li>
@@ -200,6 +209,7 @@
           </ul>
         </li>
       </ul>
+      <div class="logo"></div>
     </div>
   </div>
   <!-- 2뎁스 메뉴 -->

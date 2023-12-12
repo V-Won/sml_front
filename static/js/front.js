@@ -63,6 +63,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			me._scroll();
 			me._hover();
+			me._click(); // 모바일 Gnb menu
 		},
 		_hover: () => {
 			const headerGnb = '.box-header';
@@ -81,11 +82,50 @@ if (window.console == undefined) { console = { log: () => { } } }
 		},
 		_scroll: () => {
 			window.addEventListener('scroll', () => {
-				if( window.scrollY > 100 ){
+				if (window.scrollY > 100) {
 					document.querySelector('.box-header').classList.add('type-2');
-				}else
-				document.querySelector('.box-header').classList.remove('type-2');
+				} else
+					document.querySelector('.box-header').classList.remove('type-2');
 			})
+		},
+		_click: () => {
+			const me = this,
+				tg = '.hamburger';
+
+			const tgs = document.querySelectorAll(tg);
+
+			// MO 햄버거 버튼 모션
+			for (const tg of tgs) {
+				tg.onclick = e => {
+					e.currentTarget.classList.toggle('is-active');
+				}
+			}
+
+			// MO 햄버거 버튼 클릭시 전체 메뉴 활성화
+			document.querySelector('#hamburger-1').addEventListener('click', (e) => {
+				document.querySelector('.box-header').classList.toggle('is-menuOpen');
+				if (document.querySelector('.box-header').classList.contains('is-menuOpen')) {
+					document.getElementsByTagName('html')[0].style.overflow = "hidden";
+				} else {
+					document.getElementsByTagName('html')[0].style.overflow = "";
+				}
+			})
+
+			// PC 햄버거 버튼 클릭 상태에서 resize
+			window.addEventListener('resize', () => {
+				if( window.innerWidth >= 1024){
+					document.getElementsByTagName('html')[0].style.overflow = "";
+				}
+			})
+
+			// MO 1뎁스 클릭.
+			const depth1s = document.querySelectorAll('.box-header .menu-list h3');
+
+			for (const tg of depth1s) {
+				tg.onclick = e => {
+					e.currentTarget.parentNode.classList.toggle('is-active');
+				}
+			}
 		}
 	};
 
@@ -241,7 +281,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 					e.parentNode.parentNode.parentNode.classList.add('font');
 				}
 			});
-			
+
 			window.addEventListener('click', (e) => {
 				if (!e.target.classList.contains('button')) {
 					selectBoxs.forEach(e => {
@@ -282,16 +322,16 @@ if (window.console == undefined) { console = { log: () => { } } }
 			const me = this,
 				tg = me.selectors.tg;
 
-				document.querySelectorAll(tg).forEach((item) => {
-					item.addEventListener('click', (e) => {
+			document.querySelectorAll(tg).forEach((item) => {
+				item.addEventListener('click', (e) => {
 
-						document.querySelectorAll(tg).forEach((item) => {
-							item.parentNode.classList.remove('is-active');
-						})
-						
-						e.target.parentNode.classList.toggle('is-active');
+					document.querySelectorAll(tg).forEach((item) => {
+						item.parentNode.classList.remove('is-active');
 					})
+
+					e.target.parentNode.classList.toggle('is-active');
 				})
+			})
 		}
 	};
 
@@ -313,11 +353,13 @@ window.onload = () => {
 device.initialize();
 
 // body scroll smooth
-const lenis = new Lenis()
+if (!document.querySelector('body').classList.contains('mobile')) { // mobile
+	const lenis = new Lenis()
 
-function raf(time) {
-	lenis.raf(time)
+	function raf(time) {
+		lenis.raf(time)
+		requestAnimationFrame(raf)
+	}
+
 	requestAnimationFrame(raf)
 }
-
-requestAnimationFrame(raf)
