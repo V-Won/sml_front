@@ -541,7 +541,6 @@
 
     // 상단 KV main-kv-swiper
     const progressCircle = document.querySelector(".autoplay-progress svg");
-    //const progressContent = document.querySelector(".autoplay-progress span");
 
     let itemSp = 800, // slide speed
       itemSp2 = 6000; // autoplay speed
@@ -573,7 +572,6 @@
       on: {
         autoplayTimeLeft(s, time, progress) {
           progressCircle.style.setProperty("--progress", 1 - progress);
-          //progressContent.textContent = `${Math.ceil(time / 1000)}s`;
         }
       }
     });
@@ -628,7 +626,7 @@
     // //news swiper
 
     // official swiper
-    var swiper = new Swiper(".official-swiper", {
+    var officialSwiper = new Swiper(".official-swiper", {
       slidesPerView: 1.2,
       spaceBetween: 20,
       centeredSlides: false,
@@ -652,7 +650,7 @@
     // //official swiper
 
     // academic swiper
-    var swiper = new Swiper(".sort-btn-swiper", {
+    var sortBtnSwiper = new Swiper(".sort-btn-swiper", {
       slidesPerView: 'auto',
       spaceBetween: 6,
       centeredSlides: false,
@@ -709,7 +707,6 @@
       item.addEventListener('mouseover', (e) => {
         document.querySelectorAll('.specialty-swiper .swiper-slide').forEach((item) => {
           item.classList.remove('first'); 
-          // console.log(e.currentTarget);
         })
         e.currentTarget.classList.toggle('first');
       })
@@ -724,7 +721,7 @@
     // SML specialty hover event
 
     // SML specialty swiper
-    var swiper = new Swiper(".specialty-swiper", {
+    var specialtySwiper = new Swiper(".specialty-swiper", {
       slidesPerView: 1,
       spaceBetween: 20,
       centeredSlides: false,
@@ -743,7 +740,7 @@
     // //SML specialty swiper
 
     // SML ABOUT swiper
-    var swiper = new Swiper(".smlAbout-swiper", {
+    var smlAboutSwiper = new Swiper(".smlAbout-swiper", {
       slidesPerView: 1.06,
       spaceBetween: 20,
       centeredSlides: false,
