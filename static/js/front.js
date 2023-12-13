@@ -142,6 +142,19 @@ if (window.console == undefined) { console = { log: () => { } } }
 				}
 			})
 
+			document.querySelector('#searchBtn-1').addEventListener('click', (e) => {
+				if (document.querySelector('.box-header').classList.contains('is-search')) {
+					document.getElementsByTagName('html')[0].style.overflow = "hidden";
+				} else {
+					document.getElementsByTagName('html')[0].style.overflow = "";
+				}
+			})
+
+			document.querySelector('#searchXbtn-1').addEventListener('click', (e) => {
+				document.querySelector('.box-header').classList.remove('is-search');
+				document.getElementsByTagName('html')[0].style.overflow = "";
+			})			
+
 			// PC 햄버거 버튼 클릭 상태에서 resize
 			window.addEventListener('resize', () => {
 				if (window.innerWidth >= 1024) {
