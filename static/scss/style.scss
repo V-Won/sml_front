@@ -562,6 +562,7 @@ input {
 
 // 공통 header type-2 is-hover
 .box-header {
+	&.bg-fff,
 	&.is-hover,
 	&.type-2 {
 		background: #fff;

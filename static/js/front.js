@@ -372,3 +372,12 @@ if (!document.querySelector('body').classList.contains('mobile')) { // mobile
 
 	requestAnimationFrame(raf)
 }
+
+// header bg
+const headerBg = (item) => {
+  const key = item['bg'];
+
+  if (key == 'white') {
+    setTimeout(() => {document.querySelector('.box-header').classList.add('bg-fff')}, 100)
+  }
+}

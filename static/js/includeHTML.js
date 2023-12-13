@@ -8,7 +8,7 @@ function includeHTML() {
 
     if (file) {
       xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
+      xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
           elmnt.innerHTML = this.responseText;
           elmnt.removeAttribute("include-html");
@@ -23,12 +23,3 @@ function includeHTML() {
 }
 
 includeHTML();
-
-// sub page menu select
-// const menuSelectKey = (item) => {
-//   const key = item['depth'];
-
-//   setTimeout(() => {
-//     document.querySelector('[data-include="header"] [data-page="' + key + '"]').classList.add('is-active')
-//   }, 100)
-// }
