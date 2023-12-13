@@ -68,24 +68,37 @@ if (window.console == undefined) { console = { log: () => { } } }
 		_hover: () => {
 			const headerGnb = '.box-header';
 
+			// header 1뎁스 GNB mouseover
 			document.querySelector(headerGnb + ' .gnb-menu').addEventListener('mouseover', (e) => {
 				document.querySelector(headerGnb).classList.add('is-hover');
 				document.querySelector(headerGnb).classList.remove('is-search');
 			})
 
+			// header 검색 mouseover
 			document.querySelector(headerGnb + ' .btn-search').addEventListener('mouseover', (e) => {
 				document.querySelector(headerGnb).classList.add('is-search');
 				document.querySelector(headerGnb).classList.remove('is-hover');
 			})
 
+			// header 언어선택 mouseover
+			document.querySelector(headerGnb + ' .box-lang').addEventListener('mouseover', (e) => {
+				document.querySelector(headerGnb).classList.remove('is-hover');
+				document.querySelector(headerGnb).classList.remove('is-search');
+				document.querySelector(headerGnb).classList.add('is-lang');
+			})
+
+			// header dim mouseover
 			document.querySelector(headerGnb + ' .dim').addEventListener('mouseover', (e) => {
 				document.querySelector(headerGnb).classList.remove('is-hover');
 				document.querySelector(headerGnb).classList.remove('is-search');
+				document.querySelector(headerGnb).classList.remove('is-lang');
 			})
 
+			// header mouseleave
 			document.querySelector(headerGnb).addEventListener('mouseleave', (e) => {
 				document.querySelector(headerGnb).classList.remove('is-hover');
 				document.querySelector(headerGnb).classList.remove('is-search');
+				document.querySelector(headerGnb).classList.remove('is-lang');
 			})
 		},
 		_scroll: () => {

@@ -587,7 +587,7 @@ input {
   padding: 20px 24px;
   border-radius: 12px;
   background: #006477;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   line-height: 120%;
@@ -633,34 +633,34 @@ input {
   white-space: nowrap;
 }
 
-.box-header.bg-fff, .box-header.is-hover, .box-header.is-search, .box-header.type-2 {
+.box-header.bg-fff, .box-header.is-hover, .box-header.is-search, .box-header.is-lang, .box-header.type-2 {
   background: #fff;
   border-bottom: 1px solid #d5d5d5;
-  transition: all 0.2s;
+  transition: none;
 }
-.box-header.bg-fff .inner .logo, .box-header.is-hover .inner .logo, .box-header.is-search .inner .logo, .box-header.type-2 .inner .logo {
+.box-header.bg-fff .inner .logo, .box-header.is-hover .inner .logo, .box-header.is-search .inner .logo, .box-header.is-lang .inner .logo, .box-header.type-2 .inner .logo {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='163' height='60' viewBox='0 0 163 60' fill='none'%3E%3Cg clip-path='url(%23clip0_235_4028)'%3E%3Cpath d='M76.8625 23.5078H74.8164V33.5407H76.8625V29.3357H79.1979V27.5647H76.8625V23.5078Z' fill='%23006477'/%3E%3Cpath d='M68.8209 29.3774C69.5758 31.0001 70.8952 32.2278 72.5603 32.8416L72.6238 32.8628L73.7033 31.2118L73.6045 31.1765C71.2903 30.344 69.7945 28.312 69.7945 25.9978V24.375H67.7273V26.0542C67.7273 28.6083 66.2033 30.7461 63.755 31.6281L63.6562 31.6633L64.7569 33.3355L64.8204 33.3143C66.6831 32.6158 68.0659 31.2541 68.8279 29.3774H68.8209Z' fill='%23006477'/%3E%3Cpath d='M66.1719 40.4413H76.861V34.1055H66.1719V40.4413ZM74.8501 35.82V38.7339H68.2039V35.82H74.8501Z' fill='%23006477'/%3E%3Cpath d='M90.8824 32.5202L90.7413 30.961L90.6566 30.9751C88.9351 31.2149 87.0865 31.3208 85.6472 31.3843V28.2305H83.6152V31.4478C82.4934 31.4619 81.3928 31.4619 80.4191 31.4619H80.3203L80.532 33.134V33.2117H80.6166C83.2766 33.2117 87.2277 33.1411 90.8048 32.5343L90.8824 32.5202Z' fill='%23006477'/%3E%3Cpath d='M88.1108 34.1836C84.5901 34.1836 82.4805 35.3901 82.4805 37.408C82.4805 39.4258 84.583 40.6323 88.1108 40.6323C91.6385 40.6323 93.7763 39.4258 93.7763 37.408C93.7763 35.3901 91.6597 34.1836 88.1108 34.1836ZM88.1108 38.939C85.8601 38.939 84.5689 38.3816 84.5689 37.408C84.5689 36.4343 85.8601 35.8769 88.1108 35.8769C90.3615 35.8769 91.6879 36.4343 91.6879 37.408C91.6879 38.3816 90.3826 38.939 88.1108 38.939Z' fill='%23006477'/%3E%3Cpath d='M87.3684 29.9657L87.3543 30.0575L89.351 30.2409L89.3651 30.1633C89.7673 28.2019 89.7673 26.6849 89.7673 25.5772V24.4766H81.3359V26.2263H87.7494C87.7282 27.2564 87.6647 28.4276 87.3684 29.9587V29.9657Z' fill='%23006477'/%3E%3Cpath d='M93.6493 23.4883H91.582V34.1633H93.6493V29.7112H95.8365V27.9474H93.6493V23.4883Z' fill='%23006477'/%3E%3Cpath d='M102.578 33.0208C105.224 33.0208 107.15 31.271 107.15 28.8581C107.15 26.4451 105.231 24.6953 102.578 24.6953C99.9253 24.6953 98.0273 26.4451 98.0273 28.8581C98.0273 31.271 99.9394 33.0208 102.578 33.0208ZM102.578 26.5227C104.109 26.5227 105.139 27.4611 105.139 28.8581C105.139 30.2551 104.088 31.2005 102.578 31.2005C101.068 31.2005 100.038 30.2409 100.038 28.8581C100.038 27.4752 101.061 26.5227 102.578 26.5227Z' fill='%23006477'/%3E%3Cpath d='M110.907 23.4883H108.84V40.6614H110.907V23.4883Z' fill='%23006477'/%3E%3Cpath d='M107.929 34.7477C104.281 35.3122 99.9421 35.3122 97.3527 35.3122H97.2539L97.515 37.076H97.5855C100.817 37.076 104.556 37.0196 108.084 36.3211L108.162 36.307L108.021 34.7266L107.929 34.7407V34.7477Z' fill='%23006477'/%3E%3Cpath d='M125.121 34.1285H127.548V32.3999H117.684V30.2198H127.181V24.6953H115.638V26.4239H125.156V28.5123H115.673V34.1285H117.861V36.8872H113.867V38.6511H128.952V36.8872H125.121V34.1285ZM123.089 34.1285V36.8872H119.886V34.1285H123.089Z' fill='%23006477'/%3E%3Cpath d='M135.726 27.9887V27.135H138.477V25.3711H130.759V27.135H133.729V27.9887C133.729 31.6293 132.53 34.3528 130.342 35.658L130.258 35.7074L131.514 37.2878L131.577 37.2455C133.087 36.3142 134.167 34.7479 134.787 32.5818C135.451 34.4939 136.509 35.8626 137.927 36.667L137.991 36.7022L139.127 35.1571L139.183 35.0795L139.098 35.0301C136.946 33.88 135.719 31.3118 135.719 27.9816L135.726 27.9887Z' fill='%23006477'/%3E%3Cpath d='M142.89 30.1981H141.253V23.8128H139.312V39.857H141.253V31.969H142.89V40.6473H144.844V23.4883H142.89V30.1981Z' fill='%23006477'/%3E%3Cpath d='M151.708 34.5352H149.641V40.3277H160.901V38.578H151.708V34.5352Z' fill='%23006477'/%3E%3Cpath d='M157.008 32.4549L156.81 30.7263L156.719 30.7475C154.715 31.1849 152.93 31.2696 149.952 31.2907V26.6482H155.406V24.8984H147.906V33.0546H149.324C152.619 33.0546 154.701 32.9629 156.944 32.469L157.022 32.4549H157.008Z' fill='%23006477'/%3E%3Cpath d='M160.245 28.3566V23.4883H158.191V35.9483H160.245V30.1275H162.573V28.3566H160.245Z' fill='%23006477'/%3E%3Cpath d='M8.5301 28.2987C6.37112 27.6284 4.50847 27.0569 4.50847 25.6387C4.50847 24.4605 5.50329 23.8466 7.35183 23.7338C9.99059 23.5715 12.8763 25.5752 12.8763 25.5752L14.492 22.5696C14.492 22.5696 11.564 19.9308 7.53528 20.0014C5.34807 20.0367 3.60536 20.6223 2.23659 21.6524C0.84666 22.6966 0.105833 24.1218 0.105833 25.7657C0.105833 29.7239 3.62653 30.8245 6.72389 31.7911C8.9746 32.4967 10.9219 33.1035 10.9219 34.6909C10.9219 35.9962 9.38382 37.0052 7.33772 37.0334C7.31656 37.0334 7.28833 37.0334 7.26717 37.0334C4.90357 37.0334 2.4412 35.3189 2.4412 35.3189L0 37.88C1.68627 39.6862 4.19097 40.6387 7.40828 40.6387C12.072 40.6387 15.3246 38.1058 15.3246 34.4793C15.3246 30.4083 11.5569 29.237 8.52305 28.3057L8.5301 28.2987Z' fill='%23006477'/%3E%3Cpath d='M32.8288 19.9805C30.9944 19.9805 29.287 20.7425 28.2498 22.0125C27.2126 20.7354 25.5052 19.9805 23.6708 19.9805C19.9173 19.9805 17.3984 22.5698 17.3984 26.4221V40.4062H21.6741V26.4504C21.6741 24.7359 22.4855 23.7552 23.8966 23.7552C25.3077 23.7552 26.119 24.7359 26.119 26.4504V40.4062H30.3947V26.4504C30.3947 24.7359 31.2061 23.7552 32.6172 23.7552C34.0283 23.7552 34.8396 24.7359 34.8396 26.4504V40.4062H39.1153V26.4221C39.1153 22.5698 36.5965 19.9805 32.8429 19.9805H32.8288Z' fill='%23006477'/%3E%3Cpath d='M43.7733 40.3912H55.9299C56.3603 39.2059 56.7201 37.9853 56.9953 36.7294H46.7366V20.2266H42.4609V39.0295C42.4609 39.9044 42.9337 40.3841 43.7733 40.3841V40.3912Z' fill='%23006477'/%3E%3Cpath d='M27.9552 3.88053C33.8888 3.83114 39.7308 5.84196 44.3804 9.53904C46.37 11.1195 48.3032 13.2361 49.6438 15.1411H54.2087C48.4867 5.40451 38.7219 0 28.1668 0H27.9269C17.2661 0.0917215 7.2896 5.8984 1.90625 15.5221H6.44999C11.3888 8.15616 19.3616 3.95108 27.9552 3.88053Z' fill='url(%23paint0_linear_235_4028)'/%3E%3Cpath d='M28.3778 56.1181C22.4441 56.1675 13.1167 53.9733 6.6821 44.8646C6.6821 44.8717 2.11719 44.8646 2.11719 44.8646C7.42998 54.2484 17.604 59.9987 28.1661 59.9987H28.406C39.0598 59.914 49.0222 54.1073 54.4408 44.4766C54.4338 44.4766 49.8759 44.4907 49.8759 44.4766C45.3533 51.4756 36.9643 56.0546 28.3707 56.1252L28.3778 56.1181Z' fill='url(%23paint1_linear_235_4028)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_235_4028' x1='42.5671' y1='29.104' x2='8.25621' y2='-5.20696' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.07' stop-color='white' stop-opacity='0'/%3E%3Cstop offset='0.18' stop-color='%23B4D1D7' stop-opacity='0.29'/%3E%3Cstop offset='0.3' stop-color='%2373AAB4' stop-opacity='0.55'/%3E%3Cstop offset='0.42' stop-color='%23408B99' stop-opacity='0.75'/%3E%3Cstop offset='0.56' stop-color='%231C7586' stop-opacity='0.89'/%3E%3Cstop offset='0.7' stop-color='%2306687A' stop-opacity='0.97'/%3E%3Cstop offset='0.88' stop-color='%23006477'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_235_4028' x1='13.7588' y1='30.9018' x2='48.0697' y2='65.2056' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.07' stop-color='white' stop-opacity='0'/%3E%3Cstop offset='0.18' stop-color='%23B4D1D7' stop-opacity='0.29'/%3E%3Cstop offset='0.3' stop-color='%2373AAB4' stop-opacity='0.55'/%3E%3Cstop offset='0.42' stop-color='%23408B99' stop-opacity='0.75'/%3E%3Cstop offset='0.56' stop-color='%231C7586' stop-opacity='0.89'/%3E%3Cstop offset='0.7' stop-color='%2306687A' stop-opacity='0.97'/%3E%3Cstop offset='0.88' stop-color='%23006477'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_235_4028'%3E%3Crect width='163' height='60' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 }
-.box-header.bg-fff .inner .gnb-menu li a, .box-header.is-hover .inner .gnb-menu li a, .box-header.is-search .inner .gnb-menu li a, .box-header.type-2 .inner .gnb-menu li a {
+.box-header.bg-fff .inner .gnb-menu li a, .box-header.is-hover .inner .gnb-menu li a, .box-header.is-search .inner .gnb-menu li a, .box-header.is-lang .inner .gnb-menu li a, .box-header.type-2 .inner .gnb-menu li a {
   transition: all 0.2s;
   color: #000 !important;
   font-weight: 600 !important;
 }
-.box-header.bg-fff .inner .gnb-menu li a:hover, .box-header.bg-fff .inner .gnb-menu li a.is-active, .box-header.is-hover .inner .gnb-menu li a:hover, .box-header.is-hover .inner .gnb-menu li a.is-active, .box-header.is-search .inner .gnb-menu li a:hover, .box-header.is-search .inner .gnb-menu li a.is-active, .box-header.type-2 .inner .gnb-menu li a:hover, .box-header.type-2 .inner .gnb-menu li a.is-active {
+.box-header.bg-fff .inner .gnb-menu li a:hover, .box-header.bg-fff .inner .gnb-menu li a.is-active, .box-header.is-hover .inner .gnb-menu li a:hover, .box-header.is-hover .inner .gnb-menu li a.is-active, .box-header.is-search .inner .gnb-menu li a:hover, .box-header.is-search .inner .gnb-menu li a.is-active, .box-header.is-lang .inner .gnb-menu li a:hover, .box-header.is-lang .inner .gnb-menu li a.is-active, .box-header.type-2 .inner .gnb-menu li a:hover, .box-header.type-2 .inner .gnb-menu li a.is-active {
   color: #006477 !important;
   font-size: 700 !important;
 }
-.box-header.bg-fff .inner .btn-etc .box-lang .btn-lang, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang, .box-header.is-search .inner .btn-etc .box-lang .btn-lang, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang {
+.box-header.bg-fff .inner .btn-etc .box-lang .btn-lang, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang, .box-header.is-search .inner .btn-etc .box-lang .btn-lang, .box-header.is-lang .inner .btn-etc .box-lang .btn-lang, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang {
   color: #000 !important;
   transition: all 0.3s ease-in-out;
 }
-.box-header.bg-fff .inner .btn-etc .box-lang .btn-lang::after, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang::after, .box-header.is-search .inner .btn-etc .box-lang .btn-lang::after, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang::after {
+.box-header.bg-fff .inner .btn-etc .box-lang .btn-lang::after, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang::after, .box-header.is-search .inner .btn-etc .box-lang .btn-lang::after, .box-header.is-lang .inner .btn-etc .box-lang .btn-lang::after, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_235_4059)'%3E%3Cpath d='M14 8L10 12L6 8' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_235_4059'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") !important;
 }
-.box-header.bg-fff .inner .btn-etc .btn-search, .box-header.is-hover .inner .btn-etc .btn-search, .box-header.is-search .inner .btn-etc .btn-search, .box-header.type-2 .inner .btn-etc .btn-search {
+.box-header.bg-fff .inner .btn-etc .btn-search, .box-header.is-hover .inner .btn-etc .btn-search, .box-header.is-search .inner .btn-etc .btn-search, .box-header.is-lang .inner .btn-etc .btn-search, .box-header.type-2 .inner .btn-etc .btn-search {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M11.2152 11.2094L15.75 15.75M12.75 7.5C12.75 10.3995 10.3995 12.75 7.5 12.75C4.60051 12.75 2.25 10.3995 2.25 7.5C2.25 4.60051 4.60051 2.25 7.5 2.25C10.3995 2.25 12.75 4.60051 12.75 7.5Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
-.box-header.bg-fff .inner .btn-etc .btn-menu .hamburger .line, .box-header.is-hover .inner .btn-etc .btn-menu .hamburger .line, .box-header.is-search .inner .btn-etc .btn-menu .hamburger .line, .box-header.type-2 .inner .btn-etc .btn-menu .hamburger .line {
+.box-header.bg-fff .inner .btn-etc .btn-menu .hamburger .line, .box-header.is-hover .inner .btn-etc .btn-menu .hamburger .line, .box-header.is-search .inner .btn-etc .btn-menu .hamburger .line, .box-header.is-lang .inner .btn-etc .btn-menu .hamburger .line, .box-header.type-2 .inner .btn-etc .btn-menu .hamburger .line {
   background-color: #000;
 }
 
@@ -1876,7 +1876,7 @@ input {
     padding-left: 100px;
     padding-right: 100px;
     position: relative;
-    z-index: 110;
+    z-index: 2200;
   }
   .box-header .inner-gap-1 .inner {
     padding-left: 0;
@@ -1906,17 +1906,30 @@ input {
   }
   .box-header .inner-gap-1 .inner .btn-etc {
     padding-top: 11px;
+    gap: 8px;
   }
   .box-header .inner-gap-1 .inner .btn-etc .box-lang {
+    display: block;
+    position: relative;
+  }
+  .box-header .inner-gap-1 .inner .btn-etc .box-lang:hover .btn-lang {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .box-header .inner-gap-1 .inner .btn-etc .box-lang:hover .btn-lang::after {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+  .box-header .inner-gap-1 .inner .btn-etc .box-lang:hover > ul {
     display: block;
   }
   .box-header .inner-gap-1 .inner .btn-etc .box-lang .btn-lang {
     position: relative;
     display: flex;
-    padding: 9px 41px 9px 15px;
+    padding: 9px 45px 9px 17px;
     align-items: center;
     gap: 6px;
-    border-radius: 999px;
+    border-radius: 18px;
     border: 1px solid #d5d5d5;
     color: var(--primary-5, #fff);
     text-align: right;
@@ -1925,6 +1938,7 @@ input {
     font-style: normal;
     font-weight: 600;
     line-height: 16.8px;
+    transition: none;
   }
   .box-header .inner-gap-1 .inner .btn-etc .box-lang .btn-lang::after {
     content: "";
@@ -1937,6 +1951,33 @@ input {
     height: 20px;
     background-size: contain;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_246_5023)'%3E%3Cpath d='M14 8L10 12L6 8' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_246_5023'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  }
+  .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    padding: 3px 0 5px 0;
+    border-radius: 18px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: 1px solid #d5d5d5;
+    border-top: 0;
+    background: #fff;
+  }
+  .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li > a {
+    padding: 3px 0 3px 17px;
+    display: block;
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: -0.28px;
+  }
+  .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li > a:hover {
+    color: #000;
+    font-weight: 600;
   }
   .box-header .inner-gap-1 .inner .btn-etc .btn-menu {
     display: none;
@@ -1952,18 +1993,24 @@ input {
     display: none;
     transition: all 0.2s;
   }
+  .box-header .menu-list .inner-gap-1 {
+    height: auto;
+  }
   .box-header .menu-list .inner-gap-1 > ul {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-shrink: 0;
     padding-left: 18px;
+    padding-bottom: 143px;
     overflow: hidden;
   }
   .box-header .menu-list .inner-gap-1 > ul > li {
     width: 260px;
-    padding: 60px 24px;
+    padding: 60px 24px 0 24px;
+    margin-bottom: 0;
     flex-shrink: 0;
+    border-bottom: 0;
   }
   .box-header .menu-list .inner-gap-1 > ul > li.mo-order > ul > li:nth-child(1) {
     order: 1;
@@ -1998,6 +2045,9 @@ input {
     line-height: 26.4px;
     letter-spacing: -0.44px;
     position: static;
+  }
+  .box-header .menu-list .inner-gap-1 > ul > li h3::after {
+    display: none;
   }
   .box-header .menu-list .inner-gap-1 > ul > li h3:hover {
     cursor: initial;
@@ -2054,6 +2104,9 @@ input {
     position: absolute;
     top: 14px;
     left: 9px;
+  }
+  .box-header .menu-list .logo {
+    display: none;
   }
   .box-header .dim {
     opacity: 0;
