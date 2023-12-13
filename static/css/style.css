@@ -554,6 +554,7 @@ input {
   position: absolute;
   top: 28px;
   right: 20px;
+  z-index: 3000;
 }
 .box-header .search-wrap .inner-gap-1 {
   padding-top: 88px;
@@ -599,14 +600,6 @@ input {
   height: 18px;
   position: relative;
   font-size: 0;
-  padding: 20px 24px;
-  border-radius: 12px;
-  background: #006477;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 120%;
-  letter-spacing: -0.4px;
 }
 .box-header .search-wrap .input-wrap .search-btn span::before {
   content: "";

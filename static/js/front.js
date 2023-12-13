@@ -84,6 +84,15 @@ if (window.console == undefined) { console = { log: () => { } } }
 			document.querySelector(headerGnb + ' .btn-search').addEventListener('mouseover', (e) => {
 				headerRemoveClass();
 				document.querySelector(headerGnb).classList.add('is-search');
+				
+				if (document.querySelector('body').classList.contains('mobile')) { // mobile
+					if (document.querySelector('.box-header').classList.contains('is-search')) {
+						// mo 분기 필요.
+						document.getElementsByTagName('html')[0].style.overflow = "hidden";
+					} else {
+						document.getElementsByTagName('html')[0].style.overflow = "";
+					}
+				}
 			})
 
 			// 언어선택 mouseover
@@ -136,14 +145,6 @@ if (window.console == undefined) { console = { log: () => { } } }
 			document.querySelector('#hamburger-1').addEventListener('click', (e) => {
 				document.querySelector('.box-header').classList.toggle('is-menuOpen');
 				if (document.querySelector('.box-header').classList.contains('is-menuOpen')) {
-					document.getElementsByTagName('html')[0].style.overflow = "hidden";
-				} else {
-					document.getElementsByTagName('html')[0].style.overflow = "";
-				}
-			})
-
-			document.querySelector('#searchBtn-1').addEventListener('click', (e) => {
-				if (document.querySelector('.box-header').classList.contains('is-search')) {
 					document.getElementsByTagName('html')[0].style.overflow = "hidden";
 				} else {
 					document.getElementsByTagName('html')[0].style.overflow = "";
