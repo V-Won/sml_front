@@ -70,14 +70,22 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			document.querySelector(headerGnb + ' .gnb-menu').addEventListener('mouseover', (e) => {
 				document.querySelector(headerGnb).classList.add('is-hover');
+				document.querySelector(headerGnb).classList.remove('is-search');
+			})
+
+			document.querySelector(headerGnb + ' .btn-search').addEventListener('mouseover', (e) => {
+				document.querySelector(headerGnb).classList.add('is-search');
+				document.querySelector(headerGnb).classList.remove('is-hover');
 			})
 
 			document.querySelector(headerGnb + ' .dim').addEventListener('mouseover', (e) => {
 				document.querySelector(headerGnb).classList.remove('is-hover');
+				document.querySelector(headerGnb).classList.remove('is-search');
 			})
 
 			document.querySelector(headerGnb).addEventListener('mouseleave', (e) => {
 				document.querySelector(headerGnb).classList.remove('is-hover');
+				document.querySelector(headerGnb).classList.remove('is-search');
 			})
 		},
 		_scroll: () => {
