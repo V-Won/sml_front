@@ -68,37 +68,38 @@ if (window.console == undefined) { console = { log: () => { } } }
 		_hover: () => {
 			const headerGnb = '.box-header';
 
-			// header 1뎁스 GNB mouseover
+			const headerRemoveClass = () => {
+				document.querySelector(headerGnb).classList.remove('is-hover');
+				document.querySelector(headerGnb).classList.remove('is-search');
+				document.querySelector(headerGnb).classList.remove('is-lang');
+			}
+
+			// 1뎁스 GNB mouseover
 			document.querySelector(headerGnb + ' .gnb-menu').addEventListener('mouseover', (e) => {
+				headerRemoveClass();
 				document.querySelector(headerGnb).classList.add('is-hover');
-				document.querySelector(headerGnb).classList.remove('is-search');
 			})
 
-			// header 검색 mouseover
+			// 검색 mouseover
 			document.querySelector(headerGnb + ' .btn-search').addEventListener('mouseover', (e) => {
+				headerRemoveClass();
 				document.querySelector(headerGnb).classList.add('is-search');
-				document.querySelector(headerGnb).classList.remove('is-hover');
 			})
 
-			// header 언어선택 mouseover
+			// 언어선택 mouseover
 			document.querySelector(headerGnb + ' .box-lang').addEventListener('mouseover', (e) => {
-				document.querySelector(headerGnb).classList.remove('is-hover');
-				document.querySelector(headerGnb).classList.remove('is-search');
+				headerRemoveClass();
 				document.querySelector(headerGnb).classList.add('is-lang');
 			})
 
-			// header dim mouseover
-			document.querySelector(headerGnb + ' .dim').addEventListener('mouseover', (e) => {
-				document.querySelector(headerGnb).classList.remove('is-hover');
-				document.querySelector(headerGnb).classList.remove('is-search');
-				document.querySelector(headerGnb).classList.remove('is-lang');
+			// mouseleave
+			document.querySelector(headerGnb).addEventListener('mouseleave', (e) => {
+				headerRemoveClass();
 			})
 
-			// header mouseleave
-			document.querySelector(headerGnb).addEventListener('mouseleave', (e) => {
-				document.querySelector(headerGnb).classList.remove('is-hover');
-				document.querySelector(headerGnb).classList.remove('is-search');
-				document.querySelector(headerGnb).classList.remove('is-lang');
+			// dim mouseover
+			document.querySelector(headerGnb + ' .dim').addEventListener('mouseover', (e) => {
+				headerRemoveClass();
 			})
 		},
 		_scroll: () => {
