@@ -81,11 +81,20 @@ if (window.console == undefined) { console = { log: () => { } } }
 			})
 		},
 		_scroll: () => {
-			window.addEventListener('scroll', () => {
+			const boxHeader = document.querySelector('.box-header');
+
+			const scrollSet = () => {
 				if (window.scrollY > 100) {
-					document.querySelector('.box-header').classList.add('type-2');
-				} else
-					document.querySelector('.box-header').classList.remove('type-2');
+					boxHeader.classList.add('type-2');
+				} else {
+					boxHeader.classList.remove('type-2');
+				}
+			}
+
+			scrollSet();
+
+			window.addEventListener('scroll', () => {
+				scrollSet();
 			})
 		},
 		_click: () => {
@@ -113,7 +122,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			// PC 햄버거 버튼 클릭 상태에서 resize
 			window.addEventListener('resize', () => {
-				if( window.innerWidth >= 1024){
+				if (window.innerWidth >= 1024) {
 					document.getElementsByTagName('html')[0].style.overflow = "";
 				}
 			})
@@ -342,12 +351,12 @@ if (window.console == undefined) { console = { log: () => { } } }
  * front.js 하단에 위치
  */
 //  XMLHttpRequest js 에서 가져오는 DOM 관련 이벤트는 onload에 넣기.
-window.onload = () => {
+window.addEventListener('load', () => {
 	setTimeout(() => {
 		header.initialize();
 		footer.initialize();
 	}, 100)
-}
+})
 
 // 공통 js 호출
 device.initialize();
