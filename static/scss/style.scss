@@ -896,7 +896,8 @@ input {
 						padding: 12px 20px;
 						background: #F7F7F7;
 						font-size: 14px;
-						font-weight: 500;
+						font-weight: 600;
+						color: #666;
 						line-height: 14px;
 						letter-spacing: -0.28px;
 						text-transform: uppercase;
@@ -916,10 +917,10 @@ input {
 					ul {
 						display: none;
 						width: 100%;
-						padding: 12px 20px;
-						max-height: 205px;
+						padding: 12px 20px 0;
+						max-height: 195px;
 						position: absolute;
-						bottom: 30px;
+						bottom: 40px;
 						left: 0;
 						right: 0;
 						border-radius: 4px 4px 0 0;
@@ -943,6 +944,11 @@ input {
 							width: 100%;
 							& + li {
 								margin-top: 12px;
+							}
+							&:hover {
+								a {
+									color: #666;
+								}
 							}
 							a {
 								width: 100%;
@@ -2530,6 +2536,9 @@ input {
 					margin-top: 14px;
 					.ft-select {
 						width: 200px;
+						.button {
+							font-weight: 500;
+						}
 						ul {
 							display: none;
 						}
