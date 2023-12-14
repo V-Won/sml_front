@@ -19,8 +19,8 @@
   <div class="box-wrap">
     <!-- inner-wrap -->
     <div class="inner-wrap" style="padding-top: 132px;">
-      <div class="form-wrap">
-        <div class="inner-gap-1">
+      <div class="inner-gap-1">
+        <div class="form-wrap">
           <div class="form-tit">
             <p class="title">기본 정보</p>
             <p class="require-noti">*표시는 필수 입력 항목입니다.</p>
@@ -31,6 +31,11 @@
                 <label class="input-label">분야<span class="require">필수 입력 항목</span></label>
               </div>
               <div class="input-wrap">
+                <!-- 
+                  common-selectbox-2 
+                  비활성화 시 disabled 클래스 추가
+                  에러 시 error 클래스 추가
+                -->
                 <div class="common-selectbox-2">
                   <button class="btn">선택</button>
                   <ul class="list">
@@ -42,7 +47,17 @@
                   </ul>
                 </div>
                 <div class="common-selectbox-2 disabled">
-                  <button class="btn">선택</button>
+                  <button class="btn">Disabled</button>
+                  <ul class="list">
+                    <li><button>Placeholder 01</button></li>
+                    <li><button>Placeholder 02</button></li>
+                    <li><button>Placeholder 03</button></li>
+                    <li><button>Placeholder 04</button></li>
+                    <li><button>Placeholder 05</button></li>
+                  </ul>
+                </div>
+                <div class="common-selectbox-2 error">
+                  <button class="btn">Error</button>
                   <ul class="list">
                     <li><button>Placeholder 01</button></li>
                     <li><button>Placeholder 02</button></li>
@@ -58,7 +73,9 @@
                 <label class="input-label" for="form-1">기관명<span class="require">필수 입력 항목</span></label>
               </div>
               <div class="input-wrap">
-                <input type="text" id="form-1" class="input" placeholder="기관명을 입력해주세요.">
+                <input type="text" id="form-1" class="common-input-2" placeholder="기관명을 입력해주세요.">
+                <input type="text" id="form-1" class="common-input-2" placeholder="기관명을 입력해주세요." disabled>
+                <input type="text" id="form-1" class="common-input-2 error" placeholder="기관명을 입력해주세요." value="Error">
               </div>
             </div>
             <div class="form-item">
@@ -66,7 +83,7 @@
                 <label class="input-label" for="form-2">소속</label>
               </div>
               <div class="input-wrap">
-                <input type="text" id="form-2" class="input" placeholder="소속을 입력해주세요.">
+                <input type="text" id="form-2" class="common-input-2" placeholder="소속을 입력해주세요.">
               </div>
             </div>
             <div class="form-item">
@@ -74,7 +91,7 @@
                 <label class="input-label" for="form-3">이름<span class="require">필수 입력 항목</span></label>
               </div>
               <div class="input-wrap">
-                <input type="text" id="form-3" class="input" placeholder="이름을 입력해주세요.">
+                <input type="text" id="form-3" class="common-input-2" placeholder="이름을 입력해주세요.">
               </div>
             </div>
             <div class="form-item">
@@ -82,7 +99,7 @@
                 <label class="input-label" for="form-4">연락처<span class="require">필수 입력 항목</span></label>
               </div>
               <div class="input-wrap">
-                <input type="text" id="form-4" class="input" placeholder="연락처를 입력해주세요.">
+                <input type="text" id="form-4" class="common-input-2" placeholder="연락처를 입력해주세요.">
               </div>
             </div>
             <div class="form-item">
@@ -90,7 +107,7 @@
                 <label class="input-label" for="form-5">E-mail<span class="require">필수 입력 항목</span></label>
               </div>
               <div class="input-wrap">
-                <input type="text" id="form-5" class="input" placeholder="E-mail을 입력해주세요.">
+                <input type="text" id="form-5" class="common-input-2" placeholder="E-mail을 입력해주세요.">
               </div>
             </div>
           </div>

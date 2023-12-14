@@ -1279,7 +1279,6 @@ input {
 .form-wrap {
 	width: 100%;
 	position: relative;
-	padding: 12px;
 	.form-tit {
 		width: 100%;
 		position: relative;
@@ -1307,6 +1306,7 @@ input {
 	.form-inner {
 		width: 100%;
 		position: relative;
+		padding: 0 12px;
 		.form-item {
 			width: 100%;
 			position: relative;
@@ -1325,7 +1325,9 @@ input {
 					letter-spacing: -0.28px;
 					position: relative;
 					> span {
+						display: inline-block;
 						font-size: 0;
+						height: 0;
 						&::after {
 							content: '*';
 							display: inline-block;
@@ -1343,6 +1345,9 @@ input {
 				width: 100%;
 				position: relative;
 			}
+			& + .form-item {
+				margin-top: 20px;
+			}
 		}
 	}
 	& + .form-wrap {
@@ -1351,6 +1356,7 @@ input {
 }
 
 // 공통 Component style
+// common-selectbox-2
 .common-selectbox-2 {
 	width: 100%;
 	position: relative;
@@ -1358,7 +1364,7 @@ input {
 		@include text-line-1;
 		white-space: nowrap;
 		width: 100%;
-		min-height: 49px;
+		height: 49px;
 		position: relative;
 		padding: 16px 50px 16px 24px;
 		border-radius: 6px;
@@ -1431,12 +1437,13 @@ input {
 		}
 	}
 	& + .common-selectbox-2 {
-		margin-top: 12px;
+		margin-top: 8px;
 	}
 	&.disabled {
 		.btn {
 			background: #F4F4F4;
 			color: #999;
+			pointer-events: none;
 			&::after {
 				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M2 5.5L8 11.5L14 5.5' stroke='%23999999' stroke-width='2'/%3E%3C/svg%3E");
 			}
@@ -1446,6 +1453,53 @@ input {
 				display: none;
 			}
 		}
+	}
+	&.error {
+		.btn {
+			border: 1px solid #006477;
+			background: #FAFAFA;
+			color: #006477;
+		}
+	}
+}
+
+// common-input-2 
+.common-input-2 {
+	width: 100%;
+	height: 49px;
+	position: relative;
+	padding: 16px;
+	border: 1px solid #D5D5D5;
+	background: #FAFAFA;
+	border-radius: 6px;
+	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 120%;
+	letter-spacing: -0.28px;
+	&::placeholder {
+		color: #666;
+	}
+	&:focus {
+		border: 1px solid #000;
+	}
+	&:disabled {
+		background: #F4F4F4;
+		color: #999;
+		pointer-events: none;
+		&::placeholder {
+			color: #999;
+		}
+	}
+	&.error {
+		border: 1px solid #006477;
+		color: #006477;
+		&::placeholder {
+			color: #006477;
+		}
+	}
+	& + .common-input-2 {
+		margin-top: 8px;
 	}
 }
 
