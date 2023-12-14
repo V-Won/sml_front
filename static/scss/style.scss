@@ -572,16 +572,25 @@ input {
 		display: none;
 		transition: all 0.2s;
 		.x-btn {
-			width: 16px;
-			height: 16px;
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Crect x='15.5576' y='14.1421' width='2' height='20' transform='rotate(135 15.5576 14.1421)' fill='white'/%3E%3Crect x='1.8584' y='15.5564' width='2' height='20' transform='rotate(-135 1.8584 15.5564)' fill='white'/%3E%3C/svg%3E");
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: contain;
+			width: 36px;
+			height: 36px;
 			position: absolute;
-			top: 28px;
+			top: 18px;
 			right: 20px;
 			z-index: 3000;
+			&::after {
+				content: '';
+				width: 16px;
+				height: 16px;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Crect x='15.5576' y='14.1421' width='2' height='20' transform='rotate(135 15.5576 14.1421)' fill='white'/%3E%3Crect x='1.8584' y='15.5564' width='2' height='20' transform='rotate(-135 1.8584 15.5564)' fill='white'/%3E%3C/svg%3E");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
 		}
 		.inner-gap-1 {
 			padding-top: 88px;
@@ -1221,17 +1230,30 @@ input {
 	top: 100%;
 	left: 0;
 	right: 0;
-	background: #fff;
-	border: 1px solid #ccc;
+	background: #FEFEFE;
 	left: -1px;
 	right: -1px;
 	margin-top: -1px;
-	border-radius: 4px;
+	border: 1px solid #D5D5D5;
+	border-radius: 0 0 12px 12px;
+	> li {
+		& + li {
+			border-top: 1px solid #AACBD2;
+		}
+	}
 }
 .common-selectbox > ul > li button {
-	padding: 10px;
+	padding: 13.5px 12px;
 	width: 100%;
 	text-align: left;
+	color: #666;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 120%;
+	background: transparent;
+	&:hover {
+		background: #F4F4F4;
+	}
 }
 
 .common-selectbox.is-active {

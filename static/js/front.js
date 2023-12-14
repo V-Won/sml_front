@@ -398,16 +398,16 @@ window.addEventListener('load', () => {
 device.initialize();
 
 // body scroll smooth
-if (!document.querySelector('body').classList.contains('mobile')) { // mobile
-	const lenis = new Lenis()
+// if (!document.querySelector('body').classList.contains('mobile')) { // mobile
+// 	const lenis = new Lenis()
 
-	function raf(time) {
-		lenis.raf(time)
-		requestAnimationFrame(raf)
-	}
+// 	function raf(time) {
+// 		lenis.raf(time)
+// 		requestAnimationFrame(raf)
+// 	}
 
-	requestAnimationFrame(raf)
-}
+// 	requestAnimationFrame(raf)
+// }
 
 // header bg
 const headerBg = (item) => {
