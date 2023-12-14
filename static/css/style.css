@@ -522,7 +522,7 @@ input {
   height: 100%;
 }
 .box-header .search-wrap .tit {
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
   font-weight: 600;
   line-height: 120%;
@@ -814,7 +814,7 @@ input {
   border-radius: 4px;
   border: 1px solid #c5c5c5;
   padding: 12px 20px;
-  background: #F7F7F7;
+  background: #f7f7f7;
   font-size: 14px;
   font-weight: 600;
   color: #666;
@@ -844,9 +844,9 @@ input {
   left: 0;
   right: 0;
   border-radius: 4px 4px 0 0;
-  border: 1px solid #C5C5C5;
+  border: 1px solid #c5c5c5;
   border-bottom: none;
-  background: #F7F7F7;
+  background: #f7f7f7;
   z-index: 2;
   overflow-y: auto;
 }
@@ -885,10 +885,10 @@ input {
   margin-top: 8px;
 }
 .box-footer .inner .ft-bottom .right .ft-select.family .button {
-  background: #EAEAEA;
+  background: #eaeaea;
 }
 .box-footer .inner .ft-bottom .right .ft-select.family ul {
-  background: #EAEAEA;
+  background: #eaeaea;
 }
 .box-footer .inner .ft-bottom .right .ft-select.is-active .button {
   border-top: none;
@@ -1111,29 +1111,26 @@ input {
   top: 100%;
   left: 0;
   right: 0;
-  background: #FEFEFE;
   left: -1px;
   right: -1px;
-  margin-top: -1px;
-  border: 1px solid #D5D5D5;
+  margin-top: 1px;
+  border: 1px solid #33848e;
   border-radius: 0 0 12px 12px;
-}
-.common-selectbox > ul > li + li {
-  border-top: 1px solid #AACBD2;
+  background: #2f808a;
 }
 
 .common-selectbox > ul > li button {
-  padding: 13.5px 12px;
+  padding: 14px 12px;
   width: 100%;
   text-align: left;
-  color: #666;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
   background: transparent;
 }
 .common-selectbox > ul > li button:hover {
-  background: #F4F4F4;
+  background: #499ba5;
 }
 
 .common-selectbox.is-active {
@@ -1252,7 +1249,7 @@ input {
   position: relative;
   padding: 16px 50px 16px 24px;
   border-radius: 6px;
-  border: 1px solid #D5D5D5;
+  border: 1px solid #d5d5d5;
   color: #333;
   font-size: 14px;
   text-align: left;
@@ -1316,7 +1313,7 @@ input {
   margin-top: 8px;
 }
 .common-selectbox-2.disabled .btn {
-  background: #F4F4F4;
+  background: #f4f4f4;
   color: #999;
   pointer-events: none;
 }
@@ -2133,6 +2130,13 @@ input {
   .common-selectbox > button {
     padding-bottom: 16px;
   }
+  .common-selectbox > button::after {
+    width: 17px;
+    height: 17px;
+    background-size: 100%;
+    right: 15px;
+    transform: translate(0, -57%) rotate(0deg);
+  }
   .box-header .inner-gap-1 {
     padding-left: 100px;
     padding-right: 100px;
@@ -2430,7 +2434,7 @@ input {
     padding: 20px 24px;
     border-radius: 12px;
     background: #006477;
-    color: #FFF;
+    color: #fff;
     font-size: 20px;
     font-weight: 600;
     line-height: 120%;

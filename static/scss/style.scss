@@ -567,7 +567,7 @@ input {
 			height: 100%;
 		}
 		.tit {
-			color: #FFF;
+			color: #fff;
 			font-size: 22px;
 			font-weight: 600;
 			line-height: 120%;
@@ -630,7 +630,7 @@ input {
 					min-height: 30px;
 					padding: 8px 20px;
 					border-radius: 999px;
-					background: rgba(217, 217, 217, 0.20);
+					background: rgba(217, 217, 217, 0.2);
 					color: #fff;
 					text-align: center;
 					font-size: 12px;
@@ -904,7 +904,7 @@ input {
 						border-radius: 4px;
 						border: 1px solid #c5c5c5;
 						padding: 12px 20px;
-						background: #F7F7F7;
+						background: #f7f7f7;
 						font-size: 14px;
 						font-weight: 600;
 						color: #666;
@@ -934,9 +934,9 @@ input {
 						left: 0;
 						right: 0;
 						border-radius: 4px 4px 0 0;
-						border: 1px solid #C5C5C5;
+						border: 1px solid #c5c5c5;
 						border-bottom: none;
-						background: #F7F7F7;
+						background: #f7f7f7;
 						z-index: 2;
 						overflow-y: auto;
 						&::-webkit-scrollbar {
@@ -976,10 +976,10 @@ input {
 					&.family {
 						margin-top: 8px;
 						.button {
-							background: #EAEAEA;
+							background: #eaeaea;
 						}
 						ul {
-							background: #EAEAEA;
+							background: #eaeaea;
 						}
 					}
 					&.is-active {
@@ -1231,29 +1231,24 @@ input {
 	top: 100%;
 	left: 0;
 	right: 0;
-	background: #FEFEFE;
 	left: -1px;
 	right: -1px;
-	margin-top: -1px;
-	border: 1px solid #D5D5D5;
+	margin-top: 1px;
+	border: 1px solid #33848e;
 	border-radius: 0 0 12px 12px;
-	> li {
-		& + li {
-			border-top: 1px solid #AACBD2;
-		}
-	}
+	background: #2f808a;
 }
 .common-selectbox > ul > li button {
-	padding: 13.5px 12px;
+	padding: 14px 12px;
 	width: 100%;
 	text-align: left;
-	color: #666;
+	color: #fff;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 120%;
 	background: transparent;
 	&:hover {
-		background: #F4F4F4;
+		background: #499ba5;
 	}
 }
 
@@ -1329,7 +1324,7 @@ input {
 						font-size: 0;
 						height: 0;
 						&::after {
-							content: '*';
+							content: "*";
 							display: inline-block;
 							color: #006477;
 							font-size: 14px;
@@ -1368,7 +1363,7 @@ input {
 		position: relative;
 		padding: 16px 50px 16px 24px;
 		border-radius: 6px;
-		border: 1px solid #D5D5D5;
+		border: 1px solid #d5d5d5;
 		color: #333;
 		font-size: 14px;
 		text-align: left;
@@ -1376,7 +1371,7 @@ input {
 		line-height: 120%;
 		letter-spacing: -0.28px;
 		&::after {
-			content: '';
+			content: "";
 			width: 16px;
 			height: 16px;
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M2 5.5L8 11.5L14 5.5' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
@@ -1441,7 +1436,7 @@ input {
 	}
 	&.disabled {
 		.btn {
-			background: #F4F4F4;
+			background: #f4f4f4;
 			color: #999;
 			pointer-events: none;
 			&::after {
@@ -2283,6 +2278,13 @@ input {
 	// 공통 common-selectbox
 	.common-selectbox > button {
 		padding-bottom: 16px;
+		&::after {
+			width: 17px;
+			height: 17px;
+			background-size: 100%;
+			right:15px;
+			transform: translate(0, -57%) rotate(0deg);
+		}
 	}
 
 	// 공통 header
@@ -2384,7 +2386,7 @@ input {
 							background: #fff;
 							> li {
 								> a {
-									padding:3px 0 3px 17px;
+									padding: 3px 0 3px 17px;
 									display: block;
 									color: #555;
 									font-size: 14px;
@@ -2602,7 +2604,7 @@ input {
 					padding: 20px 24px;
 					border-radius: 12px;
 					background: #006477;
-					color: #FFF;
+					color: #fff;
 					font-size: 20px;
 					font-weight: 600;
 					line-height: 120%;
@@ -2610,7 +2612,7 @@ input {
 					span {
 						padding-left: 27px;
 						&::before {
-							content: '';
+							content: "";
 							width: 20px;
 							height: 20px;
 							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M12.4614 12.4549L17.5 17.5M14.1667 8.33333C14.1667 11.555 11.555 14.1667 8.33333 14.1667C5.11167 14.1667 2.5 11.555 2.5 8.33333C2.5 5.11167 5.11167 2.5 8.33333 2.5C11.555 2.5 14.1667 5.11167 14.1667 8.33333Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -2644,7 +2646,7 @@ input {
 						text-align: center;
 						font-size: 14px;
 						font-weight: 600;
-						line-height: 36px; 
+						line-height: 36px;
 						white-space: nowrap;
 					}
 				}
@@ -3284,7 +3286,7 @@ input {
 				}
 			}
 		}
-	} 
+	}
 }
 /* //1024 이상 */
 
