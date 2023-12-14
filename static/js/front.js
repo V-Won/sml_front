@@ -84,6 +84,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 			document.querySelector(headerGnb + ' .btn-search').addEventListener('mouseover', (e) => {
 				headerRemoveClass();
 				document.querySelector(headerGnb).classList.add('is-search');
+				setTimeout(() => {document.querySelector('#hamburger-2').classList.add('is-active')}, 10)
 				
 				if (document.querySelector('body').classList.contains('mobile')) { // mobile
 					if (document.querySelector('.box-header').classList.contains('is-search')) {

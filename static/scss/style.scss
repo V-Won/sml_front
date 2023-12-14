@@ -343,39 +343,6 @@ input {
 					border-radius: 999px;
 					border: 1px solid #d5d5d5;
 					transition: all 0.3s ease-in-out;
-					.hamburger {
-						transform: scaleX(-1);
-						padding-left: 8px;
-						.line {
-							width: 18px;
-							height: 2px;
-							background-color: #fff;
-							display: block;
-							margin: 3px 0;
-							border-radius: 100px;
-							transition: all 0.3s ease-in-out;
-							&:nth-child(2),
-							&:nth-child(3) {
-								width: 12px;
-							}
-						}
-						&:hover {
-							cursor: pointer;
-						}
-						&#hamburger-1 {
-							&.is-active .line:nth-child(2) {
-								opacity: 0;
-							}
-							&.is-active .line:nth-child(1) {
-								width: 20px;
-								transform: translate(0, 5px) rotate(45deg);
-							}
-							&.is-active .line:nth-child(3) {
-								width: 20px;
-								transform: translate(0, -5px) rotate(-45deg);
-							}
-						}
-					}
 				}
 				.btn-search {
 					background-size: 18px;
@@ -578,19 +545,19 @@ input {
 			top: 18px;
 			right: 20px;
 			z-index: 3000;
-			&::after {
-				content: '';
-				width: 16px;
-				height: 16px;
-				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Crect x='15.5576' y='14.1421' width='2' height='20' transform='rotate(135 15.5576 14.1421)' fill='white'/%3E%3Crect x='1.8584' y='15.5564' width='2' height='20' transform='rotate(-135 1.8584 15.5564)' fill='white'/%3E%3C/svg%3E");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
+			// &::after {
+			// 	content: '';
+			// 	width: 16px;
+			// 	height: 16px;
+			// 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Crect x='15.5576' y='14.1421' width='2' height='20' transform='rotate(135 15.5576 14.1421)' fill='white'/%3E%3Crect x='1.8584' y='15.5564' width='2' height='20' transform='rotate(-135 1.8584 15.5564)' fill='white'/%3E%3C/svg%3E");
+			// 	background-position: center;
+			// 	background-repeat: no-repeat;
+			// 	background-size: contain;
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	left: 50%;
+			// 	transform: translate(-50%, -50%);
+			// }
 		}
 		.inner-gap-1 {
 			padding-top: 88px;
@@ -683,6 +650,40 @@ input {
 			left: 50%;
 			bottom: 60px;
 			transform: translateX(-50%);
+		}
+	}
+	.hamburger {
+		transform: scaleX(-1);
+		padding-left: 8px;
+		.line {
+			width: 18px;
+			height: 2px;
+			background-color: #fff;
+			display: block;
+			margin: 3px 0;
+			border-radius: 100px;
+			transition: all 0.3s ease-in-out;
+			&:nth-child(2),
+			&:nth-child(3) {
+				width: 12px;
+			}
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		&#hamburger-1,
+		&#hamburger-2 {
+			&.is-active .line:nth-child(2) {
+				opacity: 0;
+			}
+			&.is-active .line:nth-child(1) {
+				width: 20px;
+				transform: translate(0, 5px) rotate(45deg);
+			}
+			&.is-active .line:nth-child(3) {
+				width: 20px;
+				transform: translate(0, -5px) rotate(-45deg);
+			}
 		}
 	}
 }
