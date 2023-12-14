@@ -30,7 +30,7 @@
               <div class="label-wrap">
                 <label class="input-label">분야<span class="require">필수 입력 항목</span></label>
               </div>
-              <div class="input-wrap">
+              <div class="input-wrap flex">
                 <!-- 
                   common-selectbox-2 
                   비활성화 시 disabled 클래스 추가
@@ -73,6 +73,11 @@
                 <label class="input-label" for="form-1">기관명<span class="require">필수 입력 항목</span></label>
               </div>
               <div class="input-wrap">
+                <!-- 
+                  common-input-2 
+                  비활성화 시 클래스 추가 없이 disabled 기능만 추가
+                  에러 시 error 클래스 추가
+                -->
                 <input type="text" id="form-1" class="common-input-2" placeholder="기관명을 입력해주세요.">
                 <input type="text" id="form-1" class="common-input-2" placeholder="기관명을 입력해주세요." disabled>
                 <input type="text" id="form-1" class="common-input-2 error" placeholder="기관명을 입력해주세요." value="Error">
@@ -108,6 +113,56 @@
               </div>
               <div class="input-wrap">
                 <input type="text" id="form-5" class="common-input-2" placeholder="E-mail을 입력해주세요.">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-wrap">
+          <div class="form-tit">
+            <p class="title">문의 내용</p>
+            <p class="require-noti">*표시는 필수 입력 항목입니다.</p>
+          </div>
+          <div class="form-inner">
+            <div class="form-item">
+              <div class="label-wrap">
+                <label class="input-label" for="form-6">제목<span class="require">필수 입력 항목</span></label>
+              </div>
+              <div class="input-wrap">
+                <input type="text" id="form-6" class="common-input-2 title">
+              </div>
+            </div>
+            <div class="form-item">
+              <div class="label-wrap">
+                <label class="input-label" for="form-7">문의내용<span class="require">필수 입력 항목</span></label>
+              </div>
+              <div class="input-wrap">
+                <textarea id="form-7" class="common-textarea" placeholder="내용을 입력해주세요."></textarea>
+              </div>
+            </div>
+            <div class="form-item file-wrap">
+              <div class="label-wrap">
+                <label class="input-label" for="form-8">첨부파일</label>
+              </div>
+              <div class="input-wrap">
+                <div class="file-btn-wrap">
+                  <label for="form-8" class="file-btn">파일 찾기</label>
+                  <input type="file" id="form-8">
+                </div>
+                <ul class="file-item">
+                  <li>
+                    <span>Attach_File_01.zip</span>
+                    <button class="del-btn"></button>
+                  </li>
+                  <li>
+                    <span>Attach_File_01.zip</span>
+                    <button class="del-btn"></button>
+                  </li>
+                  <li>
+                    <span>Attach_File_01.zip</span>
+                    <button class="del-btn"></button>
+                  </li>
+                </ul>
+                <p class="file-noti">※ 첨부파일 용량은 최대 10MB 입니다.</p>
               </div>
             </div>
           </div>

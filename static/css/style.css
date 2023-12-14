@@ -1165,7 +1165,7 @@ input {
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #555;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   margin-bottom: 20px;
 }
 .form-wrap .form-tit .title {
@@ -1197,7 +1197,7 @@ input {
 .form-wrap .form-inner .form-item .label-wrap {
   width: 100%;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 .form-wrap .form-inner .form-item .label-wrap .input-label {
   color: #000;
@@ -1227,10 +1227,64 @@ input {
   position: relative;
 }
 .form-wrap .form-inner .form-item + .form-item {
-  margin-top: 20px;
+  margin-top: 21px;
+}
+.form-wrap .form-inner .file-wrap {
+  margin-top: 16px;
+}
+.form-wrap .form-inner .file-wrap .tit {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.32px;
+  padding-bottom: 6px;
+}
+.form-wrap .form-inner .file-wrap .file-btn-wrap {
+  width: 100%;
+  position: relative;
+}
+.form-wrap .form-inner .file-wrap .file-btn-wrap .file-btn {
+  display: block;
+  width: 115px;
+  height: 49px;
+  padding: 16px 0;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #D5D5D5;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.28px;
+}
+.form-wrap .form-inner .file-wrap .file-btn-wrap input[type=file] {
+  display: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.form-wrap .form-inner .file-wrap .file-item {
+  width: 100%;
+  position: relative;
+  margin-top: 24px;
+}
+.form-wrap .form-inner .file-wrap .file-item li {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-wrap .form-inner .file-wrap .file-noti {
+  color: #555;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.24px;
+  margin-top: 24px;
 }
 .form-wrap + .form-wrap {
-  margin-top: 40px;
+  margin-top: 41px;
 }
 
 .common-selectbox-2 {
@@ -1247,7 +1301,7 @@ input {
   width: 100%;
   height: 49px;
   position: relative;
-  padding: 16px 50px 16px 24px;
+  padding: 16px 50px 16px 16px;
   border-radius: 6px;
   border: 1px solid #d5d5d5;
   color: #333;
@@ -1280,12 +1334,11 @@ input {
   background: #fff;
   border-radius: 0 0 12px 12px;
   border: 1px solid #d5d5d5;
-  border-top: none;
 }
 .common-selectbox-2 .list li button {
   width: 100%;
   position: relative;
-  padding: 16px 24px;
+  padding: 16px;
   color: #666;
   font-size: 14px;
   font-weight: 400;
@@ -1316,6 +1369,8 @@ input {
   background: #f4f4f4;
   color: #999;
   pointer-events: none;
+  border-radius: 6px;
+  border-bottom: 1px solid #d5d5d5;
 }
 .common-selectbox-2.disabled .btn::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M2 5.5L8 11.5L14 5.5' stroke='%23999999' stroke-width='2'/%3E%3C/svg%3E");
@@ -1373,8 +1428,36 @@ input {
 .common-input-2.error::placeholder {
   color: #006477;
 }
+.common-input-2.title {
+  background: #fff;
+}
 .common-input-2 + .common-input-2 {
   margin-top: 8px;
+}
+
+.common-textarea {
+  width: 100%;
+  min-height: 298px;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #D5D5D5;
+  background: #FAFAFA;
+  padding: 16px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.28px;
+}
+.common-textarea::-moz-placeholder {
+  color: #666;
+}
+.common-textarea::placeholder {
+  color: #666;
+}
+.common-textarea:focus {
+  color: #000;
+  border: 1px solid #000;
 }
 
 .common-swiper-button-prev-1,
@@ -2136,6 +2219,144 @@ input {
     background-size: 100%;
     right: 15px;
     transform: translate(0, -57%) rotate(0deg);
+  }
+  .form-wrap .form-tit {
+    padding-bottom: 21px;
+    margin-bottom: 40px;
+    align-items: flex-end;
+  }
+  .form-wrap .form-tit .title {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+  }
+  .form-wrap .form-tit .require-noti {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+  }
+  .form-wrap .form-inner {
+    padding: 0 40px 40px;
+    border-bottom: 1px solid #d5d5d5;
+  }
+  .form-wrap .form-inner .form-item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0 100px;
+  }
+  .form-wrap .form-inner .form-item .label-wrap {
+    max-width: 100px;
+    padding-bottom: 0;
+  }
+  .form-wrap .form-inner .form-item .label-wrap .input-label {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.36px;
+    height: 64px;
+    line-height: 64px;
+  }
+  .form-wrap .form-inner .form-item .label-wrap .input-label > span::after {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.36px;
+  }
+  .form-wrap .form-inner .form-item .input-wrap.flex {
+    display: flex;
+    align-items: center;
+  }
+  .form-wrap .form-inner .form-item .input-wrap.flex > div + div {
+    margin-left: 12px;
+  }
+  .form-wrap .form-inner .form-item + .form-item {
+    margin-top: 24px;
+  }
+  .form-wrap .form-inner .file-wrap .label-wrap .input-label {
+    height: 54px;
+    line-height: 54px;
+  }
+  .form-wrap .form-inner .file-wrap .file-btn-wrap .file-btn {
+    width: 130px;
+    height: 54px;
+    border-radius: 12px;
+    font-size: 18px;
+    letter-spacing: -0.36px;
+  }
+  .form-wrap .form-inner .file-wrap .file-item li {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .form-wrap .form-inner .file-wrap .file-noti {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    margin-top: 0;
+  }
+  .form-wrap + .form-wrap {
+    margin-top: 80px;
+  }
+  .common-selectbox-2 {
+    max-width: 300px;
+  }
+  .common-selectbox-2 .btn {
+    height: 64px;
+    padding: 20px 50px 20px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  .common-selectbox-2 .btn::after {
+    right: 24px;
+  }
+  .common-selectbox-2 .list {
+    top: 63px;
+  }
+  .common-selectbox-2 .list li button {
+    padding: 22.5px 24px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  .common-selectbox-2 .list li:hover button {
+    color: #000;
+  }
+  .common-selectbox-2 + .common-selectbox-2 {
+    margin-top: 0;
+  }
+  .common-selectbox-2.disabled .btn {
+    border-radius: 12px;
+  }
+  .common-input-2 {
+    max-width: 634px;
+    height: 64px;
+    padding: 20px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  .common-input-2.error {
+    border: 1px solid #006477;
+    color: #006477;
+  }
+  .common-input-2.error::-moz-placeholder {
+    color: #006477;
+  }
+  .common-input-2.error::placeholder {
+    color: #006477;
+  }
+  .common-input-2.title {
+    max-width: 100%;
+  }
+  .common-input-2 + .common-input-2 {
+    margin-top: 12px;
+  }
+  .common-textarea {
+    min-height: 280px;
+    border-radius: 12px;
+    padding: 20px 24px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
   }
   .box-header .inner-gap-1 {
     padding-left: 100px;
