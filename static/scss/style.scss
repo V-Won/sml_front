@@ -1409,7 +1409,7 @@ input {
 .common-selectbox-2 {
 	width: 100%;
 	position: relative;
-	.btn {
+	.button {
 		@include text-line-1;
 		white-space: nowrap;
 		width: 100%;
@@ -1448,6 +1448,7 @@ input {
 		background: #fff;
 		border-radius: 0 0 12px 12px;
 		border: 1px solid #d5d5d5;
+		overflow: hidden;
 		li {
 			button {
 				width: 100%;
@@ -1468,7 +1469,7 @@ input {
 		}
 	}
 	&.is-active {
-		.btn {
+		.button {
 			border-radius: 12px 12px 0 0;
 			border-bottom: none;
 			&::after {
@@ -1480,7 +1481,7 @@ input {
 		}
 	}
 	&.is-select {
-		.btn {
+		.button {
 			color: #000;
 		}
 	}
@@ -1488,7 +1489,7 @@ input {
 		margin-top: 8px;
 	}
 	&.disabled {
-		.btn {
+		.button {
 			background: #f4f4f4;
 			color: #999;
 			pointer-events: none;
@@ -1505,10 +1506,18 @@ input {
 		}
 	}
 	&.error {
-		.btn {
+		.button {
 			border: 1px solid #006477;
 			background: #FAFAFA;
 			color: #006477;
+		}
+		.list {
+			border: 1px solid #006477;
+			li {
+				button {
+					background: #FAFAFA;
+				}
+			}
 		}
 	}
 }
@@ -2465,7 +2474,7 @@ input {
 	// common-selectbox-2
 	.common-selectbox-2 {
 		max-width: 300px;
-		.btn {
+		.button {
 			height: 64px;
 			padding: 20px 50px 20px 24px;
 			border-radius: 12px;
@@ -2494,7 +2503,7 @@ input {
 			margin-top: 0;
 		}
 		&.disabled {
-			.btn {
+			.button {
 				border-radius: 12px;
 			}
 		}

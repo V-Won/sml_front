@@ -303,32 +303,35 @@ if (window.console == undefined) { console = { log: () => { } } }
 			const selectBoxs = document.querySelectorAll(tg);
 
 			for (const selectBox of selectBoxs) {
-				selectBox.querySelector('.common-selectbox > button').onclick = e => {
+				selectBox.querySelector(tg + ' > button').addEventListener('click', (e) => {
 					let parent = e.target.parentElement;
 
 					if (!parent.classList.contains('is-active')) {
+
 						selectBoxs.forEach(e => {
 							if (e.classList.contains('is-active')) {
 								e.classList.remove('is-active');
 							}
 						});
+						
 						if (!parent.classList.contains('disabled')) {
 							parent.classList.add('is-active');
 						}
 					} else {
 						parent.classList.remove('is-active');
 					}
-				}
+				})
 			}
 
-			document.querySelectorAll('.common-selectbox > ul > li button').forEach(e => {
+			document.querySelectorAll(tg + ' > ul > li button').forEach(e => {
 				e.onclick = () => {
-					e.parentNode.parentNode.parentNode.querySelector('.common-selectbox > button').innerText = e.innerText;
+					e.parentNode.parentNode.parentNode.querySelector(tg + ' > button').innerText = e.innerText;
 					e.parentNode.parentNode.parentNode.classList.add('font');
 				}
 			});
 
 			window.addEventListener('click', (e) => {
+				console.log(!e.target.classList.contains('button'));
 				if (!e.target.classList.contains('button')) {
 					selectBoxs.forEach(e => {
 						e.classList.remove('is-active');

@@ -1291,7 +1291,7 @@ input {
   width: 100%;
   position: relative;
 }
-.common-selectbox-2 .btn {
+.common-selectbox-2 .button {
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -1311,7 +1311,7 @@ input {
   line-height: 120%;
   letter-spacing: -0.28px;
 }
-.common-selectbox-2 .btn::after {
+.common-selectbox-2 .button::after {
   content: "";
   width: 16px;
   height: 16px;
@@ -1334,6 +1334,7 @@ input {
   background: #fff;
   border-radius: 0 0 12px 12px;
   border: 1px solid #d5d5d5;
+  overflow: hidden;
 }
 .common-selectbox-2 .list li button {
   width: 100%;
@@ -1349,39 +1350,45 @@ input {
 .common-selectbox-2 .list li:hover button {
   color: #000;
 }
-.common-selectbox-2.is-active .btn {
+.common-selectbox-2.is-active .button {
   border-radius: 12px 12px 0 0;
   border-bottom: none;
 }
-.common-selectbox-2.is-active .btn::after {
+.common-selectbox-2.is-active .button::after {
   transform: translateY(-50%) rotate(180deg);
 }
 .common-selectbox-2.is-active .list {
   display: block;
 }
-.common-selectbox-2.is-select .btn {
+.common-selectbox-2.is-select .button {
   color: #000;
 }
 .common-selectbox-2 + .common-selectbox-2 {
   margin-top: 8px;
 }
-.common-selectbox-2.disabled .btn {
+.common-selectbox-2.disabled .button {
   background: #f4f4f4;
   color: #999;
   pointer-events: none;
   border-radius: 6px;
   border-bottom: 1px solid #d5d5d5;
 }
-.common-selectbox-2.disabled .btn::after {
+.common-selectbox-2.disabled .button::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M2 5.5L8 11.5L14 5.5' stroke='%23999999' stroke-width='2'/%3E%3C/svg%3E");
 }
 .common-selectbox-2.disabled.is-active .list {
   display: none;
 }
-.common-selectbox-2.error .btn {
+.common-selectbox-2.error .button {
   border: 1px solid #006477;
   background: #FAFAFA;
   color: #006477;
+}
+.common-selectbox-2.error .list {
+  border: 1px solid #006477;
+}
+.common-selectbox-2.error .list li button {
+  background: #FAFAFA;
 }
 
 .common-input-2 {
@@ -2300,14 +2307,14 @@ input {
   .common-selectbox-2 {
     max-width: 300px;
   }
-  .common-selectbox-2 .btn {
+  .common-selectbox-2 .button {
     height: 64px;
     padding: 20px 50px 20px 24px;
     border-radius: 12px;
     font-size: 16px;
     letter-spacing: -0.32px;
   }
-  .common-selectbox-2 .btn::after {
+  .common-selectbox-2 .button::after {
     right: 24px;
   }
   .common-selectbox-2 .list {
@@ -2324,7 +2331,7 @@ input {
   .common-selectbox-2 + .common-selectbox-2 {
     margin-top: 0;
   }
-  .common-selectbox-2.disabled .btn {
+  .common-selectbox-2.disabled .button {
     border-radius: 12px;
   }
   .common-input-2 {

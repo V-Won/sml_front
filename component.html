@@ -36,8 +36,8 @@
                   비활성화 시 disabled 클래스 추가
                   에러 시 error 클래스 추가
                 -->
-                <div class="common-selectbox-2">
-                  <button class="btn">선택</button>
+                <div class="common-selectbox-2" data-event="commonSelectBox">
+                  <button class="button">선택</button>
                   <ul class="list">
                     <li><button>Placeholder 01</button></li>
                     <li><button>Placeholder 02</button></li>
@@ -46,8 +46,8 @@
                     <li><button>Placeholder 05</button></li>
                   </ul>
                 </div>
-                <div class="common-selectbox-2 disabled">
-                  <button class="btn">Disabled</button>
+                <div class="common-selectbox-2 disabled" data-event="commonSelectBox">
+                  <button class="button">Disabled</button>
                   <ul class="list">
                     <li><button>Placeholder 01</button></li>
                     <li><button>Placeholder 02</button></li>
@@ -56,8 +56,8 @@
                     <li><button>Placeholder 05</button></li>
                   </ul>
                 </div>
-                <div class="common-selectbox-2 error">
-                  <button class="btn">Error</button>
+                <div class="common-selectbox-2 error" data-event="commonSelectBox">
+                  <button class="button">Error</button>
                   <ul class="list">
                     <li><button>Placeholder 01</button></li>
                     <li><button>Placeholder 02</button></li>
@@ -167,6 +167,29 @@
             </div>
           </div>
         </div>
+        <div class="form-wrap">
+          <div class="form-tit">
+            <p class="title">Form</p>
+          </div>
+          <div class="form-inner">
+            <div class="form-item">
+              <div class="label-wrap">
+                <label class="input-label" for="form-6">CheckBox</label>
+              </div>
+              <div class="input-wrap">
+                <!-- 체크박스 -->
+              </div>
+            </div>
+            <div class="form-item">
+              <div class="label-wrap">
+                <label class="input-label" for="form-6">Radio</label>
+              </div>
+              <div class="input-wrap">
+                <!-- 라디오버튼 -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -193,7 +216,9 @@
     */
     headerBg({
       bg: "white"
-    })
+    });
+    
+    selectBox.initialize();
   </script>
 
 </body>
