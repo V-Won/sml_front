@@ -397,18 +397,6 @@ window.addEventListener('load', () => {
 // 공통 js 호출
 device.initialize();
 
-// body scroll smooth
-// if (!document.querySelector('body').classList.contains('mobile')) { // mobile
-// 	const lenis = new Lenis()
-
-// 	function raf(time) {
-// 		lenis.raf(time)
-// 		requestAnimationFrame(raf)
-// 	}
-
-// 	requestAnimationFrame(raf)
-// }
-
 // header bg
 const headerBg = (item) => {
   const key = item['bg'];
