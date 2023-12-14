@@ -331,7 +331,6 @@ if (window.console == undefined) { console = { log: () => { } } }
 			});
 
 			window.addEventListener('click', (e) => {
-				console.log(!e.target.classList.contains('button'));
 				if (!e.target.classList.contains('button')) {
 					selectBoxs.forEach(e => {
 						e.classList.remove('is-active');
@@ -385,6 +384,62 @@ if (window.console == undefined) { console = { log: () => { } } }
 	};
 
 	window.mainSearchBtn = mainSearchBtn;
+}(window));
+
+/* checkboxAll */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description checkboxAll
+	 * @modify
+			@20231214 추가
+	*/
+	var checkboxAll = {
+		/** 플러그인명 */
+		bind: checkboxAll,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="checkboxAll"]',
+			tg2: '[data-event="checkbox"]'
+		},
+		initialize: function() {
+			const me = this;
+
+			me._click();
+		},
+		_click: function(){
+			const me = this,
+						tg = me.selectors.tg,
+						tg2 = me.selectors.tg2;
+
+			let ck = (st, item) => {
+				st == "on" ? item.checked = true : item.checked = false;
+			}
+
+			document.querySelectorAll(tg + ' input').forEach( e => {
+				e.onclick = (e) => {
+					document.querySelectorAll('input[name="' + e.target.name + '"]').forEach( item => {
+						e.target.checked ? ck('on', item) : ck('off', item);
+					});
+				}
+			});
+
+			document.querySelectorAll(tg2 + ' input').forEach( e => {
+				e.onclick = (e) => {
+					if( document.querySelectorAll('[data-event="checkbox"] input[name="' + e.target.name + '"]').length == document.querySelectorAll('[data-event="checkbox"] input[name="' + e.target.name + '"]:checked').length ){
+						ck('on', document.querySelector('[data-event="checkboxAll"] input[name="' + e.target.name + '"]'));
+					}else{
+						ck('off', document.querySelector('[data-event="checkboxAll"] input[name="' + e.target.name + '"]'));
+					}
+				}
+			});
+		}
+	};
+
+	window.checkboxAll = checkboxAll;
 }(window));
 
 /**

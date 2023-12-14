@@ -448,7 +448,7 @@ input {
 							cursor: pointer;
 						}
 						&::after {
-							transition: background-image .3s ease;
+							transition: background-image 0.3s ease;
 							content: "";
 							display: block;
 							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 16L12 8L4 16' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
@@ -1499,7 +1499,7 @@ input {
 					padding: 16px 0;
 					text-align: center;
 					border-radius: 6px;
-					border: 1px solid #D5D5D5;
+					border: 1px solid #d5d5d5;
 					color: #333;
 					font-size: 14px;
 					font-weight: 500;
@@ -1644,28 +1644,28 @@ input {
 	&.error {
 		.button {
 			border: 1px solid #006477;
-			background: #FAFAFA;
+			background: #fafafa;
 			color: #006477;
 		}
 		.list {
 			border: 1px solid #006477;
 			li {
 				button {
-					background: #FAFAFA;
+					background: #fafafa;
 				}
 			}
 		}
 	}
 }
 
-// common-input-2 
+// common-input-2
 .common-input-2 {
 	width: 100%;
 	height: 49px;
 	position: relative;
 	padding: 16px;
-	border: 1px solid #D5D5D5;
-	background: #FAFAFA;
+	border: 1px solid #d5d5d5;
+	background: #fafafa;
 	border-radius: 6px;
 	color: #000;
 	font-size: 14px;
@@ -1679,7 +1679,7 @@ input {
 		border: 1px solid #000;
 	}
 	&:disabled {
-		background: #F4F4F4;
+		background: #f4f4f4;
 		color: #999;
 		pointer-events: none;
 		&::placeholder {
@@ -1701,14 +1701,14 @@ input {
 	}
 }
 
-// common-textarea 
+// common-textarea
 .common-textarea {
 	width: 100%;
 	min-height: 298px;
 	position: relative;
 	border-radius: 6px;
-	border: 1px solid #D5D5D5;
-	background: #FAFAFA;
+	border: 1px solid #d5d5d5;
+	background: #fafafa;
 	padding: 16px;
 	color: #000;
 	font-size: 14px;
@@ -1729,6 +1729,124 @@ input {
 .common-swiper-button-next-1,
 .common-swiper-pagination-1 {
 	display: none;
+}
+
+// common radiobox
+.box-radio {
+	display: flex;
+	.radioitem {
+		flex: 0 0 auto;
+		label {
+			display: block;
+			span {
+				position: relative;
+				padding: 10px 32px 10px 17px;
+				display: block;
+				margin: 10px;
+				border-radius: 4px;
+				color: var(--Check-Radio-CHECKBOX01, #333);
+				font-family: Pretendard;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 120%;
+				letter-spacing: -0.32px;
+				&:after {
+					content: "";
+					display: block;
+					width: 20px;
+					height: 20px;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translate(-10px, -50%);
+					background-repeat: no-repeat;
+					background-size: auto;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Crect x='2.5' y='2.5' width='15' height='15' rx='7.5' fill='white' stroke='%23BBBBBB'/%3E%3C/svg%3E");
+				}
+			}
+		}
+		input {
+			display: none;
+			&:checked {
+				& + span:after {
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Crect x='2' y='2' width='16' height='16' rx='8' fill='%23006477'/%3E%3Crect x='7' y='7' width='6' height='6' rx='3' fill='white'/%3E%3C/svg%3E");
+				}
+				&:disabled {
+					& + span {
+						color: #999;
+					}
+					& + span:after {
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Crect x='2.5' y='2.5' width='15' height='15' rx='7.5' fill='%23F2F2F2' stroke='%23BBBBBB'/%3E%3Crect x='7' y='7' width='6' height='6' rx='3' fill='%23BBBBBB'/%3E%3C/svg%3E");
+					}
+				}
+			}
+			&:disabled {
+				& + span {
+					color: #999;
+				}
+				& + span:after {
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Crect x='2.5' y='2.5' width='15' height='15' rx='7.5' fill='%23F2F2F2' stroke='%23BBBBBB'/%3E%3C/svg%3E");
+				}
+			}
+		}
+	}
+}
+
+// common checkbox
+.box-check {
+	display: flex;
+	.checkitem {
+		flex: 0 0 auto;
+		label {
+			display: block;
+			span {
+				position: relative;
+				padding: 10px 31px 10px 31px;
+				min-width: 213px;
+				display: block;
+				margin: 10px;
+				border-radius: 4px;
+				color: #000;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 120%;
+				letter-spacing: -0.32px;
+				strong {
+					color: #006477;
+					font-weight: 600;
+					line-height: 120%;
+					letter-spacing: -0.32px;
+					padding-right: 4px;
+				}
+				&:after {
+					content: "";
+					display: block;
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translate(-10px, -50%);
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='1.5' fill='white' stroke='%23BBBBBB'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+		input {
+			display: none;
+			&:checked {
+				& + span:after {
+					background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='2' fill='%23006477'/%3E%3Cpath d='M6 12L10 16L18 8' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}
+			&:disabled {
+				& + span {
+					color: #999;
+				}
+			}
+		}
+	}
 }
 
 // 공통 mixin include
@@ -2494,6 +2612,28 @@ input {
 		}
 	}
 
+	// common radiobox
+	.box-radio {
+		.radioitem {
+			label {
+				span {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	// common checkbox
+	.box-check {
+		.checkitem {
+			label {
+				span {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
 	// 공통 input
 	.common-input-1 {
 		input {
@@ -2508,7 +2648,7 @@ input {
 			width: 17px;
 			height: 17px;
 			background-size: 100%;
-			right:15px;
+			right: 15px;
 			transform: translate(0, -57%) rotate(0deg);
 		}
 	}
@@ -2692,7 +2832,7 @@ input {
 		}
 	}
 
-	// common-input-2 
+	// common-input-2
 	.common-input-2 {
 		max-width: 634px;
 		height: 64px;
@@ -2715,7 +2855,7 @@ input {
 		}
 	}
 
-	// common-textarea 
+	// common-textarea
 	.common-textarea {
 		min-height: 280px;
 		border-radius: 12px;

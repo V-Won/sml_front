@@ -195,18 +195,120 @@
           <div class="form-inner">
             <div class="form-item">
               <div class="label-wrap">
-                <label class="input-label" for="form-6">CheckBox</label>
+                <label class="input-label" for="">Radio</label>
               </div>
               <div class="input-wrap">
-                <!-- 체크박스 -->
+                <!-- 라디오버튼 -->
+                <div class="box-radio">
+                  <div class="radioitem">
+                    <label>
+                      <input type="radio" name="test0">
+                      <span>Radio label</span>
+                    </label>
+                  </div>
+
+                  <div class="radioitem">
+                    <label>
+                      <input type="radio" name="test0">
+                      <span>Radio label</span>
+                    </label>
+                  </div>
+
+                  <div class="radioitem">
+                    <label>
+                      <input type="radio" name="" disabled>
+                      <span>Radio label</span>
+                    </label>
+                  </div>
+
+                  <div class="radioitem">
+                    <label>
+                      <input type="radio" name="" checked disabled>
+                      <span>Radio label</span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="form-item">
               <div class="label-wrap">
-                <label class="input-label" for="form-6">Radio</label>
+                <label class="input-label" for="">CheckBox</label>
               </div>
               <div class="input-wrap">
-                <!-- 라디오버튼 -->
+                <!-- 체크박스 -->
+                <!-- **
+                  * 전체 체크 GUIDE
+                    전체 체크 item data-event="checkboxAll" 
+                    자식 체크 data-event="checkbox"
+                  * -->
+                <div class="box-check">
+                  <div class="checkitem" data-event="checkboxAll">
+                    <label>
+                      <input type="checkbox" name="test1">
+                      <span>전체 체크</span>
+                    </label>
+                  </div>
+
+                  <div class="checkitem" data-event="checkbox">
+                    <label>
+                      <input type="checkbox" name="test1">
+                      <span><strong>(필수)</strong>check box</span>
+                    </label>
+                  </div>
+
+                  <div class="checkitem" data-event="checkbox">
+                    <label>
+                      <input type="checkbox" name="test1">
+                      <span>check box</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="box-check">
+                  <div class="checkitem" data-event="checkboxAll">
+                    <label>
+                      <input type="checkbox" name="test2">
+                      <span>전체 체크</span>
+                    </label>
+                  </div>
+
+                  <div class="checkitem" data-event="checkbox">
+                    <label>
+                      <input type="checkbox" name="test2">
+                      <span><strong>(필수)</strong>check box</span>
+                    </label>
+                  </div>
+
+                  <div class="checkitem" data-event="checkbox">
+                    <label>
+                      <input type="checkbox" name="test2">
+                      <span>check box</span>
+                    </label>
+                  </div>
+                </div>
+                <!-- **
+                  * 개별 체크
+                  * -->
+                <div class="box-check">
+                  <div class="checkitem">
+                    <label>
+                      <input type="checkbox" name="test3">
+                      <span>check box</span>
+                    </label>
+                  </div>
+                  <div class="checkitem">
+                    <label>
+                      <input type="checkbox" name="test3">
+                      <span>check box</span>
+                    </label>
+                  </div>
+                  <div class="checkitem">
+                    <label>
+                      <input type="checkbox" name="test3" disabled>
+                      <span>disabled 디자인x</span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -238,8 +340,9 @@
     headerBg({
       bg: "transparent"
     });
-    
+
     selectBox.initialize();
+    checkboxAll.initialize();
   </script>
 
 </body>
