@@ -461,6 +461,9 @@ const headerBg = (item) => {
   const key = item['bg'];
 
   if (key == 'white') {
-    setTimeout(() => {document.querySelector('.box-header').classList.add('bg-fff')}, 100)
+    setTimeout(() => {
+			document.querySelector('.box-header').classList.add('bg-fff'); // white 모드 헤더
+			document.querySelector('.sub-top').classList.add('bg-fff'); // white 모드 sub 배너
+		}, 100)
   }
 }
