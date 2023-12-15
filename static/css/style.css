@@ -1579,7 +1579,6 @@ input {
   position: relative;
   padding: 16px;
   border: 1px solid #d5d5d5;
-  background: #fafafa;
   border-radius: 6px;
   color: #000;
   font-size: 14px;
@@ -1608,6 +1607,7 @@ input {
   color: #999;
 }
 .common-input-2.error {
+  background: #FAFAFA;
   border: 1px solid #006477;
   color: #006477;
 }
@@ -1647,6 +1647,17 @@ input {
 .common-textarea:focus {
   color: #000;
   border: 1px solid #000;
+}
+.common-textarea.error {
+  background: #FAFAFA;
+  border: 1px solid #006477;
+  color: #006477;
+}
+.common-textarea.error::-moz-placeholder {
+  color: #006477;
+}
+.common-textarea.error::placeholder {
+  color: #006477;
 }
 
 .common-tab {

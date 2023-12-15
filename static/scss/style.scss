@@ -1723,7 +1723,6 @@ input {
 	position: relative;
 	padding: 16px;
 	border: 1px solid #d5d5d5;
-	background: #fafafa;
 	border-radius: 6px;
 	color: #000;
 	font-size: 14px;
@@ -1745,6 +1744,7 @@ input {
 		}
 	}
 	&.error {
+		background: #FAFAFA;
 		border: 1px solid #006477;
 		color: #006477;
 		&::placeholder {
@@ -1779,6 +1779,14 @@ input {
 	&:focus {
 		color: #000;
 		border: 1px solid #000;
+	}
+	&.error {
+		background: #FAFAFA;
+		border: 1px solid #006477;
+		color: #006477;
+		&::placeholder {
+			color: #006477;
+		}
 	}
 }
 
