@@ -1212,7 +1212,7 @@ input {
 }
 .sub-top .text-box .sub-nav > li a {
   white-space: nowrap;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -1241,7 +1241,7 @@ input {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   white-space: nowrap;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -1259,7 +1259,7 @@ input {
   top: 35px;
   right: 0;
   border-radius: 6px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
   padding: 24px;
   z-index: 10;
@@ -1287,7 +1287,7 @@ input {
   display: block;
 }
 .sub-top .text-box .sub-tit {
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   font-weight: 700;
   line-height: 120%;
@@ -2838,6 +2838,7 @@ input {
   }
   .box-header .menu-list .inner-gap-1 {
     height: auto;
+    overflow: initial;
   }
   .box-header .menu-list .inner-gap-1 > ul {
     display: flex;
@@ -2846,10 +2847,10 @@ input {
     flex-shrink: 0;
     padding-left: 18px;
     padding-bottom: 143px;
-    overflow: hidden;
   }
   .box-header .menu-list .inner-gap-1 > ul > li {
-    width: 260px;
+    max-width: 260px;
+    flex: 1 1 content;
     padding: 60px 24px 0 24px;
     margin-bottom: 0;
     flex-shrink: 0;
@@ -2902,6 +2903,7 @@ input {
   }
   .box-header .menu-list .inner-gap-1 > ul > li > ul > li {
     padding-bottom: 0;
+    width: auto;
   }
   .box-header .menu-list .inner-gap-1 > ul > li > ul > li:first-child > a {
     padding-top: 40px;
