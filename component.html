@@ -20,20 +20,21 @@
     <!-- inner-wrap -->
     <div class="inner-wrap">
       <div class="sub-top" style="background: url(static/images/@/sub_top_02.png) no-repeat; background-position: 55%">
+        <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
         <div class="inner-gap-1">
           <div class="text-box">
             <ul class="sub-nav-2">
               <li>
-                <a href="#none">임상연구</a>
+                <a href="#none">Depth 1</a>
               </li>
               <li>
-                <a href="#none">연구의뢰</a> 
+                <a href="#none">Depth 2</a> 
               </li>
               <li class="nav-acc" data-event="commonSelectBox">
-                <a href="#none" class="button">임상연구임상연구임상연구임상연구임상연구임상연구임상연구임상연구</a> 
+                <a href="#none" class="button">Depth 3</a> 
                 <ul class="list">
                   <!-- hover시 font-weight 문제로 title 사용 -->
-                  <li><a href="#none" title="menu-1">체외진단의료기기 임상적 성능평가</a></li>
+                  <li><a href="#none" title="menu-1">menu-1</a></li>
                   <li><a href="#none" title="menu-2">menu-2</a></li>
                   <li><a href="#none" title="menu-3">menu-3</a></li>
                   <li><a href="#none" title="menu-4">menu-4</a></li>
@@ -41,7 +42,7 @@
                 </ul>
               </li>
             </ul>
-            <h3 class="sub-tit">임상연구</h3>
+            <h3 class="sub-tit">SubPage Title</h3>
           </div>
         </div>
       </div>
@@ -332,7 +333,33 @@
             <p class="title">Tab</p>
           </div>
           <div class="form-inner">
-            <div class="form-item">
+            <div class="form-item ct">
+              <div class="label-wrap">
+                <label class="input-label" for="">Type 1</label>
+              </div>
+              <div class="input-wrap">
+                <div class="common-tab type-1" data-event="commonTab">
+                  <ul class="list">
+                    <li class="is-active"><button class="btn">Tab01</button></li>
+                    <li><button class="btn">Tab02</button></li>
+                    <li><button class="btn">Tab03</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="form-item ct">
+              <div class="label-wrap">
+                <label class="input-label" for="">Type 2</label>
+              </div>
+              <div class="input-wrap">
+                <div class="common-tab type-2" data-event="commonTab">
+                  <ul class="list">
+                    <li class="is-active"><button class="btn">Tab01</button></li>
+                    <li><button class="btn">Tab02</button></li>
+                    <li><button class="btn">Tab03</button></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -367,6 +394,7 @@
 
     selectBox.initialize();
     checkboxAll.initialize();
+    commonTab.initialize();
   </script>
 
 </body>

@@ -344,6 +344,75 @@ if (window.console == undefined) { console = { log: () => { } } }
 	window.selectBox = selectBox;
 }(window));
 
+/* commonTab */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description commonTab
+	 * @modify
+			@202312015 추가
+	*/
+	var commonTab = {
+		/** 플러그인명 */
+		bind: commonTab,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="commonTab"]'
+		},
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: function () {
+			const me = this,
+				tg = me.selectors.tg;
+
+			// document.querySelectorAll(tg + ' .btn').forEach((item) => {
+			// 	item.addEventListener('click', (e) => {
+			// 		console.log(e.target);
+			// 		document.querySelectorAll(tg + ' ul > li').forEach((item) => {
+						
+			// 			item.classList.remove('is-active');
+			// 		})
+
+			// 		e.target.parentNode.classList.add('is-active');
+			// 	})
+			// })
+
+
+			// const btns = document.querySelectorAll(tg + ' .btn');
+
+			// for ( const btn of btns ) {
+			// 	btn.addEventListener('click', (e) => {
+			// 		document.querySelectorAll('[data-event="commonTab"] li').forEach(item => {
+			// 			item.classList.remove('is-active');
+			// 		});
+			// 		e.target.parentNode.classList.add('is-active');
+			// 	})
+			// }
+
+			const tabBoxs = document.querySelectorAll(tg + ' .btn');
+
+			for (const tabBox of tabBoxs) {
+				tabBox.addEventListener('click', (e) => {
+					// class remove					
+					e.target.parentNode.parentNode.parentNode.querySelectorAll('.list > li').forEach((item) => {
+						item.classList.remove('is-active')
+					})
+					// class add
+					e.target.parentNode.classList.add('is-active');
+				})
+			}
+		}
+	};
+
+	window.commonTab = commonTab;
+}(window));
+
 /* main tab */
 (function (window, undefined) {
 	"use strict";

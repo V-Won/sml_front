@@ -1304,7 +1304,7 @@ input {
 			> li {
 				float: left;
 				position: relative;
-				a {
+				> a {
 					color: #fff;
 					font-size: 14px;
 					font-weight: 500;
@@ -1339,36 +1339,36 @@ input {
 				}
 				&.nav-acc {
 					float: none;
-					padding-right: 30px;
-					width: fit-content;
 					position: relative;
 					& > a {
-						padding-right:20px;
+						padding-right:28px;
 						z-index: 10;
-					}
-					&::after {
-						content: "";
-						width: 16px;
-						height: 16px;
-						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M11.06 5.53003L8 8.58336L4.94 5.53003L4 6.47003L8 10.47L12 6.47003L11.06 5.53003Z' fill='white'/%3E%3C/svg%3E");
-						background-repeat: no-repeat;
-						background-size: contain;
-						background-position: center;
-						position: absolute;
-						top: 50%;
-						right: 40px;
-						transform: translateY(-50%);
+						width: fit-content;
+						position: relative;
+						&::after {
+							content: "";
+							width: 16px;
+							height: 16px;
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M11.06 5.53003L8 8.58336L4.94 5.53003L4 6.47003L8 10.47L12 6.47003L11.06 5.53003Z' fill='white'/%3E%3C/svg%3E");
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-position: center;
+							position: absolute;
+							top: 50%;
+							right: 0;
+							transform: translateY(-50%);
+						}
 					}
 					.button {
 						@include text-line-1;
+						word-break: break-all;
 					}
 					.list {
 						display: none;
 						position: absolute;
-						top: 34px;
-						right: 0;
+						top: 36px;
+						left: 0;
 						width: calc(100vw - 40px);
-						max-width: 320px;
 						padding: 24px;
 						border-radius: 6px;
 						background: #fff;
@@ -1376,7 +1376,8 @@ input {
 						z-index: 10;
 						li {
 							width: 100%;
-							a {
+							> a {
+								display: block;
 								width: 100%;
 								color: #555;
 								font-size: 14px;
@@ -1423,6 +1424,41 @@ input {
 			font-weight: 700;
 			line-height: 120%;
 			letter-spacing: -0.6px;
+		}
+	}
+	&.bg-fff {
+		height: auto;
+		background: none !important;
+		margin-bottom: 40px;
+		&::before {
+			display: none;
+		}
+		.inner-gap-1 {
+			padding-bottom: 0;
+		}
+		.text-box {
+			.sub-nav-2 {
+				> li {
+					> a {
+						color: #555;
+						&::before {
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M6.47027 4L5.53027 4.94L8.58361 8L5.53027 11.06L6.47027 12L10.4703 8L6.47027 4Z' fill='%23999999'/%3E%3C/svg%3E");
+						}
+					}
+					&.nav-acc {
+						.button {
+							font-weight: 700;
+							color: #006477;
+							&::after {
+								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M11.06 5.52979L8 8.58312L4.94 5.52979L4 6.46979L8 10.4698L12 6.46979L11.06 5.52979Z' fill='%23006477'/%3E%3C/svg%3E");
+							}
+						}
+					}
+				}
+			}
+			.sub-tit {
+				color: #000;
+			}
 		}
 	}
 }
@@ -1743,6 +1779,64 @@ input {
 	&:focus {
 		color: #000;
 		border: 1px solid #000;
+	}
+}
+
+// 공통 Tab
+.common-tab {
+	width: 100%;
+	position: relative;
+	> ul {
+		display: flex;
+		align-items: center;
+	}
+	&.type-1 {
+		> ul {
+			> li {
+				.btn {
+					color: #DDD;
+					font-size: 22px;
+					font-weight: 600;
+					line-height: 120%;
+					letter-spacing: -0.44px;
+				}
+				&.is-active {
+					.btn {
+						color: #000;
+					}
+				}
+				& + li {
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	&.type-2 {
+		> ul {
+			> li {
+				.btn {
+					border-radius: 999px;
+					background: #f5f5f5;
+					width: fit-content;
+					height: 33px;
+					padding: 8px 20px;
+					color: #000;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 120%;
+					letter-spacing: -0.28px;
+				}
+				&.is-active {
+					.btn {
+						background: #006477;
+						color: #fff;
+					}
+				}
+				& + li {
+					margin-left: 12px;
+				}
+			}
+		}
 	}
 }
 
@@ -2685,37 +2779,19 @@ input {
 			padding-bottom: 142px;
 		}
 		.text-box {
-			.sub-nav {
+			.sub-nav-2 {
 				margin-bottom: 36px;
 				> li {
-					a {
-						max-width: 100%;
-					}
 					&.nav-acc {
-						.button {
-							max-width: 100%;
-						}
+						float: left;
+						padding-right: 0;
+						width: fit-content;
 						.list {
-							top: 32px;
-							right: auto;
-							left: 24px;
+							width: auto;
 							border-radius: 12px;
 							li {
 								a {
-									&::before {
-										display: block;
-										content: attr(title);
-										font-weight: bold;
-										height: 0;
-										overflow: hidden;
-										visibility: hidden;
-									}
-								}
-								&:hover {
-									a {
-										font-weight: 700;
-										color: #006477;
-									}
+									white-space: nowrap;
 								}
 							}
 						}
@@ -2730,36 +2806,6 @@ input {
 		}
 		&.bg-fff {
 			margin-bottom: 60px;
-			.inner-gap-1 {
-				padding-top: 216px;
-			}
-			.text-box {
-				.sub-nav {
-					> li {
-						a {
-							color: #555;
-						}
-						&.nav-acc {
-							.button {
-								color: #006477;
-								font-weight: 700;
-							}
-						}
-						& + li {
-							padding-left: 25px;
-							&::before {
-								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M6.4693 4L5.5293 4.94L8.58263 8L5.5293 11.06L6.4693 12L10.4693 8L6.4693 4Z' fill='%23999999'/%3E%3C/svg%3E");
-							}
-						}
-					}
-					&::after {
-						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M11.06 5.53027L8 8.58361L4.94 5.53027L4 6.47027L8 10.4703L12 6.47027L11.06 5.53027Z' fill='%23006477'/%3E%3C/svg%3E");
-					}
-				}
-				.sub-tit {
-					color: #000;
-				}
-			}
 		}
 	}
 
@@ -2785,6 +2831,9 @@ input {
 				flex-direction: row;
 				align-items: flex-start;
 				gap: 0 100px;
+				&.ct {
+					align-items: center;
+				}
 				.label-wrap {
 					max-width: 100px;
 					padding-bottom: 0;
