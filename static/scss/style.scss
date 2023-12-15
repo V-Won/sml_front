@@ -1299,46 +1299,55 @@ input {
 	.text-box {
 		width: 100%;
 		position: relative;
-		.sub-nav-2{
+		.sub-nav-2 {
 			margin-bottom: 20px;
-			> li{
+			> li {
 				float: left;
-				padding-left: 24px;
 				position: relative;
 				a {
-					color: #FFF;
+					color: #fff;
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 24px;
 					letter-spacing: -0.28px;
-				}
-				&::before {
-					content: '';
-					width: 16px;
-					height: 16px;
-					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cg opacity='0.5'%3E%3Cpath d='M6.47125 4L5.53125 4.94L8.58458 8L5.53125 11.06L6.47125 12L10.4713 8L6.47125 4Z' fill='white'/%3E%3C/g%3E%3C/svg%3E");
-					background-repeat: no-repeat;
-					background-size: contain;
-					background-position: center;
-					position: absolute;
-					top: 50%;
-					left: 4px;
-					transform: translateY(-50%);
+					position: relative;
+					display: block;
+					padding-right:25px;
+					&::before {
+						content: "";
+						width: 16px;
+						height: 16px;
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cg opacity='0.5'%3E%3Cpath d='M6.47125 4L5.53125 4.94L8.58458 8L5.53125 11.06L6.47125 12L10.4713 8L6.47125 4Z' fill='white'/%3E%3C/g%3E%3C/svg%3E");
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center;
+						position: absolute;
+						top: 50%;
+						right: 4px;
+						transform: translateY(-50%);
+					}
 				}
 				&:first-child {
 					padding-left: 0;
-					&::before {
-						display: none;
+				}
+				&:last-child {
+					a{
+						&::before {
+							display: none;
+						}
 					}
 				}
-				&.nav-acc{
-					float:none;
-					position: relative;
-					padding-right:30px;
+				&.nav-acc {
+					float: none;
+					padding-right: 30px;
 					width: fit-content;
-					overflow: hidden;
+					position: relative;
+					& > a {
+						padding-right:20px;
+						z-index: 10;
+					}
 					&::after {
-						content: '';
+						content: "";
 						width: 16px;
 						height: 16px;
 						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M11.06 5.53003L8 8.58336L4.94 5.53003L4 6.47003L8 10.47L12 6.47003L11.06 5.53003Z' fill='white'/%3E%3C/svg%3E");
@@ -1347,7 +1356,7 @@ input {
 						background-position: center;
 						position: absolute;
 						top: 50%;
-						right: 0;
+						right: 40px;
 						transform: translateY(-50%);
 					}
 					.button {
@@ -1402,8 +1411,8 @@ input {
 					}
 				}
 			}
-			&::after{
-				content: '';
+			&::after {
+				content: "";
 				display: block;
 				clear: both;
 			}

@@ -1189,17 +1189,19 @@ input {
 }
 .sub-top .text-box .sub-nav-2 > li {
   float: left;
-  padding-left: 24px;
   position: relative;
 }
 .sub-top .text-box .sub-nav-2 > li a {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.28px;
+  position: relative;
+  display: block;
+  padding-right: 25px;
 }
-.sub-top .text-box .sub-nav-2 > li::before {
+.sub-top .text-box .sub-nav-2 > li a::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -1209,22 +1211,25 @@ input {
   background-position: center;
   position: absolute;
   top: 50%;
-  left: 4px;
+  right: 4px;
   transform: translateY(-50%);
 }
 .sub-top .text-box .sub-nav-2 > li:first-child {
   padding-left: 0;
 }
-.sub-top .text-box .sub-nav-2 > li:first-child::before {
+.sub-top .text-box .sub-nav-2 > li:last-child a::before {
   display: none;
 }
 .sub-top .text-box .sub-nav-2 > li.nav-acc {
   float: none;
-  position: relative;
   padding-right: 30px;
   width: -moz-fit-content;
   width: fit-content;
-  overflow: hidden;
+  position: relative;
+}
+.sub-top .text-box .sub-nav-2 > li.nav-acc > a {
+  padding-right: 20px;
+  z-index: 10;
 }
 .sub-top .text-box .sub-nav-2 > li.nav-acc::after {
   content: "";
@@ -1236,7 +1241,7 @@ input {
   background-position: center;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 40px;
   transform: translateY(-50%);
 }
 .sub-top .text-box .sub-nav-2 > li.nav-acc .button {
