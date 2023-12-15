@@ -303,8 +303,9 @@ if (window.console == undefined) { console = { log: () => { } } }
 			const selectBoxs = document.querySelectorAll(tg);
 
 			for (const selectBox of selectBoxs) {
-				selectBox.querySelector(tg + ' > button').addEventListener('click', (e) => {
+				selectBox.querySelector(tg + ' > .button').addEventListener('click', (e) => {
 					let parent = e.target.parentElement;
+					e.preventDefault()
 
 					if (!parent.classList.contains('is-active')) {
 
@@ -323,9 +324,9 @@ if (window.console == undefined) { console = { log: () => { } } }
 				})
 			}
 
-			document.querySelectorAll(tg + ' > ul > li button').forEach(e => {
+			document.querySelectorAll(tg + ' > ul > li .button').forEach(e => {
 				e.onclick = () => {
-					e.parentNode.parentNode.parentNode.querySelector(tg + ' > button').innerText = e.innerText;
+					e.parentNode.parentNode.parentNode.querySelector(tg + ' > .button').innerText = e.innerText;
 					e.parentNode.parentNode.parentNode.classList.add('font');
 				}
 			});
