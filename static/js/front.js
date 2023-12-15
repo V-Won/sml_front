@@ -324,7 +324,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 				})
 			}
 
-			document.querySelectorAll(tg + ' > ul > li .button').forEach(e => {
+			document.querySelectorAll(tg + ' > ul > li button').forEach(e => {
 				e.onclick = () => {
 					e.parentNode.parentNode.parentNode.querySelector(tg + ' > .button').innerText = e.innerText;
 					e.parentNode.parentNode.parentNode.classList.add('font');
@@ -370,30 +370,6 @@ if (window.console == undefined) { console = { log: () => { } } }
 		_click: function () {
 			const me = this,
 				tg = me.selectors.tg;
-
-			// document.querySelectorAll(tg + ' .btn').forEach((item) => {
-			// 	item.addEventListener('click', (e) => {
-			// 		console.log(e.target);
-			// 		document.querySelectorAll(tg + ' ul > li').forEach((item) => {
-						
-			// 			item.classList.remove('is-active');
-			// 		})
-
-			// 		e.target.parentNode.classList.add('is-active');
-			// 	})
-			// })
-
-
-			// const btns = document.querySelectorAll(tg + ' .btn');
-
-			// for ( const btn of btns ) {
-			// 	btn.addEventListener('click', (e) => {
-			// 		document.querySelectorAll('[data-event="commonTab"] li').forEach(item => {
-			// 			item.classList.remove('is-active');
-			// 		});
-			// 		e.target.parentNode.classList.add('is-active');
-			// 	})
-			// }
 
 			const tabBoxs = document.querySelectorAll(tg + ' .btn');
 
