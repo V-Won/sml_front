@@ -3967,3 +3967,21 @@ input {
 	}
 }
 /* //1200 이상 */
+
+.sub-nav-2{
+	min-width: 360px;
+	//background-color: #ccc;
+	li{
+		float:left;
+		padding-left:10px;
+		&.nav-acc{
+			float:none;
+			padding-right:30px;
+			@include text-line-1;
+		}
+	}
+	&::after{
+		content: '';
+		display: block;
+	}
+}

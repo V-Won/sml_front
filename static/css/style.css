@@ -3604,4 +3604,24 @@ input {
     padding: 0 24px;
   }
 }
-/* //1200 이상 *//*# sourceMappingURL=style.css.map */
+/* //1200 이상 */
+.sub-nav-2 {
+  min-width: 360px;
+}
+.sub-nav-2 li {
+  float: left;
+  padding-left: 10px;
+}
+.sub-nav-2 li.nav-acc {
+  float: none;
+  padding-right: 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.sub-nav-2::after {
+  content: "";
+  display: block;
+}/*# sourceMappingURL=style.css.map */
