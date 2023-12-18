@@ -1183,7 +1183,7 @@ input {
 	height: 41px;
 	padding: 12px 48px;
 	border-radius: 999px;
-	background: #555;
+	background: #006477;
 	color: #FFF;
 	text-align: center;
 	font-size: 14px;
@@ -1709,7 +1709,7 @@ input {
 	&.is-active {
 		.button {
 			border-radius: 12px 12px 0 0;
-			border-bottom: none;
+			border-bottom-color: transparent;
 			&::after {
 				transform: translateY(-50%) rotate(180deg);
 			}
@@ -2868,6 +2868,7 @@ input {
 			font-weight: 500;
 			line-height: 120%;
 			letter-spacing: -0.28px;
+			margin-bottom: 40px;
 		}
 	}
 }
@@ -2978,6 +2979,27 @@ input {
 			cursor: auto;
 			&::after {
 				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M9.81818 0L8.72864 1.0575L13.0405 5.25L0 5.25L0 6.75L13.0405 6.75L8.72864 10.9425L9.81818 12L16 6L9.81818 0Z' fill='%23DDDDDD'/%3E%3C/svg%3E");
+			}
+		}
+	}
+
+	// 공통 btn
+
+	.common-moveBtn {
+		height: 64px;
+		padding: 20px 24px;
+		border-radius: 12px;
+		font-size: 20px;
+		span {
+			padding-right: 30px;
+			&::after {
+				content: '';
+				width: 24px;
+				height: 24px;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M12 4.5L10.59 5.91L16.17 11.5H4V13.5H16.17L10.59 19.09L12 20.5L20 12.5L12 4.5Z' fill='white'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
 			}
 		}
 	}
@@ -4229,6 +4251,40 @@ input {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	// 시스템 오류
+	.error-wrap {
+		.inner-gap-1 {
+			padding-top: 260px;
+			padding-bottom: 45px;
+			&::after {
+				content: '';
+				width: 299px;
+				height: 315px;
+				background: url(../images/@/sml_bg_logo.png) no-repeat;
+				background-size: contain;
+				background-position: center;
+				position: absolute;
+				right: 100px;
+				bottom: 34px;
+				z-index: -1;
+			}
+			.txt-1 {
+				font-size: 80px;
+				padding-bottom: 24px;
+			}
+			.txt-2 {
+				font-size: 18px;
+				line-height: 140%;
+				letter-spacing: -0.36px;
+				margin-bottom: 60px;
+				margin-left: 6px;
+			}
+			.common-moveBtn {
+				margin-left: 6px;
 			}
 		}
 	}

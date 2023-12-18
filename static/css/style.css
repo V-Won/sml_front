@@ -1041,18 +1041,6 @@ input {
   font-weight: 700;
 }
 
-<<<<<<< Updated upstream
-.common-moveBtn {
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 41px;
-  padding: 12px 48px;
-  border-radius: 999px;
-  background: #555;
-  color: #FFF;
-  text-align: center;
-=======
 .common-btn-center {
   text-align: center;
 }
@@ -1065,12 +1053,25 @@ input {
   background: #006477;
   color: #fff;
   text-align: right;
->>>>>>> Stashed changes
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
 }
-<<<<<<< Updated upstream
+
+.common-moveBtn {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 41px;
+  padding: 12px 48px;
+  border-radius: 999px;
+  background: #006477;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+}
 .common-moveBtn span {
   padding-right: 22px;
   position: relative;
@@ -1088,8 +1089,6 @@ input {
   transform: translateY(-50%);
   right: 0;
 }
-=======
->>>>>>> Stashed changes
 
 .common-input-1 {
   border-bottom: 1px solid #aacbd2;
@@ -1584,7 +1583,7 @@ input {
 }
 .common-selectbox-2.is-active .button {
   border-radius: 12px 12px 0 0;
-  border-bottom: none;
+  border-bottom-color: transparent;
 }
 .common-selectbox-2.is-active .button::after {
   transform: translateY(-50%) rotate(180deg);
@@ -2683,6 +2682,7 @@ input {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: -0.28px;
+  margin-bottom: 40px;
 }
 
 /* 1024 이상 */
@@ -2787,6 +2787,24 @@ input {
   }
   .common-swiper-button-next-1.swiper-button-disabled::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M9.81818 0L8.72864 1.0575L13.0405 5.25L0 5.25L0 6.75L13.0405 6.75L8.72864 10.9425L9.81818 12L16 6L9.81818 0Z' fill='%23DDDDDD'/%3E%3C/svg%3E");
+  }
+  .common-moveBtn {
+    height: 64px;
+    padding: 20px 24px;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+  .common-moveBtn span {
+    padding-right: 30px;
+  }
+  .common-moveBtn span::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M12 4.5L10.59 5.91L16.17 11.5H4V13.5H16.17L10.59 19.09L12 20.5L20 12.5L12 4.5Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
   .box-radio .radioitem label span {
     font-size: 16px;
@@ -3863,6 +3881,36 @@ input {
     font-size: 18px;
     line-height: 21.6px;
     letter-spacing: -0.36px;
+  }
+  .error-wrap .inner-gap-1 {
+    padding-top: 260px;
+    padding-bottom: 45px;
+  }
+  .error-wrap .inner-gap-1::after {
+    content: "";
+    width: 299px;
+    height: 315px;
+    background: url(../images/@/sml_bg_logo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    right: 100px;
+    bottom: 34px;
+    z-index: -1;
+  }
+  .error-wrap .inner-gap-1 .txt-1 {
+    font-size: 80px;
+    padding-bottom: 24px;
+  }
+  .error-wrap .inner-gap-1 .txt-2 {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+    margin-bottom: 60px;
+    margin-left: 6px;
+  }
+  .error-wrap .inner-gap-1 .common-moveBtn {
+    margin-left: 6px;
   }
 }
 /* //1024 이상 */
