@@ -19,11 +19,26 @@
   <div class="box-wrap">
     <!-- inner-wrap -->
     <div class="inner-wrap">
-      <div class="error-wrap">
+      <div class="sub-top">
         <div class="inner-gap-1">
-          <p class="txt-1">400 <br class="mo-show">Bad Request</p>
-          <p class="txt-2">요청하신 URL을 서버에서 찾을 수 없습니다.<br>문제가 계속되면 서비스 운영자에게 문의해주세요.</p>
-          <a href="#none" class="common-moveBtn"><span>메인으로 가기</span></a>
+          <!-- box-protocol -->
+          <div class="box-protocol">
+            <div class="top-info">
+              <h3>개인정보처리방침</h3>
+              <div class="common-selectbox-2" data-event="commonSelectBox">
+                <button class="button">2023년 02월 10일 ~</button>
+                <ul class="list">
+                  <li><button>2003년 04월 01일 ~ 2018년 11월 01일</button></li>
+                  <li><button>2018년 11월 02일 ~ 2019년 07월 23일</button></li>
+                  <li><button>19년 07월 24일 ~ 2020년 10월 28일</button></li>
+                  <li><button>2020년 10월 29일 ~ 2022년 03월 22일</button></li>
+                  <li><button>2022년 03월 23일 ~ 2023년 02월 09일</button></li>
+                  <li><button>2023년 02월 10일 ~ </button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- //box-protocol -->
         </div>
       </div>
     </div>
@@ -52,6 +67,7 @@
     headerBg({
       bg: "white"
     })
+    selectBox.initialize();
   </script>
 
 </body>
