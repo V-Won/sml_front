@@ -1066,7 +1066,7 @@ input {
   padding: 12px 48px;
   border-radius: 999px;
   background: #006477;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -3908,6 +3908,70 @@ input {
     font-size: 18px;
     line-height: 21.6px;
     letter-spacing: -0.36px;
+  }
+  .error-wrap .inner-gap-1 {
+    padding-top: 260px;
+    padding-bottom: 45px;
+  }
+  .error-wrap .inner-gap-1::after {
+    content: "";
+    width: 299px;
+    height: 315px;
+    background: url(../images/@/sml_bg_logo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    right: 100px;
+    bottom: 34px;
+    z-index: -1;
+  }
+  .error-wrap .inner-gap-1 .txt-1 {
+    font-size: 80px;
+    padding-bottom: 24px;
+  }
+  .error-wrap .inner-gap-1 .txt-2 {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+    margin-bottom: 60px;
+    margin-left: 6px;
+  }
+  .error-wrap .inner-gap-1 .common-moveBtn {
+    margin-left: 6px;
+  }
+  .box-map-search .common-btnType-1 {
+    margin-top: 40px;
+  }
+  .box-map-search .box-top-search {
+    display: flex;
+  }
+  .box-map-search .box-top-search .common-selectbox-2 {
+    flex: 0 0 453px;
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  .box-map-search .box-top-search .item-search {
+    flex: 1 1 auto;
+    position: relative;
+    padding-right: 177px;
+  }
+  .box-map-search .box-top-search .item-search input {
+    max-width: 100%;
+  }
+  .box-map-search .box-top-search .item-search .icon-search {
+    width: 169px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .box-map-search .box-top-search .item-search .icon-search > span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.4px;
   }
 }
 /* //1024 이상 */
