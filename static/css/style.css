@@ -4527,6 +4527,9 @@ input {
     margin: 25px 24px -7px 24px;
     display: flex;
   }
+  .box-protocol .dl-table.item-2 dl {
+    flex: 0 0 50%;
+  }
   .box-protocol .dl-table dl {
     flex: 0 0 33.33%;
     padding: 0;
