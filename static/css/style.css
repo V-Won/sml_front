@@ -1715,7 +1715,7 @@ input {
 .common-selectbox-2.is-active .list {
   display: block;
 }
-.common-selectbox-2.is-select .button {
+.common-selectbox-2.font .button {
   color: #000;
 }
 .common-selectbox-2 + .common-selectbox-2 {
@@ -1753,7 +1753,7 @@ input {
   padding: 16px;
   border: 1px solid #d5d5d5;
   border-radius: 6px;
-  color: #666;
+  color: #000;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;

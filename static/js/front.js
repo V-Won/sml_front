@@ -572,8 +572,10 @@ if (window.console == undefined) { console = { log: () => { } } }
 				// load
 				if (e.classList.contains('is-active')) {
 					const dd = e.getAttribute('data-selectDay');
-
+					const text = e.parentNode.querySelector('.is-active').innerText;
+					
 					set(dd);
+					e.parentNode.parentNode.parentNode.querySelector('.button').innerText = text;
 				}
 
 				// click
