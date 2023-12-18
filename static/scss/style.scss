@@ -3066,6 +3066,10 @@ input {
 				}
 			}
 		}
+		.a-link{
+			height: 0;
+			transform: translateY(-50px);
+		}
 	}
 	ul.number {
 		counter-reset: circle 0;
@@ -4896,6 +4900,10 @@ input {
 						}
 					}
 				}
+			}
+			.a-link{
+				height: 0;
+				transform: translateY(-100px);
 			}
 		}
 		ul.number {

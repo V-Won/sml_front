@@ -2866,6 +2866,10 @@ input {
 .box-protocol .inner-protocol .list-protocol .ct > ul > li > ul.number {
   padding: 0 0 0 32px;
 }
+.box-protocol .inner-protocol .a-link {
+  height: 0;
+  transform: translateY(-50px);
+}
 .box-protocol ul.number {
   counter-reset: circle 0;
   padding: 22px 0 0 20px;
@@ -4468,6 +4472,10 @@ input {
   }
   .box-protocol .inner-protocol .list-protocol .ct > ul > li > ul.number {
     padding: 0 0 0 43px;
+  }
+  .box-protocol .inner-protocol .a-link {
+    height: 0;
+    transform: translateY(-100px);
   }
   .box-protocol ul.number {
     padding: 23px 0 0 48px;
