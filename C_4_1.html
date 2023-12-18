@@ -32,15 +32,38 @@
               </li>
               <li class="nav-acc" data-event="commonSelectBox">
                 <a href="#none" class="button">임상연구</a> 
+                <!-- <a href="#none" class="button">유전체 연구</a>  -->
                 <ul class="list">
                   <!-- hover시 font-weight 문제로 title 사용 -->
                   <li><a href="#none" title="menu-1">임상연구</a></li>
-                  <li><a href="#none" title="menu-2">유전체연구</a></li>
+                  <li><a href="#none" title="menu-2">유전체 연구</a></li>
                 </ul>
               </li>
             </ul>
             <h3 class="sub-tit">임상연구</h3>
+            <!-- <h3 class="sub-tit">유전체 연구</h3> -->
           </div>
+          <!-- 고객서비스 > 고객지원 > 1:1 문의 화면 sub top -->
+          <!-- <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">고객서비스</a>
+              </li>
+              <li>
+                <a href="#none">고객지원</a> 
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">1:1 문의</a>
+                <ul class="list">
+                  <li><a href="#none" title="menu-1">고객센터</a></li>
+                  <li><a href="#none" title="menu-1">자주하는 질문</a></li>
+                  <li><a href="#none" title="menu-2">1:1 문의</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">1:1 문의</h3>
+          </div> -->
+          <!-- //고객서비스 > 고객지원 > 1:1 문의 화면 sub top -->
         </div>
       </div>
       <div class="research-formWrap">
@@ -141,7 +164,7 @@
                     <label for="form-8" class="file-btn">파일 찾기</label>
                     <input type="file" id="form-8">
                   </div>
-                  <ul class="file-item">
+                  <ul class="file-item" data-event="fileDelete">
                     <li>
                       <span>Attach_File_01.zip</span>
                       <button class="del-btn">삭제</button>
@@ -187,7 +210,7 @@
                   </div>
                 </div>
                 <div class="common-btn-center">
-                  <button class="common-btnType-2">문의하기</button>
+                  <button class="common-btnType-1">문의하기</button>
                 </div>
               </div>
             </div>
@@ -219,8 +242,10 @@
     */
     headerBg({
       bg: "transparent"
-    })
+      // bg: "white"
+    });
     selectBox.initialize();
+    fileDelete.initialize();
   </script>
 
 </body>

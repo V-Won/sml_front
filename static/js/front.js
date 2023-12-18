@@ -389,6 +389,49 @@ if (window.console == undefined) { console = { log: () => { } } }
 	window.commonTab = commonTab;
 }(window));
 
+/* file Delete */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description file Delete
+	 * @modify
+			@202312018 추가
+	*/
+	var fileDelete = {
+		/** 플러그인명 */
+		bind: fileDelete,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="fileDelete"]'
+		},
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: function () {
+			const me = this,
+				tg = me.selectors.tg;
+
+			const delBtns = document.querySelectorAll(tg + ' .del-btn');
+
+			for (const delBtn of delBtns) {
+				delBtn.addEventListener('click', (e) => {
+					// class remove					
+					e.target.parentNode.parentNode.querySelectorAll('.file-item > li').forEach(() => {
+						e.target.parentNode.remove();
+					})
+				})
+			}
+		}
+	};
+
+	window.fileDelete = fileDelete;
+}(window));
+
 /* main tab */
 (function (window, undefined) {
 	"use strict";

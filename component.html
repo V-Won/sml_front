@@ -175,18 +175,22 @@
                   <label for="form-8" class="file-btn">파일 찾기</label>
                   <input type="file" id="form-8">
                 </div>
-                <ul class="file-item">
+                <ul class="file-item" data-event="fileDelete">
                   <li>
                     <span>Attach_File_01.zip</span>
-                    <button class="del-btn"></button>
+                    <button class="del-btn">삭제</button>
+                  </li>
+                  <li>
+                    <span>Attach_File_01Attach_File_01Attach_File_01Attach_File_01Attach_File_01Attach_File_01.zip</span>
+                    <button class="del-btn">삭제</button>
                   </li>
                   <li>
                     <span>Attach_File_01.zip</span>
-                    <button class="del-btn"></button>
+                    <button class="del-btn">삭제</button>
                   </li>
                   <li>
                     <span>Attach_File_01.zip</span>
-                    <button class="del-btn"></button>
+                    <button class="del-btn">삭제</button>
                   </li>
                 </ul>
                 <p class="file-noti">※ 첨부파일 용량은 최대 10MB 입니다.</p>
@@ -331,11 +335,6 @@
             </div>
             <div class="form-item">
               <div class="common-btn-center">
-                <a href="#none" class="common-btnType-2">공통 버튼 2</a>
-              </div>
-            </div>
-            <div class="form-item">
-              <div class="common-btn-center">
                 <a href="#none" class="common-moveBtn"><span>이동 버튼</span></a>
               </div>
             </div>
@@ -430,6 +429,7 @@
     selectBox.initialize();
     checkboxAll.initialize();
     commonTab.initialize();
+    fileDelete.initialize();
   </script>
 
 </body>
