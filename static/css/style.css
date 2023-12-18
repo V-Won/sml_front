@@ -2870,6 +2870,9 @@ input {
   counter-reset: circle 0;
   padding: 22px 0 0 20px;
 }
+.box-protocol ul.number.padding-top-0 {
+  padding-top: 0;
+}
 .box-protocol ul.number > li {
   position: relative;
   list-style: none;
@@ -2928,6 +2931,12 @@ input {
   line-height: 140%;
   letter-spacing: -0.24px;
   padding: 0 12px 9px 12px;
+}
+.box-protocol .text-3.padding-top-20 {
+  padding-top: 20px;
+}
+.box-protocol .text-3.padding-top-12 {
+  padding-top: 12px;
 }
 .box-protocol .dl-table {
   margin: 11px 12px 0 12px;
