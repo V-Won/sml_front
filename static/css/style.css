@@ -1041,6 +1041,7 @@ input {
   font-weight: 700;
 }
 
+<<<<<<< Updated upstream
 .common-moveBtn {
   display: block;
   width: -moz-fit-content;
@@ -1051,10 +1052,25 @@ input {
   background: #555;
   color: #FFF;
   text-align: center;
+=======
+.common-btn-center {
+  text-align: center;
+}
+
+.common-btnType-1 {
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 999px;
+  border: 2px solid #006477;
+  background: #006477;
+  color: #fff;
+  text-align: right;
+>>>>>>> Stashed changes
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
 }
+<<<<<<< Updated upstream
 .common-moveBtn span {
   padding-right: 22px;
   position: relative;
@@ -1072,6 +1088,8 @@ input {
   transform: translateY(-50%);
   right: 0;
 }
+=======
+>>>>>>> Stashed changes
 
 .common-input-1 {
   border-bottom: 1px solid #aacbd2;
@@ -1639,7 +1657,7 @@ input {
   color: #999;
 }
 .common-input-2.error {
-  background: #FAFAFA;
+  background: #fafafa;
   border: 1px solid #006477;
   color: #006477;
 }
@@ -1682,6 +1700,49 @@ input {
   height: 18px;
 }
 
+.common-paging {
+  padding: 40px 0 0;
+}
+.common-paging ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.common-paging ul li a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #999;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  border: 0;
+  width: 32px;
+  height: 32px;
+}
+.common-paging ul li a:hover, .common-paging ul li a.is-active {
+  border-radius: 999px;
+  background: #006477;
+  color: #fff;
+}
+.common-paging ul li a.btn-prev, .common-paging ul li a.btn-next {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.common-paging ul li a.btn-prev:hover, .common-paging ul li a.btn-next:hover {
+  background-color: transparent;
+}
+.common-paging ul li a.btn-prev {
+  left: -15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15.7049 7.41L14.2949 6L8.29492 12L14.2949 18L15.7049 16.59L11.1249 12L15.7049 7.41Z' fill='%23999999'/%3E%3C/svg%3E");
+}
+.common-paging ul li a.btn-next {
+  right: -15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8.29492 16.59L12.8749 12L8.29492 7.41L9.70492 6L15.7049 12L9.70492 18L8.29492 16.59Z' fill='%23999999'/%3E%3C/svg%3E");
+}
+
 .common-textarea {
   width: 100%;
   min-height: 298px;
@@ -1707,7 +1768,7 @@ input {
   border: 1px solid #000;
 }
 .common-textarea.error {
-  background: #FAFAFA;
+  background: #fafafa;
   border: 1px solid #006477;
   color: #006477;
 }
@@ -2523,12 +2584,15 @@ input {
   color: #fff;
 }
 
-.box-search-list > ul {
+.box-map-search .common-btnType-1 {
+  margin-top: 40px;
+}
+.box-map-search .box-search-list > ul {
   border-top: 1px solid #555;
   border-bottom: 1px solid #555;
   margin-top: 40px;
 }
-.box-search-list > ul > li {
+.box-map-search .box-search-list > ul > li {
   border-top: 1px solid #d5d5d5;
   display: flex;
   padding: 32px 12px;
@@ -2537,10 +2601,10 @@ input {
   align-items: flex-start;
   align-self: stretch;
 }
-.box-search-list > ul > li:first-child {
+.box-map-search .box-search-list > ul > li:first-child {
   border-top: 0;
 }
-.box-search-list > ul > li h4 {
+.box-map-search .box-search-list > ul > li h4 {
   color: #000;
   font-size: 20px;
   font-weight: 600;
@@ -2548,7 +2612,7 @@ input {
   letter-spacing: -0.4px;
   margin-bottom: 19px;
 }
-.box-search-list > ul > li .text-1 {
+.box-map-search .box-search-list > ul > li .text-1 {
   color: #000;
   font-size: 14px;
   font-weight: 500;
@@ -2556,12 +2620,12 @@ input {
   letter-spacing: -0.28px;
   margin-bottom: 11px;
 }
-.box-search-list > ul > li dl {
+.box-map-search .box-search-list > ul > li dl {
   display: flex;
   width: 100%;
   margin-bottom: 5px;
 }
-.box-search-list > ul > li dl dt {
+.box-map-search .box-search-list > ul > li dl dt {
   color: #006477;
   font-size: 14px;
   font-weight: 600;
@@ -2569,7 +2633,7 @@ input {
   letter-spacing: -0.28px;
   flex: 0 0 38px;
 }
-.box-search-list > ul > li dl dd {
+.box-map-search .box-search-list > ul > li dl dd {
   flex: 1 1 content;
   color: #000;
   font-size: 14px;
@@ -2577,12 +2641,17 @@ input {
   line-height: 24px;
   letter-spacing: -0.28px;
 }
-.box-search-list > ul > li dl dd a {
+.box-map-search .box-search-list > ul > li dl dd a {
   display: block;
   width: 100%;
 }
-.box-search-list > ul > li .common-btnMap-1 {
+.box-map-search .box-search-list > ul > li .common-btnMap-1 {
   margin-top: 14px;
+}
+.box-map-search .box-map {
+  margin-top: 40px;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 .error-wrap .inner-gap-1 {

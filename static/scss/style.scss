@@ -1161,7 +1161,20 @@ input {
 }
 
 // 공통 btn
-.common-btn-1 {
+.common-btn-center {
+	text-align: center;
+}
+.common-btnType-1 {
+	display: inline-block;
+	padding: 12px 48px;
+	border-radius: 999px;
+	border: 2px solid #006477;
+	background: #006477;
+	color: #fff;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 120%;
 }
 
 .common-moveBtn {
@@ -1775,7 +1788,7 @@ input {
 		}
 	}
 	&.error {
-		background: #FAFAFA;
+		background: #fafafa;
 		border: 1px solid #006477;
 		color: #006477;
 		&::placeholder {
@@ -1817,6 +1830,54 @@ input {
 	}
 }
 
+// common-paging
+.common-paging {
+	padding: 40px 0 0;
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
+		li {
+			a {
+				justify-content: center;
+				align-items: center;
+				display: flex;
+				color: #999;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 120%;
+				border: 0;
+				width: 32px;
+				height: 32px;
+				&:hover,
+				&.is-active {
+					border-radius: 999px;
+					background: #006477;
+					color: #fff;
+				}
+				&.btn-prev,
+				&.btn-next {
+					width: 24px;
+					height: 24px;
+					position: relative;
+					&:hover {
+						background-color: transparent;
+					}
+				}
+				&.btn-prev {
+					left: -15px;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15.7049 7.41L14.2949 6L8.29492 12L14.2949 18L15.7049 16.59L11.1249 12L15.7049 7.41Z' fill='%23999999'/%3E%3C/svg%3E");
+				}
+				&.btn-next {
+					right: -15px;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8.29492 16.59L12.8749 12L8.29492 7.41L9.70492 6L15.7049 12L9.70492 18L8.29492 16.59Z' fill='%23999999'/%3E%3C/svg%3E");
+				}
+			}
+		}
+	}
+}
+
 // common-textarea
 .common-textarea {
 	width: 100%;
@@ -1839,7 +1900,7 @@ input {
 		border: 1px solid #000;
 	}
 	&.error {
-		background: #FAFAFA;
+		background: #fafafa;
 		border: 1px solid #006477;
 		color: #006477;
 		&::placeholder {
@@ -2701,69 +2762,79 @@ input {
 }
 
 // 재단안내 > 전국 네트워크
-.box-top-search {
-}
-.box-search-list {
-	> ul {
-		border-top: 1px solid #555;
-		border-bottom: 1px solid #555;
+.box-map-search {
+	.common-btnType-1 {
 		margin-top: 40px;
-		> li {
-			border-top: 1px solid #d5d5d5;
-			display: flex;
-			padding: 32px 12px;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-start;
-			align-self: stretch;
-			&:first-child {
-				border-top: 0;
-			}
-			h4 {
-				color: #000;
-				font-size: 20px;
-				font-weight: 600;
-				line-height: 120%;
-				letter-spacing: -0.4px;
-				margin-bottom:19px;
-			}
-			.text-1 {
-				color: #000;
-				font-size: 14px;
-				font-weight: 500;
-				line-height: 24px;
-				letter-spacing: -0.28px;
-				margin-bottom:11px;
-			}
-			dl {
+	}
+	.box-top-search {
+	}
+	.box-search-list {
+		> ul {
+			border-top: 1px solid #555;
+			border-bottom: 1px solid #555;
+			margin-top: 40px;
+			> li {
+				border-top: 1px solid #d5d5d5;
 				display: flex;
-				width: 100%;
-				margin-bottom:5px;
-				dt {
-					color: #006477;
-					font-size: 14px;
-					font-weight: 600;
-					line-height: 24px;
-					letter-spacing: -0.28px;
-					flex: 0 0 38px;
+				padding: 32px 12px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				align-self: stretch;
+				&:first-child {
+					border-top: 0;
 				}
-				dd {
-					flex: 1 1 content;
+				h4 {
+					color: #000;
+					font-size: 20px;
+					font-weight: 600;
+					line-height: 120%;
+					letter-spacing: -0.4px;
+					margin-bottom: 19px;
+				}
+				.text-1 {
 					color: #000;
 					font-size: 14px;
-					font-weight: 400;
+					font-weight: 500;
 					line-height: 24px;
 					letter-spacing: -0.28px;
-					a {
-						display: block;
-						width: 100%;
+					margin-bottom: 11px;
+				}
+				dl {
+					display: flex;
+					width: 100%;
+					margin-bottom: 5px;
+					dt {
+						color: #006477;
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 24px;
+						letter-spacing: -0.28px;
+						flex: 0 0 38px;
+					}
+					dd {
+						flex: 1 1 content;
+						color: #000;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 24px;
+						letter-spacing: -0.28px;
+						a {
+							display: block;
+							width: 100%;
+						}
 					}
 				}
-			}
-			.common-btnMap-1{
-				margin-top:14px;
+				.common-btnMap-1 {
+					margin-top: 14px;
+				}
 			}
 		}
+	}
+	.box-map {
+		margin-top: 40px;
+		overflow: hidden;
+		border-radius: 6px;
 	}
 }
 
