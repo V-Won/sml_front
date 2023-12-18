@@ -84,8 +84,8 @@ if (window.console == undefined) { console = { log: () => { } } }
 			document.querySelector(headerGnb + ' .btn-search').addEventListener('mouseover', (e) => {
 				headerRemoveClass();
 				document.querySelector(headerGnb).classList.add('is-search');
-				setTimeout(() => {document.querySelector('#hamburger-2').classList.add('is-active')}, 10)
-				
+				setTimeout(() => { document.querySelector('#hamburger-2').classList.add('is-active') }, 10)
+
 				if (document.querySelector('body').classList.contains('mobile')) { // mobile
 					if (document.querySelector('.box-header').classList.contains('is-search')) {
 						// mo 분기 필요.
@@ -155,7 +155,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 			document.querySelector('#searchXbtn-1').addEventListener('click', (e) => {
 				document.querySelector('.box-header').classList.remove('is-search');
 				document.getElementsByTagName('html')[0].style.overflow = "";
-			})			
+			})
 
 			// PC 햄버거 버튼 클릭 상태에서 resize
 			window.addEventListener('resize', () => {
@@ -314,7 +314,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 								e.classList.remove('is-active');
 							}
 						});
-						
+
 						if (!parent.classList.contains('disabled')) {
 							parent.classList.add('is-active');
 						}
@@ -494,33 +494,33 @@ if (window.console == undefined) { console = { log: () => { } } }
 			tg: '[data-event="checkboxAll"]',
 			tg2: '[data-event="checkbox"]'
 		},
-		initialize: function() {
+		initialize: function () {
 			const me = this;
 
 			me._click();
 		},
-		_click: function(){
+		_click: function () {
 			const me = this,
-						tg = me.selectors.tg,
-						tg2 = me.selectors.tg2;
+				tg = me.selectors.tg,
+				tg2 = me.selectors.tg2;
 
 			let ck = (st, item) => {
 				st == "on" ? item.checked = true : item.checked = false;
 			}
 
-			document.querySelectorAll(tg + ' input').forEach( e => {
+			document.querySelectorAll(tg + ' input').forEach(e => {
 				e.onclick = (e) => {
-					document.querySelectorAll('input[name="' + e.target.name + '"]').forEach( item => {
+					document.querySelectorAll('input[name="' + e.target.name + '"]').forEach(item => {
 						e.target.checked ? ck('on', item) : ck('off', item);
 					});
 				}
 			});
 
-			document.querySelectorAll(tg2 + ' input').forEach( e => {
+			document.querySelectorAll(tg2 + ' input').forEach(e => {
 				e.onclick = (e) => {
-					if( document.querySelectorAll('[data-event="checkbox"] input[name="' + e.target.name + '"]').length == document.querySelectorAll('[data-event="checkbox"] input[name="' + e.target.name + '"]:checked').length ){
+					if (document.querySelectorAll('[data-event="checkbox"] input[name="' + e.target.name + '"]').length == document.querySelectorAll('[data-event="checkbox"] input[name="' + e.target.name + '"]:checked').length) {
 						ck('on', document.querySelector('[data-event="checkboxAll"] input[name="' + e.target.name + '"]'));
-					}else{
+					} else {
 						ck('off', document.querySelector('[data-event="checkboxAll"] input[name="' + e.target.name + '"]'));
 					}
 				}
@@ -529,6 +529,64 @@ if (window.console == undefined) { console = { log: () => { } } }
 	};
 
 	window.checkboxAll = checkboxAll;
+}(window));
+
+/* protocol */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description protocol
+	 * @modify
+			@20231218 추가
+	*/
+	var protocol = {
+		/** 플러그인명 */
+		bind: protocol,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-selectDay=]',
+			tg2: '[data-day=]'
+		},
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: function () {
+			const me = this,
+				tg = me.selectors.tg,
+				tg2 = me.selectors.tg2;
+
+			const set = (dd) => {
+				document.querySelectorAll('.inner-protocol').forEach((tg) => {
+					tg.style.display = 'none';
+				})
+				document.querySelector('[data-day="' + dd + '"]').style.display = 'block';
+			}
+
+			document.querySelectorAll('[data-selectDay]').forEach((e) => {
+				
+				// load
+				if (e.classList.contains('is-active')) {
+					const dd = e.getAttribute('data-selectDay');
+
+					set(dd);
+				}
+
+				// click
+				e.addEventListener('click', (item) => {
+					const dd = e.getAttribute('data-selectDay');
+
+					set(dd);
+				})
+			})
+		}
+	};
+
+	window.protocol = protocol;
 }(window));
 
 /**
@@ -547,12 +605,12 @@ device.initialize();
 
 // header bg
 const headerBg = (item) => {
-  const key = item['bg'];
+	const key = item['bg'];
 
-  if (key == 'white') {
-    setTimeout(() => {
+	if (key == 'white') {
+		setTimeout(() => {
 			document.querySelector('.box-header').classList.add('bg-fff'); // white 모드 헤더
 			document.querySelector('.sub-top').classList.add('bg-fff'); // white 모드 sub 배너
 		}, 100)
-  }
+	}
 }

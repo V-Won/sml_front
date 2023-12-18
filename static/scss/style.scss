@@ -1338,6 +1338,9 @@ input {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
+		&.no-flex{
+			display: block;
+		}
 	}
 	.text-box {
 		width: 100%;
@@ -1634,7 +1637,7 @@ input {
 						display: flex;
 						align-items: center;
 						&::before {
-							content: '';
+							content: "";
 							width: 20px;
 							height: 20px;
 							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M15.8919 8.82149L9.11544 15.5979C7.81319 16.9002 5.70365 16.9002 4.4014 15.5979C3.09914 14.2957 3.09914 12.1861 4.4014 10.8839L11.7671 3.51819C12.5803 2.70502 13.9002 2.70502 14.7134 3.51819C15.5265 4.33136 15.5265 5.65129 14.7134 6.46447L8.52619 12.6517C8.2021 12.9757 7.67177 12.9757 7.34768 12.6517C7.02359 12.3276 7.02359 11.7972 7.34768 11.4731L12.9456 5.87521L12.0617 4.99133L6.46379 10.5893C5.65062 11.4024 5.65062 12.7224 6.46379 13.5355C7.27697 14.3487 8.5969 14.3487 9.41007 13.5355L15.5973 7.34835C16.8995 6.0461 16.8995 3.93656 15.5973 2.63431C14.295 1.33205 12.1855 1.33205 10.8832 2.63431L3.51752 10C1.72618 11.7913 1.72618 14.6905 3.51752 16.4818C5.30885 18.2732 8.20799 18.2732 9.99933 16.4818L16.7758 9.70537L15.8919 8.82149Z' fill='black'/%3E%3C/svg%3E");
@@ -3008,13 +3011,151 @@ input {
 
 // 약관 > 개인정보처리방침
 .box-protocol {
-	h3 {
+	.top-info {
+		border-bottom: 2px solid #555;
+		padding-bottom: 18px;
+		margin-bottom: 30px;
+		h3 {
+			color: #000;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 140%;
+			letter-spacing: -0.4px;
+			text-transform: uppercase;
+			padding-bottom: 20px;
+		}
+	}
+	.inner-protocol {
+		.text-1 {
+			color: #000;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 140%;
+			letter-spacing: -0.24px;
+			padding: 11px;
+		}
+		.list-protocol {
+			display: flex;
+			padding: 40px 20px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 20px;
+			align-self: stretch;
+			border-radius: 6px;
+			background: #f5f5f5;
+			margin: 30px 0 0 0;
+			h4 {
+				color: #000;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 120%;
+				letter-spacing: -0.32px;
+			}
+			> ul {
+				> li {
+					color: #555;
+					font-size: 12px;
+					font-weight: 500;
+					line-height: 140%;
+					letter-spacing: -0.24px;
+					> ul.number {
+						padding: 0 0 0 32px;
+					}
+				}
+			}
+		}
+	}
+	ul.number {
+		counter-reset: circle 0;
+		padding: 22px 0 0 20px;
+		> li {
+			position: relative;
+			list-style: none;
+			padding: 0 0 0 13px;
+			color: #555;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 140%;
+			letter-spacing: -0.24px;
+			&::before {
+				position: absolute;
+				top: 2px;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 11px;
+				height: 11px;
+				//transform: translateY(-50%);
+				counter-increment: circle 1;
+				content: counter(circle);
+				color: #555;
+				font-size: 7px;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				top: 2px;
+				left: 0;
+				//transform: translateY(-50%);
+				display: inline-block;
+				border: 1px solid #555;
+				border-radius: 50%;
+				width: 11px;
+				height: 11px;
+			}
+		}
+	}
+	h5 {
 		color: #000;
-		font-size: 20px;
-		font-weight: 700;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 120%;
+		letter-spacing: -0.32px;
+		padding: 41px 12px 13px 12px;
+	}
+	.text-2 {
+		color: #555;
+		font-size: 12px;
+		font-weight: 500;
 		line-height: 140%;
-		letter-spacing: -0.4px;
-		text-transform: uppercase;
+		letter-spacing: -0.24px;
+		padding: 0 12px 0 12px;
+	}
+	.text-3 {
+		color: #000;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 140%;
+		letter-spacing: -0.24px;
+		padding:0 12px 9px 12px;
+	}
+	.dl-table {
+		margin: 11px 12px 0 12px;
+		border-top: 1px solid #555;
+		border-bottom: 1px solid #555;
+		dl {
+			border-top: 1px solid #d5d5d5;
+			padding: 20px 12px 14px 12px;
+			&:first-child {
+				border-top: 0;
+			}
+			dt {
+				color: #000;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 140%;
+				letter-spacing: -0.28px;
+				padding-bottom: 17px;
+			}
+			dd {
+				color: #555;
+				font-size: 12px;
+				font-weight: 500;
+				line-height: 25px;
+				letter-spacing: -0.24px;
+			}
+		}
 	}
 }
 
