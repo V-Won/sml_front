@@ -3114,6 +3114,9 @@ input {
 				height: 11px;
 			}
 		}
+		& + .text-2 {
+			padding-top: 20px;
+		}
 	}
 	h5 {
 		color: #000;
@@ -4931,6 +4934,9 @@ input {
 					width: 13px;
 					height: 13px;
 				}
+			}
+			& + .text-2 {
+				padding-top: 24px;
 			}
 		}
 		h5 {

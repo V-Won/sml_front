@@ -2912,6 +2912,9 @@ input {
   width: 11px;
   height: 11px;
 }
+.box-protocol ul.number + .text-2 {
+  padding-top: 20px;
+}
 .box-protocol h5 {
   color: #000;
   font-size: 16px;
@@ -4501,6 +4504,9 @@ input {
     top: 6px;
     width: 13px;
     height: 13px;
+  }
+  .box-protocol ul.number + .text-2 {
+    padding-top: 24px;
   }
   .box-protocol h5 {
     font-size: 24px;
