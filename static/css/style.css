@@ -2033,13 +2033,25 @@ input {
   background: #006477;
   color: #fff;
 }
-.common-paging ul li a.btn-prev, .common-paging ul li a.btn-next {
+.common-paging ul li a.btn-first, .common-paging ul li a.btn-last, .common-paging ul li a.btn-prev, .common-paging ul li a.btn-next {
   width: 24px;
   height: 24px;
   position: relative;
 }
-.common-paging ul li a.btn-prev:hover, .common-paging ul li a.btn-next:hover {
+.common-paging ul li a.btn-first:hover, .common-paging ul li a.btn-last:hover, .common-paging ul li a.btn-prev:hover, .common-paging ul li a.btn-next:hover {
   background-color: transparent;
+}
+.common-paging ul li a.btn-first, .common-paging ul li a.btn-last {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M17.59 18L19 16.59L14.42 12L19 7.41L17.59 6L11.59 12L17.59 18Z' fill='%23D5D5D5'/%3E%3Cpath d='M11 18L12.41 16.59L7.83 12L12.41 7.41L11 6L5 12L11 18Z' fill='%23D5D5D5'/%3E%3C/svg%3E");
+}
+.common-paging ul li a.btn-first {
+  margin-right: 26px;
+}
+.common-paging ul li a.btn-last {
+  margin-left: 26px;
+}
+.common-paging ul li a.btn-last {
+  transform: rotate(-180deg);
 }
 .common-paging ul li a.btn-prev {
   left: -15px;
