@@ -363,7 +363,7 @@ input {
 	.menu-list {
 		opacity: 0;
 		pointer-events: none;
-		background: linear-gradient(0deg, rgba(13, 109, 128, 0.2) 0%, rgba(13, 109, 128, 0.2) 100%), #28a688;
+		background: linear-gradient(0deg, #3a8593 0%, #3a8593 100%), #28a688;
 		display: flex;
 		padding: 0 10px 0 28px;
 		flex-direction: column;
@@ -420,7 +420,7 @@ input {
 					&.is-active {
 						> h3 {
 							&::after {
-								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect x='2' y='13' width='2' height='20' transform='rotate(-90 2 13)' fill='white'/%3E%3C/svg%3E");
+								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M3 11L21 11V13L3 13L3 11Z' fill='white'/%3E%3C/svg%3E");
 							}
 						}
 						> ul {
@@ -452,7 +452,7 @@ input {
 							transition: background-image 0.3s ease;
 							content: "";
 							display: block;
-							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 16L12 8L4 16' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M19 13L13 13V19H11L11 13H5V11H11V5H13L13 11L19 11V13Z' fill='white'/%3E%3C/svg%3E");
 							position: absolute;
 							width: 24px;
 							height: 24px;
@@ -468,7 +468,7 @@ input {
 						pointer-events: none;
 						display: none;
 						> li {
-							padding: 0 0 14px 0;
+							padding: 0 0 13px 0;
 							display: flex;
 							align-items: flex-start;
 							align-self: stretch;
@@ -477,7 +477,7 @@ input {
 							> a {
 								color: #fff;
 								font-family: Pretendard;
-								font-size: 18px;
+								font-size: 20px;
 								font-style: normal;
 								font-weight: 600;
 								line-height: 21.6px;
@@ -489,15 +489,15 @@ input {
 									> a {
 										color: #fff;
 										font-family: Pretendard;
-										font-size: 14px;
+										font-size: 16px;
 										font-style: normal;
-										font-weight: 500;
+										font-weight: 200;
 										line-height: 16.8px;
 										letter-spacing: -0.28px;
 										position: relative;
 										padding: 0 0 0 6px;
 										display: block;
-										margin: 0 0 17px 0;
+										margin: 0 0 19px 0;
 										&::after {
 											content: "";
 											display: block;
@@ -715,7 +715,7 @@ input {
 						&:hover,
 						&.is-active {
 							color: #006477 !important;
-							font-size: 700 !important;
+							font-weight: 700 !important;
 						}
 					}
 				}
@@ -771,6 +771,55 @@ input {
 			opacity: 1;
 			pointer-events: all;
 			display: block;
+		}
+	}
+}
+
+// 공통 header mobile btn-menu click시 언어 선택 가져오기
+.mobile {
+	.box-header {
+		&.is-menuOpen {
+			.inner-gap-1 {
+				.inner {
+					.box-lang {
+						display: block;
+						position: absolute;
+						left: 20px;
+						top: 20px;
+						z-index: 1000;
+						.btn-lang {
+							display: none;
+						}
+						ul {
+							display: flex;
+							gap: 8px;
+							li {
+								a {
+									color: #fff;
+									text-align: center;
+									font-size: 16px;
+									font-style: normal;
+									font-weight: 600;
+									line-height: 120%;
+									letter-spacing: 0.32px;
+									display: flex;
+									padding: 6px 16px;
+									align-items: center;
+									gap: 6px;
+									border-radius: 999px;
+									border: 1px solid #fff;
+									&.is-active {
+										border-radius: 999px;
+										border: 1px solid #fff;
+										background: #fff;
+										color: #229b86;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -2272,11 +2321,11 @@ input {
 				&.btn-last {
 					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M17.59 18L19 16.59L14.42 12L19 7.41L17.59 6L11.59 12L17.59 18Z' fill='%23999999'/%3E%3Cpath d='M11 18L12.41 16.59L7.83 12L12.41 7.41L11 6L5 12L11 18Z' fill='%23999999'/%3E%3C/svg%3E");
 				}
-				&.btn-first{
-					margin-right:26px;
+				&.btn-first {
+					margin-right: 26px;
 				}
-				&.btn-last{
-					margin-left:26px;
+				&.btn-last {
+					margin-left: 26px;
 				}
 				&.btn-last {
 					transform: rotate(-180deg);
@@ -4130,7 +4179,7 @@ input {
 					> li {
 						max-width: 260px;
 						flex: 1 1 content;
-						padding: 60px 24px 0 24px;
+						padding: 28px 24px 0 24px;
 						margin-bottom: 0;
 						flex-shrink: 0;
 						border-bottom: 0;
@@ -4189,7 +4238,8 @@ input {
 								width: auto;
 								&:first-child {
 									> a {
-										padding-top: 40px;
+										padding-top: 28px;
+										padding-bottom: 4px;
 									}
 								}
 								> a {
@@ -4199,7 +4249,7 @@ input {
 									line-height: 19.2px;
 									letter-spacing: -0.32px;
 									display: block;
-									padding: 25px 0 14px 0;
+									padding: 22px 0 4px 0;
 									transition: all 0.2s;
 									&:hover {
 										color: #1d1d1d;
@@ -4215,7 +4265,7 @@ input {
 											line-height: 16.8px;
 											letter-spacing: -0.28px;
 											position: relative;
-											padding: 7px 0 7px 16px;
+											padding: 5px 0 5px 16px;
 											display: block;
 											transition: all 0.2s;
 											margin-bottom: 0;
@@ -4230,8 +4280,10 @@ input {
 												width: 3px;
 												height: 3px;
 												position: absolute;
-												top: 14px;
+												//top: 14px;
+												top: 50%;
 												left: 9px;
+												transform: translateY(-50%);
 											}
 										}
 									}
