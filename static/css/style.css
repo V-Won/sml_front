@@ -501,7 +501,7 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(13, 109, 128, 0.2) 0%, rgba(13, 109, 128, 0.2) 100%), #28a688;
+  background: linear-gradient(0deg, #3a8593 0%, #3a8593 100%), #28a688;
   z-index: 110;
   opacity: 0;
   pointer-events: none;
