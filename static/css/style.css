@@ -2167,7 +2167,7 @@ input {
   letter-spacing: -0.44px;
 }
 .common-tab.type-1 > ul > li.is-active .btn {
-  color: #000;
+  color: #4D4D4D;
 }
 .common-tab.type-1 > ul > li + li {
   margin-left: 20px;
@@ -2179,7 +2179,7 @@ input {
   width: fit-content;
   height: 33px;
   padding: 8px 20px;
-  color: #000;
+  color: #4D4D4D;
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
@@ -3617,6 +3617,19 @@ input {
     transform: translateY(-50%);
     left: 0;
     position: absolute;
+  }
+  .common-tab.type-1 > ul > li .btn {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+  .common-tab.type-1 > ul > li + li {
+    margin-left: 40px;
+  }
+  .common-tab.type-2 > ul > li .btn {
+    height: 46px;
+    padding: 12px 24px;
+    font-size: 18px;
+    letter-spacing: 0.36px;
   }
   .common-paging {
     padding-top: 37px;
