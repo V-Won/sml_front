@@ -3163,6 +3163,9 @@ input {
   letter-spacing: -0.24px;
   padding: 0 12px 0 12px;
 }
+.box-protocol .padding-left-1 {
+  padding-left: 8px;
+}
 .box-protocol .text-3 {
   color: #000;
   font-size: 12px;
@@ -4766,6 +4769,9 @@ input {
     line-height: 160%;
     letter-spacing: -0.32px;
     padding: 0 12px 0 24px;
+  }
+  .box-protocol .padding-left-1 {
+    padding-left: 24px;
   }
   .box-protocol .text-3 {
     font-size: 16px;
