@@ -568,7 +568,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 			}
 
 			document.querySelectorAll('[data-selectDay]').forEach((e) => {
-				
+
 				// load
 				if (e.classList.contains('is-active')) {
 					const dd = e.getAttribute('data-selectDay');
