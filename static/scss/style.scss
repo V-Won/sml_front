@@ -2234,8 +2234,8 @@ input {
 
 // 공통 new
 .icon-new {
-	background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='21' height='20' rx='4' fill='%232B92AB'/%3E%3Cpath d='M13.9863 14H12.627L8.60742 8.19922H8.53711V14H7.01367V5.51562H8.39648L12.3926 11.3164H12.4746V5.51562H13.9863V14Z' fill='white'/%3E%3C/svg%3E%0A");
-	width: 21px;
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='4' fill='%23006477'/%3E%3Cpath d='M13.4863 14H12.127L8.10742 8.19922H8.03711V14H6.51367V5.51562H7.89648L11.8926 11.3164H11.9746V5.51562H13.4863V14Z' fill='white'/%3E%3C/svg%3E%0A");
+	width: 20px;
 	height: 20px;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -3544,8 +3544,15 @@ input {
 		line-height: 140%;
 		letter-spacing: 0.4px;
 		text-transform: uppercase;
+		margin-bottom: 18px;
+		.icon-new {
+			position: relative;
+			top: 3px;
+			left: 3px;
+		}
 	}
 	.etc {
+		padding-bottom: 16px;
 		.text-1 {
 			color: #999;
 			font-size: 12px;
@@ -3561,6 +3568,8 @@ input {
 			line-height: 140%;
 			letter-spacing: 0.24px;
 			position: relative;
+			padding: 0 0 0 26px;
+			margin: 0 0 0 5px;
 			&::after {
 				content: "";
 				display: block;
@@ -3570,8 +3579,162 @@ input {
 				background-size: contain;
 				background-repeat: no-repeat;
 				position: absolute;
-				top: 0;
-				left: 0;
+				top: -1px;
+				left: 8px;
+			}
+		}
+	}
+}
+.board-ct {
+	padding: 41px 12px;
+	* {
+		color: #4d4d4d;
+		line-height: 140%;
+	}
+	.img-1 {
+		margin: 20px 0;
+		width: 100%;
+		border-radius: 12px;
+	}
+	.text-1 {
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 0.28px;
+		padding: 0 0 21px 0;
+	}
+	.text-2 {
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.24px;
+		text-indent: -10px;
+		margin-left: 10px;
+	}
+	.text-3 {
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.24px;
+	}
+}
+.download-file {
+	display: flex;
+	padding: 20px 12px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 12px;
+	align-self: stretch;
+	border-radius: 8px;
+	background: #fafafa;
+	ul {
+		display: flex;
+		flex-direction: column;
+		li {
+			margin-bottom: 11px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			button {
+				border-radius: 999px;
+				border: 1px solid #d5d5d5;
+				background: #fff;
+				display: flex;
+				padding: 7px 19px 7px 38px;
+				align-items: center;
+				gap: 4px;
+				position: relative;
+				color: #666;
+				font-size: 12px;
+				font-weight: 500;
+				line-height: 120%;
+				letter-spacing: 0.24px;
+				text-transform: uppercase;
+				&::after {
+					content: "";
+					display: block;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M10.4987 8.75065V10.5007H3.4987V8.75065H2.33203V10.5007C2.33203 11.1423 2.85703 11.6673 3.4987 11.6673H10.4987C11.1404 11.6673 11.6654 11.1423 11.6654 10.5007V8.75065H10.4987ZM9.91537 6.41732L9.09286 5.59482L7.58203 7.09982V2.33398H6.41536V7.09982L4.90453 5.59482L4.08203 6.41732L6.9987 9.33398L9.91537 6.41732Z' fill='%23666666'/%3E%3C/svg%3E");
+					width: 14px;
+					height: 14px;
+					position: absolute;
+					top: 50%;
+					left: 19px;
+					transform: translateY(-50%);
+				}
+				span {
+					text-align: left;
+					@include text-line-1;
+				}
+			}
+		}
+	}
+}
+.border-prev-next {
+	border-bottom: 1px solid #d5d5d5;
+	margin-top: 41px;
+	margin-bottom: 40px;
+	ul {
+		li {
+			border-top: 1px solid #d5d5d5;
+			display: block;
+			position: relative;
+			width: 100%;
+			&.new {
+				a {
+					padding-right: 40px;
+				}
+			}
+			a {
+				padding: 22px 33px 21px 86px;
+				display: block;
+				.btn {
+					color: #666;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 24px;
+					letter-spacing: 0.28px;
+					position: absolute;
+					top: 50%;
+					left: 15px;
+					transform: translateY(-50%);
+					padding-left: 21px;
+					&::after {
+						content: "";
+						display: block;
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						top: 50%;
+						left: -2px;
+						transform: translateY(-50%);
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M8 5.5293L4 9.5293L4.94 10.4693L8 7.41596L11.06 10.4693L12 9.5293L8 5.5293Z' fill='%23666666'/%3E%3C/svg%3E");
+						background-repeat: no-repeat;
+					}
+					&.next {
+						&::after {
+							transform: translateY(-50%) rotate(-180deg);
+						}
+					}
+				}
+				.text {
+					overflow: hidden;
+					color: #4d4d4d;
+					text-overflow: ellipsis;
+					font-family: Pretendard;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 140%; /* 19.6px */
+					letter-spacing: 0.28px;
+					@include text-line-1;
+				}
+				.icon-new {
+					position: absolute;
+					top: 50%;
+					right: 12px;
+					transform: translateY(-50%);
+				}
+			}
+			.day {
+				display: none;
 			}
 		}
 	}
@@ -3995,7 +4158,8 @@ input {
 		padding: 20px 24px;
 		border-radius: 12px;
 		font-size: 20px;
-		min-width: 216px;
+		//min-width: 216px;
+		min-width: 181px;
 	}
 
 	.common-moveBtn {
@@ -4321,8 +4485,8 @@ input {
 
 	// 공통 new
 	.icon-new {
-		width: 31px;
-		height: 32px;
+		// width: 31px;
+		// height: 32px;
 		background-size: contain;
 	}
 
@@ -5463,6 +5627,145 @@ input {
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+	}
+
+	// 재단안내 > 사회공헌 활동
+	.list-board-top {
+		margin-top: -3px;
+		.tit-1 {
+			font-size: 30px;
+			letter-spacing: 0.02em;
+			margin-bottom: 22px;
+			.icon-new {
+				top: -1px;
+			}
+		}
+		.etc {
+			padding-bottom: 21px;
+			.text-1 {
+				font-size: 16px;
+			}
+			.cnt {
+				padding: 0 0 0 38px;
+				margin: 0 0 0 9px;
+				font-size: 16px;
+				&::after {
+					width: 20px;
+					height: 20px;
+					left: 12px;
+				}
+			}
+		}
+	}
+	.board-ct {
+		padding: 41px 24px;
+		* {
+			color: #666;
+		}
+		.img-1 {
+			margin: 40px 0;
+		}
+		.text-1 {
+			font-size: 16px;
+		}
+		.text-2 {
+			font-size: 16px;
+		}
+		.text-3 {
+			font-size: 16px;
+			line-height: 140%;
+			letter-spacing: 0.32px;
+		}
+	}
+	.download-file {
+		padding: 42px 40px;
+		background: #f5f5f5;
+		ul {
+			flex-direction: row;
+			li {
+				margin-right: 12px;
+				margin-bottom: 0;
+				&:last-child {
+				}
+				button {
+					font-size: 16px;
+					font-weight: 600;
+					&::after {
+						width: 18px;
+						height: 18px;
+						background-size: contain;
+						left: 15px;
+					}
+					span {
+					}
+				}
+			}
+		}
+	}
+	.border-prev-next {
+		margin: 58px 0 40px 0;
+		ul {
+			li {
+				* {
+					vertical-align: middle;
+				}
+				&.new {
+					a {
+						padding-right: 186px;
+						.text {
+							display: -webkit-inline-box;
+						}
+					}
+				}
+				a {
+					padding: 23px 186px 23px 166px;
+					position: relative;
+					.btn {
+						font-size: 18px;
+						left: 43px;
+						padding-left: 27px;
+						&::after {
+							width: 24px;
+							height: 24px;
+							background-size: contain;
+						}
+						&.next {
+							&::after {
+							}
+						}
+					}
+					.gap {
+						position: relative;
+						.text {
+							font-size: 18px;
+							letter-spacing: 0.02em;
+						}
+						.icon-new {
+							// position: relative;
+							// display: inline-block;
+							// top: 10px;
+							// left: 8px;
+							position: absolute;
+							top:9px;
+							right:-30px;
+						}
+					}
+					.day {
+						display: block;
+						position: absolute;
+						top: 50%;
+						right: 40px;
+						transform: translateY(-50%);
+						color: #999;
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 140%;
+						letter-spacing: 0.32px;
 					}
 				}
 			}
