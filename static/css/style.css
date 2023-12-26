@@ -3289,6 +3289,10 @@ input {
 .board-ct {
   padding: 41px 12px;
 }
+.board-ct .reset_css_form img {
+  width: 100% !important;
+  height: 100% !important;
+}
 .board-ct * {
   color: #4d4d4d;
   line-height: 140%;
@@ -3354,6 +3358,9 @@ input {
   letter-spacing: 0.24px;
   text-transform: uppercase;
 }
+.download-file ul li button:hover {
+  color: #006477;
+}
 .download-file ul li button::after {
   content: "";
   display: block;
@@ -3391,6 +3398,9 @@ input {
 .border-prev-next ul li a {
   padding: 22px 33px 21px 86px;
   display: block;
+}
+.border-prev-next ul li a:hover .text {
+  color: #006477;
 }
 .border-prev-next ul li a .btn {
   color: #666;
@@ -3740,7 +3750,7 @@ input {
   width: 100%;
   position: relative;
   border-radius: 12px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   padding: 20px;
 }
 .detail-search .input-wrap {
@@ -3784,7 +3794,7 @@ input {
   margin-top: 40px;
 }
 .detail-search .detail-inner .title {
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 16px;
   font-weight: 600;
   line-height: 120%;
@@ -3799,7 +3809,7 @@ input {
   flex-wrap: wrap;
   gap: 16px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #d5d5d5;
 }
 .detail-search .detail-inner .chk-flex li {
   width: calc(50% - 8px);
@@ -3821,7 +3831,7 @@ input {
   display: block;
   width: 100%;
   border-radius: 999px;
-  background: #EEE;
+  background: #eee;
   padding: 9.5px 0;
   max-height: 33px;
   color: #999;
