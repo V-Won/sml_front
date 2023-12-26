@@ -2077,10 +2077,11 @@ input {
 }
 .common-paging .mobile-paging .more-btn {
   display: inline-block;
-  padding: 12px 48px;
+  min-height: 41px;
+  padding: 0 46px;
   border-radius: 999px;
-  border: 2px solid #2b92ab;
-  color: #2b92ab;
+  border: 2px solid #006477;
+  color: #006477;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -2232,6 +2233,9 @@ input {
 }
 .common-tab.type-2 > ul > li + li {
   margin-left: 12px;
+}
+.common-tab + .box-top-search {
+  margin-top: 40px;
 }
 
 .common-swiper-button-prev-1,
@@ -3271,6 +3275,88 @@ input {
   font-weight: 500;
   line-height: 25px;
   letter-spacing: -0.24px;
+}
+
+.request-item {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 12px;
+}
+.request-item .item {
+  width: calc(50% - 6px);
+  position: relative;
+  padding: 24px 12px 0;
+  border: 6px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+.request-item .item .title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  width: 90%;
+  margin: 0 auto;
+  color: #4D4D4D;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.28px;
+  min-height: 34px;
+  margin-bottom: 12px;
+}
+.request-item .item .img-holder span {
+  width: 92px;
+  margin: 0 auto 24px;
+}
+.request-item .item .btn-flex {
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #e6e6e6;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.request-item .item .btn-flex button {
+  width: 50%;
+  height: 36px;
+  position: relative;
+  font-size: 0;
+}
+.request-item .item .btn-flex button::after {
+  content: "";
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.request-item .item .btn-flex button.view-btn::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M13.421 13.1678L17.75 17.5M9 6.25V11.25M6.5 8.75H11.5M15.25 8.75C15.25 12.2018 12.4518 15 9 15C5.54822 15 2.75 12.2018 2.75 8.75C2.75 5.29822 5.54822 2.5 9 2.5C12.4518 2.5 15.25 5.29822 15.25 8.75Z' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.request-item .item .btn-flex button.download-btn::before {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #d9d9d9;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.request-item .item .btn-flex button.download-btn::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M15.7499 12.4997V14.9997H5.74992V12.4997H4.08325V14.9997C4.08325 15.9163 4.83325 16.6663 5.74992 16.6663H15.7499C16.6666 16.6663 17.4166 15.9163 17.4166 14.9997V12.4997H15.7499ZM14.9166 9.16634L13.7416 7.99134L11.5833 10.1413V3.33301H9.91658V10.1413L7.75825 7.99134L6.58325 9.16634L10.7499 13.333L14.9166 9.16634Z' fill='%23666666'/%3E%3C/svg%3E");
 }
 
 /* 1024 이상 */
