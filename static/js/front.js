@@ -692,7 +692,8 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			for (const openBox of openBoxs) {
 				openBox.addEventListener('click', (e) => {
-					e.target.parentNode.classList.toggle('is-open');
+					console.log(e.target.parentNode.parentNode);
+					e.target.parentNode.parentNode.classList.toggle('is-open');
 				})
 			}
 		}
