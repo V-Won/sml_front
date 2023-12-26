@@ -2298,7 +2298,7 @@ input {
 			background-color: transparent;
 			.gap {
 				width: 800px;
-				height: 448px;
+				height: 300px;
 				max-width: 100%;
 				max-height: 100%;
 				border-radius: 24px;
@@ -4288,6 +4288,7 @@ input {
 		&.layer-video {
 			.inner-layer {
 				.gap {
+					height: 448px;
 				}
 			}
 			[data-event="layerClose"] {
