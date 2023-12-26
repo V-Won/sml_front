@@ -4086,6 +4086,9 @@ input {
     padding-right: 100px;
     margin: 0 auto;
   }
+  .inner-gap-1.type-2 {
+    padding-top: 12px;
+  }
   .common-swiper-button-prev-1,
   .common-swiper-button-next-1,
   .common-swiper-pagination-1 {
@@ -5938,7 +5941,7 @@ input {
   }
   .detail-search {
     border-radius: 24px;
-    padding: 40px;
+    padding: 40px 40px 45px;
   }
   .detail-search .flex-box {
     display: flex;
@@ -5995,11 +5998,12 @@ input {
     flex-shrink: 0;
     font-size: 20px;
     letter-spacing: 0.4px;
-    padding: 0;
+    padding: 0 0 0 24px;
   }
   .detail-search .detail-inner .chk-flex {
     max-width: 1012px;
     gap: 12px;
+    border-bottom: none;
   }
   .detail-search .detail-inner .chk-flex li {
     width: -moz-fit-content;
@@ -6012,10 +6016,11 @@ input {
     letter-spacing: 0.32px;
   }
   .detail-search .detail-inner .chk-bottom {
-    padding-top: 24px;
+    padding-top: 30px;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    border-top: 1px solid #D5D5D5;
   }
   .detail-search .detail-inner .chk-bottom .chk-item {
     gap: 12px 20px;
@@ -6045,11 +6050,12 @@ input {
   .detail-search .detail-inner .chk-bottom .chkFalse-btn span {
     font-size: 20px;
     letter-spacing: 0.4px;
-    padding-left: 30px;
+    padding-left: 10px;
   }
   .detail-search .detail-inner .chk-bottom .chkFalse-btn span::before {
     width: 24px;
     height: 24px;
+    left: -20px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 13.2852C6 11.6352 6.67 10.1352 7.76 9.04516L6.34 7.62516C4.9 9.07516 4 11.0752 4 13.2852C4 17.3652 7.05 20.7252 11 21.2152V19.1952C8.17 18.7152 6 16.2552 6 13.2852ZM20 13.2852C20 8.86516 16.42 5.28516 12 5.28516C11.94 5.28516 11.88 5.29516 11.82 5.29516L12.91 4.20516L11.5 2.78516L8 6.28516L11.5 9.78516L12.91 8.37516L11.83 7.29516C11.89 7.29516 11.95 7.28516 12 7.28516C15.31 7.28516 18 9.97516 18 13.2852C18 16.2552 15.83 18.7152 13 19.1952V21.2152C16.95 20.7252 20 17.3652 20 13.2852Z' fill='%23999999'/%3E%3C/svg%3E");
   }
   .detail-search.is-open .common-detailBtn span::before {
@@ -6066,7 +6072,7 @@ input {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 24px 0;
+    padding: 23px 0;
   }
   .table-layout .head ul li {
     color: #4D4D4D;
@@ -6077,25 +6083,25 @@ input {
     text-align: center;
   }
   .table-layout .head ul li:first-child {
-    width: 8%;
+    width: 8.5%;
   }
   .table-layout .head ul li:nth-child(2) {
-    width: 15%;
+    width: 11.5%;
   }
   .table-layout .head ul li:nth-child(3) {
-    width: 35%;
+    width: 37%;
   }
   .table-layout .head ul li:nth-child(4) {
-    width: 15%;
+    width: 11.5%;
   }
   .table-layout .head ul li:nth-child(5) {
-    width: 8%;
+    width: 8.5%;
   }
   .table-layout .head ul li:nth-child(6) {
-    width: 8%;
+    width: 9%;
   }
   .table-layout .head ul li:nth-child(7) {
-    width: 11%;
+    width: 14%;
   }
   .table-layout .body {
     border-top: 1px solid #D5D5D5;
@@ -6111,11 +6117,11 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 24px 0;
+    padding: 23.4px 0;
   }
   .table-layout .body > ul > li .num {
     display: block;
-    width: 8%;
+    width: 8.5%;
     text-align: center;
     color: #999;
     font-size: 18px;
@@ -6124,13 +6130,13 @@ input {
     letter-spacing: 0.36px;
   }
   .table-layout .body > ul > li .code {
-    width: 15%;
+    width: 11.5%;
     text-align: center;
     font-size: 18px;
     letter-spacing: 0.36px;
   }
   .table-layout .body > ul > li .name {
-    width: 35%;
+    width: 37%;
     text-align: center;
     padding: 0 40px;
     font-size: 18px;
@@ -6138,7 +6144,7 @@ input {
     margin: 0;
   }
   .table-layout .body > ul > li .item-box {
-    width: 42%;
+    width: 43%;
     flex-wrap: nowrap;
     gap: 0;
   }
@@ -6146,16 +6152,16 @@ input {
     width: auto;
   }
   .table-layout .body > ul > li .item-box .item:first-child {
-    width: 35.73%;
+    width: 26.8%;
   }
   .table-layout .body > ul > li .item-box .item:nth-child(2) {
-    width: 19.05%;
+    width: 19.8%;
   }
   .table-layout .body > ul > li .item-box .item:nth-child(3) {
-    width: 19.05%;
+    width: 20.95%;
   }
   .table-layout .body > ul > li .item-box .item:nth-child(4) {
-    width: 26.2%;
+    width: 32.65%;
   }
   .table-layout .body > ul > li .item-box .item .tit {
     display: none;
