@@ -653,7 +653,7 @@ input {
   font-weight: 600 !important;
 }
 .box-header.bg-fff .inner .gnb-menu li a:hover, .box-header.bg-fff .inner .gnb-menu li a.is-active, .box-header.is-hover .inner .gnb-menu li a:hover, .box-header.is-hover .inner .gnb-menu li a.is-active, .box-header.is-search .inner .gnb-menu li a:hover, .box-header.is-search .inner .gnb-menu li a.is-active, .box-header.is-lang .inner .gnb-menu li a:hover, .box-header.is-lang .inner .gnb-menu li a.is-active, .box-header.type-2 .inner .gnb-menu li a:hover, .box-header.type-2 .inner .gnb-menu li a.is-active {
-  color: #006477 !important;
+  color: #2B92AB !important;
   font-weight: 700 !important;
 }
 .box-header.bg-fff .inner .btn-etc .box-lang .btn-lang, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang, .box-header.is-search .inner .btn-etc .box-lang .btn-lang, .box-header.is-lang .inner .btn-etc .box-lang .btn-lang, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang {
