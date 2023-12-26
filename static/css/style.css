@@ -2065,10 +2065,30 @@ input {
 }
 
 .common-paging {
+  width: 100%;
   padding: 40px 0 0;
 }
-.common-paging ul {
+.common-paging .mobile-paging {
+  width: 100%;
+  position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common-paging .mobile-paging .more-btn {
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 999px;
+  border: 2px solid #2B92AB;
+  color: #2B92AB;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.28px;
+}
+.common-paging ul {
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -3668,7 +3688,11 @@ input {
   .common-paging {
     padding-top: 37px;
   }
+  .common-paging .mobile-paging {
+    display: none;
+  }
   .common-paging ul {
+    display: flex;
     gap: 13px;
   }
   .common-paging ul li a {
