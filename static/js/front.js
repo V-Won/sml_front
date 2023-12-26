@@ -591,6 +591,76 @@ if (window.console == undefined) { console = { log: () => { } } }
 	window.protocol = protocol;
 }(window));
 
+/* Layer popup */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description Layer popup
+	 * @modify
+			@20231226 추가
+	*/
+	var layerPopup = {
+		/** 플러그인명 */
+		bind: layerPopup,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			openBtn: '[data-event="layerOpen"]',
+			closeBtn : '[data-event="layerClose"]'
+		},
+		initialize: function() {
+			let me = this;
+
+			me._click();
+		},
+		_click: function(){
+			const me = this,
+						openBtn = me.selectors.openBtn,
+						closeBtn = me.selectors.closeBtn;
+
+			const openBtns = document.querySelectorAll(openBtn),
+						closeBtns = document.querySelectorAll(closeBtn);
+
+			for( const tg of openBtns ){
+				tg.onclick = e => {
+					let currentTarget = e.currentTarget.getAttribute('data-layerId');
+
+					document.querySelector('#' + currentTarget).style.display = 'block';
+					document.querySelector('#' + currentTarget).scrollTo(0, 0);
+					//document.querySelector('#' + currentTarget + ' .inner-layer').focus();
+					document.body.classList.add('oh');
+				}
+			};
+
+			for( const tg of closeBtns ){
+				tg.onclick = e => {
+					layerClose();
+				}
+			};
+
+			document.querySelectorAll('.box-layer').forEach(e => {
+				e.onclick = e => {
+					if( e.target.classList.contains('box-layer') ){
+						layerClose();
+					}
+				}
+			});
+
+			const layerClose = function(){
+				document.querySelectorAll('.box-layer').forEach(e => {
+					e.style.display = 'none';
+				});
+
+				document.body.classList.remove('oh');
+			}
+		}
+	};
+
+	window.layerPopup = layerPopup;
+}(window));
+
 /**
  * front.js 하단에 위치
  */
