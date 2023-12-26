@@ -3074,6 +3074,67 @@ input {
   color: #fff;
 }
 
+.box-NewTest {
+  margin: 20px 0 0 0;
+}
+.box-NewTest ul li {
+  margin-bottom: 20px;
+}
+.box-NewTest ul li:last-child {
+  margin-bottom: 0;
+}
+.box-NewTest ul li a {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+}
+.box-NewTest ul li a:hover {
+  box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.box-NewTest ul li a .img img {
+  width: 100%;
+}
+.box-NewTest ul li a .text {
+  display: flex;
+  padding: 24px 20px 32px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 0px 0px 12px 12px;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+}
+.box-NewTest ul li a .text .text-1 {
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.28px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.box-NewTest ul li a .text .day {
+  overflow: hidden;
+  color: #999;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.24px;
+}
+.box-NewTest ul li a .icon-new {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
 .box-top-search.type-2 input {
   height: 44px;
   border-radius: 999px;
@@ -3763,7 +3824,7 @@ input {
   border-radius: 999px;
   background: var(--Primary-01, #006477);
   border: 2px solid transparent;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -3887,7 +3948,7 @@ input {
   margin-top: 20px;
   padding: 5px 20px 7px;
   border-radius: 999px;
-  border: 1px solid #D5D5D5;
+  border: 1px solid #d5d5d5;
 }
 .detail-search .detail-inner .chk-bottom .chkFalse-btn span {
   color: #666;
@@ -3949,7 +4010,7 @@ input {
   width: 100%;
 }
 .table-layout .body > ul > li + li {
-  border-top: 1px solid #D5D5D5;
+  border-top: 1px solid #d5d5d5;
 }
 .table-layout .body > ul > li .num {
   display: none;
@@ -3967,7 +4028,7 @@ input {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
@@ -5506,6 +5567,29 @@ input {
   }
   .error-wrap.sub-top .inner-gap-1 .common-moveBtn {
     margin-left: 6px;
+  }
+  .box-NewTest {
+    margin-top: 23px;
+  }
+  .box-NewTest ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .box-NewTest ul li {
+    width: calc(25% - 30px);
+    margin-bottom: 0px;
+  }
+  .box-NewTest ul li a .text {
+    padding: 25px 23px 38px 23px;
+  }
+  .box-NewTest ul li a .text .text-1 {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    min-height: 48px;
+  }
+  .box-NewTest ul li a .text .day {
+    font-size: 16px;
   }
   .box-top-search.type-2 {
     justify-content: end;

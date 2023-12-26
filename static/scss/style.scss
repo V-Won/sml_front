@@ -3369,6 +3369,68 @@ input {
 	}
 }
 
+// 고객서비스 > SML 학술자료 > Smart New Test
+.box-NewTest {
+	margin: 20px 0 0 0;
+	ul {
+		li {
+			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				display: block;
+				border-radius: 12px;
+				overflow: hidden;
+				transition: 0.5s;
+				position: relative;
+				&:hover {
+					box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
+				}
+				.img {
+					img {
+						width: 100%;
+					}
+				}
+				.text {
+					display: flex;
+					padding: 24px 20px 32px 20px;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 24px;
+					align-self: stretch;
+					border-radius: 0px 0px 12px 12px;
+					border-right: 1px solid #e6e6e6;
+					border-bottom: 1px solid #e6e6e6;
+					border-left: 1px solid #e6e6e6;
+					.text-1 {
+						color: #4d4d4d;
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: 0.28px;
+						@include text-line-2;
+					}
+					.day {
+						overflow: hidden;
+						color: #999;
+						text-overflow: ellipsis;
+						font-size: 12px;
+						font-weight: 400;
+						line-height: 120%;
+						letter-spacing: 0.24px;
+					}
+				}
+				.icon-new{
+					position: absolute;
+					top:12px;
+					right:12px;
+				}
+			}
+		}
+	}
+}
+
 // 재단안내 > SML 홍보실 > 홍보영상
 .box-top-search {
 	&.type-2 {
@@ -4100,7 +4162,7 @@ input {
 		border-radius: 999px;
 		background: var(--Primary-01, #006477);
 		border: 2px solid transparent;
-		color: #FFF;
+		color: #fff;
 		text-align: center;
 		font-size: 14px;
 		font-weight: 600;
@@ -4223,7 +4285,7 @@ input {
 				margin-top: 20px;
 				padding: 5px 20px 7px;
 				border-radius: 999px;
-				border: 1px solid #D5D5D5;
+				border: 1px solid #d5d5d5;
 				span {
 					color: #666;
 					font-size: 12px;
@@ -4233,7 +4295,7 @@ input {
 					padding-left: 20px;
 					position: relative;
 					&::before {
-						content: '';
+						content: "";
 						width: 14px;
 						height: 14px;
 						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 15 14' fill='none'%3E%3Cpath d='M3.9987 7.74951C3.9987 6.78701 4.38953 5.91201 5.02536 5.27618L4.19703 4.44785C3.35703 5.29368 2.83203 6.46034 2.83203 7.74951C2.83203 10.1295 4.6112 12.0895 6.91536 12.3753V11.197C5.26453 10.917 3.9987 9.48201 3.9987 7.74951ZM12.1654 7.74951C12.1654 5.17118 10.077 3.08285 7.4987 3.08285C7.4637 3.08285 7.4287 3.08868 7.3937 3.08868L8.02953 2.45285L7.20703 1.62451L5.16536 3.66618L7.20703 5.70784L8.02953 4.88535L7.39953 4.25535C7.43453 4.25535 7.46953 4.24951 7.4987 4.24951C9.42953 4.24951 10.9987 5.81868 10.9987 7.74951C10.9987 9.48201 9.73287 10.917 8.08203 11.197V12.3753C10.3862 12.0895 12.1654 10.1295 12.1654 7.74951Z' fill='%23666666'/%3E%3C/svg%3E");
@@ -4291,7 +4353,7 @@ input {
 					width: 100%;
 				}
 				& + li {
-					border-top: 1px solid #D5D5D5;
+					border-top: 1px solid #d5d5d5;
 				}
 				.num {
 					display: none;
@@ -4305,7 +4367,7 @@ input {
 				}
 				.name {
 					@include text-line-1;
-					color: #4D4D4D;
+					color: #4d4d4d;
 					font-size: 16px;
 					font-weight: 500;
 					line-height: 140%;
@@ -6109,6 +6171,42 @@ input {
 				}
 				.common-moveBtn {
 					margin-left: 6px;
+				}
+			}
+		}
+	}
+
+	// 고객서비스 > SML 학술자료 > Smart New Test
+	.box-NewTest {
+		margin-top:23px;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 40px;
+			li {
+				//width: 320px;
+				width: calc(25% - 30px);
+				margin-bottom:0px;
+				&:last-child {
+				}
+				a {
+					&:hover {
+					}
+					.img {
+						img {
+						}
+					}
+					.text {
+						padding:25px 23px 38px 23px;
+						.text-1 {
+							font-size: 20px;
+							letter-spacing: 0.4px;
+							min-height: 48px;
+						}
+						.day {
+							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
