@@ -653,7 +653,7 @@ input {
   font-weight: 600 !important;
 }
 .box-header.bg-fff .inner .gnb-menu li a:hover, .box-header.bg-fff .inner .gnb-menu li a.is-active, .box-header.is-hover .inner .gnb-menu li a:hover, .box-header.is-hover .inner .gnb-menu li a.is-active, .box-header.is-search .inner .gnb-menu li a:hover, .box-header.is-search .inner .gnb-menu li a.is-active, .box-header.is-lang .inner .gnb-menu li a:hover, .box-header.is-lang .inner .gnb-menu li a.is-active, .box-header.type-2 .inner .gnb-menu li a:hover, .box-header.type-2 .inner .gnb-menu li a.is-active {
-  color: #2B92AB !important;
+  color: #2b92ab !important;
   font-weight: 700 !important;
 }
 .box-header.bg-fff .inner .btn-etc .box-lang .btn-lang, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang, .box-header.is-search .inner .btn-etc .box-lang .btn-lang, .box-header.is-lang .inner .btn-etc .box-lang .btn-lang, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang {
@@ -1956,6 +1956,37 @@ input {
   background: #fafafa;
 }
 
+.common-noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 240px;
+  width: 100%;
+}
+.common-noData span {
+  position: relative;
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  display: block;
+  text-align: center;
+  padding-top: 56px;
+}
+.common-noData span::after {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none'%3E%3Cpath d='M22.4305 22.4188L31.5 31.5M25.5 15C25.5 20.799 20.799 25.5 15 25.5C9.20101 25.5 4.5 20.799 4.5 15C4.5 9.20101 9.20101 4.5 15 4.5C20.799 4.5 25.5 9.20101 25.5 15Z' stroke='%232B92AB' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .common-input-2 {
   width: 100%;
   height: 49px;
@@ -2169,7 +2200,7 @@ input {
   width: fit-content;
   height: 33px;
   padding: 8px 20px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
@@ -3147,7 +3178,7 @@ input {
 }
 .box-protocol .text-2 a,
 .box-protocol .text-3 a {
-  color: #00E;
+  color: #00e;
 }
 .box-protocol .text-2 {
   color: #555;
@@ -3554,6 +3585,18 @@ input {
   }
   .common-selectbox-2 .button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M2 5.5L8 11.5L14 5.5' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+  }
+  .common-noData {
+    min-height: 273px;
+  }
+  .common-noData span {
+    font-size: 24px;
+    padding-top: 84px;
+  }
+  .common-noData span::after {
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
   }
   .common-input-2 {
     max-width: 634px;

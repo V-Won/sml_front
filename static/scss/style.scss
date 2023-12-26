@@ -714,7 +714,7 @@ input {
 						font-weight: 600 !important;
 						&:hover,
 						&.is-active {
-							color: #2B92AB !important;
+							color: #2b92ab !important;
 							font-weight: 700 !important;
 						}
 					}
@@ -2200,6 +2200,38 @@ input {
 	}
 }
 
+// 공통 검색결과 없음
+.common-noData {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 240px;
+	width: 100%;
+	span {
+		position: relative;
+		color: #666;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 120%;
+		letter-spacing: 0.4px;
+		display: block;
+		text-align: center;
+		padding-top:56px;
+		&::after {
+			content: "";
+			display: block;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none'%3E%3Cpath d='M22.4305 22.4188L31.5 31.5M25.5 15C25.5 20.799 20.799 25.5 15 25.5C9.20101 25.5 4.5 20.799 4.5 15C4.5 9.20101 9.20101 4.5 15 4.5C20.799 4.5 25.5 9.20101 25.5 15Z' stroke='%232B92AB' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			width: 36px;
+			height: 36px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
 // common-input-2
 .common-input-2 {
 	width: 100%;
@@ -2420,7 +2452,7 @@ input {
 					width: fit-content;
 					height: 33px;
 					padding: 8px 20px;
-					color: #4D4D4D;
+					color: #4d4d4d;
 					font-size: 14px;
 					font-weight: 600;
 					line-height: 120%;
@@ -3453,9 +3485,9 @@ input {
 		padding: 41px 12px 13px 12px;
 	}
 	.text-2,
-	.text-3{
-		a{
-			color: #00E;
+	.text-3 {
+		a {
+			color: #00e;
 		}
 	}
 	.text-2 {
@@ -3466,8 +3498,8 @@ input {
 		letter-spacing: -0.24px;
 		padding: 0 12px 0 12px;
 	}
-	.padding-left-1{
-		padding-left:8px;
+	.padding-left-1 {
+		padding-left: 8px;
 	}
 	.text-3 {
 		color: #000;
@@ -3937,6 +3969,20 @@ input {
 			}
 		}
 	}
+
+	// 공통 검색결과 없음
+.common-noData {
+	min-height: 273px;
+	span {
+		font-size: 24px;
+		padding-top: 84px;
+		&::after {
+			width: 60px;
+			height: 60px;
+			background-size: 60px;
+		}
+	}
+}
 
 	// common-input-2
 	.common-input-2 {
@@ -5311,8 +5357,8 @@ input {
 			letter-spacing: -0.32px;
 			padding: 0 12px 0 24px;
 		}
-		.padding-left-1{
-			padding-left:24px;
+		.padding-left-1 {
+			padding-left: 24px;
 		}
 		.text-3 {
 			font-size: 16px;
