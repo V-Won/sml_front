@@ -2238,6 +2238,7 @@ input {
 	width: 21px;
 	height: 20px;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 // 공통 video play
@@ -2294,7 +2295,7 @@ input {
 	&.layer-video {
 		.inner-layer {
 			padding: 20px;
-			margin:20px 0 0 0;
+			margin: 20px 0 0 0;
 			background-color: transparent;
 			.gap {
 				width: 800px;
@@ -2547,7 +2548,7 @@ input {
 				}
 				&.is-active {
 					.btn {
-						color: #4D4D4D;
+						color: #4d4d4d;
 					}
 				}
 				& + li {
@@ -3530,6 +3531,49 @@ input {
 		margin-top: 40px;
 		overflow: hidden;
 		border-radius: 6px;
+	}
+}
+
+// 재단안내 > 사회공헌 활동
+.list-board-top {
+	border-bottom: 2px solid #666;
+	.tit-1 {
+		color: #4d4d4d;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 140%;
+		letter-spacing: 0.4px;
+		text-transform: uppercase;
+	}
+	.etc {
+		.text-1 {
+			color: #999;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 140%;
+			letter-spacing: 0.24px;
+		}
+		.cnt {
+			border-left: 1px solid #d9d9d9;
+			color: #999;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 140%;
+			letter-spacing: 0.24px;
+			position: relative;
+			&::after {
+				content: "";
+				display: block;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0 0 14 15' fill='none'%3E%3Cpath d='M6.9987 4.29167C9.20953 4.29167 11.1812 5.53417 12.1437 7.5C11.1812 9.46583 9.20953 10.7083 6.9987 10.7083C4.78786 10.7083 2.8162 9.46583 1.8537 7.5C2.8162 5.53417 4.78786 4.29167 6.9987 4.29167ZM6.9987 3.125C4.08203 3.125 1.5912 4.93917 0.582031 7.5C1.5912 10.0608 4.08203 11.875 6.9987 11.875C9.91537 11.875 12.4062 10.0608 13.4154 7.5C12.4062 4.93917 9.91537 3.125 6.9987 3.125ZM6.9987 6.04167C7.8037 6.04167 8.45703 6.695 8.45703 7.5C8.45703 8.305 7.8037 8.95833 6.9987 8.95833C6.1937 8.95833 5.54036 8.305 5.54036 7.5C5.54036 6.695 6.1937 6.04167 6.9987 6.04167ZM6.9987 4.875C5.55203 4.875 4.3737 6.05333 4.3737 7.5C4.3737 8.94667 5.55203 10.125 6.9987 10.125C8.44536 10.125 9.6237 8.94667 9.6237 7.5C9.6237 6.05333 8.44536 4.875 6.9987 4.875Z' fill='%23999999'/%3E%3C/svg%3E");
+				width: 14px;
+				height: 15px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
 	}
 }
 
@@ -5815,7 +5859,7 @@ input {
 			border-radius: 12px;
 			transition: box-shadow 0.3s;
 			&:hover {
-				box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.10);
+				box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
 			}
 			.title {
 				font-size: 20px;
@@ -5871,7 +5915,6 @@ input {
 		}
 	}
 }
-
 
 /* //1024 이상 */
 
