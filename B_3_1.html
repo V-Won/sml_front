@@ -27,10 +27,7 @@
           <div class="text-box">
             <ul class="sub-nav-2">
               <li>
-                <a href="#none">검사안내</a>
-              </li>
-              <li>
-                <a href="#none">연구의뢰</a> 
+                <a href="#none">검사 안내</a>
               </li>
               <li class="nav-acc" data-event="commonSelectBox">
                 <a href="#none" class="button">검사항목 조회</a> 
@@ -50,7 +47,7 @@
       <!-- //sub-top -->
       <div class="inner-gap-1">
         <!-- detail-search -->
-        <div class="detail-search">
+        <div class="detail-search" data-event="detailSearch">
           <div class="common-selectbox-2" data-event="commonSelectBox">
             <button class="button">전체</button>
             <ul class="list">
@@ -70,7 +67,7 @@
             <ul class="chk-flex">
               <li>
                 <label>
-                  <input type="checkbox" name="chk1">
+                  <input type="checkbox" name="chk1" checked>
                   <span>일반진단검사</span>
                 </label>
               </li>
@@ -100,7 +97,7 @@
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="chk1">
+                  <input type="checkbox" name="chk1" checked>
                   <span>심뇌혈관질환검사</span>
                 </label>
               </li>
@@ -130,7 +127,7 @@
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="chk1">
+                  <input type="checkbox" name="chk1" checked>
                   <span>감염검사</span>
                 </label>
               </li>
@@ -171,17 +168,66 @@
                 </label>
               </li>
             </ul>
-            <ul class="chk-item">
-              <li>
-                <span>일반진단검사</span>
-                
-              </li>
-              <li>심뇌혈관질환검사</li>
-              <li>감염검사</li>
-            </ul>
+            <div class="chk-bottom">
+              <ul class="chk-item">
+                <li>
+                  <span>일반진단검사</span>
+                  <button class="del-btn">삭제</button>
+                </li>
+                <li>
+                  <span>심뇌혈관질환검사</span>
+                  <button class="del-btn">삭제</button>
+                </li>
+                <li>
+                  <span>감염검사</span>
+                  <button class="del-btn">삭제</button>
+                </li>
+              </ul>
+              <button class="chkFalse-btn"><span>선택해제</span></button>
+            </div>
           </div>
         </div>
         <!-- //detail-search -->
+        <div class="table-layout">
+          <div class="head">
+            <ul>
+              <li>번호</li>
+              <li>검사코드</li>
+              <li>검사명</li>
+              <li>검체</li>
+              <li>검사일</li>
+              <li>소요일</li>
+              <li>보험코드</li>
+            </ul>
+          </div>
+          <div class="body">
+            <ul>
+              <li>
+                <p class="num">999</p>
+                <p class="code">76016</p>
+                <p class="name">unstained Slide≤3장</p>
+                <div class="item-box">
+                  <div class="item">
+                    <p class="tit">검체</p>
+                    <p class="txt">Tissue</p>
+                  </div>
+                  <div class="item">
+                    <p class="tit">검사일</p>
+                    <p class="txt">월-금</p>
+                  </div>
+                  <div class="item">
+                    <p class="tit">소요일</p>
+                    <p class="txt">3-5일</p>
+                  </div>
+                  <div class="item">
+                    <p class="tit">보험코드</p>
+                    <p class="txt">C5601008</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -210,6 +256,7 @@
       bg: "white"
     })
     selectBox.initialize();
+    detailSearch.initialize();
   </script>
 
 </body>

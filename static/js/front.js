@@ -661,6 +661,46 @@ if (window.console == undefined) { console = { log: () => { } } }
 	window.layerPopup = layerPopup;
 }(window));
 
+/* Detail search */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description detailSearch
+	 * @modify
+			@202312026 추가
+	*/
+	var detailSearch = {
+		/** 플러그인명 */
+		bind: detailSearch,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="detailSearch"]'
+		},
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: function () {
+			const me = this,
+				tg = me.selectors.tg;
+
+			const openBoxs = document.querySelectorAll(tg + ' .common-detailBtn');
+
+			for (const openBox of openBoxs) {
+				openBox.addEventListener('click', (e) => {
+					e.target.parentNode.classList.toggle('is-open');
+				})
+			}
+		}
+	};
+
+	window.detailSearch = detailSearch;
+}(window));
+
 /**
  * front.js 하단에 위치
  */

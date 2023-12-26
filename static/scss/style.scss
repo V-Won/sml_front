@@ -1802,7 +1802,7 @@ input {
 	&.bg-fff {
 		height: auto;
 		background: none !important;
-		margin-bottom: 40px;
+		margin-bottom: 0;
 		&::before {
 			display: none;
 		}
@@ -1831,6 +1831,7 @@ input {
 			}
 			.sub-tit {
 				color: #4d4d4d;
+				margin-bottom: 40px;
 			}
 		}
 	}
@@ -2101,7 +2102,7 @@ input {
 		text-align: left;
 		font-weight: 500;
 		line-height: 120%;
-		letter-spacing: -0.28px;
+		letter-spacing: 0.28px;
 		&::after {
 			content: "";
 			width: 16px;
@@ -2137,7 +2138,7 @@ input {
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 120%;
-				letter-spacing: -0.28px;
+				letter-spacing: 0.28px;
 				text-align: left;
 			}
 			&:hover {
@@ -2338,7 +2339,7 @@ input {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 120%;
-	letter-spacing: -0.28px;
+	letter-spacing: 0.28px;
 	&::placeholder {
 		color: #666;
 	}
@@ -4081,9 +4082,10 @@ input {
 	.common-detailBtn {
 		display: inline-block;
 		width: 100%;
-		padding: 12px 48px;
+		padding: 10px 48px;
 		border-radius: 999px;
 		background: var(--Primary-01, #006477);
+		border: 2px solid transparent;
 		color: #FFF;
 		text-align: center;
 		font-size: 14px;
@@ -4109,6 +4111,7 @@ input {
 		}
 	}
 	.detail-inner {
+		display: none;
 		width: 100%;
 		position: relative;
 		margin-top: 40px;
@@ -4118,7 +4121,7 @@ input {
 			font-weight: 600;
 			line-height: 120%;
 			letter-spacing: 0.32px;
-			padding: 0 16px 20px 0;
+			padding: 0 0 20px 16px;
 		}
 		.chk-flex {
 			width: 100%;
@@ -4135,6 +4138,7 @@ input {
 				label {
 					width: 100%;
 					position: relative;
+					cursor: pointer;
 					input {
 						width: 0;
 						height: 0;
@@ -4147,6 +4151,7 @@ input {
 						border-radius: 999px;
 						background: #EEE;
 						padding: 9.5px 0;
+						max-height: 33px;
 						color: #999;
 						font-size: 12px;
 						font-weight: 600;
@@ -4163,20 +4168,158 @@ input {
 				}
 			}
 		}
-		.chk-item {
+		.chk-bottom {
 			width: 100%;
 			position: relative;
 			padding-top: 20px;
 			display: flex;
+			flex-direction: column;
 			align-items: center;
-			flex-wrap: nowrap;
-			gap: 8px;
-			li {
-				color: var(--Primary-01, #006477);
-				font-size: 14px;
-				font-weight: 600;
-				line-height: 120%;
-				letter-spacing: 0.28px;
+			.chk-item {
+				width: 100%;
+				position: relative;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 8px;
+				li {
+					color: var(--Primary-01, #006477);
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 120%;
+					letter-spacing: 0.28px;
+					position: relative;
+					padding-right: 16px;
+					.del-btn {
+						font-size: 0;
+						width: 14px;
+						height: 14px;
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0 0 14 15' fill='none'%3E%3Cpath d='M11.0846 4.239L10.2621 3.4165L7.0013 6.67734L3.74047 3.4165L2.91797 4.239L6.1788 7.49984L2.91797 10.7607L3.74047 11.5832L7.0013 8.32234L10.2621 11.5832L11.0846 10.7607L7.8238 7.49984L11.0846 4.239Z' fill='%23006477'/%3E%3C/svg%3E");
+						background-position: center;
+						background-size: contain;
+						background-repeat: no-repeat;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-55%);
+						right: 0;
+					}
+				}
+			}
+			.chkFalse-btn {
+				margin-top: 20px;
+				padding: 5px 20px 7px;
+				border-radius: 999px;
+				border: 1px solid #D5D5D5;
+				span {
+					color: #666;
+					font-size: 12px;
+					font-weight: 600;
+					line-height: 120%;
+					letter-spacing: 0.24px;
+					padding-left: 20px;
+					position: relative;
+					&::before {
+						content: '';
+						width: 14px;
+						height: 14px;
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 15 14' fill='none'%3E%3Cpath d='M3.9987 7.74951C3.9987 6.78701 4.38953 5.91201 5.02536 5.27618L4.19703 4.44785C3.35703 5.29368 2.83203 6.46034 2.83203 7.74951C2.83203 10.1295 4.6112 12.0895 6.91536 12.3753V11.197C5.26453 10.917 3.9987 9.48201 3.9987 7.74951ZM12.1654 7.74951C12.1654 5.17118 10.077 3.08285 7.4987 3.08285C7.4637 3.08285 7.4287 3.08868 7.3937 3.08868L8.02953 2.45285L7.20703 1.62451L5.16536 3.66618L7.20703 5.70784L8.02953 4.88535L7.39953 4.25535C7.43453 4.25535 7.46953 4.24951 7.4987 4.24951C9.42953 4.24951 10.9987 5.81868 10.9987 7.74951C10.9987 9.48201 9.73287 10.917 8.08203 11.197V12.3753C10.3862 12.0895 12.1654 10.1295 12.1654 7.74951Z' fill='%23666666'/%3E%3C/svg%3E");
+						background-size: contain;
+						background-repeat: no-repeat;
+						background-position: center;
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&.is-open {
+		.common-detailBtn {
+			background: transparent;
+			border: 2px solid var(--Primary-01, #006477);
+			color: var(--Primary-01, #006477);
+			span {
+				&::before {
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M6.66667 12.5H9.33333V11.1667H6.66667V12.5ZM2 4.5V5.83333H14V4.5H2ZM4 9.16667H12V7.83333H4V9.16667Z' fill='%23006477'/%3E%3C/svg%3E");
+				}
+			}
+		}
+		.detail-inner {
+			display: block;
+		}
+	}
+}
+
+.table-layout {
+	width: 100%;
+	position: relative;
+	margin-top: 40px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	.head {
+		display: none;
+	}
+	.body {
+		> ul {
+			width: 100%;
+			position: relative;
+			> li {
+				width: 100%;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 20px 12px;
+				& + li {
+					border-top: 1px solid #D5D5D5;
+				}
+				.num {
+					display: none;
+				}
+				.code {
+					color: #666;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 140%;
+					letter-spacing: 0.28px;
+				}
+				.name {
+					@include text-line-1;
+					color: #4D4D4D;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 140%;
+					letter-spacing: 0.32px;
+					margin: 4px 0 20px;
+				}
+				.item-box {
+					width: 100%;
+					position: relative;
+					display: flex;
+					align-items: center;
+					flex-wrap: wrap;
+					gap: 16px 20px;
+					.item {
+						width: calc(50% - 10px);
+						position: relative;
+						.tit {
+							color: #999;
+							font-size: 12px;
+							font-weight: 500;
+							line-height: 140%;
+							letter-spacing: 0.24px;
+						}
+						.txt {
+							color: #666;
+							font-size: 14px;
+							font-weight: 500;
+							line-height: 140%;
+							letter-spacing: 0.28px;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -4403,7 +4546,11 @@ input {
 			}
 		}
 		&.bg-fff {
-			margin-bottom: 40px;
+			.text-box {
+				.sub-tit {
+					margin-bottom: 48px;
+				}
+			}
 		}
 	}
 
@@ -4731,7 +4878,7 @@ input {
 			}
 		}
 		& + .box-top-search {
-			margin-top: 24px;
+			margin-top: 32px;
 		}
 	}
 
@@ -6293,12 +6440,6 @@ input {
 	}
 
 	// 검사의뢰 안내 > 검사의뢰서
-	.box-top-search {
-		&.mt24 {
-			margin-top: -16px;
-		}
-	}
-
 	.request-item {
 		margin-top: 24px;
 		gap: 40px;
