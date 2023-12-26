@@ -2095,6 +2095,7 @@ input {
 		padding: 16px 50px 16px 16px;
 		border-radius: 6px;
 		border: 1px solid #d5d5d5;
+		background: #fff;
 		color: #666;
 		font-size: 14px;
 		text-align: left;
@@ -3817,6 +3818,7 @@ input {
 			font-weight: 600;
 			line-height: 120%;
 			letter-spacing: 0.28px;
+			word-break: break-all;
 			min-height: 34px;
 			margin-bottom: 12px;
 		}
@@ -3842,21 +3844,25 @@ input {
 				height: 35px;
 				position: relative;
 				font-size: 0;
-				&::after {
-					content: "";
-					background-position: center;
-					background-size: contain;
-					background-repeat: no-repeat;
-					width: 20px;
-					height: 20px;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+				span {
+					&::after {
+						content: "";
+						background-position: center;
+						background-size: contain;
+						background-repeat: no-repeat;
+						width: 20px;
+						height: 20px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
 				}
 				&.view-btn {
-					&::after {
-						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M13.421 13.1678L17.75 17.5M9 6.25V11.25M6.5 8.75H11.5M15.25 8.75C15.25 12.2018 12.4518 15 9 15C5.54822 15 2.75 12.2018 2.75 8.75C2.75 5.29822 5.54822 2.5 9 2.5C12.4518 2.5 15.25 5.29822 15.25 8.75Z' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+					span {
+						&::after {
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M13.421 13.1678L17.75 17.5M9 6.25V11.25M6.5 8.75H11.5M15.25 8.75C15.25 12.2018 12.4518 15 9 15C5.54822 15 2.75 12.2018 2.75 8.75C2.75 5.29822 5.54822 2.5 9 2.5C12.4518 2.5 15.25 5.29822 15.25 8.75Z' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+						}
 					}
 				}
 				&.download-btn {
@@ -3870,10 +3876,144 @@ input {
 						left: 0;
 						transform: translateY(-50%);
 					}
-					&::after {
-						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M15.7499 12.4997V14.9997H5.74992V12.4997H4.08325V14.9997C4.08325 15.9163 4.83325 16.6663 5.74992 16.6663H15.7499C16.6666 16.6663 17.4166 15.9163 17.4166 14.9997V12.4997H15.7499ZM14.9166 9.16634L13.7416 7.99134L11.5833 10.1413V3.33301H9.91658V10.1413L7.75825 7.99134L6.58325 9.16634L10.7499 13.333L14.9166 9.16634Z' fill='%23666666'/%3E%3C/svg%3E");
+					span {
+						&::after {
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M15.7499 12.4997V14.9997H5.74992V12.4997H4.08325V14.9997C4.08325 15.9163 4.83325 16.6663 5.74992 16.6663H15.7499C16.6666 16.6663 17.4166 15.9163 17.4166 14.9997V12.4997H15.7499ZM14.9166 9.16634L13.7416 7.99134L11.5833 10.1413V3.33301H9.91658V10.1413L7.75825 7.99134L6.58325 9.16634L10.7499 13.333L14.9166 9.16634Z' fill='%23666666'/%3E%3C/svg%3E");
+						}
 					}
 				}
+			}
+		}
+	}
+	
+	&.oneBtn {
+		.item {
+			.title {
+				width: 100%;
+			}
+			.img-holder {
+				span {
+					margin: 0 auto 24px;
+				}
+			}
+			.btn-flex {
+				button {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// 검사항목 조회
+.detail-search {
+	width: 100%;
+	position: relative;
+	border-radius: 12px;
+	background: #F5F5F5;
+	padding: 20px;
+	.input-wrap {
+		margin: 12px 0;
+	}
+	.common-detailBtn {
+		display: inline-block;
+		width: 100%;
+		padding: 12px 48px;
+		border-radius: 999px;
+		background: var(--Primary-01, #006477);
+		color: #FFF;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 120%;
+		span {
+			letter-spacing: 0.28px;
+			padding-left: 22px;
+			position: relative;
+			&::before {
+				content: '';
+				width: 16px;
+				height: 16px;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M6.66667 12.5H9.33333V11.1667H6.66667V12.5ZM2 4.5V5.83333H14V4.5H2ZM4 9.16667H12V7.83333H4V9.16667Z' fill='white'/%3E%3C/svg%3E");
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+			}
+		}
+	}
+	.detail-inner {
+		width: 100%;
+		position: relative;
+		margin-top: 40px;
+		.title {
+			color: #4D4D4D;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 120%;
+			letter-spacing: 0.32px;
+			padding: 0 16px 20px 0;
+		}
+		.chk-flex {
+			width: 100%;
+			position: relative;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 16px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid #D5D5D5;
+			li {
+				width: calc(50% - 8px);
+				height: fit-content;
+				label {
+					width: 100%;
+					position: relative;
+					input {
+						width: 0;
+						height: 0;
+						display: none;
+						opacity: 0;
+					}
+					span {
+						display: block;
+						width: 100%;
+						border-radius: 999px;
+						background: #EEE;
+						padding: 9.5px 0;
+						color: #999;
+						font-size: 12px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: 0.24px;
+						text-align: center;
+					}
+					input:checked {
+						& + span {
+							background: var(--Primary-01, #006477);
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.chk-item {
+			width: 100%;
+			position: relative;
+			padding-top: 20px;
+			display: flex;
+			align-items: center;
+			flex-wrap: nowrap;
+			gap: 8px;
+			li {
+				color: var(--Primary-01, #006477);
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 120%;
+				letter-spacing: 0.28px;
 			}
 		}
 	}
@@ -5850,6 +5990,12 @@ input {
 	}
 
 	// 검사의뢰 안내 > 검사의뢰서
+	.box-top-search {
+		&.mt24 {
+			margin-top: -16px;
+		}
+	}
+
 	.request-item {
 		margin-top: 24px;
 		gap: 40px;
@@ -5880,35 +6026,15 @@ input {
 				height: 68px;
 				margin-left: -24px;
 				padding: 0;
-				button {
-					height: 68px;
-					font-size: 16px;
+			}
+		}
+		&.oneBtn {
+			.item {
+				.img-holder {
 					span {
-						color: #666;
-						font-size: 16px;
-						font-weight: 600;
-						line-height: 120%;
-						letter-spacing: 0.32px;
-						padding-left: 18px;
-					}
-					&::after {
-						width: 18px;
-						height: 18px;
-						top: 50%;
-						left: 36px;
-						transform: translate(0, -50%);
-					}
-					&.view-btn {
-						&::after {
-							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M12.3539 11.851L16.25 15.75M8.375 5.625V10.125M6.125 7.875H10.625M14 7.875C14 10.9816 11.4816 13.5 8.375 13.5C5.2684 13.5 2.75 10.9816 2.75 7.875C2.75 4.7684 5.2684 2.25 8.375 2.25C11.4816 2.25 14 4.7684 14 7.875Z' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-						}
-					}
-					&.download-btn {
-						&::after {
-							width: 21px;
-							height: 20px;
-							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M15.5 12.4997V14.9997H5.49998V12.4997H3.83331V14.9997C3.83331 15.9163 4.58331 16.6663 5.49998 16.6663H15.5C16.4166 16.6663 17.1666 15.9163 17.1666 14.9997V12.4997H15.5ZM14.6666 9.16634L13.4916 7.99134L11.3333 10.1413V3.33301H9.66665V10.1413L7.50831 7.99134L6.33331 9.16634L10.5 13.333L14.6666 9.16634Z' fill='%23666666'/%3E%3C/svg%3E");
-						}
+						width: auto;
+						height: 260px;
+						margin: 0 auto 22px;
 					}
 				}
 			}
@@ -5927,6 +6053,40 @@ input {
 					li {
 						a {
 							padding: 0 24px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 검사의뢰 안내 > 검사의뢰서
+	.request-item {
+		.item {
+			.btn-flex {
+				button {
+					height: 68px;
+					font-size: 16px;
+					span {
+						color: #666;
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: 0.32px;
+						padding-left: 24px;
+						position: relative;
+						&::after {
+							left: -1px;
+							transform: translate(0, -50%);
+						}
+					}
+					&.view-btn {
+						span {
+							&::after {
+								width: 18px;
+								height: 18px;
+								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 19 19' fill='none'%3E%3Cpath d='M12.3539 12.351L16.25 16.25M8.375 6.125V10.625M6.125 8.375H10.625M14 8.375C14 11.4816 11.4816 14 8.375 14C5.2684 14 2.75 11.4816 2.75 8.375C2.75 5.2684 5.2684 2.75 8.375 2.75C11.4816 2.75 14 5.2684 14 8.375Z' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+							}
 						}
 					}
 				}
