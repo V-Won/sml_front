@@ -1675,11 +1675,11 @@ input {
 					color: #fff;
 					font-size: 14px;
 					font-weight: 500;
-					line-height: 24px;
-					letter-spacing: -0.28px;
+					line-height: 120%;
+					letter-spacing: 0.28px;
 					position: relative;
 					display: block;
-					padding-right: 25px;
+					padding-right: 24px;
 					&::before {
 						content: "";
 						width: 16px;
@@ -1796,7 +1796,7 @@ input {
 			font-size: 30px;
 			font-weight: 700;
 			line-height: 120%;
-			letter-spacing: -0.6px;
+			letter-spacing: 0.6px;
 		}
 	}
 	&.bg-fff {
@@ -1813,7 +1813,7 @@ input {
 			.sub-nav-2 {
 				> li {
 					> a {
-						color: #666;
+						color: #555;
 						&::before {
 							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cg opacity='0.5'%3E%3Cpath d='M5.53125 11.56L8.58458 8.5L5.53125 5.44L6.47125 4.5L10.4713 8.5L6.47125 12.5L5.53125 11.56Z' fill='%23999999'/%3E%3C/g%3E%3C/svg%3E");
 						}
@@ -2543,11 +2543,11 @@ input {
 					font-size: 22px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing: -0.44px;
+					letter-spacing: 0.44px;
 				}
 				&.is-active {
 					.btn {
-						color: #2b406b;
+						color: #4D4D4D;
 					}
 				}
 				& + li {
@@ -3751,7 +3751,7 @@ input {
 .request-item {
 	width: 100%;
 	position: relative;
-	margin-top: 40px;
+	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -3759,8 +3759,8 @@ input {
 	.item {
 		width: calc(50% - 6px);
 		position: relative;
-		padding: 24px 12px 0;
-		border: 6px;
+		padding: 22px 12px 0;
+		border-radius: 6px;
 		border: 1px solid #e6e6e6;
 		overflow: hidden;
 		.title {
@@ -3779,11 +3779,14 @@ input {
 		.img-holder {
 			span {
 				width: 92px;
-				margin: 0 auto 24px;
+				height: 126px;
+				padding-top: 0;
+				margin: 0 auto 22px;
 			}
 		}
 		.btn-flex {
-			width: 100%;
+			width: calc(100% + 24px);
+			margin-left: -12px;
 			position: relative;
 			border-top: 1px solid #e6e6e6;
 			padding: 4px 0;
@@ -3792,7 +3795,7 @@ input {
 			justify-content: space-between;
 			button {
 				width: 50%;
-				height: 36px;
+				height: 35px;
 				position: relative;
 				font-size: 0;
 				&::after {
@@ -4017,17 +4020,17 @@ input {
 		margin-bottom: 80px;
 		background-position: center !important;
 		.inner-gap-1 {
-			padding-top: 216px;
+			padding-top: 176px;
 			padding-bottom: 142px;
 		}
 		.text-box {
 			.sub-nav-2 {
-				margin-bottom: 36px;
+				margin-bottom: 40px;
 				> li {
 					height: 19px;
 					> a {
 						font-size: 16px;
-						padding-right: 27px;
+						letter-spacing: 0.32px;
 					}
 					&.nav-acc {
 						float: left;
@@ -4048,11 +4051,11 @@ input {
 			.sub-tit {
 				font-size: 52px;
 				font-weight: 600;
-				letter-spacing: 0;
+				letter-spacing: 1.04px;
 			}
 		}
 		&.bg-fff {
-			margin-bottom: 60px;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -4379,6 +4382,9 @@ input {
 				}
 			}
 		}
+		& + .box-top-search {
+			margin-top: 24px;
+		}
 	}
 
 	// common-paging
@@ -4389,7 +4395,6 @@ input {
 		}
 		ul {
 			display: flex;
-			gap: 13px;
 			li {
 				a {
 					width: 40px;
@@ -5799,7 +5804,75 @@ input {
 			}
 		}
 	}
+
+	// 검사의뢰 안내 > 검사의뢰서
+	.request-item {
+		margin-top: 24px;
+		gap: 40px;
+		.item {
+			width: calc(25% - 30px);
+			padding: 39px 24px 0;
+			border-radius: 12px;
+			transition: box-shadow 0.3s;
+			&:hover {
+				box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.10);
+			}
+			.title {
+				font-size: 20px;
+				letter-spacing: 0.4px;
+				min-height: 48px;
+				margin-bottom: 24px;
+			}
+			.img-holder {
+				span {
+					width: 100%;
+					max-width: 193px;
+					padding-top: 96.3%;
+					margin: 0 auto 24px;
+				}
+			}
+			.btn-flex {
+				width: calc(100% + 48px);
+				height: 68px;
+				margin-left: -24px;
+				padding: 0;
+				button {
+					height: 68px;
+					font-size: 16px;
+					span {
+						color: #666;
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: 0.32px;
+						padding-left: 18px;
+					}
+					&::after {
+						width: 18px;
+						height: 18px;
+						top: 50%;
+						left: 36px;
+						transform: translate(0, -50%);
+					}
+					&.view-btn {
+						&::after {
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M12.3539 11.851L16.25 15.75M8.375 5.625V10.125M6.125 7.875H10.625M14 7.875C14 10.9816 11.4816 13.5 8.375 13.5C5.2684 13.5 2.75 10.9816 2.75 7.875C2.75 4.7684 5.2684 2.25 8.375 2.25C11.4816 2.25 14 4.7684 14 7.875Z' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+						}
+					}
+					&.download-btn {
+						&::after {
+							width: 21px;
+							height: 20px;
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M15.5 12.4997V14.9997H5.49998V12.4997H3.83331V14.9997C3.83331 15.9163 4.58331 16.6663 5.49998 16.6663H15.5C16.4166 16.6663 17.1666 15.9163 17.1666 14.9997V12.4997H15.5ZM14.6666 9.16634L13.4916 7.99134L11.3333 10.1413V3.33301H9.66665V10.1413L7.50831 7.99134L6.33331 9.16634L10.5 13.333L14.6666 9.16634Z' fill='%23666666'/%3E%3C/svg%3E");
+						}
+					}
+				}
+			}
+		}
+	}
 }
+
+
 /* //1024 이상 */
 
 /* 1200 이상 */

@@ -73,8 +73,8 @@
               </span>
             </div>
             <div class="btn-flex">
-              <button type="button" class="view-btn">미리보기</button>
-              <button type="button" class="download-btn">다운로드</button>
+              <button type="button" class="view-btn"><span>미리보기</span></button>
+              <button type="button" class="download-btn"><span>다운로드</span></button>
             </div>
           </div>
           <div class="item">
@@ -85,8 +85,8 @@
               </span>
             </div>
             <div class="btn-flex">
-              <button type="button" class="view-btn">미리보기</button>
-              <button type="button" class="download-btn">다운로드</button>
+              <button type="button" class="view-btn"><span>미리보기</span></button>
+              <button type="button" class="download-btn"><span>다운로드</span></button>
             </div>
           </div>
           <div class="item">
@@ -97,8 +97,8 @@
               </span>
             </div>
             <div class="btn-flex">
-              <button type="button" class="view-btn">미리보기</button>
-              <button type="button" class="download-btn">다운로드</button>
+              <button type="button" class="view-btn"><span>미리보기</span></button>
+              <button type="button" class="download-btn"><span>다운로드</span></button>
             </div>
           </div>
           <div class="item">
@@ -109,8 +109,8 @@
               </span>
             </div>
             <div class="btn-flex">
-              <button type="button" class="view-btn">미리보기</button>
-              <button type="button" class="download-btn">다운로드</button>
+              <button type="button" class="view-btn"><span>미리보기</span></button>
+              <button type="button" class="download-btn"><span>다운로드</span></button>
             </div>
           </div>
           <div class="item">
@@ -121,8 +121,8 @@
               </span>
             </div>
             <div class="btn-flex">
-              <button type="button" class="view-btn">미리보기</button>
-              <button type="button" class="download-btn">다운로드</button>
+              <button type="button" class="view-btn"><span>미리보기</span></button>
+              <button type="button" class="download-btn"><span>다운로드</span></button>
             </div>
           </div>
           <div class="item">
@@ -133,8 +133,8 @@
               </span>
             </div>
             <div class="btn-flex">
-              <button type="button" class="view-btn">미리보기</button>
-              <button type="button" class="download-btn">다운로드</button>
+              <button type="button" class="view-btn"><span>미리보기</span></button>
+              <button type="button" class="download-btn"><span>다운로드</span></button>
             </div>
           </div>
           <div class="item">
@@ -145,8 +145,8 @@
               </span>
             </div>
             <div class="btn-flex">
-              <button type="button" class="view-btn">미리보기</button>
-              <button type="button" class="download-btn">다운로드</button>
+              <button type="button" class="view-btn"><span>미리보기</span></button>
+              <button type="button" class="download-btn"><span>다운로드</span></button>
             </div>
           </div>
           <div class="item">
@@ -157,12 +157,35 @@
               </span>
             </div>
             <div class="btn-flex">
-              <button type="button" class="view-btn">미리보기</button>
-              <button type="button" class="download-btn">다운로드</button>
+              <button type="button" class="view-btn"><span>미리보기</span></button>
+              <button type="button" class="download-btn"><span>다운로드</span></button>
             </div>
           </div>
         </div>
         <!-- //request-item -->
+        <!-- common-paging -->
+        <div class="common-paging">
+          <div class="mobile-paging">
+            <button type="button" class="more-btn">더보기</button>
+          </div>
+          <ul>
+            <li><a href="#none" class="btn-first" title="첫 페이지 이동"></a></li>
+            <li><a href="#none" class="btn-prev" title="이전 페이지 이동"></a></li>
+            <li><a href="#none" class="is-active">1</a></li>
+            <li><a href="#none">2</a></li>
+            <li><a href="#none">3</a></li>
+            <li><a href="#none">4</a></li>
+            <li><a href="#none">5</a></li>
+            <li><a href="#none">6</a></li>
+            <li><a href="#none">7</a></li>
+            <li><a href="#none">8</a></li>
+            <li><a href="#none">9</a></li>
+            <li><a href="#none">10</a></li>
+            <li><a href="#none" class="btn-next" title="다음 페이지 이동"></a></li>
+            <li><a href="#none" class="btn-last" title="마지막 페이지 이동"></a></li>
+          </ul>
+        </div>
+        <!-- //common-paging -->
       </div>
     </div>
   </div>
@@ -191,6 +214,7 @@
       bg: "white"
     })
     selectBox.initialize();
+    commonTab.initialize();
   </script>
 
 </body>
