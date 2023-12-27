@@ -1842,6 +1842,26 @@ input {
 	}
 }
 
+// 공통 이미지 없음.
+.no-img-cover {
+	span {
+		position: relative;
+		&::after {
+			content: "";
+			background-image: url(../images/bg/bg_noImg_cover.png);
+			background-color: #f5f5f5;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+
 // 공통 Component wrap style
 .form-wrap {
 	width: 100%;
