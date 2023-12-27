@@ -1312,7 +1312,7 @@ input {
 .common-downloadBtn {
   padding: 5px 20px 7px;
   border-radius: 999px;
-  border: 1px solid #D5D5D5;
+  border: 1px solid #d5d5d5;
 }
 .common-downloadBtn span {
   color: #666;
@@ -2333,6 +2333,9 @@ input {
   width: 100%;
   position: relative;
 }
+.common-tab.padding-top-1 {
+  padding-top: 39px;
+}
 .common-tab > ul {
   display: flex;
   align-items: center;
@@ -2350,24 +2353,24 @@ input {
 .common-tab.type-1 > ul > li + li {
   margin-left: 20px;
 }
-.common-tab.type-2 > ul > li .btn {
+.common-tab.type-2 ul li .btn {
   border-radius: 999px;
   background: #f5f5f5;
   width: -moz-fit-content;
   width: fit-content;
   height: 33px;
-  padding: 8px 20px;
+  padding: 8px 21px;
   color: #4d4d4d;
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
   letter-spacing: -0.28px;
 }
-.common-tab.type-2 > ul > li.is-active .btn {
+.common-tab.type-2 ul li.is-active .btn {
   background: #006477;
   color: #fff;
 }
-.common-tab.type-2 > ul > li + li {
+.common-tab.type-2 ul li + li {
   margin-left: 12px;
 }
 .common-tab + .box-top-search {
@@ -3252,6 +3255,127 @@ input {
   opacity: 1;
 }
 
+.snbSwiper {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+.snbSwiper .swiper-slide {
+  width: auto !important;
+}
+
+.box-qna {
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  margin-top: 20px;
+}
+.box-qna > ul > li {
+  border-bottom: 1px solid #d5d5d5;
+}
+.box-qna > ul > li:last-child {
+  border-bottom: 0;
+}
+.box-qna > ul > li > button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 20px 56px 20px 12px;
+  text-align: left;
+}
+.box-qna > ul > li > button::after {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M7.41 8.79492L12 13.3749L16.59 8.79492L18 10.2049L12 16.2049L6 10.2049L7.41 8.79492Z' fill='%23666666'/%3E%3C/svg%3E");
+  width: 24px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 47px;
+  right: 12px;
+}
+.box-qna > ul > li > button .tit {
+  color: var(--Primary-01, #006477);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.28px;
+}
+.box-qna > ul > li > button .text-1 {
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.28px;
+  display: block;
+  padding-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.box-qna > ul > li > ul > li {
+  background: #f5f7fa;
+  border-top: 1px solid #d5d5d5;
+}
+.box-qna > ul > li > ul > li .download-file {
+  background: #f5f7fa;
+}
+.box-qna > ul > li > ul > li > button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 18px 56px 20px 12px;
+  text-align: left;
+}
+.box-qna > ul > li > ul > li > button::after {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M7.41 16.2049L12 11.6249L16.59 16.2049L18 14.7949L12 8.79492L6 14.7949L7.41 16.2049Z' fill='%23666666'/%3E%3C/svg%3E");
+  width: 24px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 47px;
+  right: 12px;
+}
+.box-qna > ul > li > ul > li > button .tit {
+  color: var(--Primary-01, #006477);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.28px;
+}
+.box-qna > ul > li > ul > li > button .text-1 {
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.28px;
+  padding-top: 6px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.box-qna > ul > li > ul > li > button .text-2 {
+  color: #666;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.24px;
+}
+
+.box-top-search.padding-top-1 {
+  margin-top: 20px;
+}
 .box-top-search.type-2 input {
   height: 44px;
   border-radius: 999px;
@@ -4402,7 +4526,7 @@ input {
 }
 .table-layout.c_1_2 .body > ul > li .name {
   -webkit-line-clamp: 2;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 16px;
   letter-spacing: 0.32px;
   margin: 0 0 24px;
@@ -4426,7 +4550,8 @@ input {
 .table-layout.d_2_1 .body > ul > li .page-num {
   display: none;
 }
-.table-layout.d_2_1 .body > ul > li .num, .table-layout.d_2_1 .body > ul > li .name {
+.table-layout.d_2_1 .body > ul > li .num,
+.table-layout.d_2_1 .body > ul > li .name {
   display: block;
   color: #666;
   font-size: 14px;
@@ -6981,7 +7106,8 @@ input {
     letter-spacing: 0.36px;
     width: 7.86%;
   }
-  .table-layout.d_2_1 .body > ul > li .num, .table-layout.d_2_1 .body > ul > li .name {
+  .table-layout.d_2_1 .body > ul > li .num,
+  .table-layout.d_2_1 .body > ul > li .name {
     font-size: 18px;
     letter-spacing: 0.36px;
   }

@@ -1532,7 +1532,7 @@ input {
 .common-downloadBtn {
 	padding: 5px 20px 7px;
 	border-radius: 999px;
-	border: 1px solid #D5D5D5;
+	border: 1px solid #d5d5d5;
 	span {
 		color: #666;
 		font-size: 12px;
@@ -1542,7 +1542,7 @@ input {
 		padding-left: 18px;
 		position: relative;
 		&::before {
-			content: '';
+			content: "";
 			width: 14px;
 			height: 14px;
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0 0 14 15' fill='none'%3E%3Cpath d='M10.5002 9.25065V11.0007H3.50016V9.25065H2.3335V11.0007C2.3335 11.6423 2.8585 12.1673 3.50016 12.1673H10.5002C11.1418 12.1673 11.6668 11.6423 11.6668 11.0007V9.25065H10.5002ZM9.91683 6.91732L9.09433 6.09482L7.5835 7.59982V2.83398H6.41683V7.59982L4.906 6.09482L4.0835 6.91732L7.00016 9.83398L9.91683 6.91732Z' fill='%23666666'/%3E%3C/svg%3E");
@@ -2589,6 +2589,9 @@ input {
 .common-tab {
 	width: 100%;
 	position: relative;
+	&.padding-top-1 {
+		padding-top: 39px;
+	}
 	> ul {
 		display: flex;
 		align-items: center;
@@ -2615,14 +2618,15 @@ input {
 		}
 	}
 	&.type-2 {
-		> ul {
-			> li {
+		ul {
+			li {
 				.btn {
 					border-radius: 999px;
 					background: #f5f5f5;
 					width: fit-content;
 					height: 33px;
-					padding: 8px 20px;
+					//padding: 8px 20px; // D_4_2.html
+					padding: 8px 21px;
 					color: #4d4d4d;
 					font-size: 14px;
 					font-weight: 600;
@@ -3563,8 +3567,125 @@ input {
 	}
 }
 
+// 고객서비스 > 고객지원 > 자주하는 질문
+.snbSwiper {
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-right: -20px;
+	margin-left: -20px;
+	padding-left: 20px;
+	.swiper-slide {
+		width: auto !important;
+	}
+}
+.box-qna {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	margin-top: 20px;
+	> ul {
+		> li {
+			border-bottom: 1px solid #d5d5d5;
+			&:last-child {
+				border-bottom: 0;
+			}
+			> button {
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				width: 100%;
+				padding: 20px 56px 20px 12px;
+				text-align: left;
+				&::after {
+					content: "";
+					display: block;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M7.41 8.79492L12 13.3749L16.59 8.79492L18 10.2049L12 16.2049L6 10.2049L7.41 8.79492Z' fill='%23666666'/%3E%3C/svg%3E");
+					width: 24px;
+					height: 25px;
+					background-repeat: no-repeat;
+					background-position: center;
+					position: absolute;
+					top: 47px;
+					right: 12px;
+				}
+				.tit {
+					color: var(--Primary-01, #006477);
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 24px;
+					letter-spacing: 0.28px;
+				}
+				.text-1 {
+					color: #4d4d4d;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 140%;
+					letter-spacing: 0.28px;
+					display: block;
+					padding-top: 5px;
+					@include text-line-2;
+				}
+			}
+			> ul {
+				> li {
+					background: #f5f7fa;
+					border-top: 1px solid #d5d5d5;
+					.download-file {
+						background: #f5f7fa;
+					}
+					> button {
+						display: flex;
+						flex-direction: column;
+						position: relative;
+						width: 100%;
+						padding: 18px 56px 20px 12px;
+						text-align: left;
+						&::after {
+							content: "";
+							display: block;
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M7.41 16.2049L12 11.6249L16.59 16.2049L18 14.7949L12 8.79492L6 14.7949L7.41 16.2049Z' fill='%23666666'/%3E%3C/svg%3E");
+							width: 24px;
+							height: 25px;
+							background-repeat: no-repeat;
+							background-position: center;
+							position: absolute;
+							top: 47px;
+							right: 12px;
+						}
+						.tit {
+							color: var(--Primary-01, #006477);
+							font-size: 14px;
+							font-weight: 600;
+							line-height: 24px;
+							letter-spacing: 0.28px;
+						}
+						.text-1 {
+							color: #4d4d4d;
+							font-size: 14px;
+							font-weight: 600;
+							line-height: 140%;
+							letter-spacing: 0.28px;
+							padding-top: 6px;
+							@include text-line-2;
+						}
+						.text-2 {
+							color: #666;
+							font-size: 12px;
+							font-weight: 400;
+							line-height: 140%;
+							letter-spacing: 0.24px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 // 재단안내 > SML 홍보실 > 홍보영상
 .box-top-search {
+	&.padding-top-1 {
+		margin-top: 20px;
+	}
 	&.type-2 {
 		input {
 			height: 44px;
@@ -4769,7 +4890,7 @@ input {
 					}
 					.name {
 						-webkit-line-clamp: 2;
-						color: #4D4D4D;
+						color: #4d4d4d;
 						font-size: 16px;
 						letter-spacing: 0.32px;
 						margin: 0 0 24px;
@@ -4787,7 +4908,7 @@ input {
 	}
 }
 
-// 고객서비스 > SML 공문 
+// 고객서비스 > SML 공문
 .table-layout {
 	&.d_2_1 {
 		.body {
@@ -4796,7 +4917,8 @@ input {
 					.page-num {
 						display: none;
 					}
-					.num, .name {
+					.num,
+					.name {
 						display: block;
 						color: #666;
 						font-size: 14px;
@@ -7747,7 +7869,7 @@ input {
 		}
 	}
 
-	// 고객서비스 > SML 공문 
+	// 고객서비스 > SML 공문
 	.table-layout {
 		&.d_2_1 {
 			.head {
@@ -7786,7 +7908,8 @@ input {
 							letter-spacing: 0.36px;
 							width: 7.86%;
 						}
-						.num, .name {
+						.num,
+						.name {
 							font-size: 18px;
 							letter-spacing: 0.36px;
 						}
