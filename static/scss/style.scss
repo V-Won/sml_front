@@ -3426,10 +3426,87 @@ input {
 						letter-spacing: 0.24px;
 					}
 				}
-				.icon-new{
+				.icon-new {
 					position: absolute;
-					top:12px;
-					right:12px;
+					top: 12px;
+					right: 12px;
+				}
+			}
+		}
+	}
+}
+
+// 고객서비스 > SML 학술자료 > SML Healthcare
+.box-health {
+	.mySwiper2 {
+		margin-bottom: 40px;
+		.swiper-slide {
+			border-radius: 12px;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+			&::after {
+				opacity: 0;
+				transition: all 0.4s;
+				content: "";
+				display: block;
+				position: absolute;
+				background-image: url(../images/bg/bg_swiper_cover.png);
+				background-size: contain;
+				width: 154px;
+				height: 142px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 1;
+			}
+			&::before {
+				opacity: 0;
+				content: "";
+				display: block;
+				border-radius: 12px;
+				background-color: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+		&.swiper-cover {
+			.swiper-slide {
+				position: relative;
+				&::after,
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+		.swiper-button-next,
+		.swiper-button-prev {
+			display: none;
+		}
+	}
+	.mySwiper {
+		.swiper-slide {
+			position: relative;
+			&::after {
+				transition: all 0.4s;
+				opacity: 0;
+				content: "";
+				border-radius: 8px;
+				border: 4px solid #006477;
+				position: absolute;
+				inset: 0 0 0 0;
+			}
+			img {
+				width: 100%;
+				border-radius: 8px;
+			}
+			&.swiper-slide-thumb-active {
+				&::after {
+					opacity: 1;
 				}
 			}
 		}
@@ -3655,7 +3732,7 @@ input {
 	}
 }
 .board-ct {
-	padding: 41px 12px;
+	padding: 41px 12px 0 12px;
 	.reset_css_form {
 		img {
 			width: 100% !important;
@@ -3692,6 +3769,7 @@ input {
 }
 .download-file {
 	display: flex;
+	margin-top: 40px;
 	padding: 20px 12px;
 	flex-direction: column;
 	justify-content: center;
@@ -6278,7 +6356,7 @@ input {
 		}
 	}
 	.board-ct {
-		padding: 41px 24px;
+		padding: 41px 24px 0 24px;
 		* {
 			color: #666;
 		}
@@ -6426,7 +6504,7 @@ input {
 
 	// 고객서비스 > SML 학술자료 > Smart New Test
 	.box-NewTest {
-		margin-top:23px;
+		margin-top: 23px;
 		ul {
 			display: flex;
 			flex-wrap: wrap;
@@ -6434,7 +6512,7 @@ input {
 			li {
 				//width: 320px;
 				width: calc(25% - 30px);
-				margin-bottom:0px;
+				margin-bottom: 0px;
 				&:last-child {
 				}
 				a {
@@ -6445,7 +6523,7 @@ input {
 						}
 					}
 					.text {
-						padding:25px 23px 38px 23px;
+						padding: 25px 23px 38px 23px;
 						.text-1 {
 							font-size: 20px;
 							letter-spacing: 0.4px;
@@ -6455,6 +6533,85 @@ input {
 							font-size: 16px;
 						}
 					}
+				}
+			}
+		}
+	}
+
+	// 고객서비스 > SML 학술자료 > SML Healthcare
+	.box-health {
+		.mySwiper2 {
+			max-width: 640px;
+			margin: 0 auto;
+			overflow: visible;
+			width: 100%;
+			.swiper-slide {
+				width: 100%;
+				opacity: 0;
+				transition: opacity 0.3s;
+				&.swiper-slide-active {
+					opacity: 1;
+				}
+			}
+			&.swiper-cover {
+				.swiper-slide {
+					&::after,
+					&::before {
+						opacity: 0;
+					}
+				}
+			}
+			.swiper-button-prev,
+			.swiper-button-next {
+				z-index: 10;
+				display: block;
+				width: 72px;
+				height: 72px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(calc(-50% + 21px));
+				&:after {
+					content: "";
+					background-image: url(../images/icon/icon_btn_1.svg);
+					width: 72px;
+					height: 72px;
+					background-repeat: no-repeat;
+					background-position: center;
+					display: block;
+				}
+			}
+			.swiper-button-prev {
+				left: -133px;
+				transform: translateY(calc(-50% + 21px)) rotate(-180deg);
+			}
+			.swiper-button-next {
+				right: -133px;
+			}
+		}
+		.mySwiper {
+			max-width: 959px;
+			margin: 40px auto 0 auto;
+			.swiper-wrapper {
+				display: flex;
+				justify-content: center;
+			}
+			.swiper-slide {
+				max-width: 160px;
+				max-height: 160px;
+				display: flex;
+				justify-content: center;
+				&:hover {
+					cursor: pointer;
+				}
+				&::after {
+					border: 8px solid #006477;
+				}
+				&:last-child{
+					margin-right:0 !important;
+				}
+				img {
+					max-width: 160px;
+					max-height: 160px;
 				}
 			}
 		}
@@ -6870,7 +7027,8 @@ input {
 			}
 			.icon-search {
 				position: absolute;
-				background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' stroke='%234D4D4D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+				background: transparent
+					url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z' stroke='%234D4D4D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 				background-repeat: no-repeat;
 				background-size: 100%;
 				top: 50%;
@@ -6933,7 +7091,7 @@ input {
 				flex-direction: row;
 				align-items: center;
 				gap: 20px;
-				border-top: 1px solid #D5D5D5;
+				border-top: 1px solid #d5d5d5;
 				.chk-item {
 					gap: 12px 20px;
 					order: 2;
@@ -6995,7 +7153,7 @@ input {
 				align-items: center;
 				padding: 23px 0;
 				li {
-					color: #4D4D4D;
+					color: #4d4d4d;
 					font-size: 18px;
 					font-weight: 600;
 					line-height: 140%;
@@ -7026,7 +7184,7 @@ input {
 			}
 		}
 		.body {
-			border-top: 1px solid #D5D5D5;
+			border-top: 1px solid #d5d5d5;
 			> ul {
 				> li {
 					width: 100%;

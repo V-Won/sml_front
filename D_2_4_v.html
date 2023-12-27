@@ -7,6 +7,7 @@
     content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
   <title>삼광의료재단</title>
   <link rel="stylesheet" href="static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
 </head>
 
 <body id="main">
@@ -62,7 +63,50 @@
         <!-- //게시판 상단 정보 -->
         <!-- 게시판 본문 -->
         <div class="board-ct">
-          1
+          <!-- box-health -->
+          <div class="box-health">
+            <div class="swiper mySwiper2 swiper-cover">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //box-health -->
         </div>
         <!-- //게시판 본문 -->
         <!-- 게시판 이전글 다음글 -->
@@ -111,6 +155,10 @@
   <script src="static/js/front.js"></script>
   <!-- //공통 js -->
 
+  <!-- swiper.js -->
+  <script src="static/js/swiper.min.js"></script>
+  <!-- //swiper.js -->
+
   <script>
     /**
      * header bg type
@@ -121,6 +169,43 @@
       bg: "white"
     })
     selectBox.initialize();
+
+    // 게시판 본문 swiper
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 12,
+      //slidesPerView: 3.6,
+      slidesPerView: 3,
+      freeMode: true,
+      loop: false,
+      loopedSlides: 1,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          slidesPerView: 5,
+          spaceBetween: 40
+        },
+      },
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      loop: false,
+      loopedSlides: 1,
+      slidesPerView:1,
+      thumbs: {
+        swiper: swiper,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        slideChange: function () {
+          document.querySelector('.mySwiper2').classList.remove('swiper-cover');
+        }
+      }
+    });
   </script>
 
 </body>
