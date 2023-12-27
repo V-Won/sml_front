@@ -1842,13 +1842,13 @@ input {
 	}
 }
 
-// 공통 이미지 없음.
+// 공통 이미지 없는 경우.
 .no-img-cover {
 	span {
 		position: relative;
 		&::after {
 			content: "";
-			background-image: url(../images/bg/bg_noImg_cover.png);
+			background-image: url(../images/bg/bg_noImg_cover.svg);
 			background-color: #f5f5f5;
 			background-repeat: no-repeat;
 			background-position: center;
