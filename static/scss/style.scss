@@ -1812,6 +1812,7 @@ input {
 			display: none;
 		}
 		.inner-gap-1 {
+			padding-top: 176px;
 			padding-bottom: 0;
 		}
 		.text-box {
@@ -4718,6 +4719,45 @@ input {
 	}
 }
 
+// 임상연구 검사 > 수행실적
+.box-top-search {
+	& + .table-layout {
+		margin-top: 24px;
+	}
+}
+
+.table-layout {
+	&.c_1_2 {
+		.body {
+			> ul {
+				> li {
+					p {
+						color: #666;
+						font-size: 14px;
+						font-weight: 500;
+						line-height: 140%;
+						letter-spacing: 0.28px;
+					}
+					.name {
+						-webkit-line-clamp: 2;
+						color: #4D4D4D;
+						font-size: 16px;
+						letter-spacing: 0.32px;
+						margin: 0 0 24px;
+					}
+					.place {
+						@include text-line-1;
+						margin: 8px 0;
+					}
+					.info {
+						@include text-line-2;
+					}
+				}
+			}
+		}
+	}
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
 	// 공통 pc mobile show hide
@@ -4938,7 +4978,7 @@ input {
 		margin-bottom: 80px;
 		background-position: center !important;
 		.inner-gap-1 {
-			padding-top: 176px;
+			padding-top: 216.5px;
 			padding-bottom: 142px;
 		}
 		.text-box {
@@ -4949,6 +4989,7 @@ input {
 					> a {
 						font-size: 16px;
 						letter-spacing: 0.32px;
+						padding-right: 28px;
 					}
 					&.nav-acc {
 						float: left;
@@ -7179,27 +7220,6 @@ input {
 					line-height: 140%;
 					letter-spacing: 0.36px;
 					text-align: center;
-					&:first-child {
-						width: 8.5%;
-					}
-					&:nth-child(2) {
-						width: 11.5%;
-					}
-					&:nth-child(3) {
-						width: 37%;
-					}
-					&:nth-child(4) {
-						width: 11.5%;
-					}
-					&:nth-child(5) {
-						width: 8.5%;
-					}
-					&:nth-child(6) {
-						width: 9%;
-					}
-					&:nth-child(7) {
-						width: 14%;
-					}
 				}
 			}
 		}
@@ -7220,7 +7240,6 @@ input {
 					}
 					.num {
 						display: block;
-						width: 8.5%;
 						text-align: center;
 						color: #999;
 						font-size: 18px;
@@ -7229,13 +7248,11 @@ input {
 						letter-spacing: 0.36px;
 					}
 					.code {
-						width: 11.5%;
 						text-align: center;
 						font-size: 18px;
 						letter-spacing: 0.36px;
 					}
 					.name {
-						width: 37%;
 						text-align: center;
 						padding: 0 40px;
 						font-size: 18px;
@@ -7243,23 +7260,10 @@ input {
 						margin: 0;
 					}
 					.item-box {
-						width: 43%;
 						flex-wrap: nowrap;
 						gap: 0;
 						.item {
 							width: auto;
-							&:first-child {
-								width: 26.8%;
-							}
-							&:nth-child(2) {
-								width: 19.8%;
-							}
-							&:nth-child(3) {
-								width: 20.95%;
-							}
-							&:nth-child(4) {
-								width: 32.65%;
-							}
 							.tit {
 								display: none;
 							}
@@ -7268,6 +7272,67 @@ input {
 								text-align: center;
 								font-size: 18px;
 								letter-spacing: 0.36px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.b_3_1 {
+			.head {
+				ul {
+					li {
+						&:first-child {
+							width: 8.5%;
+						}
+						&:nth-child(2) {
+							width: 11.5%;
+						}
+						&:nth-child(3) {
+							width: 37%;
+						}
+						&:nth-child(4) {
+							width: 11.5%;
+						}
+						&:nth-child(5) {
+							width: 8.5%;
+						}
+						&:nth-child(6) {
+							width: 9%;
+						}
+						&:nth-child(7) {
+							width: 14%;
+						}
+					}
+				}
+			}
+			.body {
+				> ul {
+					> li {
+						.num {
+							width: 8.5%;
+						}
+						.code {
+							width: 11.5%;
+						}
+						.name {
+							width: 37%;
+						}
+						.item-box {
+							width: 43%;
+							.item {
+								&:first-child {
+									width: 26.8%;
+								}
+								&:nth-child(2) {
+									width: 19.8%;
+								}
+								&:nth-child(3) {
+									width: 20.95%;
+								}
+								&:nth-child(4) {
+									width: 32.65%;
+								}
 							}
 						}
 					}
@@ -7457,6 +7522,66 @@ input {
 			}
 			& + .info-list {
 				margin-top: 20px;
+			}
+		}
+	}
+
+	// 임상연구 검사 > 수행실적
+	.table-layout {
+		&.c_1_2 {
+			.head {
+				ul {
+					padding: 23px 40px;
+					li {
+						&:first-child {
+							width: 32.5%;
+						}
+						&:nth-child(2) {
+							width: 24.02%;
+						}
+						&:nth-child(3) {
+							width: 19.6%;
+						}
+						&:nth-child(4) {
+							width: 23.88%;
+						}
+					}
+				}
+			}
+			.body {
+				> ul {
+					> li {
+						padding: 23.5px 40px;
+						flex-direction: row;
+						align-items: center;
+						p {
+							font-size: 18px;
+							letter-spacing: 0.36px;
+							text-align: center;
+							padding: 0 16px;
+						}
+						.name {
+							text-align: left;
+							width: 32.5%;
+							color: #666;
+							font-size: 18px;
+							letter-spacing: 0.36px;
+							margin: 0;
+							padding: 0 16px 0 0;
+							min-height: 56px;
+						}
+						.date {
+							width: 24.02%;
+						}
+						.place {
+							width: 19.6%;
+							margin: 0;
+						}
+						.info {
+							width: 23.88%;
+						}
+					}
+				}
 			}
 		}
 	}
