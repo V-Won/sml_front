@@ -1309,12 +1309,12 @@ input {
   right: 0;
 }
 
-.download-btn {
+.common-downloadBtn {
   padding: 5px 20px 7px;
   border-radius: 999px;
   border: 1px solid #D5D5D5;
 }
-.download-btn span {
+.common-downloadBtn span {
   color: #666;
   font-size: 12px;
   font-weight: 500;
@@ -1323,7 +1323,7 @@ input {
   padding-left: 18px;
   position: relative;
 }
-.download-btn span::before {
+.common-downloadBtn span::before {
   content: "";
   width: 14px;
   height: 14px;
@@ -4479,6 +4479,26 @@ input {
   display: block;
 }
 
+.list-board-top .tit-1 .num {
+  display: block;
+}
+
+.board-ct.smlDocument * {
+  font-family: "Pretendard";
+  color: #4D4D4D;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.24px;
+}
+.board-ct.smlDocument img {
+  border: 1px solid #D5D5D5;
+}
+
+.border-prev-next.smlDocument ul li a .text .num {
+  margin-right: 12px;
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
   .pc-show {
@@ -4609,16 +4629,16 @@ input {
     background-size: contain;
     background-position: center;
   }
-  .download-btn {
+  .common-downloadBtn {
     padding: 8.5px 16px;
   }
-  .download-btn span {
+  .common-downloadBtn span {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.32px;
     padding-left: 24px;
   }
-  .download-btn span::before {
+  .common-downloadBtn span::before {
     width: 18px;
     height: 18px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M14 11.25V13.5H5V11.25H3.5V13.5C3.5 14.325 4.175 15 5 15H14C14.825 15 15.5 14.325 15.5 13.5V11.25H14ZM13.25 8.25L12.1925 7.1925L10.25 9.1275V3H8.75V9.1275L6.8075 7.1925L5.75 8.25L9.5 12L13.25 8.25Z' fill='%23666666'/%3E%3C/svg%3E");
@@ -6944,7 +6964,9 @@ input {
   .table-layout.d_2_1 .head ul li:nth-child(4) {
     width: 17.13%;
   }
-  .table-layout.d_2_1 .body > ul > li a {
+  .table-layout.d_2_1 .body > ul > li {
+    flex-direction: row;
+    align-items: center;
     padding: 22px 0;
   }
   .table-layout.d_2_1 .body > ul > li p {
@@ -6987,6 +7009,7 @@ input {
     align-items: center;
     flex-wrap: nowrap;
     margin: 0;
+    padding: 0;
   }
   .table-layout.d_2_1 .body > ul > li .date {
     width: 17.15%;
@@ -7006,6 +7029,26 @@ input {
   .table-layout.d_2_1 .body > ul > li.new .title-flex .icon-new {
     flex-shrink: 0;
     margin-left: 12px;
+  }
+  .list-board-top .tit-1 .num {
+    display: inline-block;
+    margin-right: 4px;
+  }
+  .board-ct.smlDocument * {
+    font-family: "Pretendard";
+    color: #4D4D4D;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.24px;
+  }
+  .board-ct.smlDocument img {
+    border: 1px solid #D5D5D5;
+    max-width: 633px;
+  }
+  .border-prev-next.smlDocument ul li a .text .num {
+    margin-right: 24px;
+    vertical-align: auto;
   }
 }
 /* //1024 이상 */

@@ -1529,7 +1529,7 @@ input {
 }
 
 // 공통 다운로드 버튼
-.download-btn {
+.common-downloadBtn {
 	padding: 5px 20px 7px;
 	border-radius: 999px;
 	border: 1px solid #D5D5D5;
@@ -4852,6 +4852,48 @@ input {
 	}
 }
 
+// 고객서비스 > SML 공문 상세
+.list-board-top {
+	.tit-1 {
+		.num {
+			display: block;
+		}
+	}
+}
+
+.board-ct {
+	&.smlDocument {
+		* {
+			font-family: "Pretendard";
+			color: #4D4D4D;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 140%;
+			letter-spacing: 0.24px;
+		}
+
+		img {
+			border: 1px solid #D5D5D5;
+		}
+	}
+}
+
+.border-prev-next {
+	&.smlDocument {
+		ul {
+			li {
+				a {
+					.text {
+						.num {
+							margin-right: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
 	// 공통 pc mobile show hide
@@ -4995,7 +5037,7 @@ input {
 	}
 
 	// 공통 다운로드 버튼
-	.download-btn {
+	.common-downloadBtn {
 		padding: 8.5px 16px;
 		span {
 			font-size: 16px;
@@ -7729,9 +7771,9 @@ input {
 			.body {
 				> ul {
 					> li {
-						a {
-							padding: 22px 0;
-						}
+						flex-direction: row;
+						align-items: center;
+						padding: 22px 0;
 						p {
 							text-align: center;
 						}
@@ -7766,6 +7808,7 @@ input {
 							align-items: center;
 							flex-wrap: nowrap;
 							margin: 0;
+							padding: 0;
 						}
 						.date {
 							width: 17.15%;
@@ -7786,6 +7829,51 @@ input {
 									flex-shrink: 0;
 									margin-left: 12px;
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 고객서비스 > SML 공문 상세
+	.list-board-top {
+		.tit-1 {
+			.num {
+				display: inline-block;
+				margin-right: 4px;
+			}
+		}
+	}
+
+	.board-ct {
+		&.smlDocument {
+			* {
+				font-family: "Pretendard";
+				color: #4D4D4D;
+				font-size: 12px;
+				font-weight: 500;
+				line-height: 140%;
+				letter-spacing: 0.24px;
+			}
+
+			img {
+				border: 1px solid #D5D5D5;
+				max-width: 633px;
+			}
+		}
+	}
+
+	.border-prev-next {
+		&.smlDocument {
+			ul {
+				li {
+					a {
+						.text {
+							.num {
+								margin-right: 24px;
+								vertical-align: auto;
 							}
 						}
 					}
