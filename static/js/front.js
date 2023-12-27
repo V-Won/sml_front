@@ -667,7 +667,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 	/**
 	 * @description detailSearch
 	 * @modify
-			@202312026 추가
+			@20231226 추가
 	*/
 	var detailSearch = {
 		/** 플러그인명 */
@@ -699,6 +699,52 @@ if (window.console == undefined) { console = { log: () => { } } }
 	};
 
 	window.detailSearch = detailSearch;
+}(window));
+
+/* common accordion */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description accordion
+	 * @modify
+			@20231227 추가
+	*/
+	var accordion = {
+		/** 플러그인명 */
+		bind: accordion,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="accordion"]'
+		},
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: function () {
+			const me = this,
+				tg = me.selectors.tg;
+
+			const openBtns = document.querySelectorAll(tg + ' .more-btn');
+
+			for (const openBtn of openBtns) {
+				openBtn.addEventListener('click', (e) => {
+					e.target.parentNode.classList.toggle('is-open');
+
+					if (e.target.parentNode.classList.contains('is-open')) {
+						e.target.innerText = '닫기'
+					} else {
+						e.target.innerText = '전체보기'
+					}
+				})
+			}
+		}
+	};
+
+	window.accordion = accordion;
 }(window));
 
 /**
