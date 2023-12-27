@@ -7,6 +7,32 @@
     content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
   <title>삼광의료재단</title>
   <link rel="stylesheet" href="static/css/style.css"><!-- 공통 css -->
+  <style>
+    @media print {
+      * {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      html, body {
+      min-width: 1920px;
+      }
+      
+      .box-header, .box-footer {
+        display: none;
+      }
+
+      .sub-top {
+        .inner-gap-1 {
+          padding-top: 40px !important;
+        }
+      }
+    }
+
+    @page {
+      size: A4;
+    }
+  </style>
 </head>
 
 <body id="main">
