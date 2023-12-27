@@ -7495,3 +7495,21 @@ input {
 	}
 }
 /* //1200 이상 */
+
+@media print {
+	* {
+		print-color-adjust: exact;
+		-webkit-print-color-adjust: exact;
+	}
+	
+	.box-header,
+	.box-footer {
+		display: none;
+	}
+
+	.sub-top {
+		.inner-gap-1 {
+			padding-top: 40px !important;
+		}
+	}
+}

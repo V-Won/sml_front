@@ -7,32 +7,6 @@
     content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
   <title>삼광의료재단</title>
   <link rel="stylesheet" href="static/css/style.css"><!-- 공통 css -->
-  <style>
-    @media print {
-      * {
-        print-color-adjust: exact;
-        -webkit-print-color-adjust: exact;
-      }
-
-      html, body {
-      min-width: 1920px;
-      }
-      
-      .box-header, .box-footer {
-        display: none;
-      }
-
-      .sub-top {
-        .inner-gap-1 {
-          padding-top: 40px !important;
-        }
-      }
-    }
-
-    @page {
-      size: A4;
-    }
-  </style>
 </head>
 
 <body id="main">
@@ -56,7 +30,7 @@
                 <a href="#none">검사 안내</a>
               </li>
               <li class="nav-acc" data-event="commonSelectBox">
-                <a href="#none" class="button">검사항목 조회</a> 
+                <a href="#none" class="button">검사항목 조회</a>
                 <ul class="list">
                   <!-- hover시 font-weight 문제로 title 사용 -->
                   <li><a href="#none" title="검사의뢰 안내">검사의뢰 안내</a></li>
@@ -75,7 +49,7 @@
         <div class="request-detailTop">
           <div class="tit-flex">
             <h3 class="title">Complete Blood Count 8종</h3>
-            <button class="common-printBtn"><span>인쇄</span></button>
+            <button class="common-printBtn" onclick="window.print();"><span>인쇄</span></button>
           </div>
           <div class="top-info">
             <ul>
@@ -172,11 +146,12 @@
               </div>
               <div class="box">
                 <p class="left">[ 소아 참고치 ]</p>
-                <p class="right">< 2개월: 5.00-19.50 x(10)3/μL</p>
-                <p class="right">2-12개월: 6.00-17.50</p>
-                <p class="right">2-6세: 5.00-14.50</p>
-                <p class="right">7-12세: 4.50-13.50</p>
-                <p class="right">13-14세: 4.50-11.00</p>
+                <p class="right">
+                  < 2개월: 5.00-19.50 x(10)3/μL</p>
+                    <p class="right">2-12개월: 6.00-17.50</p>
+                    <p class="right">2-6세: 5.00-14.50</p>
+                    <p class="right">7-12세: 4.50-13.50</p>
+                    <p class="right">13-14세: 4.50-11.00</p>
               </div>
             </li>
             <li>
