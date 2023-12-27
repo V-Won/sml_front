@@ -747,6 +747,55 @@ if (window.console == undefined) { console = { log: () => { } } }
 	window.accordion = accordion;
 }(window));
 
+/* listQnA */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description listQnA
+	 * @modify
+			@20231227 추가
+	*/
+	var listQnA = {
+		/** 플러그인명 */
+		bind: listQnA,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="listQnA"]'
+		},
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: function () {
+			const me = this,
+				tg = me.selectors.tg;
+
+			const tabBoxs = document.querySelectorAll(tg + ' > ul > li > button');
+
+			for (const tabBox of tabBoxs) {
+				tabBox.addEventListener('click', (e) => {
+					e.currentTarget.parentNode.classList.toggle('is-active');
+				})
+			}
+
+			const tabBoxs2 = document.querySelectorAll(tg + ' > ul > li > ul > li > button');
+
+			for (const tabBox of tabBoxs2) {
+				tabBox.addEventListener('click', (e) => {
+					console.log(e.currentTarget.parentNode.parentNode.parentNode);
+					e.currentTarget.parentNode.parentNode.parentNode.classList.toggle('is-active');
+				})
+			}
+		}
+	};
+
+	window.listQnA = listQnA;
+}(window));
+
 /**
  * front.js 하단에 위치
  */
