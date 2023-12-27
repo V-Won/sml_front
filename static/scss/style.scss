@@ -1682,7 +1682,7 @@ input {
 		content: "";
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.16) 100%);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -4701,7 +4701,7 @@ input {
 		width: 100%;
 		position: relative;
 		border-radius: 12px;
-		background: #666;
+		background: #F5F5F5;
 		padding: 40px 20px;
 		margin-top: 40px;
 		ul {
@@ -4715,13 +4715,15 @@ input {
 				}
 				> p {
 					width: 100%;
-					color: #fff;
+					color: #666;
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 140%;
 					letter-spacing: 0.28px;
 				}
 				.left {
+					color: var(--Primary-01, #006477);
+					font-weight: 600;
 					max-width: 84px;
 				}
 			}
@@ -5106,6 +5108,78 @@ input {
 							font-weight: 600;
 							margin: 12px 0 16px;
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// 정도관리 > 인증내역
+.request-item {
+	&.certified {
+		.item {
+			width: 100%;
+			padding: 18px 20px;
+			.title {
+				width: 100%;
+				text-align: left;
+				min-height: fit-content;
+				margin-bottom: 16px;
+				font-size: 16px;
+				letter-spacing: 0.32px;
+			}
+			.flex {
+				width: 100%;
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				.img-box {
+					width: calc(50% - 9px);
+					border-radius: 8px;
+					border: 1px solid #E6E6E6;
+					overflow: hidden;
+					.img-holder {
+						width: 100%;
+						height: auto;
+						padding: 11px 0;
+						span {
+							width: 96px;
+							height: 132px;
+							padding-top: 0;
+							margin: 0 auto;
+						}
+					}
+					.btn-flex {
+						width: 100%;
+						margin-left: 0;
+						button {
+							width: 100%;
+						}
+					}
+				}
+				.text-box {
+					width: calc(50% - 5px);
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 20px 0;
+					.tit {
+						color: #4D4D4D;
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: 0.28px;
+						margin-bottom: 8px;
+					}
+					.txt {
+						@include text-line-1;
+						-webkit-line-clamp: 3;
+						color: #999;
+						font-size: 12px;
+						font-weight: 500;
+						line-height: 120%;
+						letter-spacing: 0.24px;
 					}
 				}
 			}
@@ -7848,7 +7922,13 @@ input {
 				flex-wrap: wrap;
 				gap: 40px 0;
 				li {
-					width: 25%;
+					width: 27.5%;
+					&:nth-child(7) {
+						width: 17.5%;
+						.right {
+							text-align: right;
+						}
+					}
 					& + li {
 						margin-top: 0;
 					}
@@ -7882,6 +7962,8 @@ input {
 					}
 					&:nth-child(7) {
 						order: 4;
+						// flex: 0 0 100px;
+						// background-color: red;
 					}
 				}
 			}
@@ -8247,6 +8329,49 @@ input {
 								letter-spacing: 0.4px;
 								margin: 12px 0 16px;
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 정도관리 > 인증내역
+	.request-item {
+		margin-top: 32px;
+		&.certified {
+			.item {
+				width: calc(50% - 20px);
+				padding: 40px;
+				.title {
+					margin-bottom: 24px;
+					font-size: 20px;
+					letter-spacing: 0.4px;
+				}
+				.flex {
+					align-items: center;
+					justify-content: flex-start;
+					gap: 0 36px;
+					.img-box {
+						width: 100%;
+						max-width: 216px;
+						.img-holder {
+							padding: 18px 0;
+							span {
+								width: 160px;
+								height: 220px;
+							}
+						}
+					}
+					.text-box {
+						.tit {
+							font-size: 18px;
+							letter-spacing: 0.36px;
+							margin-bottom: 12px;
+						}
+						.txt {
+							font-size: 16px;
+							letter-spacing: 0.32px;
 						}
 					}
 				}
