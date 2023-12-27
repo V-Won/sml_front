@@ -1595,7 +1595,7 @@ input {
   display: none;
 }
 .sub-top.bg-fff .inner-gap-1 {
-  padding-top: 176px;
+  padding-top: 132px;
   padding-bottom: 0;
 }
 .sub-top.bg-fff .text-box .sub-nav-2 > li > a {
@@ -4395,6 +4395,63 @@ input {
   -webkit-line-clamp: 2;
 }
 
+.table-layout.d_2_1 .body > ul > li .num, .table-layout.d_2_1 .body > ul > li .name {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.28px;
+  margin: 0;
+}
+.table-layout.d_2_1 .body > ul > li .name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.table-layout.d_2_1 .body > ul > li .title-flex {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin: 4px 0 8px;
+}
+.table-layout.d_2_1 .body > ul > li .title-flex .icon-new {
+  display: none;
+}
+.table-layout.d_2_1 .body > ul > li .date {
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.24px;
+}
+.table-layout.d_2_1 .body > ul > li .download-btn {
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1px solid #D5D5D5;
+}
+.table-layout.d_2_1 .body > ul > li .download-btn span {
+  color: #666;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.24px;
+  padding-left: 18px;
+  position: relative;
+}
+.table-layout.d_2_1 .body > ul > li.new .title-flex {
+  gap: 0 8px;
+  justify-content: space-between;
+}
+.table-layout.d_2_1 .body > ul > li.new .title-flex .name {
+  max-width: 88%;
+}
+.table-layout.d_2_1 .body > ul > li.new .title-flex .icon-new {
+  display: block;
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
   .pc-show {
@@ -4611,6 +4668,9 @@ input {
     font-size: 52px;
     font-weight: 600;
     letter-spacing: 1.04px;
+  }
+  .sub-top.bg-fff .inner-gap-1 {
+    padding-top: 176px;
   }
   .sub-top.bg-fff .text-box .sub-tit {
     margin-bottom: 48px;
