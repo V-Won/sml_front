@@ -653,7 +653,7 @@ input {
   font-weight: 600 !important;
 }
 .box-header.bg-fff .inner .gnb-menu li a:hover, .box-header.bg-fff .inner .gnb-menu li a.is-active, .box-header.is-hover .inner .gnb-menu li a:hover, .box-header.is-hover .inner .gnb-menu li a.is-active, .box-header.is-search .inner .gnb-menu li a:hover, .box-header.is-search .inner .gnb-menu li a.is-active, .box-header.is-lang .inner .gnb-menu li a:hover, .box-header.is-lang .inner .gnb-menu li a.is-active, .box-header.type-2 .inner .gnb-menu li a:hover, .box-header.type-2 .inner .gnb-menu li a.is-active {
-  color: #2b92ab !important;
+  color: #006477 !important;
   font-weight: 700 !important;
 }
 .box-header.bg-fff .inner .btn-etc .box-lang .btn-lang, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang, .box-header.is-search .inner .btn-etc .box-lang .btn-lang, .box-header.is-lang .inner .btn-etc .box-lang .btn-lang, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang {
@@ -1563,7 +1563,7 @@ input {
 }
 .sub-top .text-box .sub-nav-2 > li.nav-acc .list li:hover a {
   font-weight: 700;
-  color: #2b92ab;
+  color: #006477;
 }
 .sub-top .text-box .sub-nav-2 > li.nav-acc .list li + li {
   margin-top: 20px;
@@ -1605,10 +1605,10 @@ input {
 }
 .sub-top.bg-fff .text-box .sub-nav-2 > li.nav-acc .button {
   font-weight: 700;
-  color: #2b92ab;
+  color: #006477;
 }
 .sub-top.bg-fff .text-box .sub-nav-2 > li.nav-acc .button::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M4.94 6.03027L8 9.08361L11.06 6.03027L12 6.97027L8 10.9703L4 6.97027L4.94 6.03027Z' fill='%232B92AB'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M4.94 6.03027L8 9.08361L11.06 6.03027L12 6.97027L8 10.9703L4 6.97027L4.94 6.03027Z' fill='%23006477'/%3E%3C/svg%3E");
 }
 .sub-top.bg-fff .text-box .sub-tit {
   color: #4d4d4d;
@@ -1637,7 +1637,7 @@ input {
   letter-spacing: -0.32px;
 }
 .form-wrap .form-tit .require-noti {
-  color: #2b92ab;
+  color: #006477;
   font-size: 12px;
   font-weight: 400;
   line-height: 120%;
@@ -1677,7 +1677,7 @@ input {
 .form-wrap .form-inner .form-item .label-wrap .input-label > span::after {
   content: "*";
   display: inline-block;
-  color: #2b92ab;
+  color: #006477;
   font-size: 14px;
   font-weight: 500;
   line-height: 140%;
@@ -1983,7 +1983,7 @@ input {
 .common-noData span::after {
   content: "";
   display: block;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none'%3E%3Cpath d='M22.4305 22.4188L31.5 31.5M25.5 15C25.5 20.799 20.799 25.5 15 25.5C9.20101 25.5 4.5 20.799 4.5 15C4.5 9.20101 9.20101 4.5 15 4.5C20.799 4.5 25.5 9.20101 25.5 15Z' stroke='%232B92AB' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none'%3E%3Cpath d='M22.4305 22.4188L31.5 31.5M25.5 15C25.5 20.799 20.799 25.5 15 25.5C9.20101 25.5 4.5 20.799 4.5 15C4.5 9.20101 9.20101 4.5 15 4.5C20.799 4.5 25.5 9.20101 25.5 15Z' stroke='%23006477' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   width: 36px;
   height: 36px;
@@ -4150,7 +4150,7 @@ input {
   justify-content: space-between;
 }
 .request-detailTop .tit-flex .title {
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 20px;
   font-weight: 600;
   line-height: 120%;
@@ -4175,7 +4175,7 @@ input {
 }
 .request-detailTop .top-info ul li > p {
   width: 100%;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 140%;
@@ -4194,7 +4194,7 @@ input {
   margin: 40px 0;
 }
 .request-detailInfo .info-box .title {
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 16px;
   font-weight: 600;
   line-height: 120%;
@@ -4205,7 +4205,7 @@ input {
   width: 100%;
   position: relative;
   border-radius: 12px 12px 0px 0px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   overflow: hidden;
 }
 .request-detailInfo .info-box .item .img-holder {
@@ -4215,10 +4215,10 @@ input {
 .request-detailInfo .info-box .item .item-name {
   width: 100%;
   padding: 12px 24px;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
   text-align: center;
   overflow: hidden;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
@@ -4229,7 +4229,7 @@ input {
 }
 .request-detailInfo .info-list {
   border-top: 1px solid #666;
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #d5d5d5;
   width: 100%;
   position: relative;
 }
@@ -4240,7 +4240,7 @@ input {
   gap: 0 20px;
 }
 .request-detailInfo .info-list > li + li {
-  border-top: 1px solid #D5D5D5;
+  border-top: 1px solid #d5d5d5;
 }
 .request-detailInfo .info-list > li p {
   width: 100%;
@@ -4254,7 +4254,7 @@ input {
   color: var(--Primary-01, #006477);
 }
 .request-detailInfo .info-list > li .rght {
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 .request-detailInfo .info-list > li .box.no-info {
   display: none;
@@ -4317,7 +4317,7 @@ input {
   padding: 19px 12px 0;
 }
 .request-detailInfo .info-list.column p.tit {
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 14px;
   font-weight: 600;
   line-height: 140%;
@@ -4334,13 +4334,13 @@ input {
   line-height: 140%;
 }
 .request-detailInfo .info-list.column p.right.acc-text {
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 14px;
   letter-spacing: 0.28px;
 }
 .request-detailInfo .info-list + .info-list {
   margin-top: 20px;
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #d5d5d5;
 }
 
 /* 1024 이상 */
@@ -4479,12 +4479,12 @@ input {
     width: fit-content;
     padding: 11px 24px;
     border-radius: 999px;
-    border: 1px solid #D5D5D5;
+    border: 1px solid #d5d5d5;
   }
   .common-printBtn span {
     padding-left: 24px;
     position: relative;
-    color: #4D4D4D;
+    color: #4d4d4d;
     font-size: 16px;
     font-weight: 600;
     line-height: 120%;
@@ -6693,7 +6693,7 @@ input {
     font-size: 18px;
     letter-spacing: 0.36px;
     padding: 23.5px 40px;
-    border-bottom: 1px solid #D5D5D5;
+    border-bottom: 1px solid #d5d5d5;
   }
   .request-detailInfo .info-list.column p.tit {
     font-size: 18px;
