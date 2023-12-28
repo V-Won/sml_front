@@ -4837,6 +4837,9 @@ input {
   top: 0;
   left: 0;
 }
+.smlNews-list ul li a .img-holder img {
+  transition: 0.5s;
+}
 .smlNews-list ul li a .icon-new {
   position: absolute;
   top: 12px;
@@ -4881,6 +4884,9 @@ input {
   font-weight: 600;
   margin: 12px 0 16px;
 }
+.smlNews-list ul li:hover .img-holder img {
+  transform: translate(-50%, -50%) scale(1.2);
+}
 
 .box-smart-view .img-1 {
   width: 100%;
@@ -4923,6 +4929,19 @@ input {
   width: 18px;
   height: 18px;
   right: 24px;
+}
+
+.tabOnly .request-item {
+  margin-top: 40px;
+}
+.tabOnly .table-layout {
+  margin-top: 40px;
+}
+.tabOnly .smlNews-list ul {
+  margin-top: 40px;
+}
+.tabOnly .box-qna {
+  margin-top: 40px;
 }
 
 .request-item.certified .item {
@@ -7879,6 +7898,18 @@ input {
   }
   .box-top-search .item-search {
     margin-top: 4px;
+  }
+  .tabOnly .request-item {
+    margin-top: 60px;
+  }
+  .tabOnly .table-layout {
+    margin-top: 60px;
+  }
+  .tabOnly .smlNews-list ul {
+    margin-top: 60px;
+  }
+  .tabOnly .box-qna {
+    margin-top: 60px;
   }
 }
 /* //1024 이상 */

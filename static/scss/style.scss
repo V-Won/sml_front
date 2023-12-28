@@ -5246,6 +5246,11 @@ input {
 					top: 0;
 					left: 0;
 				}
+				.img-holder {
+					img {
+						transition: 0.5s;
+					}
+				}
 				.icon-new {
 					position: absolute;
 					top: 12px;
@@ -5283,6 +5288,13 @@ input {
 							font-weight: 600;
 							margin: 12px 0 16px;
 						}
+					}
+				}
+			}
+			&:hover {
+				.img-holder {
+					img {
+						transform: translate(-50%, -50%) scale(1.2);
 					}
 				}
 			}
@@ -5351,6 +5363,22 @@ input {
 			height: 18px;
 			right: 24px;
 		}
+	}
+}
+.tabOnly {
+	.request-item {
+		margin-top: 40px;
+	}
+	.table-layout {
+		margin-top: 40px;
+	}
+	.smlNews-list {
+		ul {
+			margin-top: 40px;
+		}
+	}
+	.box-qna {
+		margin-top: 40px;
 	}
 }
 
@@ -8796,6 +8824,22 @@ input {
 		}
 		.item-search {
 			margin-top: 4px;
+		}
+	}
+	.tabOnly {
+		.request-item {
+			margin-top: 60px;
+		}
+		.table-layout {
+			margin-top: 60px;
+		}
+		.smlNews-list {
+			ul {
+				margin-top: 60px;
+			}
+		}
+		.box-qna {
+			margin-top: 60px;
 		}
 	}
 }
