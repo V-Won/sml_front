@@ -82,12 +82,24 @@
                 <div class="swiper-slide">
                   <img src="static/images/@/@sam_3.png" alt="">
                 </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
             <div thumbsSlider="" class="swiper mySwiper">
               <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="static/images/@/@sam_3.png" alt="">
+                </div>
                 <div class="swiper-slide">
                   <img src="static/images/@/@sam_3.png" alt="">
                 </div>
@@ -171,7 +183,7 @@
     selectBox.initialize();
 
     // 게시판 본문 swiper
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", { // 하단 썸네일 이미지
       spaceBetween: 12,
       //slidesPerView: 3.6,
       slidesPerView: 3,
@@ -188,7 +200,7 @@
       },
     });
 
-    var swiper2 = new Swiper(".mySwiper2", {
+    var swiper2 = new Swiper(".mySwiper2", { // 상단 본문 이미지
       spaceBetween: 10,
       loop: false,
       loopedSlides: 1,
@@ -206,6 +218,10 @@
         }
       }
     });
+
+    // mySwiper swiper item 5개 이하라면 중앙 정렬.
+    let swiperCnt = document.querySelectorAll('.mySwiper .swiper-slide').length;
+    swiperCnt <= 5 ? document.querySelector('.mySwiper .swiper-wrapper').classList.add('cnt-5') : null;
   </script>
 
 </body>
