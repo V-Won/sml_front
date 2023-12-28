@@ -614,105 +614,115 @@
     selectBox.initialize();
     commonTab.initialize();
 
+    const actionEvent = () => {
+      // tab 전체 swiper
+      var swiper = new Swiper('.mobile .snbSwiper.type-1', {
+        slidesPerView: 'auto',
+        preventClicks: true,
+        preventClicksPropagation: false,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+          1024: {
+            allowTouchMove: false
+          },
+        },
+      });
+
+      var $snbSwiperItem = $('.mobile .snbSwiper.type-1 .swiper-wrapper .swiper-slide button');
+      $snbSwiperItem.click(function () {
+        var target = $(this).parent();
+        $snbSwiperItem.parent().removeClass('on')
+        target.addClass('on');
+        muCenter(target);
+      })
+
+      function muCenter(target) {
+        var snbwrap = $('.mobile .snbSwiper.type-1 .swiper-wrapper');
+        var targetPos = target.position();
+        var box = $('.mobile .snbSwiper.type-1');
+        var boxHarf = box.width() / 2;
+        var pos;
+        var listWidth = 0;
+
+        snbwrap.find('.swiper-slide').each(function () { listWidth += $(this).outerWidth(); })
+
+        var selectTargetPos = targetPos.left + target.outerWidth() / 2;
+        if (selectTargetPos <= boxHarf) { // left
+          pos = 0;
+        } else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+          pos = listWidth - box.width();
+        } else {
+          pos = selectTargetPos - boxHarf;
+        }
+
+        setTimeout(function () {
+          let size = window.innerWidth;
+          console.log(size);
+          snbwrap.css({
+            "transform": "translate3d(" + (pos * -size) + "px, 0, 0)",
+            "transition-duration": "500ms"
+          })
+        }, 200);
+      }
+
+      // tab 학술자료 swiper
+      var swiper2 = new Swiper('.mobile .snbSwiper.type-2', {
+        slidesPerView: 'auto',
+        preventClicks: true,
+        preventClicksPropagation: false,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+          1024: {
+            allowTouchMove: false
+          },
+        },
+      });
+
+      var $snbSwiperItem2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper .swiper-slide button');
+      $snbSwiperItem2.click(function () {
+        var target2 = $(this).parent();
+        $snbSwiperItem2.parent().removeClass('on')
+        target2.addClass('on');
+        muCenter2(target2);
+      })
+
+      function muCenter2(target2) {
+        var snbwrap2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper');
+        var targetPos2 = target2.position();
+        var box2 = $('.mobile .snbSwiper.type-2');
+        var boxHarf2 = box2.width() / 2;
+        var pos2;
+        var listWidth2 = 0;
+
+        snbwrap2.find('.swiper-slide').each(function () { listWidth2 += $(this).outerWidth(); })
+
+        var selectTargetPos2 = targetPos2.left + target2.outerWidth() / 2;
+        if (selectTargetPos2 <= boxHarf2) { // left
+          pos2 = 0;
+        } else if ((listWidth2 - selectTargetPos2) <= boxHarf2) { //right
+          pos2 = listWidth2 - box2.width();
+        } else {
+          pos2 = selectTargetPos2 - boxHarf2;
+        }
+
+        setTimeout(function () {
+          snbwrap2.css({
+            "transform": "translate3d(" + (pos2 * - 1.2) + "px, 0, 0)",
+            "transition-duration": "500ms"
+          })
+        }, 200);
+      }
+    }
+
     window.addEventListener('resize', () => {
+      actionEvent();
+    })
+
+    window.addEventListener('load', () => {
       if (window.innerWidth <= 1024) {
-        // tab 전체 swiper
-        var swiper = new Swiper('.mobile .snbSwiper.type-1', {
-          slidesPerView: 'auto',
-          preventClicks: true,
-          preventClicksPropagation: false,
-          observer: true,
-          observeParents: true,
-          breakpoints: {
-            1024: {
-              allowTouchMove: false
-            },
-          },
-        });
-
-        var $snbSwiperItem = $('.mobile .snbSwiper.type-1 .swiper-wrapper .swiper-slide button');
-        $snbSwiperItem.click(function () {
-          var target = $(this).parent();
-          $snbSwiperItem.parent().removeClass('on')
-          target.addClass('on');
-          muCenter(target);
-        })
-
-        function muCenter(target) {
-          var snbwrap = $('.mobile .snbSwiper.type-1 .swiper-wrapper');
-          var targetPos = target.position();
-          var box = $('.mobile .snbSwiper.type-1');
-          var boxHarf = box.width() / 2;
-          var pos;
-          var listWidth = 0;
-
-          snbwrap.find('.swiper-slide').each(function () { listWidth += $(this).outerWidth(); })
-
-          var selectTargetPos = targetPos.left + target.outerWidth() / 2;
-          if (selectTargetPos <= boxHarf) { // left
-            pos = 0;
-          } else if ((listWidth - selectTargetPos) <= boxHarf) { //right
-            pos = listWidth - box.width();
-          } else {
-            pos = selectTargetPos - boxHarf;
-          }
-
-          setTimeout(function () {
-            snbwrap.css({
-              "transform": "translate3d(" + (pos * -1.3) + "px, 0, 0)",
-              "transition-duration": "500ms"
-            })
-          }, 200);
-        }
-
-        // tab 학술자료 swiper
-        var swiper2 = new Swiper('.mobile .snbSwiper.type-2', {
-          slidesPerView: 'auto',
-          preventClicks: true,
-          preventClicksPropagation: false,
-          observer: true,
-          observeParents: true,
-          breakpoints: {
-            1024: {
-              allowTouchMove: false
-            },
-          },
-        });
-
-        var $snbSwiperItem2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper .swiper-slide button');
-        $snbSwiperItem2.click(function () {
-          var target2 = $(this).parent();
-          $snbSwiperItem2.parent().removeClass('on')
-          target2.addClass('on');
-          muCenter2(target2);
-        })
-
-        function muCenter2(target2) {
-          var snbwrap2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper');
-          var targetPos2 = target2.position();
-          var box2 = $('.mobile .snbSwiper.type-2');
-          var boxHarf2 = box2.width() / 2;
-          var pos2;
-          var listWidth2 = 0;
-
-          snbwrap2.find('.swiper-slide').each(function () { listWidth2 += $(this).outerWidth(); })
-
-          var selectTargetPos2 = targetPos2.left + target2.outerWidth() / 2;
-          if (selectTargetPos2 <= boxHarf2) { // left
-            pos2 = 0;
-          } else if ((listWidth2 - selectTargetPos2) <= boxHarf2) { //right
-            pos2 = listWidth2 - box2.width();
-          } else {
-            pos2 = selectTargetPos2 - boxHarf2;
-          }
-
-          setTimeout(function () {
-            snbwrap2.css({
-              "transform": "translate3d(" + (pos2 * - 1.2) + "px, 0, 0)",
-              "transition-duration": "500ms"
-            })
-          }, 200);
-        }
+        actionEvent();
       }
     })
   </script>
