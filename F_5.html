@@ -634,10 +634,10 @@
         var target = $(this).parent();
         $snbSwiperItem.parent().removeClass('on')
         target.addClass('on');
-        muCenter(target);
+        muCenter(target, target.index());
       })
 
-      function muCenter(target) {
+      function muCenter(target, idx) {
         var snbwrap = $('.mobile .snbSwiper.type-1 .swiper-wrapper');
         var targetPos = target.position();
         var box = $('.mobile .snbSwiper.type-1');
@@ -657,12 +657,11 @@
         }
 
         setTimeout(function () {
-          let size = window.innerWidth;
-          console.log(size);
-          snbwrap.css({
-            "transform": "translate3d(" + (pos * -size) + "px, 0, 0)",
-            "transition-duration": "500ms"
-          })
+          swiper.slideTo(idx);
+          // snbwrap.css({
+          //   "transform": "translate3d(" + (pos * - 1.2) + "px, 0, 0)",
+          //   "transition-duration": "500ms"
+          // })
         }, 200);
       }
 
@@ -685,10 +684,10 @@
         var target2 = $(this).parent();
         $snbSwiperItem2.parent().removeClass('on')
         target2.addClass('on');
-        muCenter2(target2);
+        muCenter2(target2, target2.index());
       })
 
-      function muCenter2(target2) {
+      function muCenter2(target2, idx) {
         var snbwrap2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper');
         var targetPos2 = target2.position();
         var box2 = $('.mobile .snbSwiper.type-2');
@@ -708,10 +707,11 @@
         }
 
         setTimeout(function () {
-          snbwrap2.css({
-            "transform": "translate3d(" + (pos2 * - 1.2) + "px, 0, 0)",
-            "transition-duration": "500ms"
-          })
+          swiper2.slideTo(idx);
+          // snbwrap2.css({
+          //   "transform": "translate3d(" + (pos2 * - 1.2) + "px, 0, 0)",
+          //   "transition-duration": "500ms"
+          // })
         }, 200);
       }
     }

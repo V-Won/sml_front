@@ -246,10 +246,10 @@
       var target = $(this).parent();
       $snbSwiperItem.parent().removeClass('on')
       target.addClass('on');
-      muCenter(target);
+      muCenter(target, target.index());
     })
 
-    function muCenter(target) {
+    function muCenter(target, idx) {
       var snbwrap = $('.snbSwiper .swiper-wrapper');
       var targetPos = target.position();
       var box = $('.snbSwiper');
@@ -269,10 +269,11 @@
       }
 
       setTimeout(function () {
-        snbwrap.css({
-          "transform": "translate3d(" + (pos * -2) + "px, 0, 0)",
-          "transition-duration": "500ms"
-        })
+        swiper.slideTo(idx);
+        // snbwrap.css({
+        //   "transform": "translate3d(" + (pos * -2) + "px, 0, 0)",
+        //   "transition-duration": "500ms"
+        // })
       }, 200);
     }
   </script>
