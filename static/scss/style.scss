@@ -4709,7 +4709,7 @@ input {
 				width: 100%;
 				display: flex;
 				align-items: center;
-				gap: 0 20px;
+				gap: 0 12px;
 				& + li {
 					margin-top: 20.5px;
 				}
@@ -4748,7 +4748,7 @@ input {
 		.item {
 			width: 100%;
 			position: relative;
-			border-radius: 12px 12px 0px 0px;
+			border-radius: 12px;
 			border: 1px solid #e6e6e6;
 			overflow: hidden;
 			.img-holder {
@@ -7913,7 +7913,7 @@ input {
 			}
 		}
 		.top-info {
-			padding: 40px 80px;
+			padding: 40px;
 			margin-top: 24px;
 			ul {
 				width: 100%;
@@ -7922,11 +7922,12 @@ input {
 				flex-wrap: wrap;
 				gap: 40px 0;
 				li {
-					width: 27.5%;
+					width: 26.2%;
 					&:nth-child(7) {
-						width: 17.5%;
+						width: 21.4%;
 						.right {
 							text-align: right;
+							white-space: nowrap;
 						}
 					}
 					& + li {
@@ -7939,7 +7940,7 @@ input {
 						letter-spacing: 0.36px;
 					}
 					.left {
-						max-width: 120px;
+						max-width: 80px;
 						font-weight: 600;
 					}
 					&:first-child {
@@ -8433,6 +8434,30 @@ input {
 	}
 }
 /* //1200 이상 */
+
+/* 1300 이상 */
+@media all and (min-width: 1300px) {
+	// 검사항목 조회 > 상세
+	.request-detailTop {
+		.top-info {
+			padding: 40px 80px;
+			ul {
+				li {
+					width: 27.5%;
+					gap: 0 20px;
+					&:nth-child(7) {
+						width: 17.5%;
+					}
+					.left {
+						max-width: 120px;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+}
+/* //1300 이상 */
 
 @media print {
 	* {

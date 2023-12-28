@@ -4352,7 +4352,7 @@ input {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 0 20px;
+  gap: 0 12px;
 }
 .request-detailTop .top-info ul li + li {
   margin-top: 20.5px;
@@ -4390,7 +4390,7 @@ input {
 .request-detailInfo .info-box .item {
   width: 100%;
   position: relative;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px;
   border: 1px solid #e6e6e6;
   overflow: hidden;
 }
@@ -7122,7 +7122,7 @@ input {
     letter-spacing: 0.6px;
   }
   .request-detailTop .top-info {
-    padding: 40px 80px;
+    padding: 40px;
     margin-top: 24px;
   }
   .request-detailTop .top-info ul {
@@ -7133,13 +7133,14 @@ input {
     gap: 40px 0;
   }
   .request-detailTop .top-info ul li {
-    width: 27.5%;
+    width: 26.2%;
   }
   .request-detailTop .top-info ul li:nth-child(7) {
-    width: 17.5%;
+    width: 21.4%;
   }
   .request-detailTop .top-info ul li:nth-child(7) .right {
     text-align: right;
+    white-space: nowrap;
   }
   .request-detailTop .top-info ul li + li {
     margin-top: 0;
@@ -7151,7 +7152,7 @@ input {
     letter-spacing: 0.36px;
   }
   .request-detailTop .top-info ul li .left {
-    max-width: 120px;
+    max-width: 80px;
     font-weight: 600;
   }
   .request-detailTop .top-info ul li:first-child {
@@ -7542,6 +7543,24 @@ input {
   }
 }
 /* //1200 이상 */
+/* 1300 이상 */
+@media all and (min-width: 1300px) {
+  .request-detailTop .top-info {
+    padding: 40px 80px;
+  }
+  .request-detailTop .top-info ul li {
+    width: 27.5%;
+    gap: 0 20px;
+  }
+  .request-detailTop .top-info ul li:nth-child(7) {
+    width: 17.5%;
+  }
+  .request-detailTop .top-info ul li .left {
+    max-width: 120px;
+    font-weight: 600;
+  }
+}
+/* //1300 이상 */
 @media print {
   * {
     print-color-adjust: exact;
