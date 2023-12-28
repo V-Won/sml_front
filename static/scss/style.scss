@@ -1197,7 +1197,7 @@ input {
 
 // 공통 title
 .common-title-1 {
-	color: #4D4D4D;
+	color: #4d4d4d;
 	font-size: 28px;
 	font-weight: 200;
 	line-height: 100%;
@@ -2202,7 +2202,7 @@ input {
 			}
 			&:hover {
 				button {
-					color: #4D4D4D;
+					color: #4d4d4d;
 				}
 			}
 		}
@@ -2221,7 +2221,7 @@ input {
 	}
 	&.font {
 		.button {
-			color: #4D4D4D;
+			color: #4d4d4d;
 		}
 	}
 	& + .common-selectbox-2 {
@@ -2394,7 +2394,7 @@ input {
 	padding: 16px;
 	border: 1px solid #d5d5d5;
 	border-radius: 6px;
-	color: #4D4D4D;
+	color: #4d4d4d;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 120%;
@@ -2557,7 +2557,7 @@ input {
 		color: #666;
 	}
 	&:focus {
-		color: #4D4D4D;
+		color: #4d4d4d;
 		border: 1px solid #000;
 	}
 	&.error {
@@ -2595,6 +2595,9 @@ input {
 	position: relative;
 	&.padding-top-1 {
 		padding-top: 39px;
+	}
+	&.margin-top-1 {
+		margin-top:-20px;
 	}
 	> ul {
 		display: flex;
@@ -2772,7 +2775,7 @@ input {
 				display: block;
 				margin: 10px;
 				border-radius: 4px;
-				color: #4D4D4D;
+				color: #4d4d4d;
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
@@ -3223,7 +3226,7 @@ input {
 					padding: 8px 20px;
 					border-radius: 999px;
 					background: #f5f5f5;
-					color: #4D4D4D;
+					color: #4d4d4d;
 					text-align: center;
 					font-size: 14px;
 					font-weight: 600;
@@ -3278,7 +3281,7 @@ input {
 							padding: 3px 10px;
 							border-radius: 999px;
 							border: 1px solid #d5d5d5;
-							color: #4D4D4D;
+							color: #4d4d4d;
 							font-size: 12px;
 							font-weight: 600;
 							line-height: 120%;
@@ -3288,7 +3291,7 @@ input {
 						}
 						.txt-1 {
 							@include text-line-2;
-							color: #4D4D4D;
+							color: #4d4d4d;
 							font-size: 14px;
 							font-weight: 600;
 							line-height: 120%;
@@ -3439,7 +3442,7 @@ input {
 			}
 			.txt-2 {
 				@include text-line-1;
-				color: #4D4D4D;
+				color: #4d4d4d;
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
@@ -3858,7 +3861,7 @@ input {
 					border-top: 0;
 				}
 				h4 {
-					color: #4D4D4D;
+					color: #4d4d4d;
 					font-size: 20px;
 					font-weight: 600;
 					line-height: 120%;
@@ -3866,7 +3869,7 @@ input {
 					margin-bottom: 19px;
 				}
 				.text-1 {
-					color: #4D4D4D;
+					color: #4d4d4d;
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 24px;
@@ -4485,7 +4488,7 @@ input {
 		.swiper-slide {
 			.tit {
 				width: 100%;
-				color: #4D4D4D;
+				color: #4d4d4d;
 				text-align: center;
 				font-size: 20px;
 				font-weight: 600;
@@ -4497,12 +4500,10 @@ input {
 				width: 100%;
 				position: relative;
 				display: flex;
-				
 			}
 		}
 	}
 }
-
 
 // 검사항목 조회
 .detail-search {
@@ -5900,6 +5901,9 @@ input {
 		&.padding-top-1 {
 			padding-top: 48px;
 		}
+		&.margin-top-1{
+
+		}
 		&.type-1 {
 			> ul {
 				> li {
@@ -5925,6 +5929,25 @@ input {
 				}
 			}
 		}
+		&.type-3 {
+			padding-top:81px;
+			ul {
+				li {
+					margin-right:29px;
+					.btn {
+						font-size: 28px;
+					}
+					&.is-active {
+						.btn {
+							font-size: 28px;
+							span {
+								font-size: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
 		& + .box-top-search {
 			margin-top: 32px;
 		}
@@ -5935,6 +5958,13 @@ input {
 		padding-top: 37px;
 		.mobile-paging {
 			display: none;
+			&.pc-show{
+				display: flex;
+				button{
+					font-size: 18px;
+					min-height: 54px;
+				}
+			}
 		}
 		ul {
 			display: flex;
@@ -6071,7 +6101,7 @@ input {
 									letter-spacing: -0.28px;
 									&:hover {
 										color: #4d4d4d;
-										font-weight: 600;	
+										font-weight: 600;
 									}
 								}
 							}
@@ -8473,7 +8503,10 @@ input {
 
 	// 기타 > 검색
 	.title-search-1 {
+		font-size: 24px;
+		padding:57px 0 21px 0;
 		span {
+			font-size: 20px;
 		}
 		&.padding-type-1 {
 		}
