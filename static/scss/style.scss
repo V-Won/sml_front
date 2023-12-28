@@ -21,12 +21,13 @@ body::-webkit-scrollbar {
 	height: 7px;
 }
 body::-webkit-scrollbar-thumb {
-	background-color: #006a80;
+	background: linear-gradient(0deg, #d9d9d9 0%, #d9d9d9 100%), rgba(0, 0, 0, 0.1);
 	border-radius: 6px;
 }
 body::-webkit-scrollbar-track {
 	background-color: transparent;
 }
+
 
 body {
 	font-family:
@@ -736,7 +737,7 @@ input {
 				.btn-menu {
 					.hamburger {
 						.line {
-							background-color: #000;
+							background-color: #4d4d4d;
 						}
 					}
 				}
@@ -2400,7 +2401,7 @@ input {
 	line-height: 120%;
 	letter-spacing: 0.28px;
 	&::placeholder {
-		color: #666;
+		color: #999;
 	}
 	&:focus {
 		border: 1px solid #000;
@@ -2554,7 +2555,7 @@ input {
 	line-height: 120%;
 	letter-spacing: -0.28px;
 	&::placeholder {
-		color: #666;
+		color: #999;
 	}
 	&:focus {
 		color: #4d4d4d;
@@ -3941,7 +3942,7 @@ input {
 			letter-spacing: 0.24px;
 		}
 		.cnt {
-			border-left: 1px solid #d9d9d9;
+			//border-left: 1px solid #d9d9d9;
 			color: #999;
 			font-size: 12px;
 			font-weight: 400;
@@ -3961,6 +3962,15 @@ input {
 				position: absolute;
 				top: -1px;
 				left: 8px;
+			}
+			&::before{
+				content: '';
+				display: block;
+				border-left:1px solid #d9d9d9;
+				position: absolute;
+				top:2px;
+				left:0;
+				height: 10px;
 			}
 		}
 	}
@@ -4680,7 +4690,7 @@ input {
 				flex-wrap: wrap;
 				gap: 8px;
 				li {
-					color: var(--Primary-01, #006477);
+					color: var(--Primary-04, #4D4D4D);
 					font-size: 14px;
 					font-weight: 600;
 					line-height: 120%;
@@ -4691,7 +4701,7 @@ input {
 						font-size: 0;
 						width: 14px;
 						height: 14px;
-						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0 0 14 15' fill='none'%3E%3Cpath d='M11.0846 4.239L10.2621 3.4165L7.0013 6.67734L3.74047 3.4165L2.91797 4.239L6.1788 7.49984L2.91797 10.7607L3.74047 11.5832L7.0013 8.32234L10.2621 11.5832L11.0846 10.7607L7.8238 7.49984L11.0846 4.239Z' fill='%23006477'/%3E%3C/svg%3E");
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M11.0846 3.73913L10.2621 2.91663L7.0013 6.17746L3.74047 2.91663L2.91797 3.73913L6.1788 6.99996L2.91797 10.2608L3.74047 11.0833L7.0013 7.82246L10.2621 11.0833L11.0846 10.2608L7.8238 6.99996L11.0846 3.73913Z' fill='%234D4D4D'/%3E%3C/svg%3E");
 						background-position: center;
 						background-size: contain;
 						background-repeat: no-repeat;
@@ -4949,7 +4959,7 @@ input {
 			.left {
 				color: var(--Primary-01, #006477);
 			}
-			.rght {
+			.right {
 				color: #4d4d4d;
 			}
 			.box {
@@ -7085,6 +7095,15 @@ input {
 					height: 20px;
 					left: 12px;
 				}
+				&::before{
+					content: '';
+					display: block;
+					border-left:1px solid #d9d9d9;
+					position: absolute;
+					top:2px;
+					left:0;
+					height: 14px;
+				}
 			}
 		}
 	}
@@ -7984,14 +8003,14 @@ input {
 					gap: 12px 20px;
 					order: 2;
 					li {
-						color: var(--Primary-01, #006477);
+						color: var(--Primary-04, #4D4D4D);
 						font-size: 16px;
 						letter-spacing: 0.32px;
 						padding-right: 20px;
 						.del-btn {
 							width: 16px;
 							height: 16px;
-							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M12.6673 4.27301L11.7273 3.33301L8.00065 7.05967L4.27398 3.33301L3.33398 4.27301L7.06065 7.99967L3.33398 11.7263L4.27398 12.6663L8.00065 8.93967L11.7273 12.6663L12.6673 11.7263L8.94065 7.99967L12.6673 4.27301Z' fill='%23006477'/%3E%3C/svg%3E");
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M12.6654 4.77325L11.7254 3.83325L7.9987 7.55992L4.27203 3.83325L3.33203 4.77325L7.0587 8.49992L3.33203 12.2266L4.27203 13.1666L7.9987 9.43992L11.7254 13.1666L12.6654 12.2266L8.9387 8.49992L12.6654 4.77325Z' fill='%234D4D4D'/%3E%3C/svg%3E");
 							transform: translateY(-50%);
 						}
 					}
