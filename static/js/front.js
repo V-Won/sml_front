@@ -376,11 +376,11 @@ if (window.console == undefined) { console = { log: () => { } } }
 			for (const tabBox of tabBoxs) {
 				tabBox.addEventListener('click', (e) => {
 					// class remove					
-					e.target.parentNode.parentNode.parentNode.querySelectorAll('.list > li').forEach((item) => {
+					e.currentTarget.parentNode.parentNode.parentNode.querySelectorAll('.list > li').forEach((item) => {
 						item.classList.remove('is-active')
 					})
 					// class add
-					e.target.parentNode.classList.add('is-active');
+					e.currentTarget.parentNode.classList.add('is-active');
 				})
 			}
 		}

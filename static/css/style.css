@@ -4915,6 +4915,9 @@ input {
 .box-smart-view .img-1 {
   width: 100%;
 }
+.box-smart-view .box-option-list .gap > ul > li .box-show .list-btn .common-btnType-3 {
+  display: inline-flex;
+}
 
 .title-search-1 {
   color: #4d4d4d;

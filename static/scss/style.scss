@@ -5330,6 +5330,26 @@ input {
 	.img-1 {
 		width: 100%;
 	}
+	.box-option-list{
+		.gap{
+			>ul{
+				>li{
+					.box-show{
+						.text-1{
+						}
+						.text-2{
+
+						}
+						.list-btn{
+							.common-btnType-3{
+								display: inline-flex;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // 기타 > 검색
