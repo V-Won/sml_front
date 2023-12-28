@@ -628,6 +628,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 					let currentTarget = e.currentTarget.getAttribute('data-layerId');
 
 					document.querySelector('#' + currentTarget).style.display = 'block';
+					document
 					document.querySelector('#' + currentTarget).scrollTo(0, 0);
 					//document.querySelector('#' + currentTarget + ' .inner-layer').focus();
 					document.body.classList.add('oh');
