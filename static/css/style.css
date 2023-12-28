@@ -649,7 +649,7 @@ input {
 }
 .box-header.bg-fff .inner .gnb-menu li a, .box-header.is-hover .inner .gnb-menu li a, .box-header.is-search .inner .gnb-menu li a, .box-header.is-lang .inner .gnb-menu li a, .box-header.type-2 .inner .gnb-menu li a {
   transition: all 0.2s;
-  color: #000 !important;
+  color: #4d4d4d !important;
   font-weight: 600 !important;
 }
 .box-header.bg-fff .inner .gnb-menu li a:hover, .box-header.bg-fff .inner .gnb-menu li a.is-active, .box-header.is-hover .inner .gnb-menu li a:hover, .box-header.is-hover .inner .gnb-menu li a.is-active, .box-header.is-search .inner .gnb-menu li a:hover, .box-header.is-search .inner .gnb-menu li a.is-active, .box-header.is-lang .inner .gnb-menu li a:hover, .box-header.is-lang .inner .gnb-menu li a.is-active, .box-header.type-2 .inner .gnb-menu li a:hover, .box-header.type-2 .inner .gnb-menu li a.is-active {
@@ -657,14 +657,14 @@ input {
   font-weight: 700 !important;
 }
 .box-header.bg-fff .inner .btn-etc .box-lang .btn-lang, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang, .box-header.is-search .inner .btn-etc .box-lang .btn-lang, .box-header.is-lang .inner .btn-etc .box-lang .btn-lang, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang {
-  color: #000 !important;
+  color: #4d4d4d !important;
   transition: all 0.3s ease-in-out;
 }
 .box-header.bg-fff .inner .btn-etc .box-lang .btn-lang::after, .box-header.is-hover .inner .btn-etc .box-lang .btn-lang::after, .box-header.is-search .inner .btn-etc .box-lang .btn-lang::after, .box-header.is-lang .inner .btn-etc .box-lang .btn-lang::after, .box-header.type-2 .inner .btn-etc .box-lang .btn-lang::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_235_4059)'%3E%3Cpath d='M14 8L10 12L6 8' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_235_4059'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") !important;
 }
 .box-header.bg-fff .inner .btn-etc .btn-search, .box-header.is-hover .inner .btn-etc .btn-search, .box-header.is-search .inner .btn-etc .btn-search, .box-header.is-lang .inner .btn-etc .btn-search, .box-header.type-2 .inner .btn-etc .btn-search {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M11.2152 11.2094L15.75 15.75M12.75 7.5C12.75 10.3995 10.3995 12.75 7.5 12.75C4.60051 12.75 2.25 10.3995 2.25 7.5C2.25 4.60051 4.60051 2.25 7.5 2.25C10.3995 2.25 12.75 4.60051 12.75 7.5Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3E%3Cpath d='M11.2152 11.2289L15.75 15.7695M12.75 7.51953C12.75 10.419 10.3995 12.7695 7.5 12.7695C4.60051 12.7695 2.25 10.419 2.25 7.51953C2.25 4.62004 4.60051 2.26953 7.5 2.26953C10.3995 2.26953 12.75 4.62004 12.75 7.51953Z' stroke='%234D4D4D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 .box-header.bg-fff .inner .btn-etc .btn-menu .hamburger .line, .box-header.is-hover .inner .btn-etc .btn-menu .hamburger .line, .box-header.is-search .inner .btn-etc .btn-menu .hamburger .line, .box-header.is-lang .inner .btn-etc .btn-menu .hamburger .line, .box-header.type-2 .inner .btn-etc .btn-menu .hamburger .line {
   background-color: #000;
@@ -1065,7 +1065,7 @@ input {
 }
 
 .common-title-1 {
-  color: #000;
+  color: #4D4D4D;
   font-size: 28px;
   font-weight: 200;
   line-height: 100%;
@@ -1575,7 +1575,7 @@ input {
 .sub-top .text-box .sub-nav-2 > li.nav-acc .list li > a {
   display: block;
   width: 100%;
-  color: #555;
+  color: #666;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
@@ -1628,7 +1628,7 @@ input {
   padding-bottom: 0;
 }
 .sub-top.bg-fff .text-box .sub-nav-2 > li > a {
-  color: #555;
+  color: #666;
 }
 .sub-top.bg-fff .text-box .sub-nav-2 > li > a::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cg opacity='0.5'%3E%3Cpath d='M5.53125 11.56L8.58458 8.5L5.53125 5.44L6.47125 4.5L10.4713 8.5L6.47125 12.5L5.53125 11.56Z' fill='%23999999'/%3E%3C/g%3E%3C/svg%3E");
@@ -1969,7 +1969,7 @@ input {
   text-align: left;
 }
 .common-selectbox-2 .list li:hover button {
-  color: #000;
+  color: #4D4D4D;
 }
 .common-selectbox-2.is-active .button {
   border-radius: 12px 12px 0 0;
@@ -1982,7 +1982,7 @@ input {
   display: block;
 }
 .common-selectbox-2.font .button {
-  color: #000;
+  color: #4D4D4D;
 }
 .common-selectbox-2 + .common-selectbox-2 {
   margin-top: 8px;
@@ -2134,7 +2134,7 @@ input {
   padding: 16px;
   border: 1px solid #d5d5d5;
   border-radius: 6px;
-  color: #000;
+  color: #4D4D4D;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
@@ -2300,7 +2300,7 @@ input {
   color: #666;
 }
 .common-textarea:focus {
-  color: #000;
+  color: #4D4D4D;
   border: 1px solid #000;
 }
 .common-textarea.error {
@@ -2487,7 +2487,7 @@ input {
   display: block;
   margin: 10px;
   border-radius: 4px;
-  color: #000;
+  color: #4D4D4D;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
@@ -2915,7 +2915,7 @@ input {
   padding: 8px 20px;
   border-radius: 999px;
   background: #f5f5f5;
-  color: #000;
+  color: #4D4D4D;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -2969,7 +2969,7 @@ input {
   padding: 3px 10px;
   border-radius: 999px;
   border: 1px solid #d5d5d5;
-  color: #000;
+  color: #4D4D4D;
   font-size: 12px;
   font-weight: 600;
   line-height: 120%;
@@ -2983,7 +2983,7 @@ input {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  color: #000;
+  color: #4D4D4D;
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
@@ -3137,7 +3137,7 @@ input {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  color: #000;
+  color: #4D4D4D;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
@@ -3536,7 +3536,7 @@ input {
   border-top: 0;
 }
 .box-map-search .box-search-list > ul > li h4 {
-  color: #000;
+  color: #4D4D4D;
   font-size: 20px;
   font-weight: 600;
   line-height: 120%;
@@ -3544,7 +3544,7 @@ input {
   margin-bottom: 19px;
 }
 .box-map-search .box-search-list > ul > li .text-1 {
-  color: #000;
+  color: #4D4D4D;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -3566,7 +3566,7 @@ input {
 }
 .box-map-search .box-search-list > ul > li dl dd {
   flex: 1 1 content;
-  color: #000;
+  color: #4d4d4d;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -3822,7 +3822,7 @@ input {
   bottom: 0;
 }
 .error-wrap.sub-top .inner-gap-1 .txt-1 {
-  color: #000;
+  color: #4d4d4d;
   font-size: 40px;
   font-weight: 700;
   line-height: 120%;
@@ -3830,7 +3830,7 @@ input {
   padding-bottom: 20px;
 }
 .error-wrap.sub-top .inner-gap-1 .txt-2 {
-  color: #555;
+  color: #666;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
@@ -3844,7 +3844,7 @@ input {
   margin-bottom: 30px;
 }
 .box-protocol .top-info h3 {
-  color: #000;
+  color: #4d4d4d;
   font-size: 20px;
   font-weight: 700;
   line-height: 140%;
@@ -3853,7 +3853,7 @@ input {
   padding-bottom: 20px;
 }
 .box-protocol .inner-protocol .text-1 {
-  color: #000;
+  color: #4d4d4d;
   font-size: 12px;
   font-weight: 500;
   line-height: 140%;
@@ -3872,14 +3872,14 @@ input {
   margin: 30px 0 0 0;
 }
 .box-protocol .inner-protocol .list-protocol h4 {
-  color: #000;
+  color: #4d4d4d;
   font-size: 16px;
   font-weight: 600;
   line-height: 120%;
   letter-spacing: -0.32px;
 }
 .box-protocol .inner-protocol .list-protocol .ct > ul > li {
-  color: #555;
+  color: #666;
   font-size: 12px;
   font-weight: 500;
   line-height: 140%;
@@ -3903,7 +3903,7 @@ input {
   position: relative;
   list-style: none;
   padding: 0 0 0 13px;
-  color: #555;
+  color: #666;
   font-size: 12px;
   font-weight: 500;
   line-height: 140%;
@@ -3920,7 +3920,7 @@ input {
   height: 11px;
   counter-increment: circle 1;
   content: counter(circle);
-  color: #555;
+  color: #666;
   font-size: 7px;
 }
 .box-protocol ul.number > li::after {
@@ -3938,7 +3938,7 @@ input {
   padding-top: 20px;
 }
 .box-protocol h5 {
-  color: #000;
+  color: #4d4d4d;
   font-size: 16px;
   font-weight: 600;
   line-height: 120%;
@@ -3950,7 +3950,7 @@ input {
   color: #00e;
 }
 .box-protocol .text-2 {
-  color: #555;
+  color: #666;
   font-size: 12px;
   font-weight: 500;
   line-height: 140%;
@@ -3961,7 +3961,7 @@ input {
   padding-left: 8px;
 }
 .box-protocol .text-3 {
-  color: #000;
+  color: #4d4d4d;
   font-size: 12px;
   font-weight: 600;
   line-height: 140%;
@@ -3987,7 +3987,7 @@ input {
   border-top: 0;
 }
 .box-protocol .dl-table dl dt {
-  color: #000;
+  color: #4d4d4d;
   font-size: 14px;
   font-weight: 600;
   line-height: 140%;
@@ -3995,7 +3995,7 @@ input {
   padding-bottom: 17px;
 }
 .box-protocol .dl-table dl dd {
-  color: #555;
+  color: #666;
   font-size: 12px;
   font-weight: 500;
   line-height: 25px;
@@ -4419,7 +4419,7 @@ input {
   width: 100%;
   position: relative;
   border-radius: 12px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   padding: 40px 20px;
   margin-top: 40px;
 }
@@ -4848,7 +4848,7 @@ input {
 .request-item.certified .item .flex .img-box {
   width: calc(50% - 9px);
   border-radius: 8px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   overflow: hidden;
 }
 .request-item.certified .item .flex .img-box .img-holder {
@@ -4877,7 +4877,7 @@ input {
   gap: 20px 0;
 }
 .request-item.certified .item .flex .text-box .tit {
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
@@ -4940,7 +4940,7 @@ input {
     letter-spacing: -0.28px;
   }
   .common-swiper-pagination-1.swiper-pagination-fraction .swiper-pagination-current {
-    color: #000;
+    color: #4d4d4d;
     font-weight: 600;
     padding-right: 3px;
   }
@@ -5291,7 +5291,7 @@ input {
     letter-spacing: -0.32px;
   }
   .common-selectbox-2 .list li:hover button {
-    color: #000;
+    color: #4d4d4d;
   }
   .common-selectbox-2 + .common-selectbox-2 {
     margin-top: 0;
@@ -5517,14 +5517,14 @@ input {
   .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li > a {
     padding: 3px 0 3px 17px;
     display: block;
-    color: #555;
+    color: #666;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.8px;
     letter-spacing: -0.28px;
   }
   .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li > a:hover {
-    color: #000;
+    color: #4d4d4d;
     font-weight: 600;
   }
   .box-header .inner-gap-1 .inner .btn-etc .btn-menu {
@@ -5615,7 +5615,7 @@ input {
     padding-bottom: 4px;
   }
   .box-header .menu-list .inner-gap-1 > ul > li > ul > li > a {
-    color: #555;
+    color: #666;
     font-size: 16px;
     font-weight: 600;
     line-height: 19.2px;
@@ -5679,7 +5679,7 @@ input {
     padding-right: 100px;
   }
   .box-header .search-wrap .tit {
-    color: #000;
+    color: #4d4d4d;
     font-size: 52px;
     font-weight: 600;
     line-height: 120%;
@@ -5701,7 +5701,7 @@ input {
     padding: 20px 24px;
     border: 1px solid #d5d5d5;
     border-radius: 12px;
-    color: #000;
+    color: #4d4d4d;
     font-size: 16px;
     font-weight: 500;
     line-height: 120%;
@@ -5759,7 +5759,7 @@ input {
     padding: 0 24px;
     border-radius: 999px;
     background: #f5f5f5;
-    color: #555;
+    color: #666;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
@@ -6195,7 +6195,7 @@ input {
     color: #28a688;
   }
   .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-2 {
-    color: #000;
+    color: #4d4d4d;
   }
   .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-3 {
     color: #999;
@@ -6839,7 +6839,7 @@ input {
     margin-left: 30px;
   }
   .box-protocol .inner-protocol .list-protocol .ct > ul > li {
-    color: #555;
+    color: #666;
     font-size: 16px;
     line-height: 160%;
     letter-spacing: -0.32px;
@@ -6855,7 +6855,7 @@ input {
     padding: 23px 0 0 48px;
   }
   .box-protocol ul.number > li {
-    color: #555;
+    color: #666;
     font-size: 16px;
     line-height: 160%;
     letter-spacing: -0.32px;
@@ -6885,7 +6885,7 @@ input {
     padding: 56px 12px 12px 24px;
   }
   .box-protocol .text-2 {
-    color: #555;
+    color: #666;
     font-size: 16px;
     line-height: 160%;
     letter-spacing: -0.32px;
@@ -6921,7 +6921,7 @@ input {
   }
   .box-protocol .dl-table dl dt {
     background: #fcfcfc;
-    color: #000;
+    color: #4d4d4d;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -6931,7 +6931,7 @@ input {
   }
   .box-protocol .dl-table dl dd {
     border-top: 1px solid #d5d5d5;
-    color: #555;
+    color: #666;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

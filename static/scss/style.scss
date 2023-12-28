@@ -710,7 +710,7 @@ input {
 				li {
 					a {
 						transition: all 0.2s;
-						color: #000 !important;
+						color: #4d4d4d !important;
 						font-weight: 600 !important;
 						&:hover,
 						&.is-active {
@@ -723,7 +723,7 @@ input {
 			.btn-etc {
 				.box-lang {
 					.btn-lang {
-						color: #000 !important;
+						color: #4d4d4d !important;
 						transition: all 0.3s ease-in-out;
 						&::after {
 							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_235_4059)'%3E%3Cpath d='M14 8L10 12L6 8' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_235_4059'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") !important;
@@ -731,7 +731,7 @@ input {
 					}
 				}
 				.btn-search {
-					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M11.2152 11.2094L15.75 15.75M12.75 7.5C12.75 10.3995 10.3995 12.75 7.5 12.75C4.60051 12.75 2.25 10.3995 2.25 7.5C2.25 4.60051 4.60051 2.25 7.5 2.25C10.3995 2.25 12.75 4.60051 12.75 7.5Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3E%3Cpath d='M11.2152 11.2289L15.75 15.7695M12.75 7.51953C12.75 10.419 10.3995 12.7695 7.5 12.7695C4.60051 12.7695 2.25 10.419 2.25 7.51953C2.25 4.62004 4.60051 2.26953 7.5 2.26953C10.3995 2.26953 12.75 4.62004 12.75 7.51953Z' stroke='%234D4D4D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 				}
 				.btn-menu {
 					.hamburger {
@@ -1197,7 +1197,7 @@ input {
 
 // 공통 title
 .common-title-1 {
-	color: #000;
+	color: #4D4D4D;
 	font-size: 28px;
 	font-weight: 200;
 	line-height: 100%;
@@ -1683,7 +1683,7 @@ input {
 		content: "";
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -1782,7 +1782,7 @@ input {
 							> a {
 								display: block;
 								width: 100%;
-								color: #555;
+								color: #666;
 								font-size: 14px;
 								font-weight: 500;
 								line-height: 120%;
@@ -1849,7 +1849,7 @@ input {
 			.sub-nav-2 {
 				> li {
 					> a {
-						color: #555;
+						color: #666;
 						&::before {
 							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cg opacity='0.5'%3E%3Cpath d='M5.53125 11.56L8.58458 8.5L5.53125 5.44L6.47125 4.5L10.4713 8.5L6.47125 12.5L5.53125 11.56Z' fill='%23999999'/%3E%3C/g%3E%3C/svg%3E");
 						}
@@ -2202,7 +2202,7 @@ input {
 			}
 			&:hover {
 				button {
-					color: #000;
+					color: #4D4D4D;
 				}
 			}
 		}
@@ -2221,7 +2221,7 @@ input {
 	}
 	&.font {
 		.button {
-			color: #000;
+			color: #4D4D4D;
 		}
 	}
 	& + .common-selectbox-2 {
@@ -2394,7 +2394,7 @@ input {
 	padding: 16px;
 	border: 1px solid #d5d5d5;
 	border-radius: 6px;
-	color: #000;
+	color: #4D4D4D;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 120%;
@@ -2557,7 +2557,7 @@ input {
 		color: #666;
 	}
 	&:focus {
-		color: #000;
+		color: #4D4D4D;
 		border: 1px solid #000;
 	}
 	&.error {
@@ -2772,7 +2772,7 @@ input {
 				display: block;
 				margin: 10px;
 				border-radius: 4px;
-				color: #000;
+				color: #4D4D4D;
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
@@ -3223,7 +3223,7 @@ input {
 					padding: 8px 20px;
 					border-radius: 999px;
 					background: #f5f5f5;
-					color: #000;
+					color: #4D4D4D;
 					text-align: center;
 					font-size: 14px;
 					font-weight: 600;
@@ -3278,7 +3278,7 @@ input {
 							padding: 3px 10px;
 							border-radius: 999px;
 							border: 1px solid #d5d5d5;
-							color: #000;
+							color: #4D4D4D;
 							font-size: 12px;
 							font-weight: 600;
 							line-height: 120%;
@@ -3288,7 +3288,7 @@ input {
 						}
 						.txt-1 {
 							@include text-line-2;
-							color: #000;
+							color: #4D4D4D;
 							font-size: 14px;
 							font-weight: 600;
 							line-height: 120%;
@@ -3439,7 +3439,7 @@ input {
 			}
 			.txt-2 {
 				@include text-line-1;
-				color: #000;
+				color: #4D4D4D;
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
@@ -3858,7 +3858,7 @@ input {
 					border-top: 0;
 				}
 				h4 {
-					color: #000;
+					color: #4D4D4D;
 					font-size: 20px;
 					font-weight: 600;
 					line-height: 120%;
@@ -3866,7 +3866,7 @@ input {
 					margin-bottom: 19px;
 				}
 				.text-1 {
-					color: #000;
+					color: #4D4D4D;
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 24px;
@@ -3887,7 +3887,7 @@ input {
 					}
 					dd {
 						flex: 1 1 content;
-						color: #000;
+						color: #4d4d4d;
 						font-size: 14px;
 						font-weight: 400;
 						line-height: 24px;
@@ -4150,7 +4150,7 @@ input {
 				bottom: 0;
 			}
 			.txt-1 {
-				color: #000;
+				color: #4d4d4d;
 				font-size: 40px;
 				font-weight: 700;
 				line-height: 120%;
@@ -4158,7 +4158,7 @@ input {
 				padding-bottom: 20px;
 			}
 			.txt-2 {
-				color: #555;
+				color: #666;
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
@@ -4176,7 +4176,7 @@ input {
 		padding-bottom: 18px;
 		margin-bottom: 30px;
 		h3 {
-			color: #000;
+			color: #4d4d4d;
 			font-size: 20px;
 			font-weight: 700;
 			line-height: 140%;
@@ -4187,7 +4187,7 @@ input {
 	}
 	.inner-protocol {
 		.text-1 {
-			color: #000;
+			color: #4d4d4d;
 			font-size: 12px;
 			font-weight: 500;
 			line-height: 140%;
@@ -4205,7 +4205,7 @@ input {
 			background: #f5f5f5;
 			margin: 30px 0 0 0;
 			h4 {
-				color: #000;
+				color: #4d4d4d;
 				font-size: 16px;
 				font-weight: 600;
 				line-height: 120%;
@@ -4214,7 +4214,7 @@ input {
 			.ct {
 				> ul {
 					> li {
-						color: #555;
+						color: #666;
 						font-size: 12px;
 						font-weight: 500;
 						line-height: 140%;
@@ -4241,7 +4241,7 @@ input {
 			position: relative;
 			list-style: none;
 			padding: 0 0 0 13px;
-			color: #555;
+			color: #666;
 			font-size: 12px;
 			font-weight: 500;
 			line-height: 140%;
@@ -4258,7 +4258,7 @@ input {
 				//transform: translateY(-50%);
 				counter-increment: circle 1;
 				content: counter(circle);
-				color: #555;
+				color: #666;
 				font-size: 7px;
 			}
 			&::after {
@@ -4279,7 +4279,7 @@ input {
 		}
 	}
 	h5 {
-		color: #000;
+		color: #4d4d4d;
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 120%;
@@ -4293,7 +4293,7 @@ input {
 		}
 	}
 	.text-2 {
-		color: #555;
+		color: #666;
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 140%;
@@ -4304,7 +4304,7 @@ input {
 		padding-left: 8px;
 	}
 	.text-3 {
-		color: #000;
+		color: #4d4d4d;
 		font-size: 12px;
 		font-weight: 600;
 		line-height: 140%;
@@ -4328,7 +4328,7 @@ input {
 				border-top: 0;
 			}
 			dt {
-				color: #000;
+				color: #4d4d4d;
 				font-size: 14px;
 				font-weight: 600;
 				line-height: 140%;
@@ -4336,7 +4336,7 @@ input {
 				padding-bottom: 17px;
 			}
 			dd {
-				color: #555;
+				color: #666;
 				font-size: 12px;
 				font-weight: 500;
 				line-height: 25px;
@@ -4792,7 +4792,7 @@ input {
 		width: 100%;
 		position: relative;
 		border-radius: 12px;
-		background: #F5F5F5;
+		background: #f5f5f5;
 		padding: 40px 20px;
 		margin-top: 40px;
 		ul {
@@ -5266,7 +5266,7 @@ input {
 				.img-box {
 					width: calc(50% - 9px);
 					border-radius: 8px;
-					border: 1px solid #E6E6E6;
+					border: 1px solid #e6e6e6;
 					overflow: hidden;
 					.img-holder {
 						width: 100%;
@@ -5294,7 +5294,7 @@ input {
 					align-items: flex-start;
 					gap: 20px 0;
 					.tit {
-						color: #4D4D4D;
+						color: #4d4d4d;
 						font-size: 14px;
 						font-weight: 600;
 						line-height: 120%;
@@ -5362,7 +5362,7 @@ input {
 			line-height: 100%;
 			letter-spacing: -0.28px;
 			.swiper-pagination-current {
-				color: #000;
+				color: #4d4d4d;
 				font-weight: 600;
 				padding-right: 3px;
 			}
@@ -5776,7 +5776,7 @@ input {
 				}
 				&:hover {
 					button {
-						color: #000;
+						color: #4d4d4d;
 					}
 				}
 			}
@@ -6064,14 +6064,14 @@ input {
 								> a {
 									padding: 3px 0 3px 17px;
 									display: block;
-									color: #555;
+									color: #666;
 									font-size: 14px;
 									font-weight: 400;
 									line-height: 16.8px;
 									letter-spacing: -0.28px;
 									&:hover {
-										color: #000;
-										font-weight: 600;
+										color: #4d4d4d;
+										font-weight: 600;	
 									}
 								}
 							}
@@ -6175,7 +6175,7 @@ input {
 									}
 								}
 								> a {
-									color: #555;
+									color: #666;
 									font-size: 16px;
 									font-weight: 600;
 									line-height: 19.2px;
@@ -6247,7 +6247,7 @@ input {
 				padding-right: 100px;
 			}
 			.tit {
-				color: #000;
+				color: #4d4d4d;
 				font-size: 52px;
 				font-weight: 600;
 				line-height: 120%;
@@ -6268,7 +6268,7 @@ input {
 					padding: 20px 24px;
 					border: 1px solid #d5d5d5;
 					border-radius: 12px;
-					color: #000;
+					color: #4d4d4d;
 					font-size: 16px;
 					font-weight: 500;
 					line-height: 120%;
@@ -6323,7 +6323,7 @@ input {
 						padding: 0 24px;
 						border-radius: 999px;
 						background: #f5f5f5;
-						color: #555;
+						color: #666;
 						text-align: center;
 						font-size: 14px;
 						font-weight: 600;
@@ -6826,7 +6826,7 @@ input {
 						color: #28a688;
 					}
 					.txt-2 {
-						color: #000;
+						color: #4d4d4d;
 					}
 					.txt-3 {
 						color: #999;
@@ -7590,7 +7590,7 @@ input {
 							margin-left: 30px;
 						}
 						> li {
-							color: #555;
+							color: #666;
 							font-size: 16px;
 							line-height: 160%;
 							letter-spacing: -0.32px;
@@ -7611,7 +7611,7 @@ input {
 			&.padding-top-0 {
 			}
 			> li {
-				color: #555;
+				color: #666;
 				font-size: 16px;
 				line-height: 160%;
 				letter-spacing: -0.32px;
@@ -7642,7 +7642,7 @@ input {
 			padding: 56px 12px 12px 24px;
 		}
 		.text-2 {
-			color: #555;
+			color: #666;
 			font-size: 16px;
 			line-height: 160%;
 			letter-spacing: -0.32px;
@@ -7680,7 +7680,7 @@ input {
 				}
 				dt {
 					background: #fcfcfc;
-					color: #000;
+					color: #4d4d4d;
 					font-size: 16px;
 					font-style: normal;
 					font-weight: 600;
@@ -7690,7 +7690,7 @@ input {
 				}
 				dd {
 					border-top: 1px solid #d5d5d5;
-					color: #555;
+					color: #666;
 					font-size: 16px;
 					font-style: normal;
 					font-weight: 500;
