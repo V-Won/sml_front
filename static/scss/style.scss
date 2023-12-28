@@ -442,7 +442,7 @@ input {
 						font-style: normal;
 						font-weight: 600;
 						line-height: 26.4px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						display: block;
 						width: 100%;
 						&:hover {
@@ -481,7 +481,7 @@ input {
 								font-style: normal;
 								font-weight: 600;
 								line-height: 21.6px;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								padding-bottom: 24px;
 							}
 							> ul {
@@ -493,7 +493,7 @@ input {
 										font-style: normal;
 										font-weight: 200;
 										line-height: 16.8px;
-										letter-spacing:0.4px;
+										letter-spacing: 0.4px;
 										position: relative;
 										padding: 0 0 0 6px;
 										display: block;
@@ -573,7 +573,7 @@ input {
 			font-size: 22px;
 			font-weight: 600;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 		.input-wrap {
 			width: 100%;
@@ -801,7 +801,7 @@ input {
 									font-style: normal;
 									font-weight: 600;
 									line-height: 120%;
-									letter-spacing:0.4px;
+									letter-spacing: 0.4px;
 									display: flex;
 									padding: 6px 16px;
 									align-items: center;
@@ -857,7 +857,7 @@ input {
 				justify-content: space-between;
 				flex-wrap: wrap;
 				position: relative;
-				gap: 16px 0;
+				gap: 20px 0;
 				li {
 					width: calc(50% - 10px);
 					height: 14px;
@@ -870,7 +870,7 @@ input {
 						font-size: 14px;
 						font-weight: 600;
 						line-height: 14px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					&.bold {
 						a {
@@ -906,7 +906,7 @@ input {
 				font-size: 18px;
 				font-weight: 700;
 				line-height: 120%; /* 21.6px */
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				margin-top: 36px;
 			}
 		}
@@ -933,13 +933,13 @@ input {
 					display: flex;
 					flex-direction: column;
 					align-items: flex-start;
-					gap: 8px 0;
+					gap: 11px 0;
 					li {
 						color: rgba(0, 0, 0, 0.5);
 						font-size: 12px;
 						font-weight: 400;
 						line-height: 12px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						text-transform: capitalize;
 					}
 				}
@@ -960,7 +960,7 @@ input {
 						font-weight: 600;
 						color: #666;
 						line-height: 14px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						text-transform: uppercase;
 						text-align: left;
 						&::after {
@@ -1018,7 +1018,7 @@ input {
 								font-size: 14px;
 								font-weight: 500;
 								line-height: 120%;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								text-transform: uppercase;
 								min-height: 20px;
 							}
@@ -1052,7 +1052,7 @@ input {
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 100%; /* 12px */
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			text-transform: uppercase;
 			text-align: center;
 		}
@@ -1136,7 +1136,7 @@ input {
 						font-style: normal;
 						font-weight: 600;
 						line-height: 16.8px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					&.tel {
 						border-radius: 0 0 10px 10px;
@@ -1201,7 +1201,7 @@ input {
 	font-size: 28px;
 	font-weight: 200;
 	line-height: 100%;
-	letter-spacing:0.4px;
+	letter-spacing: 0.4px;
 	text-transform: uppercase;
 	padding-bottom: 20px;
 	> span {
@@ -1439,20 +1439,20 @@ input {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 120%;
-	letter-spacing:0.4px;
+	letter-spacing: 0.4px;
 	border-radius: 12px;
 	background: #006477;
 	&.radius-type-1 {
 		border-radius: 999px;
 		padding: 16px 40px;
 		font-size: 18px;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 	}
 	&.radius-type-2 {
 		border-radius: 999px;
 		padding: 16px 38px;
 		font-size: 18px;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		border-radius: 999px;
 		border: 2px solid #006477;
 		background: #fff;
@@ -1493,6 +1493,38 @@ input {
 			&::after {
 				right: 0;
 			}
+		}
+	}
+}
+
+.common-btnType-3 {
+	display: flex;
+	padding: 8px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	border-radius: 999px;
+	border: 1px solid #d5d5d5;
+	background: #fff;
+	span {
+		color: #666;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 120%;
+		letter-spacing: 0.24px;
+		position: relative;
+		padding-right:20px;
+		&::after{
+			content: '';
+			display: block;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0 0 14 15' fill='none'%3E%3Cpath d='M7.00065 2.83398L6.17815 3.65648L9.43315 6.91732H2.33398V8.08398H9.43315L6.17815 11.3448L7.00065 12.1673L11.6673 7.50065L7.00065 2.83398Z' fill='%23666666'/%3E%3C/svg%3E");
+			width: 14px;
+			height: 15px;
+			background-repeat: no-repeat;
+			position: absolute;
+			top:50%;
+			right:0;
+			transform: translateY(-50%);
 		}
 	}
 }
@@ -1539,7 +1571,7 @@ input {
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 120%;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		padding-left: 18px;
 		position: relative;
 		&::before {
@@ -1711,7 +1743,7 @@ input {
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					position: relative;
 					display: block;
 					padding-right: 24px;
@@ -1786,7 +1818,7 @@ input {
 								font-size: 14px;
 								font-weight: 500;
 								line-height: 120%;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								text-align: left;
 								&::before {
 									display: block;
@@ -1831,7 +1863,7 @@ input {
 			font-size: 30px;
 			font-weight: 700;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 	}
 	&.bg-fff {
@@ -1914,14 +1946,14 @@ input {
 			font-size: 16px;
 			font-weight: 600;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 		.require-noti {
 			color: #006477;
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 	}
 	.form-inner {
@@ -1943,7 +1975,7 @@ input {
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					white-space: nowrap;
 					position: relative;
 					> span {
@@ -1957,7 +1989,7 @@ input {
 							font-size: 14px;
 							font-weight: 500;
 							line-height: 140%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							padding-left: 2px;
 						}
 					}
@@ -1980,7 +2012,7 @@ input {
 						font-size: 16px;
 						font-weight: 500;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 				.file-btn-wrap {
@@ -1998,7 +2030,7 @@ input {
 						font-size: 14px;
 						font-weight: 500;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						cursor: pointer;
 					}
 					input[type="file"] {
@@ -2070,7 +2102,7 @@ input {
 					font-size: 12px;
 					font-weight: 400;
 					line-height: 26px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					margin-top: 24px;
 				}
 			}
@@ -2086,7 +2118,7 @@ input {
 						font-size: 12px;
 						font-weight: 400;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding-left: 11px;
 						position: relative;
 						&::before {
@@ -2118,7 +2150,7 @@ input {
 								margin-left: 0;
 								margin-right: 0;
 								padding: 8px 31px 10px 23px;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 							}
 						}
 					}
@@ -2161,7 +2193,7 @@ input {
 		text-align: left;
 		font-weight: 500;
 		line-height: 120%;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		&::after {
 			content: "";
 			width: 16px;
@@ -2197,7 +2229,7 @@ input {
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				text-align: left;
 			}
 			&:hover {
@@ -2274,7 +2306,7 @@ input {
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 120%;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		display: block;
 		text-align: center;
 		padding-top: 56px;
@@ -2398,7 +2430,7 @@ input {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 120%;
-	letter-spacing:0.4px;
+	letter-spacing: 0.4px;
 	&::placeholder {
 		color: #999;
 	}
@@ -2435,7 +2467,7 @@ input {
 	border-radius: 999px;
 	border: 1px solid #d5d5d5;
 	background: #fff;
-	color: #006477;
+	color: #666;
 	text-align: right;
 	font-size: 14px;
 	font-weight: 600;
@@ -2450,7 +2482,7 @@ input {
 		top: 50%;
 		left: 15px;
 		transform: translateY(-50%);
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M9 1.5C6.0975 1.5 3.75 3.8475 3.75 6.75C3.75 10.6875 9 16.5 9 16.5C9 16.5 14.25 10.6875 14.25 6.75C14.25 3.8475 11.9025 1.5 9 1.5ZM5.25 6.75C5.25 4.68 6.93 3 9 3C11.07 3 12.75 4.68 12.75 6.75C12.75 8.91 10.59 12.1425 9 14.16C7.44 12.1575 5.25 8.8875 5.25 6.75Z' fill='%23006477'/%3E%3Cpath d='M9 8.625C10.0355 8.625 10.875 7.78553 10.875 6.75C10.875 5.71447 10.0355 4.875 9 4.875C7.96447 4.875 7.125 5.71447 7.125 6.75C7.125 7.78553 7.96447 8.625 9 8.625Z' fill='%23006477'/%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3E%3Cpath d='M9 2C6.0975 2 3.75 4.3475 3.75 7.25C3.75 11.1875 9 17 9 17C9 17 14.25 11.1875 14.25 7.25C14.25 4.3475 11.9025 2 9 2ZM5.25 7.25C5.25 5.18 6.93 3.5 9 3.5C11.07 3.5 12.75 5.18 12.75 7.25C12.75 9.41 10.59 12.6425 9 14.66C7.44 12.6575 5.25 9.3875 5.25 7.25Z' fill='%23666666'/%3E%3Cpath d='M9 9.125C10.0355 9.125 10.875 8.28553 10.875 7.25C10.875 6.21447 10.0355 5.375 9 5.375C7.96447 5.375 7.125 6.21447 7.125 7.25C7.125 8.28553 7.96447 9.125 9 9.125Z' fill='%23666666'/%3E%3C/svg%3E");
 		width: 18px;
 		height: 18px;
 	}
@@ -2477,7 +2509,7 @@ input {
 			font-size: 14px;
 			font-weight: 600;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 	}
 	ul {
@@ -2552,7 +2584,7 @@ input {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 120%;
-	letter-spacing:0.4px;
+	letter-spacing: 0.4px;
 	&::placeholder {
 		color: #999;
 	}
@@ -2611,7 +2643,7 @@ input {
 					font-size: 22px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				&.is-active {
 					.btn {
@@ -2638,7 +2670,7 @@ input {
 					font-size: 14px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					span {
 						font-size: 12px;
 					}
@@ -2664,7 +2696,7 @@ input {
 					font-size: 22px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					span {
 						display: none;
 					}
@@ -2675,7 +2707,7 @@ input {
 						font-size: 22px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						span {
 							display: inline-block;
 							font-size: 16px;
@@ -2718,7 +2750,7 @@ input {
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				&:after {
 					content: "";
 					display: block;
@@ -2779,12 +2811,12 @@ input {
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				strong {
 					color: #006477;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					padding-right: 4px;
 				}
 				&:after {
@@ -2867,7 +2899,7 @@ input {
 				font-style: normal;
 				font-weight: 600;
 				line-height: 28.8px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				padding-bottom: 20px;
 			}
 			.text-2 {
@@ -2877,11 +2909,11 @@ input {
 				font-style: normal;
 				font-weight: 100;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				strong {
 					font-weight: 600;
 					line-height: 36px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 			}
 		}
@@ -2903,7 +2935,7 @@ input {
 			font-style: normal;
 			line-height: 12px;
 			font-weight: 300;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			.swiper-pagination-current {
 				font-weight: 800;
 			}
@@ -2990,7 +3022,7 @@ input {
 						font-size: 14px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						margin-bottom: 4px;
 					}
 					.txt-2 {
@@ -2999,7 +3031,7 @@ input {
 						font-size: 24px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						margin-bottom: 24px;
 					}
 					.txt-3 {
@@ -3008,7 +3040,7 @@ input {
 						font-size: 14px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -3063,7 +3095,7 @@ input {
 					font-size: 20px;
 					font-weight: 700;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					text-transform: uppercase;
 					padding-bottom: 12px;
 				}
@@ -3073,7 +3105,7 @@ input {
 					font-size: 14px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 			}
 			&.swiper-slide-active {
@@ -3134,7 +3166,7 @@ input {
 							font-style: normal;
 							font-weight: 500;
 							line-height: 16.8px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							text-transform: uppercase;
 							margin-right: 5px;
 						}
@@ -3231,7 +3263,7 @@ input {
 					font-size: 14px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				&.is-active {
 					button {
@@ -3285,7 +3317,7 @@ input {
 							font-size: 12px;
 							font-weight: 600;
 							line-height: 120%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							display: block;
 							margin-bottom: 8px;
 						}
@@ -3295,7 +3327,7 @@ input {
 							font-size: 14px;
 							font-weight: 600;
 							line-height: 120%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							margin-bottom: 12px;
 						}
 						.txt-2 {
@@ -3303,7 +3335,7 @@ input {
 							font-size: 12px;
 							font-weight: 500;
 							line-height: 140%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 					}
 				}
@@ -3369,7 +3401,7 @@ input {
 					font-size: 12px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				.txt-1 {
 					@include text-line-2;
@@ -3377,7 +3409,7 @@ input {
 					font-size: 16px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					margin: 10px 0;
 				}
 				.txt-2 {
@@ -3386,7 +3418,7 @@ input {
 					font-style: normal;
 					font-weight: 500;
 					line-height: 140%; /* 16.8px */
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 			}
 		}
@@ -3438,7 +3470,7 @@ input {
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 			.txt-2 {
 				@include text-line-1;
@@ -3446,7 +3478,7 @@ input {
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 			.txt-3 {
 				margin-top: 14px;
@@ -3454,7 +3486,7 @@ input {
 				font-size: 12px;
 				font-weight: 500;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 			&.swiper-slide-active {
 				> a {
@@ -3510,7 +3542,7 @@ input {
 						font-size: 14px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						@include text-line-2;
 					}
 					.day {
@@ -3520,7 +3552,7 @@ input {
 						font-size: 12px;
 						font-weight: 400;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 				.icon-new {
@@ -3671,14 +3703,14 @@ input {
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 24px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				.text-1 {
 					color: #4d4d4d;
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					display: block;
 					padding-top: 5px;
 					@include text-line-2;
@@ -3718,14 +3750,14 @@ input {
 							font-size: 14px;
 							font-weight: 600;
 							line-height: 24px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 						.text-1 {
 							color: #4d4d4d;
 							font-size: 14px;
 							font-weight: 600;
 							line-height: 140%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							padding-top: 6px;
 							@include text-line-2;
 						}
@@ -3735,7 +3767,7 @@ input {
 						font-size: 12px;
 						font-weight: 400;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding: 0 57px 0 12px;
 					}
 				}
@@ -3755,7 +3787,7 @@ input {
 			border-radius: 999px;
 			padding-left: 24px;
 			padding-right: 50px;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			&::placeholder {
 				color: #bbb;
 			}
@@ -3818,7 +3850,7 @@ input {
 						font-size: 16px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						@include text-line-2;
 					}
 					.text-2 {
@@ -3826,7 +3858,7 @@ input {
 						font-size: 14px;
 						font-weight: 400;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -3865,15 +3897,15 @@ input {
 					font-size: 20px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					margin-bottom: 19px;
 				}
 				.text-1 {
-					color: #4d4d4d;
+					color: #666;
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 24px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					margin-bottom: 11px;
 				}
 				dl {
@@ -3885,16 +3917,16 @@ input {
 						font-size: 14px;
 						font-weight: 600;
 						line-height: 24px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						flex: 0 0 38px;
 					}
 					dd {
 						flex: 1 1 content;
-						color: #4d4d4d;
+						color: #666;
 						font-size: 14px;
 						font-weight: 400;
 						line-height: 24px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						a {
 							display: block;
 							width: 100%;
@@ -3922,7 +3954,7 @@ input {
 		font-size: 20px;
 		font-weight: 600;
 		line-height: 140%;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		text-transform: uppercase;
 		margin-bottom: 18px;
 		.icon-new {
@@ -3938,7 +3970,7 @@ input {
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 140%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 		.cnt {
 			//border-left: 1px solid #d9d9d9;
@@ -3946,7 +3978,7 @@ input {
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 140%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			position: relative;
 			padding: 0 0 0 26px;
 			margin: 0 0 0 5px;
@@ -3994,20 +4026,20 @@ input {
 	.text-1 {
 		font-size: 14px;
 		font-weight: 600;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		padding: 0 0 21px 0;
 	}
 	.text-2 {
 		font-size: 12px;
 		font-weight: 500;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		text-indent: -10px;
 		margin-left: 10px;
 	}
 	.text-3 {
 		font-size: 12px;
 		font-weight: 500;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 	}
 }
 .download-file {
@@ -4042,7 +4074,7 @@ input {
 				font-size: 12px;
 				font-weight: 500;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				text-transform: uppercase;
 				&:hover {
 					color: #006477;
@@ -4094,7 +4126,7 @@ input {
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 24px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					position: absolute;
 					top: 50%;
 					left: 15px;
@@ -4127,7 +4159,7 @@ input {
 					font-style: normal;
 					font-weight: 500;
 					line-height: 140%; /* 19.6px */
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					@include text-line-1;
 				}
 				.icon-new {
@@ -4166,7 +4198,7 @@ input {
 				font-size: 40px;
 				font-weight: 700;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				padding-bottom: 20px;
 			}
 			.txt-2 {
@@ -4174,7 +4206,7 @@ input {
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				margin-bottom: 40px;
 			}
 		}
@@ -4192,7 +4224,7 @@ input {
 			font-size: 20px;
 			font-weight: 700;
 			line-height: 140%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			text-transform: uppercase;
 			padding-bottom: 20px;
 		}
@@ -4203,7 +4235,7 @@ input {
 			font-size: 12px;
 			font-weight: 500;
 			line-height: 140%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			padding: 11px;
 		}
 		.list-protocol {
@@ -4221,7 +4253,7 @@ input {
 				font-size: 16px;
 				font-weight: 600;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 			.ct {
 				> ul {
@@ -4230,7 +4262,7 @@ input {
 						font-size: 12px;
 						font-weight: 500;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						> ul.number {
 							padding: 0 0 0 32px;
 						}
@@ -4257,7 +4289,7 @@ input {
 			font-size: 12px;
 			font-weight: 500;
 			line-height: 140%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			&::before {
 				position: absolute;
 				top: 2px;
@@ -4295,7 +4327,7 @@ input {
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 120%;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		padding: 41px 12px 13px 12px;
 	}
 	.text-2,
@@ -4309,7 +4341,7 @@ input {
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 140%;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		padding: 0 12px 0 12px;
 	}
 	.padding-left-1 {
@@ -4320,7 +4352,7 @@ input {
 		font-size: 12px;
 		font-weight: 600;
 		line-height: 140%;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		padding: 0 12px 9px 12px;
 		&.padding-top-20 {
 			padding-top: 20px;
@@ -4344,7 +4376,7 @@ input {
 				font-size: 14px;
 				font-weight: 600;
 				line-height: 140%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				padding-bottom: 17px;
 			}
 			dd {
@@ -4352,7 +4384,7 @@ input {
 				font-size: 12px;
 				font-weight: 500;
 				line-height: 25px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 		}
 	}
@@ -4383,7 +4415,7 @@ input {
 			font-size: 14px;
 			font-weight: 600;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			word-break: break-all;
 			min-height: 34px;
 			margin-bottom: 12px;
@@ -4487,7 +4519,7 @@ input {
 					}
 				}
 			}
-			[data-event=layerClose] {
+			[data-event="layerClose"] {
 				transform: translate(-50%, -52px);
 			}
 		}
@@ -4509,7 +4541,7 @@ input {
 				font-size: 20px;
 				font-weight: 600;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				margin-bottom: 20px;
 			}
 			.flex {
@@ -4604,7 +4636,7 @@ input {
 		display: inline-block;
 		width: 100%;
 		padding: 10px 48px;
-		border-radius: 999px;
+		border-radius: 6px;
 		background: var(--Primary-01, #006477);
 		border: 2px solid transparent;
 		color: #fff;
@@ -4613,7 +4645,7 @@ input {
 		font-weight: 600;
 		line-height: 120%;
 		span {
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			padding-left: 22px;
 			position: relative;
 			&::before {
@@ -4641,7 +4673,7 @@ input {
 			font-size: 16px;
 			font-weight: 600;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			padding: 0 0 20px 16px;
 		}
 		.chk-flex {
@@ -4677,7 +4709,7 @@ input {
 						font-size: 12px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						text-align: center;
 					}
 					input:checked {
@@ -4708,7 +4740,7 @@ input {
 					font-size: 14px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					position: relative;
 					padding-right: 16px;
 					.del-btn {
@@ -4732,11 +4764,11 @@ input {
 				border-radius: 999px;
 				border: 1px solid #d5d5d5;
 				span {
-					color: #666;
+					color: #999;
 					font-size: 12px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					padding-left: 20px;
 					position: relative;
 					&::before {
@@ -4814,7 +4846,7 @@ input {
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				.name {
 					@include text-line-1;
@@ -4822,7 +4854,7 @@ input {
 					font-size: 16px;
 					font-weight: 500;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					margin: 4px 0 20px;
 				}
 				.item-box {
@@ -4840,7 +4872,7 @@ input {
 							font-size: 12px;
 							font-weight: 500;
 							line-height: 140%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 						.txt {
 							@include text-line-1;
@@ -4848,7 +4880,7 @@ input {
 							font-size: 14px;
 							font-weight: 500;
 							line-height: 140%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 					}
 				}
@@ -4871,7 +4903,7 @@ input {
 			font-size: 20px;
 			font-weight: 600;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 	}
 	.top-info {
@@ -4896,7 +4928,7 @@ input {
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				.left {
 					color: var(--Primary-01, #006477);
@@ -4919,7 +4951,7 @@ input {
 			font-size: 16px;
 			font-weight: 600;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			padding-bottom: 20px;
 		}
 		.item {
@@ -4942,7 +4974,7 @@ input {
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 			& + .info-list {
 				margin-top: 40px;
@@ -4967,7 +4999,7 @@ input {
 				font-size: 14px;
 				font-weight: 600;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				max-width: 84px;
 			}
 			.left {
@@ -5019,7 +5051,7 @@ input {
 				font-size: 14px;
 				font-weight: 500;
 				line-height: 140%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				text-decoration-line: underline;
 				margin-top: 20px;
 			}
@@ -5028,13 +5060,13 @@ input {
 				font-size: 12px;
 				font-weight: 500;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				max-width: 100%;
 				&.left-tit {
 					color: var(--Primary-01, #006477);
 					font-size: 14px;
 					font-weight: 600;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					padding: 19px 12px 0;
 				}
 				&.tit {
@@ -5056,7 +5088,7 @@ input {
 					&.acc-text {
 						color: #4d4d4d;
 						font-size: 14px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -5085,13 +5117,13 @@ input {
 						font-size: 14px;
 						font-weight: 500;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					.name {
 						-webkit-line-clamp: 2;
 						color: #4d4d4d;
 						font-size: 16px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						margin: 0 0 24px;
 					}
 					.place {
@@ -5123,7 +5155,7 @@ input {
 						font-size: 14px;
 						font-weight: 500;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						margin: 0;
 					}
 					.num {
@@ -5152,7 +5184,7 @@ input {
 						font-size: 12px;
 						font-weight: 400;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						margin-bottom: 20px;
 					}
 					&.new {
@@ -5190,7 +5222,7 @@ input {
 			font-size: 12px;
 			font-weight: 500;
 			line-height: 140%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 
 		img {
@@ -5273,14 +5305,14 @@ input {
 						font-size: 12px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					p {
 						color: #fff;
 						font-size: 14px;
 						font-weight: 400;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						&.tit {
 							@include text-line-2;
 							font-weight: 600;
@@ -5293,17 +5325,24 @@ input {
 	}
 }
 
+// 고객서비스 > SML 학술자료 > Smart New Test > 상세
+.box-smart-view {
+	.img-1 {
+		width: 100%;
+	}
+}
+
 // 기타 > 검색
 .title-search-1 {
 	color: #4d4d4d;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 120%;
-	letter-spacing:0.4px;
+	letter-spacing: 0.4px;
 	padding: 38px 0 17px 0;
 	span {
 		font-size: 12px;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 	}
 	&.padding-type-1 {
 		padding: 60px 0 0 0;
@@ -5316,7 +5355,7 @@ input {
 			border-radius: 999px;
 			padding-left: 24px;
 			padding-right: 50px;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			&::placeholder {
 				color: #bbb;
 			}
@@ -5342,7 +5381,7 @@ input {
 				min-height: fit-content;
 				margin-bottom: 16px;
 				font-size: 16px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 			.flex {
 				width: 100%;
@@ -5384,7 +5423,7 @@ input {
 						font-size: 14px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						margin-bottom: 8px;
 					}
 					.txt {
@@ -5394,7 +5433,7 @@ input {
 						font-size: 12px;
 						font-weight: 500;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -5414,7 +5453,7 @@ input {
 
 	.common-title-1 {
 		font-size: 32px;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		padding-bottom: 27px;
 	}
 
@@ -5446,7 +5485,7 @@ input {
 			font-size: 14px;
 			font-weight: 300;
 			line-height: 100%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			.swiper-pagination-current {
 				color: #4d4d4d;
 				font-weight: 600;
@@ -5550,7 +5589,7 @@ input {
 		span {
 			font-size: 16px;
 			font-weight: 600;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			padding-left: 24px;
 			&::before {
 				width: 18px;
@@ -5574,7 +5613,7 @@ input {
 			font-size: 16px;
 			font-weight: 600;
 			line-height: 120%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			&::before {
 				content: "";
 				width: 18px;
@@ -5648,7 +5687,7 @@ input {
 					height: 19px;
 					> a {
 						font-size: 16px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding-right: 28px;
 					}
 					&.nav-acc {
@@ -5670,7 +5709,7 @@ input {
 			.sub-tit {
 				font-size: 52px;
 				font-weight: 600;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 		}
 		&.bg-fff {
@@ -5693,11 +5732,11 @@ input {
 			align-items: flex-end;
 			.title {
 				font-size: 24px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 			.require-noti {
 				font-size: 14px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 		}
 		.form-inner {
@@ -5727,7 +5766,7 @@ input {
 						font-size: 18px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						height: 64px;
 						line-height: 64px;
 						> span {
@@ -5735,7 +5774,7 @@ input {
 								font-size: 18px;
 								font-weight: 600;
 								line-height: 120%;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 							}
 						}
 					}
@@ -5758,7 +5797,7 @@ input {
 								font-size: 18px;
 								font-weight: 600;
 								line-height: 120%;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								padding-top: 15px;
 							}
 						}
@@ -5769,7 +5808,7 @@ input {
 								padding: 16px 32px;
 								border-radius: 12px;
 								font-size: 18px;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 							}
 						}
 						.file-item {
@@ -5795,7 +5834,7 @@ input {
 						}
 						.file-noti {
 							font-size: 14px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							margin-top: 0;
 							position: absolute;
 							top: 15px;
@@ -5809,7 +5848,7 @@ input {
 					.dot-list {
 						li {
 							font-size: 14px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							padding-left: 15px;
 							& + li {
 								margin-top: 17px;
@@ -5822,7 +5861,7 @@ input {
 							label {
 								span {
 									padding: 15px 31px 15px 30px;
-									letter-spacing:0.4px;
+									letter-spacing: 0.4px;
 								}
 							}
 						}
@@ -5847,7 +5886,7 @@ input {
 			padding: 20px 50px 20px 24px;
 			border-radius: 12px;
 			font-size: 16px;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			&::after {
 				right: 24px;
 			}
@@ -5858,7 +5897,7 @@ input {
 				button {
 					padding: 22.5px 24px;
 					font-size: 16px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				&:hover {
 					button {
@@ -5932,7 +5971,7 @@ input {
 		padding: 20px 24px;
 		border-radius: 12px;
 		font-size: 16px;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 		&.error {
 			border: 1px solid #006477;
 			color: #006477;
@@ -5993,7 +6032,7 @@ input {
 				> li {
 					.btn {
 						font-size: 28px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					& + li {
 						margin-left: 40px;
@@ -6008,7 +6047,7 @@ input {
 						height: 46px;
 						padding: 12px 24px;
 						font-size: 18px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -6073,7 +6112,7 @@ input {
 		border-radius: 12px;
 		padding: 20px 24px;
 		font-size: 16px;
-		letter-spacing:0.4px;
+		letter-spacing: 0.4px;
 	}
 
 	// 공통 header
@@ -6108,7 +6147,7 @@ input {
 							font-style: normal;
 							font-weight: 600;
 							line-height: 120%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							padding: 0 1.5vw;
 						}
 					}
@@ -6182,7 +6221,7 @@ input {
 									font-size: 14px;
 									font-weight: 400;
 									line-height: 16.8px;
-									letter-spacing:0.4px;
+									letter-spacing: 0.4px;
 									&:hover {
 										color: #4d4d4d;
 										font-weight: 600;
@@ -6266,7 +6305,7 @@ input {
 							font-size: 22px;
 							font-weight: 600;
 							line-height: 26.4px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							position: static;
 							&::after {
 								display: none;
@@ -6293,7 +6332,7 @@ input {
 									font-size: 16px;
 									font-weight: 600;
 									line-height: 19.2px;
-									letter-spacing:0.4px;
+									letter-spacing: 0.4px;
 									display: block;
 									padding: 22px 0 4px 0;
 									transition: all 0.2s;
@@ -6309,7 +6348,7 @@ input {
 											font-size: 14px;
 											font-weight: 500;
 											line-height: 16.8px;
-											letter-spacing:0.4px;
+											letter-spacing: 0.4px;
 											position: relative;
 											padding: 5px 0 5px 16px;
 											display: block;
@@ -6365,7 +6404,7 @@ input {
 				font-size: 52px;
 				font-weight: 600;
 				line-height: 120%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 			.input-wrap {
 				width: 100%;
@@ -6386,7 +6425,7 @@ input {
 					font-size: 16px;
 					font-weight: 500;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					&::placeholder {
 						color: #999;
 					}
@@ -6403,7 +6442,7 @@ input {
 					font-size: 20px;
 					font-weight: 600;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					span {
 						padding-left: 27px;
 						&::before {
@@ -6572,7 +6611,7 @@ input {
 						li {
 							font-size: 14px;
 							line-height: 100%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 					}
 				}
@@ -6599,7 +6638,7 @@ input {
 			}
 			.copyright {
 				text-align: left;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 		}
 	}
@@ -6644,16 +6683,16 @@ input {
 						padding: 0 100px;
 						.txt-1 {
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 						.txt-2 {
 							font-size: 40px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							margin-bottom: 32px;
 						}
 						.txt-3 {
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 					}
 				}
@@ -6675,11 +6714,11 @@ input {
 					font-size: 56px;
 					font-weight: 100;
 					line-height: 120%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					strong {
 						font-weight: 600;
 						line-height: 67.2px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -6722,14 +6761,14 @@ input {
 					.txt-1 {
 						color: #ccc;
 						font-size: 28px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding-bottom: 0;
 						text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 						transition: color 0.5s;
 					}
 					.txt-2 {
 						font-size: 18px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 						padding-top: 20px;
 						display: none;
@@ -6805,13 +6844,13 @@ input {
 							.tag {
 								padding: 5px 11px;
 								font-size: 14px;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								margin-bottom: 12px;
 							}
 							.txt-1 {
 								font-size: 20px;
 								font-weight: 500;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								margin-bottom: 16px;
 								min-height: 48px;
 							}
@@ -6819,7 +6858,7 @@ input {
 								font-size: 14px;
 								font-weight: 400;
 								line-height: 120%;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 							}
 						}
 					}
@@ -6852,7 +6891,7 @@ input {
 		padding-bottom: 0;
 		.common-title-1 {
 			padding-bottom: 27px;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 		.main-news-swiper {
 			.swiper-slide {
@@ -6868,18 +6907,18 @@ input {
 					.tag {
 						padding: 5px 11px;
 						font-size: 14px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					.txt-1 {
 						font-size: 20px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						margin: 12px 0 16px;
 					}
 					.txt-2 {
 						font-size: 14px;
 						font-weight: 400;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -6917,13 +6956,13 @@ input {
 				.txt-1 {
 					font-size: 18px;
 					line-height: 24px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					transform: 0.5s;
 				}
 				.txt-2 {
 					font-size: 18px;
 					line-height: 24px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					transform: 0.5s;
 				}
 				.txt-3 {
@@ -7030,7 +7069,7 @@ input {
 								color: #fff;
 								font-size: 18px;
 								line-height: 21.6px;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								opacity: 1;
 								padding: 0;
 								margin: 0 0 21px 0;
@@ -7073,7 +7112,7 @@ input {
 									color: #fff;
 									font-size: 18px;
 									line-height: 21.6px;
-									letter-spacing:0.4px;
+									letter-spacing: 0.4px;
 								}
 							}
 						}
@@ -7088,7 +7127,7 @@ input {
 		margin-top: -3px;
 		.tit-1 {
 			font-size: 30px;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			margin-bottom: 22px;
 			.icon-new {
 				top: -1px;
@@ -7138,7 +7177,7 @@ input {
 		.text-3 {
 			font-size: 16px;
 			line-height: 140%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 		}
 	}
 	.download-file {
@@ -7202,7 +7241,7 @@ input {
 						position: relative;
 						.text {
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 						.icon-new {
 							// position: relative;
@@ -7225,7 +7264,7 @@ input {
 						font-style: normal;
 						font-weight: 400;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -7257,7 +7296,7 @@ input {
 				.txt-2 {
 					font-size: 18px;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					margin-bottom: 60px;
 					margin-left: 6px;
 				}
@@ -7292,7 +7331,7 @@ input {
 						padding: 25px 23px 38px 23px;
 						.text-1 {
 							font-size: 20px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							min-height: 48px;
 						}
 						.day {
@@ -7416,7 +7455,7 @@ input {
 					font-size: 18px;
 					font-weight: 400;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					text-align: center;
 					position: absolute;
 					top: 29px;
@@ -7440,13 +7479,13 @@ input {
 						text-align: center;
 						font-size: 18px;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					.text-1 {
 						flex: 1 1 content;
 						font-size: 18px;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding-left: 20px;
 						position: relative;
 						top: -3px;
@@ -7486,7 +7525,7 @@ input {
 						.text-2 {
 							font-size: 18px;
 							line-height: 140%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							padding-left: 172px;
 							padding-top: 10px;
 							padding-right: 135px;
@@ -7503,7 +7542,8 @@ input {
 			justify-content: end;
 			display: flex;
 			.item-search {
-				width: 335px;
+				//width: 335px;
+				width: 320px;
 				input {
 					font-size: 14px;
 					&::placeholder {
@@ -7545,7 +7585,7 @@ input {
 						.text-1 {
 							font-size: 20px;
 							line-height: 140%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							height: 56px;
 						}
 						.text-2 {
@@ -7588,7 +7628,7 @@ input {
 						font-size: 20px;
 						font-weight: 600;
 						line-height: 24px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -7608,7 +7648,6 @@ input {
 				height: 100%;
 				box-shadow: 24px 0px 34px 0px rgba(0, 0, 0, 0.1);
 				//padding-right:24px;
-				//background: #fff;
 				background: #f5f5f5;
 				width: 453px;
 				overflow: hidden;
@@ -7650,7 +7689,7 @@ input {
 							.text-1 {
 								font-size: 16px;
 								line-height: 24px;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								margin-bottom: 12px;
 							}
 							dl {
@@ -7694,7 +7733,7 @@ input {
 			.text-1 {
 				font-size: 16px;
 				font-weight: 500;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				padding: 19px 25px;
 			}
 			.list-protocol {
@@ -7719,7 +7758,7 @@ input {
 							color: #666;
 							font-size: 16px;
 							line-height: 160%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							> ul.number {
 								padding: 0 0 0 43px;
 							}
@@ -7740,7 +7779,7 @@ input {
 				color: #666;
 				font-size: 16px;
 				line-height: 160%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				padding-left: 18px;
 				margin-top: 1px;
 				&::before {
@@ -7764,14 +7803,14 @@ input {
 		}
 		h5 {
 			font-size: 24px;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			padding: 56px 12px 12px 24px;
 		}
 		.text-2 {
 			color: #666;
 			font-size: 16px;
 			line-height: 160%;
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			padding: 0 12px 0 24px;
 		}
 		.padding-left-1 {
@@ -7780,7 +7819,7 @@ input {
 		.text-3 {
 			font-size: 16px;
 			line-height: 160%; /* 25.6px */
-			letter-spacing:0.4px;
+			letter-spacing: 0.4px;
 			padding: 12px 12px 13px 24px;
 			&.padding-top-20 {
 				padding-top: 23px;
@@ -7811,7 +7850,7 @@ input {
 					font-style: normal;
 					font-weight: 600;
 					line-height: 24px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					padding: 23px 0;
 				}
 				dd {
@@ -7821,7 +7860,7 @@ input {
 					font-style: normal;
 					font-weight: 500;
 					line-height: 24px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					padding: 40px 0;
 				}
 			}
@@ -7843,7 +7882,7 @@ input {
 
 	// 검사의뢰 안내 > 검사의뢰서
 	.request-item {
-		margin-top: 24px;
+		//margin-top: 24px;
 		gap: 40px;
 		.item {
 			width: calc(25% - 30px);
@@ -7855,7 +7894,7 @@ input {
 			}
 			.title {
 				font-size: 20px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				min-height: 48px;
 				margin-bottom: 24px;
 			}
@@ -7944,11 +7983,11 @@ input {
 								}
 							}
 						}
-						
 					}
 				}
 			}
-			.swiper-button-next, .swiper-button-prev {
+			.swiper-button-next,
+			.swiper-button-prev {
 				display: none;
 			}
 		}
@@ -8009,6 +8048,9 @@ input {
 	// 정도관리 > 인증내역
 	.request-item {
 		margin-top: 32px;
+		&.margin-top-1{
+			margin-top:24px;
+		}
 		&.certified {
 			.item {
 				width: calc(50% - 20px);
@@ -8016,7 +8058,7 @@ input {
 				.title {
 					margin-bottom: 24px;
 					font-size: 20px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				.flex {
 					align-items: center;
@@ -8036,12 +8078,12 @@ input {
 					.text-box {
 						.tit {
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							margin-bottom: 12px;
 						}
 						.txt {
 							font-size: 16px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 					}
 				}
@@ -8090,7 +8132,7 @@ input {
 			border-radius: 12px;
 			font-size: 20px;
 			span {
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				padding-left: 30px;
 				&::before {
 					width: 24px;
@@ -8109,7 +8151,7 @@ input {
 				width: 169px;
 				flex-shrink: 0;
 				font-size: 20px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				padding: 0 0 0 24px;
 			}
 			.chk-flex {
@@ -8123,7 +8165,7 @@ input {
 							padding: 12px 24px;
 							max-height: 43px;
 							font-size: 16px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 					}
 				}
@@ -8140,7 +8182,7 @@ input {
 					li {
 						color: var(--Primary-04, #4d4d4d);
 						font-size: 16px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding-right: 20px;
 						.del-btn {
 							width: 16px;
@@ -8160,7 +8202,7 @@ input {
 					order: 1;
 					span {
 						font-size: 20px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding-left: 10px;
 						&::before {
 							width: 24px;
@@ -8200,7 +8242,7 @@ input {
 					font-size: 18px;
 					font-weight: 600;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					text-align: center;
 				}
 			}
@@ -8230,18 +8272,18 @@ input {
 						font-size: 18px;
 						font-weight: 400;
 						line-height: 140%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					.code {
 						text-align: center;
 						font-size: 18px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					.name {
 						text-align: center;
 						padding: 0 40px;
 						font-size: 18px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						margin: 0;
 					}
 					.item-box {
@@ -8256,7 +8298,7 @@ input {
 								width: 100%;
 								text-align: center;
 								font-size: 18px;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 							}
 						}
 					}
@@ -8331,7 +8373,7 @@ input {
 		.tit-flex {
 			.title {
 				font-size: 30px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 		}
 		.top-info {
@@ -8359,7 +8401,7 @@ input {
 						font-size: 18px;
 						font-weight: 500;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 					}
 					.left {
 						max-width: 80px;
@@ -8412,7 +8454,7 @@ input {
 			}
 			.title {
 				font-size: 24px;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 				padding-bottom: 24px;
 			}
 			.item {
@@ -8424,7 +8466,7 @@ input {
 					padding: 24px;
 					font-size: 18px;
 					font-weight: 600;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 				}
 				& + .info-list {
 					margin-top: 60px;
@@ -8437,7 +8479,7 @@ input {
 				p {
 					font-size: 18px;
 					font-weight: 500;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					max-width: 100%;
 				}
 				.left {
@@ -8475,17 +8517,17 @@ input {
 				}
 				.more-btn {
 					font-size: 16px;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					margin-top: 40px;
 				}
 				p {
 					font-size: 18px;
 					line-height: 140%;
-					letter-spacing:0.4px;
+					letter-spacing: 0.4px;
 					max-width: 100%;
 					&.left-tit {
 						font-size: 18px;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding: 23.5px 40px;
 						border-bottom: 1px solid #d5d5d5;
 					}
@@ -8509,7 +8551,7 @@ input {
 						&.acc-text {
 							text-align: left;
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 					}
 				}
@@ -8556,7 +8598,7 @@ input {
 						align-items: center;
 						p {
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							text-align: center;
 							padding: 0 16px;
 						}
@@ -8565,7 +8607,7 @@ input {
 							width: 32.5%;
 							color: #666;
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							margin: 0;
 							padding: 0 16px 0 0;
 							min-height: 56px;
@@ -8622,13 +8664,13 @@ input {
 							font-size: 18px;
 							font-weight: 400;
 							line-height: 140%;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							width: 7.86%;
 						}
 						.num,
 						.name {
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 						.num {
 							line-height: 140%;
@@ -8653,7 +8695,7 @@ input {
 						.date {
 							width: 17.15%;
 							font-size: 18px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							margin-bottom: 0;
 						}
 						.btn-wrap {
@@ -8695,7 +8737,7 @@ input {
 				font-size: 12px;
 				font-weight: 500;
 				line-height: 140%;
-				letter-spacing:0.4px;
+				letter-spacing: 0.4px;
 			}
 
 			img {
@@ -8742,14 +8784,14 @@ input {
 						.label {
 							padding: 5px 12px;
 							font-size: 14px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 						}
 						p {
 							font-size: 16px;
-							letter-spacing:0.4px;
+							letter-spacing: 0.4px;
 							&.tit {
 								font-size: 20px;
-								letter-spacing:0.4px;
+								letter-spacing: 0.4px;
 								margin: 12px 0 16px;
 							}
 						}
@@ -8817,7 +8859,7 @@ input {
 						font-size: 16px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing:0.4px;
+						letter-spacing: 0.4px;
 						padding-left: 24px;
 						position: relative;
 						&::after {

@@ -49,82 +49,156 @@
       </div>
       <!-- //sub-top -->
       <div class="inner-gap-1">
-        <!-- 게시판 상단 정보 -->
-        <div class="list-board-top">
-          <p class="tit-1">캄보디아 소외계층 의료지원을 위한 코미소 메디컬 센터 건립 후원 <span class="icon-new"></span></p>
-          <p class="etc">
-            <span class="text-1">2023.12.12</span>
-            <span class="cnt">999</span>
-          </p>
+        <!-- box-top-search -->
+        <div class="box-top-search type-2">
+          <div class="item-search">
+            <input type="text" id="form-1" class="common-input-2" placeholder="검색어를 입력해주세요">
+            <button class="icon-search"></button>
+          </div>
         </div>
-        <!-- //게시판 상단 정보 -->
-        <!-- 게시판 본문 -->
-        <div class="board-ct">
-          <!-- admin 입력 내용 -->
-          <p class="text-1">삼광의료재단, 캄보디아 코미소메디컬센터와 MOU 체결</p>
-          <p class="text-2">
-            - 최대 69종의 암/질병에 대한 유전자 변이 여부를 확인하여 발병 위험도를 예측
-          </p>
-          <p class="text-2">
-            - 향후 응용 AI 기반한 검사서비스 확대 예정
-          </p>
-          <img src="static/images/@/@board_ct_1.jpg" alt="" class="img-1">
-          <p class="text-3">
-            삼광의료재단(이사장 황태국)과 캄보디아 코미소메디컬센터(센터장 김지훈 신부)가 지난달 25일 코미소메디컬센터에서 업무협약을 체결했다고 밝혔다.<br><br>
-
-            이번 협약은 삼광의료재단과 코미소메디컬센터의 캄보디아 현지 의료소외계층의 의료지원과 건강증진을 위해 상호 긴밀한 업무 협력이 필요함을 깊이 인식하고, 상호 협력 사항에 대해 규정하는 것을
-            목적으로 추진됐다.<br>
-            삼광의료재단과 코미소메디컬센터는 △현지 의료소외계층 대상 진료소 활동 지속 후원 및 교류 △양 기관 목적에 부합하는 공익사업 공동 추진 △정보의 공유 및 양 기관 보유 자원 상호이용 지원 △기타
-            상호 협의에 따른 사항으로 상호 발전적 관계를 지속해 나갈 예정이다.<br><br>
-
-            황태국 삼광의료재단 이사장은 “삼광의료재단과 코미소메디컬센터가 의료지원·건강증진을 위한 업무협약을 체결하게 되어 기쁘게 생각한다”며 “업무 협약을 기반으로 앞으로도 후원및 현지의료봉사 등 다양한
-            방식을 통해 지속적으로 진료소 활동을 지원하고 캄보디아 사회의 의료소외계층에게 많은 혜택이 전파될 수 있도록 공헌하는데 노력하겠다”라고 말했다.<br>
-            한편 코미소메디컬센터(KOMISO Clinic)는 국제 봉사 및 선교를 목적으로 하는 한국외방선교회(KOREAN MISSIONARY SOCIETY)가 운영하는 무료 진료소로 캄보디아 현지의
-            열악한 의료 사정 속에서 가난한 사람들을 위한 무료 진료를 제공해 왔다. 특히 올해 초 프놈펜 외곽으로 신축 확장이전을 완료하고 각종 의료시설 및 숙박시설 등을 대규모로 확충하였으며,
-            삼광의료재단이 제반 비용을 후원했다.
-          </p>
-          <!-- //admin 입력 내용 -->
-        </div>
-        <!-- //게시판 본문 -->
-        <!-- 첨부 파일 영역 -->
-        <div class="download-file">
+        <!-- //box-top-search -->
+        <!-- smlNews-list -->
+        <div class="smlNews-list">
           <ul>
-            <li><button><span>38 52 일부 검사항목의 검사정보 변경 안내.pdf</span></button></li>
-            <li><button><span>첨부파일</span></button></li>
-            <li><button><span>첨부파일</span></button></li>
-            <li><button><span>첨부파일</span></button></li>
-            <li><button><span>첨부파일</span></button></li>
-          </ul>
-        </div>
-        <!-- //첨부 파일 영역 -->
-        <!-- 게시판 이전글 다음글 -->
-        <div class="border-prev-next">
-          <ul>
-            <li>
+            <!-- 신규 게시글일 시 li에 "new" 클래스 추가 -->
+            <li class="new">
               <a href="#none">
-                <span class="btn prev">이전글</span>
-                <span class="gap">
-                  <span class="text">우수 대학생 교육기부단체 국인 활동 후원 및 글로벌 멘토링 코로나 19검사 지원</span>
-                </span>
-                <span class="day">2023. 10. 27</span>
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/sml_specialty_1.png">
+                  </span>
+                </div>
+                <span class="icon-new"></span>
+                <div class="text-box">
+                  <p class="tit">경북대에 발전기금 3억 기부</p>
+                  <p class="date">2023.11.15</p>
+                </div>
               </a>
             </li>
             <li class="new">
               <a href="#none">
-                <span class="btn next">다음글</span>
-                <span class="gap">
-                  <span class="text">우수 대학생 교육기부단체 국인 활동 후원 및 글로벌 멘토링 코로나 19검사 지원</span>
-                  <span class="icon-new"></span>
-                </span>
-                <span class="day">2023. 10. 27</span>
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/sml_specialty_2.png">
+                  </span>
+                </div>
+                <span class="icon-new"></span>
+                <div class="text-box">
+                  <p class="tit">대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회</p>
+                  <p class="date">2023.11.15</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/sml_specialty_3.png">
+                  </span>
+                </div>
+                <span class="icon-new"></span>
+                <div class="text-box">
+                  <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                  <p class="date">2023.11.15</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/kv.jpg">
+                  </span>
+                </div>
+                <span class="icon-new"></span>
+                <div class="text-box">
+                  <p class="tit">2023, 직선제 대한 산부인과 개원의사회 제 16회</p>
+                  <p class="date">2023.11.15</p>
+                </div>
+              </a>
+            </li>
+            <li class="new">
+              <a href="#none">
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/sml_specialty_1.png">
+                  </span>
+                </div>
+                <span class="icon-new"></span>
+                <div class="text-box">
+                  <p class="tit">경북대에 발전기금 3억 기부</p>
+                  <p class="date">2023.11.15</p>
+                </div>
+              </a>
+            </li>
+            <li class="new">
+              <a href="#none">
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/sml_specialty_2.png">
+                  </span>
+                </div>
+                <span class="icon-new"></span>
+                <div class="text-box">
+                  <p class="tit">대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회</p>
+                  <p class="date">2023.11.15</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/sml_specialty_3.png">
+                  </span>
+                </div>
+                <span class="icon-new"></span>
+                <div class="text-box">
+                  <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                  <p class="date">2023.11.15</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <div class="img-holder">
+                  <span>
+                    <img src="static/images/@/kv.jpg">
+                  </span>
+                </div>
+                <span class="icon-new"></span>
+                <div class="text-box">
+                  <p class="tit">2023, 직선제 대한 산부인과 개원의사회 제 16회</p>
+                  <p class="date">2023.11.15</p>
+                </div>
               </a>
             </li>
           </ul>
         </div>
-        <!-- //게시판 이전글 다음글 -->
-        <div class="common-btn-center">
-          <a href="#none" class="common-btnType-1">목록</a>
+        <!-- //smlNews-list -->
+        <!-- common-paging -->
+        <div class="common-paging">
+          <div class="mobile-paging">
+            <button type="button" class="more-btn">더보기</button>
+          </div>
+          <ul>
+            <li><a href="#none" class="btn-first" title="첫 페이지 이동"></a></li>
+            <li><a href="#none" class="btn-prev" title="이전 페이지 이동"></a></li>
+            <li><a href="#none" class="is-active">1</a></li>
+            <li><a href="#none">2</a></li>
+            <li><a href="#none">3</a></li>
+            <li><a href="#none">4</a></li>
+            <li><a href="#none">5</a></li>
+            <li><a href="#none">6</a></li>
+            <li><a href="#none">7</a></li>
+            <li><a href="#none">8</a></li>
+            <li><a href="#none">9</a></li>
+            <li><a href="#none">10</a></li>
+            <li><a href="#none" class="btn-next" title="다음 페이지 이동"></a></li>
+            <li><a href="#none" class="btn-last" title="마지막 페이지 이동"></a></li>
+          </ul>
         </div>
+        <!-- //common-paging -->
       </div>
     </div>
   </div>
