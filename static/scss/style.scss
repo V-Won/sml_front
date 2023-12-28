@@ -4176,43 +4176,6 @@ input {
 	}
 }
 
-// 시스템 오류
-.error-wrap {
-	&.sub-top {
-		.inner-gap-1 {
-			padding-bottom: 169px;
-			display: block;
-			&::after {
-				content: "";
-				width: 160px;
-				height: 168px;
-				background: url(../images/@/sml_bg_logo.png) no-repeat;
-				background-size: contain;
-				background-position: center;
-				position: absolute;
-				right: 20px;
-				bottom: 0;
-			}
-			.txt-1 {
-				color: #4d4d4d;
-				font-size: 40px;
-				font-weight: 700;
-				line-height: 120%;
-				letter-spacing: 0.4px;
-				padding-bottom: 20px;
-			}
-			.txt-2 {
-				color: #666;
-				font-size: 14px;
-				font-weight: 500;
-				line-height: 120%;
-				letter-spacing: 0.4px;
-				margin-bottom: 40px;
-			}
-		}
-	}
-}
-
 // 약관 > 개인정보처리방침
 .box-protocol {
 	.top-info {
@@ -7291,42 +7254,6 @@ input {
 						line-height: 140%;
 						letter-spacing: 0.4px;
 					}
-				}
-			}
-		}
-	}
-
-	// 시스템 오류
-	.error-wrap {
-		&.sub-top {
-			.inner-gap-1 {
-				padding-top: 260px;
-				padding-bottom: 45px;
-				&::after {
-					content: "";
-					width: 299px;
-					height: 315px;
-					background: url(../images/@/sml_bg_logo.png) no-repeat;
-					background-size: contain;
-					background-position: center;
-					position: absolute;
-					right: 100px;
-					bottom: 34px;
-					z-index: -1;
-				}
-				.txt-1 {
-					font-size: 80px;
-					padding-bottom: 24px;
-				}
-				.txt-2 {
-					font-size: 18px;
-					line-height: 140%;
-					letter-spacing: 0.4px;
-					margin-bottom: 60px;
-					margin-left: 6px;
-				}
-				.common-moveBtn {
-					margin-left: 6px;
 				}
 			}
 		}
