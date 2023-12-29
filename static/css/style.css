@@ -1538,7 +1538,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #D5D5D5;
+  border-top: 1px solid #d5d5d5;
   background: rgba(0, 0, 0, 0.04);
 }
 .box-layer.common .inner-layer .gap .box .bottom-box .box-check .checkitem label span {
@@ -1560,7 +1560,7 @@ input {
 }
 .box-layer.common .inner-layer .gap .box .bottom-box [data-event=layerClose] {
   white-space: nowrap;
-  color: #4D4D4D;
+  color: #4d4d4d;
   text-align: center;
   font-size: 12px;
   font-weight: 500;
@@ -2660,6 +2660,7 @@ input {
 
 .hoverImg .img-holder img {
   transition: 0.5s;
+  border-radius: 6px;
 }
 .hoverImg:hover .img-holder img {
   transform: translate(-50%, -50%) scale(1.2);
@@ -3010,7 +3011,7 @@ input {
 .main-academic {
   width: 100%;
   position: relative;
-  padding-top: 60px;
+  padding-top: 58px;
 }
 .main-academic .academic-sort {
   width: 100%;
@@ -3036,7 +3037,7 @@ input {
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.14px;
 }
 .main-academic .academic-sort .sort-btn-swiper li.is-active button {
   background: #006477;
@@ -3063,6 +3064,7 @@ input {
 }
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span {
   border-radius: 2px;
+  padding-top: 86%;
 }
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .img-holder span::after {
   content: "";
@@ -3082,12 +3084,12 @@ input {
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .tag {
   width: -moz-fit-content;
   width: fit-content;
-  padding: 3px 10px;
+  padding: 3px 8px;
   border-radius: 999px;
   border: 1px solid #d5d5d5;
   color: #4d4d4d;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.4px;
   display: block;
@@ -3101,24 +3103,24 @@ input {
   -webkit-line-clamp: 2;
   color: #4d4d4d;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 120%;
-  letter-spacing: 0.4px;
-  margin-bottom: 12px;
+  letter-spacing: 0.28px;
+  margin-bottom: 13px;
 }
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .txt-2 {
   color: #999;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 140%;
-  letter-spacing: 0.4px;
+  letter-spacing: -0.24px;
 }
 
 .gray-bg {
   width: 100%;
   position: relative;
-  padding: 63px 0 60px;
-  background: #fafafa;
+  padding: 63px 0 30px;
+  background: #f5f5f5;
 }
 
 .main-news {
@@ -3225,15 +3227,18 @@ input {
 }
 .main-official .official-swiper .swiper-slide {
   width: 100%;
+  padding-bottom: 30px;
 }
 .main-official .official-swiper .swiper-slide > a {
   width: 100%;
   position: relative;
   display: block;
   padding: 24px;
-  border-radius: 2px;
   overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
   background: #fff;
+  transition: all 0.4s;
 }
 .main-official .official-swiper .swiper-slide .txt-1 {
   text-overflow: ellipsis;
@@ -3265,7 +3270,7 @@ input {
   font-size: 12px;
   font-weight: 400;
   line-height: 120%;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.24px;
 }
 .main-official .official-swiper .swiper-slide.swiper-slide-active > a {
   border-radius: 6px;

@@ -287,11 +287,11 @@
           <div class="academic-sort">
             <div class="sort-btn-swiper">
               <ul class="swiper-wrapper">
-                <li class="swiper-slide is-active"><button class="btn">전체</button></li>
-                <li class="swiper-slide"><button class="btn">Smart New Test</button></li>
-                <li class="swiper-slide"><button class="btn">SML 진단 길라잡이</button></li>
-                <li class="swiper-slide"><button class="btn">SML Healthcare</button></li>
-                <li class="swiper-slide"><button class="btn">SML 리플렛</button></li>
+                <li class="swiper-slide is-active" data-index="0"><button class="btn">전체</button></li>
+                <li class="swiper-slide" data-index="1"><button class="btn">Smart New Test</button></li>
+                <li class="swiper-slide" data-index="2"><button class="btn">SML 진단 길라잡이</button></li>
+                <li class="swiper-slide" data-index="3"><button class="btn">SML Healthcare</button></li>
+                <li class="swiper-slide" data-index="4"><button class="btn">SML 리플렛</button></li>
               </ul>
             </div>
             <div class="sort-wrap">
@@ -307,7 +307,7 @@
                       <div class="text-box">
                         <span class="tag">Smart New Test</span>
                         <p class="txt-1">유전성 유방암-난소암 검사, BRCA 1/2 gene mutation, 살모넬라 식중독(Salmonella Food Poisoning)</p>
-                        <p class="txt-2">2023. 10. 16</p>
+                        <p class="txt-2">2023.10.16</p>
                       </div>
                     </a>
                   </div>
@@ -321,7 +321,7 @@
                       <div class="text-box">
                         <span class="tag">SML 진단 길라잡이</span>
                         <p class="txt-1">위 건강 바이오마커 패널검사 GastroPanel</p>
-                        <p class="txt-2">2023. 04. 15</p>
+                        <p class="txt-2">2023.04.15</p>
                       </div>
                     </a>
                   </div>
@@ -335,7 +335,7 @@
                       <div class="text-box">
                         <span class="tag">SML Healthcare</span>
                         <p class="txt-1">살모넬라 식중독(Salmonella Food Poisoning)</p>
-                        <p class="txt-2">2023. 07. 17</p>
+                        <p class="txt-2">2023.07.17</p>
                       </div>
                     </a>
                   </div>
@@ -670,6 +670,12 @@
           spaceBetween: 12,
         },
       },
+    });
+
+    document.querySelectorAll('.sort-btn-swiper > ul > li').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        sortBtnSwiper.slideTo(e.currentTarget.getAttribute('data-index'));
+      });
     });
 
     var academicSwiper = new Swiper(".academic-swiper", {
