@@ -2470,7 +2470,7 @@ input {
 		top: 48px;
 		z-index: 2;
 		background: #fff;
-		border-radius: 0 0 12px 12px;
+		border-radius: 0 0 8px 8px;
 		border: 1px solid #d5d5d5;
 		overflow: hidden;
 		li {
@@ -2494,7 +2494,6 @@ input {
 	}
 	&.is-active {
 		.button {
-			border-radius: 12px 12px 0 0;
 			border-bottom-color: transparent;
 			&::after {
 				transform: translateY(-50%) rotate(180deg);
@@ -6290,6 +6289,7 @@ input {
 		}
 		.list {
 			top: 63px;
+			border-radius: 0 0 12px 12px;
 			li {
 				button {
 					padding: 22.5px 24px;
@@ -6301,6 +6301,11 @@ input {
 						color: #4d4d4d;
 					}
 				}
+			}
+		}
+		&.is-active {
+			.button {
+				border-radius: 12px 12px 0 0;
 			}
 		}
 		& + .common-selectbox-2 {
@@ -6598,7 +6603,7 @@ input {
 								width: 20px;
 								height: 20px;
 								background-size: contain;
-								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6.175 6.9126L10 10.7293L13.825 6.9126L15 8.0876L10 13.0876L5 8.0876L6.175 6.9126Z' fill='%234D4D4D'/%3E%3C/svg%3E");
+								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6.175 6.9126L10 10.7293L13.825 6.9126L15 8.0876L10 13.0876L5 8.0876L6.175 6.9126Z' fill='white'/%3E%3C/svg%3E");
 							}
 						}
 						> ul {
@@ -6644,6 +6649,7 @@ input {
 		}
 		.menu-list {
 			background: #f5f5f5;
+			border-top: 1px solid #d5d5d5;
 			box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.05);
 			position: relative;
 			padding: 0;
