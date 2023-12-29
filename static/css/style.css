@@ -5173,6 +5173,9 @@ input {
     font-size: 20px;
     min-width: 220px;
   }
+  .common-btnType-3 {
+    padding: 7px 16px;
+  }
   .common-moveBtn {
     height: 64px;
     padding: 20px 24px;
@@ -7940,6 +7943,10 @@ input {
     flex-wrap: wrap;
     display: flex;
     gap: 40px;
+    margin-bottom: 40px;
+  }
+  .box-smart-view .box-option-list .gap > ul:last-child {
+    margin-bottom: 0;
   }
   .box-smart-view .box-option-list .gap > ul > li {
     display: flex;
@@ -7948,13 +7955,13 @@ input {
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-    max-width: 424px;
-    width: 100%;
+    flex-grow: 1;
     height: 222px;
     margin-bottom: 0;
     position: relative;
     background: #f5f5f5;
     border-radius: 24px;
+    transition: all 0.1s;
   }
   .box-smart-view .box-option-list .gap > ul > li:after {
     content: "";
@@ -8001,7 +8008,8 @@ input {
     padding-bottom: 40px;
   }
   .box-smart-view .box-option-list .gap > ul > li:hover .box-show .list-btn {
-    display: block;
+    display: flex;
+    gap: 14px;
   }
   .box-smart-view .box-option-list .gap > ul > li:hover .box-show .list-btn .common-btnType-3 {
     background: transparent;
@@ -8015,15 +8023,6 @@ input {
     background-size: contain;
     width: 18px;
     height: 18px;
-  }
-  .box-smart-view .box-option-list .gap > ul > li:hover:nth-child(1) {
-    max-width: 656px;
-  }
-  .box-smart-view .box-option-list .gap > ul > li:hover:nth-child(1) + li {
-    max-width: 308px;
-  }
-  .box-smart-view .box-option-list .gap > ul > li:hover:nth-child(1) + li + li {
-    max-width: 308px;
   }
   .box-smart-view .noti-1 {
     display: block;

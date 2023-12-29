@@ -100,8 +100,10 @@
                       </div>
                     </div>
                   </li>
+                </ul>
+                <ul>
                   <li>
-                    <div class="box-show"> 
+                    <div class="box-show">
                       <p class="txt-1">BRCA1 gene mutation</p>
                       <p class="txt-2">유방암과 난소암 유발 가능성을 높이는 BRCA1 유전자 변이 확인</p>
                       <div class="list-btn">
@@ -191,6 +193,38 @@
       bg: "white"
     })
     selectBox.initialize();
+
+    // box-smart-view item mouseover
+    document.querySelectorAll('.pc .box-smart-view .box-option-list .gap > ul > li').forEach((e) => {
+      e.addEventListener('mouseover', (item) => {
+        // width remove
+        e.parentNode.querySelectorAll('li').forEach((e) => {
+          e.style.maxWidth = '308px';
+        });
+
+        // width add
+        e.style.maxWidth = '656px';
+      })
+    });
+
+    // box-smart-view item mouseout
+    document.querySelectorAll('.pc .box-smart-view .box-option-list .gap > ul > li').forEach((e) => {
+      e.addEventListener('mouseout', (item) => {
+        // width remove
+        document.querySelectorAll('.pc .box-smart-view .box-option-list .gap > ul > li').forEach((e) => {
+          e.style.maxWidth = '';
+        });
+      })
+    });
+
+    // mobile max-width remove
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        document.querySelectorAll('.mo .box-smart-view .box-option-list .gap > ul > li').forEach((e) => {
+          e.style.maxWidth = '';
+        });
+      }
+    })
   </script>
 
 </body>

@@ -5610,6 +5610,10 @@ input {
 		// min-width: 181px;
 	}
 
+	.common-btnType-3{
+		padding:7px 16px;
+	}
+
 	.common-moveBtn {
 		height: 64px;
 		padding: 20px 24px;
@@ -8849,6 +8853,10 @@ input {
 					flex-wrap: wrap;
 					display: flex;
 					gap: 40px;
+					margin-bottom:40px;
+					&:last-child{
+						margin-bottom:0;
+					}
 					> li {
 						display: flex;
 						padding: 40px;
@@ -8856,13 +8864,15 @@ input {
 						justify-content: space-between;
 						align-items: flex-start;
 						align-self: stretch;
-						max-width: 424px;
-						width: 100%;
+						//max-width: 424px;
+						//width: 100%;
+						flex-grow: 1;
 						height: 222px;
 						margin-bottom: 0;
 						position: relative;
 						background: #f5f5f5;
 						border-radius: 24px;
+						transition: all .1s;
 						&:after {
 							content: "";
 							display: block;
@@ -8900,6 +8910,7 @@ input {
 						&:hover {
 							cursor: pointer;
 							background: #999;
+							//max-width: 656px;
 							&:after {
 								display: none;
 							}
@@ -8914,7 +8925,8 @@ input {
 									padding-bottom: 40px;
 								}
 								.list-btn {
-									display: block;
+									display: flex;
+									gap:14px;
 									.common-btnType-3 {
 										background: transparent;
 										border: 1px solid #d5d5d5;
@@ -8930,15 +8942,22 @@ input {
 									}
 								}
 							}
-							&:nth-child(1){
-								max-width: 656px;
-								& + li {
-									max-width: 308px;
-								}
-								& + li + li {
-									max-width: 308px;
-								}
-							}
+							// &:nth-child(1){
+							// 	& + li {
+							// 		max-width: 308px;
+							// 	}
+							// 	& + li + li {
+							// 		max-width: 308px;
+							// 	}
+							// }
+							// &:nth-child(2){
+							// 	& + li {
+							// 		max-width: 308px;
+							// 	}
+							// 	& + li + li {
+							// 		max-width: 308px;
+							// 	}
+							// }
 						}
 					}
 				}
