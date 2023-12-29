@@ -1703,6 +1703,95 @@ input {
 	cursor: default;
 }
 
+// 공통 팝업
+.pop-btn {
+	flex-direction: column;
+	.form-item {
+		& + .form-item {
+			margin-top: 12px;
+		}
+	}
+}
+.box-layer {
+	&.common {
+		.inner-layer {
+			padding: 0 20px;
+			margin: 0;
+			background: transparent;
+			.gap {
+				width: 100%;
+				height: auto;
+				.box {
+					width: 100%;
+					position: relative;
+					background: #fff;
+					border-radius: 12px;
+					overflow: hidden;
+					.inner-box {
+						width: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						position: relative;
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+					.bottom-box {
+						width: 100%;
+						position: relative;
+						padding: 0 20px 0 32px;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						border-top: 1px solid #D5D5D5;
+						background: rgba(0, 0, 0, 0.04);
+						.box-check {
+							.checkitem {
+								label {
+									span {
+										margin: 0;
+										font-size: 12px;
+										letter-spacing: 0.24px;
+										min-width: fit-content;
+										cursor: pointer;
+										&::after {
+											width: 20px;
+											height: 20px;
+											background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.519531' width='19' height='19' rx='1.5' fill='white' stroke='%23BBBBBB'/%3E%3C/svg%3E%0A");
+											transform: translate(0, -50%);
+										}
+									}
+									input:checked {
+										& + span {
+											&::after {
+												background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='2' fill='%23006477'/%3E%3Cpath d='M4 10L8 14L16 6' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+											}
+										}
+									}
+								}
+							}
+						}
+						[data-event=layerClose] {
+							white-space: nowrap;
+							color: #4D4D4D;
+							text-align: center;
+							font-size: 12px;
+							font-weight: 500;
+							line-height: 120%;
+							letter-spacing: 0.24px;
+							padding: 22.5px 12px;
+							background: transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 // 공통 sub top
 .sub-top {
 	width: 100%;
@@ -5722,6 +5811,50 @@ input {
 			background-size: 100%;
 			right: 15px;
 			transform: translate(0, -57%) rotate(0deg);
+		}
+	}
+
+	// 공통 팝업
+	.box-layer {
+		&.common {
+			.inner-layer {
+				.gap {
+					.box {
+						border-radius: 24px;
+						.bottom-box {
+							padding: 0 28px 0 40px;
+							.box-check {
+								.checkitem {
+									label {
+										span {
+											font-size: 16px;
+											letter-spacing: 0.32px;
+											padding: 10px 30px 10px 40px;
+											&::after {
+												width: 24px;
+												height: 24px;
+												background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.519531' width='23' height='23' rx='1.5' fill='white' stroke='%23BBBBBB'/%3E%3C/svg%3E%0A");
+											}
+										}
+										input:checked {
+											& + span {
+												&::after {
+													background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='2' fill='%23006477'/%3E%3Cpath d='M6 12L10 16L18 8' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+												}
+											}
+										}
+									}
+								}
+							}
+							[data-event=layerClose] {
+								font-size: 16px;
+								letter-spacing: 0.32px;
+								padding: 26px 12px;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
