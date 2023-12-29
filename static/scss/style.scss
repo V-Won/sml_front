@@ -3775,6 +3775,7 @@ input {
 			border-bottom: 1px solid #d5d5d5;
 			&.is-active {
 				> button {
+					background: #F5F7FA;
 					&::after {
 						transform: rotate(-180deg);
 					}
@@ -3830,11 +3831,12 @@ input {
 				> li {
 					display: none;
 					background: #f5f7fa;
-					border-top: 1px solid #d5d5d5;
+					padding-bottom: 20px;
 					.download-file {
 						background: #f5f7fa;
 						padding-top: 19px;
 						margin-top: 0;
+						padding-bottom: 0;
 					}
 					> button {
 						display: flex;
@@ -7614,8 +7616,21 @@ input {
 				align-items: center;
 				flex-direction: row;
 				flex-wrap: wrap;
+				&:hover {
+					> button {
+						background: #F5F7FA;
+					}
+				}
 				&.is-active {
 					> button {
+						height: auto;
+						align-items: flex-start;
+						.text-1 {
+							-webkit-line-clamp: initial;
+						}
+						.tit {
+							// padding-top: 5px;
+						}
 						&::after {
 						}
 					}
@@ -7638,17 +7653,18 @@ input {
 					top: 29px;
 					left: 0;
 					width: 103px;
+					z-index: 1;
 				}
 				> button {
 					flex-direction: row;
-					align-items: center;
-					padding: 14px 135px 14px 123px;
-					height: 82px;
+					align-items: flex-start;
+					padding: 29px 135px 29px 123px;
+					height: auto;
 					&::after {
 						width: 36px;
 						height: 36px;
 						background-size: contain;
-						top: 23px;
+						top: 22px;
 						right: 40px;
 					}
 					.tit {
@@ -7665,7 +7681,7 @@ input {
 						letter-spacing: 0.4px;
 						padding-left: 20px;
 						position: relative;
-						top: -3px;
+						padding-top: 0;
 					}
 				}
 				> ul {
@@ -7673,7 +7689,7 @@ input {
 					flex-basis: 100% !important;
 					> li {
 						position: relative;
-						padding: 12px 0 12px 188px;
+						padding: 0 0 40px 188px;
 						.download-file {
 							padding-left: 171px;
 							padding-top: 23px;
@@ -7704,7 +7720,7 @@ input {
 							line-height: 140%;
 							letter-spacing: 0.4px;
 							padding-left: 172px;
-							padding-top: 10px;
+							padding-top: 0;
 							padding-right: 135px;
 						}
 					}

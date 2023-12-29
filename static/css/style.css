@@ -3424,6 +3424,9 @@ input {
 .box-qna > ul > li {
   border-bottom: 1px solid #d5d5d5;
 }
+.box-qna > ul > li.is-active > button {
+  background: #F5F7FA;
+}
 .box-qna > ul > li.is-active > button::after {
   transform: rotate(-180deg);
 }
@@ -3478,12 +3481,13 @@ input {
 .box-qna > ul > li > ul > li {
   display: none;
   background: #f5f7fa;
-  border-top: 1px solid #d5d5d5;
+  padding-bottom: 20px;
 }
 .box-qna > ul > li > ul > li .download-file {
   background: #f5f7fa;
   padding-top: 19px;
   margin-top: 0;
+  padding-bottom: 0;
 }
 .box-qna > ul > li > ul > li > button {
   display: flex;
@@ -6843,6 +6847,16 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .box-qna > ul > li:hover > button {
+    background: #F5F7FA;
+  }
+  .box-qna > ul > li.is-active > button {
+    height: auto;
+    align-items: flex-start;
+  }
+  .box-qna > ul > li.is-active > button .text-1 {
+    -webkit-line-clamp: initial;
+  }
   .box-qna > ul > li .cnt {
     color: #999;
     font-size: 18px;
@@ -6854,18 +6868,19 @@ input {
     top: 29px;
     left: 0;
     width: 103px;
+    z-index: 1;
   }
   .box-qna > ul > li > button {
     flex-direction: row;
-    align-items: center;
-    padding: 14px 135px 14px 123px;
-    height: 82px;
+    align-items: flex-start;
+    padding: 29px 135px 29px 123px;
+    height: auto;
   }
   .box-qna > ul > li > button::after {
     width: 36px;
     height: 36px;
     background-size: contain;
-    top: 23px;
+    top: 22px;
     right: 40px;
   }
   .box-qna > ul > li > button .tit {
@@ -6882,7 +6897,7 @@ input {
     letter-spacing: 0.4px;
     padding-left: 20px;
     position: relative;
-    top: -3px;
+    padding-top: 0;
   }
   .box-qna > ul > li > ul {
     display: block;
@@ -6890,7 +6905,7 @@ input {
   }
   .box-qna > ul > li > ul > li {
     position: relative;
-    padding: 12px 0 12px 188px;
+    padding: 0 0 40px 188px;
   }
   .box-qna > ul > li > ul > li .download-file {
     padding-left: 171px;
@@ -6922,7 +6937,7 @@ input {
     line-height: 140%;
     letter-spacing: 0.4px;
     padding-left: 172px;
-    padding-top: 10px;
+    padding-top: 0;
     padding-right: 135px;
   }
   .box-top-search.type-2 {
