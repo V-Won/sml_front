@@ -219,7 +219,7 @@
 
     // mobile max-width remove
     window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth <= 1024) {
         document.querySelectorAll('.mo .box-smart-view .box-option-list .gap > ul > li').forEach((e) => {
           e.style.maxWidth = '';
         });
