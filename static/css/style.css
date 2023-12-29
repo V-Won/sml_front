@@ -2197,6 +2197,7 @@ input {
 }
 .common-selectbox-2.is-active .button {
   border-bottom-color: transparent;
+  border-radius: 8px 8px 0 0;
 }
 .common-selectbox-2.is-active .button::after {
   transform: translateY(-50%) rotate(180deg);
@@ -5162,6 +5163,9 @@ input {
 .title-search-1.padding-type-1 {
   padding: 60px 0 0 0;
 }
+.title-search-1 + .table-layout {
+  margin-top: 20px;
+}
 
 .box-top-search.type-3 input {
   height: 44px;
@@ -6650,18 +6654,15 @@ input {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.4px;
-    transform: 0.5s;
   }
   .main-official .official-swiper .swiper-slide .txt-2 {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.4px;
-    transform: 0.5s;
   }
   .main-official .official-swiper .swiper-slide .txt-3 {
     margin-top: 11px;
     line-height: 160%;
-    transform: 0.5s;
   }
   .main-official .official-swiper .swiper-slide.swiper-slide-active > a {
     background: #fff;
@@ -8343,6 +8344,9 @@ input {
     font-size: 20px;
   }
   .title-search-1 + .request-item {
+    margin-top: 24px;
+  }
+  .title-search-1 + .table-layout {
     margin-top: 24px;
   }
   .box-top-search.type-3 input {
