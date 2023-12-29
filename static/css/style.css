@@ -7249,6 +7249,7 @@ input {
     border-radius: 8px;
     background: #fff;
     border: 1px solid var(--gray-03-line, #d5d5d5);
+    cursor: pointer;
   }
   .request-swiper .swiper2-wrap .mySwiper2 .swiper-slide .img-holder {
     width: 100%;
@@ -7266,6 +7267,7 @@ input {
     top: 50%;
     transform: translateY(-50%);
     margin-top: 0;
+    outline: none;
   }
   .request-swiper .swiper2-wrap .swiper-button-next::after,
   .request-swiper .swiper2-wrap .swiper-button-prev::after {
@@ -8054,17 +8056,20 @@ input {
   .box-top-search .item-search {
     margin-top: 4px;
   }
+  .tabOnly .title-search-1 {
+    display: none;
+  }
   .tabOnly .request-item {
-    margin-top: 60px;
+    margin-top: 56px;
   }
   .tabOnly .table-layout {
-    margin-top: 60px;
+    margin-top: 56px;
   }
   .tabOnly .smlNews-list ul {
-    margin-top: 60px;
+    margin-top: 56px;
   }
   .tabOnly .box-qna {
-    margin-top: 60px;
+    margin-top: 56px;
   }
 }
 /* //1024 이상 */
