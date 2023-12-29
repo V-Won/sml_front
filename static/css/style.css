@@ -349,9 +349,9 @@ input {
 .box-header .menu-list {
   opacity: 0;
   pointer-events: none;
-  background: linear-gradient(0deg, #3a8593 0%, #3a8593 100%), #28a688;
+  background: linear-gradient(0deg, #148399 0%, #148399 100%), linear-gradient(0deg, #3a8593 0%, #3a8593 100%), #28a688;
   display: flex;
-  padding: 0 10px 0 28px;
+  padding: 0 10px 0 20px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -371,7 +371,18 @@ input {
   flex-wrap: wrap;
   align-content: space-between;
   position: static;
-  padding-right: 18px;
+  padding-right: 10px;
+}
+.box-header .menu-list .inner-gap-1::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.box-header .menu-list .inner-gap-1::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(0deg, #006477 0%, #006477 100%), linear-gradient(0deg, #006477 0%, #006477 100%), rgba(0, 0, 0, 0.1);
+}
+.box-header .menu-list .inner-gap-1::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 .box-header .menu-list .inner-gap-1 > ul > li {
   border-bottom: 1px solid rgba(217, 217, 217, 0.2);
@@ -400,6 +411,9 @@ input {
 .box-header .menu-list .inner-gap-1 > ul > li.mo-order > ul > li:nth-child(7) {
   order: 7;
 }
+.box-header .menu-list .inner-gap-1 > ul > li.is-active {
+  border-bottom: 0;
+}
 .box-header .menu-list .inner-gap-1 > ul > li.is-active > h3::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M3 11L21 11V13L3 13L3 11Z' fill='white'/%3E%3C/svg%3E");
 }
@@ -407,6 +421,9 @@ input {
   display: flex;
   opacity: 1;
   pointer-events: all;
+  padding: 34px 20px 0px 20px;
+  border-radius: 12px;
+  background: rgba(217, 217, 217, 0.2);
 }
 .box-header .menu-list .inner-gap-1 > ul > li:last-child {
   border-bottom: 0;
@@ -424,6 +441,7 @@ input {
   letter-spacing: 0.4px;
   display: block;
   width: 100%;
+  padding: 0 0 0 8px;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > h3:hover {
   cursor: pointer;
@@ -436,8 +454,8 @@ input {
   position: absolute;
   width: 24px;
   height: 24px;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 8px;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul {
   display: flex;
@@ -453,7 +471,7 @@ input {
   align-items: flex-start;
   align-self: stretch;
   flex-direction: column;
-  width: 38vw;
+  width: 36vw;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > a {
   color: #fff;
@@ -463,7 +481,7 @@ input {
   font-weight: 600;
   line-height: 21.6px;
   letter-spacing: 0.4px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > ul > li > a {
   color: #fff;
@@ -474,9 +492,10 @@ input {
   line-height: 16.8px;
   letter-spacing: 0.4px;
   position: relative;
-  padding: 0 0 0 6px;
+  padding: 0 0 0 7px;
   display: block;
   margin: 0 0 19px 0;
+  word-break: auto-phrase;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > ul > li > a::after {
   content: "";
@@ -486,7 +505,7 @@ input {
   border-radius: 999px;
   background: #fff;
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: 0;
 }
 .box-header .menu-list .logo {
@@ -1439,9 +1458,9 @@ input {
   position: absolute;
   top: 50%;
   right: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7.41 8.29492L12 12.8749L16.59 8.29492L18 9.70492L12 15.7049L6 9.70492L7.41 8.29492Z' fill='white'/%3E%3C/svg%3E");
-  width: 24px;
-  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M6.175 7.4126L10 11.2293L13.825 7.4126L15 8.5876L10 13.5876L5 8.5876L6.175 7.4126Z' fill='white'/%3E%3C/svg%3E");
+  width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
   transition: transform 0.4s;
   transform: translate(0, -47%) rotate(0deg);
@@ -1453,12 +1472,13 @@ input {
   top: 100%;
   left: 0;
   right: 0;
-  left: -1px;
-  right: -1px;
-  margin-top: 1px;
-  border: 1px solid #33848e;
-  border-radius: 0 0 12px 12px;
-  background: #2f808a;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  border: 1px solid #8c8c8c;
+  border-radius: 0 0 6px 6px;
+  background: #8c8c8c;
+  overflow: hidden;
 }
 
 .common-selectbox > ul > li button {
@@ -1470,14 +1490,22 @@ input {
   font-weight: 500;
   line-height: 120%;
   background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.28px;
 }
 .common-selectbox > ul > li button:hover {
-  background: #499ba5;
+  background: #666;
+  color: #fff;
+}
+
+.common-selectbox > ul > li:last-child:hover button {
+  border-radius: 0 0 6px 6px;
 }
 
 .common-selectbox.is-active {
   z-index: 10;
   border-radius: 4px 4px 0 0;
+  background: #8c8c8c;
 }
 
 .common-selectbox.is-active > button:after {
@@ -2803,6 +2831,9 @@ input {
 .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .img-holder span {
   padding-top: 93%;
 }
+.main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .img-holder span img {
+  border-radius: 6px;
+}
 .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box {
   width: 100%;
   position: absolute;
@@ -2811,7 +2842,7 @@ input {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 0 22px;
+  padding: 0 18px;
 }
 .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box .txt-1 {
   color: #fff;
@@ -2828,16 +2859,16 @@ input {
   font-size: 24px;
   font-weight: 600;
   line-height: 120%;
-  letter-spacing: 0.4px;
-  margin-bottom: 24px;
+  letter-spacing: 0.48px;
+  margin-bottom: 14px;
 }
 .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box .txt-3 {
   color: #fff;
   text-align: center;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 120%;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.28px;
 }
 
 .main-smlSpecialty {
@@ -2870,7 +2901,6 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.53%, rgba(0, 0, 0, 0.3) 105.2%);
 }
 .main-smlSpecialty .specialty-swiper .swiper-slide .text-box {
   width: 100%;
@@ -2890,11 +2920,12 @@ input {
   color: var(--primary-6-white, #fff);
   text-align: center;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   padding-bottom: 12px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 }
 .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-2 {
   color: #fff;
@@ -2902,10 +2933,8 @@ input {
   font-size: 14px;
   font-weight: 600;
   line-height: 120%;
-  letter-spacing: 0.4px;
-}
-.main-smlSpecialty .specialty-swiper .swiper-slide.swiper-slide-active .img-holder span::after {
-  background: linear-gradient(281deg, rgba(0, 100, 119, 0.2) 7.35%, rgba(230, 252, 84, 0.2) 126.55%), linear-gradient(0deg, rgba(13, 109, 128, 0.6) 0%, rgba(13, 109, 128, 0.6) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.53%, rgba(0, 0, 0, 0.3) 105.2%);
+  letter-spacing: 0.28px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 }
 .main-smlSpecialty .specialty-swiper .swiper-pagination {
   top: auto;
@@ -2934,6 +2963,7 @@ input {
   padding-right: 0;
 }
 .main-inspectionSearch .inner-gap-1 .gap {
+  border-radius: 6px;
   border-radius: 6px;
   background: rgba(77, 77, 77, 0.76);
   padding: 32px 20px;
@@ -3431,7 +3461,7 @@ input {
   border-bottom: 1px solid #d5d5d5;
 }
 .box-qna > ul > li.is-active > button {
-  background: #F5F7FA;
+  background: #f5f7fa;
 }
 .box-qna > ul > li.is-active > button::after {
   transform: rotate(-180deg);
@@ -5748,7 +5778,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(-18px);
+    transform: translateX(-15px);
   }
   .box-header .inner-gap-1 .inner .gnb-menu li a {
     text-align: center;
@@ -5765,7 +5795,7 @@ input {
   }
   .box-header .inner-gap-1 .inner .btn-etc {
     padding-top: 11px;
-    gap: 8px;
+    gap: 12px;
   }
   .box-header .inner-gap-1 .inner .btn-etc .box-lang {
     display: block;
@@ -6282,10 +6312,10 @@ input {
     letter-spacing: 0.4px;
   }
   .main-kv-swiper .swiper-slide {
-    height: 920px;
+    height: 760px;
   }
   .main-kv-swiper .swiper-slide .box-text {
-    transform: translateY(-68px);
+    transform: translateY(-66px);
   }
   .main-kv-swiper .swiper-slide .box-text .text-1 {
     font-size: 24px;
@@ -6294,7 +6324,7 @@ input {
     font-size: 56px;
     font-weight: 100;
     line-height: 120%;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
   }
   .main-kv-swiper .swiper-slide .box-text .text-2 strong {
     font-weight: 600;
@@ -6302,7 +6332,7 @@ input {
     letter-spacing: 0.4px;
   }
   .main-kv-swiper .box-swiperControl {
-    bottom: 323px;
+    bottom: 249px;
   }
   .main-kv-swiper .box-swiperControl .swiper-pagination {
     font-size: 16px;
@@ -6545,8 +6575,8 @@ input {
   .main-inspectionSearch {
     position: relative;
     z-index: 10;
-    max-width: 1600px;
-    margin: -117px auto 0 auto;
+    max-width: 1440px;
+    margin: -140px auto 0 auto;
   }
   .main-inspectionSearch .inner-gap-1 {
     padding-left: 100px;
@@ -6559,8 +6589,8 @@ input {
   }
   .main-inspectionSearch .inner-gap-1 .gap > ul {
     border-radius: 12px;
-    padding-top: 16px;
-    max-width: 1080px;
+    padding-top: 12px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -6578,9 +6608,10 @@ input {
   .main-inspectionSearch .inner-gap-1 .gap > ul > li button.btn {
     border: 0;
     color: #fff;
-    font-size: 18px;
-    line-height: 21.6px;
-    letter-spacing: 0.4px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.52px;
     opacity: 1;
     padding: 0;
     margin: 0 0 21px 0;
@@ -6612,9 +6643,10 @@ input {
     background-color: transparent;
     border: 0;
     color: #fff;
-    font-size: 18px;
-    line-height: 21.6px;
-    letter-spacing: 0.4px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.52px;
   }
   .list-board-top {
     margin-top: -3px;
@@ -6854,7 +6886,7 @@ input {
     flex-wrap: wrap;
   }
   .box-qna > ul > li:hover > button {
-    background: #F5F7FA;
+    background: #f5f7fa;
   }
   .box-qna > ul > li.is-active > button {
     height: auto;
