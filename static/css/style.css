@@ -989,7 +989,7 @@ input {
   margin-top: 8px;
 }
 .box-floating .inner button.btn-quick {
-  background: linear-gradient(0deg, #006477 0%, #006477 100%), linear-gradient(294deg, rgba(74, 119, 0, 0.48) -3.94%, rgba(0, 119, 55, 0.48) -3.93%, rgba(230, 252, 84, 0.48) 79.9%), #32A868;
+  background: linear-gradient(0deg, #006477 0%, #006477 100%), linear-gradient(294deg, rgba(74, 119, 0, 0.48) -3.94%, rgba(0, 119, 55, 0.48) -3.93%, rgba(230, 252, 84, 0.48) 79.9%), #32a868;
   position: relative;
 }
 .box-floating .inner button.btn-quick::after {
@@ -1031,7 +1031,7 @@ input {
   display: block;
   width: 100%;
   position: relative;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -1098,7 +1098,7 @@ input {
   padding: 6.5px 0;
   border-radius: 999px;
   background: var(--Primary-01, #006477);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
@@ -6431,10 +6431,10 @@ input {
   .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box .txt-2 {
     font-size: 40px;
     letter-spacing: 0.4px;
-    margin-bottom: 32px;
+    margin-bottom: 14px;
   }
   .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box .txt-3 {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.4px;
   }
   .main-kv-swiper .swiper-slide {
@@ -6484,11 +6484,12 @@ input {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.53%, rgba(0, 0, 0, 0.3) 105.2%);
+    background: #000;
+    opacity: 0.4;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-1 {
-    color: #ccc;
-    font-size: 28px;
+    color: #fff;
+    font-size: 32px;
     letter-spacing: 0.4px;
     padding-bottom: 0;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
@@ -6498,7 +6499,7 @@ input {
     font-size: 18px;
     letter-spacing: 0.4px;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
-    padding-top: 20px;
+    padding-top: 18px;
     display: none;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide.swiper-slide-active .img-holder span::after {
@@ -6507,11 +6508,19 @@ input {
   .main-smlSpecialty .specialty-swiper .swiper-slide.first {
     flex: 0 0 50%;
   }
+  .main-smlSpecialty .specialty-swiper .swiper-slide.first .img-holder span::after {
+    display: none;
+  }
   .main-smlSpecialty .specialty-swiper .swiper-slide.first .text-box .txt-1 {
     color: #fff;
+    font-size: 32px;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide.first .text-box .txt-2 {
     display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.4px;
   }
   .main-smlSpecialty .specialty-swiper .swiper-pagination {
     display: none;
