@@ -3106,6 +3106,9 @@ input {
   line-height: 120%;
   letter-spacing: 0.14px;
 }
+.main-academic .academic-sort .sort-btn-swiper li span:hover {
+  cursor: pointer;
+}
 .main-academic .academic-sort .sort-btn-swiper li.is-active span {
   background: #006477;
   color: #fff;

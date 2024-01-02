@@ -3542,6 +3542,9 @@ input {
 					font-weight: 600;
 					line-height: 120%;
 					letter-spacing: 0.14px;
+					&:hover{
+						cursor: pointer;
+					}
 				}
 				&.is-active {
 					span {
