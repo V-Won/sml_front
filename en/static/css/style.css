@@ -3106,6 +3106,9 @@ input {
   line-height: 120%;
   letter-spacing: 0.14px;
 }
+.main-academic .academic-sort .sort-btn-swiper li span:hover {
+  cursor: pointer;
+}
 .main-academic .academic-sort .sort-btn-swiper li.is-active span {
   background: #006477;
   color: #fff;
@@ -6589,14 +6592,6 @@ input {
   .main-official .official-swiper .swiper-slide.swiper-slide-active > a {
     background: #fff;
     box-shadow: none;
-    padding: 34px 40px 32px 28px;
-  }
-  .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-1 {
-    margin: 0 0 -2px 0;
-  }
-  .main-official .official-swiper .swiper-slide.swiper-slide-active .txt-3 {
-    margin-top: 13px;
-    font-size: 14px;
   }
   .main-official .official-swiper .swiper-slide:hover > a {
     box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);

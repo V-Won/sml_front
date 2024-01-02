@@ -3542,6 +3542,9 @@ input {
 					font-weight: 600;
 					line-height: 120%;
 					letter-spacing: 0.14px;
+					&:hover{
+						cursor: pointer;
+					}
 				}
 				&.is-active {
 					span {
@@ -7412,6 +7415,7 @@ input {
 					padding: 36px 40px 36px 28px;
 					border-radius: 8px;
 					transition: 0.5s;
+					//height: 152px;
 				}
 				.txt-1 {
 					font-size: 18px;
@@ -7431,19 +7435,19 @@ input {
 					> a {
 						background: #fff;
 						box-shadow: none;
-						padding: 34px 40px 32px 28px;
+						//padding: 36px 40px 32px 28px;
 					}
 					.txt-1 {
 						//color: #006477;
-						margin: 0 0 -2px 0;
+						//margin: 0 0 -2px 0;
 					}
 					.txt-2 {
 						//color: #4d4d4d;
 					}
 					.txt-3 {
 						//color: #999;
-						margin-top: 13px;
-						font-size: 14px;
+						//margin-top: 13px;
+						//font-size: 14px;
 					}
 				}
 				&:hover {
