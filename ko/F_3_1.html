@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>삼광의료재단</title>
+  <link rel="stylesheet" href="static/css/style.css"><!-- 공통 css -->
+  <style>
+    .error-wrap.sub-top .inner-gap-1 {
+      padding-bottom: 169px;
+      display: block;
+    }
+    .error-wrap.sub-top .inner-gap-1::after {
+      content: "";
+      width: 160px;
+      height: 168px;
+      background: url(static/images/@/sml_bg_logo.png) no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+    }
+    .error-wrap.sub-top .inner-gap-1 .txt-1 {
+      color: #4d4d4d;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 0.4px;
+      padding-bottom: 20px;
+    }
+    .error-wrap.sub-top .inner-gap-1 .txt-2 {
+      color: #666;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: 0.4px;
+      margin-bottom: 40px;
+    }
+
+    @media all and (min-width: 1024px) {
+      .error-wrap.sub-top .inner-gap-1 {
+        padding-top: 260px;
+        padding-bottom: 45px;
+        height: calc(100vh - 479.59px);
+      }
+      .error-wrap.sub-top .inner-gap-1::after {
+        content: "";
+        width: 299px;
+        height: 315px;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        right: 100px;
+        bottom: 34px;
+        z-index: -1;
+      }
+      .error-wrap.sub-top .inner-gap-1 .txt-1 {
+        font-size: 80px;
+        padding-bottom: 24px;
+      }
+      .error-wrap.sub-top .inner-gap-1 .txt-2 {
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.4px;
+        margin-bottom: 60px;
+        margin-left: 6px;
+      }
+      .error-wrap.sub-top .inner-gap-1 .common-moveBtn {
+        margin-left: 6px;
+      }
+    }
+
+    @media all and (min-width: 1024px) and (max-height: 1080px) {
+      .error-wrap.sub-top .inner-gap-1 {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+      <div class="sub-top error-wrap">
+        <div class="inner-gap-1">
+          <p class="txt-1">400 <br class="mo-show">Bad Request</p>
+          <p class="txt-2">요청하신 URL을 서버에서 찾을 수 없습니다.<br>문제가 계속되면 서비스 운영자에게 문의해주세요.</p>
+          <a href="#none" class="common-moveBtn"><span>메인으로 가기</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="static/js/includeHTML.js"></script>
+  <script src="static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "white"
+    })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title></title>
+	<link href="static/css/basic.css" rel="stylesheet" type="text/css">
+	<link href="static/css/common.css" rel="stylesheet" type="text/css">
+	<link href="../static/css/style.css" rel="stylesheet" type="text/css"><!-- 구축 css -->
+	<style type="text/css">
+		html,
+		body,
+		div,
+		span,
+		applet,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		a,
+		abbr,
+		acronym,
+		address,
+		big,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		img,
+		ins,
+		kbd,
+		q,
+		s,
+		samp,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		tt,
+		var,
+		b,
+		u,
+		i,
+		center,
+		dl,
+		dt,
+		dd,
+		ol,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		legend,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		thead,
+		tr,
+		th,
+		td,
+		article,
+		aside,
+		canvas,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		output,
+		ruby,
+		section,
+		summary,
+		time,
+		mark,
+		audio,
+		video {
+			margin: 0;
+			padding: 0;
+			border: 0
+		}
+
+		.box-st {
+			padding-top: 50px;
+			margin-top: -30px;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<style>
+		.c-1 {
+			color: #006477;
+			font-weight: bold;
+		}
+
+		a:focus {
+			color: #006477;
+			font-weight: bold;
+		}
+
+		.list-lang {
+			display: flex;
+			padding-bottom: 10px;
+			gap: 9px;
+		}
+		.list-lang li {}
+		.list-lang li a {
+			border-radius: 4px;
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		.list-lang li a.is-active{
+			color:#fff;
+			background-color: #006477;
+			border:1px solid #006477;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- top -->
+	<!-- g_top -->
+	<div id="g_top">
+		<div class="inner" style="text-align: center;">
+			<a href="#none">
+				<img src="../static/images/logo/logo.png" alt="" class="img-logo" style="width:250px">
+			</a>
+			<p style="letter-spacing: 0.2em;">2023.12.08 ~ 2024.01.23</p>
+		</div>
+	</div>
+	<!-- //g_top -->
+
+	<!-- g_header -->
+	<div id="g_header">
+		<div class="g_wrap">
+			<div class="g_container">
+				<ul class="g_gnb">
+					<li class="g_on"><a href="#LinkCommon">공통</a></li>
+					<li><a href="#LinkMain">메인</a></li>
+					<li><a href="#LinkA">검사부 안내</a></li>
+					<li><a href="#LinkB">검사안내</a></li>
+					<li><a href="#LinkC">임상연구</a></li>
+					<li><a href="#LinkD">고객서비스</a></li>
+					<li><a href="#LinkE">재단안내</a></li>
+					<li><a href="#LinkF">기타</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //g_header -->
+
+	</div>
+	<!-- //top -->
+	<!-- content -->
+	<div id="g_content">
+		<!-- g_wrap_ctn-->
+		<div id="g_wrap_ctn">
+			<ul class="list-lang" style="padding-top:50px;">
+				<li>
+					<a href="../../ko/00_filelist/filelist.html">KO</a>
+				</li>
+				<li>
+					<a href="../../en/00_filelist/filelist.html" class="is-active">EN</a>
+				</li>
+			</ul>
+			<ul class="ul-type-1">
+				<!-- <li>요청 사항 : </li> -->
+				<li data-cnt="total" style="font-size: 15px;">Total Html : <strong></strong> Page</li>
+				<li>현재 <span data-cnt="end" style="font-size: 15px;">완료 : <strong></strong> Page</span> / <span data-cnt="no" style="font-size: 15px;">미완료 : <strong></strong> Page</span></li>
+				<li data-cnt="ing" style="font-size: 15px;">전체 진척률 : <span style="color:red;"><strong></strong> %</span></li>
+			</ul>
+			<!-- box-st -->
+			<div class="box-st" id="LinkCommon">
+				<h2 class="g_m_tit">공통</h2>
+				<div class="g_status_board">
+					<table cellspacing="0" class="">
+						<caption></caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:120px;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">4Depth</th>
+								<th scope="col">파일명</th>
+								<th scope="col">내부검수</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">Sub</td>
+								<td class="text-left">Layout</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../sub_layout.html" target="_blank">sub_layout.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left">
+									개발시 참고<br>* 상단 배경 없음.
+									headerBg({
+									bg: "white"
+									})
+								</td>
+							</tr>
+							<tr>
+								<td class="text-left">Sub</td>
+								<td class="text-left">Layout</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../sub_layout_type_2.html" target="_blank">sub_layout_type_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left">
+									개발시 참고<br>* 상단 배경 있음.
+									headerBg({
+									bg: "transparent"
+									})
+								</td>
+							</tr>
+							<tr>
+								<td class="text-left">Sub</td>
+								<td class="text-left">Component</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../component.html" target="_blank">component.html *</a>
+								</td>
+								<td class="c-1">ing</td>
+								<td class="text-left">개발시 참고</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //box-st -->
+			<!-- box-st -->
+			<div class="box-st" id="LinkMain">
+				<h2 class="g_m_tit">메인</h2>
+				<div class="g_status_board">
+					<table cellspacing="0" class="">
+						<caption></caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:120px;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">4Depth</th>
+								<th scope="col">파일명</th>
+								<th scope="col">내부검수</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">HOME</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../index.html" target="_blank">index.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //box-st -->
+			<!-- box-st -->
+			<div class="box-st" id="LinkA">
+				<h2 class="g_m_tit">검사부 안내</h2>
+				<div class="g_status_board">
+					<table cellspacing="0" class="">
+						<caption></caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:120px;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">4Depth</th>
+								<th scope="col">파일명</th>
+								<th scope="col">내부검수</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">검사부 안내</td>
+								<td class="text-left">서울본원</td>
+								<td class="text-left">진단검사의학과</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../A_1_1.html" target="_blank">A_1_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">병리과</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../A_1_2.html" target="_blank">A_1_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">직업환경의학센터</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../A_1_3.html" target="_blank">A_1_3.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">지역센터</td>
+								<td class="text-left">중부센터</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../A_2_1.html" target="_blank">A_2_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">부산센터</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../A_2_2.html" target="_blank">A_2_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">정도관리</td>
+								<td class="text-left">정도관리 개요</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../A_3_1.html" target="_blank">A_3_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">인증내역</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../A_3_2.html" target="_blank">A_3_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //box-st -->
+			<!-- box-st -->
+			<div class="box-st" id="LinkB">
+				<h2 class="g_m_tit">검사안내</h2>
+				<div class="g_status_board">
+					<table cellspacing="0" class="">
+						<caption></caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:120px;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">4Depth</th>
+								<th scope="col">파일명</th>
+								<th scope="col">내부검수</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">검사안내</td>
+								<td class="text-left">검사의뢰 안내</td>
+								<td class="text-left">검사의뢰 절차</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_1_1.html" target="_blank">B_1_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">검사의뢰서</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_1_2.html" target="_blank">B_1_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">검체채취 안내</td>
+								<td class="text-left">검체채취 방법</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_2_1.html" target="_blank">B_2_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">검사항복 별 주의사항</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_2_2.html" target="_blank">B_2_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">검체용기 일람</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_2_3.html" target="_blank">B_2_3.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">검사항목 조회</td>
+								<td class="text-left">리스트</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_3_1.html" target="_blank">B_3_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">상세</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_3_1_v.html" target="_blank">B_3_1_v.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">검사항목 조회</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_4_1.html" target="_blank">B_4_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">검사결과 조회</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../B_5_1.html" target="_blank">B_5_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //box-st -->
+			<!-- box-st -->
+			<div class="box-st" id="LinkC">
+				<h2 class="g_m_tit">임상연구</h2>
+				<div class="g_status_board">
+					<table cellspacing="0" class="">
+						<caption></caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:120px;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">4Depth</th>
+								<th scope="col">파일명</th>
+								<th scope="col">내부검수</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">임상연구</td>
+								<td class="text-left">임상연구 검사</td>
+								<td class="text-left">임상연구 개요</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_1_1.html" target="_blank">C_1_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">수행실적</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_1_2.html" target="_blank">C_1_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">임상연구 분야</td>
+								<td class="text-left">국책연구과제</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_2_1.html" target="_blank">C_2_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">체외진단의료기기 임상적 성능평가</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_2_2.html" target="_blank">C_2_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">인체유래물 분양</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_2_3.html" target="_blank">C_2_3.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">IRB</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_2_4.html" target="_blank">C_2_4.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">연구검사(Study)</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_2_5.html" target="_blank">C_2_5.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">유전체 연구</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_3_1.html" target="_blank">C_3_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">연구의뢰</td>
+								<td class="text-left">임상연구</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_4_1.html" target="_blank">C_4_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left">임상연구>연구의회>유전체 연구 화면과 동일</td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">유전체 연구</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../C_4_1.html" target="_blank">C_4_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //box-st -->
+			<!-- box-st -->
+			<div class="box-st" id="LinkD">
+				<h2 class="g_m_tit">고객서비스</h2>
+				<div class="g_status_board">
+					<table cellspacing="0" class="">
+						<caption></caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:120px;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">4Depth</th>
+								<th scope="col">파일명</th>
+								<th scope="col">내부검수</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">고객서비스</td>
+								<td class="text-left">SML 새소식</td>
+								<td class="text-left">리스트</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_1.html" target="_blank">D_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">상세</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_1_v.html" target="_blank">D_1_v.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">SML 공문</td>
+								<td class="text-left">리스트</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_2_1.html" target="_blank">D_2_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">상세</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_2_1_v.html" target="_blank">D_2_1_v.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">SML 학술자료</td>
+								<td class="text-left">Smart New Test</td>
+								<td class="text-left">리스트</td>
+								<td class="text-left"><a class="g_url_link" href="../D_3_1.html" target="_blank">D_3_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">상세</td>
+								<td class="text-left"><a class="g_url_link" href="../D_3_1_v.html" target="_blank">D_3_1_v.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">SML 진단길라잡이</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_3_2.html" target="_blank">D_3_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">Smart 리플렛</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_3_3.html" target="_blank">D_3_3.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">SML Healthcare</td>
+								<td class="text-left">리스트</td>
+								<td class="text-left"><a class="g_url_link" href="../D_3_4.html" target="_blank">D_3_4.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">상세</td>
+								<td class="text-left"><a class="g_url_link" href="../D_3_4_v.html" target="_blank">D_3_4_v.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">항균제내성소식</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_3_5.html" target="_blank">D_3_5.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">검사안내책자</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_3_6.html" target="_blank">D_3_6.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">고객지원</td>
+								<td class="text-left">고객센터</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_4_1.html" target="_blank">D_4_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">자주하는 질문</td>
+								<td class="text-left">검사관련</td>
+								<td class="text-left"><a class="g_url_link" href="../D_4_2.html" target="_blank">D_4_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">특수검진관련</td>
+								<td class="text-left"><a class="g_url_link" href="../D_4_2.html" target="_blank">D_4_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left">고객서비스 > 고객지원 > 자주하는 질문 > 검사관련 화면과 동일</td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">1:1 문의</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../D_4_3.html" target="_blank">D_4_3.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //box-st -->
+			<!-- box-st -->
+			<div class="box-st" id="LinkE">
+				<h2 class="g_m_tit">재단안내</h2>
+				<div class="g_status_board">
+					<table cellspacing="0" class="">
+						<caption></caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:120px;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">4Depth</th>
+								<th scope="col">파일명</th>
+								<th scope="col">내부검수</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">재단안내</td>
+								<td class="text-left">재단소개</td>
+								<td class="text-left">인사말</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_1_1.html" target="_blank">E_1_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">연혁</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_1_2.html" target="_blank">E_1_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">C.I</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_1_3.html" target="_blank">E_1_3.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">경영이념</td>
+								<td class="text-left">미션과 핵심가치</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_2_1.html" target="_blank">E_2_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">안전보건경영</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_2_2.html" target="_blank">E_2_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">SML 홍보실</td>
+								<td class="text-left">브로슈어 (코딩 x)</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="" target="_blank"></a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">홍보영상</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_3_2.html" target="_blank">E_3_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">전국 네트워크</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_4.html" target="_blank">E_4.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">사회공헌 활동</td>
+								<td class="text-left">리스트</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_5.html" target="_blank">E_5.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">상세</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_5_v.html" target="_blank">E_5_v.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">채용정보</td>
+								<td class="text-left">SML 인재상</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_6_1.html" target="_blank">E_6_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">채용공고</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_6_2.html" target="_blank">E_6_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">찾아오시는 길</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../E_7.html" target="_blank">E_7.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //box-st -->
+			<!-- box-st -->
+			<div class="box-st" id="LinkF">
+				<h2 class="g_m_tit">기타</h2>
+				<div class="g_status_board">
+					<table cellspacing="0" class="">
+						<caption></caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:15%;">
+							<col style="width:120px;">
+							<col style="width:auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">4Depth</th>
+								<th scope="col">파일명</th>
+								<th scope="col">내부검수</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-left">기타</td>
+								<td class="text-left">검색</td>
+								<td class="text-left">전체</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../F_1.html" target="_blank">F_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left">상세 (탭 클릭)</td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../F_1_v.html" target="_blank">F_1_v.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">팝업</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../F_2.html" target="_blank">F_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">시스템 오류</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../F_3_1.html" target="_blank">F_3_1.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">개인정보처리방침</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../F_3_2.html" target="_blank">F_3_2.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+							<tr>
+								<td class="text-left"></td>
+								<td class="text-left">이메일 포맷</td>
+								<td class="text-left"></td>
+								<td class="text-left"></td>
+								<td class="text-left"><a class="g_url_link" href="../email/F_4.html" target="_blank">F_4.html *</a></td>
+								<td class="c-1"></td>
+								<td class="text-left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- //box-st -->
+		</div>
+		<!-- //g_wrap_ctn -->
+	</div>
+	<!-- //content -->
+	<!-- footer-->
+	<div id="g_footer">
+		<!-- g_footer -->
+		<div id="g_footer">
+			<p>Copyrightⓒ 2024 All Rights Reserved. (주)브이더블유. FileList <br> 02-307-3264 l 서울 마포구 양화로7안길 12 3층</p>
+		</div>
+		<!-- //g_footer -->
+	</div>
+	<!-- //footer-->
+	<script type="text/javascript" src="static/js/common.js"></script>
+	<script>
+		// header #gTab 버튼 처리 #gTab > li > a의 href에 id로 이동할곳 넣기
+		$('#gTab > li > a').on('click', function (e) {
+			e.preventDefault();
+			var hrefLink = $(this).attr('href');
+			var moveTop = $(hrefLink).offset().top;
+			$('html, body').stop().animate({ scrollTop: (moveTop - $('#g_header').outerHeight(true)) + 'px' }, 500);
+		});
+
+		//table 640이하 3개 행만 노출
+		$(window).on('load resize', function () {
+			var wW = $(window).outerWidth(true);
+			if (wW <= 640) {
+				$('.g_status_board > table').find('colgroup').each(function () {
+					$(this).find('> col').eq(2).nextAll().hide();
+				});
+				$('.g_status_board > table').find('tr').each(function () {
+					$(this).find('> th').eq(2).nextAll().hide();
+					$(this).find('> td').eq(2).nextAll().hide();
+				});
+			} else {
+				$('.g_status_board > table').find('colgroup').each(function () {
+					$(this).find('> col').eq(2).nextAll().show();
+				});
+				$('.g_status_board > table').find('tr').each(function () {
+					$(this).find('> th').eq(2).nextAll().show();
+					$(this).find('> td').eq(2).nextAll().show();
+				});
+			};
+		});
+
+		// 총 html 카운트
+		let cnt = document.querySelectorAll('.g_url_link').length - 1, // 전체 카운트
+			innerHm = document.querySelector('[data-cnt="total"] strong');
+
+		innerHm.innerHTML = cnt;
+
+		// 완료 html 카운트
+		let arr = []; // * 포함 배열
+
+		document.querySelectorAll('.g_url_link').forEach((e) => {
+			var search = "*",
+				idx = e.textContent.indexOf(search);
+
+			//console.log(e.textContent + '//' + idx);
+
+			if (idx <= 0) {
+				arr.push(e.textContent)
+			}
+		})
+
+		let cnt2 = arr.length - 1, // 미완료 카운트
+			innerHm2 = document.querySelector('[data-cnt="end"] strong'),
+			per = document.querySelectorAll('.g_url_link').length - 1;
+
+			console.log(cnt2);
+
+		innerHm2.innerHTML = cnt2;
+
+		// console.log(cnt2);
+		// console.log(per);
+
+		// 미완료 html
+		document.querySelector('[data-cnt="no"] strong').innerHTML = cnt - cnt2;
+
+		// 진척률
+		let innerHm3 = document.querySelector('[data-cnt="ing"] strong');
+
+		innerHm3.innerHTML = parseInt((Number(cnt2) / Number(per)) * 100);
+	</script>
+
+</body>
+
+</html>

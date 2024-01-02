@@ -111,6 +111,24 @@
 			color: #006477;
 			font-weight: bold;
 		}
+
+		.list-lang {
+			display: flex;
+			padding-bottom: 10px;
+			gap: 9px;
+		}
+		.list-lang li {}
+		.list-lang li a {
+			border-radius: 4px;
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		.list-lang li a.is-active{
+			color:#fff;
+			background-color: #006477;
+			border:1px solid #006477;
+			font-weight: bold;
+		}
 	</style>
 </head>
 
@@ -152,10 +170,19 @@
 	<div id="g_content">
 		<!-- g_wrap_ctn-->
 		<div id="g_wrap_ctn">
-			<ul class="ul-type-1" style="padding-top:50px;">
+			<ul class="list-lang" style="padding-top:50px;">
+				<li>
+					<a href="../../ko/00_filelist/filelist.html" class="is-active">KO</a>
+				</li>
+				<li>
+					<a href="../../en/00_filelist/filelist.html">EN</a>
+				</li>
+			</ul>
+			<ul class="ul-type-1">
 				<!-- <li>요청 사항 : </li> -->
 				<li data-cnt="total" style="font-size: 15px;">Total Html : <strong></strong> Page</li>
-				<li>현재 <span data-cnt="end" style="font-size: 15px;">완료 : <strong></strong> Page</span> / <span data-cnt="no" style="font-size: 15px;">미완료 : <strong></strong> Page</span></li>
+				<li>현재 <span data-cnt="end" style="font-size: 15px;">완료 : <strong></strong> Page</span> / <span data-cnt="no"
+						style="font-size: 15px;">미완료 : <strong></strong> Page</span></li>
 				<li data-cnt="ing" style="font-size: 15px;">전체 진척률 : <span style="color:red;"><strong></strong> %</span></li>
 			</ul>
 			<!-- box-st -->
@@ -1058,7 +1085,7 @@
 		});
 
 		// 총 html 카운트
-		let cnt = document.querySelectorAll('.g_url_link').length,
+		let cnt = document.querySelectorAll('.g_url_link').length - 1, // 전체 카운트
 			innerHm = document.querySelector('[data-cnt="total"] strong');
 
 		innerHm.innerHTML = cnt;
@@ -1070,27 +1097,31 @@
 			var search = "*",
 				idx = e.textContent.indexOf(search);
 
-			if (idx == 11) {
+			//console.log(e.textContent + '//' + idx);
+
+			if (idx <= 0) {
 				arr.push(e.textContent)
 			}
 		})
 
-		let cnt2 = arr.length + 1,
+		let cnt2 = arr.length - 1, // 미완료 카운트
 			innerHm2 = document.querySelector('[data-cnt="end"] strong'),
 			per = document.querySelectorAll('.g_url_link').length - 1;
 
-		innerHm2.innerHTML = document.querySelectorAll('.g_url_link').length - cnt2;
+			console.log(cnt2);
+
+		innerHm2.innerHTML = cnt2;
 
 		// console.log(cnt2);
 		// console.log(per);
 
-		// 남은 html
-		document.querySelector('[data-cnt="no"] strong').innerHTML = cnt - document.querySelectorAll('.g_url_link').length - cnt2;
+		// 미완료 html
+		document.querySelector('[data-cnt="no"] strong').innerHTML = cnt - cnt2;
 
 		// 진척률
 		let innerHm3 = document.querySelector('[data-cnt="ing"] strong');
 
-		innerHm3.innerHTML = parseInt((Number(cnt - cnt2) / Number(per)) * 100);
+		innerHm3.innerHTML = parseInt((Number(cnt2) / Number(per)) * 100);
 	</script>
 
 </body>

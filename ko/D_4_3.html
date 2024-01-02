@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>삼광의료재단</title>
+  <link rel="stylesheet" href="static/css/style.css"><!-- 공통 css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+      <div class="sub-top">
+        <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">고객서비스</a>
+              </li>
+              <li>
+                <a href="#none">고객지원</a> 
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">1:1 문의</a>
+                <ul class="list">
+                  <li><a href="#none" title="menu-1">고객센터</a></li>
+                  <li><a href="#none" title="menu-1">자주하는 질문</a></li>
+                  <li><a href="#none" title="menu-2">1:1 문의</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">1:1 문의</h3>
+          </div>
+        </div>
+      </div>
+      <div class="research-formWrap">
+        <div class="inner-gap-1">
+          <div class="form-wrap">
+            <div class="form-tit">
+              <p class="title">기본 정보</p>
+              <p class="require-noti">*표시는 필수 입력 항목입니다.</p>
+            </div>
+            <div class="form-inner">
+              <div class="form-item">
+                <div class="label-wrap">
+                  <label class="input-label">분야<span class="require">필수 입력 항목</span></label>
+                </div>
+                <div class="input-wrap flex">
+                  <div class="common-selectbox-2" data-event="commonSelectBox">
+                    <button class="button">선택</button>
+                    <ul class="list">
+                      <li><button>Placeholder 01</button></li>
+                      <li><button>Placeholder 02</button></li>
+                      <li><button>Placeholder 03</button></li>
+                      <li><button>Placeholder 04</button></li>
+                      <li><button>Placeholder 05</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="label-wrap">
+                  <label class="input-label" for="form-1">기관명<span class="require">필수 입력 항목</span></label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" id="form-1" class="common-input-2">
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="label-wrap">
+                  <label class="input-label" for="form-2">소속</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" id="form-2" class="common-input-2">
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="label-wrap">
+                  <label class="input-label" for="form-3">이름<span class="require">필수 입력 항목</span></label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" id="form-3" class="common-input-2">
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="label-wrap">
+                  <label class="input-label" for="form-4">연락처<span class="require">필수 입력 항목</span></label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" id="form-4" class="common-input-2">
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="label-wrap">
+                  <label class="input-label" for="form-5">E-mail<span class="require">필수 입력 항목</span></label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" id="form-5" class="common-input-2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-wrap">
+            <div class="form-tit">
+              <p class="title">문의 내용</p>
+              <p class="require-noti">*표시는 필수 입력 항목입니다.</p>
+            </div>
+            <div class="form-inner">
+              <div class="form-item">
+                <div class="label-wrap">
+                  <label class="input-label" for="form-6">제목<span class="require">필수 입력 항목</span></label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" id="form-6" class="common-input-2 title">
+                </div>
+              </div>
+              <div class="form-item">
+                <div class="label-wrap">
+                  <label class="input-label" for="form-7">문의내용<span class="require">필수 입력 항목</span></label>
+                </div>
+                <div class="input-wrap">
+                  <textarea id="form-7" class="common-textarea"></textarea>
+                </div>
+              </div>
+              <div class="form-item file-wrap">
+                <div class="label-wrap">
+                  <label class="input-label" for="form-8">첨부파일</label>
+                </div>
+                <div class="input-wrap">
+                  <div class="file-btn-wrap">
+                    <label for="form-8" class="file-btn">파일 찾기</label>
+                    <input type="file" id="form-8">
+                  </div>
+                  <ul class="file-item" data-event="fileDelete">
+                    <li>
+                      <span>Attach_File_01.zip</span>
+                      <button class="del-btn">삭제</button>
+                    </li>
+                    <li>
+                      <span>Attach_File_01Attach_File_01Attach_File_01Attach_File_01Attach_File_01Attach_File_01.zip</span>
+                      <button class="del-btn">삭제</button>
+                    </li>
+                    <li>
+                      <span>Attach_File_01.zip</span>
+                      <button class="del-btn">삭제</button>
+                    </li>
+                    <li>
+                      <span>Attach_File_01.zip</span>
+                      <button class="del-btn">삭제</button>
+                    </li>
+                  </ul>
+                  <p class="file-noti">※ 첨부파일 용량은 최대 10MB 입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-wrap">
+            <div class="form-tit">
+              <p class="title">개인정보 수집 및 이용에 대한 동의</p>
+            </div>
+            <div class="form-inner no-pd">
+              <div class="form-item col">
+                <div class="agree-text">
+                  <ul class="dot-list">
+                    <li><span>수집항목</span> : 기관명, 소속, 이름, 연락처, 이메일주소</li>
+                    <li><span>수집목적</span> : 서비스 이용에 따른 본인 확인 및 결과 회신, 서비스 진행에 따른 필요 정보 획득 및 응대 목적</li>
+                    <li><span>보유 및 이용기간</span> : 전자상거래등에서의 소비자보호에 관한 법률에 의거하여 문의처리 후 3년간 보관 그 밖에 사항은 개인정보취급방침을 준수</li>
+                    <li><span>개인정보 수집에 동의하지 않을경우, 서비스 이용에 제한이 있을 수 있습니다.</span></li>
+                  </ul>
+                </div>
+                <div class="box-check">
+                  <div class="checkitem" data-event="checkbox">
+                    <label>
+                      <input type="checkbox" name="test1">
+                      <span><strong>(필수)</strong>개인정보 수집 및 이용에 동의합니다.</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="common-btn-center">
+                  <button class="common-btnType-1">문의하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="static/js/includeHTML.js"></script>
+  <script src="static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "white"
+    });
+    selectBox.initialize();
+    fileDelete.initialize();
+  </script>
+
+</body>
+
+</html>
