@@ -257,7 +257,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 					floating.classList.remove('scroll');
 				}
 
-				//floating.classList.remove('open');
+				floating.classList.remove('open');
 			})
 
 			// btnTop click
