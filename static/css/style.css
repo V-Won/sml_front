@@ -2596,6 +2596,7 @@ input {
   font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.4px;
+  display: block;
 }
 .common-tab.type-2 ul li .btn span {
   font-size: 12px;
@@ -2616,6 +2617,9 @@ input {
   font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.4px;
+}
+.common-tab.type-3 ul li .btn:hover {
+  cursor: pointer;
 }
 .common-tab.type-3 ul li .btn span {
   font-size: 12px;
@@ -3141,7 +3145,8 @@ input {
   width: fit-content;
   flex-shrink: 0;
 }
-.main-academic .academic-sort .sort-btn-swiper li button {
+.main-academic .academic-sort .sort-btn-swiper li span {
+  display: block;
   padding: 8px 20px;
   border-radius: 999px;
   background: #f5f5f5;
@@ -3152,7 +3157,7 @@ input {
   line-height: 120%;
   letter-spacing: 0.14px;
 }
-.main-academic .academic-sort .sort-btn-swiper li.is-active button {
+.main-academic .academic-sort .sort-btn-swiper li.is-active span {
   background: #006477;
   color: #fff;
 }
@@ -6540,7 +6545,7 @@ input {
     margin: 0 0 23px;
     padding: 0;
   }
-  .main-academic .academic-sort .sort-btn-swiper li button {
+  .main-academic .academic-sort .sort-btn-swiper li span {
     padding: 8px 25px;
     font-size: 18px;
   }
@@ -8444,5 +8449,9 @@ input {
   }
   .sub-top .inner-gap-1 {
     padding-top: 40px !important;
+  }
+  .request-detailInfo .info-box .item .img-holder {
+    width: 154px;
+    margin: 40px auto;
   }
 }/*# sourceMappingURL=style.css.map */

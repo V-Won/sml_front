@@ -47,13 +47,14 @@
         <div class="common-tab type-3 padding-top-1" data-event="commonTab">
           <div class="swiper-container snbSwiper type-1">
             <ul class="list swiper-wrapper">
-              <li class="swiper-slide is-active"><button class="btn total">전체<span>(999)</span></button></li>
-              <li class="swiper-slide"><button class="btn">SML 공문<span>(999)</span></button></li>
-              <li class="swiper-slide"><button class="btn">SML 새소식<span>(999)</span></button></li>
-              <li class="swiper-slide"><button class="btn">검사의뢰서<span>(999)</span></button></li>
-              <li class="swiper-slide"><button class="btn">SML 학술자료<span>(999)</span></button></li>
-              <li class="swiper-slide"><button class="btn">검사항목 조회<span>(999)</span></button></li>
-              <li class="swiper-slide"><button class="btn">자주하는 질문<span>(999)</span></button></li>
+              <li class="swiper-slide is-active" data-index="0"><button class="btn total">전체<span>(999)</span></button>
+              </li>
+              <li class="swiper-slide" data-index="1"><span class="btn">SML 공문<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="2"><span class="btn">SML 새소식<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="3"><span class="btn">검사의뢰서<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="4"><span class="btn">SML 학술자료<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="5"><span class="btn">검사항목 조회<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="6"><span class="btn">자주하는 질문<span>(999)</span></span></li>
             </ul>
           </div>
         </div>
@@ -283,11 +284,11 @@
           <div class="common-tab type-2 padding-top-1 margin-top-1" data-event="commonTab">
             <div class="swiper-container snbSwiper type-2">
               <ul class="list swiper-wrapper">
-                <li class="swiper-slide is-active"><button class="btn">Smart New Test <span>(10)</span></button></li>
-                <li class="swiper-slide"><button class="btn">SML 진단길라잡이 <span>(10)</span></button></li>
-                <li class="swiper-slide"><button class="btn">SML 리플렛 <span>(10)</span></button></li>
-                <li class="swiper-slide"><button class="btn">SML Healthcare <span>(10)</span></button></li>
-                <li class="swiper-slide"><button class="btn">항균제내성소식 <span>(10)</span></button></li>
+                <li class="swiper-slide is-active" data-index="0"><span class="btn">Smart New Test <span>(10)</span></span></li>
+                <li class="swiper-slide" data-index="1"><span class="btn">SML 진단길라잡이 <span>(10)</span></span></li>
+                <li class="swiper-slide" data-index="2"><span class="btn">SML 리플렛 <span>(10)</span></span></li>
+                <li class="swiper-slide" data-index="3"><span class="btn">SML Healthcare <span>(10)</span></span></li>
+                <li class="swiper-slide" data-index="4"><span class="btn">항균제내성소식 <span>(10)</span></span></li>
               </ul>
             </div>
           </div>
@@ -648,15 +649,13 @@
         } else {
           pos = selectTargetPos - boxHarf;
         }
-
-        setTimeout(function () {
-          swiper.slideTo(idx);
-          // snbwrap.css({
-          //   "transform": "translate3d(" + (pos * - 1.2) + "px, 0, 0)",
-          //   "transition-duration": "500ms"
-          // })
-        }, 200);
       }
+
+      document.querySelectorAll('.mobile .snbSwiper.type-1 > ul > li').forEach((item) => {
+        item.addEventListener('click', (e) => {
+          swiper.slideTo(e.currentTarget.getAttribute('data-index'));
+        });
+      });
 
       // tab 학술자료 swiper
       var swiper2 = new Swiper('.mobile .snbSwiper.type-2', {
@@ -698,15 +697,13 @@
         } else {
           pos2 = selectTargetPos2 - boxHarf2;
         }
-
-        setTimeout(function () {
-          swiper2.slideTo(idx);
-          // snbwrap2.css({
-          //   "transform": "translate3d(" + (pos2 * - 1.2) + "px, 0, 0)",
-          //   "transition-duration": "500ms"
-          // })
-        }, 200);
       }
+
+      document.querySelectorAll('.mobile .snbSwiper.type-2 > ul > li').forEach((item) => {
+        item.addEventListener('click', (e) => {
+          swiper2.slideTo(e.currentTarget.getAttribute('data-index'));
+        });
+      });
     }
 
     window.addEventListener('resize', () => {

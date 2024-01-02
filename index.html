@@ -287,10 +287,10 @@
           <div class="academic-sort">
             <div class="sort-btn-swiper">
               <ul class="swiper-wrapper">
-                <li class="swiper-slide is-active" data-index="0"><button class="btn">전체</button></li>
-                <li class="swiper-slide" data-index="1"><button class="btn">Smart New Test</button></li>
-                <li class="swiper-slide" data-index="2"><button class="btn">SML 진단 길라잡이</button></li>
-                <li class="swiper-slide" data-index="3"><button class="btn">SML Healthcare</button></li>
+                <li class="swiper-slide is-active" data-index="0"><span class="btn">전체</span></li>
+                <li class="swiper-slide" data-index="1"><span class="btn">Smart New Test</span></li>
+                <li class="swiper-slide" data-index="2"><span class="btn">SML 진단 길라잡이</span></li>
+                <li class="swiper-slide" data-index="3"><span class="btn">SML Healthcare</span></li>
               </ul>
             </div>
             <div class="sort-wrap">
@@ -603,7 +603,7 @@
       breakpoints: {
         1024: {  //브라우저가 1024보다 클 때
           slidesPerView: 3,
-          slidesPerGroup: 3,  
+          slidesPerGroup: 3,
         },
       },
     });
@@ -705,7 +705,6 @@
     document.querySelectorAll('.sort-btn-swiper > ul > li').forEach(e => {
       e.onclick = () => {
         academicSwiper.slideTo(0);
-
       }
     });
 

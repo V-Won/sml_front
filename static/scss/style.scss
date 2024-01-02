@@ -2931,6 +2931,7 @@ input {
 					font-weight: 600;
 					line-height: 120%;
 					letter-spacing: 0.4px;
+					display: block;
 					span {
 						font-size: 12px;
 					}
@@ -2957,6 +2958,9 @@ input {
 					font-weight: 600;
 					line-height: 120%;
 					letter-spacing: 0.4px;
+					&:hover {
+						cursor: pointer;
+					}
 					span {
 						//display: none;
 						font-size: 12px;
@@ -3527,7 +3531,8 @@ input {
 			li {
 				width: fit-content;
 				flex-shrink: 0;
-				button {
+				span {
+					display: block;
 					padding: 8px 20px;
 					border-radius: 999px;
 					background: #f5f5f5;
@@ -3539,7 +3544,7 @@ input {
 					letter-spacing: 0.14px;
 				}
 				&.is-active {
-					button {
+					span {
 						background: #006477;
 						color: #fff;
 					}
@@ -7274,7 +7279,7 @@ input {
 				margin: 0 0 23px;
 				padding: 0;
 				li {
-					button {
+					span {
 						padding: 8px 25px;
 						font-size: 18px;
 					}
@@ -9555,6 +9560,17 @@ input {
 	.sub-top {
 		.inner-gap-1 {
 			padding-top: 40px !important;
+		}
+	}
+
+	.request-detailInfo {
+		.info-box {
+			.item {
+				.img-holder {
+					width: 154px;
+					margin: 40px auto;
+				}
+			}
 		}
 	}
 }
