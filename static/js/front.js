@@ -161,11 +161,16 @@ if (window.console == undefined) { console = { log: () => { } } }
 			window.addEventListener('resize', () => {
 				if (window.innerWidth >= 1024) {
 					document.getElementsByTagName('html')[0].style.overflow = "";
+
+					// mo menu-list is-active remove
+					document.querySelectorAll('.box-header .menu-list .inner-gap-1 > ul > li').forEach((e) => {
+						e.classList.remove('is-active');
+					});
 				}
 			})
 
 			// MO 1뎁스 클릭.
-			const depth1s = document.querySelectorAll('.box-header .menu-list h3');
+			const depth1s = document.querySelectorAll('.mobile .box-header .menu-list h3');
 
 			for (const tg of depth1s) {
 				tg.onclick = e => {
