@@ -4816,6 +4816,7 @@ input {
 }
 .request-detailInfo .info-list > li .right {
   color: #4d4d4d;
+  max-width: 100%;
 }
 .request-detailInfo .info-list > li .box.no-info {
   display: none;
@@ -6597,7 +6598,6 @@ input {
   .gray-bg {
     margin-top: -118px;
     padding: 241px 0 86px;
-    background: #fafafa;
   }
   .main-news {
     padding-bottom: 0;

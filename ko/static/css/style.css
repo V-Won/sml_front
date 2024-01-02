@@ -146,18 +146,14 @@ table {
 
 textarea {
   overflow: auto;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   resize: vertical;
   font-size: 100%;
 }
 
 input,
 select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   font-family: inherit;
   border-radius: 0;
   font-size: 100%;
@@ -205,34 +201,25 @@ input[type=search],
 input[type=number],
 input[type=tel],
 input[type=email] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 input:checked[type=checkbox] {
   background-color: #666;
-  -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
+  appearance: checkbox;
 }
 
 input:checked[type=checkbox] {
-  -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
+  appearance: checkbox;
 }
 
 input[type=search] {
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 button,
@@ -245,9 +232,7 @@ button,
 [type=submit],
 [type=reset],
 [type=file] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   border-radius: 0;
   cursor: pointer;
 }
@@ -365,7 +350,6 @@ input {
   transition: all 0.3s;
 }
 .box-header .menu-list .inner-gap-1 {
-  height: -moz-fit-content;
   height: fit-content;
   overflow: auto;
   flex-wrap: wrap;
@@ -568,9 +552,6 @@ input {
   border: none;
   background: transparent;
 }
-.box-header .search-wrap .input-wrap .search-input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
 .box-header .search-wrap .input-wrap .search-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -603,7 +584,6 @@ input {
 }
 .box-header .search-wrap .search-list li a {
   display: block;
-  width: -moz-fit-content;
   width: fit-content;
   min-height: 30px;
   padding: 8px 20px;
@@ -1127,8 +1107,7 @@ input {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.64);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   z-index: 2200;
 }
 .box-floating.open .inner {
@@ -1410,7 +1389,6 @@ input {
 
 .common-moveBtn {
   display: block;
-  width: -moz-fit-content;
   width: fit-content;
   height: 41px;
   padding: 12px 48px;
@@ -1488,14 +1466,6 @@ input {
   gap: 60px;
   align-self: stretch;
   width: 100%;
-}
-.common-input-1 input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Pretendard;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16.8px;
 }
 .common-input-1 input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -1639,8 +1609,7 @@ input {
 .box-layer.common .inner-layer .gap .box .inner-box img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .box-layer.common .inner-layer .gap .box .bottom-box {
   width: 100%;
@@ -1656,7 +1625,6 @@ input {
   margin: 0;
   font-size: 12px;
   letter-spacing: 0.24px;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   cursor: pointer;
 }
@@ -1756,7 +1724,6 @@ input {
   font-weight: 700;
   padding-right: 28px;
   z-index: 10;
-  width: -moz-fit-content;
   width: fit-content;
   position: relative;
 }
@@ -2364,9 +2331,6 @@ input {
   line-height: 120%;
   letter-spacing: 0.4px;
 }
-.common-input-2::-moz-placeholder {
-  color: #999;
-}
 .common-input-2::placeholder {
   color: #999;
 }
@@ -2378,18 +2342,12 @@ input {
   color: #999;
   pointer-events: none;
 }
-.common-input-2:disabled::-moz-placeholder {
-  color: #999;
-}
 .common-input-2:disabled::placeholder {
   color: #999;
 }
 .common-input-2.error {
   background: #fafafa;
   border: 1px solid #006477;
-  color: #006477;
-}
-.common-input-2.error::-moz-placeholder {
   color: #006477;
 }
 .common-input-2.error::placeholder {
@@ -2517,9 +2475,6 @@ input {
   line-height: 120%;
   letter-spacing: 0.4px;
 }
-.common-textarea::-moz-placeholder {
-  color: #999;
-}
 .common-textarea::placeholder {
   color: #999;
 }
@@ -2530,9 +2485,6 @@ input {
 .common-textarea.error {
   background: #fafafa;
   border: 1px solid #006477;
-  color: #006477;
-}
-.common-textarea.error::-moz-placeholder {
   color: #006477;
 }
 .common-textarea.error::placeholder {
@@ -2587,7 +2539,6 @@ input {
 .common-tab.type-2 ul li .btn {
   border-radius: 999px;
   background: #f5f5f5;
-  width: -moz-fit-content;
   width: fit-content;
   height: 33px;
   padding: 8px 21px;
@@ -2767,8 +2718,7 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -3141,7 +3091,6 @@ input {
   overflow: hidden;
 }
 .main-academic .academic-sort .sort-btn-swiper li {
-  width: -moz-fit-content;
   width: fit-content;
   flex-shrink: 0;
 }
@@ -3200,7 +3149,6 @@ input {
   padding: 20px 20px 20px 0;
 }
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .tag {
-  width: -moz-fit-content;
   width: fit-content;
   padding: 3px 8px;
   border-radius: 999px;
@@ -3283,7 +3231,6 @@ input {
   padding: 0 20px;
 }
 .main-news .main-news-swiper .swiper-slide .text-box .tag {
-  width: -moz-fit-content;
   width: fit-content;
   padding: 3px 9px;
   border-radius: 999px;
@@ -3673,9 +3620,6 @@ input {
   padding-left: 24px;
   padding-right: 50px;
   letter-spacing: 0.4px;
-}
-.box-top-search.type-2 input::-moz-placeholder {
-  color: #bbb;
 }
 .box-top-search.type-2 input::placeholder {
   color: #bbb;
@@ -4499,7 +4443,6 @@ input {
 }
 .detail-search .detail-inner .chk-flex li {
   width: calc(50% - 8px);
-  height: -moz-fit-content;
   height: fit-content;
 }
 .detail-search .detail-inner .chk-flex li label {
@@ -4816,6 +4759,7 @@ input {
 }
 .request-detailInfo .info-list > li .right {
   color: #4d4d4d;
+  max-width: 100%;
 }
 .request-detailInfo .info-list > li .box.no-info {
   display: none;
@@ -5065,7 +5009,6 @@ input {
 }
 .smlNews-list ul li a .text-box .label {
   display: block;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 999px;
   border: 1px solid #fff;
@@ -5179,9 +5122,6 @@ input {
   padding-right: 50px;
   letter-spacing: 0.4px;
 }
-.box-top-search.type-3 input::-moz-placeholder {
-  color: #bbb;
-}
 .box-top-search.type-3 input::placeholder {
   color: #bbb;
 }
@@ -5212,7 +5152,6 @@ input {
 .request-item.certified .item .title {
   width: 100%;
   text-align: left;
-  min-height: -moz-fit-content;
   min-height: fit-content;
   margin-bottom: 16px;
   font-size: 16px;
@@ -5306,7 +5245,6 @@ input {
     position: absolute;
   }
   .common-swiper-pagination-1.swiper-pagination-fraction {
-    width: -moz-fit-content;
     width: fit-content;
     bottom: auto;
     top: 132px;
@@ -5426,7 +5364,6 @@ input {
   }
   .common-printBtn {
     display: block;
-    width: -moz-fit-content;
     width: fit-content;
     padding: 11px 24px;
     border-radius: 999px;
@@ -5462,12 +5399,6 @@ input {
   }
   .common-input-1 input {
     padding: 11px 12px 13px 24px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: 0.32px;
-  }
-  .common-input-1 input::-moz-placeholder {
     font-size: 16px;
     font-weight: 500;
     line-height: 120%;
@@ -5543,7 +5474,6 @@ input {
   .sub-top .text-box .sub-nav-2 > li.nav-acc {
     float: left;
     padding-right: 0;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .sub-top .text-box .sub-nav-2 > li.nav-acc .list {
@@ -5638,7 +5568,6 @@ input {
     padding-top: 15px;
   }
   .form-wrap .form-inner .form-item + .form-item.file-wrap .file-btn-wrap .file-btn {
-    width: -moz-fit-content;
     width: fit-content;
     height: 54px;
     padding: 16px 32px;
@@ -5765,9 +5694,6 @@ input {
   }
   .common-input-2.error {
     border: 1px solid #006477;
-    color: #006477;
-  }
-  .common-input-2.error::-moz-placeholder {
     color: #006477;
   }
   .common-input-2.error::placeholder {
@@ -6185,9 +6111,6 @@ input {
     line-height: 120%;
     letter-spacing: 0.4px;
   }
-  .box-header .search-wrap .input-wrap .search-input::-moz-placeholder {
-    color: #999;
-  }
   .box-header .search-wrap .input-wrap .search-input::placeholder {
     color: #999;
   }
@@ -6230,7 +6153,6 @@ input {
   }
   .box-header .search-wrap .search-list li a {
     display: block;
-    width: -moz-fit-content;
     width: fit-content;
     padding: 12px 24px;
     border-radius: 999px;
@@ -6293,7 +6215,6 @@ input {
     margin-bottom: 32px;
   }
   .box-footer .inner .ft-top .list {
-    width: -moz-fit-content;
     width: fit-content;
     align-items: center;
     justify-content: flex-start;
@@ -6301,7 +6222,6 @@ input {
     gap: 0;
   }
   .box-footer .inner .ft-top .list li {
-    width: -moz-fit-content;
     width: fit-content;
     position: relative;
   }
@@ -6350,7 +6270,6 @@ input {
     align-items: flex-start;
   }
   .box-footer .inner .ft-bottom .left {
-    width: -moz-fit-content;
     width: fit-content;
   }
   .box-footer .inner .ft-bottom .left .logo {
@@ -6372,7 +6291,6 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: -moz-fit-content;
     width: fit-content;
     margin-top: 14px;
   }
@@ -6597,7 +6515,6 @@ input {
   .gray-bg {
     margin-top: -118px;
     padding: 241px 0 86px;
-    background: #fafafa;
   }
   .main-news {
     padding-bottom: 0;
@@ -6718,8 +6635,7 @@ input {
   }
   .main-inspectionSearch .inner-gap-1 .gap {
     border-radius: 12px;
-    -webkit-backdrop-filter: blur(6px);
-            backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
     padding: 32px 20px 38px 20px;
   }
   .main-inspectionSearch .inner-gap-1 .gap > ul {
@@ -7477,7 +7393,6 @@ input {
     border-radius: 24px;
   }
   .box-layer.layer-video.request .inner-layer .gap .box {
-    max-height: -moz-fit-content;
     max-height: fit-content;
   }
   .request-swiper .mySwiper1 {
@@ -7487,7 +7402,6 @@ input {
     padding: 0 41px;
   }
   .request-swiper .mySwiper1 .swiper-slide .tit {
-    width: -moz-fit-content;
     width: fit-content;
     text-align: left;
     font-size: 32px;
@@ -7707,7 +7621,6 @@ input {
     border-bottom: none;
   }
   .detail-search .detail-inner .chk-flex li {
-    width: -moz-fit-content;
     width: fit-content;
   }
   .detail-search .detail-inner .chk-flex li label span {
@@ -8151,12 +8064,10 @@ input {
     line-height: 140%;
     margin-bottom: 0;
     margin-right: 24px;
-    width: -moz-fit-content;
     width: fit-content;
     white-space: nowrap;
   }
   .table-layout.d_2_1 .body > ul > li .name {
-    width: -moz-fit-content;
     width: fit-content;
     text-overflow: ellipsis;
     overflow: hidden;

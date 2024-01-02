@@ -5265,6 +5265,7 @@ input {
 			}
 			.right {
 				color: #4d4d4d;
+				max-width: 100%;
 			}
 			.box {
 				&.no-info {
@@ -7342,7 +7343,6 @@ input {
 	.gray-bg {
 		margin-top: -118px;
 		padding: 241px 0 86px;
-		background: #fafafa;
 	}
 
 	.main-news {
