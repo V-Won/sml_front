@@ -5904,6 +5904,16 @@ input {
 			margin-top: 1px;
 		}
 	}
+
+	.border-prev-next {
+		ul {
+			li {
+				a {
+					padding-left: 106px;
+				}
+			}
+		}
+	}
 }
 // //lang(en)
 
@@ -9778,6 +9788,15 @@ input {
 		.tabOnly {
 			.request-item {
 				margin-top: 55px;
+			}
+		}
+		.border-prev-next {
+			ul {
+				li {
+					a {
+						padding-left: 192px;
+					}
+				}
 			}
 		}
 	}

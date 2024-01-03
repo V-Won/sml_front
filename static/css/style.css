@@ -5271,6 +5271,9 @@ input {
 :lang(en) .box-top-search .item-search {
   margin-top: 1px;
 }
+:lang(en) .border-prev-next ul li a {
+  padding-left: 106px;
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
@@ -8449,6 +8452,9 @@ input {
   }
   :lang(en) .tabOnly .request-item {
     margin-top: 55px;
+  }
+  :lang(en) .border-prev-next ul li a {
+    padding-left: 192px;
   }
 }
 /* //1024 이상 */
