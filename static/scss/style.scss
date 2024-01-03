@@ -8168,8 +8168,8 @@ input {
 			border: 1px solid #d5d5d5;
 			position: relative;
 			margin-top: 28px;
-			&.top-gap-1{
-				margin-top:12px;
+			&.top-gap-1 {
+				margin-top: 12px;
 			}
 			.map-ct {
 			}
@@ -8216,11 +8216,11 @@ input {
 								border-bottom: 0;
 							}
 							> h4 {
-								font-size: 22px;
+								//font-size: 22px;
 								margin-bottom: 17px;
 							}
 							.text-1 {
-								font-size: 16px;
+								font-size: 18px;
 								line-height: 24px;
 								letter-spacing: 0.4px;
 								margin-bottom: 12px;
@@ -9515,8 +9515,8 @@ input {
 		}
 		.item-search {
 			margin-top: 4px;
-			&.gap-type-1{
-				margin-top:0;
+			&.gap-type-1 {
+				margin-top: 0;
 			}
 		}
 	}
@@ -9555,7 +9555,7 @@ input {
 				}
 			}
 		}
-		
+
 		.sub-top {
 			.text-box {
 				.sub-nav-2 {
@@ -9569,6 +9569,32 @@ input {
 				}
 				.sub-tit {
 					letter-spacing: 1.04px;
+				}
+			}
+		}
+
+		// 재단안내 > 전국 네트워크
+		.box-map-search {
+			.box-map {
+				.common-btnType-1 {
+					margin-top: 40px;
+				}
+				.box-top-search {
+					.common-selectbox-2 {
+						margin-bottom: 12px;
+					}
+				}
+				.box-search-list {
+					> ul {
+						> li {
+							> h4 {
+								margin-bottom: 20px;
+							}
+							dl {
+								gap: 9px;
+							}
+						}
+					}
 				}
 			}
 		}

@@ -7212,11 +7212,10 @@ input {
     border-bottom: 0;
   }
   .box-map-search .box-map .list-ct .box-search-list > ul > li > h4 {
-    font-size: 22px;
     margin-bottom: 17px;
   }
   .box-map-search .box-map .list-ct .box-search-list > ul > li .text-1 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.4px;
     margin-bottom: 12px;
@@ -8345,6 +8344,18 @@ input {
   }
   :lang(en) .sub-top .text-box .sub-tit {
     letter-spacing: 1.04px;
+  }
+  :lang(en) .box-map-search .box-map .common-btnType-1 {
+    margin-top: 40px;
+  }
+  :lang(en) .box-map-search .box-map .box-top-search .common-selectbox-2 {
+    margin-bottom: 12px;
+  }
+  :lang(en) .box-map-search .box-map .box-search-list > ul > li > h4 {
+    margin-bottom: 20px;
+  }
+  :lang(en) .box-map-search .box-map .box-search-list > ul > li dl {
+    gap: 9px;
   }
 }
 /* //1024 이상 */
