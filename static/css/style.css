@@ -4212,6 +4212,7 @@ input {
   word-break: break-all;
   min-height: 34px;
   margin-bottom: 12px;
+  word-break: keep-all;
 }
 .request-item .item .img-holder span {
   width: 92px;
@@ -5806,6 +5807,9 @@ input {
   .common-tab.type-3 ul li.is-active .btn span {
     font-size: 20px;
     display: inline-block;
+  }
+  .common-tab.type-3.no-pd {
+    padding-top: 0;
   }
   .common-tab + .box-top-search {
     margin-top: 32px;
@@ -7560,9 +7564,9 @@ input {
     margin-bottom: 24px;
     font-size: 20px;
     letter-spacing: 0.4px;
+    padding: 0;
   }
   .request-item.certified .item .flex {
-    align-items: center;
     justify-content: flex-start;
     gap: 0 36px;
   }
@@ -7577,10 +7581,15 @@ input {
     width: 160px;
     height: 220px;
   }
+  .request-item.certified .item .flex .text-box {
+    margin-top: 45px;
+    width: calc(50% + 40px);
+  }
   .request-item.certified .item .flex .text-box .tit {
     font-size: 18px;
     letter-spacing: 0.4px;
     margin-bottom: 12px;
+    word-break: keep-all;
   }
   .request-item.certified .item .flex .text-box .txt {
     font-size: 16px;

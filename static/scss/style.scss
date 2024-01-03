@@ -4688,6 +4688,7 @@ input {
 			word-break: break-all;
 			min-height: 34px;
 			margin-bottom: 12px;
+			word-break: keep-all;
 		}
 		.img-holder {
 			span {
@@ -6561,6 +6562,9 @@ input {
 						}
 					}
 				}
+			}
+			&.no-pd {
+				padding-top: 0;
 			}
 		}
 		& + .box-top-search {
@@ -8607,9 +8611,9 @@ input {
 					margin-bottom: 24px;
 					font-size: 20px;
 					letter-spacing: 0.4px;
+					padding: 0;
 				}
 				.flex {
-					align-items: center;
 					justify-content: flex-start;
 					gap: 0 36px;
 					.img-box {
@@ -8624,10 +8628,13 @@ input {
 						}
 					}
 					.text-box {
+						margin-top: 45px;
+						width: calc(50% + 40px);
 						.tit {
 							font-size: 18px;
 							letter-spacing: 0.4px;
 							margin-bottom: 12px;
+							word-break: keep-all;
 						}
 						.txt {
 							font-size: 16px;
