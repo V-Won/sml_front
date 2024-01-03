@@ -7163,6 +7163,9 @@ input {
     position: relative;
     margin-top: 28px;
   }
+  .box-map-search .box-map.top-gap-1 {
+    margin-top: 12px;
+  }
   .box-map-search .box-map .list-ct {
     position: absolute;
     top: 0;

@@ -8164,6 +8164,9 @@ input {
 			border: 1px solid #d5d5d5;
 			position: relative;
 			margin-top: 28px;
+			&.top-gap-1{
+				margin-top:12px;
+			}
 			.map-ct {
 			}
 			.list-ct {
