@@ -8306,6 +8306,9 @@ input {
   .box-top-search .item-search {
     margin-top: 4px;
   }
+  .box-top-search .item-search.gap-type-1 {
+    margin-top: 0;
+  }
   .tabOnly .title-search-1 {
     display: none;
   }

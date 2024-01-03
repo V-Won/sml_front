@@ -9505,6 +9505,9 @@ input {
 		}
 		.item-search {
 			margin-top: 4px;
+			&.gap-type-1{
+				margin-top:0;
+			}
 		}
 	}
 	.tabOnly {
