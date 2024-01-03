@@ -5801,8 +5801,28 @@ input {
 	}
 }
 
-// lang en
+// lang(en)
 :lang(en) {
+	// 공통 Tab
+	.common-tab {
+		&.padding-top-1 {
+			padding-top: 41px;
+		}
+		&.type-3 {
+			ul {
+				li {
+					&.is-active {
+						.btn {
+							span {
+								padding-left: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	// common btn map
 	.common-btnMap-1 {
 		letter-spacing: 0.28px;
@@ -5821,6 +5841,7 @@ input {
 			}
 		}
 	}
+
 	// 공통 header type-2 is-hover is-search is-lang
 	.box-header {
 		&.bg-fff,
@@ -5843,8 +5864,39 @@ input {
 				letter-spacing: 0.4px;
 			}
 		}
+		&.bg-fff {
+			.text-box {
+				.sub-tit {
+					&.margin-bottom-1 {
+						letter-spacing: -0.02em;
+					}
+				}
+			}
+		}
+	}
+
+	.smlNews-list {
+		ul {
+			margin-top: -2px;
+			li {
+				a {
+					.text-box {
+						.label {
+							padding: 3px 7px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tabOnly {
+		.request-item {
+			margin-top: 35px;
+		}
 	}
 }
+// //lang(en)
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
@@ -9540,8 +9592,79 @@ input {
 		}
 	}
 
-	// lang en
+	// lang(en)
 	:lang(en) {
+		// 공통 table
+		.table-layout {
+			&.b_3_1 {
+				.head {
+					ul {
+						li {
+							&:first-child {
+								width: 8.5%;
+							}
+							&:nth-child(2) {
+								width: 11.5%;
+							}
+							&:nth-child(3) {
+								width: 31.5%;
+							}
+							&:nth-child(4) {
+								width: 11.5%;
+							}
+							&:nth-child(5) {
+								width: 11%;
+							}
+							&:nth-child(6) {
+								width: 12%;
+							}
+							&:nth-child(7) {
+								width: 14%;
+							}
+						}
+					}
+				}
+				.body {
+					> ul {
+						> li {
+							.num {
+								width: 8.5%;
+							}
+							.code {
+								width: 11.5%;
+							}
+							.name {
+								width: 31.5%;
+							}
+							.item-box {
+								width: 48%;
+								.item {
+									&:first-child {
+										width: 23.8%;
+									}
+									&:nth-child(2) {
+										width: 23.8%;
+									}
+									&:nth-child(3) {
+										width: 23.95%;
+									}
+									&:nth-child(4) {
+										width: 28.65%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		// 공통 Tab
+		.common-tab {
+			&.padding-top-1 {
+				padding-top: 81px;
+			}
+		}
+
 		// 공통 header
 		.box-header {
 			.inner-gap-1 {
@@ -9571,6 +9694,15 @@ input {
 					letter-spacing: 1.04px;
 				}
 			}
+			&.bg-fff {
+				.text-box {
+					.sub-tit {
+						&.margin-bottom-1 {
+							letter-spacing: 0.02em;
+						}
+					}
+				}
+			}
 		}
 
 		// 재단안내 > 전국 네트워크
@@ -9598,12 +9730,51 @@ input {
 				}
 			}
 		}
+
+		.title-search-1 {
+			padding-bottom: 24px;
+			&.padding-type-1 {
+				padding-bottom: 0;
+			}
+		}
+
+		.smlNews-list {
+			ul {
+				li {
+					a {
+						.text-box {
+							.label {
+								padding: 5px 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.request-item {
+			.item {
+				.btn-flex {
+					button {
+						span {
+							letter-spacing: 0.32px;
+						}
+					}
+				}
+			}
+		}
+		.tabOnly {
+			.request-item {
+				margin-top: 55px;
+			}
+		}
 	}
+	// //lang(en)
 }
 
 /* //1024 이상 */
 
-/* 1200 이상 */
+/* 1 2 0 0 이상 */
 @media all and (min-width: 1200px) {
 	.box-header {
 		.inner-gap-1 {
@@ -9659,7 +9830,7 @@ input {
 		}
 	}
 }
-/* //1200 이상 */
+/* //1 2 0 0 이상 */
 
 /* 1300 이상 */
 @media all and (min-width: 1300px) {
