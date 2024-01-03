@@ -8,6 +8,7 @@
     content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
   <title>삼광의료재단</title>
   <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
 </head>
 
 <body id="main">
@@ -49,18 +50,22 @@
       
       <div class="inner-gap-1">
         <!-- common-tab -->
-        <div class="common-tab type-1" data-event="commonTab">
-          <ul class="list">
-            <li class="is-active"><button class="btn">Laboratory Medicine</button></li>
-            <li><button class="btn">Jungbu Center</button></li>
-            <li><button class="btn">Busan Center</button></li>
-          </ul>
+        <div class="common-tab type-3 no-pd" data-event="commonTab">
+          <div class="swiper-container snbSwiper type-1">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide is-active" data-index="0"><button class="btn">Laboratory Medicine</button></li>
+              <li class="swiper-slide" data-index="1"><span class="btn">Jungbu Center</span></li>
+              <li class="swiper-slide" data-index="2"><span class="btn">Busan Center</span></li>
+            </ul>
+          </div>
         </div>
         <div class="common-tab type-2 padding-top-1" data-event="commonTab">
-          <ul class="list">
-            <li class="is-active"><button class="btn">Domestic Certificates</button></li>
-            <li><button class="btn">International Certificates</button></li>
-          </ul>
+          <div class="swiper-container snbSwiper type-2">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide is-active" data-index="0"><span class="btn">Domestic Certificates</span></li>
+              <li class="swiper-slide" data-index="1"><span class="btn">International Certificates</span></li>
+            </ul>
+          </div>
         </div>
         <!-- //common-tab -->
         <!-- request-item -->
@@ -75,7 +80,7 @@
                   </span>
                 </div>
                 <div class="btn-flex">
-                  <button type="button" class="view-btn"><span>미리보기</span></button>
+                  <button type="button" class="view-btn"><span>Preview</span></button>
                 </div>
               </div>
               <div class="text-box">
@@ -89,13 +94,13 @@
                 </div>
                 <div class="box">
                   <p class="tit">Accreditation Body</p>
-                  <p class="txt">Bacteriology, Chemistry, Clinical Biochemical Genetics, Coagulation 등</p>
+                  <p class="txt">Bacteriology, Chemistry, Clinical Biochemical Genetics, Coagulation etc.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="item">
-            <p class="title">CAP 인증서</p>
+            <p class="title">CDC</p>
             <div class="flex">
               <div class="img-box">
                 <div class="img-holder">
@@ -104,27 +109,27 @@
                   </span>
                 </div>
                 <div class="btn-flex">
-                  <button type="button" class="view-btn"><span>미리보기</span></button>
+                  <button type="button" class="view-btn"><span>Preview</span></button>
                 </div>
               </div>
               <div class="text-box">
                 <div class="box">
                   <p class="tit">Program Name</p>
-                  <p class="txt">The College of American pathologists Accreditation Certification</p>
+                  <p class="txt">Newborn Screening Quality Assurance Program</p>
                 </div>
                 <div class="box">
                   <p class="tit">Country</p>
-                  <p class="txt">U.S.</p>
+                  <p class="txt">CDC, USA</p>
                 </div>
                 <div class="box">
                   <p class="tit">Accreditation Body</p>
-                  <p class="txt">Bacteriology, Chemistry, Clinical Biochemical Genetics, Coagulation 등</p>
+                  <p class="txt">Newborn Screening test</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="item">
-            <p class="title">CAP 인증서</p>
+            <p class="title">Outstanding Laboratory Accreditation Program</p>
             <div class="flex">
               <div class="img-box">
                 <div class="img-holder">
@@ -133,27 +138,23 @@
                   </span>
                 </div>
                 <div class="btn-flex">
-                  <button type="button" class="view-btn"><span>미리보기</span></button>
+                  <button type="button" class="view-btn"><span>Preview</span></button>
                 </div>
               </div>
               <div class="text-box">
                 <div class="box">
-                  <p class="tit">Program Name</p>
-                  <p class="txt">The College of American pathologists Accreditation Certification</p>
-                </div>
-                <div class="box">
-                  <p class="tit">Country</p>
-                  <p class="txt">U.S.</p>
-                </div>
-                <div class="box">
                   <p class="tit">Accreditation Body</p>
-                  <p class="txt">Bacteriology, Chemistry, Clinical Biochemical Genetics, Coagulation 등</p>
+                  <p class="txt">Korean Society for Laboratory Medicine, Laboratory Medicine Foundation</p>
+                </div>
+                <div class="box">
+                  <p class="tit">Certification Details</p>
+                  <p class="txt">Laboratory Operation, Diagnostic Blood Tests, Clinical Chemistry Tests, and more.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="item">
-            <p class="title">CAP 인증서</p>
+            <p class="title">Nuclear Medicine Specimen Testing Reference Laboratory</p>
             <div class="flex">
               <div class="img-box">
                 <div class="img-holder">
@@ -162,21 +163,17 @@
                   </span>
                 </div>
                 <div class="btn-flex">
-                  <button type="button" class="view-btn"><span>미리보기</span></button>
+                  <button type="button" class="view-btn"><span>Preview</span></button>
                 </div>
               </div>
               <div class="text-box">
                 <div class="box">
-                  <p class="tit">Program Name</p>
-                  <p class="txt">The College of American pathologists Accreditation Certification</p>
-                </div>
-                <div class="box">
-                  <p class="tit">Country</p>
-                  <p class="txt">U.S.</p>
-                </div>
-                <div class="box">
                   <p class="tit">Accreditation Body</p>
-                  <p class="txt">Bacteriology, Chemistry, Clinical Biochemical Genetics, Coagulation 등</p>
+                  <p class="txt">The Korean Society of Nuclear Medicine</p>
+                </div>
+                <div class="box">
+                  <p class="tit">Certification Details</p>
+                  <p class="txt">Certified as a nuclear medicine specimen testing reference laboratory</p>
                 </div>
               </div>
             </div>
@@ -186,7 +183,7 @@
         <!-- common-paging -->
         <div class="common-paging">
           <div class="mobile-paging">
-            <button type="button" class="more-btn">더보기</button>
+            <button type="button" class="more-btn">more</button>
           </div>
           <ul>
             <li><a href="#none" class="btn-first" title="첫 페이지 이동"></a></li>
@@ -224,6 +221,11 @@
   <script src="../static/js/front.js"></script>
   <!-- //공통 js -->
 
+  <!-- swiper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="../static/js/swiper.min.js"></script>
+  <!-- //swiper.js -->
+
   <script>
     /**
      * header bg type
@@ -235,6 +237,114 @@
     })
     selectBox.initialize();
     commonTab.initialize();
+
+    const actionEvent = () => {
+      // tab 전체 swiper
+      var swiper = new Swiper('.mobile .snbSwiper.type-1', {
+        slidesPerView: 'auto',
+        preventClicks: true,
+        preventClicksPropagation: false,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+          1024: {
+            allowTouchMove: false
+          },
+        },
+      });
+
+      var $snbSwiperItem = $('.mobile .snbSwiper.type-1 .swiper-wrapper .swiper-slide button');
+      $snbSwiperItem.click(function () {
+        var target = $(this).parent();
+        $snbSwiperItem.parent().removeClass('on')
+        target.addClass('on');
+        muCenter(target, target.index());
+      })
+
+      function muCenter(target, idx) {
+        var snbwrap = $('.mobile .snbSwiper.type-1 .swiper-wrapper');
+        var targetPos = target.position();
+        var box = $('.mobile .snbSwiper.type-1');
+        var boxHarf = box.width() / 2;
+        var pos;
+        var listWidth = 0;
+
+        snbwrap.find('.swiper-slide').each(function () { listWidth += $(this).outerWidth(); })
+
+        var selectTargetPos = targetPos.left + target.outerWidth() / 2;
+        if (selectTargetPos <= boxHarf) { // left
+          pos = 0;
+        } else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+          pos = listWidth - box.width();
+        } else {
+          pos = selectTargetPos - boxHarf;
+        }
+      }
+
+      document.querySelectorAll('.mobile .snbSwiper.type-1 > ul > li').forEach((item) => {
+        item.addEventListener('click', (e) => {
+          swiper.slideTo(e.currentTarget.getAttribute('data-index'));
+        });
+      });
+
+      // tab 학술자료 swiper
+      var swiper2 = new Swiper('.mobile .snbSwiper.type-2', {
+        slidesPerView: 'auto',
+        preventClicks: true,
+        preventClicksPropagation: false,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+          1024: {
+            allowTouchMove: false
+          },
+        },
+      });
+
+      var $snbSwiperItem2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper .swiper-slide button');
+      $snbSwiperItem2.click(function () {
+        var target2 = $(this).parent();
+        $snbSwiperItem2.parent().removeClass('on')
+        target2.addClass('on');
+        muCenter2(target2, target2.index());
+      })
+
+      function muCenter2(target2, idx) {
+        var snbwrap2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper');
+        var targetPos2 = target2.position();
+        var box2 = $('.mobile .snbSwiper.type-2');
+        var boxHarf2 = box2.width() / 2;
+        var pos2;
+        var listWidth2 = 0;
+
+        snbwrap2.find('.swiper-slide').each(function () { listWidth2 += $(this).outerWidth(); })
+
+        var selectTargetPos2 = targetPos2.left + target2.outerWidth() / 2;
+        if (selectTargetPos2 <= boxHarf2) { // left
+          pos2 = 0;
+        } else if ((listWidth2 - selectTargetPos2) <= boxHarf2) { //right
+          pos2 = listWidth2 - box2.width();
+        } else {
+          pos2 = selectTargetPos2 - boxHarf2;
+        }
+      }
+
+      document.querySelectorAll('.mobile .snbSwiper.type-2 > ul > li').forEach((item) => {
+        item.addEventListener('click', (e) => {
+          swiper2.slideTo(e.currentTarget.getAttribute('data-index'));
+        });
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      actionEvent();
+    })
+
+    window.addEventListener('load', () => {
+      if (window.innerWidth <= 1024) {
+        actionEvent();
+      }
+    })
   </script>
 
 </body>
