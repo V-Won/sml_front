@@ -2014,7 +2014,7 @@ input {
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 120%;
-					letter-spacing: 0.4px;
+					letter-spacing: 0.28px;
 					position: relative;
 					display: block;
 					padding-right: 24px;
@@ -2028,7 +2028,7 @@ input {
 						background-position: center;
 						position: absolute;
 						top: 50%;
-						right: 4px;
+						right: 6px;
 						transform: translateY(-50%);
 					}
 				}
@@ -2134,7 +2134,7 @@ input {
 			font-size: 30px;
 			font-weight: 700;
 			line-height: 120%;
-			letter-spacing: 0.4px;
+			letter-spacing: 0.6px;
 		}
 	}
 	&.bg-fff {
@@ -5821,6 +5821,35 @@ input {
 		}
 	}
 	// Our Networks
+
+	// 공통 sub top
+	.sub-top {
+		.text-box {
+			.sub-tit {
+				letter-spacing: 0.4px;
+			}
+		}
+	}
+
+	/* 1024 이상 */
+	@media all and (min-width: 1024px) {
+		.sub-top {
+			.text-box {
+				.sub-nav-2 {
+					> li {
+						&.nav-acc {
+							.button {
+								letter-spacing: 0.2px;
+							}
+						}
+					}
+				}
+				.sub-tit {
+					letter-spacing: 1.04px;
+				}
+			}
+		}
+	}
 }
 
 /* 1024 이상 */
@@ -6135,7 +6164,7 @@ input {
 					height: 19px;
 					> a {
 						font-size: 16px;
-						letter-spacing: 0.4px;
+						letter-spacing: 0.32px;
 						padding-right: 28px;
 					}
 					&.nav-acc {
@@ -6157,7 +6186,7 @@ input {
 			.sub-tit {
 				font-size: 52px;
 				font-weight: 600;
-				letter-spacing: 0.4px;
+				letter-spacing: 1.04px;
 			}
 		}
 		&.bg-fff {
@@ -6167,6 +6196,16 @@ input {
 			.text-box {
 				.sub-tit {
 					margin-bottom: 48px;
+				}
+				.sub-nav-2 {
+					> li {
+						> a {
+							padding-right: 24px;
+							&::before {
+								right: 4px;
+							}
+						}
+					}
 				}
 			}
 		}

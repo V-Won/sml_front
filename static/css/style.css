@@ -1703,7 +1703,7 @@ input {
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.28px;
   position: relative;
   display: block;
   padding-right: 24px;
@@ -1718,7 +1718,7 @@ input {
   background-position: center;
   position: absolute;
   top: 50%;
-  right: 4px;
+  right: 6px;
   transform: translateY(-50%);
 }
 .sub-top .text-box .sub-nav-2 > li:first-child {
@@ -1815,7 +1815,7 @@ input {
   font-size: 30px;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.6px;
 }
 .sub-top.bg-fff {
   height: auto;
@@ -5230,6 +5230,9 @@ input {
   letter-spacing: 0.4px;
 }
 
+:lang(en) {
+  /* 1024 이상 */
+}
 :lang(en) .common-btnMap-1 {
   letter-spacing: 0.28px;
 }
@@ -5239,6 +5242,17 @@ input {
 :lang(en) .box-header .inner-gap-1 .inner .logo a {
   width: 95px;
   height: 36px;
+}
+:lang(en) .sub-top .text-box .sub-tit {
+  letter-spacing: 0.4px;
+}
+@media all and (min-width: 1024px) {
+  :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc .button {
+    letter-spacing: 0.2px;
+  }
+  :lang(en) .sub-top .text-box .sub-tit {
+    letter-spacing: 1.04px;
+  }
 }
 
 /* 1024 이상 */
@@ -5493,7 +5507,7 @@ input {
   }
   .sub-top .text-box .sub-nav-2 > li > a {
     font-size: 16px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.32px;
     padding-right: 28px;
   }
   .sub-top .text-box .sub-nav-2 > li.nav-acc {
@@ -5511,13 +5525,19 @@ input {
   .sub-top .text-box .sub-tit {
     font-size: 52px;
     font-weight: 600;
-    letter-spacing: 0.4px;
+    letter-spacing: 1.04px;
   }
   .sub-top.bg-fff .inner-gap-1 {
     padding-top: 176px;
   }
   .sub-top.bg-fff .text-box .sub-tit {
     margin-bottom: 48px;
+  }
+  .sub-top.bg-fff .text-box .sub-nav-2 > li > a {
+    padding-right: 24px;
+  }
+  .sub-top.bg-fff .text-box .sub-nav-2 > li > a::before {
+    right: 4px;
   }
   .form-wrap .form-tit {
     padding-bottom: 21px;
