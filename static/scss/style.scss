@@ -5876,6 +5876,9 @@ input {
 	}
 
 	.smlNews-list {
+		&.gap-type-1 {
+			margin-top: 22px;
+		}
 		ul {
 			margin-top: -2px;
 			li {
@@ -5893,6 +5896,12 @@ input {
 	.tabOnly {
 		.request-item {
 			margin-top: 35px;
+		}
+	}
+
+	.box-top-search {
+		.item-search {
+			margin-top: 1px;
 		}
 	}
 }
@@ -9739,6 +9748,9 @@ input {
 		}
 
 		.smlNews-list {
+			&.gap-type-1 {
+				margin-top: 25px;
+			}
 			ul {
 				li {
 					a {

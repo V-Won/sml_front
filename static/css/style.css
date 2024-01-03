@@ -5256,6 +5256,9 @@ input {
 :lang(en) .sub-top.bg-fff .text-box .sub-tit.margin-bottom-1 {
   letter-spacing: -0.02em;
 }
+:lang(en) .smlNews-list.gap-type-1 {
+  margin-top: 22px;
+}
 :lang(en) .smlNews-list ul {
   margin-top: -2px;
 }
@@ -5264,6 +5267,9 @@ input {
 }
 :lang(en) .tabOnly .request-item {
   margin-top: 35px;
+}
+:lang(en) .box-top-search .item-search {
+  margin-top: 1px;
 }
 
 /* 1024 이상 */
@@ -8431,6 +8437,9 @@ input {
   }
   :lang(en) .title-search-1.padding-type-1 {
     padding-bottom: 0;
+  }
+  :lang(en) .smlNews-list.gap-type-1 {
+    margin-top: 25px;
   }
   :lang(en) .smlNews-list ul li a .text-box .label {
     padding: 5px 10px;
