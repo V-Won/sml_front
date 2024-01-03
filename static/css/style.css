@@ -5230,9 +5230,6 @@ input {
   letter-spacing: 0.4px;
 }
 
-:lang(en) {
-  /* 1024 이상 */
-}
 :lang(en) .common-btnMap-1 {
   letter-spacing: 0.28px;
 }
@@ -5245,14 +5242,6 @@ input {
 }
 :lang(en) .sub-top .text-box .sub-tit {
   letter-spacing: 0.4px;
-}
-@media all and (min-width: 1024px) {
-  :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc .button {
-    letter-spacing: 0.2px;
-  }
-  :lang(en) .sub-top .text-box .sub-tit {
-    letter-spacing: 1.04px;
-  }
 }
 
 /* 1024 이상 */
@@ -8328,6 +8317,12 @@ input {
   }
   .tabOnly .box-qna {
     margin-top: 56px;
+  }
+  :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc .button {
+    letter-spacing: 0.2px;
+  }
+  :lang(en) .sub-top .text-box .sub-tit {
+    letter-spacing: 1.04px;
   }
 }
 /* //1024 이상 */

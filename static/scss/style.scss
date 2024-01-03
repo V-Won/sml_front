@@ -5830,26 +5830,6 @@ input {
 			}
 		}
 	}
-
-	/* 1024 이상 */
-	@media all and (min-width: 1024px) {
-		.sub-top {
-			.text-box {
-				.sub-nav-2 {
-					> li {
-						&.nav-acc {
-							.button {
-								letter-spacing: 0.2px;
-							}
-						}
-					}
-				}
-				.sub-tit {
-					letter-spacing: 1.04px;
-				}
-			}
-		}
-	}
 }
 
 /* 1024 이상 */
@@ -9531,6 +9511,26 @@ input {
 		}
 		.box-qna {
 			margin-top: 56px;
+		}
+	}
+
+	// lang en
+	:lang(en){
+		.sub-top {
+			.text-box {
+				.sub-nav-2 {
+					> li {
+						&.nav-acc {
+							.button {
+								letter-spacing: 0.2px;
+							}
+						}
+					}
+				}
+				.sub-tit {
+					letter-spacing: 1.04px;
+				}
+			}
 		}
 	}
 }
