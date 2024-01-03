@@ -7809,12 +7809,12 @@ input {
     gap: 40px 0;
   }
   .request-detailTop .top-info ul li {
-    width: 26.2%;
+    width: 38%;
   }
-  .request-detailTop .top-info ul li:nth-child(7) {
-    width: 21.4%;
+  .request-detailTop .top-info ul li:nth-child(4), .request-detailTop .top-info ul li:nth-child(5) {
+    width: 24%;
   }
-  .request-detailTop .top-info ul li:nth-child(7) .right {
+  .request-detailTop .top-info ul li:nth-child(4) .right, .request-detailTop .top-info ul li:nth-child(5) .right {
     text-align: right;
     white-space: nowrap;
   }
@@ -8328,14 +8328,33 @@ input {
     padding: 40px 80px;
   }
   .request-detailTop .top-info ul li {
-    width: 27.5%;
+    width: 29.5%;
     gap: 0 20px;
   }
+  .request-detailTop .top-info ul li:nth-child(3), .request-detailTop .top-info ul li:nth-child(4) {
+    width: 25%;
+  }
+  .request-detailTop .top-info ul li:nth-child(3) .right, .request-detailTop .top-info ul li:nth-child(4) .right {
+    text-align: left;
+  }
+  .request-detailTop .top-info ul li:nth-child(5) {
+    width: 29.5%;
+  }
+  .request-detailTop .top-info ul li:nth-child(5) .right {
+    text-align: left;
+  }
   .request-detailTop .top-info ul li:nth-child(7) {
-    width: 17.5%;
+    width: 16%;
+  }
+  .request-detailTop .top-info ul li:nth-child(7) .left {
+    white-space: nowrap;
+  }
+  .request-detailTop .top-info ul li:nth-child(7) .right {
+    text-align: right;
+    white-space: nowrap;
   }
   .request-detailTop .top-info ul li .left {
-    max-width: 120px;
+    max-width: 80px;
     font-weight: 600;
   }
 }

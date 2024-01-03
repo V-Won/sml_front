@@ -8865,9 +8865,9 @@ input {
 				flex-wrap: wrap;
 				gap: 40px 0;
 				li {
-					width: 26.2%;
-					&:nth-child(7) {
-						width: 21.4%;
+					width: 38%;
+					&:nth-child(4), &:nth-child(5) {
+						width: 24%;
 						.right {
 							text-align: right;
 							white-space: nowrap;
@@ -9529,13 +9529,32 @@ input {
 			padding: 40px 80px;
 			ul {
 				li {
-					width: 27.5%;
+					width: 29.5%;
 					gap: 0 20px;
+					&:nth-child(3), &:nth-child(4) {
+						width: 25%;
+						.right {
+							text-align: left;
+						}
+					}
+					&:nth-child(5) {
+						width: 29.5%;
+						.right {
+							text-align: left;
+						}
+					}
 					&:nth-child(7) {
-						width: 17.5%;
+						width: 16%;
+						.left {
+							white-space: nowrap;
+						}
+						.right {
+							text-align: right;
+							white-space: nowrap;
+						}
 					}
 					.left {
-						max-width: 120px;
+						max-width: 80px;
 						font-weight: 600;
 					}
 				}
