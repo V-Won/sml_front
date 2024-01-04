@@ -5887,6 +5887,47 @@ input {
 		}
 	}
 
+	// 공통 box-floating
+	.box-floating {
+		.inner {
+			.list-quick {
+				bottom: 125px;
+				right: -17px;
+				ul {
+					width: 108px;
+					flex-direction: column;
+					li {
+						width: 91px;
+						a {
+							height: 122px;
+							&::before {
+								position: relative;
+								top: -10px;
+								margin: 0 auto;
+							}
+						}
+						&:nth-child(2){
+							a{
+								&::before{
+									background: url(../images/icon/float_icon_3.svg);
+								}
+							}
+						}
+						&:hover{
+							&:nth-child(2){
+								a{
+									&::before{
+										background: url(../images/icon/float_icon_3_hover.svg);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	// 공통 sub top
 	.sub-top {
 		.text-box {
@@ -9872,7 +9913,7 @@ input {
 		.box-footer {
 			.inner {
 				.ft-top {
-					padding-bottom:26px;
+					padding-bottom: 26px;
 					.list {
 						flex-direction: row;
 						li {
@@ -9886,7 +9927,7 @@ input {
 					}
 				}
 				.ft-bottom {
-					padding-bottom:20px;
+					padding-bottom: 20px;
 					.left {
 						.logo {
 							width: 189px;
@@ -9894,8 +9935,8 @@ input {
 							background-size: contain;
 						}
 						.info-list {
-							gap:8px 16px;
-							margin-bottom:0;
+							gap: 8px 16px;
+							margin-bottom: 0;
 							li {
 							}
 						}
@@ -9910,6 +9951,24 @@ input {
 					}
 				}
 				.copyright {
+				}
+			}
+		}
+
+		// 공통 box-floating
+		.box-floating {
+			.inner {
+				.list-quick {
+					bottom:134px;
+					right:-24px;
+					ul {
+						li {
+							a {
+								&::before {
+								}
+							}
+						}
+					}
 				}
 			}
 		}
