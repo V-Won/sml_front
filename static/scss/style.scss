@@ -4094,7 +4094,7 @@ input {
 			border-radius: 999px;
 			padding-left: 24px;
 			padding-right: 50px;
-			letter-spacing: 0.4px;
+			letter-spacing: 0.28px;
 			&::placeholder {
 				color: #bbb;
 			}
@@ -4695,7 +4695,7 @@ input {
 				width: 92px;
 				height: 126px;
 				padding-top: 0;
-				margin: 0 auto 22px;
+				margin: 0 auto 24px;
 			}
 		}
 		.btn-flex {
@@ -5903,6 +5903,11 @@ input {
 		.item-search {
 			margin-top: 1px;
 		}
+		&.type-2 {
+			input {
+				letter-spacing: 0.1px;
+			}
+		}
 	}
 
 	.border-prev-next {
@@ -6619,6 +6624,7 @@ input {
 					margin-right: 29px;
 					.btn {
 						font-size: 28px;
+						letter-spacing: 0.56px;
 						span {
 							display: none;
 						}
@@ -6626,6 +6632,7 @@ input {
 					&.is-active {
 						.btn {
 							font-size: 28px;
+							letter-spacing: 0.56px;
 							span {
 								font-size: 20px;
 								display: inline-block;
@@ -9839,7 +9846,7 @@ input {
 						font-size: 16px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing: 0.4px;
+						letter-spacing: 0.32px;
 						padding-left: 24px;
 						position: relative;
 						&::after {

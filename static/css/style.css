@@ -3633,7 +3633,7 @@ input {
   border-radius: 999px;
   padding-left: 24px;
   padding-right: 50px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.28px;
 }
 .box-top-search.type-2 input::placeholder {
   color: #bbb;
@@ -4218,7 +4218,7 @@ input {
   width: 92px;
   height: 126px;
   padding-top: 0;
-  margin: 0 auto 22px;
+  margin: 0 auto 24px;
 }
 .request-item .item .btn-flex {
   width: calc(100% + 24px);
@@ -5271,6 +5271,9 @@ input {
 :lang(en) .box-top-search .item-search {
   margin-top: 1px;
 }
+:lang(en) .box-top-search.type-2 input {
+  letter-spacing: 0.1px;
+}
 :lang(en) .border-prev-next ul li a {
   padding-left: 106px;
 }
@@ -5824,12 +5827,14 @@ input {
   }
   .common-tab.type-3 ul li .btn {
     font-size: 28px;
+    letter-spacing: 0.56px;
   }
   .common-tab.type-3 ul li .btn span {
     display: none;
   }
   .common-tab.type-3 ul li.is-active .btn {
     font-size: 28px;
+    letter-spacing: 0.56px;
   }
   .common-tab.type-3 ul li.is-active .btn span {
     font-size: 20px;
@@ -8476,7 +8481,7 @@ input {
     font-size: 16px;
     font-weight: 600;
     line-height: 120%;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.32px;
     padding-left: 24px;
     position: relative;
   }
