@@ -5386,6 +5386,12 @@ input {
 :lang(en) .request-detailInfo .info-list.column li .box {
   width: 100%;
 }
+:lang(en) .form-wrap .form-inner .form-item .label-wrap .input-label > span::after {
+  padding-left: 0;
+  position: relative;
+  left: -7px;
+  top: 1px;
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {

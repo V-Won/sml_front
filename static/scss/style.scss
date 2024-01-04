@@ -5913,17 +5913,17 @@ input {
 								margin: 0 auto;
 							}
 						}
-						&:nth-child(2){
-							a{
-								&::before{
+						&:nth-child(2) {
+							a {
+								&::before {
 									background: url(../images/icon/float_icon_3.svg);
 								}
 							}
 						}
-						&:hover{
-							&:nth-child(2){
-								a{
-									&::before{
+						&:hover {
+							&:nth-child(2) {
+								a {
+									&::before {
 										background: url(../images/icon/float_icon_3_hover.svg);
 									}
 								}
@@ -6102,6 +6102,24 @@ input {
 				li {
 					.box {
 						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	// 공통 form-wrap
+	.form-wrap {
+		.form-inner {
+			.form-item {
+				.label-wrap {
+					.input-label {
+						> span::after {
+							padding-left:0;
+							position: relative;
+							left:-7px;
+							top:1px;
+						}
 					}
 				}
 			}
@@ -9970,8 +9988,8 @@ input {
 		.box-floating {
 			.inner {
 				.list-quick {
-					bottom:134px;
-					right:-24px;
+					bottom: 134px;
+					right: -24px;
 					ul {
 						li {
 							a {
