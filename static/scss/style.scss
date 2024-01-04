@@ -2467,10 +2467,10 @@ input {
 		letter-spacing: 0.4px;
 		&::after {
 			content: "";
-			width: 16px;
-			height: 16px;
+			width: 20px;
+			height: 20px;
 			// background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M2 5.5L8 11.5L14 5.5' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M12.666 6.63607L11.726 5.69607L7.99935 9.41607L4.27268 5.69607L3.33268 6.63607L7.99935 11.3027L12.666 6.63607Z' fill='black'/%3E%3C/svg%3E");
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M15.833 8.17106L14.658 6.99606L9.99967 11.6461L5.34134 6.99606L4.16634 8.17106L9.99967 14.0044L15.833 8.17106Z' fill='%234D4D4D'/%3E%3C/svg%3E");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -4982,7 +4982,7 @@ input {
 						font-size: 12px;
 						font-weight: 600;
 						line-height: 120%;
-						letter-spacing: 0.4px;
+						letter-spacing: 0.28px;
 						text-align: center;
 					}
 					input:checked {
@@ -5919,6 +5919,16 @@ input {
 			}
 		}
 	}
+
+	.detail-search {
+		.detail-inner {
+			.chk-flex {
+				li {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 // //lang(en)
 
@@ -6486,7 +6496,7 @@ input {
 	.common-selectbox-2 {
 		.button {
 			&::after {
-				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M2 5.5L8 11.5L14 5.5' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M15.8333 8.17082L14.6583 6.99582L9.99992 11.6458L5.34159 6.99582L4.16659 8.17082L9.99992 14.0041L15.8333 8.17082Z' fill='%234D4D4D'/%3E%3C/svg%3E");
 			}
 		}
 	}
@@ -8727,7 +8737,7 @@ input {
 	// 검사항목 조회
 	.detail-search {
 		border-radius: 24px;
-		padding: 40px 40px 45px;
+		padding: 40px;
 		.flex-box {
 			display: flex;
 			align-items: center;
@@ -8849,6 +8859,7 @@ input {
 		}
 
 		&.is-open {
+			padding: 40px 40px 45px;
 			.common-detailBtn {
 				span {
 					&::before {
@@ -9802,6 +9813,28 @@ input {
 				li {
 					a {
 						padding-left: 192px;
+					}
+				}
+			}
+		}
+
+		.detail-search {
+			.item-search {
+				input {
+					letter-spacing: 0.32px;
+				}
+			}
+			.detail-inner {
+				.chk-flex {
+					li {
+						width: fit-content;
+					}
+				}
+				.chk-bottom {
+					.chkFalse-btn {
+						span {
+							padding-right: 21px;
+						}
 					}
 				}
 			}
