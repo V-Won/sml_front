@@ -5201,7 +5201,7 @@ input {
 					font-size: 14px;
 					font-weight: 500;
 					line-height: 140%;
-					letter-spacing: 0.4px;
+					letter-spacing: 0.28px;
 				}
 				.left {
 					color: var(--Primary-01, #006477);
@@ -5329,6 +5329,9 @@ input {
 				text-decoration-line: underline;
 				margin-top: 20px;
 			}
+			.box {
+				width: 100%;
+			}
 			p {
 				color: #666;
 				font-size: 12px;
@@ -5359,6 +5362,7 @@ input {
 				}
 				&.right {
 					line-height: 140%;
+					letter-spacing: 0.24px;
 					&.acc-text {
 						color: #4d4d4d;
 						font-size: 14px;
@@ -6004,6 +6008,48 @@ input {
 			.chk-flex {
 				li {
 					width: 100%;
+				}
+			}
+		}
+	}
+
+	.request-detailTop {
+		.top-info {
+			ul {
+				li {
+					gap: 0 20px;
+					p {
+						&.left {
+							width: 140px;
+							max-width: 100%;
+						}
+						&.right {
+							width: calc(100% - 160px);
+						}
+					}
+				}
+			}
+		}
+	}
+	.request-detailInfo {
+		.info-list {
+			> li {
+				.left {
+					width: 140px;
+					max-width: 100%;
+				}
+				.right {
+					width: calc(100% - 160px);
+				}
+			}
+			&.column {
+				p {
+					&.left {
+						width: fit-content;
+					}
+					&.right {
+						width: 100%;
+					}
 				}
 			}
 		}
