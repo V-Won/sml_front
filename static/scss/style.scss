@@ -737,7 +737,7 @@ input {
 						&:hover,
 						&.is-active {
 							color: #006477 !important;
-							font-weight: 700 !important;
+							//font-weight: 700 !important;
 						}
 					}
 				}
@@ -5801,7 +5801,7 @@ input {
 	}
 }
 
-// lang(en)
+// 모바일 lang(en)
 :lang(en) {
 	// 공통 Tab
 	.common-tab {
@@ -5827,6 +5827,7 @@ input {
 	.common-btnMap-1 {
 		letter-spacing: 0.28px;
 	}
+
 	// 공통 header
 	.box-header {
 		.inner-gap-1 {
@@ -5836,6 +5837,31 @@ input {
 					a {
 						width: 95px;
 						height: 36px;
+					}
+				}
+			}
+		}
+		.menu-list {
+			.inner-gap-1 {
+				> ul {
+					> li {
+						> ul {
+							> li {
+								width: 100vw;
+								> a {
+									&.right-margin-1 {
+										margin-right: -10px;
+									}
+								}
+								> ul {
+									> li {
+										> a {
+											letter-spacing: 0.05em;
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -5871,6 +5897,59 @@ input {
 						letter-spacing: -0.02em;
 					}
 				}
+			}
+		}
+	}
+	
+	// 공통 footer
+	.box-footer {
+		.inner {
+			.ft-top{
+				padding-bottom:34px;
+				.list{
+					flex-direction: column;
+					align-items:flex-start;
+					gap:19px 0;
+					li{
+						width: auto;
+						a{
+							letter-spacing: 0.01em;
+						}
+						&.bold{
+							a{
+								letter-spacing: 0.01em;
+							}
+						}
+					}
+				}
+			}
+			.ft-bottom {
+				padding-bottom:35px;
+				.left {
+					.logo {
+						background: url(../images/en/logo/logo_footer.png) no-repeat;
+					}
+					.info-list{
+						gap:8px 0;
+						margin-bottom: 23px;
+						li{
+							letter-spacing: 0.02em;
+							line-height: 14px;
+						}
+					}
+				}
+				.right{
+					.ft-select{
+						&.is-active{
+							.button{
+								border-top:1px solid #eaeaea;
+							}
+						}
+					}
+				}
+			}
+			.copyright{
+				letter-spacing: 0.02em;
 			}
 		}
 	}
@@ -5930,7 +6009,7 @@ input {
 		}
 	}
 }
-// //lang(en)
+// //모바일 lang(en)
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
@@ -9629,8 +9708,35 @@ input {
 		}
 	}
 
-	// lang(en)
+	// PC lang(en)
 	:lang(en) {
+		// 공통 header
+		.menu-list {
+			.inner-gap-1 {
+				> ul {
+					justify-content: center;
+					align-items: first baseline;
+					gap: 45px;
+					> li {
+						&:nth-child(1) {
+							max-width: 190px;
+						}
+						&:nth-child(2) {
+							max-width: 241px;
+						}
+						&:nth-child(3) {
+							max-width: 222px;
+						}
+						&:nth-child(4) {
+							max-width: 272px;
+						}
+						&:nth-child(5) {
+							max-width: 166px;
+						}
+					}
+				}
+			}
+		}
 		// 공통 table
 		.table-layout {
 			&.b_3_1 {
@@ -9840,7 +9946,7 @@ input {
 			}
 		}
 	}
-	// //lang(en)
+	// //PC lang(en)
 }
 
 /* //1024 이상 */
