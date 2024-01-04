@@ -741,9 +741,17 @@ if (window.console == undefined) { console = { log: () => { } } }
 					e.target.parentNode.classList.toggle('is-open');
 
 					if (e.target.parentNode.classList.contains('is-open')) {
-						e.target.innerText = '닫기'
+						if (e.target.parentNode.classList.contains('en')) {
+							e.target.innerText = 'Close'
+						} else {
+							e.target.innerText = '닫기'
+						}
 					} else {
-						e.target.innerText = '전체보기'
+						if (e.target.parentNode.classList.contains('en')) {
+							e.target.innerText = 'View all'
+						} else {
+							e.target.innerText = '전체보기'
+						}
 					}
 				})
 			}

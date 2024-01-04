@@ -5835,6 +5835,10 @@ input {
 		letter-spacing: 0.28px;
 	}
 
+	.common-btnType-1 {
+		min-width: 121px;
+	}
+
 	// 공통 header
 	.box-header {
 		.inner-gap-1 {
@@ -6089,9 +6093,14 @@ input {
 			&.column {
 				p {
 					&.left {
-						width: fit-content;
+						width: 100%;
 					}
 					&.right {
+						width: 100%;
+					}
+				}
+				li {
+					.box {
 						width: 100%;
 					}
 				}
@@ -9252,7 +9261,6 @@ input {
 	.request-detailInfo {
 		width: 100%;
 		position: relative;
-		margin-bottom: 60px;
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
@@ -10097,6 +10105,51 @@ input {
 				}
 			}
 		}
+
+		.common-btnType-1 {
+			min-width: 220px;
+		}
+
+		.request-detailTop {
+			.top-info {
+				ul {
+					gap: 40px 20px;
+					li {
+						width: calc(50% - 10px);
+						p {
+							&.left {
+								width: 100%;
+								max-width: 180px;
+							}
+							&.right {
+								width: calc(100% - 200px);
+								text-align: left;
+							}
+						}
+					}
+				}
+			}
+		}
+		.request-detailInfo {
+			.info-list {
+				> li {
+					.left {
+						width: 180px;
+						max-width: 100%;
+					}
+					.right {
+						width: calc(100% - 200px);
+					}
+				}
+				&.column {
+					p {
+						&.tit {
+							max-width: 180px;
+						}
+					}
+				}
+			}
+		}
 	}
 	// //PC lang(en)
 }
@@ -10197,6 +10250,37 @@ input {
 					.left {
 						max-width: 80px;
 						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+	// PC - 1300px lang(en)
+	:lang(en) {
+		.request-detailTop {
+			.top-info {
+				ul {
+					gap: 40px 0;
+					li {
+						width: 35%;
+						&:nth-child(5), &:nth-child(6) {
+							width: 30%;
+							.right {
+								text-align: right;
+								white-space: nowrap;
+							}
+						}
+						p {
+							&.left {
+								width: 100%;
+								max-width: 180px;
+							}
+							&.right {
+								width: calc(100% - 200px);
+								text-align: left;
+							}
+						}
 					}
 				}
 			}
