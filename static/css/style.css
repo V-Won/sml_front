@@ -8490,14 +8490,23 @@ input {
     width: 163px;
     height: 60px;
   }
-  :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc .button {
-    letter-spacing: 0.2px;
+  :lang(en) .box-footer .inner .ft-top {
+    padding-bottom: 26px;
   }
-  :lang(en) .sub-top .text-box .sub-tit {
-    letter-spacing: 1.04px;
+  :lang(en) .box-footer .inner .ft-top .list {
+    flex-direction: row;
   }
-  :lang(en) .sub-top.bg-fff .text-box .sub-tit.margin-bottom-1 {
-    letter-spacing: 0.02em;
+  :lang(en) .box-footer .inner .ft-bottom {
+    padding-bottom: 20px;
+  }
+  :lang(en) .box-footer .inner .ft-bottom .left .logo {
+    width: 189px;
+    height: 72px;
+    background-size: contain;
+  }
+  :lang(en) .box-footer .inner .ft-bottom .left .info-list {
+    gap: 8px 16px;
+    margin-bottom: 0;
   }
   :lang(en) .box-map-search .box-map .common-btnType-1 {
     margin-top: 40px;

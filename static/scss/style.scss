@@ -5900,23 +5900,23 @@ input {
 			}
 		}
 	}
-	
+
 	// 공통 footer
 	.box-footer {
 		.inner {
-			.ft-top{
-				padding-bottom:34px;
-				.list{
+			.ft-top {
+				padding-bottom: 34px;
+				.list {
 					flex-direction: column;
-					align-items:flex-start;
-					gap:19px 0;
-					li{
+					align-items: flex-start;
+					gap: 19px 0;
+					li {
 						width: auto;
-						a{
+						a {
 							letter-spacing: 0.01em;
 						}
-						&.bold{
-							a{
+						&.bold {
+							a {
 								letter-spacing: 0.01em;
 							}
 						}
@@ -5924,31 +5924,31 @@ input {
 				}
 			}
 			.ft-bottom {
-				padding-bottom:35px;
+				padding-bottom: 35px;
 				.left {
 					.logo {
 						background: url(../images/en/logo/logo_footer.png) no-repeat;
 					}
-					.info-list{
-						gap:8px 0;
+					.info-list {
+						gap: 8px 0;
 						margin-bottom: 23px;
-						li{
+						li {
 							letter-spacing: 0.02em;
 							line-height: 14px;
 						}
 					}
 				}
-				.right{
-					.ft-select{
-						&.is-active{
-							.button{
-								border-top:1px solid #eaeaea;
+				.right {
+					.ft-select {
+						&.is-active {
+							.button {
+								border-top: 1px solid #eaeaea;
 							}
 						}
 					}
 				}
 			}
-			.copyright{
+			.copyright {
 				letter-spacing: 0.02em;
 			}
 		}
@@ -9822,26 +9822,69 @@ input {
 			}
 		}
 
+		// 공통 footer
+		.box-footer {
+			.inner {
+				.ft-top {
+					padding-bottom:26px;
+					.list {
+						flex-direction: row;
+						li {
+							a {
+							}
+							&.bold {
+								a {
+								}
+							}
+						}
+					}
+				}
+				.ft-bottom {
+					padding-bottom:20px;
+					.left {
+						.logo {
+							width: 189px;
+							height: 72px;
+							background-size: contain;
+						}
+						.info-list {
+							gap:8px 16px;
+							margin-bottom:0;
+							li {
+							}
+						}
+					}
+					.right {
+						.ft-select {
+							&.is-active {
+								.button {
+								}
+							}
+						}
+					}
+				}
+				.copyright {
+				}
+			}
+		}
+
 		.sub-top {
 			.text-box {
 				.sub-nav-2 {
 					> li {
 						&.nav-acc {
 							.button {
-								letter-spacing: 0.2px;
 							}
 						}
 					}
 				}
 				.sub-tit {
-					letter-spacing: 1.04px;
 				}
 			}
 			&.bg-fff {
 				.text-box {
 					.sub-tit {
 						&.margin-bottom-1 {
-							letter-spacing: 0.02em;
 						}
 					}
 				}
