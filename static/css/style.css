@@ -1848,6 +1848,9 @@ input {
 .sub-top.bg-fff .text-box .sub-tit.margin-bottom-1 {
   margin-bottom: 20px;
 }
+.sub-top.bg-fff .text-box .sub-tit.margin-bottom-2 {
+  margin-bottom: 60px;
+}
 
 .no-img-cover span {
   position: relative;
