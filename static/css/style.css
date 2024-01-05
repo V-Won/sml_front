@@ -911,7 +911,6 @@ input {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.4px;
-  text-transform: uppercase;
   min-height: 20px;
 }
 .box-footer .inner .ft-bottom .right .ft-select.family {
@@ -3013,6 +3012,7 @@ input {
   border-radius: 6px;
   border-radius: 6px;
   background: rgba(77, 77, 77, 0.76);
+  backdrop-filter: blur(6px);
   padding: 32px 20px;
 }
 .main-inspectionSearch .inner-gap-1 .gap > ul {
@@ -5364,6 +5364,7 @@ input {
 }
 :lang(en) .main-inspectionSearch .inner-gap-1 .gap {
   padding: 32px 20px 21px 20px;
+  backdrop-filter: blur(12px);
 }
 :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li button.btn {
   color: #fff;
