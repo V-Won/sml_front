@@ -5443,6 +5443,10 @@ input {
   left: -7px;
   top: 1px;
 }
+:lang(en) .box-health .mySwiper2 .swiper-slide::after {
+  background-image: url(../images/en/bg/bg_swiper_cover.png);
+  background-repeat: no-repeat;
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {

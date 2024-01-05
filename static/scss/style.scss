@@ -6202,6 +6202,17 @@ input {
 			}
 		}
 	}
+
+	.box-health {
+		.mySwiper2{
+			.swiper-slide{
+				&::after{
+					background-image: url(../images/en/bg/bg_swiper_cover.png);
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
 }
 // //모바일 lang(en)
 
