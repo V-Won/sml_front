@@ -151,7 +151,9 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			// MO 햄버거 버튼 클릭시 전체 메뉴 활성화
 			document.querySelector('#hamburger-1').addEventListener('click', (e) => {
-				menuNoActive();
+				setTimeout(() => {
+					menuNoActive();
+				}, 200)
 
 				document.querySelector('.box-header').classList.toggle('is-menuOpen');
 				if (document.querySelector('.box-header').classList.contains('is-menuOpen')) {
