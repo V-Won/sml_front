@@ -609,7 +609,7 @@ input {
 }
 .box-header .hamburger {
   transform: scaleX(-1);
-  padding-left: 8px;
+  padding: 8px 0 8px 8px;
 }
 .box-header .hamburger .line {
   width: 18px;
