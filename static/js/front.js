@@ -142,8 +142,17 @@ if (window.console == undefined) { console = { log: () => { } } }
 				}
 			}
 
+			// 메뉴 is-active remove
+			const menuNoActive = () => {
+				document.querySelectorAll('.box-header .menu-list .inner-gap-1 > ul > li').forEach((e) => {
+					e.classList.remove('is-active');
+				});
+			}
+
 			// MO 햄버거 버튼 클릭시 전체 메뉴 활성화
 			document.querySelector('#hamburger-1').addEventListener('click', (e) => {
+				menuNoActive();
+
 				document.querySelector('.box-header').classList.toggle('is-menuOpen');
 				if (document.querySelector('.box-header').classList.contains('is-menuOpen')) {
 					document.getElementsByTagName('html')[0].style.overflow = "hidden";
@@ -163,9 +172,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 					document.getElementsByTagName('html')[0].style.overflow = "";
 
 					// mo menu-list is-active remove
-					document.querySelectorAll('.box-header .menu-list .inner-gap-1 > ul > li').forEach((e) => {
-						e.classList.remove('is-active');
-					});
+					menuNoActive();
 				}
 			})
 
