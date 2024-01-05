@@ -6025,6 +6025,64 @@ input {
 		}
 	}
 
+	// main
+	.main-kv-swiper {
+		.swiper-slide {
+			.box-text {
+				transform: translateY(-65px);
+				.text-1 {
+					line-height: 140%;
+					letter-spacing: 0.36px;
+				}
+			}
+		}
+		.box-swiperControl {
+			bottom: 172px;
+		}
+	}
+	.main-inspectionSearch {
+		.inner-gap-1 {
+			.gap {
+				padding: 32px 20px 21px 20px;
+				> ul {
+					> li {
+						button {
+							&.btn {
+								color: #fff;
+								font-size: 18px;
+								font-weight: 500;
+								line-height: 120%;
+								letter-spacing: 0.36px;
+								text-transform: uppercase;
+								background-color: transparent;
+								border: 0;
+								padding: 0;
+							}
+						}
+						.ct {
+							top: 41px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.gray-bg {
+		padding-top: 74px;
+		padding-bottom: 62px;
+	}
+	.main-smlSpecialty {
+		.specialty-swiper {
+			.swiper-slide {
+				.text-box {
+					.txt-1 {
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+
 	.smlNews-list {
 		&.gap-type-1 {
 			margin-top: 22px;
@@ -9979,7 +10037,7 @@ input {
 					.search-btn {
 						span {
 							&::before {
-								left:38px;
+								left: 38px;
 							}
 						}
 					}
@@ -10044,6 +10102,95 @@ input {
 					bottom: 144px;
 					ul {
 						gap: 31px;
+					}
+				}
+			}
+		}
+
+		// main
+		.main-kv-swiper {
+			.swiper-slide {
+				.box-text {
+					transform: translateY(-69px);
+					.text-1 {
+						line-height: 160%;
+						letter-spacing: 0.48px;
+						text-transform: capitalize;
+						padding-bottom: 13px;
+					}
+					.text-2 {
+						letter-spacing: 1.12px;
+						text-transform: capitalize;
+					}
+				}
+			}
+			.box-swiperControl {
+				bottom: 250px;
+			}
+		}
+		.main-inspectionSearch {
+			.inner-gap-1 {
+				.gap {
+					padding: 52px 20px 18px 20px;
+					> ul {
+						> li {
+							button {
+								&.btn-search {
+									width: 169px;
+									height: 64px;
+									right: 0;
+								}
+							}
+							.ct {
+								display: flex;
+								gap: 0 20px;
+								.common-selectbox {
+									flex: 0 0 279px;
+									padding: 20px 24px 20px 16px;
+									height: 64px;
+									> button {
+										&::after {
+											right: -2px;
+										}
+									}
+								}
+								.common-input-1 {
+									flex: 0 0 524px;
+									height: 64px;
+									input {
+										padding: 32px 12px 32px 24px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.gray-bg {
+			padding-top: 244px;
+			margin-top: -121px;
+			padding-bottom: 118px;
+		}
+		.main-smlSpecialty {
+			.specialty-swiper {
+				.swiper-slide {
+					.text-box {
+						.txt-1 {
+						}
+					}
+				}
+			}
+		}
+		.main-academic {
+			.academic-sort {
+				.sort-wrap {
+					.common-swiper-button-prev-1,
+					.common-swiper-button-next-1 {
+						top: -61px;
+					}
+					.common-swiper-pagination-1 {
+						top: -50px;
 					}
 				}
 			}

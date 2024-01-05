@@ -5353,6 +5353,40 @@ input {
 :lang(en) .box-footer .inner .copyright {
   letter-spacing: 0.02em;
 }
+:lang(en) .main-kv-swiper .swiper-slide .box-text {
+  transform: translateY(-65px);
+}
+:lang(en) .main-kv-swiper .swiper-slide .box-text .text-1 {
+  line-height: 140%;
+  letter-spacing: 0.36px;
+}
+:lang(en) .main-kv-swiper .box-swiperControl {
+  bottom: 172px;
+}
+:lang(en) .main-inspectionSearch .inner-gap-1 .gap {
+  padding: 32px 20px 21px 20px;
+}
+:lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li button.btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+:lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct {
+  top: 41px;
+}
+:lang(en) .gray-bg {
+  padding-top: 74px;
+  padding-bottom: 62px;
+}
+:lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-1 {
+  text-transform: uppercase;
+}
 :lang(en) .smlNews-list.gap-type-1 {
   margin-top: 22px;
 }
@@ -8616,6 +8650,61 @@ input {
   }
   :lang(en) .box-floating .inner .list-quick ul {
     gap: 31px;
+  }
+  :lang(en) .main-kv-swiper .swiper-slide .box-text {
+    transform: translateY(-69px);
+  }
+  :lang(en) .main-kv-swiper .swiper-slide .box-text .text-1 {
+    line-height: 160%;
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+    padding-bottom: 13px;
+  }
+  :lang(en) .main-kv-swiper .swiper-slide .box-text .text-2 {
+    letter-spacing: 1.12px;
+    text-transform: capitalize;
+  }
+  :lang(en) .main-kv-swiper .box-swiperControl {
+    bottom: 250px;
+  }
+  :lang(en) .main-inspectionSearch .inner-gap-1 .gap {
+    padding: 52px 20px 18px 20px;
+  }
+  :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li button.btn-search {
+    width: 169px;
+    height: 64px;
+    right: 0;
+  }
+  :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct {
+    display: flex;
+    gap: 0 20px;
+  }
+  :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct .common-selectbox {
+    flex: 0 0 279px;
+    padding: 20px 24px 20px 16px;
+    height: 64px;
+  }
+  :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct .common-selectbox > button::after {
+    right: -2px;
+  }
+  :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct .common-input-1 {
+    flex: 0 0 524px;
+    height: 64px;
+  }
+  :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li .ct .common-input-1 input {
+    padding: 32px 12px 32px 24px;
+  }
+  :lang(en) .gray-bg {
+    padding-top: 244px;
+    margin-top: -121px;
+    padding-bottom: 118px;
+  }
+  :lang(en) .main-academic .academic-sort .sort-wrap .common-swiper-button-prev-1,
+  :lang(en) .main-academic .academic-sort .sort-wrap .common-swiper-button-next-1 {
+    top: -61px;
+  }
+  :lang(en) .main-academic .academic-sort .sort-wrap .common-swiper-pagination-1 {
+    top: -50px;
   }
   :lang(en) .sub-top .text-box .sub-tit {
     letter-spacing: 1.04px;
