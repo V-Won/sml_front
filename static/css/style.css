@@ -8782,6 +8782,9 @@ input {
   :lang(en) .request-detailInfo .info-list.column p.tit {
     max-width: 180px;
   }
+  :lang(en) .form-wrap .form-inner .form-item {
+    gap: 0 153px;
+  }
 }
 /* //1024 이상 */
 /* 1 2 0 0 이상 */

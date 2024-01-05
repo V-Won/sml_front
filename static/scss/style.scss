@@ -10183,16 +10183,6 @@ input {
 			margin-top: -121px;
 			padding-bottom: 118px;
 		}
-		.main-smlSpecialty {
-			.specialty-swiper {
-				.swiper-slide {
-					.text-box {
-						.txt-1 {
-						}
-					}
-				}
-			}
-		}
 		.main-academic {
 			.academic-sort {
 				.sort-wrap {
@@ -10209,24 +10199,8 @@ input {
 
 		.sub-top {
 			.text-box {
-				.sub-nav-2 {
-					> li {
-						&.nav-acc {
-							.button {
-							}
-						}
-					}
-				}
 				.sub-tit {
 					letter-spacing: 1.04px;
-				}
-			}
-			&.bg-fff {
-				.text-box {
-					.sub-tit {
-						&.margin-bottom-1 {
-						}
-					}
 				}
 			}
 		}
@@ -10370,6 +10344,13 @@ input {
 							max-width: 180px;
 						}
 					}
+				}
+			}
+		}
+		.form-wrap{
+			.form-inner {
+				.form-item{
+					gap:0 153px;
 				}
 			}
 		}
