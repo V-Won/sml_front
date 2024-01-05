@@ -545,21 +545,6 @@
         },
       },
     });
-
-    document.querySelectorAll('.sort-btn-swiper > ul > li').forEach(e => {
-      e.onclick = () => {
-        academicSwiper.slideTo(0);
-      }
-    });
-
-    document.querySelectorAll('.sort-btn-swiper > ul > li').forEach((item) => {
-      item.addEventListener('click', (e) => {
-        document.querySelectorAll('.sort-btn-swiper > ul > li').forEach((item) => {
-          item.classList.remove('is-active');
-        })
-        e.target.parentNode.classList.toggle('is-active');
-      })
-    })
     // //academic swiper
 
     // SML specialty hover event
