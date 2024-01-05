@@ -4685,10 +4685,10 @@ input {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 0 12px;
+  gap: 0 20px;
 }
 .request-detailTop .top-info ul li + li {
-  margin-top: 20.5px;
+  margin-top: 21px;
 }
 .request-detailTop .top-info ul li > p {
   width: 100%;
@@ -4702,6 +4702,14 @@ input {
   color: var(--Primary-01, #006477);
   font-weight: 600;
   max-width: 84px;
+}
+.request-detailTop .top-noti {
+  color: var(--gray-02, #999);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.24px;
+  margin-top: 6px;
 }
 
 .request-detailInfo {
@@ -8038,6 +8046,7 @@ input {
   .request-detailTop .top-info ul li .left {
     max-width: 80px;
     font-weight: 600;
+    white-space: nowrap;
   }
   .request-detailTop .top-info ul li:first-child {
     order: 1;
@@ -8059,6 +8068,14 @@ input {
   }
   .request-detailTop .top-info ul li:nth-child(7) {
     order: 4;
+  }
+  .request-detailTop .top-noti {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.32px;
+    margin-top: 25px;
+    width: 100%;
+    text-align: right;
   }
   .request-detailInfo {
     width: 100%;
