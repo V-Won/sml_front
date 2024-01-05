@@ -1056,7 +1056,7 @@ input {
 					}
 					&.is-active {
 						.button {
-							border-top: none;
+							//border-top: none;
 							&::after {
 								transform: translateY(-50%) rotate(-180deg);
 							}
@@ -6008,15 +6008,6 @@ input {
 						}
 					}
 				}
-				.right {
-					.ft-select {
-						&.is-active {
-							.button {
-								border-top: 1px solid #eaeaea;
-							}
-						}
-					}
-				}
 			}
 			.copyright {
 				letter-spacing: 0.02em;
@@ -10091,16 +10082,6 @@ input {
 							}
 						}
 					}
-					.right {
-						.ft-select {
-							&.is-active {
-								.button {
-								}
-							}
-						}
-					}
-				}
-				.copyright {
 				}
 			}
 		}
