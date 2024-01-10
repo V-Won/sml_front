@@ -1723,7 +1723,7 @@ input {
 
 // 공통 다운로드 버튼
 .common-downloadBtn {
-	padding: 5px 20px 7px;
+	padding: 7px 20px 7px;
 	border-radius: 999px;
 	border: 1px solid #d5d5d5;
 	background: #fff;
@@ -5457,13 +5457,13 @@ input {
 						color: #666;
 						font-size: 14px;
 						font-weight: 500;
-						line-height: 140%;
-						letter-spacing: 0.4px;
+						line-height: 150%;
+						letter-spacing: 0.28px;
 						margin: 0;
 					}
 					.num {
 						width: 100%;
-						line-height: 24px;
+						line-height: 150%;
 						margin-bottom: 4px;
 					}
 					.name {
@@ -6513,11 +6513,12 @@ input {
 
 	// 공통 다운로드 버튼
 	.common-downloadBtn {
-		padding: 8.5px 16px;
+		padding: 8px 14px;
 		span {
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: 600;
-			letter-spacing: 0.4px;
+			line-height: 130%;
+			letter-spacing: 0.28px;
 			padding-left: 24px;
 			&::before {
 				width: 18px;
@@ -9335,7 +9336,7 @@ input {
 				position: relative;
 				display: flex;
 				align-items: center;
-				padding: 24px 0;
+				padding: 22px 0;
 				background: #fcfcfc;
 				li {
 					color: #4d4d4d;
@@ -9763,7 +9764,7 @@ input {
 					> li {
 						flex-direction: row;
 						align-items: center;
-						padding: 21px 0;
+						padding: 22px 0;
 						p {
 							text-align: center;
 						}
