@@ -2785,7 +2785,7 @@ input {
   font-size: 30px;
   font-style: normal;
   font-weight: 100;
-  line-height: 120%;
+  line-height: 130%;
   letter-spacing: 0.4px;
 }
 .main-kv-swiper .swiper-slide .box-text .text-2 strong {
@@ -2795,7 +2795,7 @@ input {
 }
 .main-kv-swiper .box-swiperControl {
   position: absolute;
-  bottom: 230px;
+  bottom: 227px;
   left: 0;
   right: 0;
   display: flex;
@@ -2804,7 +2804,7 @@ input {
   z-index: 5;
 }
 .main-kv-swiper .box-swiperControl .swiper-pagination {
-  bottom: 0;
+  bottom: -4px;
   color: var(--primary-5, #fff);
   font-family: Outfit;
   font-size: 12px;
@@ -2862,7 +2862,7 @@ input {
 }
 
 .main-smlAbout .inner-gap-1 {
-  padding-top: 60px;
+  padding-top: 64px;
   position: relative;
   overflow: hidden;
 }
@@ -3091,7 +3091,7 @@ input {
 .main-academic {
   width: 100%;
   position: relative;
-  padding-top: 58px;
+  padding-top: 65px;
 }
 .main-academic .academic-sort {
   width: 100%;
@@ -3283,7 +3283,7 @@ input {
   display: block;
   position: absolute;
   top: auto;
-  bottom: -22px;
+  bottom: -24px;
   left: 20px;
   right: auto;
   height: 2px;
@@ -3296,7 +3296,7 @@ input {
 
 .main-official {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 66px;
   position: relative;
 }
 .main-official .official-swiper {
@@ -6583,7 +6583,7 @@ input {
     justify-content: space-between;
   }
   .box-footer .inner .ft-top {
-    padding-bottom: 23px;
+    padding-bottom: 25px;
     margin-bottom: 32px;
   }
   .box-footer .inner .ft-top .list {
@@ -6619,7 +6619,7 @@ input {
     order: 7;
   }
   .box-footer .inner .ft-top .list li + li {
-    margin-left: 17.5px;
+    margin-left: 16.8px;
     padding-left: 16px;
   }
   .box-footer .inner .ft-top .list li + li::before {
@@ -6636,7 +6636,7 @@ input {
     margin-top: 0;
   }
   .box-footer .inner .ft-bottom {
-    padding-bottom: 16px;
+    padding-bottom: 19px;
   }
   .box-footer .inner .ft-bottom .ft-flex {
     align-items: flex-start;
@@ -6649,10 +6649,10 @@ input {
     height: 72px;
   }
   .box-footer .inner .ft-bottom .left .info-list {
-    margin: 40px 0 0;
+    margin: 43px 0 0;
     flex-direction: row;
     align-items: center;
-    gap: 0 16px;
+    gap: 0 14px;
   }
   .box-footer .inner .ft-bottom .left .info-list li {
     font-size: 14px;
@@ -6681,7 +6681,7 @@ input {
   }
   .box-footer .inner .copyright {
     text-align: left;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.24px;
   }
   .main-smlAbout {
     position: relative;
@@ -6690,7 +6690,7 @@ input {
     padding-top: 123px;
   }
   .main-smlAbout .inner-gap-1 .common-title-1 {
-    padding-bottom: 26px;
+    padding-bottom: 30px;
   }
   .main-smlAbout .inner-gap-1 .smlAbout-swiper {
     width: 100%;
@@ -6729,8 +6729,8 @@ input {
   }
   .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box .txt-2 {
     font-size: 40px;
-    letter-spacing: 0.4px;
-    margin-bottom: 14px;
+    letter-spacing: -0.07em;
+    margin-bottom: 17px;
   }
   .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box .txt-3 {
     font-size: 20px;
@@ -6761,10 +6761,10 @@ input {
   }
   .main-kv-swiper .box-swiperControl .swiper-pagination {
     font-size: 16px;
-    bottom: -7px;
+    bottom: -11px;
   }
   .main-smlSpecialty {
-    padding-top: 120px;
+    padding-top: 124px;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide {
     display: flex;
@@ -6785,6 +6785,9 @@ input {
     left: 0;
     background: #000;
     opacity: 0.4;
+  }
+  .main-smlSpecialty .specialty-swiper .swiper-slide .text-box {
+    transform: translateY(-50%);
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-1 {
     color: #fff;
@@ -6818,17 +6821,17 @@ input {
     display: block;
     font-size: 20px;
     font-weight: 600;
-    line-height: 120%;
+    line-height: 150%;
     letter-spacing: 0.4px;
   }
   .main-smlSpecialty .specialty-swiper .swiper-pagination {
     display: none;
   }
   .main-academic {
-    padding-top: 124px;
+    padding-top: 127px;
   }
   .main-academic .common-title-1 {
-    padding-bottom: 27px;
+    padding-bottom: 28px;
   }
   .main-academic .academic-sort .sort-btn-swiper {
     width: 100%;
@@ -6836,8 +6839,10 @@ input {
     padding: 0;
   }
   .main-academic .academic-sort .sort-btn-swiper li span {
-    padding: 8px 25px;
+    padding: 12px 24px;
     font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.36px;
   }
   .main-academic .academic-sort .sort-wrap .academic-swiper {
     width: 100%;
@@ -6872,7 +6877,7 @@ input {
   }
   .main-academic .academic-sort .sort-wrap .common-swiper-button-prev-1,
   .main-academic .academic-sort .sort-wrap .common-swiper-button-next-1 {
-    top: -120px;
+    top: -133px;
   }
   .main-academic .academic-sort .sort-wrap .common-swiper-button-next-1 {
     right: 0;
@@ -6881,7 +6886,7 @@ input {
     right: 100px;
   }
   .main-academic .academic-sort .sort-wrap .common-swiper-pagination-1 {
-    top: -110px;
+    top: -122px;
     right: 53px;
   }
   .gray-bg {
@@ -6910,9 +6915,9 @@ input {
   }
   .main-news .main-news-swiper .swiper-slide .text-box .txt-1 {
     font-size: 20px;
-    line-height: 120%;
+    line-height: 130%;
     letter-spacing: 0.4px;
-    margin: 12px 0 16px;
+    margin: 13px 0 17px;
   }
   .main-news .main-news-swiper .swiper-slide .text-box .txt-2 {
     font-size: 14px;
@@ -6931,7 +6936,10 @@ input {
     top: -2px;
   }
   .main-official {
-    padding-top: 123px;
+    padding-top: 128px;
+  }
+  .main-official .common-title-1 {
+    padding-bottom: 30px;
   }
   .main-official .official-swiper {
     width: 100%;
@@ -6940,7 +6948,7 @@ input {
     margin-top: -1px;
   }
   .main-official .official-swiper .swiper-slide > a {
-    padding: 36px 40px 36px 28px;
+    padding: 36px 40px 31px 28px;
     border-radius: 8px;
     transition: 0.5s;
   }
@@ -6955,8 +6963,9 @@ input {
     letter-spacing: 0.4px;
   }
   .main-official .official-swiper .swiper-slide .txt-3 {
-    margin-top: 11px;
-    line-height: 160%;
+    margin-top: 14px;
+    line-height: 150%;
+    font-size: 14px;
   }
   .main-official .official-swiper .swiper-slide.swiper-slide-active > a {
     background: #fff;

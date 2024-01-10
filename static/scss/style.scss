@@ -3194,7 +3194,7 @@ input {
 				font-size: 30px;
 				font-style: normal;
 				font-weight: 100;
-				line-height: 120%;
+				line-height: 130%;
 				letter-spacing: 0.4px;
 				strong {
 					font-weight: 600;
@@ -3206,7 +3206,7 @@ input {
 	}
 	.box-swiperControl {
 		position: absolute;
-		bottom: 230px;
+		bottom: 227px;
 		left: 0;
 		right: 0;
 		display: flex;
@@ -3214,7 +3214,7 @@ input {
 		justify-content: center;
 		z-index: 5;
 		.swiper-pagination {
-			bottom: 0;
+			bottom: -4px;
 			color: var(--primary-5, #fff);
 			font-family: Outfit;
 			font-size: 12px;
@@ -3276,7 +3276,7 @@ input {
 
 .main-smlAbout {
 	.inner-gap-1 {
-		padding-top: 60px;
+		padding-top: 64px;
 		position: relative;
 		overflow: hidden;
 		.smlAbout-swiper {
@@ -3538,7 +3538,7 @@ input {
 .main-academic {
 	width: 100%;
 	position: relative;
-	padding-top: 58px;
+	padding-top: 65px;
 	.academic-sort {
 		width: 100%;
 		position: relative;
@@ -3730,7 +3730,7 @@ input {
 				display: block;
 				position: absolute;
 				top: auto;
-				bottom: -22px;
+				bottom: -24px;
 				left: 20px;
 				right: auto;
 				height: 2px;
@@ -3747,7 +3747,7 @@ input {
 
 .main-official {
 	width: 100%;
-	padding-top: 60px;
+	padding-top: 66px;
 	position: relative;
 	.official-swiper {
 		width: calc(100% + 40px);
@@ -7569,7 +7569,7 @@ input {
 				justify-content: space-between;
 			}
 			.ft-top {
-				padding-bottom: 23px;
+				padding-bottom: 25px;
 				margin-bottom: 32px;
 				.list {
 					width: fit-content;
@@ -7602,7 +7602,7 @@ input {
 							order: 7;
 						}
 						& + li {
-							margin-left: 17.5px;
+							margin-left: 16.8px;
 							padding-left: 16px;
 							&::before {
 								content: "";
@@ -7622,7 +7622,7 @@ input {
 				}
 			}
 			.ft-bottom {
-				padding-bottom: 16px;
+				padding-bottom: 19px;
 				.ft-flex {
 					align-items: flex-start;
 				}
@@ -7633,10 +7633,10 @@ input {
 						height: 72px;
 					}
 					.info-list {
-						margin: 40px 0 0;
+						margin: 43px 0 0;
 						flex-direction: row;
 						align-items: center;
-						gap: 0 16px;
+						gap: 0 14px;
 						li {
 							font-size: 14px;
 							line-height: 100%;
@@ -7667,7 +7667,7 @@ input {
 			}
 			.copyright {
 				text-align: left;
-				letter-spacing: 0.4px;
+				letter-spacing: 0.24px;
 			}
 		}
 	}
@@ -7678,7 +7678,7 @@ input {
 		.inner-gap-1 {
 			padding-top: 123px;
 			.common-title-1 {
-				padding-bottom: 26px;
+				padding-bottom: 30px;
 			}
 			.smlAbout-swiper {
 				width: 100%;
@@ -7716,8 +7716,8 @@ input {
 						}
 						.txt-2 {
 							font-size: 40px;
-							letter-spacing: 0.4px;
-							margin-bottom: 14px;
+							letter-spacing: -0.07em;
+							margin-bottom: 17px;
 						}
 						.txt-3 {
 							font-size: 20px;
@@ -7756,13 +7756,13 @@ input {
 			bottom: 244px;
 			.swiper-pagination {
 				font-size: 16px;
-				bottom: -7px;
+				bottom: -11px;
 			}
 		}
 	}
 
 	.main-smlSpecialty {
-		padding-top: 120px;
+		padding-top: 124px;
 		.specialty-swiper {
 			.swiper-slide {
 				// width: 25% !important;
@@ -7795,6 +7795,7 @@ input {
 					}
 				}
 				.text-box {
+					transform: translateY(calc(-50%));
 					.txt-1 {
 						color: #fff;
 						font-size: 32px;
@@ -7842,7 +7843,7 @@ input {
 							display: block;
 							font-size: 20px;
 							font-weight: 600;
-							line-height: 120%;
+							line-height: 150%;
 							letter-spacing: 0.4px;
 						}
 					}
@@ -7855,9 +7856,9 @@ input {
 	}
 
 	.main-academic {
-		padding-top: 124px;
+		padding-top: 127px;
 		.common-title-1 {
-			padding-bottom: 27px;
+			padding-bottom: 28px;
 		}
 		.academic-sort {
 			.sort-btn-swiper {
@@ -7866,8 +7867,10 @@ input {
 				padding: 0;
 				li {
 					span {
-						padding: 8px 25px;
+						padding: 12px 24px;
 						font-size: 18px;
+						line-height: 130%;
+						letter-spacing: 0.36px;
 					}
 				}
 			}
@@ -7909,7 +7912,7 @@ input {
 				}
 				.common-swiper-button-prev-1,
 				.common-swiper-button-next-1 {
-					top: -120px;
+					top: -133px;
 				}
 				.common-swiper-button-next-1 {
 					right: 0;
@@ -7918,7 +7921,7 @@ input {
 					right: 100px;
 				}
 				.common-swiper-pagination-1 {
-					top: -110px;
+					top: -122px;
 					right: 53px;
 				}
 			}
@@ -7954,9 +7957,9 @@ input {
 					}
 					.txt-1 {
 						font-size: 20px;
-						line-height: 120%;
+						line-height: 130%;
 						letter-spacing: 0.4px;
-						margin: 12px 0 16px;
+						margin: 13px 0 17px;
 					}
 					.txt-2 {
 						font-size: 14px;
@@ -7986,7 +7989,10 @@ input {
 	}
 
 	.main-official {
-		padding-top: 123px;
+		padding-top: 128px;
+		.common-title-1{
+			padding-bottom:30px;
+		}
 		.official-swiper {
 			width: 100%;
 			margin-left: 0;
@@ -7994,7 +8000,7 @@ input {
 			margin-top: -1px;
 			.swiper-slide {
 				> a {
-					padding: 36px 40px 36px 28px;
+					padding: 36px 40px 31px 28px;
 					border-radius: 8px;
 					transition: 0.5s;
 					//height: 152px;
@@ -8010,13 +8016,15 @@ input {
 					letter-spacing: 0.4px;
 				}
 				.txt-3 {
-					margin-top: 11px;
-					line-height: 160%;
+					margin-top: 14px;
+					line-height: 150%;
+					font-size: 14px;
 				}
 				&.swiper-slide-active {
 					> a {
 						background: #fff;
 						box-shadow: none;
+						//padding-bottom:32px;
 						//padding: 36px 40px 32px 28px;
 					}
 					.txt-1 {
