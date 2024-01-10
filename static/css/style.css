@@ -7785,6 +7785,9 @@ input {
   .box-layer.layer-video.request .inner-layer .gap .box {
     max-height: fit-content;
   }
+  .box-layer.layer-video.request .inner-layer.absol {
+    top: 124px;
+  }
   .request-swiper .mySwiper1 {
     padding: 60px 0;
   }
@@ -8702,11 +8705,13 @@ input {
     margin-top: 56px;
   }
   .inspect-item-swiper .mySwiper1 .swiper-slide {
-    padding: 40px 40px;
+    padding: 0 40px 60px;
   }
   .inspect-item-swiper .mySwiper1 .swiper-slide .name {
     font-size: 30px;
     letter-spacing: 0.6px;
+    padding: 0;
+    margin: 41px 0 24px;
   }
   .inspect-item-swiper .mySwiper1 .swiper-slide .text-box {
     padding: 0 2px;
@@ -8722,18 +8727,19 @@ input {
   .inspect-item-swiper .mySwiper1 .swiper-button-next, .inspect-item-swiper .mySwiper1 .swiper-button-prev {
     width: 48px;
     height: 48px;
+    top: 107px;
   }
   .inspect-item-swiper .mySwiper1 .swiper-button-prev {
-    left: 46px;
+    left: 48px;
   }
   .inspect-item-swiper .mySwiper1 .swiper-button-next {
-    right: 46px;
+    right: 48px;
   }
   .inspect-item-swiper .mySwiper1 .swiper-pagination {
     bottom: 156px;
   }
   .inspect-item-swiper .common-tab {
-    padding: 24px 0 24px 40px;
+    padding: 60px 40px 40px;
   }
   .inspect-item-swiper .common-tab .snbSwiper {
     margin-right: -40px;
