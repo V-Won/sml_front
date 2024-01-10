@@ -4290,6 +4290,13 @@ input {
   max-height: 530px;
   overflow-y: auto;
 }
+.box-layer.layer-video.request .inner-layer.absol {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .box-layer.layer-video.request [data-event=layerClose] {
   transform: translate(-50%, -52px);
 }
@@ -5263,7 +5270,7 @@ input {
   width: 100%;
   height: fit-content !important;
   position: relative;
-  padding: 20px 20px;
+  padding: 0 20px 40px;
 }
 .inspect-item-swiper .mySwiper1 .swiper-slide .name {
   color: var(--Primary-04, #4D4D4D);
@@ -5271,7 +5278,8 @@ input {
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 0.36px;
-  margin: 20px 0;
+  margin: 20px 0 14px;
+  padding: 0 8px;
 }
 .inspect-item-swiper .mySwiper1 .swiper-slide .img-box {
   width: 100%;
@@ -5296,7 +5304,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 8px;
 }
 .inspect-item-swiper .mySwiper1 .swiper-slide .text-box .flex {
   width: 100%;
@@ -5319,7 +5327,7 @@ input {
 .inspect-item-swiper .mySwiper1 .swiper-button-next, .inspect-item-swiper .mySwiper1 .swiper-button-prev {
   width: 32px;
   height: 32px;
-  top: 135px;
+  top: 112px;
   margin-top: 0;
 }
 .inspect-item-swiper .mySwiper1 .swiper-button-next::after, .inspect-item-swiper .mySwiper1 .swiper-button-prev::after {
@@ -5345,7 +5353,8 @@ input {
 }
 .inspect-item-swiper .mySwiper1 .swiper-pagination {
   width: 100%;
-  top: 250px;
+  height: fit-content;
+  top: 230px;
   color: var(--gray-01, #666);
   font-size: 14px;
   font-weight: 300;
@@ -5358,7 +5367,7 @@ input {
 .inspect-item-swiper .common-tab {
   width: 100%;
   position: relative;
-  padding: 20px 0 20px 20px;
+  padding: 40px 20px 20px;
   overflow: hidden;
 }
 .inspect-item-swiper .common-tab.type-2 ul li .btn {
