@@ -1427,7 +1427,7 @@ input {
 }
 
 .common-downloadBtn {
-  padding: 5px 20px 7px;
+  padding: 7px 20px 7px;
   border-radius: 999px;
   border: 1px solid #d5d5d5;
   background: #fff;
@@ -3742,9 +3742,9 @@ input {
   color: #4d4d4d;
   font-size: 20px;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 130%;
   letter-spacing: 0.4px;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 .box-map-search .box-search-list > ul > li .text-1 {
   color: #666;
@@ -3752,12 +3752,12 @@ input {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
-  margin-bottom: 11px;
+  margin-bottom: 9px;
 }
 .box-map-search .box-search-list > ul > li dl {
   display: flex;
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 .box-map-search .box-search-list > ul > li dl dt {
   color: #006477;
@@ -3780,7 +3780,7 @@ input {
   width: 100%;
 }
 .box-map-search .box-search-list > ul > li .common-btnMap-1 {
-  margin-top: 14px;
+  margin-top: 17px;
 }
 .box-map-search .box-map {
   margin-top: 40px;
@@ -3899,7 +3899,7 @@ input {
   flex-direction: column;
 }
 .download-file ul li {
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 .download-file ul li:last-child {
   margin-bottom: 0;
@@ -3915,9 +3915,9 @@ input {
   position: relative;
   color: #666;
   font-size: 12px;
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.4px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.24px;
   text-transform: uppercase;
 }
 .download-file ul li button:hover {
@@ -4929,13 +4929,13 @@ input {
   color: #666;
   font-size: 14px;
   font-weight: 500;
-  line-height: 140%;
-  letter-spacing: 0.4px;
+  line-height: 150%;
+  letter-spacing: 0.28px;
   margin: 0;
 }
 .table-layout.d_2_1 .body > ul > li .num {
   width: 100%;
-  line-height: 24px;
+  line-height: 150%;
   margin-bottom: 4px;
 }
 .table-layout.d_2_1 .body > ul > li .name {
@@ -5719,12 +5719,13 @@ input {
     background-position: center;
   }
   .common-downloadBtn {
-    padding: 8.5px 16px;
+    padding: 8px 14px;
   }
   .common-downloadBtn span {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.4px;
+    line-height: 130%;
+    letter-spacing: 0.28px;
     padding-left: 24px;
   }
   .common-downloadBtn span::before {
@@ -7170,8 +7171,10 @@ input {
     margin-bottom: 0;
   }
   .download-file ul li button {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.28px;
   }
   .download-file ul li button::after {
     width: 18px;
@@ -8087,7 +8090,7 @@ input {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 24px 0;
+    padding: 22px 0;
     background: #fcfcfc;
   }
   .table-layout .head ul li {
@@ -8450,7 +8453,7 @@ input {
   .table-layout.d_2_1 .body > ul > li {
     flex-direction: row;
     align-items: center;
-    padding: 21px 0;
+    padding: 22px 0;
   }
   .table-layout.d_2_1 .body > ul > li p {
     text-align: center;

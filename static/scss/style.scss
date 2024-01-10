@@ -4211,9 +4211,9 @@ input {
 					color: #4d4d4d;
 					font-size: 20px;
 					font-weight: 600;
-					line-height: 120%;
+					line-height: 130%;
 					letter-spacing: 0.4px;
-					margin-bottom: 19px;
+					margin-bottom: 18px;
 				}
 				.text-1 {
 					color: #666;
@@ -4221,12 +4221,12 @@ input {
 					font-weight: 500;
 					line-height: 24px;
 					letter-spacing: 0.4px;
-					margin-bottom: 11px;
+					margin-bottom: 9px;
 				}
 				dl {
 					display: flex;
 					width: 100%;
-					margin-bottom: 5px;
+					margin-bottom: 1px;
 					dt {
 						color: #006477;
 						font-size: 14px;
@@ -4249,7 +4249,7 @@ input {
 					}
 				}
 				.common-btnMap-1 {
-					margin-top: 14px;
+					margin-top: 17px;
 				}
 			}
 		}
@@ -4372,7 +4372,7 @@ input {
 		display: flex;
 		flex-direction: column;
 		li {
-			margin-bottom: 11px;
+			margin-bottom: 13px;
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -4387,9 +4387,9 @@ input {
 				position: relative;
 				color: #666;
 				font-size: 12px;
-				font-weight: 500;
-				line-height: 120%;
-				letter-spacing: 0.4px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.24px;
 				text-transform: uppercase;
 				&:hover {
 					color: #006477;
@@ -8283,8 +8283,10 @@ input {
 				&:last-child {
 				}
 				button {
-					font-size: 16px;
+					font-size: 14px;
 					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.28px;
 					&::after {
 						width: 18px;
 						height: 18px;
