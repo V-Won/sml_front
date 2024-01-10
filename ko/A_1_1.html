@@ -51,7 +51,7 @@
       <!-- //sub-top -->
       
       <div class="inner-gap-1">
-        
+        <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1"><span>자세히 보기</span></button>
       </div>
     </div>
   </div>
@@ -64,16 +64,24 @@
   <!-- //footer -->
 
   <!-- 검체용기 일람 레이어 팝업 -->
-  <div class="box-layer layer-video request" style="display: block;" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
+  <div class="box-layer layer-video request" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
     <div class="inner-layer" tabindex="0">
       <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
-        <div class="box">
+        <div class="box" style="max-height: fit-content;">
           <!-- inspect-item-swiper -->
           <div class="inspect-item-swiper">
+            <div class="common-tab type-2" data-event="commonTab">
+              <div class="swiper-container snbSwiper type-2">
+                <ul class="list swiper-wrapper">
+                  <li class="swiper-slide is-active" data-index="0"><button class="btn">Dream γ-10 counter Tissue-Tek Prisma+Tissue-Tek® Glas™ g2</span></li>
+                  <li class="swiper-slide" data-index="1"><span class="btn">Alinity I</span></li>
+                  <li class="swiper-slide" data-index="2"><span class="btn">Unicel DXI-800</span></li>
+                </ul>
+              </div>
+            </div>
             <div class="swiper mySwiper1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <p class="name">Dream γ-10 counter <br>Tissue-Tek Prisma+Tissue-Tek® Glas™ g2</p>
                   <div class="img-box">
                     <div class="img-holder">
                       <span>
@@ -81,6 +89,47 @@
                       </span>
                     </div>
                   </div>
+                  <p class="name">Dream γ-10 counter <br>Tissue-Tek Prisma+Tissue-Tek® Glas™ g2</p>
+                  <div class="text-box">
+                    <div class="flex">
+                      <p class="title">제조사</p>
+                      <p class="info">Roche</p>
+                    </div>
+                    <div class="flex">
+                      <p class="title">용도</p>
+                      <p class="info">자동 면역 분석기</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <div class="img-holder">
+                      <span>
+                        <img src="../static/images/equipment/seoul17_Alinity I.jpg">
+                      </span>
+                    </div>
+                  </div>
+                  <p class="name">Alinity I</p>
+                  <div class="text-box">
+                    <div class="flex">
+                      <p class="title">제조사</p>
+                      <p class="info">Roche</p>
+                    </div>
+                    <div class="flex">
+                      <p class="title">용도</p>
+                      <p class="info">자동 면역 분석기</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <div class="img-holder">
+                      <span>
+                        <img src="../static/images/equipment/seoul18_Unicel DXI-800.jpg">
+                      </span>
+                    </div>
+                  </div>
+                  <p class="name">Unicel DXI-800</p>
                   <div class="text-box">
                     <div class="flex">
                       <p class="title">제조사</p>
@@ -96,15 +145,6 @@
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
               <div class="swiper-pagination"></div>
-            </div>
-            <div class="common-tab type-2" data-event="commonTab">
-              <div class="swiper-container snbSwiper type-2">
-                <ul class="list swiper-wrapper">
-                  <li class="swiper-slide is-active" data-index="0"><button class="btn">Dream γ-10 counter Tissue-Tek Prisma+Tissue-Tek® Glas™ g2</span></li>
-                  <li class="swiper-slide" data-index="1"><span class="btn">Alinity I</span></li>
-                  <li class="swiper-slide" data-index="2"><span class="btn">Unicel DXI-800</span></li>
-                </ul>
-              </div>
             </div>
           </div>
           <!-- //inspect-item-swiper -->
@@ -141,8 +181,7 @@
     layerPopup.initialize();
 
     const actionEvent = () => {
-      // tab 학술자료 swiper
-      var swiper2 = new Swiper('.mobile .snbSwiper.type-2', {
+      var swiper2 = new Swiper('.snbSwiper.type-2', {
         slidesPerView: 'auto',
         preventClicks: true,
         preventClicksPropagation: false,
@@ -155,7 +194,26 @@
         },
       });
 
-      var $snbSwiperItem2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');
+      var swiper1 = new Swiper(".mySwiper1", { // 상단 본문 이미지
+        spaceBetween: 20,
+        loop: false,
+        loopedSlides: 1,
+        slidesPerView: 1,
+        autoHeight: true,
+        thumbs: {
+          swiper: swiper2,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+      });
+
+      var $snbSwiperItem2 = $('.snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');
       $snbSwiperItem2.click(function () {
         var target2 = $(this).parent();
         $snbSwiperItem2.parent().removeClass('is-active')
@@ -164,9 +222,9 @@
       })
 
       function muCenter2(target2, idx) {
-        var snbwrap2 = $('.mobile .snbSwiper.type-2 .swiper-wrapper');
+        var snbwrap2 = $('.snbSwiper.type-2 .swiper-wrapper');
         var targetPos2 = target2.position();
-        var box2 = $('.mobile .snbSwiper.type-2');
+        var box2 = $('.snbSwiper.type-2');
         var boxHarf2 = box2.width() / 2;
         var pos2;
         var listWidth2 = 0;
@@ -183,7 +241,7 @@
         }
       }
 
-      document.querySelectorAll('.mobile .snbSwiper.type-2 > ul > li').forEach((item) => {
+      document.querySelectorAll('.snbSwiper.type-2 > ul > li').forEach((item) => {
         item.addEventListener('click', (e) => {
           swiper2.slideTo(e.currentTarget.getAttribute('data-index'));
         });
@@ -198,6 +256,12 @@
       if (window.innerWidth <= 1024) {
         actionEvent();
       }
+    })
+
+    document.querySelectorAll('.view-btn').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        actionEvent();
+      })
     })
   </script>
 
