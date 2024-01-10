@@ -719,7 +719,7 @@ input {
 }
 
 .box-footer {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .box-footer .inner {
   width: 100%;
@@ -1630,6 +1630,7 @@ input {
   margin: 0;
   font-size: 12px;
   letter-spacing: 0.24px;
+  line-height: 130%;
   min-width: fit-content;
   cursor: pointer;
 }
@@ -1638,6 +1639,7 @@ input {
   height: 20px;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.519531' width='19' height='19' rx='1.5' fill='white' stroke='%23BBBBBB'/%3E%3C/svg%3E%0A");
   transform: translate(0, -50%);
+  left: 3px;
 }
 .box-layer.common .inner-layer .gap .box .bottom-box .box-check .checkitem label input:checked + span::after {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='2' fill='%23006477'/%3E%3Cpath d='M4 10L8 14L16 6' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -1808,7 +1810,7 @@ input {
   color: #fff;
   font-size: 30px;
   font-weight: 700;
-  line-height: 120%;
+  line-height: 130%;
   letter-spacing: 0.6px;
 }
 .sub-top.bg-fff {
@@ -2120,7 +2122,7 @@ input {
   width: 100%;
   height: 49px;
   position: relative;
-  padding: 16px 50px 16px 16px;
+  padding: 15px 50px 17px 16px;
   border-radius: 6px;
   border: 1px solid #d5d5d5;
   background: #fff;
@@ -2128,7 +2130,7 @@ input {
   font-size: 14px;
   text-align: left;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 150%;
   letter-spacing: 0.4px;
 }
 .common-selectbox-2 .button::after {
@@ -2522,7 +2524,7 @@ input {
   position: relative;
 }
 .common-tab.padding-top-1 {
-  padding-top: 39px;
+  padding-top: 40px;
 }
 .common-tab.margin-top-1 {
   margin-top: -20px;
@@ -4029,7 +4031,7 @@ input {
   color: #4d4d4d;
   font-size: 12px;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 150%;
   letter-spacing: 0.4px;
   padding: 11px;
 }
@@ -4048,14 +4050,14 @@ input {
   color: #4d4d4d;
   font-size: 16px;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 130%;
   letter-spacing: 0.4px;
 }
 .box-protocol .inner-protocol .list-protocol .ct > ul > li {
   color: #666;
   font-size: 12px;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 150%;
   letter-spacing: 0.4px;
 }
 .box-protocol .inner-protocol .list-protocol .ct > ul > li > ul.number {
@@ -4079,7 +4081,7 @@ input {
   color: #666;
   font-size: 12px;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 150%;
   letter-spacing: 0.4px;
 }
 .box-protocol ul.number > li::before {
@@ -4114,7 +4116,7 @@ input {
   color: #4d4d4d;
   font-size: 16px;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 130%;
   letter-spacing: 0.4px;
   padding: 41px 12px 13px 12px;
 }
@@ -4126,7 +4128,7 @@ input {
   color: #666;
   font-size: 12px;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 150%;
   letter-spacing: 0.4px;
   padding: 0 12px 0 12px;
 }
@@ -4137,7 +4139,7 @@ input {
   color: #4d4d4d;
   font-size: 12px;
   font-weight: 600;
-  line-height: 140%;
+  line-height: 130%;
   letter-spacing: 0.4px;
   padding: 0 12px 9px 12px;
 }
@@ -4171,8 +4173,11 @@ input {
   color: #666;
   font-size: 12px;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 150%;
   letter-spacing: 0.4px;
+}
+.box-protocol .dl-table dl dd + dd {
+  margin-top: 8px;
 }
 
 .request-item {
@@ -5125,7 +5130,7 @@ input {
   font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.4px;
-  padding: 38px 0 17px 0;
+  padding: 40px 0 18px 0;
 }
 .title-search-1 span {
   font-size: 12px;
@@ -5137,13 +5142,16 @@ input {
 .title-search-1 + .table-layout {
   margin-top: 20px;
 }
+.title-search-1 + .table-layout.margin-top-1 {
+  margin-top: 0;
+}
 
 .box-top-search.type-3 input {
   height: 44px;
   border-radius: 999px;
   padding-left: 24px;
   padding-right: 50px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.28px;
 }
 .box-top-search.type-3 input::placeholder {
   color: #bbb;
@@ -5675,7 +5683,7 @@ input {
     padding: 20px 24px;
     border-radius: 12px;
     font-size: 20px;
-    min-width: 220px;
+    min-width: 200px;
   }
   .common-btnType-3 {
     padding: 7px 16px;
@@ -6108,7 +6116,7 @@ input {
     letter-spacing: 0.4px;
   }
   .common-tab.type-3 {
-    padding-top: 81px;
+    padding-top: 84px;
   }
   .common-tab.type-3 ul li {
     margin-right: 29px;
@@ -7465,13 +7473,13 @@ input {
   .box-map-search .box-top-search .item-search {
     flex: 1 1 auto;
     position: relative;
-    padding-right: 177px;
+    padding-right: 208px;
   }
   .box-map-search .box-top-search .item-search input {
     max-width: 100%;
   }
   .box-map-search .box-top-search .item-search .icon-search {
-    width: 169px;
+    width: 200px;
     height: 64px;
     position: absolute;
     top: 50%;
@@ -7617,7 +7625,7 @@ input {
   .box-protocol ul.number > li {
     color: #666;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 150%;
     letter-spacing: 0.4px;
     padding-left: 18px;
     margin-top: 1px;
@@ -7647,7 +7655,7 @@ input {
   .box-protocol .text-2 {
     color: #666;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 150%;
     letter-spacing: 0.4px;
     padding: 0 12px 0 24px;
   }
@@ -7656,7 +7664,7 @@ input {
   }
   .box-protocol .text-3 {
     font-size: 16px;
-    line-height: 160%; /* 25.6px */
+    line-height: 150%;
     letter-spacing: 0.4px;
     padding: 12px 12px 13px 24px;
   }
@@ -7695,9 +7703,11 @@ input {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
     letter-spacing: 0.4px;
     padding: 40px 0;
+  }
+  .box-protocol .dl-table dl dd + dd {
+    margin-top: 0;
   }
   .box-protocol .pc-list-gap {
     display: flex;
@@ -7735,7 +7745,7 @@ input {
     width: 128px;
     height: 172px;
     padding-top: 0;
-    margin: 0 auto 24px;
+    margin: 0 auto 28px;
   }
   .request-item .item .btn-flex {
     width: 100%;
@@ -8416,7 +8426,7 @@ input {
   .table-layout.d_2_1 .body > ul > li {
     flex-direction: row;
     align-items: center;
-    padding: 22px 0;
+    padding: 21px 0;
   }
   .table-layout.d_2_1 .body > ul > li p {
     text-align: center;
@@ -8629,7 +8639,7 @@ input {
   }
   .title-search-1 {
     font-size: 24px;
-    padding: 57px 0 21px 0;
+    padding: 60px 0 21px 0;
   }
   .title-search-1 span {
     font-size: 20px;
