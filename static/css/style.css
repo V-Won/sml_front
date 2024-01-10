@@ -371,8 +371,8 @@ input {
 .box-header .menu-list .inner-gap-1 > ul > li {
   border-bottom: 1px solid rgba(217, 217, 217, 0.2);
   position: relative;
-  padding-top: 58px;
-  margin-bottom: 32px;
+  padding-top: 61px;
+  margin-bottom: 34px;
 }
 .box-header .menu-list .inner-gap-1 > ul > li.mo-order > ul > li:nth-child(1) {
   order: 1;
@@ -405,7 +405,7 @@ input {
   display: flex;
   opacity: 1;
   pointer-events: all;
-  padding: 34px 20px 0px 20px;
+  padding: 32px 20px 0px 20px;
   border-radius: 12px;
   background: rgba(217, 217, 217, 0.2);
 }
@@ -438,8 +438,8 @@ input {
   position: absolute;
   width: 24px;
   height: 24px;
-  top: 1px;
-  right: 8px;
+  top: 2px;
+  right: 4px;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul {
   display: flex;
@@ -455,7 +455,10 @@ input {
   align-items: flex-start;
   align-self: stretch;
   flex-direction: column;
-  width: 36vw;
+  width: 33vw;
+}
+.box-header .menu-list .inner-gap-1 > ul > li > ul > li:last-child {
+  padding-bottom: 10px;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > a {
   color: #fff;
@@ -463,9 +466,9 @@ input {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 21.6px;
+  line-height: 130%;
   letter-spacing: 0.4px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > ul > li > a {
   color: #fff;
@@ -473,12 +476,12 @@ input {
   font-size: 16px;
   font-style: normal;
   font-weight: 200;
-  line-height: 16.8px;
+  line-height: 150%;
   letter-spacing: 0.4px;
   position: relative;
   padding: 0 0 0 7px;
   display: block;
-  margin: 0 0 19px 0;
+  margin: 0 -23px 17px 0;
   word-break: auto-phrase;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > ul > li > a::after {
@@ -489,7 +492,7 @@ input {
   border-radius: 999px;
   background: #fff;
   position: absolute;
-  top: 6px;
+  top: 10px;
   left: 0;
 }
 .box-header .menu-list .logo {
@@ -541,7 +544,7 @@ input {
   border: 1px solid #fff;
   border-radius: 999px;
   padding: 12px 24px;
-  margin: 32px 0 24px;
+  margin: 35px 0 24px;
 }
 .box-header .search-wrap .input-wrap .search-input {
   width: 100%;
@@ -590,10 +593,10 @@ input {
   border-radius: 999px;
   background: rgba(217, 217, 217, 0.2);
   color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.24px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.28px;
 }
 .box-header .search-wrap .logo {
   width: 163px;
@@ -686,7 +689,7 @@ input {
   display: block;
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 18px;
   z-index: 1000;
 }
 .mobile .box-header.is-menuOpen .inner-gap-1 .inner .box-lang .btn-lang {
@@ -702,10 +705,10 @@ input {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%;
-  letter-spacing: 0.4px;
+  line-height: 130%;
+  letter-spacing: 0.32px;
   display: flex;
-  padding: 6px 16px;
+  padding: 7px 16px;
   align-items: center;
   gap: 6px;
   border-radius: 999px;
@@ -801,10 +804,10 @@ input {
   font-weight: 700;
   line-height: 120%; /* 21.6px */
   letter-spacing: 0.4px;
-  margin-top: 36px;
+  margin-top: 39px;
 }
 .box-footer .inner .ft-bottom {
-  padding-bottom: 32px;
+  padding-bottom: 34px;
 }
 .box-footer .inner .ft-bottom .left .logo {
   width: 131px;
@@ -822,11 +825,11 @@ input {
 .box-footer .inner .ft-bottom .left .info-list {
   width: 100%;
   position: relative;
-  margin: 24px 0 32px;
+  margin: 27px 0 36px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 11px 0;
+  gap: 14px 0;
 }
 .box-footer .inner .ft-bottom .left .info-list li {
   color: rgba(0, 0, 0, 0.5);
@@ -932,8 +935,8 @@ input {
   color: rgba(0, 0, 0, 0.3);
   font-size: 12px;
   font-weight: 400;
-  line-height: 100%; /* 12px */
-  letter-spacing: 0.4px;
+  line-height: 150%; /* 12px */
+  letter-spacing: 0.24px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1009,7 +1012,7 @@ input {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 130%;
   letter-spacing: 0.28px;
   white-space: nowrap;
 }
@@ -1143,7 +1146,7 @@ input {
   font-weight: 200;
   line-height: 100%;
   letter-spacing: 0.4px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 .common-title-1 > span {
   font-weight: 700;
@@ -1545,7 +1548,7 @@ input {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 150%;
   background: transparent;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.28px;
@@ -2774,7 +2777,7 @@ input {
   font-weight: 600;
   line-height: 28.8px;
   letter-spacing: 0.4px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 .main-kv-swiper .swiper-slide .box-text .text-2 {
   color: var(--primary-5, #fff);
@@ -2884,7 +2887,7 @@ input {
   width: 100%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% + 1px));
   left: 0;
   right: 0;
   text-align: center;
@@ -2913,7 +2916,7 @@ input {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 150%;
   letter-spacing: 0.28px;
 }
 
@@ -2952,7 +2955,7 @@ input {
   width: 100%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% + 5px));
   left: 0;
   right: 0;
   padding: 0 20px;
@@ -2977,7 +2980,7 @@ input {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 150%;
   letter-spacing: 0.28px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 }
@@ -3113,8 +3116,8 @@ input {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  line-height: 120%;
-  letter-spacing: 0.14px;
+  line-height: 130%;
+  letter-spacing: 0.28px;
 }
 .main-academic .academic-sort .sort-btn-swiper li span:hover {
   cursor: pointer;
@@ -3163,14 +3166,14 @@ input {
 }
 .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .tag {
   width: fit-content;
-  padding: 3px 8px;
+  padding: 3px 9px;
   border-radius: 999px;
   border: 1px solid #d5d5d5;
   color: #4d4d4d;
   font-size: 12px;
   font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.4px;
+  line-height: 130%;
+  letter-spacing: 0.24px;
   display: block;
   margin-bottom: 8px;
 }
@@ -3182,8 +3185,8 @@ input {
   -webkit-line-clamp: 2;
   color: #4d4d4d;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 120%;
+  font-weight: 600;
+  line-height: 130%;
   letter-spacing: 0.28px;
   margin-bottom: 13px;
 }
@@ -3191,8 +3194,8 @@ input {
   color: #999;
   font-size: 12px;
   font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -0.24px;
+  line-height: 150%;
+  letter-spacing: 0.24px;
 }
 
 .gray-bg {
@@ -3224,7 +3227,7 @@ input {
   display: block;
 }
 .main-news .main-news-swiper .swiper-slide .img-holder span {
-  border-radius: 2px;
+  border-radius: 8px;
 }
 .main-news .main-news-swiper .swiper-slide .img-holder span::after {
   content: "";
@@ -3239,7 +3242,7 @@ input {
 .main-news .main-news-swiper .swiper-slide .text-box {
   width: 100%;
   position: absolute;
-  bottom: 24px;
+  bottom: 18px;
   left: 0;
   padding: 0 20px;
 }
@@ -3262,19 +3265,19 @@ input {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   color: var(--primary-6-white, #fff);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.32px;
-  margin: 10px 0;
+  line-height: 130%;
+  letter-spacing: 0.28px;
+  margin: 13px 0 15px 0;
 }
 .main-news .main-news-swiper .swiper-slide .text-box .txt-2 {
   color: var(--primary-6-white, #fff);
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 16.8px */
-  letter-spacing: 0.24px;
+  line-height: 150%; /* 16.8px */
+  letter-spacing: 0.28px;
 }
 .main-news .swiper-pagination-2.swiper-pagination-progressbar.swiper-pagination-horizontal {
   display: block;
@@ -3339,7 +3342,7 @@ input {
   color: #4d4d4d;
   font-size: 14px;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 150%;
   letter-spacing: 0.28px;
 }
 .main-official .official-swiper .swiper-slide .txt-3 {
@@ -5756,16 +5759,16 @@ input {
     font-size: 16px;
   }
   .common-input-1 input {
-    padding: 11px 12px 13px 24px;
+    padding: 14px 12px 13px 24px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 150%;
     letter-spacing: 0.32px;
   }
   .common-input-1 input::placeholder {
     font-size: 16px;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 150%;
     letter-spacing: 0.32px;
   }
   .common-selectbox > button {
@@ -5782,7 +5785,7 @@ input {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M7.41 8.79492L12 13.3749L16.59 8.79492L18 10.2049L12 16.2049L6 10.2049L7.41 8.79492Z' fill='white'/%3E%3C/svg%3E");
   }
   .common-selectbox > ul > li button {
-    padding: 14px 12px 14px 23px;
+    padding: 13px 12px 11px 23px;
     font-size: 16px;
   }
   .box-layer.common .inner-layer .gap .box {
@@ -6363,7 +6366,7 @@ input {
     color: #006477;
     font-size: 22px;
     font-weight: 600;
-    line-height: 26.4px;
+    line-height: 130%;
     letter-spacing: 0.4px;
     position: static;
     padding-left: 0;
@@ -6385,16 +6388,16 @@ input {
   }
   .box-header .menu-list .inner-gap-1 > ul > li > ul > li:first-child > a {
     padding-top: 28px;
-    padding-bottom: 4px;
+    padding-bottom: 7px;
   }
   .box-header .menu-list .inner-gap-1 > ul > li > ul > li > a {
     color: #666;
     font-size: 16px;
     font-weight: 600;
-    line-height: 19.2px;
+    line-height: 130%;
     letter-spacing: 0.4px;
     display: block;
-    padding: 22px 0 4px 0;
+    padding: 27px 0 4px 0;
     transition: all 0.2s;
   }
   .box-header .menu-list .inner-gap-1 > ul > li > ul > li > a:hover {
@@ -6407,10 +6410,10 @@ input {
     color: #999;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16.8px;
+    line-height: 150%;
     letter-spacing: 0.4px;
     position: relative;
-    padding: 5px 0 5px 16px;
+    padding: 5px 0 3px 16px;
     display: block;
     transition: all 0.2s;
     margin-bottom: 0;
@@ -6426,7 +6429,7 @@ input {
     width: 3px;
     height: 3px;
     position: absolute;
-    top: 12px;
+    top: 13px;
     left: 9px;
   }
   .box-header .menu-list .logo {
@@ -6466,7 +6469,7 @@ input {
     justify-content: space-between;
     gap: 8px;
     padding: 0;
-    margin: 23px 0 37px;
+    margin: 29px 0 40px;
   }
   .box-header .search-wrap .input-wrap .search-input {
     width: 100%;
@@ -6477,7 +6480,7 @@ input {
     color: #4d4d4d;
     font-size: 16px;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 150%;
     letter-spacing: 0.4px;
   }
   .box-header .search-wrap .input-wrap .search-input::placeholder {
@@ -6485,7 +6488,7 @@ input {
   }
   .box-header .search-wrap .input-wrap .search-btn {
     width: 100%;
-    max-width: 169px;
+    max-width: 200px;
     height: 64px;
     position: relative;
     padding: 20px 24px;
@@ -6510,7 +6513,7 @@ input {
     background-position: center;
     position: absolute;
     top: 50%;
-    left: 54px;
+    left: 68px;
     transform: translateY(-50%);
   }
   .box-header .search-wrap .search-list {
@@ -6745,7 +6748,7 @@ input {
   .main-kv-swiper .swiper-slide .box-text .text-2 {
     font-size: 56px;
     font-weight: 100;
-    line-height: 120%;
+    line-height: 130%;
     letter-spacing: 0.02em;
   }
   .main-kv-swiper .swiper-slide .box-text .text-2 strong {
@@ -6754,7 +6757,7 @@ input {
     letter-spacing: 0.4px;
   }
   .main-kv-swiper .box-swiperControl {
-    bottom: 249px;
+    bottom: 244px;
   }
   .main-kv-swiper .box-swiperControl .swiper-pagination {
     font-size: 16px;

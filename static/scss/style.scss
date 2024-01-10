@@ -402,8 +402,8 @@ input {
 				> li {
 					border-bottom: 1px solid rgba(217, 217, 217, 0.2);
 					position: relative;
-					padding-top: 58px;
-					margin-bottom: 32px;
+					padding-top: 61px;
+					margin-bottom: 34px;
 					&.mo-order {
 						> ul {
 							> li {
@@ -442,7 +442,7 @@ input {
 							display: flex;
 							opacity: 1;
 							pointer-events: all;
-							padding: 34px 20px 0px 20px;
+							padding: 32px 20px 0px 20px;
 							border-radius: 12px;
 							background: rgba(217, 217, 217, 0.2);
 						}
@@ -475,8 +475,8 @@ input {
 							position: absolute;
 							width: 24px;
 							height: 24px;
-							top: 1px;
-							right: 8px;
+							top: 2px;
+							right: 4px;
 						}
 					}
 					> ul {
@@ -492,16 +492,19 @@ input {
 							align-items: flex-start;
 							align-self: stretch;
 							flex-direction: column;
-							width: 36vw;
+							width: 33vw;
+							&:last-child{
+								padding-bottom:10px;
+							}
 							> a {
 								color: #fff;
 								font-family: Pretendard;
 								font-size: 20px;
 								font-style: normal;
 								font-weight: 600;
-								line-height: 21.6px;
+								line-height: 130%;
 								letter-spacing: 0.4px;
-								padding-bottom: 22px;
+								padding-bottom: 21px;
 							}
 							> ul {
 								> li {
@@ -511,12 +514,12 @@ input {
 										font-size: 16px;
 										font-style: normal;
 										font-weight: 200;
-										line-height: 16.8px;
+										line-height: 150%;
 										letter-spacing: 0.4px;
 										position: relative;
 										padding: 0 0 0 7px;
 										display: block;
-										margin: 0 0 19px 0;
+										margin: 0 -23px 17px 0;
 										word-break: auto-phrase;
 										&::after {
 											content: "";
@@ -526,7 +529,7 @@ input {
 											border-radius: 999px;
 											background: #fff;
 											position: absolute;
-											top: 6px;
+											top: 10px;
 											left: 0;
 										}
 									}
@@ -604,7 +607,7 @@ input {
 			border: 1px solid #fff;
 			border-radius: 999px;
 			padding: 12px 24px;
-			margin: 32px 0 24px;
+			margin: 35px 0 24px;
 			.search-input {
 				width: 100%;
 				color: #fff;
@@ -655,10 +658,10 @@ input {
 					border-radius: 999px;
 					background: rgba(217, 217, 217, 0.2);
 					color: #fff;
-					font-size: 12px;
-					font-weight: 500;
-					line-height: 120%;
-					letter-spacing: 0.24px;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.28px;
 					//text-transform: uppercase;
 				}
 			}
@@ -807,7 +810,7 @@ input {
 						display: block;
 						position: absolute;
 						left: 20px;
-						top: 20px;
+						top: 18px;
 						z-index: 1000;
 						.btn-lang {
 							display: none;
@@ -822,10 +825,10 @@ input {
 									font-size: 16px;
 									font-style: normal;
 									font-weight: 600;
-									line-height: 120%;
-									letter-spacing: 0.4px;
+									line-height: 130%;
+									letter-spacing: 0.32px;
 									display: flex;
-									padding: 6px 16px;
+									padding: 7px 16px;
 									align-items: center;
 									gap: 6px;
 									border-radius: 999px;
@@ -929,11 +932,11 @@ input {
 				font-weight: 700;
 				line-height: 120%; /* 21.6px */
 				letter-spacing: 0.4px;
-				margin-top: 36px;
+				margin-top: 39px;
 			}
 		}
 		.ft-bottom {
-			padding-bottom: 32px;
+			padding-bottom: 34px;
 			.left {
 				.logo {
 					width: 131px;
@@ -951,11 +954,11 @@ input {
 				.info-list {
 					width: 100%;
 					position: relative;
-					margin: 24px 0 32px;
+					margin: 27px 0 36px;
 					display: flex;
 					flex-direction: column;
 					align-items: flex-start;
-					gap: 11px 0;
+					gap: 14px 0;
 					li {
 						color: rgba(0, 0, 0, 0.5);
 						font-size: 12px;
@@ -1072,8 +1075,8 @@ input {
 			color: rgba(0, 0, 0, 0.3);
 			font-size: 12px;
 			font-weight: 400;
-			line-height: 100%; /* 12px */
-			letter-spacing: 0.4px;
+			line-height: 150%; /* 12px */
+			letter-spacing: 0.24px;
 			text-transform: uppercase;
 			text-align: center;
 		}
@@ -1153,7 +1156,7 @@ input {
 						text-align: center;
 						font-size: 14px;
 						font-weight: 500;
-						line-height: 120%;
+						line-height: 130%;
 						letter-spacing: 0.28px;
 						white-space: nowrap;
 						&::before {
@@ -1349,7 +1352,8 @@ input {
 	font-weight: 200;
 	line-height: 100%;
 	letter-spacing: 0.4px;
-	padding-bottom: 20px;
+	//padding-bottom: 20px; 메인 tab 변경으로 수정.
+	padding-bottom: 23px;
 	> span {
 		font-weight: 700;
 	}
@@ -1846,7 +1850,7 @@ input {
 	color: #fff;
 	font-size: 14px;
 	font-weight: 500;
-	line-height: 120%;
+	line-height: 150%;
 	background: transparent;
 	color: rgba(255, 255, 255, 0.6);
 	letter-spacing: 0.28px;
@@ -3182,7 +3186,7 @@ input {
 				font-weight: 600;
 				line-height: 28.8px;
 				letter-spacing: 0.4px;
-				padding-bottom: 20px;
+				padding-bottom: 17px;
 			}
 			.text-2 {
 				color: var(--primary-5, #fff);
@@ -3296,7 +3300,7 @@ input {
 					width: 100%;
 					position: absolute;
 					top: 50%;
-					transform: translateY(-50%);
+					transform: translateY(calc(-50% + 1px));
 					left: 0;
 					right: 0;
 					text-align: center;
@@ -3324,7 +3328,7 @@ input {
 						text-align: center;
 						font-size: 14px;
 						font-weight: 500;
-						line-height: 120%;
+						line-height: 150%;
 						letter-spacing: 0.28px;
 					}
 				}
@@ -3369,7 +3373,7 @@ input {
 				width: 100%;
 				position: absolute;
 				top: 50%;
-				transform: translateY(-50%);
+				transform: translateY(calc(-50% + 5px));
 				left: 0;
 				right: 0;
 				padding: 0 20px;
@@ -3389,7 +3393,7 @@ input {
 					text-align: center;
 					font-size: 14px;
 					font-weight: 600;
-					line-height: 120%;
+					line-height: 150%;
 					letter-spacing: 0.28px;
 					text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 				}
@@ -3555,8 +3559,8 @@ input {
 					text-align: center;
 					font-size: 14px;
 					font-weight: 600;
-					line-height: 120%;
-					letter-spacing: 0.14px;
+					line-height: 130%;
+					letter-spacing: 0.28px;
 					&:hover {
 						cursor: pointer;
 					}
@@ -3607,14 +3611,14 @@ input {
 						padding: 20px 20px 20px 0;
 						.tag {
 							width: fit-content;
-							padding: 3px 8px;
+							padding: 3px 9px;
 							border-radius: 999px;
 							border: 1px solid #d5d5d5;
 							color: #4d4d4d;
 							font-size: 12px;
 							font-weight: 500;
-							line-height: 120%;
-							letter-spacing: 0.4px;
+							line-height: 130%;
+							letter-spacing: 0.24px;
 							display: block;
 							margin-bottom: 8px;
 						}
@@ -3622,8 +3626,8 @@ input {
 							@include text-line-2;
 							color: #4d4d4d;
 							font-size: 14px;
-							font-weight: 500;
-							line-height: 120%;
+							font-weight: 600;
+							line-height: 130%;
 							letter-spacing: 0.28px;
 							margin-bottom: 13px;
 						}
@@ -3631,8 +3635,8 @@ input {
 							color: #999;
 							font-size: 12px;
 							font-weight: 400;
-							line-height: 140%;
-							letter-spacing: -0.24px;
+							line-height: 150%;
+							letter-spacing: 0.24px;
 						}
 					}
 				}
@@ -3668,7 +3672,7 @@ input {
 			}
 			.img-holder {
 				span {
-					border-radius: 2px;
+					border-radius: 8px;
 					&::after {
 						content: "";
 						display: block;
@@ -3685,7 +3689,7 @@ input {
 			.text-box {
 				width: 100%;
 				position: absolute;
-				bottom: 24px;
+				bottom: 18px;
 				left: 0;
 				padding: 0 20px;
 				.tag {
@@ -3703,19 +3707,19 @@ input {
 				.txt-1 {
 					@include text-line-2;
 					color: var(--primary-6-white, #fff);
-					font-size: 16px;
+					font-size: 14px;
 					font-weight: 500;
-					line-height: 120%;
-					letter-spacing: 0.32px;
-					margin: 10px 0;
+					line-height: 130%;
+					letter-spacing: 0.28px;
+					margin: 13px 0 15px 0;
 				}
 				.txt-2 {
 					color: var(--primary-6-white, #fff);
-					font-size: 12px;
+					font-size: 14px;
 					font-style: normal;
 					font-weight: 400;
-					line-height: 140%; /* 16.8px */
-					letter-spacing: 0.24px;
+					line-height: 150%; /* 16.8px */
+					letter-spacing: 0.28px;
 				}
 			}
 		}
@@ -3778,7 +3782,7 @@ input {
 				color: #4d4d4d;
 				font-size: 14px;
 				font-weight: 500;
-				line-height: 120%;
+				line-height: 150%;
 				letter-spacing: 0.28px;
 			}
 			.txt-3 {
@@ -6570,15 +6574,15 @@ input {
 	// 공통 input
 	.common-input-1 {
 		input {
-			padding: 11px 12px 13px 24px;
+			padding: 14px 12px 13px 24px;
 			font-size: 16px;
 			font-weight: 500;
-			line-height: 120%;
+			line-height: 150%;
 			letter-spacing: 0.32px;
 			&::placeholder {
 				font-size: 16px;
 				font-weight: 500;
-				line-height: 120%;
+				line-height: 150%;
 				letter-spacing: 0.32px;
 			}
 		}
@@ -6600,7 +6604,7 @@ input {
 	}
 
 	.common-selectbox > ul > li button {
-		padding: 14px 12px 14px 23px;
+		padding: 13px 12px 11px 23px;
 		font-size: 16px;
 	}
 
@@ -7328,7 +7332,7 @@ input {
 							color: #006477;
 							font-size: 22px;
 							font-weight: 600;
-							line-height: 26.4px;
+							line-height: 130%;
 							letter-spacing: 0.4px;
 							position: static;
 							padding-left: 0;
@@ -7349,17 +7353,17 @@ input {
 								&:first-child {
 									> a {
 										padding-top: 28px;
-										padding-bottom: 4px;
+										padding-bottom: 7px;
 									}
 								}
 								> a {
 									color: #666;
 									font-size: 16px;
 									font-weight: 600;
-									line-height: 19.2px;
+									line-height: 130%;
 									letter-spacing: 0.4px;
 									display: block;
-									padding: 22px 0 4px 0;
+									padding: 27px 0 4px 0;
 									transition: all 0.2s;
 									&:hover {
 										color: #1d1d1d;
@@ -7372,10 +7376,10 @@ input {
 											color: #999;
 											font-size: 14px;
 											font-weight: 500;
-											line-height: 16.8px;
+											line-height: 150%;
 											letter-spacing: 0.4px;
 											position: relative;
-											padding: 5px 0 5px 16px;
+											padding: 5px 0 3px 16px;
 											display: block;
 											transition: all 0.2s;
 											margin-bottom: 0;
@@ -7391,7 +7395,7 @@ input {
 												height: 3px;
 												position: absolute;
 												//top: 14px;
-												top: 12px;
+												top: 13px;
 												left: 9px;
 												//transform: translateY(-50%);
 											}
@@ -7440,7 +7444,7 @@ input {
 				justify-content: space-between;
 				gap: 8px;
 				padding: 0;
-				margin: 23px 0 37px;
+				margin: 29px 0 40px;
 				.search-input {
 					width: 100%;
 					height: 64px;
@@ -7450,7 +7454,7 @@ input {
 					color: #4d4d4d;
 					font-size: 16px;
 					font-weight: 500;
-					line-height: 120%;
+					line-height: 150%;
 					letter-spacing: 0.4px;
 					&::placeholder {
 						color: #999;
@@ -7458,7 +7462,7 @@ input {
 				}
 				.search-btn {
 					width: 100%;
-					max-width: 169px;
+					max-width: 200px;
 					height: 64px;
 					position: relative;
 					padding: 20px 24px;
@@ -7481,7 +7485,7 @@ input {
 							background-position: center;
 							position: absolute;
 							top: 50%;
-							left: 54px;
+							left: 68px;
 							transform: translateY(-50%);
 						}
 					}
@@ -7738,7 +7742,7 @@ input {
 				.text-2 {
 					font-size: 56px;
 					font-weight: 100;
-					line-height: 120%;
+					line-height: 130%;
 					letter-spacing: 0.02em;
 					strong {
 						font-weight: 600;
@@ -7749,7 +7753,7 @@ input {
 			}
 		}
 		.box-swiperControl {
-			bottom: 249px;
+			bottom: 244px;
 			.swiper-pagination {
 				font-size: 16px;
 				bottom: -7px;
