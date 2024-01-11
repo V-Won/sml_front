@@ -8995,10 +8995,13 @@ input {
 		&.oneBtn {
 			.item {
 				.img-holder {
+					width: 100%;
+					max-width: 260px;
+					margin: 0 auto 27px;
 					span {
-						width: auto;
-						height: 260px;
-						margin: 0 auto 22px;
+						width: 100%;
+						padding-top: 100%;
+						margin: 0;
 					}
 				}
 			}
@@ -9067,6 +9070,10 @@ input {
 								max-width: 100%;
 								&.left {
 									max-width: 120px;
+									min-width: 120px;
+								}
+								&.right {
+									width: calc(100% - 140px);
 								}
 							}
 						}

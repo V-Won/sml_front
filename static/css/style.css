@@ -7778,10 +7778,15 @@ input {
     height: 68px;
     padding: 0;
   }
+  .request-item.oneBtn .item .img-holder {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 27px;
+  }
   .request-item.oneBtn .item .img-holder span {
-    width: auto;
-    height: 260px;
-    margin: 0 auto 22px;
+    width: 100%;
+    padding-top: 100%;
+    margin: 0;
   }
   .box-layer.layer-video.request .inner-layer .gap {
     border-radius: 24px;
@@ -7840,6 +7845,10 @@ input {
   }
   .request-swiper .mySwiper1 .swiper-slide .flex .text-box li p.left {
     max-width: 120px;
+    min-width: 120px;
+  }
+  .request-swiper .mySwiper1 .swiper-slide .flex .text-box li p.right {
+    width: calc(100% - 140px);
   }
   .request-swiper .mySwiper1 .swiper-button-next,
   .request-swiper .mySwiper1 .swiper-button-prev {
