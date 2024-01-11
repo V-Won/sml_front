@@ -4893,7 +4893,7 @@ input {
   color: #666;
   font-size: 14px;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 150%;
   letter-spacing: 0.4px;
 }
 .table-layout.c_1_2 .body > ul > li .name {
@@ -4901,7 +4901,7 @@ input {
   color: #4d4d4d;
   font-size: 16px;
   letter-spacing: 0.4px;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 .table-layout.c_1_2 .body > ul > li .place {
   text-overflow: ellipsis;
