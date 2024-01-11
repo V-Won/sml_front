@@ -5183,6 +5183,7 @@ input {
 .request-detailTop {
 	width: 100%;
 	position: relative;
+	margin-top: 3px;
 	.tit-flex {
 		width: 100%;
 		display: flex;
@@ -5210,14 +5211,14 @@ input {
 				align-items: center;
 				gap: 0 20px;
 				& + li {
-					margin-top: 21px;
+					margin-top: 20px;
 				}
 				> p {
 					width: 100%;
 					color: #666;
 					font-size: 14px;
 					font-weight: 500;
-					line-height: 140%;
+					line-height: 150%;
 					letter-spacing: 0.28px;
 				}
 				.left {
@@ -5234,7 +5235,7 @@ input {
 		font-weight: 500;
 		line-height: 140%;
 		letter-spacing: 0.24px;
-		margin-top: 6px;
+		margin-top: 10px;
 	}
 }
 
@@ -5243,7 +5244,7 @@ input {
 	.info-box {
 		width: 100%;
 		position: relative;
-		margin: 40px 0;
+		margin: 42px 0 38px;
 		.title {
 			color: #4d4d4d;
 			font-size: 16px;
@@ -5271,8 +5272,8 @@ input {
 				color: #4d4d4d;
 				font-size: 14px;
 				font-weight: 500;
-				line-height: 120%;
-				letter-spacing: 0.4px;
+				line-height: 150%;
+				letter-spacing: 0.28px;
 			}
 			& + .info-list {
 				margin-top: 40px;
@@ -5285,7 +5286,7 @@ input {
 		width: 100%;
 		position: relative;
 		> li {
-			padding: 19.5px 12px;
+			padding: 19.4px 12px;
 			display: flex;
 			align-items: center;
 			gap: 0 20px;
@@ -5296,8 +5297,8 @@ input {
 				width: 100%;
 				font-size: 14px;
 				font-weight: 600;
-				line-height: 120%;
-				letter-spacing: 0.4px;
+				line-height: 150%;
+				letter-spacing: 0.28px;
 				max-width: 84px;
 			}
 			.left {
@@ -5349,8 +5350,8 @@ input {
 				color: var(--Primary-01, #006477);
 				font-size: 14px;
 				font-weight: 500;
-				line-height: 140%;
-				letter-spacing: 0.4px;
+				line-height: 130%;
+				letter-spacing: 0.28px;
 				text-decoration-line: underline;
 				margin-top: 20px;
 			}
@@ -5361,21 +5362,20 @@ input {
 				color: #666;
 				font-size: 12px;
 				font-weight: 500;
-				line-height: 120%;
-				letter-spacing: 0.4px;
+				line-height: 150%;
+				letter-spacing: 0.28px;
 				max-width: 100%;
 				&.left-tit {
 					color: var(--Primary-01, #006477);
 					font-size: 14px;
 					font-weight: 600;
-					letter-spacing: 0.4px;
+					letter-spacing: 0.28px;
 					padding: 19px 12px 0;
 				}
 				&.tit {
 					color: #4d4d4d;
 					font-size: 14px;
 					font-weight: 600;
-					line-height: 140%;
 					margin-bottom: 21px;
 				}
 				&.left {
@@ -5386,7 +5386,6 @@ input {
 					}
 				}
 				&.right {
-					line-height: 140%;
 					letter-spacing: 0.24px;
 					&.acc-text {
 						color: #4d4d4d;
@@ -9483,7 +9482,11 @@ input {
 		.tit-flex {
 			.title {
 				font-size: 30px;
-				letter-spacing: 0.4px;
+				letter-spacing: 0.6px;
+				line-height: 130%;
+			}
+			.common-printBtn {
+				top: 0;
 			}
 		}
 		.top-info {
@@ -9511,8 +9514,8 @@ input {
 					> p {
 						font-size: 18px;
 						font-weight: 500;
-						line-height: 120%;
-						letter-spacing: 0.4px;
+						line-height: 150%;
+						letter-spacing: 0.36px;
 					}
 					.left {
 						max-width: 80px;
@@ -9564,7 +9567,7 @@ input {
 		flex-wrap: wrap;
 		gap: 0 80px;
 		.info-box {
-			margin: 61px 0 60px;
+			margin: 65px 0 60px;
 			&:first-child {
 				width: calc(65.55% - 40px);
 			}
@@ -9585,7 +9588,7 @@ input {
 					padding: 24px;
 					font-size: 18px;
 					font-weight: 600;
-					letter-spacing: 0.4px;
+					letter-spacing: 0.36px;
 				}
 				& + .info-list {
 					margin-top: 60px;
@@ -9598,7 +9601,7 @@ input {
 				p {
 					font-size: 18px;
 					font-weight: 500;
-					letter-spacing: 0.4px;
+					letter-spacing: 0.36px;
 					max-width: 100%;
 				}
 				.left {
@@ -9636,17 +9639,16 @@ input {
 				}
 				.more-btn {
 					font-size: 16px;
-					letter-spacing: 0.4px;
-					margin-top: 40px;
+					letter-spacing: 0.32px;
+					margin-top: 39px;
 				}
 				p {
 					font-size: 18px;
-					line-height: 140%;
-					letter-spacing: 0.4px;
+					letter-spacing: 0.36px;
 					max-width: 100%;
 					&.left-tit {
 						font-size: 18px;
-						letter-spacing: 0.4px;
+						letter-spacing: 0.36px;
 						padding: 23.5px 40px;
 						border-bottom: 1px solid #d5d5d5;
 					}
@@ -9667,10 +9669,10 @@ input {
 					&.right {
 						width: 100%;
 						text-align: center;
+						letter-spacing: 0.36px;
 						&.acc-text {
 							text-align: left;
 							font-size: 18px;
-							letter-spacing: 0.4px;
 						}
 					}
 				}

@@ -4670,6 +4670,7 @@ input {
 .request-detailTop {
   width: 100%;
   position: relative;
+  margin-top: 3px;
 }
 .request-detailTop .tit-flex {
   width: 100%;
@@ -4699,14 +4700,14 @@ input {
   gap: 0 20px;
 }
 .request-detailTop .top-info ul li + li {
-  margin-top: 21px;
+  margin-top: 20px;
 }
 .request-detailTop .top-info ul li > p {
   width: 100%;
   color: #666;
   font-size: 14px;
   font-weight: 500;
-  line-height: 140%;
+  line-height: 150%;
   letter-spacing: 0.28px;
 }
 .request-detailTop .top-info ul li .left {
@@ -4720,7 +4721,7 @@ input {
   font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.24px;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 .request-detailInfo {
@@ -4729,7 +4730,7 @@ input {
 .request-detailInfo .info-box {
   width: 100%;
   position: relative;
-  margin: 40px 0;
+  margin: 42px 0 38px;
 }
 .request-detailInfo .info-box .title {
   color: #4d4d4d;
@@ -4759,8 +4760,8 @@ input {
   color: #4d4d4d;
   font-size: 14px;
   font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.4px;
+  line-height: 150%;
+  letter-spacing: 0.28px;
 }
 .request-detailInfo .info-box .item + .info-list {
   margin-top: 40px;
@@ -4772,7 +4773,7 @@ input {
   position: relative;
 }
 .request-detailInfo .info-list > li {
-  padding: 19.5px 12px;
+  padding: 19.4px 12px;
   display: flex;
   align-items: center;
   gap: 0 20px;
@@ -4784,8 +4785,8 @@ input {
   width: 100%;
   font-size: 14px;
   font-weight: 600;
-  line-height: 120%;
-  letter-spacing: 0.4px;
+  line-height: 150%;
+  letter-spacing: 0.28px;
   max-width: 84px;
 }
 .request-detailInfo .info-list > li .left {
@@ -4835,8 +4836,8 @@ input {
   color: var(--Primary-01, #006477);
   font-size: 14px;
   font-weight: 500;
-  line-height: 140%;
-  letter-spacing: 0.4px;
+  line-height: 130%;
+  letter-spacing: 0.28px;
   text-decoration-line: underline;
   margin-top: 20px;
 }
@@ -4847,22 +4848,21 @@ input {
   color: #666;
   font-size: 12px;
   font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.4px;
+  line-height: 150%;
+  letter-spacing: 0.28px;
   max-width: 100%;
 }
 .request-detailInfo .info-list.column p.left-tit {
   color: var(--Primary-01, #006477);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.28px;
   padding: 19px 12px 0;
 }
 .request-detailInfo .info-list.column p.tit {
   color: #4d4d4d;
   font-size: 14px;
   font-weight: 600;
-  line-height: 140%;
   margin-bottom: 21px;
 }
 .request-detailInfo .info-list.column p.left {
@@ -4873,7 +4873,6 @@ input {
   margin-top: 8px;
 }
 .request-detailInfo .info-list.column p.right {
-  line-height: 140%;
   letter-spacing: 0.24px;
 }
 .request-detailInfo .info-list.column p.right.acc-text {
@@ -8209,7 +8208,11 @@ input {
   }
   .request-detailTop .tit-flex .title {
     font-size: 30px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.6px;
+    line-height: 130%;
+  }
+  .request-detailTop .tit-flex .common-printBtn {
+    top: 0;
   }
   .request-detailTop .top-info {
     padding: 40px;
@@ -8238,8 +8241,8 @@ input {
   .request-detailTop .top-info ul li > p {
     font-size: 18px;
     font-weight: 500;
-    line-height: 120%;
-    letter-spacing: 0.4px;
+    line-height: 150%;
+    letter-spacing: 0.36px;
   }
   .request-detailTop .top-info ul li .left {
     max-width: 80px;
@@ -8285,7 +8288,7 @@ input {
     gap: 0 80px;
   }
   .request-detailInfo .info-box {
-    margin: 61px 0 60px;
+    margin: 65px 0 60px;
   }
   .request-detailInfo .info-box:first-child {
     width: calc(65.55% - 40px);
@@ -8306,7 +8309,7 @@ input {
     padding: 24px;
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
   }
   .request-detailInfo .info-box .item + .info-list {
     margin-top: 60px;
@@ -8317,7 +8320,7 @@ input {
   .request-detailInfo .info-list > li p {
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
     max-width: 100%;
   }
   .request-detailInfo .info-list > li .left {
@@ -8353,18 +8356,17 @@ input {
   }
   .request-detailInfo .info-list.column .more-btn {
     font-size: 16px;
-    letter-spacing: 0.4px;
-    margin-top: 40px;
+    letter-spacing: 0.32px;
+    margin-top: 39px;
   }
   .request-detailInfo .info-list.column p {
     font-size: 18px;
-    line-height: 140%;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
     max-width: 100%;
   }
   .request-detailInfo .info-list.column p.left-tit {
     font-size: 18px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
     padding: 23.5px 40px;
     border-bottom: 1px solid #d5d5d5;
   }
@@ -8385,11 +8387,11 @@ input {
   .request-detailInfo .info-list.column p.right {
     width: 100%;
     text-align: center;
+    letter-spacing: 0.36px;
   }
   .request-detailInfo .info-list.column p.right.acc-text {
     text-align: left;
     font-size: 18px;
-    letter-spacing: 0.4px;
   }
   .request-detailInfo .info-list + .info-list {
     margin-top: 20px;
