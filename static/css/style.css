@@ -7791,6 +7791,9 @@ input {
   .box-layer.layer-video.request .inner-layer.absol {
     top: 124px;
   }
+  .box-layer.layer-video.request .inner-layer.absol .inner-layer .gap {
+    min-width: 800px;
+  }
   .request-swiper .mySwiper1 {
     padding: 60px 0;
   }

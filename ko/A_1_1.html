@@ -202,11 +202,6 @@
           preventClicksPropagation: false,
           observer: true,
           observeParents: true,
-          breakpoints: {
-            1024: {
-              allowTouchMove: false
-            },
-          },
         });
 
         var swiper1 = new Swiper(".mySwiper1", { // 상단 본문 이미지
@@ -229,8 +224,10 @@
         });
 
         swiper1.on('transitionEnd', function () {
-          let idx = swiper1.realIndex + 1;
-          console.log('now index :::', idx);
+          // let idx = swiper1.realIndex;
+          // swiper2.realIndex = idx;
+          // swiper2.slideTo(idx);
+          // console.log(idx);
         });
 
         var $snbSwiperItem2 = $('.snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');

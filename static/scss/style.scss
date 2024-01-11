@@ -9016,6 +9016,11 @@ input {
 					}
 					&.absol {
 						top: 124px;
+						.inner-layer {
+							.gap {
+								min-width: 800px;
+							}
+						}
 					}
 				}
 			}
