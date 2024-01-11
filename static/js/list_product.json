@@ -1,7 +1,7 @@
 {
   "전체": [
     {
-      "파일명": "seoul1_Cobas C702.jpg",
+      "img": "../static/images/equipment/seoul1_Cobas C702.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul1",
@@ -14,7 +14,7 @@
       "용도": "자동 화학 분석기"
     },
     {
-      "파일명": "seoul2_DxC 700 AU .jpg",
+      "img": "../static/images/equipment/seoul2_DxC 700 AU .jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul2",
@@ -27,7 +27,7 @@
       "용도": "자동 화학 분석기"
     },
     {
-      "파일명": "seoul3_K-Lite 8G.jpg",
+      "img": "../static/images/equipment/seoul3_K-Lite 8G.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul3",
@@ -40,7 +40,7 @@
       "용도": "전해질 측정장비"
     },
     {
-      "파일명": "seoul4_OSMETTE.jpg",
+      "img": "../static/images/equipment/seoul4_OSMETTE.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul4",
@@ -53,7 +53,7 @@
       "용도": "삼투압 측정장비"
     },
     {
-      "파일명": "seoul5_Optilite.jpg",
+      "img": "../static/images/equipment/seoul5_Optilite.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul5",
@@ -66,7 +66,7 @@
       "용도": "면역비탁측정장비"
     },
     {
-      "파일명": "seoul6_UC-3500.jpg",
+      "img": "../static/images/equipment/seoul6_UC-3500.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul6",
@@ -79,7 +79,7 @@
       "용도": "자동 요화학 분석장비"
     },
     {
-      "파일명": "seoul7_UF-5000.jpg",
+      "img": "../static/images/equipment/seoul7_UF-5000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul7",
@@ -92,7 +92,7 @@
       "용도": "자동 요검경 장비"
     },
     {
-      "파일명": "seoul8_XN-9100.jpg",
+      "img": "../static/images/equipment/seoul8_XN-9100.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul8",
@@ -105,7 +105,7 @@
       "용도": "자동혈구 분석기"
     },
     {
-      "파일명": "seoul9_SP-50.jpg",
+      "img": "../static/images/equipment/seoul9_SP-50.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul9",
@@ -118,7 +118,7 @@
       "용도": "슬라이드 제작 및 염색장비"
     },
     {
-      "파일명": "seoul10_STA-R Max.jpg",
+      "img": "../static/images/equipment/seoul10_STA-R Max.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul10",
@@ -131,7 +131,7 @@
       "용도": "혈액 응고 분석기"
     },
     {
-      "파일명": "seoul11_Cobas c513.jpg",
+      "img": "../static/images/equipment/seoul11_Cobas c513.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul11",
@@ -144,7 +144,7 @@
       "용도": "당화혈색소 분석장비"
     },
     {
-      "파일명": "seoul12_D-100.jpg",
+      "img": "../static/images/equipment/seoul12_D-100.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul12",
@@ -157,7 +157,7 @@
       "용도": "당화혈색소 분석장비"
     },
     {
-      "파일명": "seoul13_IH-1000.jpg",
+      "img": "../static/images/equipment/seoul13_IH-1000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul13",
@@ -170,7 +170,7 @@
       "용도": "혈액은행 자동화장비"
     },
     {
-      "파일명": "seoul14_QWALY-3.jpg",
+      "img": "../static/images/equipment/seoul14_QWALY-3.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul14",
@@ -183,7 +183,7 @@
       "용도": "혈액은행 자동화장비"
     },
     {
-      "파일명": "seoul15_Cobas P512.jpg",
+      "img": "../static/images/equipment/seoul15_Cobas P512.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul15",
@@ -196,7 +196,7 @@
       "용도": "혈액 자동 분류장비"
     },
     {
-      "파일명": "seoul16_Cobas e801.jpg",
+      "img": "../static/images/equipment/seoul16_Cobas e801.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul16",
@@ -209,7 +209,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "seoul17_Alinity I.jpg",
+      "img": "../static/images/equipment/seoul17_Alinity I.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul17",
@@ -222,7 +222,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "seoul18_Unicel DXI 800.jpg",
+      "img": "../static/images/equipment/seoul18_Unicel DXI 800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul18",
@@ -235,7 +235,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "seoul19_Liaison XL.jpg",
+      "img": "../static/images/equipment/seoul19_Liaison XL.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul19",
@@ -248,7 +248,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "seoul20_Phadia250.jpg",
+      "img": "../static/images/equipment/seoul20_Phadia250.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul20",
@@ -261,7 +261,7 @@
       "용도": "자가면역질환 및 알레르기 검사"
     },
     {
-      "파일명": "seoul21_DS 2.jpg",
+      "img": "../static/images/equipment/seoul21_DS 2.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul21",
@@ -274,7 +274,7 @@
       "용도": "잠복결핵 검사"
     },
     {
-      "파일명": "seoul22_AlloView20.jpg",
+      "img": "../static/images/equipment/seoul22_AlloView20.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul22",
@@ -287,7 +287,7 @@
       "용도": "알레르기 검사"
     },
     {
-      "파일명": "seoul23_EUROPattern.jpg",
+      "img": "../static/images/equipment/seoul23_EUROPattern.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul23",
@@ -300,7 +300,7 @@
       "용도": "자가항체 검사 자동 판독기"
     },
     {
-      "파일명": "seoul24_HISCL.jpg",
+      "img": "../static/images/equipment/seoul24_HISCL.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul24",
@@ -313,7 +313,7 @@
       "용도": "간섬유화 검사"
     },
     {
-      "파일명": "seoul25_Diamond C.jpg",
+      "img": "../static/images/equipment/seoul25_Diamond C.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul25",
@@ -326,7 +326,7 @@
       "용도": "알츠하이머병 위험도 혈액검사"
     },
     {
-      "파일명": "seoul26_NAVIOS.jpg",
+      "img": "../static/images/equipment/seoul26_NAVIOS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul26",
@@ -339,7 +339,7 @@
       "용도": "림프구아형 검사"
     },
     {
-      "파일명": "seoul27_ETI-MAX 3000.jpg",
+      "img": "../static/images/equipment/seoul27_ETI-MAX 3000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul27",
@@ -352,7 +352,7 @@
       "용도": "위 건강 바이오마커 패널검사"
     },
     {
-      "파일명": "seoul28_Immulite 2000.jpg",
+      "img": "../static/images/equipment/seoul28_Immulite 2000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul28",
@@ -365,7 +365,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "seoul29_Dream γ-10 counter.jpg",
+      "img": "../static/images/equipment/seoul29_Dream γ-10 counter.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul29",
@@ -378,7 +378,7 @@
       "용도": "감마선계측기"
     },
     {
-      "파일명": "seoul30_DXI-800.jpg",
+      "img": "../static/images/equipment/seoul30_DXI-800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul30",
@@ -391,7 +391,7 @@
       "용도": "산전 기형아 선별검사"
     },
     {
-      "파일명": "seoul31_LC-MSMS TQ-s micro.jpg",
+      "img": "../static/images/equipment/seoul31_LC-MSMS TQ-s micro.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul31",
@@ -404,7 +404,7 @@
       "용도": "대사산물, 비타민 검사"
     },
     {
-      "파일명": "seoul32_Q-sight.jpg",
+      "img": "../static/images/equipment/seoul32_Q-sight.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul32",
@@ -417,7 +417,7 @@
       "용도": "선천성 대사이상검사"
     },
     {
-      "파일명": "seoul33_Auto DELFIA.jpg",
+      "img": "../static/images/equipment/seoul33_Auto DELFIA.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul33",
@@ -430,7 +430,7 @@
       "용도": "선천성 대사이상검사"
     },
     {
-      "파일명": "seoul34_Hydrasys2 scan.jpg",
+      "img": "../static/images/equipment/seoul34_Hydrasys2 scan.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul34",
@@ -443,7 +443,7 @@
       "용도": "전기영동 검사"
     },
     {
-      "파일명": "seoul35_Spife 3000.jpg",
+      "img": "../static/images/equipment/seoul35_Spife 3000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul35",
@@ -456,7 +456,7 @@
       "용도": "전기영동 검사"
     },
     {
-      "파일명": "seoul36_7900 ICP_MS.jpg",
+      "img": "../static/images/equipment/seoul36_7900 ICP_MS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul36",
@@ -469,7 +469,7 @@
       "용도": "중금속 및 미네랄 검사"
     },
     {
-      "파일명": "seoul37_GCMS 5977B.jpg",
+      "img": "../static/images/equipment/seoul37_GCMS 5977B.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul37",
@@ -482,7 +482,7 @@
       "용도": "대사산물 검사"
     },
     {
-      "파일명": "seoul38_1260 LCFLD.jpg",
+      "img": "../static/images/equipment/seoul38_1260 LCFLD.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul38",
@@ -495,7 +495,7 @@
       "용도": "비타민 검사"
     },
     {
-      "파일명": "seoul39_1260 LCECD.jpg",
+      "img": "../static/images/equipment/seoul39_1260 LCECD.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul39",
@@ -508,7 +508,7 @@
       "용도": "대사산물 검사"
     },
     {
-      "파일명": "seoul40_7900 ICPMS.jpg",
+      "img": "../static/images/equipment/seoul40_7900 ICPMS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul40",
@@ -521,7 +521,7 @@
       "용도": "특수건강진단 생물학적노출지표"
     },
     {
-      "파일명": "seoul41_HSS-GC\/MS.jpg",
+      "img": "../static/images/equipment/seoul41_HSS-GC\/MS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul41",
@@ -534,7 +534,7 @@
       "용도": "특수건강진단 생물학적노출지표"
     },
     {
-      "파일명": "seoul42_GC-NPD.jpg",
+      "img": "../static/images/equipment/seoul42_GC-NPD.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul42",
@@ -547,7 +547,7 @@
       "용도": "특수건강진단 생물학적노출지표"
     },
     {
-      "파일명": "seoul43_1260 LCUV.jpg",
+      "img": "../static/images/equipment/seoul43_1260 LCUV.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul43",
@@ -560,7 +560,7 @@
       "용도": "특수건강진단 생물학적노출지표"
     },
     {
-      "파일명": "seoul44_Auto streaker.jpg",
+      "img": "../static/images/equipment/seoul44_Auto streaker.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul44",
@@ -573,7 +573,7 @@
       "용도": "자동 검체 접종장비"
     },
     {
-      "파일명": "seoul45_MALDI-TOF MS.jpg",
+      "img": "../static/images/equipment/seoul45_MALDI-TOF MS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul45",
@@ -586,7 +586,7 @@
       "용도": "미생물 동정"
     },
     {
-      "파일명": "seoul46_VITEK-2 System.jpg",
+      "img": "../static/images/equipment/seoul46_VITEK-2 System.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul46",
@@ -599,7 +599,7 @@
       "용도": "항균제 감수성 검사"
     },
     {
-      "파일명": "seoul47_BD BACTEC FX.jpg",
+      "img": "../static/images/equipment/seoul47_BD BACTEC FX.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul47",
@@ -612,7 +612,7 @@
       "용도": "자동화 혈액 배양장비"
     },
     {
-      "파일명": "seoul48_BD BACTEC MGIT 960.jpg",
+      "img": "../static/images/equipment/seoul48_BD BACTEC MGIT 960.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul48",
@@ -625,7 +625,7 @@
       "용도": "결핵균 액체 배양장비"
     },
     {
-      "파일명": "seoul49_Aerospray.jpg",
+      "img": "../static/images/equipment/seoul49_Aerospray.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul49",
@@ -638,7 +638,7 @@
       "용도": "결핵 슬라이드 염색장비"
     },
     {
-      "파일명": "seoul50_Adagio.jpg",
+      "img": "../static/images/equipment/seoul50_Adagio.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul50",
@@ -651,7 +651,7 @@
       "용도": "항균제 감수성 검사(disk) 판독장비"
     },
     {
-      "파일명": "seoul51_MagNA Pure 96.jpg",
+      "img": "../static/images/equipment/seoul51_MagNA Pure 96.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul51",
@@ -664,7 +664,7 @@
       "용도": "핵산 추출장비"
     },
     {
-      "파일명": "seoul52_Nextractor NX-48.jpg",
+      "img": "../static/images/equipment/seoul52_Nextractor NX-48.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul52",
@@ -677,7 +677,7 @@
       "용도": "핵산 추출장비"
     },
     {
-      "파일명": "seoul53_Cobas 8800.jpg",
+      "img": "../static/images/equipment/seoul53_Cobas 8800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul53",
@@ -690,7 +690,7 @@
       "용도": "핵산 추출, 유전자 증폭"
     },
     {
-      "파일명": "seoul54_CFX96™ Real-time PCR.jpg",
+      "img": "../static/images/equipment/seoul54_CFX96™ Real-time PCR.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul54",
@@ -703,7 +703,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul55_7500 Real-time PCR.jpg",
+      "img": "../static/images/equipment/seoul55_7500 Real-time PCR.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul55",
@@ -716,7 +716,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul56_GeneAMP PCR System 2720.jpg",
+      "img": "../static/images/equipment/seoul56_GeneAMP PCR System 2720.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul56",
@@ -729,7 +729,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul57_GeneXpert.jpg",
+      "img": "../static/images/equipment/seoul57_GeneXpert.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul57",
@@ -742,7 +742,7 @@
       "용도": "핵산 추출, 유전자 증폭"
     },
     {
-      "파일명": "seoul58_3500xL Genetic Analyzer.jpg",
+      "img": "../static/images/equipment/seoul58_3500xL Genetic Analyzer.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul58",
@@ -755,7 +755,7 @@
       "용도": "염기서열 분석장비"
     },
     {
-      "파일명": "seoul59_MagNA Pure 96.jpg",
+      "img": "../static/images/equipment/seoul59_MagNA Pure 96.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul59",
@@ -768,7 +768,7 @@
       "용도": "핵산 추출장비"
     },
     {
-      "파일명": "seoul60_MiSeqDx.jpg",
+      "img": "../static/images/equipment/seoul60_MiSeqDx.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul60",
@@ -781,7 +781,7 @@
       "용도": "NGS 장비"
     },
     {
-      "파일명": "seoul61_3730xL DNA Analyzer.jpg",
+      "img": "../static/images/equipment/seoul61_3730xL DNA Analyzer.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul61",
@@ -794,7 +794,7 @@
       "용도": "염기서열 분석장비"
     },
     {
-      "파일명": "seoul62_GeneAMP PCR System Veriti Dx.jpg",
+      "img": "../static/images/equipment/seoul62_GeneAMP PCR System Veriti Dx.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul62",
@@ -807,7 +807,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul63_GeneAMP PCR System SimpliAMP.jpg",
+      "img": "../static/images/equipment/seoul63_GeneAMP PCR System SimpliAMP.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul63",
@@ -820,7 +820,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul64_GeneAMP PCR System 2720.jpg",
+      "img": "../static/images/equipment/seoul64_GeneAMP PCR System 2720.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul64",
@@ -833,7 +833,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul65_7500 Real-time PCR.jpg",
+      "img": "../static/images/equipment/seoul65_7500 Real-time PCR.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul65",
@@ -846,7 +846,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul66_CFX96™ Real-time PCR .jpg",
+      "img": "../static/images/equipment/seoul66_CFX96™ Real-time PCR .jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul66",
@@ -859,7 +859,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul67_GCS 3000Dx V.2.jpg",
+      "img": "../static/images/equipment/seoul67_GCS 3000Dx V.2.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul67",
@@ -872,7 +872,7 @@
       "용도": "염색체 마이크로어레이 장비"
     },
     {
-      "파일명": "seoul68_Cytovision review.jpg",
+      "img": "../static/images/equipment/seoul68_Cytovision review.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul68",
@@ -885,7 +885,7 @@
       "용도": "염색체 핵형 분석기"
     },
     {
-      "파일명": "seoul69_7500 Real-time PCR .jpg",
+      "img": "../static/images/equipment/seoul69_7500 Real-time PCR .jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul69",
@@ -898,7 +898,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul70_Cytovision review.jpg",
+      "img": "../static/images/equipment/seoul70_Cytovision review.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul70",
@@ -911,7 +911,7 @@
       "용도": "염색체 핵형 분석기"
     },
     {
-      "파일명": "seoul71_GSL-120 scanning system.jpg",
+      "img": "../static/images/equipment/seoul71_GSL-120 scanning system.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul71",
@@ -924,7 +924,7 @@
       "용도": "염색체 핵형 분석기(Autocapture)"
     },
     {
-      "파일명": "seoul72_ThermoBrite.jpg",
+      "img": "../static/images/equipment/seoul72_ThermoBrite.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul72",
@@ -937,7 +937,7 @@
       "용도": "Hybridization"
     },
     {
-      "파일명": "seoul73_ECLIPSE Ni.jpg",
+      "img": "../static/images/equipment/seoul73_ECLIPSE Ni.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul73",
@@ -950,7 +950,7 @@
       "용도": "형광현미경(형광 분석기)"
     },
     {
-      "파일명": "seoul74_Cobas P612.jpg",
+      "img": "../static/images/equipment/seoul74_Cobas P612.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul74",
@@ -963,7 +963,7 @@
       "용도": "자동 검체 분주장비"
     },
     {
-      "파일명": "seoul75_ThinPrep 2000.jpg",
+      "img": "../static/images/equipment/seoul75_ThinPrep 2000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul75",
@@ -976,7 +976,7 @@
       "용도": "액상자궁세포 슬라이드 제작"
     },
     {
-      "파일명": "seoul76_CellPrep Plus LBC Processor Ⅱ.jpg",
+      "img": "../static/images/equipment/seoul76_CellPrep Plus LBC Processor Ⅱ.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul76",
@@ -989,7 +989,7 @@
       "용도": "액상세포 슬라이드 제작"
     },
     {
-      "파일명": "seoul77_Leica ST5020 + CV5030 Workstation.jpg",
+      "img": "../static/images/equipment/seoul77_Leica ST5020 + CV5030 Workstation.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul77",
@@ -1002,7 +1002,7 @@
       "용도": "자동 염색 및 봉입 워크스테이션"
     },
     {
-      "파일명": "seoul78_Tissue-Tek Prisma+Tissue-Tek® Glas™ g2.jpg",
+      "img": "../static/images/equipment/seoul78_Tissue-Tek Prisma+Tissue-Tek® Glas™ g2.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul78",
@@ -1015,7 +1015,7 @@
       "용도": "자동 염색 및 봉입 워크스테이션"
     },
     {
-      "파일명": "seoul79_Shandon Cytospin4.jpg",
+      "img": "../static/images/equipment/seoul79_Shandon Cytospin4.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul79",
@@ -1028,7 +1028,7 @@
       "용도": "체액세포원심분리기"
     },
     {
-      "파일명": "seoul80_Automated Slide Stainer.jpg",
+      "img": "../static/images/equipment/seoul80_Automated Slide Stainer.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul80",
@@ -1041,7 +1041,7 @@
       "용도": "자동 염색기"
     },
     {
-      "파일명": "seoul81_Excelsior AS.jpg",
+      "img": "../static/images/equipment/seoul81_Excelsior AS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul81",
@@ -1054,7 +1054,7 @@
       "용도": "자동 침투기"
     },
     {
-      "파일명": "seoul82_Histostar.jpg",
+      "img": "../static/images/equipment/seoul82_Histostar.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul82",
@@ -1067,7 +1067,7 @@
       "용도": "자동 포매기"
     },
     {
-      "파일명": "seoul83_ClearVue.jpg",
+      "img": "../static/images/equipment/seoul83_ClearVue.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul83",
@@ -1080,7 +1080,7 @@
       "용도": "자동 봉입기"
     },
     {
-      "파일명": "seoul84_Histocore multicut.jpg",
+      "img": "../static/images/equipment/seoul84_Histocore multicut.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul84",
@@ -1093,7 +1093,7 @@
       "용도": "조직 박절기"
     },
     {
-      "파일명": "seoul85_Gemini AS.jpg",
+      "img": "../static/images/equipment/seoul85_Gemini AS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul85",
@@ -1106,7 +1106,7 @@
       "용도": "자동 염색기"
     },
     {
-      "파일명": "seoul86_BenchMark XT.jpg",
+      "img": "../static/images/equipment/seoul86_BenchMark XT.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul86",
@@ -1119,7 +1119,7 @@
       "용도": "Automated IHC\/ISH slide staining "
     },
     {
-      "파일명": "seoul87_Ion PGM Dx Sequencer.jpg",
+      "img": "../static/images/equipment/seoul87_Ion PGM Dx Sequencer.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul87",
@@ -1132,7 +1132,7 @@
       "용도": "NGS 장비"
     },
     {
-      "파일명": "seoul88_Veriti Dx 96-Well Thermal Cycler.jpg",
+      "img": "../static/images/equipment/seoul88_Veriti Dx 96-Well Thermal Cycler.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul88",
@@ -1145,7 +1145,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul89_7500 Fast Real-time PCR.jpg",
+      "img": "../static/images/equipment/seoul89_7500 Fast Real-time PCR.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul89",
@@ -1158,7 +1158,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "seoul90_7900 ICP_MS.jpg",
+      "img": "../static/images/equipment/seoul90_7900 ICP_MS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul90",
@@ -1171,7 +1171,7 @@
       "용도": "특수건강진단 생물학적노출지표 (무기분석(중금속))"
     },
     {
-      "파일명": "seoul91_HSS-GCMS.jpg",
+      "img": "../static/images/equipment/seoul91_HSS-GCMS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul91",
@@ -1184,7 +1184,7 @@
       "용도": "특수건강진단 생물학적노출지표 (유기화합물분석)"
     },
     {
-      "파일명": "seoul92_GC-NPD.jpg",
+      "img": "../static/images/equipment/seoul92_GC-NPD.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul92",
@@ -1197,7 +1197,7 @@
       "용도": "특수건강진단 생물학적노출지표 (유기화합물분석)"
     },
     {
-      "파일명": "seoul93_1260 LCUV.jpg",
+      "img": "../static/images/equipment/seoul93_1260 LCUV.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul93",
@@ -1210,7 +1210,7 @@
       "용도": "특수건강진단 생물학적노출지표 (유기화합물분석)"
     },
     {
-      "파일명": "jungbu1_GLP systems Track.jpg",
+      "img": "../static/images/equipment/jungbu1_GLP systems Track.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu1",
@@ -1223,7 +1223,7 @@
       "용도": "TLA system"
     },
     {
-      "파일명": "jungbu2_Cobas C702.jpg",
+      "img": "../static/images/equipment/jungbu2_Cobas C702.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu2",
@@ -1236,7 +1236,7 @@
       "용도": "자동 화학 분석기"
     },
     {
-      "파일명": "jungbu3_K-Lite.jpg",
+      "img": "../static/images/equipment/jungbu3_K-Lite.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu3",
@@ -1249,7 +1249,7 @@
       "용도": "전해질 측정장비"
     },
     {
-      "파일명": "jungbu4_UC-3500.jpg",
+      "img": "../static/images/equipment/jungbu4_UC-3500.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu4",
@@ -1262,7 +1262,7 @@
       "용도": "자동 요화학 분석장비"
     },
     {
-      "파일명": "jungbu5_UF-5000.jpg",
+      "img": "../static/images/equipment/jungbu5_UF-5000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu5",
@@ -1275,7 +1275,7 @@
       "용도": "자동 요검경 장비"
     },
     {
-      "파일명": "jungbu6_XN-9000.jpg",
+      "img": "../static/images/equipment/jungbu6_XN-9000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu6",
@@ -1288,7 +1288,7 @@
       "용도": "자동혈구 분석기"
     },
     {
-      "파일명": "jungbu7_TS-10.jpg",
+      "img": "../static/images/equipment/jungbu7_TS-10.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu7",
@@ -1301,7 +1301,7 @@
       "용도": "CBC 검체 분류기"
     },
     {
-      "파일명": "jungbu8_Compact Max3.jpg",
+      "img": "../static/images/equipment/jungbu8_Compact Max3.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu8",
@@ -1314,7 +1314,7 @@
       "용도": "혈액 응고 분석기"
     },
     {
-      "파일명": "jungbu9_TEST1.jpg",
+      "img": "../static/images/equipment/jungbu9_TEST1.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu9",
@@ -1327,7 +1327,7 @@
       "용도": "ESR 장비"
     },
     {
-      "파일명": "jungbu11_Qwalys3.jpg",
+      "img": "../static/images/equipment/jungbu11_Qwalys3.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu10",
@@ -1340,7 +1340,7 @@
       "용도": "당화혈색소 분석장비 "
     },
     {
-      "파일명": "jungbu11_QWALY-3.jpg",
+      "img": "../static/images/equipment/jungbu11_QWALY-3.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu11",
@@ -1353,7 +1353,7 @@
       "용도": "혈액은행 자동화장비 "
     },
     {
-      "파일명": "jungbu12_IH-500.jpg",
+      "img": "../static/images/equipment/jungbu12_IH-500.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu12",
@@ -1366,7 +1366,7 @@
       "용도": "혈액은행 자동화장비"
     },
     {
-      "파일명": "jungbu13_Cobas e801.jpg",
+      "img": "../static/images/equipment/jungbu13_Cobas e801.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu13",
@@ -1379,7 +1379,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "jungbu14_Alinity I.jpg",
+      "img": "../static/images/equipment/jungbu14_Alinity I.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu14",
@@ -1392,7 +1392,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "jungbu15_DXI 800.jpg",
+      "img": "../static/images/equipment/jungbu15_DXI 800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu15",
@@ -1405,7 +1405,7 @@
       "용도": "자동 면역 분석기 "
     },
     {
-      "파일명": "jungbu16_DS2.jpg",
+      "img": "../static/images/equipment/jungbu16_DS2.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu16",
@@ -1418,7 +1418,7 @@
       "용도": "잠복결핵 검사"
     },
     {
-      "파일명": "jungbu17_AlloView2.0.jpg",
+      "img": "../static/images/equipment/jungbu17_AlloView2.0.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu17",
@@ -1431,7 +1431,7 @@
       "용도": "알레르기 검사"
     },
     {
-      "파일명": "jungbu18_VITEK-2 System.jpg",
+      "img": "../static/images/equipment/jungbu18_VITEK-2 System.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu18",
@@ -1444,7 +1444,7 @@
       "용도": "항균제 감수성 검사"
     },
     {
-      "파일명": "jungbu19_Adagio.jpg",
+      "img": "../static/images/equipment/jungbu19_Adagio.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu19",
@@ -1457,7 +1457,7 @@
       "용도": "항균제 감수성 검사(disk) 판독장비"
     },
     {
-      "파일명": "jungbu20_VIRTUO.jpg",
+      "img": "../static/images/equipment/jungbu20_VIRTUO.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu20",
@@ -1470,7 +1470,7 @@
       "용도": "자동화 혈액 배양장비"
     },
     {
-      "파일명": "jungbu21_NS Prime.jpg",
+      "img": "../static/images/equipment/jungbu21_NS Prime.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu21",
@@ -1483,7 +1483,7 @@
       "용도": "분변잠혈검사"
     },
     {
-      "파일명": "jungbu22_MALDI Biotyper® sirius.jpg",
+      "img": "../static/images/equipment/jungbu22_MALDI Biotyper® sirius.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu22",
@@ -1496,7 +1496,7 @@
       "용도": "미생물 동정"
     },
     {
-      "파일명": "jungbu23_MagNA Pure 96.jpg",
+      "img": "../static/images/equipment/jungbu23_MagNA Pure 96.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu23",
@@ -1509,7 +1509,7 @@
       "용도": "핵산 추출장비"
     },
     {
-      "파일명": "jungbu24_Nextractor.jpg",
+      "img": "../static/images/equipment/jungbu24_Nextractor.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu24",
@@ -1522,7 +1522,7 @@
       "용도": "핵산 추출장비 "
     },
     {
-      "파일명": "jungbu25_CFX96™ Real-time PCR.jpg",
+      "img": "../static/images/equipment/jungbu25_CFX96™ Real-time PCR.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu25",
@@ -1535,7 +1535,7 @@
       "용도": "유전자 증폭 장비"
     },
     {
-      "파일명": "jungbu26_Cobas 6800.jpg",
+      "img": "../static/images/equipment/jungbu26_Cobas 6800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu26",
@@ -1548,7 +1548,7 @@
       "용도": "핵산 추출, 유전자 증폭"
     },
     {
-      "파일명": "jungbu27_ThinPrep 2000.jpg",
+      "img": "../static/images/equipment/jungbu27_ThinPrep 2000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu27",
@@ -1561,7 +1561,7 @@
       "용도": "액상자궁세포 슬라이드 제작"
     },
     {
-      "파일명": "jungbu28_CellPrep Plus LBC Processor Ⅱ.jpg",
+      "img": "../static/images/equipment/jungbu28_CellPrep Plus LBC Processor Ⅱ.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu28",
@@ -1574,7 +1574,7 @@
       "용도": "액상자궁경부세포검사 장비"
     },
     {
-      "파일명": "jungbu29_Shandon cytospin4.jpg",
+      "img": "../static/images/equipment/jungbu29_Shandon cytospin4.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu29",
@@ -1587,7 +1587,7 @@
       "용도": "체액세포원심분리기"
     },
     {
-      "파일명": "jungbu30_Centrifuge Felta5.jpg",
+      "img": "../static/images/equipment/jungbu30_Centrifuge Felta5.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu30",
@@ -1600,7 +1600,7 @@
       "용도": "액상흡인세포용 원심분리기"
     },
     {
-      "파일명": "jungbu31_Tissue-Tek Glas g2.jpg",
+      "img": "../static/images/equipment/jungbu31_Tissue-Tek Glas g2.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu31",
@@ -1613,7 +1613,7 @@
       "용도": "자동 염색 및 봉입 워크스테이션"
     },
     {
-      "파일명": "jungbu32_Microtome.jpg",
+      "img": "../static/images/equipment/jungbu32_Microtome.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu32",
@@ -1626,7 +1626,7 @@
       "용도": "조직 박절기"
     },
     {
-      "파일명": "jungbu33_Tissue processor.jpg",
+      "img": "../static/images/equipment/jungbu33_Tissue processor.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu33",
@@ -1639,7 +1639,7 @@
       "용도": "자동 침투기"
     },
     {
-      "파일명": "jungbu34_Embedding center Histostar.jpg",
+      "img": "../static/images/equipment/jungbu34_Embedding center Histostar.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu34",
@@ -1652,7 +1652,7 @@
       "용도": "자동 포매기"
     },
     {
-      "파일명": "jungbu35_epredia Gemini AS.jpg",
+      "img": "../static/images/equipment/jungbu35_epredia Gemini AS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu35",
@@ -1665,7 +1665,7 @@
       "용도": "자동 염색기 및 봉입 워크스테이션"
     },
     {
-      "파일명": "busan1_Cobas 8000 C702.jpg",
+      "img": "../static/images/equipment/busan1_Cobas 8000 C702.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan1",
@@ -1678,7 +1678,7 @@
       "용도": "자동 화학 분석기 "
     },
     {
-      "파일명": "busan2_CCM.jpg",
+      "img": "../static/images/equipment/busan2_CCM.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan2",
@@ -1691,7 +1691,7 @@
       "용도": "코바스 자동화 연결 시스템 ( CCM system )"
     },
     {
-      "파일명": "busan3_Cobas p612.jpg",
+      "img": "../static/images/equipment/busan3_Cobas p612.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan3",
@@ -1704,7 +1704,7 @@
       "용도": "자동 검체 분주장비"
     },
     {
-      "파일명": "busan4_UC-3500.jpg",
+      "img": "../static/images/equipment/busan4_UC-3500.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan4",
@@ -1717,7 +1717,7 @@
       "용도": "자동 요화학 분석장비"
     },
     {
-      "파일명": "busan5_UF-5000.jpg",
+      "img": "../static/images/equipment/busan5_UF-5000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan5",
@@ -1730,7 +1730,7 @@
       "용도": "자동 요검경 장비"
     },
     {
-      "파일명": "busan6_XN-9100.jpg",
+      "img": "../static/images/equipment/busan6_XN-9100.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan6",
@@ -1743,7 +1743,7 @@
       "용도": "자동혈구 분석기"
     },
     {
-      "파일명": "busan7_Roche p512.jpg",
+      "img": "../static/images/equipment/busan7_Roche p512.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan7",
@@ -1756,7 +1756,7 @@
       "용도": "혈액 자동 분류장비"
     },
     {
-      "파일명": "busan8_Compact Max3.jpg",
+      "img": "../static/images/equipment/busan8_Compact Max3.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan8",
@@ -1769,7 +1769,7 @@
       "용도": "혈액 응고 분석기 "
     },
     {
-      "파일명": "busan9_TEST1.jpg",
+      "img": "../static/images/equipment/busan9_TEST1.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan9",
@@ -1782,7 +1782,7 @@
       "용도": "ESR 장비"
     },
     {
-      "파일명": "busan10_Cobas c513.jpg",
+      "img": "../static/images/equipment/busan10_Cobas c513.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan10",
@@ -1795,7 +1795,7 @@
       "용도": "당화혈색소 분석장비"
     },
     {
-      "파일명": "busan11_Qwaly-3.jpg",
+      "img": "../static/images/equipment/busan11_Qwaly-3.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan11",
@@ -1808,7 +1808,7 @@
       "용도": "혈액은행 자동화장비"
     },
     {
-      "파일명": "busan12_Cobas e801.jpg",
+      "img": "../static/images/equipment/busan12_Cobas e801.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan12",
@@ -1821,7 +1821,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "busan13_Alinity I.jpg",
+      "img": "../static/images/equipment/busan13_Alinity I.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan13",
@@ -1834,7 +1834,7 @@
       "용도": "자동 면역 분석기 "
     },
     {
-      "파일명": "busan14_Unicel DXI 800.jpg",
+      "img": "../static/images/equipment/busan14_Unicel DXI 800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan14",
@@ -1847,7 +1847,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "busan15_Immulite 2000.jpg",
+      "img": "../static/images/equipment/busan15_Immulite 2000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan15",
@@ -1860,7 +1860,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "busan16_Liaison XL.jpg",
+      "img": "../static/images/equipment/busan16_Liaison XL.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan16",
@@ -1873,7 +1873,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "busan17_Gemini.jpg",
+      "img": "../static/images/equipment/busan17_Gemini.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan17",
@@ -1886,7 +1886,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "파일명": "busan18_DS 2.jpg",
+      "img": "../static/images/equipment/busan18_DS 2.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan18",
@@ -1899,7 +1899,7 @@
       "용도": "잠복결핵 검사"
     },
     {
-      "파일명": "busan19_AlloView20.jpg",
+      "img": "../static/images/equipment/busan19_AlloView20.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan19",
@@ -1912,7 +1912,7 @@
       "용도": "알레르기 검사 "
     },
     {
-      "파일명": "busan20_VITEK-2 System.jpg",
+      "img": "../static/images/equipment/busan20_VITEK-2 System.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan20",
@@ -1925,7 +1925,7 @@
       "용도": "항균제 감수성 검사 "
     },
     {
-      "파일명": "busan21_Adagio.jpg",
+      "img": "../static/images/equipment/busan21_Adagio.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan21",
@@ -1938,7 +1938,7 @@
       "용도": "항균제 감수성 검사(disk) 판독장비"
     },
     {
-      "파일명": "busan22_VIRTUO.jpg",
+      "img": "../static/images/equipment/busan22_VIRTUO.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan22",
@@ -1951,7 +1951,7 @@
       "용도": "자동화 혈액 배양장비"
     },
     {
-      "파일명": "busan23_NS Prime.jpg",
+      "img": "../static/images/equipment/busan23_NS Prime.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan23",
@@ -1964,7 +1964,7 @@
       "용도": "분변잠혈검사"
     },
     {
-      "파일명": "busan24_MALDI Biotyper® sirius.jpg",
+      "img": "../static/images/equipment/busan24_MALDI Biotyper® sirius.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan24",
@@ -1977,7 +1977,7 @@
       "용도": "미생물 동정"
     },
     {
-      "파일명": "busan25_BD BACTEC MGIT 960.jpg",
+      "img": "../static/images/equipment/busan25_BD BACTEC MGIT 960.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan25",
@@ -1990,7 +1990,7 @@
       "용도": "항산균 배양장비"
     },
     {
-      "파일명": "busan26_MagNA 96.jpg",
+      "img": "../static/images/equipment/busan26_MagNA 96.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan26",
@@ -2003,7 +2003,7 @@
       "용도": "핵산 추출장비"
     },
     {
-      "파일명": "busan27_GenetreEX™_96.jpg",
+      "img": "../static/images/equipment/busan27_GenetreEX™_96.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan27",
@@ -2016,7 +2016,7 @@
       "용도": "핵산 추출장비"
     },
     {
-      "파일명": "busan28_Nextractor.jpg",
+      "img": "../static/images/equipment/busan28_Nextractor.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan28",
@@ -2029,7 +2029,7 @@
       "용도": "핵산 추출장비"
     },
     {
-      "파일명": "busan29_CFX96.jpg",
+      "img": "../static/images/equipment/busan29_CFX96.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan29",
@@ -2042,7 +2042,7 @@
       "용도": "유전자 증폭장비"
     },
     {
-      "파일명": "busan30_ABI7500.jpg",
+      "img": "../static/images/equipment/busan30_ABI7500.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan30",
@@ -2055,7 +2055,7 @@
       "용도": "유전자 증폭장비"
     },
     {
-      "파일명": "busan31_GenetreEX™_ALT.jpg",
+      "img": "../static/images/equipment/busan31_GenetreEX™_ALT.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan31",
@@ -2068,7 +2068,7 @@
       "용도": "Liquid handler"
     },
     {
-      "파일명": "busan32_cobas 6800.jpg",
+      "img": "../static/images/equipment/busan32_cobas 6800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan32",
@@ -2081,7 +2081,7 @@
       "용도": "핵산 추출, 유전자 증폭"
     },
     {
-      "파일명": "busan33_ThinPrep 2000.jpg",
+      "img": "../static/images/equipment/busan33_ThinPrep 2000.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan33",
@@ -2094,7 +2094,7 @@
       "용도": "액상자궁세포 슬라이드 제작"
     },
     {
-      "파일명": "busan34_Shandon cytospin4.jpg",
+      "img": "../static/images/equipment/busan34_Shandon cytospin4.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan34",
@@ -2107,7 +2107,7 @@
       "용도": "체액세포원심분리기"
     },
     {
-      "파일명": "busan35_Centrifuge Felta5.jpg",
+      "img": "../static/images/equipment/busan35_Centrifuge Felta5.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan35",
@@ -2120,7 +2120,7 @@
       "용도": "액상흡인세포용 원심분리기"
     },
     {
-      "파일명": "busan36_Tissue-Tek Glas g2.jpg",
+      "img": "../static/images/equipment/busan36_Tissue-Tek Glas g2.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan36",
@@ -2133,7 +2133,7 @@
       "용도": "자동 염색 및 봉입 워크스테이션"
     },
     {
-      "파일명": "busan37_leica histocore multicut.jpg",
+      "img": "../static/images/equipment/busan37_leica histocore multicut.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan37",
@@ -2146,7 +2146,7 @@
       "용도": "조직 박절기"
     },
     {
-      "파일명": "busan38_Excelsior AS.jpg",
+      "img": "../static/images/equipment/busan38_Excelsior AS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan38",
@@ -2159,7 +2159,7 @@
       "용도": "자동 침투기"
     },
     {
-      "파일명": "busan39_Histostar.jpg",
+      "img": "../static/images/equipment/busan39_Histostar.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan39",
@@ -2172,7 +2172,7 @@
       "용도": "자동 포매기"
     },
     {
-      "파일명": "busan40_Gemini AS.jpg",
+      "img": "../static/images/equipment/busan40_Gemini AS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan40",
@@ -2185,7 +2185,7 @@
       "용도": "자동 염색기"
     },
     {
-      "파일명": "busan41_ClearVue.jpg",
+      "img": "../static/images/equipment/busan41_ClearVue.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan41",
@@ -2198,7 +2198,7 @@
       "용도": "자동 봉입기"
     },
     {
-      "파일명": "life1_nextseq-550-dx.jpg",
+      "img": "../static/images/equipment/life1_nextseq-550-dx.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "life1",
@@ -2210,7 +2210,7 @@
       "용도": "NGS 장비"
     },
     {
-      "파일명": "life2_MiSeqDx.jpg",
+      "img": "../static/images/equipment/life2_MiSeqDx.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "life2",
@@ -2222,7 +2222,7 @@
       "용도": "NGS 장비"
     },
     {
-      "파일명": "life3_Ion PGM Sequencer.jpg",
+      "img": "../static/images/equipment/life3_Ion PGM Sequencer.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "life3",
@@ -2234,7 +2234,7 @@
       "용도": "NGS 장비"
     },
     {
-      "파일명": "life4_3500xL DNA Analyzer.jpg",
+      "img": "../static/images/equipment/life4_3500xL DNA Analyzer.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "life4",
@@ -2246,7 +2246,7 @@
       "용도": "염기서열 분석장비"
     },
     {
-      "파일명": "life5_QuantStudio6.jpg",
+      "img": "../static/images/equipment/life5_QuantStudio6.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "life5",
@@ -2258,7 +2258,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "life6_CFX96™ Real-time PCR.jpg",
+      "img": "../static/images/equipment/life6_CFX96™ Real-time PCR.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "life6",
@@ -2270,7 +2270,7 @@
       "용도": "유전자 증폭"
     },
     {
-      "파일명": "life7_Maxwell Dx instrument.jpg",
+      "img": "../static/images/equipment/life7_Maxwell Dx instrument.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "life7",
@@ -2282,7 +2282,7 @@
       "용도": "핵산 추출장비"
     },
     {
-      "파일명": "life8_Genetitan system.jpg",
+      "img": "../static/images/equipment/life8_Genetitan system.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "life8",

@@ -50,9 +50,18 @@
       </div>
       <!-- //sub-top -->
 
-      <div class="inner-gap-1">
-        <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1"><span>자세히 보기</span></button>
-
+      <div class="inner-gap-1" style="display: flex;gap:10px;flex-wrap: wrap;">
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="임상화학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="요화학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="혈액학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="면역학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="핵의학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="특수화학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="미생물학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="분자미생물학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="분자유전학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="세포유전학"><span>장비 보기</span></button>
+        <button type="button" class="common-btnType-1 view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="검체관리"><span>장비 보기</span></button>
       </div>
     </div>
     <!-- //inner-wrap -->
@@ -64,7 +73,7 @@
   <!-- //footer -->
 
   <!-- 검체용기 일람 레이어 팝업 -->
-  <div class="box-layer layer-video request" style="" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
+  <div class="box-layer layer-video request" style="display: block;" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
     <div class="inner-layer absol" tabindex="0">
       <div class="inner-layer" tabindex="0">
         <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
@@ -258,6 +267,8 @@
           });
         });
       }
+
+      actionEvent();
 
       window.addEventListener('resize', () => {
         actionEvent();
