@@ -24,7 +24,8 @@
     <!-- inner-wrap -->
     <div class="inner-wrap">
       <!-- sub-top -->
-      <div class="sub-top" style="background: url(../static/images/@/sub_top_A.png) no-repeat; background-position: 61%">
+      <div class="sub-top"
+        style="background: url(../static/images/@/sub_top_A.png) no-repeat; background-position: 61%">
         <div class="inner-gap-1">
           <div class="text-box">
             <ul class="sub-nav-2">
@@ -78,7 +79,7 @@
                     <li class="swiper-slide" data-index="1"><span class="btn">Alinity I</span></li>
                     <li class="swiper-slide" data-index="2"><span class="btn">Unicel DXI-800</span></li>
                   </ul>
-                </div> 
+                </div>
               </div>
               <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
@@ -215,7 +216,12 @@
           pagination: {
             el: ".swiper-pagination",
             type: "fraction",
-          },
+          }
+        });
+
+        swiper1.on('transitionEnd', function () {
+          let idx = swiper1.realIndex + 1;
+          console.log('now index :::', idx);
         });
 
         var $snbSwiperItem2 = $('.snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');
@@ -268,6 +274,38 @@
           actionEvent();
         })
       })
+
+      // 상품 json
+      /**
+       * 1. 엑셀 > json 파일 변환 사이트.
+       * https://products.aspose.app/cells/ko/conversion/excel-to-json
+       * 2. Guide
+       * https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/JSON
+      */
+      var headerTest = document.querySelector(".header-test");
+      var section = document.querySelector("section");
+
+      // 샘플 https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
+      var requestURL = "/static/js/list_product.json";
+      var request = new XMLHttpRequest();
+      request.open("GET", requestURL);
+      request.responseType = "json";
+      request.send();
+
+      request.onload = function () {
+        var superHeroes = request.response;
+        showList(superHeroes);
+      };
+
+      function showList(jsonObj) {
+        var heroes = jsonObj["전체"];
+        console.log(jsonObj);
+
+        for (var i = 0; i < heroes.length; i++) {
+          console.log(heroes[i]["파일명"]);
+        }
+      }
+      // //상품 json
     </script>
 
 </body>
