@@ -135,7 +135,8 @@
     selectBox.initialize();
     layerPopup.initialize();
 
-    var swiper2 = new Swiper('.snbSwiper.type-2', { // tab
+     // 레이어 팝업 > 상단 tab
+    var swiper2 = new Swiper('.snbSwiper.type-2', {
       slidesPerView: 'auto',
       preventClicks: true,
       loop: false,
@@ -147,7 +148,8 @@
       },
     });
 
-    var swiper1 = new Swiper(".mySwiper1", { // 상단 본문 이미지
+    // 레이어 팝업 > 상단 본문 이미지
+    var swiper1 = new Swiper(".mySwiper1", {
       spaceBetween: 20,
       loop: false,
       loopedSlides: 1,
@@ -175,13 +177,14 @@
       }
     });
 
-    const actionEvent = () => { // event reset
+    // event reset
+    const actionEvent = () => {
       swiper2.update();
       swiper1.update();
     }
 
+    // 레이어 팝업 > 상단 tab click
     var $snbSwiperItem2 = $('.snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');
-
     $snbSwiperItem2.click(function () {
       var target2 = $(this).parent();
       $snbSwiperItem2.parent().removeClass('is-active');
@@ -240,7 +243,7 @@
               text3 = updt[tt][i]["용도"];
 
             let tab = document.createElement('li'), // 레이어 팝업 상단 tab
-              content = document.createElement('div'); // 레이어 팝업 본문 이미지
+                content = document.createElement('div'); // 레이어 팝업 본문 이미지
 
             // tab 랜더링
             tab.innerHTML = `
