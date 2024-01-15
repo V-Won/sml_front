@@ -6010,6 +6010,93 @@ input {
 	}
 }
 
+.laboratory-box {
+	width: 100%;
+	position: relative;
+	margin-top: 20px;
+	.item {
+		width: 100%;
+		position: relative;
+		& + .item {
+			margin-top: 40px;
+		}
+		.img-holder {
+			span {
+				padding-top: 65%;
+				border-radius: 12px;
+				overflow: hidden;
+				max-height: 400px;
+			}
+		}
+		.text-box {
+			width: 100%;
+			position: relative;
+			margin-top: 20px;
+			.tit {
+				color: var(--Primary-04, #4D4D4D);
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.36px;
+				margin-bottom: 16px;
+			}
+			.txt {
+				color: var(--gray-01, #666);
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 150%;
+				letter-spacing: 0.32px;
+			}
+			.info-list {
+				width: 100%;
+				position: relative;
+				margin-top: 20px;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 12px 0;
+				li {
+					color: var(--Primary-01, #006477);
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 150%;
+					letter-spacing: 0.28px;
+					position: relative;
+					& + li {
+						padding-left: 25px;
+						&::before {
+							display: block;
+							content: '';
+							width: 1px;
+							height: 8px;
+							background: var(--gray-03-line, #D5D5D5);
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							left: 12px;
+						}
+					}
+				}
+			}
+			.view-btn {
+				display: block;
+				width: fit-content;
+				margin: 28px auto 0;
+				padding: 10px 48px;
+				border-radius: 999px;
+				border: 2px solid #006477;
+				background: #FFF;
+				color: #006477;
+				text-align: center;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.28px;
+			}
+		}
+	}
+}
+
 // 임상연구 > 임상연구 검사 > 임상연구 개요
 .box-reser {
 	padding-top: 60px;
