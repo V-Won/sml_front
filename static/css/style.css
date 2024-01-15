@@ -1464,6 +1464,12 @@ input {
   padding: 58px 0 0 0;
   overflow: hidden;
 }
+.box-common-tabTableSwiper .w-type-1 {
+  width: 800px;
+}
+.box-common-tabTableSwiper.r-20 .swiper-slide {
+  padding-right: 20px;
+}
 .box-common-tabTableSwiper h5 {
   color: var(--Primary-04, #4d4d4d);
   font-size: 20px;
@@ -1471,6 +1477,9 @@ input {
   line-height: 130%;
   letter-spacing: 0.4px;
   padding-bottom: 21px;
+}
+.box-common-tabTableSwiper h5.padding-type-2 {
+  padding-bottom: 0;
 }
 .box-common-tabTableSwiper .noti-1 {
   position: relative;
@@ -1500,6 +1509,9 @@ input {
   width: 100%;
   max-width: 1420px;
 }
+.common-table-1.margin-bottom-1 {
+  margin-bottom: 3px;
+}
 .common-table-1 .text-center {
   text-align: center;
 }
@@ -1514,7 +1526,7 @@ input {
   left: 0;
   right: auto;
   height: 2px;
-  width: 100%;
+  width: calc(100% - 20px);
   background: rgba(0, 100, 119, 0.2);
 }
 .common-table-1 .swiper-pagination-1.swiper-pagination-progressbar.swiper-pagination-horizontal .swiper-pagination-progressbar-fill {
@@ -5536,6 +5548,9 @@ input {
   border-bottom: none;
   padding-bottom: 0;
 }
+.box-infoTop.type-3 {
+  margin-bottom: 2px;
+}
 .box-infoTop .tit {
   color: var(--Primary-04, #4d4d4d);
   font-size: 22px;
@@ -5546,6 +5561,10 @@ input {
 }
 .box-infoTop .tit.type-2 {
   letter-spacing: -0.06em;
+}
+.box-infoTop .tit.type-3 {
+  margin-bottom: 13px;
+  letter-spacing: -0.05em;
 }
 .box-infoTop .img-holder {
   margin-bottom: 20px;
@@ -7143,6 +7162,9 @@ input {
   .box-common-tabTableSwiper {
     padding-top: 80px;
   }
+  .box-common-tabTableSwiper .w-type-1 table {
+    width: 1400px;
+  }
   .box-common-tabTableSwiper h5 {
     font-size: 40px;
     letter-spacing: 0.8px;
@@ -7150,6 +7172,9 @@ input {
   }
   .box-common-tabTableSwiper h5.padding-bottomType-1 {
     padding-bottom: 25px;
+  }
+  .box-common-tabTableSwiper h5.padding-type-2 {
+    padding-bottom: 22px;
   }
   .box-common-tabTableSwiper .noti-1 {
     font-size: 16px;
@@ -10220,6 +10245,10 @@ input {
   }
   .box-infoTop .tit.type-2 {
     letter-spacing: 0.8px;
+  }
+  .box-infoTop .tit.type-3 {
+    letter-spacing: 0.02em;
+    margin-bottom: 47px;
   }
   .box-infoTop .img-holder {
     margin-bottom: 40px;
