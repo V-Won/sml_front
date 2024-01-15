@@ -1803,11 +1803,11 @@ input {
 				display: block;
 				position: absolute;
 				top: auto;
-				bottom: -24px;
-				left: 20px;
+				bottom: -2px;
+				left: 0;
 				right: auto;
 				height: 2px;
-				width: calc(100% - 40px);
+				width: calc(100%);
 				background: rgba(0, 100, 119, 0.2);
 				.swiper-pagination-progressbar-fill {
 					//background: rgba(0, 100, 119, 1);

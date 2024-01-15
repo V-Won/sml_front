@@ -488,11 +488,15 @@
         swiper1.removeAllSlides();
 
         let cnt = 0; // data-index 리셋 카운트
-        const tt = "전체";
+        const tt = "전체",
+              localName = "서울본원";
+
 
         for (var i = 0; i < updt[tt].length; i++) {
-          if (name == updt[tt][i]["분야2"]) {
+          if ( localName == updt[tt][i]["센터구분"] && name == updt[tt][i]["분야2"] ) {
             cnt++;
+
+            console.log(`${updt[tt][i]["센터구분"]}` + ` and ` + `${updt[tt][i]["분야2"]}`);
 
             let img = updt[tt][i]["img"],
               text1 = updt[tt][i]["장비명"],

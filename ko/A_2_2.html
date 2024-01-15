@@ -95,7 +95,7 @@
                 <li>[면역학] 호르몬, 심혈관질환, 갑상선, 종양표지자, 바이러스 감염증, 잠복결핵, 알러지 검사 등</li>
                 <li>[미생물학] 미생물 배양, 동정 및 항균제 감수성검사, 결핵 배양 검사, 분변잠혈검사 등</li>
               </ul>
-              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="진단검사의학부"><span>장비보기</span></button>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="진단검사의학과"><span>장비보기</span></button>
             </div>
           </div>
           <div class="item" id="d_1">
@@ -114,7 +114,7 @@
                 <li>HPV 유전형 검사</li>
                 <li>급성설사 원인균PCR 검사 등</li>
               </ul>
-              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="분자진단검사부"><span>장비보기</span></button>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="분자진단검사"><span>장비보기</span></button>
             </div>
           </div>
           <div class="item" id="d_2">
@@ -131,7 +131,7 @@
                 <li>세포검사</li>
                 <li>특수염색 등</li>
               </ul>
-              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="병리검사부"><span>장비보기</span></button>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="병리과"><span>장비보기</span></button>
             </div>
           </div>
         </div>
@@ -337,11 +337,14 @@
         swiper1.removeAllSlides();
 
         let cnt = 0; // data-index 리셋 카운트
-        const tt = "전체";
+        const tt = "전체",
+              localName = "부산센터";
 
         for (var i = 0; i < updt[tt].length; i++) {
-          if (name == updt[tt][i]["분야2"]) {
+          if ( localName == updt[tt][i]["센터구분"] && name == updt[tt][i]["분야1"] ) {
             cnt++;
+
+            console.log(`${updt[tt][i]["센터구분"]}` + ` and ` + `${updt[tt][i]["분야1"]}`);
 
             let img = updt[tt][i]["img"],
               text1 = updt[tt][i]["장비명"],
