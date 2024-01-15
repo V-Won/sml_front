@@ -185,59 +185,6 @@
       bg: "transparent"
     })
     selectBox.initialize();
-    commonTab.initialize();
-
-    // tab swiper
-    var swiper = new Swiper('.snbSwiper', {
-      slidesPerView: 'auto',
-      preventClicks: true,
-      loop: false,
-      preventClicksPropagation: false,
-      spaceBetween: 12,
-      observer: true,
-      observeParents: true,
-      breakpoints: {
-        1024: {  //브라우저가 1024보다 클 때
-          spaceBetween: 0,
-        },
-      },
-    });
-
-    document.querySelectorAll('.snbSwiper > ul > li').forEach((item) => {
-      item.addEventListener('click', (e) => {
-        swiper.slideTo(e.currentTarget.getAttribute('data-index'));
-      });
-    });
-
-    // table scroll swiper
-    var swiper2 = new Swiper('.type-a', {
-      slidesPerView: 'auto',
-      freeMode: true,
-      preventClicks: true,
-      loop: false,
-      preventClicksPropagation: false,
-      observer: true,
-      observeParents: true,
-      pagination: {
-        el: ".type-a .swiper-pagination-1",
-        type: "progressbar",
-      },
-    });
-
-    // table scroll swiper
-    var swiper3 = new Swiper('.type-b', {
-      slidesPerView: 'auto',
-      freeMode: true,
-      preventClicks: true,
-      loop: false,
-      preventClicksPropagation: false,
-      observer: true,
-      observeParents: true,
-      pagination: {
-        el: ".type-b .swiper-pagination-1",
-        type: "progressbar",
-      },
-    });
   </script>
 
 </body>
