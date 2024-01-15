@@ -5971,6 +5971,44 @@ input {
 	}
 }
 
+.box-infoTop {
+	width: 100%;
+	position: relative;
+	padding-bottom: 60px;
+	border-bottom: 1px solid var(--gray-03-line, #D5D5D5);
+	margin-bottom: 60px;
+	.tit {
+		color: var(--Primary-04, #4D4D4D);
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.44px;
+		margin-bottom: 20px;
+	}
+	.img-holder {
+		margin-bottom: 20px;
+		span {
+			padding-top: 62.5%;
+			border-radius: 6px;
+			overflow: hidden;
+		}
+	}
+	.info {
+		width: 100%;
+		position: relative;
+		.txt {
+			color: var(--gray-01, #666);
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 150%;
+			letter-spacing: 0.32px;
+			& + .txt {
+				margin-top: 16px;
+			}
+		}
+	}
+}
+
 // 모바일 lang(en)
 :lang(en) {
 	// 공통 Tab
@@ -10167,6 +10205,34 @@ input {
 							letter-spacing: 0.36px;
 						}
 					}
+				}
+			}
+		}
+	}
+
+	.box-infoTop {
+		padding-bottom: 80px;
+		margin-bottom: 80px;
+		.tit {
+			font-size: 40px;
+			letter-spacing: 0.8px;
+			margin-bottom: 48px;
+		}
+		.img-holder {
+			margin-bottom: 40px;
+			span {
+				padding-top: 0;
+				height: 420px;
+				border-radius: 12px;
+			}
+		}
+		.info {
+			padding: 0 24px;
+			.txt {
+				font-size: 18px;
+				letter-spacing: 0.36px;
+				& + .txt {
+					margin-top: 20px;
 				}
 			}
 		}
