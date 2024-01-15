@@ -5745,7 +5745,7 @@ input {
   width: calc(100% + 40px);
   margin-left: -20px;
   padding: 60px 20px 100px;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 .tab-labSpecial .table-bg .box-common-tabTableSwiper {
   padding-top: 0;
@@ -5778,7 +5778,7 @@ input {
   padding: 10px 46px;
   border-radius: 999px;
   border: 2px solid #006477;
-  background: #FFF;
+  background: #fff;
   color: #006477;
   font-size: 14px;
   font-weight: 600;
@@ -5791,7 +5791,7 @@ input {
   padding: 60px 0;
 }
 .tab-labSpecial .step-info > h5 {
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
@@ -5811,7 +5811,7 @@ input {
   position: relative;
   height: 280px;
   border-radius: 8px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -5821,9 +5821,9 @@ input {
 .tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide .step-num {
   width: fit-content;
   border-radius: 999px;
-  background: var(--Primary-03, #75C9DA);
+  background: var(--Primary-03, #75c9da);
   padding: 4px 10px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
@@ -5832,7 +5832,7 @@ input {
   margin-bottom: 16px;
 }
 .tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide .txt {
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -5902,7 +5902,7 @@ input {
   padding: 20px;
 }
 .tab-labSpecial .noti-info .top .noti-tit {
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   font-size: 18px;
   font-weight: 600;
   line-height: 160%;
@@ -5933,7 +5933,7 @@ input {
   gap: 20px 0;
 }
 .tab-labSpecial .noti-info .bottom .noti-subtit {
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   font-size: 18px;
   font-weight: 600;
   line-height: 130%;
@@ -5988,7 +5988,7 @@ input {
   background: #f5f5f5;
 }
 .tab-labSpecial .group-chart > h5 {
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 20px;
   font-weight: 600;
   line-height: 120%;
@@ -6011,7 +6011,7 @@ input {
   padding-bottom: 32px;
 }
 .tab-labSpecial .group-chart .groupChart-top .top .name {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
   line-height: 130%;
@@ -6025,7 +6025,7 @@ input {
   margin-top: 8px;
 }
 .tab-labSpecial .group-chart .groupChart-top .top .job li {
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -6037,7 +6037,7 @@ input {
   content: "";
   width: 1px;
   height: 8px;
-  background: #6AB2C4;
+  background: #6ab2c4;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -6063,7 +6063,7 @@ input {
   position: relative;
 }
 .tab-labSpecial .group-chart .groupChart-top .bot .tit {
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
@@ -6071,7 +6071,7 @@ input {
   margin-bottom: 8px;
 }
 .tab-labSpecial .group-chart .groupChart-top .bot .txt {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 150%;
@@ -6096,8 +6096,8 @@ input {
   width: 100%;
   padding: 20px;
   border-radius: 8px;
-  background: var(--Primary-03, #75C9DA);
-  color: #FFF;
+  background: var(--Primary-03, #75c9da);
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
   line-height: 130%;
@@ -6132,8 +6132,8 @@ input {
   width: 100%;
   position: relative;
   border-radius: 8px;
-  border: 1px solid var(--gray-03-line, #D5D5D5);
-  background: var(--Primary-05, #FFF);
+  border: 1px solid var(--gray-03-line, #d5d5d5);
+  background: var(--Primary-05, #fff);
   overflow: hidden;
   padding: 19.5px 20px;
 }
@@ -6146,13 +6146,13 @@ input {
   content: "";
   width: 100%;
   height: 1px;
-  background: var(--gray-03-line, #D5D5D5);
+  background: var(--gray-03-line, #d5d5d5);
   position: absolute;
   bottom: 16px;
   left: 0;
 }
 .tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .top .name {
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   font-size: 18px;
   font-weight: 600;
   line-height: 130%;
@@ -6179,7 +6179,7 @@ input {
   content: "";
   width: 1px;
   height: 8px;
-  background: var(--gray-03-line, #D5D5D5);
+  background: var(--gray-03-line, #d5d5d5);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -6223,7 +6223,7 @@ input {
   background-position: 60%;
 }
 .tab-labSpecial .bookingGuide-box > h5 {
-  color: var(--Primary-05, #FFF);
+  color: var(--Primary-05, #fff);
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -6232,7 +6232,7 @@ input {
   text-align: center;
 }
 .tab-labSpecial .bookingGuide-box .txt {
-  color: var(--Primary-05, #FFF);
+  color: var(--Primary-05, #fff);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -6251,18 +6251,19 @@ input {
 .tab-labSpecial .bookingGuide-box .info-list li {
   width: 100%;
   border-radius: 8px;
-  border: 1px solid var(--Primary-05, #FFF);
+  border: 1px solid var(--Primary-05, #fff);
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(30px);
   overflow: hidden;
   padding: 20.5px 0;
 }
-.tab-labSpecial .bookingGuide-box .info-list li span, .tab-labSpecial .bookingGuide-box .info-list li a {
+.tab-labSpecial .bookingGuide-box .info-list li span,
+.tab-labSpecial .bookingGuide-box .info-list li a {
   display: block;
   width: 197px;
   margin: 0 auto;
   text-align: center;
-  color: var(--Primary-05, #FFF);
+  color: var(--Primary-05, #fff);
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
@@ -6270,7 +6271,8 @@ input {
   padding-left: 47px;
   position: relative;
 }
-.tab-labSpecial .bookingGuide-box .info-list li span::before, .tab-labSpecial .bookingGuide-box .info-list li a::before {
+.tab-labSpecial .bookingGuide-box .info-list li span::before,
+.tab-labSpecial .bookingGuide-box .info-list li a::before {
   content: "";
   width: 22px;
   height: 22px;
@@ -6281,7 +6283,8 @@ input {
   background-size: cover;
   background-position: center;
 }
-.tab-labSpecial .bookingGuide-box .info-list li span::after, .tab-labSpecial .bookingGuide-box .info-list li a::after {
+.tab-labSpecial .bookingGuide-box .info-list li span::after,
+.tab-labSpecial .bookingGuide-box .info-list li a::after {
   content: "";
   width: 1px;
   height: 12px;
@@ -6568,13 +6571,14 @@ input {
   border-bottom: 1px solid #d5d5d5;
   padding-bottom: 40px;
   margin-bottom: 60px;
+  width: 100%;
 }
 .box-irb .list-type-1 > li {
   width: calc(50% - 8px);
   border-radius: 8px;
   background: #f0f0f0;
   padding: 20px 12px;
-  height: 32vh;
+  height: 240px;
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -6627,19 +6631,22 @@ input {
   line-height: 130%;
   letter-spacing: 0.4px;
   padding: 20px 16px;
-  background: var(--gray-07-bg, #F5F5F5);
+  background: var(--gray-07-bg, #f5f5f5);
 }
 .box-irb .dl-type-1 ul {
-  padding: 10px 20px;
+  padding: 24px 15px 21px 15px;
 }
 .box-irb .dl-type-1 ul li {
   position: relative;
-  padding-left: 30px;
+  padding-left: 28px;
   color: var(--Primary-04, #4d4d4d);
   font-size: 16px;
   font-weight: 600;
   line-height: 150%; /* 24px */
   letter-spacing: 0.32px;
+}
+.box-irb .dl-type-1 ul li + li {
+  margin-top: 22px;
 }
 .box-irb .dl-type-1 ul li::after {
   content: "";
@@ -10135,6 +10142,10 @@ input {
     padding: 0;
     margin-top: -23px;
   }
+  .box-infoTop .info.gap-type-2 {
+    padding: 0;
+    margin-top: -23px;
+  }
   .box-infoTop .info .txt {
     font-size: 18px;
     letter-spacing: 0.36px;
@@ -10388,6 +10399,62 @@ input {
   }
   .inner-gap-1.bg-top-2::after, .inner-gap-1.bg-top-2::before, .inner-gap-1.bg-bottom-2::after, .inner-gap-1.bg-bottom-2::before {
     display: none;
+  }
+  .box-irb h5 {
+    font-size: 40px;
+    letter-spacing: 0.8px;
+    padding-bottom: 43px;
+  }
+  .box-irb .list-type-1 {
+    padding-bottom: 61px;
+    margin-bottom: 75px;
+  }
+  .box-irb .list-type-1 > li {
+    height: 440px;
+    width: calc(24% - 14px);
+    padding: 61px 20px;
+  }
+  .box-irb .list-type-1 > li:nth-child(1) {
+    background-image: url(../../static/images/img/irb_1_pc.png);
+  }
+  .box-irb .list-type-1 > li:nth-child(2) {
+    background-image: url(../../static/images/img/irb_2_pc.png);
+  }
+  .box-irb .list-type-1 > li:nth-child(3) {
+    background-image: url(../../static/images/img/irb_3_pc.png);
+  }
+  .box-irb .list-type-1 > li:nth-child(4) {
+    background-image: url(../../static/images/img/irb_4_pc.png);
+  }
+  .box-irb .list-type-1 > li .text-1 {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    padding-bottom: 13px;
+  }
+  .box-irb .list-type-1 > li .text-2 {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+  }
+  .box-irb .box-img {
+    margin: 2px 0 40px 0;
+  }
+  .box-irb .dl-type-1 h6 {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+    padding: 39px 39px;
+  }
+  .box-irb .dl-type-1 ul {
+    padding: 44px 39px 39px 39px;
+  }
+  .box-irb .dl-type-1 ul li {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
+  .box-irb .dl-type-1 ul li + li {
+    margin-top: 31px;
+  }
+  .box-irb .dl-type-1 ul li::after {
+    top: 7px;
   }
   :lang(en) .menu-list .inner-gap-1 > ul {
     justify-content: center;
