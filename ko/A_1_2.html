@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>삼광의료재단</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+      <!-- sub-top -->
+      <div class="sub-top"
+        style="background: url(../static/images/@/sub_top_A.png) no-repeat; background-position: 61%">
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">검사부 안내</a>
+              </li>
+              <li>
+                <a href="#none">서울본원</a>
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">병리과</a>
+                <ul class="list">
+                  <!-- hover시 font-weight 문제로 title 사용 -->
+                  <li><a href="#none" title="진단검사의학과">진단검사의학과</a></li>
+                  <li><a href="#none" title="병리과">병리과</a></li>
+                  <li><a href="#none" title="직업환경의학센터">직업환경의학센터</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">병리과</h3>
+          </div>
+        </div>
+      </div>
+      <!-- //sub-top -->
+
+      <div class="inner-gap-1">
+        <!-- box-infoTop -->
+        <div class="box-infoTop">
+          <p class="tit">병리과</p>
+          <div class="img-holder">
+            <span>
+              <img src="../static/images/@/laboratory_guide_2.png" alt="" class="pc-show">
+              <img src="../static/images/@/laboratory_guide_2_mo.png" alt="" class="mo-show">
+            </span>
+          </div>
+          <div class="info">
+            <p class="txt">병리과는 환자로부터 채취된 조직, 체액, 세포 검체를 신속하고 정확하게 검사하여 환자의 질병을 병리학적으로 진단합니다.</p>
+            <p class="txt">삼광의료재단 병리과는 국내 인증기관의 정도관리 프로그램 참여 및 다양한 연구 활동과 자문체계 구축으로 전문적인 지식과 기술, 축적된 경험을 바탕으로 최신 지견을 반영한 결과를 제공하여 치료와 예후 측정에 필요한 정보를 임상의에게 제공하여 환자의 치료방침 결정에 기여하고 있습니다.</p>
+          </div>
+        </div>
+        <!-- //box-infoTop -->
+        <!-- common-tab -->
+        <div class="common-tab type-2 posi" data-event="commonTab">
+          <div class="swiper-container laboratory-swiper">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide is-active" data-index="0"><a href="#b_0" class="btn">세포병리</a></li>
+              <li class="swiper-slide" data-index="1"><a href="#b_1" class="btn">조직병리</a></li>
+              <li class="swiper-slide" data-index="2"><a href="#b_2" class="btn">특수병리</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //common-tab -->
+        <!-- laboratory-box -->
+        <div class="laboratory-box">
+          <div class="item" id="b_0">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">세포병리</p>
+              <p class="txt">부인과 관련 암이나 기타 암세포 의심부위에서 채취한 세포를 슬라이드 제작 자동화 시스템을 이용하여 고품질의 슬라이드를 제작, 전문 인력이 세포의 형태학적 소견을 판독하여 질환의 조기 진단과 치료 후 재발 여부 판정을 위한 결과를 제공하고 있습니다.</p>
+              <ul class="info-list">
+                <li>자궁경부세포 검사</li>
+                <li>체액세포 검사</li>
+                <li>흡인세포 검사</li>
+                <li>액상흡인세포 검사</li>
+              </ul>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="세포병리"><span>장비보기</span></button>
+            </div>
+          </div>
+          <div class="item" id="b_1">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">조직병리</p>
+              <p class="txt">인체의 각종 장기에서 채취한 생검 및 수술로 절제된 조직을 육안검사를 통해 병변을 확인하고 슬라이드를 제작한 후, 병리전문의의 판독을 통해 신속 정확한 진단으로 환자의 치료 방향 및 예후 판정에 필요한 최종 진단을 위한 결과를 제공하고 있습니다.</p>
+              <ul class="info-list">
+                <li>조직검사</li>
+                <li>특수염색</li>
+              </ul>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="조직병리"><span>장비보기</span></button>
+            </div>
+          </div>
+          <div class="item" id="b_2">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">특수병리</p>
+              <p class="txt">면역 병리 및 분자 병리 검사 기법 등을 이용하여 일반 조직 염색검사만으로 감별이 어려운 경우에도 치료 방침의 결정과 치료제의 선택, 예후 예측 및 치료 경과 평가 등 정확한 진단에 도움을 드리고 있습니다.</p>
+              <ul class="info-list">
+                <li>조직면역화학 검사</li>
+                <li>Kappa light chain, Lambda light chain in situ hybridization, EBV in situ hybridization</li>
+              </ul>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="특수병리"><span>장비보기</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- //laboratory-box -->
+      </div>
+    </div>
+    <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 검체용기 일람 레이어 팝업 -->
+  <div class="box-layer layer-video request" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
+    <div class="inner-layer absol" tabindex="0">
+      <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
+        <div class="box" style="max-height: fit-content;">
+          <!-- inspect-item-swiper -->
+          <div class="inspect-item-swiper">
+            <div class="common-tab type-2" data-event="commonTab">
+              <div class="swiper-container snbSwiper type-2">
+                <ul class="list swiper-wrapper"></ul>
+              </div>
+            </div>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- //inspect-item-swiper -->
+        </div>
+        <button data-event="layerClose"></button>
+      </div>
+    </div>
+    <div class="verticalAlign"></div>
+  </div>
+  <!-- //검체용기 일람 레이어 팝업 -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="../static/js/includeHTML.js"></script>
+  <script src="../static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <!-- swiper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
+  <!-- //swiper.js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "transparent"
+    })
+    selectBox.initialize();
+    layerPopup.initialize();
+
+     // 레이어 팝업 > 상단 tab
+    var swiper2 = new Swiper('.snbSwiper.type-2', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+      thumbs: {
+        swiper: swiper1,
+      },
+    });
+
+    // 레이어 팝업 > 상단 본문 이미지
+    var swiper1 = new Swiper(".mySwiper1", {
+      spaceBetween: 20,
+      loop: false,
+      loopedSlides: 1,
+      slidesPerView: 1,
+      autoHeight: true,
+      observer: true,
+      observeParents: true,
+      thumbs: {
+        swiper: swiper2,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      on: {
+        slideChange: function (index) {
+          var go = swiper1.realIndex;
+
+          swiper2.slideTo(go);
+        },
+      }
+    });
+
+    var swiper3 = new Swiper('.laboratory-swiper', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+    });
+
+    var $snbSwiperItem3 = $('.laboratory-swiper .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem3.click(function () {
+      var target3 = $(this).parent();
+      $snbSwiperItem3.parent().removeClass('is-active');
+      target3.addClass('is-active');
+    })
+
+    document.querySelectorAll('.laboratory-swiper > ul > li').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        swiper3.slideTo(e.currentTarget.getAttribute('data-index'));
+      });
+    });
+
+    document.querySelectorAll('.laboratory-swiper > ul > li .btn').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault()
+        var href = e.target.getAttribute('href');
+        var hrefRe = href.replace('#', '');
+        var location = document.getElementById(hrefRe).offsetTop + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight - 100;
+        window.scrollTo({ top: location, behavior: "smooth" });
+      });
+    });
+
+    window.onscroll = (e) => {
+      let windowTop = window.scrollY;
+
+      if ( windowTop > document.querySelector('.posi').offsetHeight + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight ) {
+        document.querySelector('.common-tab.posi').classList.add('fixed');
+      } else {
+        document.querySelector('.common-tab.posi').classList.remove('fixed');
+      }
+    }
+
+    // event reset
+    const actionEvent = () => {
+      swiper2.update();
+      swiper1.update();
+      swiper3.update();
+    }
+
+    // 레이어 팝업 > 상단 tab click
+    var $snbSwiperItem2 = $('.snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem2.click(function () {
+      var target2 = $(this).parent();
+      $snbSwiperItem2.parent().removeClass('is-active');
+      target2.addClass('is-active');
+    })
+
+    window.addEventListener('resize', () => {
+      actionEvent();
+    })
+
+    window.addEventListener('load', () => {
+      if (window.innerWidth <= 1024) {
+        actionEvent();
+      }
+    })
+
+    document.querySelectorAll('.view-btn').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        actionEvent();
+
+        swiper2.slideTo(0);
+        swiper1.slideTo(0);
+      })
+    })
+
+    // 상품 json
+    /**
+     * 엑셀 > json 파일 변환 사이트.
+     * https://products.aspose.app/cells/ko/conversion/excel-to-json
+    */
+    var requestURL = "../static/js/list_product.json";
+    var request = new XMLHttpRequest();
+    request.open("GET", requestURL);
+    request.responseType = "json";
+    request.send();
+
+    // json
+    document.querySelectorAll('[data-event="layerOpen"]').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        let name = item.currentTarget.getAttribute('data-text');
+        var updt = request.response;
+
+        swiper2.removeAllSlides();
+        swiper1.removeAllSlides();
+
+        let cnt = 0; // data-index 리셋 카운트
+        const tt = "전체";
+
+        for (var i = 0; i < updt[tt].length; i++) {
+          if (name == updt[tt][i]["분야2"]) {
+            cnt++;
+
+            let img = updt[tt][i]["img"],
+              text1 = updt[tt][i]["장비명"],
+              text2 = updt[tt][i]["제조사"],
+              text3 = updt[tt][i]["용도"];
+
+            let tab = document.createElement('li'), // 레이어 팝업 상단 tab
+                content = document.createElement('div'); // 레이어 팝업 본문 이미지
+
+            // tab 랜더링
+            tab.innerHTML = `
+                <a href="#none" class="btn">${text1}</a>
+              `;
+            tab.classList.add('swiper-slide');
+            document.querySelector('.snbSwiper .swiper-wrapper').appendChild(tab);
+
+            // 본문 랜더링
+            content.innerHTML = `
+                <div class="img-box">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/equipment/${img}">
+                    </span>
+                  </div>
+                </div>
+                <p class="name">${text1}</p>
+                <div class="text-box">
+                  <div class="flex">
+                    <p class="title">제조사</p>
+                    <p class="info">${text2}</p>
+                  </div>
+                  <div class="flex">
+                    <p class="title">용도</p>
+                    <p class="info">${text3}</p>
+                  </div>
+                </div>
+              `;
+            content.classList.add('swiper-slide');
+            content.dataset.index = `${cnt}`;
+            document.querySelector('.mySwiper1 .swiper-wrapper').appendChild(content);
+          }
+        }
+
+        actionEvent();
+      });
+    });
+    // //상품 json
+  </script>
+
+</body>
+
+</html>

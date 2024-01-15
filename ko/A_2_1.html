@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>삼광의료재단</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+      <!-- sub-top -->
+      <div class="sub-top"
+        style="background: url(../static/images/@/sub_top_A.png) no-repeat; background-position: 61%">
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">검사부 안내</a>
+              </li>
+              <li>
+                <a href="#none">지역센터</a>
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">중부센터</a>
+                <ul class="list">
+                  <!-- hover시 font-weight 문제로 title 사용 -->
+                  <li><a href="#none" title="중부센터">중부센터</a></li>
+                  <li><a href="#none" title="부산센터">부산센터</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">중부센터</h3>
+          </div>
+        </div>
+      </div>
+      <!-- //sub-top -->
+
+      <div class="inner-gap-1">
+        <!-- box-infoTop -->
+        <div class="box-infoTop">
+          <p class="tit">중부센터</p>
+          <div class="img-holder">
+            <span>
+              <img src="../static/images/@/laboratory_guide_3.png" alt="" class="pc-show">
+              <img src="../static/images/@/laboratory_guide_3_mo.png" alt="" class="mo-show">
+            </span>
+          </div>
+          <div class="info">
+            <p class="txt">삼광의료재단 중부센터는 대전을 중심으로 충청·호남 지역을 아우르는 지역거점 검사센터로, 2022년 대전광역시 유성구에 개원하여 고객과의 거리를 좁혀 접근성과 편의성을 높였습니다.</p>
+            <p class="txt">진단검사에서 병리검사까지 폭넓은 검체 검사를 실시하며, 국내 최초로 GLP System을 도입하여 혁신적인 자동화 검사시스템 구축과 우수한 접근성을 기반으로 보다 신속하고 정확한 고객맞춤 검체 검사 서비스를 제공합니다.</p>
+          </div>
+        </div>
+        <!-- //box-infoTop -->
+        <!-- common-tab -->
+        <div class="common-tab type-2 posi" data-event="commonTab">
+          <div class="swiper-container laboratory-swiper">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide is-active" data-index="0"><a href="#c_0" class="btn">진단검사의학부</a></li>
+              <li class="swiper-slide" data-index="1"><a href="#c_1" class="btn">분자진단검사부</a></li>
+              <li class="swiper-slide" data-index="2"><a href="#c_2" class="btn">병리검사부</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //common-tab -->
+        <!-- laboratory-box -->
+        <div class="laboratory-box">
+          <div class="item" id="c_0">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/@/laboratory_detail_3_1.png" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">진단검사의학부</p>
+              <p class="txt">최신 자동화 검사시스템인 GLP-TLA system으로 24시간 검사실 운영 및 철저한 정도관리를 통해 신속하고 정확한 검사 결과를 제공합니다.</p>
+              <ul class="info-list">
+                <li>[임상화학] 간기능, 신장기능, 고지혈증, 당뇨 검사 등</li>
+                <li>[요화학] 요일반, 요침사 검사</li>
+                <li>[혈액학] 일반혈액, 혈액응고, 수혈의학 검사 등</li>
+                <li>[면역학] 호르몬, 심혈관질환, 갑상선, 종양표지자, 바이러스 감염증, 잠복결핵, 알러지 검사 등</li>
+                <li>[미생물학] 미생물 배양, 동정 및 항균제 감수성검사, 분변잠혈검사 등</li>
+              </ul>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="진단검사의학부"><span>장비보기</span></button>
+            </div>
+          </div>
+          <div class="item" id="c_1">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/@/laboratory_detail_3_2.png" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">분자진단검사부</p>
+              <p class="txt">단계별 철저한 공간 분리 및 오염 방지 시설이 구축된 실험실에서 최신 분자진단 기술을 통해 다양한 감염병의 원인인 세균 및 바이러스 검사를 수행하며 신속하고 정확한 검사 결과를 제공합니다.</p>
+              <ul class="info-list">
+                <li>코로나바이러스-19 분자진단검사</li>
+                <li>폐렴원인균·호흡기 바이러스 PCR</li>
+                <li>STD 검사</li>
+                <li>HPV 유전형 검사</li>
+                <li>급성설사 원인균 PCR 검사 등</li>
+              </ul>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="분자진단검사부"><span>장비보기</span></button>
+            </div>
+          </div>
+          <div class="item" id="c_2">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/@/laboratory_detail_3_3.png" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">병리검사부</p>
+              <p class="txt">세포병리, 조직병리 2개의 분야로 나누어지며 전문적인 지식, 기술과 경험이 축적된 담당 병리전문의가 최종 판독하여 신뢰할 수 있는 검사 결과를 제공합니다.</p>
+              <ul class="info-list">
+                <li>조직검사</li>
+                <li>세포검사</li>
+                <li>특수염색 등</li>
+              </ul>
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="병리검사부"><span>장비보기</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- //laboratory-box -->
+      </div>
+    </div>
+    <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 검체용기 일람 레이어 팝업 -->
+  <div class="box-layer layer-video request" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
+    <div class="inner-layer absol" tabindex="0">
+      <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
+        <div class="box" style="max-height: fit-content;">
+          <!-- inspect-item-swiper -->
+          <div class="inspect-item-swiper">
+            <div class="common-tab type-2" data-event="commonTab">
+              <div class="swiper-container snbSwiper type-2">
+                <ul class="list swiper-wrapper"></ul>
+              </div>
+            </div>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- //inspect-item-swiper -->
+        </div>
+        <button data-event="layerClose"></button>
+      </div>
+    </div>
+    <div class="verticalAlign"></div>
+  </div>
+  <!-- //검체용기 일람 레이어 팝업 -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="../static/js/includeHTML.js"></script>
+  <script src="../static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <!-- swiper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
+  <!-- //swiper.js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "transparent"
+    })
+    selectBox.initialize();
+    layerPopup.initialize();
+
+     // 레이어 팝업 > 상단 tab
+    var swiper2 = new Swiper('.snbSwiper.type-2', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+      thumbs: {
+        swiper: swiper1,
+      },
+    });
+
+    // 레이어 팝업 > 상단 본문 이미지
+    var swiper1 = new Swiper(".mySwiper1", {
+      spaceBetween: 20,
+      loop: false,
+      loopedSlides: 1,
+      slidesPerView: 1,
+      autoHeight: true,
+      observer: true,
+      observeParents: true,
+      thumbs: {
+        swiper: swiper2,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      on: {
+        slideChange: function (index) {
+          var go = swiper1.realIndex;
+
+          swiper2.slideTo(go);
+        },
+      }
+    });
+
+    var swiper3 = new Swiper('.laboratory-swiper', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+    });
+
+    var $snbSwiperItem3 = $('.laboratory-swiper .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem3.click(function () {
+      var target3 = $(this).parent();
+      $snbSwiperItem3.parent().removeClass('is-active');
+      target3.addClass('is-active');
+    })
+
+    document.querySelectorAll('.laboratory-swiper > ul > li').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        swiper3.slideTo(e.currentTarget.getAttribute('data-index'));
+      });
+    });
+
+    document.querySelectorAll('.laboratory-swiper > ul > li .btn').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault()
+        var href = e.target.getAttribute('href');
+        var hrefRe = href.replace('#', '');
+        var location = document.getElementById(hrefRe).offsetTop + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight - 100;
+        window.scrollTo({ top: location, behavior: "smooth" });
+      });
+    });
+
+    window.onscroll = (e) => {
+      let windowTop = window.scrollY;
+
+      if ( windowTop > document.querySelector('.posi').offsetHeight + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight ) {
+        document.querySelector('.common-tab.posi').classList.add('fixed');
+      } else {
+        document.querySelector('.common-tab.posi').classList.remove('fixed');
+      }
+    }
+
+    // event reset
+    const actionEvent = () => {
+      swiper2.update();
+      swiper1.update();
+      swiper3.update();
+    }
+
+    // 레이어 팝업 > 상단 tab click
+    var $snbSwiperItem2 = $('.snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem2.click(function () {
+      var target2 = $(this).parent();
+      $snbSwiperItem2.parent().removeClass('is-active');
+      target2.addClass('is-active');
+    })
+
+    window.addEventListener('resize', () => {
+      actionEvent();
+    })
+
+    window.addEventListener('load', () => {
+      if (window.innerWidth <= 1024) {
+        actionEvent();
+      }
+    })
+
+    document.querySelectorAll('.view-btn').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        actionEvent();
+
+        swiper2.slideTo(0);
+        swiper1.slideTo(0);
+      })
+    })
+
+    // 상품 json
+    /**
+     * 엑셀 > json 파일 변환 사이트.
+     * https://products.aspose.app/cells/ko/conversion/excel-to-json
+    */
+    var requestURL = "../static/js/list_product.json";
+    var request = new XMLHttpRequest();
+    request.open("GET", requestURL);
+    request.responseType = "json";
+    request.send();
+
+    // json
+    document.querySelectorAll('[data-event="layerOpen"]').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        let name = item.currentTarget.getAttribute('data-text');
+        var updt = request.response;
+
+        swiper2.removeAllSlides();
+        swiper1.removeAllSlides();
+
+        let cnt = 0; // data-index 리셋 카운트
+        const tt = "전체";
+
+        for (var i = 0; i < updt[tt].length; i++) {
+          if (name == updt[tt][i]["분야2"]) {
+            cnt++;
+
+            let img = updt[tt][i]["img"],
+              text1 = updt[tt][i]["장비명"],
+              text2 = updt[tt][i]["제조사"],
+              text3 = updt[tt][i]["용도"];
+
+            let tab = document.createElement('li'), // 레이어 팝업 상단 tab
+                content = document.createElement('div'); // 레이어 팝업 본문 이미지
+
+            // tab 랜더링
+            tab.innerHTML = `
+                <a href="#none" class="btn">${text1}</a>
+              `;
+            tab.classList.add('swiper-slide');
+            document.querySelector('.snbSwiper .swiper-wrapper').appendChild(tab);
+
+            // 본문 랜더링
+            content.innerHTML = `
+                <div class="img-box">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/equipment/${img}">
+                    </span>
+                  </div>
+                </div>
+                <p class="name">${text1}</p>
+                <div class="text-box">
+                  <div class="flex">
+                    <p class="title">제조사</p>
+                    <p class="info">${text2}</p>
+                  </div>
+                  <div class="flex">
+                    <p class="title">용도</p>
+                    <p class="info">${text3}</p>
+                  </div>
+                </div>
+              `;
+            content.classList.add('swiper-slide');
+            content.dataset.index = `${cnt}`;
+            document.querySelector('.mySwiper1 .swiper-wrapper').appendChild(content);
+          }
+        }
+
+        actionEvent();
+      });
+    });
+    // //상품 json
+  </script>
+
+</body>
+
+</html>
