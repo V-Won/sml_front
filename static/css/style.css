@@ -9000,10 +9000,21 @@ input {
   .box-reser > ul > li {
     width: 25%;
     height: 360px;
+    margin-bottom: 0;
+  }
+  .box-reser > ul > li .img-holder {
+    border-radius: 12px;
   }
   .box-reser > ul > li .img-holder span {
     height: 360px;
     padding-top: 0;
+  }
+  .box-reser > ul > li p {
+    top: 0;
+    transform: translate(-50%, 239px);
+    align-items: start;
+    bottom: initial;
+    font-size: 0.87vw;
   }
   :lang(en) .menu-list .inner-gap-1 > ul {
     justify-content: center;

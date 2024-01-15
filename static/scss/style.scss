@@ -10418,7 +10418,9 @@ input {
 			> li {
 				width:25%;
 				height: 360px;
+				margin-bottom:0;
 				.img-holder {
+					border-radius: 12px;
 					&:after {
 					}
 					span {
@@ -10427,6 +10429,11 @@ input {
 					}
 				}
 				p {
+					top:0;
+					transform: translate(-50%, 239px);
+					align-items:start;
+					bottom:initial;
+					font-size: 0.87vw;
 				}
 			}
 		}
