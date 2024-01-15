@@ -1757,7 +1757,131 @@ input {
 }
 
 // 공통 table
+.box-common-tabTableSwiper {
+	margin-right: -20px;
+	padding: 58px 0 0 0;
+	overflow: hidden;
+	h5 {
+		color: var(--Primary-04, #4d4d4d);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.4px;
+		padding-bottom: 21px;
+	}
+	.noti-1 {
+		position: relative;
+		color: var(--gray-01, #666);
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 150%;
+		letter-spacing: 0.28px;
+		padding-left: 12px;
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 7px;
+			left: 0;
+			width: 4px;
+			height: 4px;
+			border-radius: 999px;
+			background: var(--Primary-01, #006477);
+		}
+	}
+}
 .common-table-1 {
+	//overflow-x: scroll;
+	margin: 20px 0 60px 0;
+	padding-bottom: 20px;
+	position: relative;
+	.scroll {
+	}
+	.swiper-pagination-1 {
+		&.swiper-pagination-progressbar {
+			&.swiper-pagination-horizontal {
+				display: block;
+				position: absolute;
+				top: auto;
+				bottom: -24px;
+				left: 20px;
+				right: auto;
+				height: 2px;
+				width: calc(100% - 40px);
+				background: rgba(0, 100, 119, 0.2);
+				.swiper-pagination-progressbar-fill {
+					//background: rgba(0, 100, 119, 1);
+					background: #006477;
+				}
+			}
+		}
+	}
+	// &::-webkit-scrollbar {
+	// 	height: 2px;
+	// 	width: 2px;
+	// }
+	// &::-webkit-scrollbar-thumb {
+	// 	background: #006477;
+	// 	border-radius: 999px;
+	// }
+	// &::-webkit-scrollbar-track {
+	// 	background-color: #cce0e4;
+	// }
+	table {
+		border-top: 1px solid #666;
+		thead {
+			th {
+				background: #fcfcfc;
+				border-bottom: 1px solid var(--gray-03-line, #d5d5d5);
+				padding: 20px 20px;
+				color: var(--Primary-04, #4d4d4d);
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.28px;
+			}
+		}
+		tbody {
+			td {
+				padding: 20px;
+				border-bottom: 1px solid var(--gray-03-line, #d5d5d5);
+				.text-1 {
+					color: var(--gray-01, #666);
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 150%;
+					letter-spacing: -0em;
+					&.gap-type-1 {
+						text-indent: -9px;
+						margin-left: 9px;
+						margin-bottom: 8px;
+					}
+					&.dt-1 {
+						position: relative;
+						padding-left: 12px;
+						&.gap-type-1 {
+							margin-left: 0;
+							padding-left: 20px;
+						}
+						&::after {
+							content: "";
+							display: block;
+							width: 4px;
+							height: 4px;
+							position: absolute;
+							background-color: #006477;
+							top: 7px;
+							left: 0;
+							border-radius: 10px;
+						}
+					}
+				}
+				.c-1 {
+					color: #999;
+				}
+			}
+		}
+	}
 }
 
 // 공통 input
@@ -5989,6 +6113,9 @@ input {
 		line-height: 130%;
 		letter-spacing: 0.44px;
 		margin-bottom: 20px;
+		&.type-2 {
+			letter-spacing: -0.06em;
+		}
 	}
 	.img-holder {
 		margin-bottom: 20px;
@@ -6129,10 +6256,10 @@ input {
 					padding-right: 25px;
 					&::after {
 						display: block;
-						content: '';
+						content: "";
 						width: 1px;
 						height: 8px;
-						background: var(--gray-03-line, #D5D5D5);
+						background: var(--gray-03-line, #d5d5d5);
 						position: absolute;
 						top: 50%;
 						transform: translateY(-50%);
@@ -6246,6 +6373,97 @@ input {
 		align-items: center;
 		.mo-show {
 			width: 100%;
+		}
+	}
+}
+
+// 임상연구 > 임상연구 분야 > 체외진단의료기기 임상적 성능평가
+.box-processList {
+	background: #f5f5f5;
+	margin-top: 100px;
+	h4 {
+		color: var(--Primary-04, #4d4d4d);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.4px;
+	}
+	.inner {
+		position: relative;
+		padding: 60px 20px 57px 20px;
+		.left,
+		.right {
+			position: absolute;
+			display: flex;
+			padding: 0 10px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border-radius: 999px;
+			background: var(--gray-01, #666);
+			color: var(--Primary-05, #fff);
+			text-align: center;
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 130%; /* 15.6px */
+			letter-spacing: 0.24px;
+			width: 27px;
+		}
+		.left {
+			left: 20px;
+			bottom: 99px;
+			height: 697px;
+		}
+		.right {
+			right: 20px;
+			bottom: 243px;
+			height: 265px;
+		}
+		> ul {
+			padding: 19px 39px;
+			> li {
+				margin-bottom: 24px;
+				color: var(--gray-01, #666);
+				text-align: center;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 150%;
+				letter-spacing: 0.28px;
+				display: flex;
+				height: 120px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 4px;
+				align-self: stretch;
+				border-radius: 8px;
+				border: 1px solid var(--gray-03-line, #d5d5d5);
+				background: var(--Primary-05, #fff);
+				position: relative;
+				&:last-child {
+					&::after {
+						display: none;
+					}
+				}
+				&::after {
+					content: "";
+					display: block;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8' fill='none'%3E%3Cpath d='M5.8 6.93333C5.4 7.46667 4.6 7.46667 4.2 6.93333L0.2 1.6C-0.294427 0.940766 0.175954 1.7484e-06 1 1.7484e-06L9 1.7484e-06C9.82405 1.7484e-06 10.2944 0.940766 9.8 1.6L5.8 6.93333Z' fill='%2375C9DA'/%3E%3C/svg%3E");
+					width: 10px;
+					height: 8px;
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translate(-50%, calc(0% + 17px));
+				}
+				span {
+					color: var(--gray-02, #999);
+					font-size: 12px;
+					font-weight: 500;
+					line-height: 150%;
+					letter-spacing: 0.24px;
+				}
+			}
 		}
 	}
 }
@@ -6856,6 +7074,50 @@ input {
 			label {
 				span {
 					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	// 공통 table
+	.box-common-tabTableSwiper {
+		h5 {
+		}
+		.noti-1 {
+			&::after {
+			}
+		}
+	}
+	.common-table-1 {
+		overflow: initial;
+		.scroll {
+			width: 100% !important;
+		}
+		&::-webkit-scrollbar {
+		}
+		&::-webkit-scrollbar-thumb {
+		}
+		&::-webkit-scrollbar-track {
+		}
+		table {
+			thead {
+				th {
+				}
+			}
+			tbody {
+				td {
+					.text-1 {
+						&.gap-type-1 {
+						}
+						&.dt-1 {
+							&.gap-type-1 {
+							}
+							&::after {
+							}
+						}
+					}
+					.c-1 {
+					}
 				}
 			}
 		}
