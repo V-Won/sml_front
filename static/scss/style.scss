@@ -1795,6 +1795,14 @@ input {
 	margin: 20px 0 60px 0;
 	padding-bottom: 20px;
 	position: relative;
+	width: 100%;
+	max-width: 1420px;
+	.text-center {
+		text-align: center;
+	}
+	.text-left {
+		text-align: left;
+	}
 	.scroll {
 	}
 	.swiper-pagination-1 {
@@ -1816,19 +1824,9 @@ input {
 			}
 		}
 	}
-	// &::-webkit-scrollbar {
-	// 	height: 2px;
-	// 	width: 2px;
-	// }
-	// &::-webkit-scrollbar-thumb {
-	// 	background: #006477;
-	// 	border-radius: 999px;
-	// }
-	// &::-webkit-scrollbar-track {
-	// 	background-color: #cce0e4;
-	// }
 	table {
 		border-top: 1px solid #666;
+		border-bottom: 1px solid #666;
 		thead {
 			th {
 				background: #fcfcfc;
@@ -1845,16 +1843,28 @@ input {
 			td {
 				padding: 20px;
 				border-bottom: 1px solid var(--gray-03-line, #d5d5d5);
+				color: var(--gray-01, #666);
+				text-align: center;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 150%; /* 21px */
+				letter-spacing: 0.28px;
 				.text-1 {
 					color: var(--gray-01, #666);
 					font-size: 14px;
-					font-weight: 600;
+					font-weight: 500;
 					line-height: 150%;
 					letter-spacing: -0em;
+					strong {
+						font-weight: 600;
+					}
 					&.gap-type-1 {
 						text-indent: -9px;
 						margin-left: 9px;
 						margin-bottom: 8px;
+						&:last-child {
+							margin-bottom: 0;
+						}
 					}
 					&.dt-1 {
 						position: relative;
@@ -1878,6 +1888,13 @@ input {
 				}
 				.c-1 {
 					color: #999;
+				}
+			}
+			tr {
+				&:last-child {
+					td {
+						border-bottom: 0;
+					}
 				}
 			}
 		}
@@ -6483,6 +6500,11 @@ input {
 	}
 }
 
+// 임상연구 > 임상연구분야 > 인체유래물 분양
+.box-listValue{
+
+}
+
 // 모바일 lang(en)
 :lang(en) {
 	// 공통 Tab
@@ -7096,42 +7118,72 @@ input {
 
 	// 공통 table
 	.box-common-tabTableSwiper {
+		padding-top: 80px;
 		h5 {
+			font-size: 40px;
+			letter-spacing: 0.8px;
+			padding-bottom: 49px;
+			&.padding-bottomType-1 {
+				padding-bottom: 25px;
+			}
 		}
 		.noti-1 {
+			font-size: 16px;
+			letter-spacing: 0.32px;
+			margin-bottom: 46px;
 			&::after {
+				top: 9px;
 			}
 		}
 	}
 	.common-table-1 {
 		overflow: initial;
+		margin-top: 24px;
+		&:last-child{
+			margin-bottom:0;
+			padding-bottom:0;
+		}
 		.scroll {
 			width: 100% !important;
 		}
-		&::-webkit-scrollbar {
+		.swiper-pagination-1 {
+			display: none !important;
 		}
-		&::-webkit-scrollbar-thumb {
-		}
-		&::-webkit-scrollbar-track {
+		.swiper-slide {
+			width: fit-content !important;
 		}
 		table {
 			thead {
 				th {
+					font-size: 16px;
+					letter-spacing: 0.32px;
+					padding: 24px 20px;
 				}
 			}
 			tbody {
 				td {
+					font-size: 16px;
+					line-height: 150%;
+					letter-spacing: 0.32px;
+					padding: 24px 20px;
 					.text-1 {
+						font-size: 16px;
+						letter-spacing: 0.32px;
 						&.gap-type-1 {
+							text-indent: -12px;
+							margin-left:12px;
 						}
 						&.dt-1 {
 							&.gap-type-1 {
+								padding-left:25px;
 							}
 							&::after {
+								left:2px;
 							}
 						}
 					}
-					.c-1 {
+					&.padding-left-1 {
+						padding-left: 141px;
 					}
 				}
 			}
@@ -10740,6 +10792,9 @@ input {
 			font-size: 40px;
 			letter-spacing: 0.8px;
 			margin-bottom: 48px;
+			&.type-2 {
+				letter-spacing: 0.8px;
+			}
 		}
 		.img-holder {
 			margin-bottom: 40px;
@@ -10915,6 +10970,137 @@ input {
 			justify-content: center;
 			align-items: center;
 			margin-top: -201px;
+		}
+	}
+
+	// 임상연구 > 임상연구 분야 > 체외진단의료기기 임상적 성능평가
+	.box-processList {
+		margin-top: 120px;
+		h4 {
+			font-size: 40px;
+		}
+		.inner {
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 80px 0 38px 0;
+			.left,
+			.right {
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 150%;
+				letter-spacing: 0.32px;
+			}
+			.left {
+				width: 60px;
+				left: 1px;
+				bottom: 159px;
+				padding: 0 18px;
+				height: 448px;
+				&::after {
+					content: "";
+					display: block;
+					border-left: 1px dashed #999;
+					top: 0;
+					right: -19px;
+					bottom: 0;
+					width: 1px;
+					height: 100%;
+					position: absolute;
+				}
+				&::before {
+					content: "";
+					display: block;
+					border-top: 1px dashed #999;
+					top: 50%;
+					right: -28px;
+					width: 18px;
+					height: 1px;
+					position: absolute;
+					transform: translate(-50%, 0);
+				}
+			}
+			.right {
+				width: 185px;
+				height: 72px;
+				right: 0;
+				bottom: 290px;
+				&::after {
+					content: "";
+					display: block;
+					border-left: 1px dashed #999;
+					top: -21px;
+					left: -19px;
+					bottom: 0;
+					width: 1px;
+					height: 113px;
+					position: absolute;
+				}
+				&::before {
+					content: "";
+					display: block;
+					border-top: 1px dashed #999;
+					top: 50%;
+					left: -10px;
+					width: 18px;
+					height: 1px;
+					position: absolute;
+					transform: translate(-50%, 0);
+				}
+			}
+			> ul {
+				padding: 48px 245px 48px 120px;
+				> li {
+					border-radius: 12px;
+					font-size: 20px;
+					line-height: 150%; /* 30px */
+					letter-spacing: 0.4px;
+					flex-direction: row;
+					height: 78px;
+					margin-bottom: 34px;
+					&:last-child {
+						&::after {
+						}
+					}
+					&::after {
+						width: 15px;
+						height: 10px;
+						background-repeat: no-repeat;
+						background-size: contain;
+						transform: translate(-50%, calc(0% + 22px));
+					}
+					&.left-dt {
+						&::before {
+							content: "";
+							display: block;
+							width: 40px;
+							height: 1px;
+							border-top: 1px dashed #999;
+							position: absolute;
+							top: 50%;
+							left: -21px;
+							transform: translate(-50%, 0);
+						}
+					}
+					&.right-dt {
+						&::before {
+							content: "";
+							display: block;
+							width: 40px;
+							height: 1px;
+							border-top: 1px dashed #999;
+							position: absolute;
+							top: 50%;
+							right: -61px;
+							transform: translate(-50%, 0);
+							left: initial;
+						}
+					}
+					span {
+						font-size: 16px;
+						letter-spacing: 0.32px;
+					}
+				}
+			}
 		}
 	}
 

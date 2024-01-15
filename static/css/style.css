@@ -1497,6 +1497,14 @@ input {
   margin: 20px 0 60px 0;
   padding-bottom: 20px;
   position: relative;
+  width: 100%;
+  max-width: 1420px;
+}
+.common-table-1 .text-center {
+  text-align: center;
+}
+.common-table-1 .text-left {
+  text-align: left;
 }
 .common-table-1 .swiper-pagination-1.swiper-pagination-progressbar.swiper-pagination-horizontal {
   display: block;
@@ -1514,6 +1522,7 @@ input {
 }
 .common-table-1 table {
   border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
 }
 .common-table-1 table thead th {
   background: #fcfcfc;
@@ -1528,18 +1537,30 @@ input {
 .common-table-1 table tbody td {
   padding: 20px;
   border-bottom: 1px solid var(--gray-03-line, #d5d5d5);
+  color: var(--gray-01, #666);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.28px;
 }
 .common-table-1 table tbody td .text-1 {
   color: var(--gray-01, #666);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 150%;
   letter-spacing: 0em;
+}
+.common-table-1 table tbody td .text-1 strong {
+  font-weight: 600;
 }
 .common-table-1 table tbody td .text-1.gap-type-1 {
   text-indent: -9px;
   margin-left: 9px;
   margin-bottom: 8px;
+}
+.common-table-1 table tbody td .text-1.gap-type-1:last-child {
+  margin-bottom: 0;
 }
 .common-table-1 table tbody td .text-1.dt-1 {
   position: relative;
@@ -1562,6 +1583,9 @@ input {
 }
 .common-table-1 table tbody td .c-1 {
   color: #999;
+}
+.common-table-1 table tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 .common-input-1 {
@@ -6231,11 +6255,69 @@ input {
   .box-check .checkitem label span {
     font-size: 16px;
   }
+  .box-common-tabTableSwiper {
+    padding-top: 80px;
+  }
+  .box-common-tabTableSwiper h5 {
+    font-size: 40px;
+    letter-spacing: 0.8px;
+    padding-bottom: 49px;
+  }
+  .box-common-tabTableSwiper h5.padding-bottomType-1 {
+    padding-bottom: 25px;
+  }
+  .box-common-tabTableSwiper .noti-1 {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    margin-bottom: 46px;
+  }
+  .box-common-tabTableSwiper .noti-1::after {
+    top: 9px;
+  }
   .common-table-1 {
     overflow: initial;
+    margin-top: 24px;
+  }
+  .common-table-1:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .common-table-1 .scroll {
     width: 100% !important;
+  }
+  .common-table-1 .swiper-pagination-1 {
+    display: none !important;
+  }
+  .common-table-1 .swiper-slide {
+    width: fit-content !important;
+  }
+  .common-table-1 table thead th {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    padding: 24px 20px;
+  }
+  .common-table-1 table tbody td {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    padding: 24px 20px;
+  }
+  .common-table-1 table tbody td .text-1 {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+  }
+  .common-table-1 table tbody td .text-1.gap-type-1 {
+    text-indent: -12px;
+    margin-left: 12px;
+  }
+  .common-table-1 table tbody td .text-1.dt-1.gap-type-1 {
+    padding-left: 25px;
+  }
+  .common-table-1 table tbody td .text-1.dt-1::after {
+    left: 2px;
+  }
+  .common-table-1 table tbody td.padding-left-1 {
+    padding-left: 141px;
   }
   .common-input-1 input {
     padding: 14px 12px 13px 24px;
@@ -9251,6 +9333,9 @@ input {
     letter-spacing: 0.8px;
     margin-bottom: 48px;
   }
+  .box-infoTop .tit.type-2 {
+    letter-spacing: 0.8px;
+  }
   .box-infoTop .img-holder {
     margin-bottom: 40px;
   }
@@ -9391,6 +9476,127 @@ input {
     justify-content: center;
     align-items: center;
     margin-top: -201px;
+  }
+  .box-processList {
+    margin-top: 120px;
+  }
+  .box-processList h4 {
+    font-size: 40px;
+  }
+  .box-processList .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0 38px 0;
+  }
+  .box-processList .inner .left,
+  .box-processList .inner .right {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+  }
+  .box-processList .inner .left {
+    width: 60px;
+    left: 1px;
+    bottom: 159px;
+    padding: 0 18px;
+    height: 448px;
+  }
+  .box-processList .inner .left::after {
+    content: "";
+    display: block;
+    border-left: 1px dashed #999;
+    top: 0;
+    right: -19px;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+  }
+  .box-processList .inner .left::before {
+    content: "";
+    display: block;
+    border-top: 1px dashed #999;
+    top: 50%;
+    right: -28px;
+    width: 18px;
+    height: 1px;
+    position: absolute;
+    transform: translate(-50%, 0);
+  }
+  .box-processList .inner .right {
+    width: 185px;
+    height: 72px;
+    right: 0;
+    bottom: 290px;
+  }
+  .box-processList .inner .right::after {
+    content: "";
+    display: block;
+    border-left: 1px dashed #999;
+    top: -21px;
+    left: -19px;
+    bottom: 0;
+    width: 1px;
+    height: 113px;
+    position: absolute;
+  }
+  .box-processList .inner .right::before {
+    content: "";
+    display: block;
+    border-top: 1px dashed #999;
+    top: 50%;
+    left: -10px;
+    width: 18px;
+    height: 1px;
+    position: absolute;
+    transform: translate(-50%, 0);
+  }
+  .box-processList .inner > ul {
+    padding: 48px 245px 48px 120px;
+  }
+  .box-processList .inner > ul > li {
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 150%; /* 30px */
+    letter-spacing: 0.4px;
+    flex-direction: row;
+    height: 78px;
+    margin-bottom: 34px;
+  }
+  .box-processList .inner > ul > li::after {
+    width: 15px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-50%, calc(0% + 22px));
+  }
+  .box-processList .inner > ul > li.left-dt::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    border-top: 1px dashed #999;
+    position: absolute;
+    top: 50%;
+    left: -21px;
+    transform: translate(-50%, 0);
+  }
+  .box-processList .inner > ul > li.right-dt::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    border-top: 1px dashed #999;
+    position: absolute;
+    top: 50%;
+    right: -61px;
+    transform: translate(-50%, 0);
+    left: initial;
+  }
+  .box-processList .inner > ul > li span {
+    font-size: 16px;
+    letter-spacing: 0.32px;
   }
   :lang(en) .menu-list .inner-gap-1 > ul {
     justify-content: center;
