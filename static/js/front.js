@@ -403,6 +403,70 @@ if (window.console == undefined) { console = { log: () => { } } }
 	window.commonTab = commonTab;
 }(window));
 
+/* TabSection */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description TabSection
+	 * @modify
+			@20230115 추가
+	*/
+	var tabSection = {
+		/** 플러그인명 */
+		bind: tabSection,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="tabMenu"]',
+			tg2: '[data-event="tabMenu-section"]'
+		},
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: function () {
+			const me = this,
+						tg = me.selectors.tg,
+						tg2 = me.selectors.tg2;
+
+			const tgs = document.querySelectorAll(tg + ' li button');
+
+			document.querySelectorAll(tg + ' li').forEach(e => {
+				let item = e.classList.contains('is-active');
+
+				if( item ){
+					const current = e.getAttribute('data-tab');
+					document.querySelector('[data-section="' + current + '"]').classList.add('is-active');
+				}
+			});
+
+			for( const tg of tgs ){
+				tg.onclick = e => {
+					// tab button
+					document.querySelectorAll('[data-event="tabMenu"] li').forEach(item => {
+						item.classList.remove('is-active');
+					});
+					e.target.parentNode.classList.add('is-active');
+
+					// tab 내용
+					const idx = e.target.parentNode.getAttribute('data-tab');
+					
+					document.querySelectorAll(tg2 + ' [data-section]').forEach(e => {
+						e.classList.remove('is-active');
+					});
+
+					document.querySelector(tg2 + ' [data-section="' + idx + '"]').classList.add('is-active');
+				}
+			}
+		}
+	};
+
+	window.tabSection = tabSection;
+}(window));
+
 /* file Delete */
 (function (window, undefined) {
 	"use strict";

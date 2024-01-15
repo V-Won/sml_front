@@ -2734,6 +2734,18 @@ input {
 .common-tab + .box-top-search {
   margin-top: 40px;
 }
+.common-tab + .tab-section {
+  margin-top: 41px;
+}
+
+.tab-section .tab-item {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+.tab-section .tab-item.is-active {
+  display: block;
+}
 
 .common-swiper-button-prev-1,
 .common-swiper-button-next-1,
@@ -5715,6 +5727,578 @@ input {
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 0.28px;
+}
+
+.tab-section .box-infoTop .tit {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  margin-bottom: 18px;
+}
+
+.tab-labSpecial .tit-img {
+  margin: -10px 0 50px 0;
+}
+.tab-labSpecial .tit-img .img-holder span {
+  padding-top: 143%;
+}
+.tab-labSpecial .table-bg {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 60px 20px 100px;
+  background: #F5F5F5;
+}
+.tab-labSpecial .table-bg .box-common-tabTableSwiper {
+  padding-top: 0;
+}
+.tab-labSpecial .table-bg .box-common-tabTableSwiper .common-table-1 {
+  padding-bottom: 0;
+  margin: 0 0 60px 0;
+}
+.tab-labSpecial .table-bg .box-common-tabTableSwiper .common-table-1 .swiper-slide {
+  width: 1000px !important;
+  padding-right: 20px;
+}
+.tab-labSpecial .table-bg .box-common-tabTableSwiper .common-table-1 .swiper-slide table {
+  width: 100%;
+}
+.tab-labSpecial .table-bg .box-common-tabTableSwiper .common-table-1 .swiper-slide table thead th {
+  background: transparent;
+  padding: 19.5px 20px;
+}
+.tab-labSpecial .table-bg .box-common-tabTableSwiper .common-table-1 .swiper-slide table tbody td {
+  padding: 19.5px 20px;
+}
+.tab-labSpecial .table-bg .box-common-tabTableSwiper .common-table-1 .swiper-pagination-1.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  left: 0;
+  bottom: -20px;
+  width: calc(100% - 20px);
+}
+.tab-labSpecial .table-bg .more-btn {
+  width: fit-content;
+  padding: 10px 46px;
+  border-radius: 999px;
+  border: 2px solid #006477;
+  background: #FFF;
+  color: #006477;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.28px;
+}
+.tab-labSpecial .step-info {
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+}
+.tab-labSpecial .step-info > h5 {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+}
+.tab-labSpecial .step-info .step-info-swiper {
+  width: 100%;
+  position: relative;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper {
+  flex-wrap: wrap;
+  gap: 20px 12px;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide {
+  width: calc(50% - 6px);
+  position: relative;
+  height: 280px;
+  border-radius: 8px;
+  background: #F0F0F0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 12px;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide .step-num {
+  width: fit-content;
+  border-radius: 999px;
+  background: var(--Primary-03, #75C9DA);
+  padding: 4px 10px;
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+  margin-bottom: 16px;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide .txt {
+  color: var(--Primary-04, #4D4D4D);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.28px;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide .sub-txt {
+  color: var(--gray-02, #999);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+  margin-top: 12px;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-position: center !important;
+  background-size: cover !important;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:first-child::after {
+  width: 140px;
+  height: 122px;
+  background: url(../../static/images/img/laboratory_special_illust_1.png) no-repeat;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(2)::after {
+  width: 114px;
+  height: 123px;
+  background: url(../../static/images/img/laboratory_special_illust_2.png) no-repeat;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(3)::after {
+  width: 116px;
+  height: 114px;
+  background: url(../../static/images/img/laboratory_special_illust_3.png) no-repeat;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(4)::after {
+  width: 123px;
+  height: 112px;
+  background: url(../../static/images/img/laboratory_special_illust_4.png) no-repeat;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(5)::after {
+  width: 112px;
+  height: 129px;
+  background: url(../../static/images/img/laboratory_special_illust_5.png) no-repeat;
+}
+.tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(6)::after {
+  width: 124px;
+  height: 128px;
+  background: url(../../static/images/img/laboratory_special_illust_6.png) no-repeat;
+}
+.tab-labSpecial .noti-info {
+  width: 100%;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #d5d5d5;
+  overflow: hidden;
+}
+.tab-labSpecial .noti-info .top {
+  width: 100%;
+  position: relative;
+  background: #f5f5f5;
+  padding: 20px;
+}
+.tab-labSpecial .noti-info .top .noti-tit {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.36px;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.tab-labSpecial .noti-info .top .noti-tit::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'%3E%3Cpath d='M9.9 14.8H12.1V17H9.9V14.8ZM9.9 6H12.1V12.6H9.9V6ZM10.989 0.5C4.917 0.5 0 5.428 0 11.5C0 17.572 4.917 22.5 10.989 22.5C17.072 22.5 22 17.572 22 11.5C22 5.428 17.072 0.5 10.989 0.5ZM11 20.3C6.138 20.3 2.2 16.362 2.2 11.5C2.2 6.638 6.138 2.7 11 2.7C15.862 2.7 19.8 6.638 19.8 11.5C19.8 16.362 15.862 20.3 11 20.3Z' fill='%234D4D4D'/%3E%3C/svg%3E");
+  background-position: center;
+  background-size: cover;
+}
+.tab-labSpecial .noti-info .bottom {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px 0;
+}
+.tab-labSpecial .noti-info .bottom .noti-subtit {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+  margin-bottom: 16px;
+  padding-left: 26px;
+  position: relative;
+}
+.tab-labSpecial .noti-info .bottom .noti-subtit::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.3785 0.5H6.62147C5.64607 0.499991 4.85933 0.499984 4.22224 0.552037C3.56627 0.605631 2.99011 0.718863 2.45704 0.990471C1.61031 1.4219 0.921901 2.11031 0.490471 2.95704C0.218863 3.49011 0.105631 4.06627 0.0520367 4.72224C-1.55903e-05 5.35933 -8.52821e-06 6.14606 2.26201e-07 7.12147V11.8785C-8.52821e-06 12.8539 -1.55903e-05 13.6407 0.0520367 14.2778C0.105631 14.9337 0.218863 15.5099 0.490471 16.043C0.921901 16.8897 1.61031 17.5781 2.45704 18.0095C2.99011 18.2811 3.56627 18.3944 4.22224 18.448C4.85931 18.5 5.64601 18.5 6.62136 18.5H11.3785C12.3539 18.5 13.1407 18.5 13.7778 18.448C14.4337 18.3944 15.0099 18.2811 15.543 18.0095C16.3897 17.5781 17.0781 16.8897 17.5095 16.043C17.7811 15.5099 17.8944 14.9337 17.948 14.2778C18 13.6407 18 12.854 18 11.8786V7.12145C18 6.1461 18 5.35931 17.948 4.72224C17.8944 4.06627 17.7811 3.49011 17.5095 2.95704C17.0781 2.11031 16.3897 1.4219 15.543 0.990471C15.0099 0.718863 14.4337 0.605631 13.7778 0.552037C13.1407 0.499984 12.3539 0.499991 11.3785 0.5ZM9.9 5.9C9.9 5.40294 9.49706 5 9 5C8.50294 5 8.1 5.40294 8.1 5.9V10.4C8.1 10.8971 8.50294 11.3 9 11.3C9.49706 11.3 9.9 10.8971 9.9 10.4V5.9ZM9.9 13.1C9.9 12.6029 9.49706 12.2 9 12.2C8.50294 12.2 8.1 12.6029 8.1 13.1V13.109C8.1 13.6061 8.50294 14.009 9 14.009C9.49706 14.009 9.9 13.6061 9.9 13.109V13.1Z' fill='%23006477'/%3E%3C/svg%3E");
+  background-position: center;
+  background-size: cover;
+}
+.tab-labSpecial .noti-info .dot-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px 0;
+}
+.tab-labSpecial .noti-info .dot-list li {
+  color: var(--gray-01, #666);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.28px;
+  padding-left: 12px;
+  position: relative;
+}
+.tab-labSpecial .noti-info .dot-list li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #006477;
+  position: absolute;
+  top: 7.5px;
+  left: 0;
+}
+.tab-labSpecial .group-chart {
+  width: calc(100% + 40px);
+  position: relative;
+  margin: 100px 0 0 -20px;
+  padding: 60px 20px 100px;
+  background: #f5f5f5;
+}
+.tab-labSpecial .group-chart > h5 {
+  color: #4D4D4D;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+}
+.tab-labSpecial .group-chart .groupChart-top {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  background: url(../../static/images/img/laboratory_special_chart_bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tab-labSpecial .group-chart .groupChart-top .top {
+  width: 100%;
+  position: relative;
+  padding-bottom: 32px;
+}
+.tab-labSpecial .group-chart .groupChart-top .top .name {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+}
+.tab-labSpecial .group-chart .groupChart-top .top .job {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.tab-labSpecial .group-chart .groupChart-top .top .job li {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  padding-right: 17px;
+  position: relative;
+}
+.tab-labSpecial .group-chart .groupChart-top .top .job li::after {
+  content: "";
+  width: 1px;
+  height: 8px;
+  background: #6AB2C4;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+}
+.tab-labSpecial .group-chart .groupChart-top .top .job li:last-child {
+  padding-right: 0;
+}
+.tab-labSpecial .group-chart .groupChart-top .top .job li:last-child::after {
+  display: none;
+}
+.tab-labSpecial .group-chart .groupChart-top .top::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+}
+.tab-labSpecial .group-chart .groupChart-top .bot {
+  width: 100%;
+  position: relative;
+}
+.tab-labSpecial .group-chart .groupChart-top .bot .tit {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  margin-bottom: 8px;
+}
+.tab-labSpecial .group-chart .groupChart-top .bot .txt {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.28px;
+}
+.tab-labSpecial .group-chart .groupChart-top .bot .txt + .txt {
+  margin-top: 4px;
+}
+.tab-labSpecial .group-chart .groupChart-top .bot + .bot {
+  margin-top: 16px;
+}
+.tab-labSpecial .group-chart .groupChart-acc {
+  width: 100%;
+  position: relative;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--Primary-03, #75C9DA);
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+  text-align: left;
+  position: relative;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li button::after {
+  transition: 0.3s;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M15.8359 8.17448L14.6609 6.99948L10.0026 11.6495L5.34427 6.99948L4.16927 8.17448L10.0026 14.0078L15.8359 8.17448Z' fill='white'/%3E%3C/svg%3E");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li.is-active button::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li.is-active > ul {
+  display: block;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul {
+  padding: 12px 0 0;
+  display: none;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid var(--gray-03-line, #D5D5D5);
+  background: var(--Primary-05, #FFF);
+  overflow: hidden;
+  padding: 19.5px 20px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .top {
+  width: 100%;
+  position: relative;
+  padding-bottom: 33px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .top::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--gray-03-line, #D5D5D5);
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .top .name {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .top .job {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .top .job li {
+  color: var(--gray-01, #666);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.28px;
+  padding-right: 17px;
+  position: relative;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .top .job li::after {
+  content: "";
+  width: 1px;
+  height: 8px;
+  background: var(--gray-03-line, #D5D5D5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .bot {
+  width: 100%;
+  position: relative;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .bot .tit {
+  color: var(--gray-02, #999);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.28px;
+  margin-bottom: 6px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .bot .txt {
+  color: var(--gray-01, #666);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.28px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .bot .txt + .txt {
+  margin-top: 4px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li .bot + .bot {
+  margin-top: 16px;
+}
+.tab-labSpecial .group-chart .groupChart-acc > ul > li > ul > li + li {
+  margin-top: 12px;
+}
+.tab-labSpecial .bookingGuide-box {
+  width: calc(100% + 40px);
+  margin: 0 0 -100px -20px;
+  position: relative;
+  padding: 60px 20px 100px;
+  background: url(../../static/images/img/bookingGuide_bg.png) no-repeat;
+  background-size: cover;
+  background-position: 60%;
+}
+.tab-labSpecial .bookingGuide-box > h5 {
+  color: var(--Primary-05, #FFF);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+.tab-labSpecial .bookingGuide-box .txt {
+  color: var(--Primary-05, #FFF);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  margin: 16px 0 20px;
+}
+.tab-labSpecial .bookingGuide-box .info-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.tab-labSpecial .bookingGuide-box .info-list li {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--Primary-05, #FFF);
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(30px);
+  overflow: hidden;
+  padding: 20.5px 0;
+}
+.tab-labSpecial .bookingGuide-box .info-list li span, .tab-labSpecial .bookingGuide-box .info-list li a {
+  display: block;
+  width: 197px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--Primary-05, #FFF);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.32px;
+  padding-left: 47px;
+  position: relative;
+}
+.tab-labSpecial .bookingGuide-box .info-list li span::before, .tab-labSpecial .bookingGuide-box .info-list li a::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+.tab-labSpecial .bookingGuide-box .info-list li span::after, .tab-labSpecial .bookingGuide-box .info-list li a::after {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background: #d5d5d5;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 34px;
+}
+.tab-labSpecial .bookingGuide-box .info-list li:first-child a::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M18.3425 14.0983C17.215 14.0983 16.1242 13.915 15.1067 13.585C14.7858 13.475 14.4283 13.5575 14.1808 13.805L12.7417 15.6108C10.1475 14.3733 7.71833 12.0358 6.42583 9.35L8.21333 7.82833C8.46083 7.57167 8.53417 7.21417 8.43333 6.89333C8.09417 5.87583 7.92 4.785 7.92 3.6575C7.92 3.1625 7.5075 2.75 7.0125 2.75H3.84083C3.34583 2.75 2.75 2.97 2.75 3.6575C2.75 12.1733 9.83583 19.25 18.3425 19.25C18.9933 19.25 19.25 18.6725 19.25 18.1683V15.0058C19.25 14.5108 18.8375 14.0983 18.3425 14.0983Z' fill='white'/%3E%3C/svg%3E");
+}
+.tab-labSpecial .bookingGuide-box .info-list li:nth-child(2) span::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M20.1693 5.4974C20.1693 4.48906 19.3443 3.66406 18.3359 3.66406H3.66927C2.66094 3.66406 1.83594 4.48906 1.83594 5.4974V16.4974C1.83594 17.5057 2.66094 18.3307 3.66927 18.3307H18.3359C19.3443 18.3307 20.1693 17.5057 20.1693 16.4974V5.4974ZM18.3359 5.4974L11.0026 10.0807L3.66927 5.4974H18.3359ZM18.3359 16.4974H3.66927V7.33073L11.0026 11.9141L18.3359 7.33073V16.4974Z' fill='white'/%3E%3C/svg%3E");
+}
+.tab-labSpecial .bookingGuide-box .info-list li:nth-child(3) span::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M11.0026 1.83594C7.4551 1.83594 4.58594 4.7051 4.58594 8.2526C4.58594 13.0651 11.0026 20.1693 11.0026 20.1693C11.0026 20.1693 17.4193 13.0651 17.4193 8.2526C17.4193 4.7051 14.5501 1.83594 11.0026 1.83594ZM6.41927 8.2526C6.41927 5.7226 8.4726 3.66927 11.0026 3.66927C13.5326 3.66927 15.5859 5.7226 15.5859 8.2526C15.5859 10.8926 12.9459 14.8434 11.0026 17.3093C9.09594 14.8618 6.41927 10.8651 6.41927 8.2526Z' fill='white'/%3E%3Cpath d='M11.0026 10.5443C12.2683 10.5443 13.2943 9.51826 13.2943 8.2526C13.2943 6.98695 12.2683 5.96094 11.0026 5.96094C9.73695 5.96094 8.71094 6.98695 8.71094 8.2526C8.71094 9.51826 9.73695 10.5443 11.0026 10.5443Z' fill='white'/%3E%3C/svg%3E");
 }
 
 .box-reser > ul > li {
