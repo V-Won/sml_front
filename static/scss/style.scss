@@ -6048,6 +6048,33 @@ input {
 	}
 }
 
+// 검사부 안내
+.common-tab {
+	&.type-2 {
+		.laboratory-swiper {
+			box-sizing: border-box;
+			overflow: hidden;
+			margin-right: -20px;
+			margin-left: -20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			.swiper-slide {
+				width: auto !important;
+			}
+			ul {
+				li {
+					.btn {
+						padding: 8px 20px;
+						height: 34px;
+						line-height: 130%;
+						letter-spacing: 0.28px;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
 .laboratory-box {
 	width: 100%;
 	position: relative;
@@ -6063,7 +6090,6 @@ input {
 				padding-top: 65%;
 				border-radius: 12px;
 				overflow: hidden;
-				max-height: 400px;
 			}
 		}
 		.text-box {
@@ -6100,18 +6126,22 @@ input {
 					line-height: 150%;
 					letter-spacing: 0.28px;
 					position: relative;
-					& + li {
-						padding-left: 25px;
-						&::before {
-							display: block;
-							content: "";
-							width: 1px;
-							height: 8px;
-							background: var(--gray-03-line, #d5d5d5);
-							position: absolute;
-							top: 50%;
-							transform: translateY(-50%);
-							left: 12px;
+					padding-right: 25px;
+					&::after {
+						display: block;
+						content: '';
+						width: 1px;
+						height: 8px;
+						background: var(--gray-03-line, #D5D5D5);
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 12px;
+					}
+					&:last-child {
+						padding-right: 0;
+						&::after {
+							display: none;
 						}
 					}
 				}
@@ -10463,6 +10493,76 @@ input {
 				font-size: 32px;
 				letter-spacing: 0.64px;
 				margin-bottom: 25px;
+			}
+		}
+	}
+
+	// 검사부 안내
+	.common-tab {
+		&.type-2 {
+			.laboratory-swiper {
+				margin-right: -100px;
+				margin-left: -100px;
+				padding-left: 100px;
+				padding-right: 100px;
+				ul {
+					li {
+						.btn {
+							padding: 12px 24px;
+							height: 47px;
+							letter-spacing: 0.36px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.laboratory-box {
+		margin-top: 40px;
+		.item {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 0 40px;
+			.img-holder {
+				order: 2;
+				width: 70%;
+				max-width: 560px;
+				span {
+					padding-top: 0;
+					width: 100%;
+					height: 360px;
+				}
+			}
+			.text-box {
+				margin-top: 0;
+				order: 1;
+				padding: 24px 0;
+				.tit {
+					font-size: 30px;
+					letter-spacing: 0.6px;
+					margin-bottom: 24px;
+				}
+				.txt {
+					font-size: 18px;
+					letter-spacing: 0.36px;
+					padding-right: 48px;
+				}
+				.info-list {
+					margin-top: 28px;
+					padding-right: 5vw;
+					gap: 6px 0;
+					li {
+						font-size: 16px;
+						letter-spacing: 0.32px;
+					}
+				}
+				.view-btn {
+					margin: 48px 0 0;
+					padding: 14px 40px;
+					font-size: 18px;
+					letter-spacing: 0.36px;
+				}
 			}
 		}
 	}
