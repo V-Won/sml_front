@@ -6051,6 +6051,21 @@ input {
 // 검사부 안내
 .common-tab {
 	&.type-2 {
+		&.posi {
+			background: #fff;
+			transition: all 0.3s;
+			&.fixed {
+				position: fixed;
+				padding: 60px 0 20px;
+				top: 73px;
+				left: 0;
+				z-index: 2100;
+				.laboratory-swiper {
+					max-width: 1600px;
+					margin: 0 auto;
+				}
+			}
+		}
 		.laboratory-swiper {
 			box-sizing: border-box;
 			overflow: hidden;
@@ -10500,6 +10515,14 @@ input {
 	// 검사부 안내
 	.common-tab {
 		&.type-2 {
+			&.posi {
+				&.fixed {
+					padding: 80px 0 40px;
+					top: 97px;
+					.laboratory-swiper {
+					}
+				}
+			}
 			.laboratory-swiper {
 				margin-right: -100px;
 				margin-left: -100px;

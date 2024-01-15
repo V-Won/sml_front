@@ -5460,6 +5460,21 @@ input {
   margin-bottom: 21px;
 }
 
+.common-tab.type-2.posi {
+  background: #fff;
+  transition: all 0.3s;
+}
+.common-tab.type-2.posi.fixed {
+  position: fixed;
+  padding: 60px 0 20px;
+  top: 73px;
+  left: 0;
+  z-index: 2100;
+}
+.common-tab.type-2.posi.fixed .laboratory-swiper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 .common-tab.type-2 .laboratory-swiper {
   box-sizing: border-box;
   overflow: hidden;
@@ -9064,6 +9079,10 @@ input {
     font-size: 32px;
     letter-spacing: 0.64px;
     margin-bottom: 25px;
+  }
+  .common-tab.type-2.posi.fixed {
+    padding: 80px 0 40px;
+    top: 97px;
   }
   .common-tab.type-2 .laboratory-swiper {
     margin-right: -100px;
