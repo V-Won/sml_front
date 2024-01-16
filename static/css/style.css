@@ -1534,6 +1534,16 @@ input {
 .box-common-tabTableSwiper h5.padding-type-3 {
   padding-bottom: 17px;
 }
+.box-common-tabTableSwiper h6 {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+}
+.box-common-tabTableSwiper h6 + .common-table-1 {
+  margin: 16px 0 40px 0;
+}
 .box-common-tabTableSwiper .txt-1 {
   width: 100%;
   padding-right: 32px;
@@ -6479,10 +6489,10 @@ input {
 .tab-labSpecial .bookingGuide-box .info-list li:first-child a::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M18.3425 14.0983C17.215 14.0983 16.1242 13.915 15.1067 13.585C14.7858 13.475 14.4283 13.5575 14.1808 13.805L12.7417 15.6108C10.1475 14.3733 7.71833 12.0358 6.42583 9.35L8.21333 7.82833C8.46083 7.57167 8.53417 7.21417 8.43333 6.89333C8.09417 5.87583 7.92 4.785 7.92 3.6575C7.92 3.1625 7.5075 2.75 7.0125 2.75H3.84083C3.34583 2.75 2.75 2.97 2.75 3.6575C2.75 12.1733 9.83583 19.25 18.3425 19.25C18.9933 19.25 19.25 18.6725 19.25 18.1683V15.0058C19.25 14.5108 18.8375 14.0983 18.3425 14.0983Z' fill='white'/%3E%3C/svg%3E");
 }
-.tab-labSpecial .bookingGuide-box .info-list li:nth-child(2) span::before {
+.tab-labSpecial .bookingGuide-box .info-list li:nth-child(2) a::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M20.1693 5.4974C20.1693 4.48906 19.3443 3.66406 18.3359 3.66406H3.66927C2.66094 3.66406 1.83594 4.48906 1.83594 5.4974V16.4974C1.83594 17.5057 2.66094 18.3307 3.66927 18.3307H18.3359C19.3443 18.3307 20.1693 17.5057 20.1693 16.4974V5.4974ZM18.3359 5.4974L11.0026 10.0807L3.66927 5.4974H18.3359ZM18.3359 16.4974H3.66927V7.33073L11.0026 11.9141L18.3359 7.33073V16.4974Z' fill='white'/%3E%3C/svg%3E");
 }
-.tab-labSpecial .bookingGuide-box .info-list li:nth-child(3) span::before {
+.tab-labSpecial .bookingGuide-box .info-list li:nth-child(3) a::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M11.0026 1.83594C7.4551 1.83594 4.58594 4.7051 4.58594 8.2526C4.58594 13.0651 11.0026 20.1693 11.0026 20.1693C11.0026 20.1693 17.4193 13.0651 17.4193 8.2526C17.4193 4.7051 14.5501 1.83594 11.0026 1.83594ZM6.41927 8.2526C6.41927 5.7226 8.4726 3.66927 11.0026 3.66927C13.5326 3.66927 15.5859 5.7226 15.5859 8.2526C15.5859 10.8926 12.9459 14.8434 11.0026 17.3093C9.09594 14.8618 6.41927 10.8651 6.41927 8.2526Z' fill='white'/%3E%3Cpath d='M11.0026 10.5443C12.2683 10.5443 13.2943 9.51826 13.2943 8.2526C13.2943 6.98695 12.2683 5.96094 11.0026 5.96094C9.73695 5.96094 8.71094 6.98695 8.71094 8.2526C8.71094 9.51826 9.73695 10.5443 11.0026 10.5443Z' fill='white'/%3E%3C/svg%3E");
 }
 .tab-labSpecial.national .table-bg .box-common-tabTableSwiper .common-table-1 {
@@ -7603,7 +7613,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 .request-step-top .step-box .box .step-num {
   width: fit-content;
@@ -7788,6 +7798,68 @@ input {
 }
 .request-step-bottom .step-item .item + .item {
   margin-top: 20px;
+}
+
+.box-common-tabTableSwiper.blood-table .swiper-slide table {
+  width: 100%;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td {
+  padding: 24px 10px;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td p {
+  display: inline-block;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td p.graph {
+  position: relative;
+  padding-left: 21px;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td p.graph span {
+  width: 15px;
+  height: 10px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td p.graph span.up {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='10' viewBox='0 0 13 10' fill='none'%3E%3Cpath d='M7.3 0.566667C6.9 0.0333337 6.1 0.0333338 5.7 0.566667L0.199996 7.9C-0.294431 8.55924 0.175951 9.5 0.999996 9.5L12 9.5C12.824 9.5 13.2944 8.55924 12.8 7.9L7.3 0.566667Z' fill='%23FF0000'/%3E%3C/svg%3E");
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td p.graph span.down {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10' fill='none'%3E%3Cpath d='M7.81923 9.32967C7.42113 9.89838 6.57887 9.89838 6.18077 9.32967L1.10143 2.07346C0.637482 1.41068 1.11163 0.499999 1.92066 0.499999L12.0793 0.5C12.8884 0.5 13.3625 1.41068 12.8986 2.07346L7.81923 9.32967Z' fill='%23000AFF'/%3E%3C/svg%3E");
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td p span.color {
+  color: #006477;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td p + p {
+  margin-top: 8px;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td .two-line {
+  display: flex;
+  align-items: flex-start;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td .two-line p + p {
+  margin-top: 0;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td .two-line p.left {
+  white-space: nowrap;
+  margin-right: 8px;
+}
+.box-common-tabTableSwiper.blood-table .swiper-slide table tbody td .two-line + .two-line {
+  margin-top: 8px;
+}
+.box-common-tabTableSwiper.blood-table .type-a .swiper-slide {
+  width: 990px !important;
+}
+.box-common-tabTableSwiper.blood-table .type-b .swiper-slide {
+  width: 1230px !important;
+}
+.box-common-tabTableSwiper.blood-table .type-c .swiper-slide {
+  width: 1102px !important;
+}
+.box-common-tabTableSwiper.blood-table .type-c .swiper-slide table thead th {
+  border-right: 1px solid #d5d5d5;
 }
 
 .box-altus {
@@ -12523,7 +12595,7 @@ input {
     gap: 40px;
   }
   .request-step-top .step-box .box {
-    width: calc(33.3% - 27px);
+    width: calc(33.3% - 35px);
     height: 260px;
   }
   .request-step-top .step-box .box .step-num {
@@ -12538,6 +12610,22 @@ input {
   .request-step-top .step-box .box::before {
     width: 60px;
     height: 60px;
+  }
+  .request-step-top .step-box .box::after {
+    content: "";
+    width: 12px;
+    height: 18px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' viewBox='0 0 12 16' fill='none'%3E%3Cpath d='M10.9333 7.2C11.4667 7.6 11.4667 8.4 10.9333 8.8L1.6 15.8C0.940766 16.2944 2.10797e-06 15.824 2.09815e-06 15L1.9312e-06 1C1.92137e-06 0.175955 0.940765 -0.294427 1.6 0.2L10.9333 7.2Z' fill='%2375C9DA'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -28px;
+  }
+  .request-step-top .step-box .box:last-child::after {
+    display: none;
   }
   .request-step-bottom {
     padding: 80px 100px 120px;
@@ -13015,22 +13103,6 @@ input {
   .request-step-top .step-box .box {
     width: calc(16.6% - 33px);
     max-width: 200px;
-  }
-  .request-step-top .step-box .box::after {
-    content: "";
-    width: 12px;
-    height: 18px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' viewBox='0 0 12 16' fill='none'%3E%3Cpath d='M10.9333 7.2C11.4667 7.6 11.4667 8.4 10.9333 8.8L1.6 15.8C0.940766 16.2944 2.10797e-06 15.824 2.09815e-06 15L1.9312e-06 1C1.92137e-06 0.175955 0.940765 -0.294427 1.6 0.2L10.9333 7.2Z' fill='%2375C9DA'/%3E%3C/svg%3E");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -28px;
-  }
-  .request-step-top .step-box .box:last-child::after {
-    display: none;
   }
   :lang(en) .request-detailTop .top-info ul {
     gap: 40px 0;
