@@ -3209,6 +3209,44 @@ input {
 			}
 		}
 	}
+	&.type-4 {
+		// 연혁
+		ul {
+			li {
+				margin-right: 8px;
+				.btn {
+					color: #ddd;
+					font-size: 22px;
+					font-weight: 600;
+					line-height: 120%;
+					letter-spacing: 0.4px;
+					&:hover {
+						cursor: pointer;
+					}
+					span {
+						//display: none;
+						font-size: 12px;
+					}
+				}
+				&.is-active {
+					.btn {
+						color: var(--Primary-04, #4d4d4d);
+						font-size: 22px;
+						font-weight: 600;
+						line-height: 120%;
+						letter-spacing: 0.4px;
+						span {
+							display: inline-block;
+							font-size: 16px;
+						}
+					}
+				}
+				& + li {
+					margin-left: 12px;
+				}
+			}
+		}
+	}
 	& + .box-top-search {
 		margin-top: 40px;
 	}
@@ -6467,7 +6505,7 @@ input {
 			padding-left: 22px;
 			position: relative;
 			&::before {
-				content: '';
+				content: "";
 				width: 18px;
 				height: 18px;
 				position: absolute;
@@ -7262,7 +7300,7 @@ input {
 						margin-left: -2px;
 						position: relative;
 						&::before {
-							content: '-';
+							content: "-";
 							font-size: 14px;
 							color: var(--gray-01);
 							line-height: 150%;
@@ -7294,7 +7332,7 @@ input {
 		}
 		.info {
 			.sub-tit {
-				color: var(--Primary-04, #4D4D4D);
+				color: var(--Primary-04, #4d4d4d);
 				font-size: 20px;
 				font-weight: 600;
 				line-height: 130%;
@@ -7322,7 +7360,7 @@ input {
 		width: 100%;
 		position: relative;
 		h5 {
-			color: var(--Primary-05, #FFF);
+			color: var(--Primary-05, #fff);
 			font-size: 20px;
 			font-weight: 600;
 			line-height: 130%;
@@ -7349,16 +7387,16 @@ input {
 			min-height: 318px;
 			position: relative;
 			border-radius: 6px;
-			border: 1px solid rgba(255, 255, 255, 0.50);
-			background: rgba(0, 0, 0, 0.10);
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			background: rgba(0, 0, 0, 0.1);
 			backdrop-filter: blur(30px);
 			overflow: hidden;
 			.top {
 				width: 100%;
 				padding: 20px;
-				border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 				.en {
-					color: #FFF;
+					color: #fff;
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 150%;
@@ -7366,7 +7404,7 @@ input {
 					margin-bottom: 6px;
 				}
 				.ko-tit {
-					color: #FFF;
+					color: #fff;
 					font-size: 20px;
 					font-weight: 600;
 					line-height: 130%;
@@ -7380,7 +7418,7 @@ input {
 					li {
 						width: 100%;
 						position: relative;
-						color: #FFF;
+						color: #fff;
 						font-size: 16px;
 						font-weight: 500;
 						line-height: 150%;
@@ -7390,7 +7428,7 @@ input {
 							margin-top: 12px;
 						}
 						&::before {
-							content: '';
+							content: "";
 							width: 3px;
 							height: 3px;
 							background: #fff;
@@ -7415,7 +7453,7 @@ input {
 		width: 100%;
 		position: relative;
 		h5 {
-			color: var(--Primary-04, #4D4D4D);
+			color: var(--Primary-04, #4d4d4d);
 			font-size: 20px;
 			font-weight: 600;
 			line-height: 130%;
@@ -7430,7 +7468,7 @@ input {
 				letter-spacing: 0.28px;
 			}
 		}
-	} 
+	}
 	.flex-box {
 		width: 100%;
 		position: relative;
@@ -7470,7 +7508,7 @@ input {
 					height: 252px;
 				}
 				.en {
-					color: var(--Primary-05, #FFF);
+					color: var(--Primary-05, #fff);
 					text-align: center;
 					font-size: 12px;
 					font-weight: 400;
@@ -7480,7 +7518,7 @@ input {
 					padding: 0 5px;
 				}
 				.ko {
-					color: var(--Primary-05, #FFF);
+					color: var(--Primary-05, #fff);
 					text-align: center;
 					font-size: 16px;
 					font-weight: 600;
@@ -8238,6 +8276,105 @@ input {
 	}
 	.common-btnType-4 {
 		margin: 0 auto;
+	}
+}
+
+// 재단안내 > 재단소개 > 연혁
+.box-dusgur {
+	margin-top: -60px;
+	padding-top: 20px;
+	.common-tab {
+		position: sticky;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: #fff;
+		z-index: 10;
+		padding-top: 95px;
+		padding-bottom: 20px;
+		margin-top: -55px;
+		margin-bottom: -10px;
+	}
+	.box-list-dusgur {
+		padding-top: 32px;
+		.inner {
+			& + .inner {
+				padding-top: 59px;
+			}
+			&:last-child {
+				.list {
+					&:last-child {
+						padding-bottom: 0;
+						li {
+							&:last-child {
+								padding-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		h2 {
+			color: var(--Primary-01, #006477);
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 130%; /* 26px */
+			letter-spacing: 0.4px;
+			padding-bottom: 20px;
+		}
+		.box-flex {
+			.box-img {
+				position: relative;
+				margin-bottom: 20px;
+				&::after {
+					content: "";
+					display: block;
+				}
+				img {
+					border-radius: 6px;
+					width: 100%;
+				}
+				&.img-holder {
+					span {
+						padding-top: 75%;
+					}
+				}
+			}
+			.list {
+				padding-bottom: 27px;
+				h3 {
+					color: var(--Primary-01, #006477);
+					font-size: 18px;
+					font-weight: 600;
+					line-height: 130%; /* 23.4px */
+					letter-spacing: 0.36px;
+					padding-bottom: 17px;
+				}
+				> ul {
+					> li {
+						position: relative;
+						color: var(--gray-01, #666);
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 150%; /* 24px */
+						letter-spacing: 0.32px;
+						padding-left: 12px;
+						padding-bottom: 12px;
+						&::after {
+							content: "";
+							display: block;
+							width: 4px;
+							height: 4px;
+							border-radius: 999px;
+							background: var(--Primary-01, #006477);
+							position: absolute;
+							top: 9px;
+							left: 0;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -12730,7 +12867,7 @@ input {
 				letter-spacing: 0.32px;
 				padding-left: 32px;
 				&::before {
-					content: '';
+					content: "";
 					width: 24px;
 					height: 24px;
 				}
@@ -12865,7 +13002,7 @@ input {
 								color: #fff;
 							}
 							.sub-txt {
-								color: rgba(255,255,255,0.6);
+								color: rgba(255, 255, 255, 0.6);
 							}
 						}
 					}
@@ -12879,7 +13016,7 @@ input {
 					width: 100%;
 					max-width: 440px;
 					height: 2px;
-					background: #D5D5D5;
+					background: #d5d5d5;
 					.swiper-pagination-progressbar-fill {
 						background: var(--Primary-01, #006477);
 					}
@@ -13241,7 +13378,7 @@ input {
 					letter-spacing: 0.4px;
 				}
 			}
-		} 
+		}
 		.flex-box {
 			flex-direction: row;
 			gap: 20px;
@@ -13779,6 +13916,101 @@ input {
 		}
 		.common-btnType-4 {
 			margin: 0;
+		}
+	}
+
+	// 재단안내 > 재단소개 > 연혁
+	.box-dusgur {
+		margin-top:-78px;
+		padding-top:1px;
+		.common-tab {
+			padding-bottom: 40px;
+			padding-top:134px;
+			&.type-4 {
+				// 연혁
+				ul {
+					li {
+						margin-right: 29px;
+						.btn {
+							font-size: 28px;
+							letter-spacing: 0.56px;
+							&:hover {
+							}
+							span {
+							}
+						}
+						&.is-active {
+							.btn {
+								font-size: 28px;
+								letter-spacing: 0.56px;
+								span {
+								}
+							}
+						}
+						& + li {
+						}
+					}
+				}
+			}
+		}
+		.box-list-dusgur {
+			.inner {
+				& + .inner {
+					padding-top:21px;
+				}
+				&:last-child {
+					.list {
+						&:last-child {
+							li {
+								&:last-child {
+								}
+							}
+						}
+					}
+				}
+			}
+			h2 {
+				font-size: 40px;
+				letter-spacing: 0.8px;
+				padding-bottom: 48px;
+			}
+			.box-flex {
+				display: flex;
+				align-items: flex-start;
+				gap: 60px;
+				align-self: stretch;
+				.box-img {
+					width: max(10vw, 670px);
+					&::after {
+					}
+					img {
+						border-radius: 12px;
+					}
+					&.img-holder {
+						span {
+							padding-top: 66%;
+						}
+					}
+				}
+				.box-text-list {
+					.list {
+						h3 {
+							font-size: 30px;
+							letter-spacing: 0.6px;
+							padding-bottom:19px;
+						}
+						> ul {
+							> li {
+								font-size: 20px;
+								letter-spacing: 0.4px;
+								&::after {
+									top:12px;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -14336,7 +14568,7 @@ input {
 /* //1300 이상 */
 
 /* 1600 이상 */
-@media all and (min-width:1600px){
+@media all and (min-width: 1600px) {
 	.box-listValue {
 		> ul {
 			display: flex;
@@ -14358,18 +14590,18 @@ input {
 				}
 				&:nth-child(4) {
 					order: 6;
-					margin-bottom:0;
+					margin-bottom: 0;
 					&::after {
 						display: none;
 					}
 				}
 				&:nth-child(5) {
 					order: 5;
-					margin-bottom:0;
+					margin-bottom: 0;
 				}
 				&:nth-child(6) {
 					order: 4;
-					margin-bottom:0;
+					margin-bottom: 0;
 				}
 				&:nth-child(4),
 				&:nth-child(5) {

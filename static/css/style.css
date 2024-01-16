@@ -2790,6 +2790,36 @@ input {
 .common-tab.type-3 ul li + li {
   margin-left: 12px;
 }
+.common-tab.type-4 ul li {
+  margin-right: 8px;
+}
+.common-tab.type-4 ul li .btn {
+  color: #ddd;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+}
+.common-tab.type-4 ul li .btn:hover {
+  cursor: pointer;
+}
+.common-tab.type-4 ul li .btn span {
+  font-size: 12px;
+}
+.common-tab.type-4 ul li.is-active .btn {
+  color: var(--Primary-04, #4d4d4d);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+}
+.common-tab.type-4 ul li.is-active .btn span {
+  display: inline-block;
+  font-size: 16px;
+}
+.common-tab.type-4 ul li + li {
+  margin-left: 12px;
+}
 .common-tab + .box-top-search {
   margin-top: 40px;
 }
@@ -6580,7 +6610,7 @@ input {
   margin-bottom: 40px;
 }
 .box-infoTop.q-control .info .sub-tit {
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
@@ -6608,7 +6638,7 @@ input {
   position: relative;
 }
 .q-controlSystem > div h5 {
-  color: var(--Primary-05, #FFF);
+  color: var(--Primary-05, #fff);
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
@@ -6646,7 +6676,7 @@ input {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .q-controlSystem .item-wrap .item .top .en {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
@@ -6654,7 +6684,7 @@ input {
   margin-bottom: 6px;
 }
 .q-controlSystem .item-wrap .item .top .ko-tit {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
@@ -6667,7 +6697,7 @@ input {
 .q-controlSystem .item-wrap .item .bot .dot-list li {
   width: 100%;
   position: relative;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -6700,7 +6730,7 @@ input {
   position: relative;
 }
 .q-controlEssential > div h5 {
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
@@ -6757,7 +6787,7 @@ input {
   height: 252px;
 }
 .q-controlEssential .flex-box .box .item .en {
-  color: var(--Primary-05, #FFF);
+  color: var(--Primary-05, #fff);
   text-align: center;
   font-size: 12px;
   font-weight: 400;
@@ -6767,7 +6797,7 @@ input {
   padding: 0 5px;
 }
 .q-controlEssential .flex-box .box .item .ko {
-  color: var(--Primary-05, #FFF);
+  color: var(--Primary-05, #fff);
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -7439,6 +7469,90 @@ input {
 }
 .box-dusrn-2 .common-btnType-4 {
   margin: 0 auto;
+}
+
+.box-dusgur {
+  margin-top: -60px;
+  padding-top: 20px;
+}
+.box-dusgur .common-tab {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 10;
+  padding-top: 95px;
+  padding-bottom: 20px;
+  margin-top: -55px;
+  margin-bottom: -10px;
+}
+.box-dusgur .box-list-dusgur {
+  padding-top: 32px;
+}
+.box-dusgur .box-list-dusgur .inner + .inner {
+  padding-top: 59px;
+}
+.box-dusgur .box-list-dusgur .inner:last-child .list:last-child {
+  padding-bottom: 0;
+}
+.box-dusgur .box-list-dusgur .inner:last-child .list:last-child li:last-child {
+  padding-bottom: 0;
+}
+.box-dusgur .box-list-dusgur h2 {
+  color: var(--Primary-01, #006477);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%; /* 26px */
+  letter-spacing: 0.4px;
+  padding-bottom: 20px;
+}
+.box-dusgur .box-list-dusgur .box-flex .box-img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.box-dusgur .box-list-dusgur .box-flex .box-img::after {
+  content: "";
+  display: block;
+}
+.box-dusgur .box-list-dusgur .box-flex .box-img img {
+  border-radius: 6px;
+  width: 100%;
+}
+.box-dusgur .box-list-dusgur .box-flex .box-img.img-holder span {
+  padding-top: 75%;
+}
+.box-dusgur .box-list-dusgur .box-flex .list {
+  padding-bottom: 27px;
+}
+.box-dusgur .box-list-dusgur .box-flex .list h3 {
+  color: var(--Primary-01, #006477);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.36px;
+  padding-bottom: 17px;
+}
+.box-dusgur .box-list-dusgur .box-flex .list > ul > li {
+  position: relative;
+  color: var(--gray-01, #666);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+.box-dusgur .box-list-dusgur .box-flex .list > ul > li::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--Primary-01, #006477);
+  position: absolute;
+  top: 9px;
+  left: 0;
 }
 
 :lang(en) .common-tab.padding-top-1 {
@@ -11218,7 +11332,7 @@ input {
     width: 100%;
     max-width: 440px;
     height: 2px;
-    background: #D5D5D5;
+    background: #d5d5d5;
   }
   .tab-labSpecial .step-info .step-info-swiper .swiper-pagination-1 .swiper-pagination-progressbar-fill {
     background: var(--Primary-01, #006477);
@@ -11983,6 +12097,60 @@ input {
   }
   .box-dusrn-2 .common-btnType-4 {
     margin: 0;
+  }
+  .box-dusgur {
+    margin-top: -78px;
+    padding-top: 1px;
+  }
+  .box-dusgur .common-tab {
+    padding-bottom: 40px;
+    padding-top: 134px;
+  }
+  .box-dusgur .common-tab.type-4 ul li {
+    margin-right: 29px;
+  }
+  .box-dusgur .common-tab.type-4 ul li .btn {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+  .box-dusgur .common-tab.type-4 ul li.is-active .btn {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+  .box-dusgur .box-list-dusgur .inner + .inner {
+    padding-top: 21px;
+  }
+  .box-dusgur .box-list-dusgur h2 {
+    font-size: 40px;
+    letter-spacing: 0.8px;
+    padding-bottom: 48px;
+  }
+  .box-dusgur .box-list-dusgur .box-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    align-self: stretch;
+  }
+  .box-dusgur .box-list-dusgur .box-flex .box-img {
+    width: max(10vw, 670px);
+  }
+  .box-dusgur .box-list-dusgur .box-flex .box-img img {
+    border-radius: 12px;
+  }
+  .box-dusgur .box-list-dusgur .box-flex .box-img.img-holder span {
+    padding-top: 66%;
+  }
+  .box-dusgur .box-list-dusgur .box-flex .box-text-list .list h3 {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    padding-bottom: 19px;
+  }
+  .box-dusgur .box-list-dusgur .box-flex .box-text-list .list > ul > li {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .box-dusgur .box-list-dusgur .box-flex .box-text-list .list > ul > li::after {
+    top: 12px;
   }
   :lang(en) .menu-list .inner-gap-1 > ul {
     justify-content: center;
