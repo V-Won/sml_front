@@ -7283,6 +7283,286 @@ input {
 	}
 }
 
+// 정도관리 개요
+.box-infoTop {
+	&.q-control {
+		padding-bottom: 0;
+		margin-bottom: 100px;
+		border-bottom: none;
+		.tit {
+			margin-bottom: 40px;
+		}
+		.info {
+			.sub-tit {
+				color: var(--Primary-04, #4D4D4D);
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.4px;
+				margin-bottom: 16px;
+				span {
+					display: block;
+					color: var(--gray-02, #999);
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 130%;
+					letter-spacing: 0.28px;
+				}
+			}
+		}
+	}
+}
+.q-controlSystem {
+	width: 100%;
+	padding: 60px 20px 100px;
+	background: url(../../static/images/img/qc_system_bg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	> div {
+		width: 100%;
+		position: relative;
+		h5 {
+			color: var(--Primary-05, #FFF);
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 130%;
+			letter-spacing: 0.4px;
+			margin-bottom: 18px;
+			span {
+				display: block;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 130%;
+				letter-spacing: 0.32px;
+			}
+		}
+	}
+	.item-wrap {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		.item {
+			width: 100%;
+			min-height: 318px;
+			position: relative;
+			border-radius: 6px;
+			border: 1px solid rgba(255, 255, 255, 0.50);
+			background: rgba(0, 0, 0, 0.10);
+			backdrop-filter: blur(30px);
+			overflow: hidden;
+			.top {
+				width: 100%;
+				padding: 20px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+				.en {
+					color: #FFF;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 150%;
+					letter-spacing: 0.28px;
+					margin-bottom: 6px;
+				}
+				.ko-tit {
+					color: #FFF;
+					font-size: 20px;
+					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.4px;
+				}
+			}
+			.bot {
+				width: 100%;
+				padding: 20px;
+				.dot-list {
+					li {
+						width: 100%;
+						position: relative;
+						color: #FFF;
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 150%;
+						letter-spacing: 0.32px;
+						padding-left: 15px;
+						& + li {
+							margin-top: 12px;
+						}
+						&::before {
+							content: '';
+							width: 3px;
+							height: 3px;
+							background: #fff;
+							position: absolute;
+							top: 9px;
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.q-controlEssential {
+	width: 100%;
+	padding: 60px 20px 100px;
+	margin-bottom: -100px;
+	background: url(../../static/images/img/qc_essential_bg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	> div {
+		width: 100%;
+		position: relative;
+		h5 {
+			color: var(--Primary-04, #4D4D4D);
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 130%;
+			letter-spacing: 0.4px;
+			margin-bottom: 20px;
+			span {
+				display: block;
+				color: var(--gray-02, #999);
+				font-size: 14px;
+				line-height: 130%;
+				font-weight: 500;
+				letter-spacing: 0.28px;
+			}
+		}
+	} 
+	.flex-box {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 12px;
+		.box {
+			width: 100%;
+			position: relative;
+			display: flex;
+			align-items: flex-start;
+			gap: 12px;
+			> div {
+				width: calc(50% - 6px);
+				&.item-inner {
+					display: flex;
+					flex-direction: column;
+					gap: 12px;
+					.item {
+						width: 100%;
+					}
+				}
+			}
+			.item {
+				height: 120px;
+				border-radius: 6px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background-position: center !important;
+				background-size: cover !important;
+				overflow: hidden;
+				&.long {
+					height: 252px;
+				}
+				.en {
+					color: var(--Primary-05, #FFF);
+					text-align: center;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 150%;
+					letter-spacing: 0.24px;
+					margin-bottom: 4px;
+					padding: 0 5px;
+				}
+				.ko {
+					color: var(--Primary-05, #FFF);
+					text-align: center;
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.32px;
+				}
+			}
+			&:first-child {
+				.item {
+					&.long {
+						background: url(../../static/images/img/qc_essential_1_1.png) no-repeat;
+					}
+				}
+				.item-inner {
+					.item {
+						&:first-child {
+							background: url(../../static/images/img/qc_essential_1_2.png) no-repeat;
+							background-position: 62% !important;
+						}
+						&:nth-child(2) {
+							background: url(../../static/images/img/qc_essential_1_3.png) no-repeat;
+							background-position: 42% !important;
+						}
+					}
+				}
+			}
+			&:nth-child(2) {
+				.item {
+					&.long {
+						background: #000;
+					}
+				}
+				.item-inner {
+					.item {
+						&:first-child {
+							background: url(../../static/images/img/qc_essential_2_1.png) no-repeat;
+						}
+						&:nth-child(2) {
+							background: url(../../static/images/img/qc_essential_2_2.png) no-repeat;
+						}
+					}
+				}
+			}
+			&:nth-child(3) {
+				.item {
+					&.long {
+						background: url(../../static/images/img/qc_essential_3_1.png);
+					}
+				}
+				.item-inner {
+					.item {
+						&:first-child {
+							background: url(../../static/images/img/qc_essential_3_2.png) no-repeat;
+						}
+						&:nth-child(2) {
+							background: url(../../static/images/img/qc_essential_3_3.png) no-repeat;
+							background-position: 0 !important;
+						}
+					}
+				}
+			}
+			&:nth-child(4) {
+				.item {
+					&.long {
+						background: url(../../static/images/img/qc_essential_4_3.png);
+					}
+				}
+				.item-inner {
+					.item {
+						&:first-child {
+							background: url(../../static/images/img/qc_essential_4_1.png) no-repeat;
+						}
+						&:nth-child(2) {
+							background: url(../../static/images/img/qc_essential_4_2.png) no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 // 임상연구 > 임상연구 검사 > 임상연구 개요
 .box-reser {
 	> ul {
@@ -12652,7 +12932,7 @@ input {
 		}
 		.group-chart {
 			margin: 120px 0 0 0;
-			padding: 80px 20px 120px;
+			padding: 80px 100px 120px;
 			background: #f5f5f5;
 			> div {
 				width: 100%;
@@ -12683,7 +12963,7 @@ input {
 			}
 		}
 		.bookingGuide-box {
-			padding: 80px 20px 120px;
+			padding: 80px 100px 120px;
 			h5 {
 				font-size: 40px;
 				letter-spacing: 0.8px;
@@ -12868,6 +13148,137 @@ input {
 			.bookingGuide-box {
 				.txt {
 					margin: 24px 0 57px;
+				}
+			}
+		}
+	}
+
+	// 정도관리 개요
+	.box-infoTop {
+		&.q-control {
+			margin-bottom: 120px;
+			.tit {
+				margin-bottom: 48px;
+			}
+			.info {
+				padding: 0;
+				width: 92%;
+				.sub-tit {
+					font-size: 30px;
+					letter-spacing: 0.6px;
+					margin-bottom: 24px;
+					span {
+						display: inline-block;
+						font-size: 20px;
+						letter-spacing: 0.4px;
+					}
+				}
+			}
+		}
+	}
+	.q-controlSystem {
+		padding: 80px 100px 120px;
+		> div {
+			max-width: 1400px;
+			margin: 0 auto;
+			h5 {
+				font-size: 30px;
+				letter-spacing: 0.6px;
+				margin-bottom: 40px;
+				span {
+					display: inline-block;
+					font-size: 20px;
+					letter-spacing: 0.4px;
+				}
+			}
+		}
+		.item-wrap {
+			flex-direction: row;
+			gap: 40px;
+			.item {
+				width: calc(33.3% - 10px);
+				min-height: 432px;
+				border-radius: 12px;
+				.top {
+					padding: 24px 40px;
+					.en {
+						font-size: 20px;
+						letter-spacing: 0.4px;
+					}
+					.ko-tit {
+						font-size: 30px;
+						letter-spacing: 0.6px;
+					}
+				}
+				.bot {
+					padding: 24px 40px;
+					.dot-list {
+						li {
+							font-size: 20px;
+							letter-spacing: 0.4px;
+							&::before {
+								top: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.q-controlEssential {
+		padding: 80px 100px 120px;
+		margin-bottom: -120px;
+		> div {
+			max-width: 1400px;
+			margin: 0 auto;
+			h5 {
+				font-size: 30px;
+				letter-spacing: 0.6px;
+				margin-bottom: 40px;
+				span {
+					display: inline-block;
+					font-size: 20px;
+					letter-spacing: 0.4px;
+				}
+			}
+		} 
+		.flex-box {
+			flex-direction: row;
+			gap: 20px;
+			.box {
+				width: calc(50% - 10px);
+				gap: 20px;
+				> div {
+					width: calc(50% - 10px);
+					&.item-inner {
+						gap: 20px;
+					}
+				}
+				.item {
+					border-radius: 12px;
+					&.long {
+						height: 260px;
+					}
+					.en {
+						font-size: 14px;
+						letter-spacing: 0.28px;
+					}
+					.ko {
+						font-size: 18px;
+						letter-spacing: 0.36px;
+					}
+				}
+				&:first-child {
+					order: 1;
+				}
+				&:nth-child(2) {
+					order: 3;
+				}
+				&:nth-child(3) {
+					order: 2;
+				}
+				&:nth-child(4) {
+					order: 4;
 				}
 			}
 		}

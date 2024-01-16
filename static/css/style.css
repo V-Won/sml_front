@@ -6571,6 +6571,249 @@ input {
   gap: 16px 0;
 }
 
+.box-infoTop.q-control {
+  padding-bottom: 0;
+  margin-bottom: 100px;
+  border-bottom: none;
+}
+.box-infoTop.q-control .tit {
+  margin-bottom: 40px;
+}
+.box-infoTop.q-control .info .sub-tit {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+  margin-bottom: 16px;
+}
+.box-infoTop.q-control .info .sub-tit span {
+  display: block;
+  color: var(--gray-02, #999);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.28px;
+}
+
+.q-controlSystem {
+  width: 100%;
+  padding: 60px 20px 100px;
+  background: url(../../static/images/img/qc_system_bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.q-controlSystem > div {
+  width: 100%;
+  position: relative;
+}
+.q-controlSystem > div h5 {
+  color: var(--Primary-05, #FFF);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+  margin-bottom: 18px;
+}
+.q-controlSystem > div h5 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.32px;
+}
+.q-controlSystem .item-wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.q-controlSystem .item-wrap .item {
+  width: 100%;
+  min-height: 318px;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  overflow: hidden;
+}
+.q-controlSystem .item-wrap .item .top {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.q-controlSystem .item-wrap .item .top .en {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.28px;
+  margin-bottom: 6px;
+}
+.q-controlSystem .item-wrap .item .top .ko-tit {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+}
+.q-controlSystem .item-wrap .item .bot {
+  width: 100%;
+  padding: 20px;
+}
+.q-controlSystem .item-wrap .item .bot .dot-list li {
+  width: 100%;
+  position: relative;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  padding-left: 15px;
+}
+.q-controlSystem .item-wrap .item .bot .dot-list li + li {
+  margin-top: 12px;
+}
+.q-controlSystem .item-wrap .item .bot .dot-list li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+.q-controlEssential {
+  width: 100%;
+  padding: 60px 20px 100px;
+  margin-bottom: -100px;
+  background: url(../../static/images/img/qc_essential_bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.q-controlEssential > div {
+  width: 100%;
+  position: relative;
+}
+.q-controlEssential > div h5 {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+}
+.q-controlEssential > div h5 span {
+  display: block;
+  color: var(--gray-02, #999);
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.q-controlEssential .flex-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.q-controlEssential .flex-box .box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.q-controlEssential .flex-box .box > div {
+  width: calc(50% - 6px);
+}
+.q-controlEssential .flex-box .box > div.item-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.q-controlEssential .flex-box .box > div.item-inner .item {
+  width: 100%;
+}
+.q-controlEssential .flex-box .box .item {
+  height: 120px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center !important;
+  background-size: cover !important;
+  overflow: hidden;
+}
+.q-controlEssential .flex-box .box .item.long {
+  height: 252px;
+}
+.q-controlEssential .flex-box .box .item .en {
+  color: var(--Primary-05, #FFF);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+  margin-bottom: 4px;
+  padding: 0 5px;
+}
+.q-controlEssential .flex-box .box .item .ko {
+  color: var(--Primary-05, #FFF);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.32px;
+}
+.q-controlEssential .flex-box .box:first-child .item.long {
+  background: url(../../static/images/img/qc_essential_1_1.png) no-repeat;
+}
+.q-controlEssential .flex-box .box:first-child .item-inner .item:first-child {
+  background: url(../../static/images/img/qc_essential_1_2.png) no-repeat;
+  background-position: 62% !important;
+}
+.q-controlEssential .flex-box .box:first-child .item-inner .item:nth-child(2) {
+  background: url(../../static/images/img/qc_essential_1_3.png) no-repeat;
+  background-position: 42% !important;
+}
+.q-controlEssential .flex-box .box:nth-child(2) .item.long {
+  background: #000;
+}
+.q-controlEssential .flex-box .box:nth-child(2) .item-inner .item:first-child {
+  background: url(../../static/images/img/qc_essential_2_1.png) no-repeat;
+}
+.q-controlEssential .flex-box .box:nth-child(2) .item-inner .item:nth-child(2) {
+  background: url(../../static/images/img/qc_essential_2_2.png) no-repeat;
+}
+.q-controlEssential .flex-box .box:nth-child(3) .item.long {
+  background: url(../../static/images/img/qc_essential_3_1.png);
+}
+.q-controlEssential .flex-box .box:nth-child(3) .item-inner .item:first-child {
+  background: url(../../static/images/img/qc_essential_3_2.png) no-repeat;
+}
+.q-controlEssential .flex-box .box:nth-child(3) .item-inner .item:nth-child(2) {
+  background: url(../../static/images/img/qc_essential_3_3.png) no-repeat;
+  background-position: 0 !important;
+}
+.q-controlEssential .flex-box .box:nth-child(4) .item.long {
+  background: url(../../static/images/img/qc_essential_4_3.png);
+}
+.q-controlEssential .flex-box .box:nth-child(4) .item-inner .item:first-child {
+  background: url(../../static/images/img/qc_essential_4_1.png) no-repeat;
+}
+.q-controlEssential .flex-box .box:nth-child(4) .item-inner .item:nth-child(2) {
+  background: url(../../static/images/img/qc_essential_4_2.png) no-repeat;
+}
+
 .box-reser > ul > li {
   margin-bottom: 20px;
 }
@@ -11020,7 +11263,7 @@ input {
   }
   .tab-labSpecial .group-chart {
     margin: 120px 0 0 0;
-    padding: 80px 20px 120px;
+    padding: 80px 100px 120px;
     background: #f5f5f5;
   }
   .tab-labSpecial .group-chart > div {
@@ -11051,7 +11294,7 @@ input {
     object-fit: cover;
   }
   .tab-labSpecial .bookingGuide-box {
-    padding: 80px 20px 120px;
+    padding: 80px 100px 120px;
   }
   .tab-labSpecial .bookingGuide-box h5 {
     font-size: 40px;
@@ -11194,6 +11437,131 @@ input {
   }
   .tab-labSpecial.national .bookingGuide-box .txt {
     margin: 24px 0 57px;
+  }
+  .box-infoTop.q-control {
+    margin-bottom: 120px;
+  }
+  .box-infoTop.q-control .tit {
+    margin-bottom: 48px;
+  }
+  .box-infoTop.q-control .info {
+    padding: 0;
+    width: 92%;
+  }
+  .box-infoTop.q-control .info .sub-tit {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    margin-bottom: 24px;
+  }
+  .box-infoTop.q-control .info .sub-tit span {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .q-controlSystem {
+    padding: 80px 100px 120px;
+  }
+  .q-controlSystem > div {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .q-controlSystem > div h5 {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    margin-bottom: 40px;
+  }
+  .q-controlSystem > div h5 span {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .q-controlSystem .item-wrap {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .q-controlSystem .item-wrap .item {
+    width: calc(33.3% - 10px);
+    min-height: 432px;
+    border-radius: 12px;
+  }
+  .q-controlSystem .item-wrap .item .top {
+    padding: 24px 40px;
+  }
+  .q-controlSystem .item-wrap .item .top .en {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .q-controlSystem .item-wrap .item .top .ko-tit {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+  .q-controlSystem .item-wrap .item .bot {
+    padding: 24px 40px;
+  }
+  .q-controlSystem .item-wrap .item .bot .dot-list li {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .q-controlSystem .item-wrap .item .bot .dot-list li::before {
+    top: 15px;
+  }
+  .q-controlEssential {
+    padding: 80px 100px 120px;
+    margin-bottom: -120px;
+  }
+  .q-controlEssential > div {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .q-controlEssential > div h5 {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    margin-bottom: 40px;
+  }
+  .q-controlEssential > div h5 span {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .q-controlEssential .flex-box {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .q-controlEssential .flex-box .box {
+    width: calc(50% - 10px);
+    gap: 20px;
+  }
+  .q-controlEssential .flex-box .box > div {
+    width: calc(50% - 10px);
+  }
+  .q-controlEssential .flex-box .box > div.item-inner {
+    gap: 20px;
+  }
+  .q-controlEssential .flex-box .box .item {
+    border-radius: 12px;
+  }
+  .q-controlEssential .flex-box .box .item.long {
+    height: 260px;
+  }
+  .q-controlEssential .flex-box .box .item .en {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+  .q-controlEssential .flex-box .box .item .ko {
+    font-size: 18px;
+    letter-spacing: 0.36px;
+  }
+  .q-controlEssential .flex-box .box:first-child {
+    order: 1;
+  }
+  .q-controlEssential .flex-box .box:nth-child(2) {
+    order: 3;
+  }
+  .q-controlEssential .flex-box .box:nth-child(3) {
+    order: 2;
+  }
+  .q-controlEssential .flex-box .box:nth-child(4) {
+    order: 4;
   }
   .box-reser > ul {
     display: flex;
