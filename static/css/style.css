@@ -7555,6 +7555,60 @@ input {
   left: 0;
 }
 
+.request-step-top {
+  width: 100%;
+  position: relative;
+}
+.request-step-top > h5 {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+}
+.request-step-top .step-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 12px;
+}
+.request-step-top .step-box .box {
+  width: calc(50% - 6px);
+  height: 208px;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid var(--gray-03-line, #D5D5D5);
+  background: var(--Primary-05, #FFF);
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.request-step-top .step-box .box .step-num {
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--Primary-03, #75C9DA);
+  color: var(--Primary-05, #FFF);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+  margin-bottom: 12px;
+}
+.request-step-top .step-box .box .tit {
+  color: var(--Primary-04, #4D4D4D);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.28px;
+}
+
 :lang(en) .common-tab.padding-top-1 {
   padding-top: 41px;
 }
@@ -11595,22 +11649,22 @@ input {
   }
   .q-controlSystem .item-wrap .item {
     width: calc(33.3% - 10px);
-    min-height: 432px;
+    min-height: 390px;
     border-radius: 12px;
   }
   .q-controlSystem .item-wrap .item .top {
     padding: 24px 40px;
   }
   .q-controlSystem .item-wrap .item .top .en {
-    font-size: 20px;
-    letter-spacing: 0.4px;
+    font-size: 18px;
+    letter-spacing: 0.36px;
   }
   .q-controlSystem .item-wrap .item .top .ko-tit {
-    font-size: 30px;
-    letter-spacing: 0.6px;
+    font-size: 24px;
+    letter-spacing: 0.48px;
   }
   .q-controlSystem .item-wrap .item .bot {
-    padding: 24px 40px;
+    padding: 24px;
   }
   .q-controlSystem .item-wrap .item .bot .dot-list li {
     font-size: 20px;
@@ -12454,6 +12508,24 @@ input {
   .request-detailTop .top-info ul li .left {
     max-width: 80px;
     font-weight: 600;
+  }
+  .q-controlSystem .item-wrap .item {
+    min-height: 416px;
+  }
+  .q-controlSystem .item-wrap .item .top .en {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .q-controlSystem .item-wrap .item .top .ko-tit {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+  .q-controlSystem .item-wrap .item .bot {
+    padding: 24px 40px;
+  }
+  .q-controlSystem .item-wrap .item .bot .dot-list li {
+    font-size: 24px;
+    letter-spacing: 0.48px;
   }
   :lang(en) .request-detailTop .top-info ul {
     gap: 40px 0;

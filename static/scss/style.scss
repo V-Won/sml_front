@@ -8378,6 +8378,61 @@ input {
 	}
 }
 
+// 검사 안내 > 검사의뢰 절차
+.request-step-top {
+	width: 100%;
+	position: relative;
+	> h5 {
+		color: var(--Primary-04, #4D4D4D);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.4px;
+		margin-bottom: 20px;
+	}
+	.step-box {
+		width: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px 12px;
+		.box {
+			width: calc(50% - 6px);
+			height: 208px;
+			position: relative;
+			border-radius: 12px;
+			border: 1px solid var(--gray-03-line, #D5D5D5);
+			background: var(--Primary-05, #FFF);
+			padding: 30px 24px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.step-num {
+				width: fit-content;
+				padding: 4px 10px;
+				border-radius: 999px;
+				background: var(--Primary-03, #75C9DA);
+				color: var(--Primary-05, #FFF);
+				text-align: center;
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 150%;
+				letter-spacing: 0.24px;
+				margin-bottom: 12px;
+			}
+			.tit {
+				color: var(--Primary-04, #4D4D4D);
+				text-align: center;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.28px;
+			}
+		}
+	}
+}
+
 // 모바일 lang(en)
 :lang(en) {
 	// 공통 Tab
@@ -13334,21 +13389,21 @@ input {
 			gap: 40px;
 			.item {
 				width: calc(33.3% - 10px);
-				min-height: 432px;
+				min-height: 390px;
 				border-radius: 12px;
 				.top {
 					padding: 24px 40px;
 					.en {
-						font-size: 20px;
-						letter-spacing: 0.4px;
+						font-size: 18px;
+						letter-spacing: 0.36px;
 					}
 					.ko-tit {
-						font-size: 30px;
-						letter-spacing: 0.6px;
+						font-size: 24px;
+						letter-spacing: 0.48px;
 					}
 				}
 				.bot {
-					padding: 24px 40px;
+					padding: 24px;
 					.dot-list {
 						li {
 							font-size: 20px;
@@ -14527,6 +14582,33 @@ input {
 					.left {
 						max-width: 80px;
 						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+	.q-controlSystem {
+		.item-wrap {
+			.item {
+				min-height: 416px;
+				.top {
+					.en {
+						font-size: 20px;
+						letter-spacing: 0.4px;
+					}
+					.ko-tit {
+						font-size: 30px;
+						letter-spacing: 0.6px;
+					}
+				}
+				.bot {
+					padding: 24px 40px;
+					.dot-list {
+						li {
+							font-size: 24px;
+							letter-spacing: 0.48px;
+						}
 					}
 				}
 			}
