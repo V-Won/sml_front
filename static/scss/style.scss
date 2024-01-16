@@ -1812,6 +1812,19 @@ input {
 		&.padding-type-2 {
 			padding-bottom: 0;
 		}
+		&.padding-type-3 {
+			padding-bottom: 17px;
+		}
+	}
+	.txt-1 {
+		width: 100%;
+		padding-right: 32px;
+		color: var(--gray-01, #666);
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 150%;
+		letter-spacing: 0.28px;
+		word-break: keep-all;
 	}
 	.noti-1 {
 		position: relative;
@@ -3195,15 +3208,13 @@ input {
 	& + .box-top-search {
 		margin-top: 40px;
 	}
-	& + .tab-section {
-		margin-top: 41px;
-	}
 }
 
 .tab-section {
 	.tab-item {
 		width: 100%;
 		position: relative;
+		margin-top: 40px;
 		display: none;
 		&.is-active {
 			display: block;
@@ -6402,11 +6413,40 @@ input {
 		.tit {
 			font-size: 20px;
 			letter-spacing: 0.4px;
-			margin-bottom: 18px;
+			margin-bottom: 17px;
+			span {
+				color: var(--gray-02, #999);
+				font-size: 14px;
+				letter-spacing: 0.28px;
+			}
+		}
+		.noti {
+			display: block;
+			margin-top: 14px;
+			color: var(--gray-02, #999);
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 150%;
+			letter-spacing: 0.24px;
+			padding-left: 22px;
+			position: relative;
+			&::before {
+				content: '';
+				width: 18px;
+				height: 18px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.9475 2.61681C10.0809 1.11992 7.91974 1.11991 7.05312 2.61681L1.40479 12.373C0.536371 13.873 1.61874 15.7503 3.352 15.7503H14.6487C16.3819 15.7503 17.4643 13.873 16.5959 12.373L10.9475 2.61681ZM9.75035 6.74615C9.74803 6.33195 9.41036 5.99805 8.99615 6.00038C8.58195 6.0027 8.24805 6.34037 8.25038 6.75458L8.2672 9.74984C8.26953 10.164 8.6072 10.4979 9.0214 10.4956C9.43561 10.4933 9.76951 10.1556 9.76718 9.74141L9.75035 6.74615ZM9.75037 11.9929C9.75037 11.5787 9.41458 11.2429 9.00037 11.2429C8.58615 11.2429 8.25037 11.5787 8.25037 11.9929V12.0004C8.25037 12.4146 8.58615 12.7504 9.00037 12.7504C9.41458 12.7504 9.75037 12.4146 9.75037 12.0004V11.9929Z' fill='%2375C9DA'/%3E%3C/svg%3E");
+				background-size: cover;
+				background-position: center;
+			}
 		}
 	}
 }
 .tab-labSpecial {
+	overflow: hidden;
+	margin-bottom: -100px;
 	.tit-img {
 		margin: -10px 0 50px 0;
 		.img-holder {
@@ -6416,8 +6456,7 @@ input {
 		}
 	}
 	.table-bg {
-		width: calc(100% + 40px);
-		margin-left: -20px;
+		width: 100%;
 		padding: 60px 20px 100px;
 		background: #f5f5f5;
 		.box-common-tabTableSwiper {
@@ -6486,7 +6525,7 @@ input {
 				flex-wrap: wrap;
 				gap: 20px 12px;
 				.swiper-slide {
-					width: calc(50% - 6px);
+					width: calc(50% - 6px) !important;
 					position: relative;
 					height: 280px;
 					border-radius: 8px;
@@ -6516,6 +6555,8 @@ input {
 						font-weight: 600;
 						line-height: 130%;
 						letter-spacing: 0.28px;
+						word-break: keep-all;
+						padding: 0 5px;
 					}
 					.sub-txt {
 						color: var(--gray-02, #999);
@@ -6579,6 +6620,9 @@ input {
 						}
 					}
 				}
+			}
+			.swiper-pagination-1 {
+				display: none;
 			}
 		}
 	}
@@ -6675,12 +6719,12 @@ input {
 		}
 	}
 	.group-chart {
-		width: calc(100% + 40px);
+		width: 100%;
 		position: relative;
-		margin: 100px 0 0 -20px;
+		margin: 100px 0 0 0;
 		padding: 60px 20px 100px;
 		background: #f5f5f5;
-		> h5 {
+		h5 {
 			color: #4d4d4d;
 			font-size: 20px;
 			font-weight: 600;
@@ -6912,16 +6956,23 @@ input {
 				}
 			}
 		}
+		.groupChart-img {
+			display: none;
+		}
 	}
 	.bookingGuide-box {
-		width: calc(100% + 40px);
-		margin: 0 0 -100px -20px;
+		width: 100%;
 		position: relative;
 		padding: 60px 20px 100px;
 		background: url(../../static/images/img/bookingGuide_bg.png) no-repeat;
 		background-size: cover;
 		background-position: 60%;
-		> h5 {
+		> div {
+			width: 100%;
+			max-width: 1400px;
+			margin: 0 auto;
+		}
+		h5 {
 			color: var(--Primary-05, #fff);
 			text-align: center;
 			font-size: 20px;
@@ -7010,6 +7061,177 @@ input {
 						}
 					}
 				}
+			}
+		}
+	}
+	&.national {
+		.table-bg {
+			.box-common-tabTableSwiper {
+				.common-table-1 {
+					margin: 21px 0 40px 0;
+					table {
+						tbody {
+							tr {
+								&:nth-child(12) {
+									td {
+										&:first-child {
+											border-bottom: none;
+										}
+									}
+								}
+							}
+							td {
+								border-right: 1px solid #d5d5d5;
+								padding: 11.5px 20px;
+								&:last-child {
+									border-right: none;
+								}
+								.circle {
+									width: 12px;
+									height: 12px;
+									background: var(--Primary-01, #006477);
+									border-radius: 50%;
+									margin: 0 auto;
+								}
+							}
+						}
+					}
+				}
+				.table-noti {
+					width: 100%;
+					padding-right: 32px;
+					color: var(--gray-02, #999);
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 150%;
+					letter-spacing: 0.28px;
+				}
+			}
+		}
+		.step-info {
+			.common-tab {
+				&.type-2 {
+					ul {
+						li {
+							.btn {
+								height: 34px;
+								line-height: 130%;
+								letter-spacing: 0.28px;
+							}
+						}
+					}
+				}
+				& + .tab-section {
+					margin-top: 20px;
+				}
+			}
+			.step-info-swiper {
+				.swiper-wrapper {
+					.swiper-slide {
+						&:first-child {
+							&::after {
+								width: 72px;
+								height: 106px;
+								background: url(../../static/images/img/laboratory_national_illust_1_1.png) no-repeat;
+							}
+						}
+						&:nth-child(2) {
+							&::after {
+								width: 130px;
+								height: 109px;
+								background: url(../../static/images/img/laboratory_national_illust_1_2.png) no-repeat;
+							}
+						}
+						&:nth-child(3) {
+							&::after {
+								width: 138px;
+								height: 100px;
+								background: url(../../static/images/img/laboratory_national_illust_1_3.png) no-repeat;
+							}
+						}
+						&:nth-child(4) {
+							&::after {
+								width: 130px;
+								height: 94px;
+								background: url(../../static/images/img/laboratory_national_illust_1_4.png) no-repeat;
+							}
+						}
+					}
+				}
+				&.type-2 {
+					.swiper-wrapper {
+						.swiper-slide {
+							.step-num {
+								background: var(--Primary-01, #006477);
+							}
+							&:nth-child(2) {
+								&::after {
+									width: 150px;
+									height: 108px;
+									background: url(../../static/images/img/laboratory_national_illust_2_2.png) no-repeat;
+								}
+							}
+							&.wd-100 {
+								width: 100% !important;
+								height: 142px;
+								align-items: flex-start;
+								.txt {
+									width: 50%;
+								}
+								&::after {
+									width: 150px;
+									height: 108px;
+									background: url(../../static/images/img/laboratory_national_illust_2_2.png) no-repeat;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.noti-info {
+			margin-bottom: 100px;
+			.top {
+				padding: 17px 20px;
+				.noti-tit {
+					padding-left: 0;
+					margin-bottom: 0;
+					&::before {
+						display: none;
+					}
+				}
+			}
+			.dot-list {
+				li {
+					width: 100%;
+					span {
+						display: block;
+						width: 100%;
+						margin-top: 10px;
+						color: var(--gray-01, #666);
+						font-size: 14px;
+						font-weight: 500;
+						line-height: 150%;
+						letter-spacing: 0.28px;
+						margin-left: -2px;
+						position: relative;
+						&::before {
+							content: '-';
+							font-size: 14px;
+							color: var(--gray-01);
+							line-height: 150%;
+							position: absolute;
+							top: 0;
+							left: -13px;
+						}
+						& + span {
+							margin-top: 6px;
+						}
+					}
+				}
+			}
+			.bottom {
+				gap: 16px 0;
 			}
 		}
 	}
@@ -8334,6 +8556,9 @@ input {
 			&.padding-type-2 {
 				padding-bottom: 22px;
 			}
+			&.padding-type-3 {
+				padding-bottom: 24px;
+			}
 		}
 		.noti-1 {
 			font-size: 16px;
@@ -8342,6 +8567,10 @@ input {
 			&::after {
 				top: 9px;
 			}
+		}
+		.txt-1 {
+			font-size: 18px;
+			letter-spacing: 0.36px;
 		}
 	}
 	.common-table-1 {
@@ -12126,6 +12355,409 @@ input {
 			}
 		}
 	}
+	.tab-section {
+		margin-top: 60px;
+		.box-infoTop {
+			.tit {
+				font-size: 40px;
+				letter-spacing: 0.8px;
+				margin-bottom: 24px;
+				span {
+					font-size: 24px;
+					letter-spacing: 0.48px;
+				}
+			}
+			.info {
+				width: 71%;
+				padding: 0;
+			}
+			.noti {
+				margin-top: 24px;
+				font-size: 16px;
+				letter-spacing: 0.32px;
+				padding-left: 32px;
+				&::before {
+					content: '';
+					width: 24px;
+					height: 24px;
+				}
+			}
+		}
+	}
+	.tab-labSpecial {
+		margin-bottom: -120px;
+		.tit-img {
+			margin: 0 0 120px 0;
+			.img-holder {
+				width: 100%;
+				max-width: 1320px;
+				margin: 0 auto;
+				span {
+					padding-top: 65%;
+				}
+			}
+		}
+		.table-bg {
+			background: #f5f5f5;
+			padding: 80px 100px 120px;
+			.box-common-tabTableSwiper {
+				width: 100%;
+				max-width: 1400px;
+				margin: 0 auto;
+				position: relative;
+				.common-table-1 {
+					padding-bottom: 0;
+					margin: 0;
+					.swiper-slide {
+						width: 100% !important;
+						padding-right: 0;
+						table {
+							thead {
+								th {
+									padding: 24px 20px;
+								}
+							}
+							tbody {
+								td {
+									padding: 23.5px 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.common-btn-center {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.more-btn {
+				padding: 14px 38px;
+				font-size: 18px;
+				letter-spacing: 0.36px;
+			}
+		}
+		.step-info {
+			padding: 80px 0;
+			> h5 {
+				font-size: 40px;
+				letter-spacing: 0.8px;
+				margin-bottom: 80px;
+			}
+			.step-info-swiper {
+				padding-bottom: 60px;
+				.swiper-wrapper {
+					flex-wrap: nowrap;
+					gap: 0;
+					.swiper-slide {
+						width: 306px !important;
+						height: 480px;
+						padding: 60px 40px 0;
+						transition: 0.5s;
+						.step-num {
+							padding: 6px 20px;
+							font-size: 14px;
+							letter-spacing: 0.28px;
+						}
+						.txt {
+							font-size: 20px;
+							letter-spacing: 0.4px;
+							padding: 0;
+						}
+						.sub-txt {
+							font-size: 16px;
+							letter-spacing: 0.32px;
+						}
+						&:first-child {
+							&::after {
+								width: 278px;
+								height: 243px;
+							}
+						}
+						&:nth-child(2) {
+							&::after {
+								width: 244px;
+								height: 263px;
+							}
+						}
+						&:nth-child(3) {
+							&::after {
+								width: 244px;
+								height: 240px;
+							}
+						}
+						&:nth-child(4) {
+							&::after {
+								width: 240px;
+								height: 221px;
+							}
+						}
+						&:nth-child(5) {
+							&::after {
+								width: 208px;
+								height: 241px;
+							}
+						}
+						&:nth-child(6) {
+							&::after {
+								width: 239px;
+								height: 247px;
+							}
+						}
+						&:hover {
+							background: var(--Primary-01, #006477);
+							transform: translateY(-32px);
+							.txt {
+								color: #fff;
+							}
+							.sub-txt {
+								color: rgba(255,255,255,0.6);
+							}
+						}
+					}
+				}
+				.swiper-pagination-1 {
+					display: block;
+					bottom: -1px;
+					left: 50%;
+					transform: translateX(-50%);
+					top: auto;
+					width: 100%;
+					max-width: 440px;
+					height: 2px;
+					background: #D5D5D5;
+					.swiper-pagination-progressbar-fill {
+						background: var(--Primary-01, #006477);
+					}
+				}
+			}
+		}
+		.noti-info {
+			.top {
+				padding: 40px;
+				.noti-tit {
+					font-size: 28px;
+					line-height: 130%;
+					letter-spacing: 0.56px;
+					padding-left: 0;
+					margin-bottom: 20px;
+					&::before {
+						display: none;
+					}
+				}
+				.dot-list {
+					li {
+						font-size: 18px;
+					}
+				}
+			}
+			.bottom {
+				padding: 40px;
+				gap: 32px 0;
+				.noti-subtit {
+					font-size: 24px;
+					letter-spacing: 0.48px;
+					margin-bottom: 24px;
+					padding-left: 28px;
+					&::before {
+						width: 20px;
+						height: 20px;
+						top: 6px;
+					}
+				}
+			}
+			.dot-list {
+				li {
+					font-size: 16px;
+					letter-spacing: 0.32px;
+					&::before {
+						top: 10px;
+					}
+				}
+			}
+		}
+		.group-chart {
+			margin: 120px 0 0 0;
+			padding: 80px 20px 120px;
+			background: #f5f5f5;
+			> div {
+				width: 100%;
+				max-width: 1400px;
+				margin: 0 auto;
+				position: relative;
+			}
+			h5 {
+				font-size: 40px;
+				line-height: 130%;
+				letter-spacing: 0.8px;
+				margin-bottom: 46px;
+			}
+			.groupChart-top {
+				display: none;
+			}
+			.groupChart-acc {
+				display: none;
+			}
+			.groupChart-img {
+				display: block;
+				width: 100%;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		.bookingGuide-box {
+			padding: 80px 20px 120px;
+			h5 {
+				font-size: 40px;
+				letter-spacing: 0.8px;
+			}
+			.txt {
+				font-size: 20px;
+				letter-spacing: 0.4px;
+				margin: 24px 0 60px;
+			}
+			.info-list {
+				flex-direction: row;
+				gap: 40px;
+				li {
+					padding: 20px 0;
+					span,
+					a {
+						width: fit-content;
+						font-size: 18px;
+						letter-spacing: 0.36px;
+						padding-left: 56px;
+						&::before {
+							width: 24px;
+							height: 24px;
+						}
+						&::after {
+							left: 40px;
+						}
+					}
+				}
+			}
+		}
+		&.national {
+			.box-infoTop {
+				.tit {
+					margin-bottom: 19px;
+				}
+				.info {
+					width: 100%;
+				}
+			}
+			.tit-img {
+				margin: 0 0 80px 0;
+				.img-holder {
+					max-width: 1172px;
+				}
+			}
+			.table-bg {
+				.box-common-tabTableSwiper {
+					.common-table-1 {
+						margin: 47px 0 24px 0;
+						table {
+							thead {
+								th {
+									padding: 23px 20px;
+								}
+							}
+							tbody {
+								td {
+									padding: 11.5px 20px;
+								}
+							}
+						}
+					}
+					.table-noti {
+						font-size: 18px;
+						letter-spacing: 0.36px;
+					}
+				}
+			}
+			.step-info {
+				h5 {
+					margin-bottom: 49px;
+				}
+				.common-tab {
+					&.type-2 {
+						ul {
+							li {
+								.btn {
+									height: 47px;
+									letter-spacing: 0.36px;
+								}
+							}
+						}
+					}
+					& + .tab-section {
+						margin-top: 56px;
+					}
+				}
+				.step-info-swiper {
+					.swiper-wrapper {
+						.swiper-slide {
+							width: 440px !important;
+							&:first-child {
+								&::after {
+									width: 172px;
+									height: 254px;
+								}
+							}
+							&:nth-child(2) {
+								&::after {
+									width: 308px;
+									height: 260px;
+								}
+							}
+							&:nth-child(3) {
+								&::after {
+									width: 360px;
+									height: 259px;
+								}
+							}
+							&:nth-child(4) {
+								&::after {
+									width: 360px;
+									height: 259px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.noti-info {
+				margin-bottom: 120px;
+				.top {
+					padding: 40px;
+				}
+				.dot-list {
+					margin-top: -6px;
+					li {
+						span {
+							font-size: 16px;
+							letter-spacing: 0.32px;
+						}
+					}
+				}
+				.bottom {
+					gap: 28px 0;
+					.noti-subtit {
+						margin-bottom: 31px;
+					}
+				}
+			}
+			.bookingGuide-box {
+				.txt {
+					margin: 24px 0 57px;
+				}
+			}
+		}
+	}
 
 	// 임상연구 > 임상연구 검사 > 임상연구 개요
 	.box-reser {
@@ -13178,9 +13810,8 @@ input {
 /* //1300 이상 */
 
 /* 1600 이상 */
-@media all and (min-width: 1600px) {
+@media all and (min-width:1600px){
 	.box-listValue {
-		// Step. 1 ~ 6번 디바이스 1024px ~ 1600px 이하 나중에 대응 해야 함.
 		> ul {
 			display: flex;
 			flex-wrap: wrap;
@@ -13201,18 +13832,18 @@ input {
 				}
 				&:nth-child(4) {
 					order: 6;
-					margin-bottom: 0;
+					margin-bottom:0;
 					&::after {
 						display: none;
 					}
 				}
 				&:nth-child(5) {
 					order: 5;
-					margin-bottom: 0;
+					margin-bottom:0;
 				}
 				&:nth-child(6) {
 					order: 4;
-					margin-bottom: 0;
+					margin-bottom:0;
 				}
 				&:nth-child(4),
 				&:nth-child(5) {
