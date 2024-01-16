@@ -55,18 +55,355 @@
       <div class="inner-gap-1">
         <!-- common-tab -->
         <div class="common-tab type-4">
-          <div class="swiper-container snbSwiper" data-event="commonTab">
+          <div class="swiper-container snbSwiper" data-event="tabMenu">
             <ul class="list swiper-wrapper">
-              <li class="swiper-slide is-active" data-index="0"><span class="btn">2020-NOW</span></li>
-              <li class="swiper-slide" data-index="1"><span class="btn">2010-2019</span></li>
-              <li class="swiper-slide" data-index="2"><span class="btn">2000-2009</span></li>
-              <li class="swiper-slide" data-index="3"><span class="btn">1980-1999</span></li>
+              <li class="swiper-slide is-active" data-tab="0"><span class="btn">혈액 (Blood)</span></li>
+              <li class="swiper-slide" data-tab="1"><span class="btn">소변 (Urine)</span></li>
+              <li class="swiper-slide" data-tab="2"><span class="btn">대변 (Stool)</span></li>
+              <li class="swiper-slide" data-tab="3"><span class="btn">뇌척수액 및 기타채액</span></li>
             </ul>
           </div>
         </div>
         <!-- //common-tab -->
-
       </div>
+      <!-- tab-section -->
+      <div class="tab-section" data-event="tabMenu-section">
+        <div class="tab-item is-active" data-section="0">
+          <div class="inner-gap-1">
+            <!-- box-infoTop -->
+            <div class="box-infoTop">
+              <p class="tit">채혈 시기</p>
+              <div class="info">
+                <p class="txt">혈액성분은 운동, 식사, 정신적 스트레스 등에 의해 영향을 받는 경우가 많아 채혈은 일반적으로 아침 공복 시에 하는 것을 원칙으로 합니다. <br>그러나 부득이한 경우에는 적어도 식후 2시간 이후에 하도록 합니다. 격렬한 운동 후에는 휴식을 취하고 채혈을 하며, 동일한 환자가 같은 검사를 반복하는 경우에는 같은 시각과 같은 조건 하에서 채혈하는 것을 권장합니다.</p>
+              </div>
+            </div>
+            <!-- //box-infoTop -->
+            <!-- box-common-tabTableSwiper -->
+            <div class="box-common-tabTableSwiper r-20 blood-table">
+              <div class="inner">
+                <h5>검사결과에 영향을 미치는 생리적 요인</h5>
+                <h6>일중변동</h6>
+                <!-- common-table-1 -->
+                <div class="swiper-container common-table-1 type-a">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <table>
+                        <colgroup>
+                          <col style="width: 180px;">
+                          <col>
+                          <col>
+                          <col>
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>아침에 높음</th>
+                            <th>밤에 높음</th>
+                            <th>밤에 낮음</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align: center;">검사항목</td>
+                            <td style="text-align: center;">ACTH, Aldosterone, Cortisol, Iron(Fe), Prolactin</td>
+                            <td style="text-align: center;">Acid Phosphatase, Growth hormone, Prolactin</td>
+                            <td style="text-align: center;">ACTH, Aldosterone, Cortisol, Insulin, Plasma rennin activity</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination-1"></div>
+                </div>
+                <!-- //common-table-1 -->
+                <h6>운동</h6>
+                <!-- common-table-1 -->
+                <div class="swiper-container common-table-1 type-b">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <table>
+                        <colgroup>
+                          <col style="width: 180px;">
+                          <col style="width: 30%;">
+                          <col style="width: 30%;">
+                          <col style="width: 28%;">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>일시적 영향</th>
+                            <th>지속적 영향</th>
+                            <th>장기간 운동 시</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align: center;">검사항목</td>
+                            <td style="text-align: center;">
+                              <p class="graph"><span class="up"></span>AST, CK, Free fatty acid, Lactate, LDH, T4</p>
+                              <p><span class="color">활성화</span> : 혈액응고, 혈소판 섬유소용해</p>
+                            </td>
+                            <td style="text-align: center;">
+                              <p class="graph"><span class="up"></span>Aldolase, AST, CK, LDH</p>
+                            </td>
+                            <td style="text-align: left;">
+                              <div class="two-line">
+                                <p class="left">장거리 유산소 : </p><p class="graph"><span class="down"></span>ALT, AST, CK, LDH</p>
+                              </div>
+                              <div class="two-line">
+                                <p class="left">장거리 육상선수 : </p>
+                                <div class="col">
+                                  <p class="graph"><span class="up"></span>Prolactin</p>
+                                  <p class="graph"><span class="down"></span>성선자극호르몬, <br>성스테로이드 호르몬</p>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination-1"></div>
+                </div>
+                <!-- //common-table-1 -->
+                <h6>식이</h6>
+                <!-- common-table-1 -->
+                <div class="swiper-container common-table-1 type-c">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <table>
+                        <colgroup>
+                          <col style="width: 240px;">
+                          <col>
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th rowspan="2">식이</th>
+                            <th colspan="2">영향</th>
+                          </tr>
+                          <tr>
+                            <th><p>증가<span class="up"></span></p></th>
+                            <th><p>감소<span class="down"></span></p></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>식후</td>
+                            <td>Glucose, Triglyceride(TG)</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>금식</td>
+                            <td>Bilirubin</td>
+                            <td>Glucose</td>
+                          </tr>
+                          <tr>
+                            <td>오랜 채식</td>
+                            <td>-</td>
+                            <td>Cholesterol, LDL, VLDL, 총 지질, Phospholipid, Triglyceride(TG)</td>
+                          </tr>
+                          <tr>
+                            <td>고단백, 저탄수화물</td>
+                            <td>소변 케톤, 혈청 BUN</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>카페인 섭취</td>
+                            <td>Free fatty acid, Gastrin 소변 내 적혈구, Ca, Mg, Na, K</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>알코올 섭취</td>
+                            <td>Lactate, Triglyceride(TG), Urate</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>만성 알코올 중독</td>
+                            <td>HDL, MCV, Urate</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>비만</td>
+                            <td>Cortisol, Glucose, LDH</td>
+                            <td>-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination-1"></div>
+                </div>
+                <!-- //common-table-1 -->
+              </div>
+            </div>
+            <!-- //box-common-tabTableSwiper -->
+          </div>
+          <!-- blood-ready -->
+          <div class="blood-ready">
+            <div>
+              <h5>채혈 준비</h5>
+              <div class="info-box">
+                <div class="box">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/img/blood_ready_1.png">
+                    </span>
+                  </div>
+                  <div class="text-box">
+                    <p class="num">01.</p>
+                    <p class="tit">검사항목에 적합한 검체용기를 준비합니다.</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/img/blood_ready_2.png">
+                    </span>
+                  </div>
+                  <div class="text-box">
+                    <p class="num">02.</p>
+                    <p class="tit">여러 종목의 검사(전혈, 혈청, 혈장 등 사용)를 위하여 동시에 채혈할 때는 채혈량을 미리 계산해두어야 합니다.</p>
+                    <ul class="dot-list">
+                      <li>채혈량</li>
+                      <li class="not-dot">= Blood양 (전혈 검체인 경우)</li>
+                      <li class="not-dot">= Serum양 x 3.0배 이상 (혈청 검체인 경우)]</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/img/blood_ready_3.png">
+                    </span>
+                  </div>
+                  <div class="text-box">
+                    <p class="num">03.</p>
+                    <p class="tit">정해진 용기에 각각 분주해야 하며, 미량의 혈청이 필요한 경우에도 한 용기당최소 2-3mL의 혈액을 넣어야 합니다.</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/img/blood_ready_4.png">
+                    </span>
+                  </div>
+                  <div class="text-box">
+                    <p class="num">04.</p>
+                    <p class="tit">검체 용기에 환자 정보 확인이 가능하도록 표기하고 바코드를 부착합니다.</p>
+                    <ul class="dot-list">
+                      <li>검체용기에는 적어도 2개의 식별자 (이름, 등록번호 등)가 표시되어야 합니다.</li>
+                      <li>환자 정보와 바코드 정보를 확인 후 검체용기에 바코드가 떨어지지 않도록 완전 밀착하여 부착합니다.</li>
+                      <li>손상된 바코드는 자동화 장비로 분석이 어려우므로 사용하지 않습니다.</li>
+                      <li>검체가 2개 이상인 경우 바코드를 검체 수만큼 출력하여 각각의 검체용기에 바코드를 부착해야 합니다.</li>
+                      <li>채취부위 또는 채취 시간이 다른 동일 종류의 검체로 동일 종목의 검사를 의뢰할 경우에는 각각 서로 다른 바코드를 부착해야 합니다. 바코드가 동일하면 각각 독립된 작업번호가 부여되지 않아 제대로 검사가 진행 될 수 없습니다.</li>
+                      <li>튜브 형태의 검체용기는 바코드 리더기가 읽기 용이하도록 세로 형식으로 부착하며, 검체 상태와 검체량 확인이 가능하도록 바코드를 부착합니다.</li>
+                      <li>채혈하고자 하는 환자와 부착된 검체 바코드의 환자 이름, 병원 등록번호 등을 비교하여 다시 한번 확인 후 채혈을 합니다.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //blood-ready -->
+          <div class="how-attachment">
+            <div>
+              <h5>올바른 바코드 부착법</h5>
+              <div class="how-box">
+                <div class="box">
+                  <p class="tit bad">부적합한 바코드 부착</p>
+                  <ul class="dot-list">
+                    <li>바코드를 하단에 부착하는 경우 내용물이 보이지 않습니다.</li>
+                    <li>다수의 바코드를 부착할 때는 각각의 용기에 하나씩 부착합니다.</li>
+                    <li>다수의 바코드를 부착할 때 하나의 바코드로 용기를 묶지 않습니다.</li>
+                  </ul>
+                  <div class="img-wrap">
+                    <div class="img">
+                      <img src="../static/images/img/attachment_img_1_1.png">
+                    </div>
+                    <div class="img">
+                      <img src="../static/images/img/attachment_img_1_2.png">
+                    </div>
+                    <div class="img">
+                      <img src="../static/images/img/attachment_img_1_3.png">
+                    </div>
+                    <div class="img">
+                      <img src="../static/images/img/attachment_img_1_4.png">
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <p class="tit good">올바른 바코드 부착</p>
+                  <ul class="dot-list">
+                    <li>용기에 한 개의 바코드를 부착할 때는 세로로 윗 쪽에 부착합니다.</li>
+                    <li>다수의 바코드를 부착할 때는 각각의 용기에 하나씩 부착합니다.</li>
+                  </ul>
+                  <div class="img-wrap">
+                    <div class="img">
+                      <img src="../static/images/img/attachment_img_2_1.png">
+                    </div>
+                    <div class="img">
+                      <img src="../static/images/img/attachment_img_2_2.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-gap-1">
+            <div class="how-blood">
+              <h5>채혈 방법</h5>
+              <p class="txt">미세한 응고와 용혈방지를 위해 일반주사기 보다는 진공채혈관으로 채혈을 권장합니다. 모든 혈액검체는 채혈 후 즉시 검사실에 운반하여 바로 검사하거나 혈청분리 후 검사에 따라 적합한 조건으로 보관합니다. 채혈 후 튜브를 필히 8~10회 inverting하여 항응고제와 혼합되도록 합니다.</p>
+              <div class="how-box">
+                <p class="noti-tit"><span>연속 채혈 시</span>권장 채취 순서</p> 
+                <div class="box">
+                  <p class="step-num">Step. 01</p>
+                  <p class="tit">혈액배양 용기</p>
+                </div>
+                <div class="box">
+                  <p class="step-num">Step. 02</p>
+                  <p class="tit">Sodium-citrate tube</p>
+                </div>
+                <div class="box">
+                  <p class="step-num">Step. 03</p>
+                  <p class="tit">SST</p>
+                </div>
+                <div class="box">
+                  <p class="step-num">Step. 04</p>
+                  <p class="tit">Heparin tube</p>
+                </div>
+                <div class="box">
+                  <p class="step-num">Step. 05</p>
+                  <p class="tit">EDTA tube</p>
+                </div>
+                <div class="box">
+                  <p class="step-num">Step. 06</p>
+                  <p class="tit">NaF tube</p>
+                </div>
+              </div>
+              <div class="noti-item">
+                <div class="item">
+                  <p class="noti-tit"><span>용혈(Hemolysis)</span> 방지를 위한 주의사항</p>
+                  <ul class="dot-list">
+                    <li>채혈용 주사바늘(needle)은 21gauge가 권장되며 매우 천천히 채혈합니다.</li>
+                    <li>혈액이 잘 나오지 않는다고 하여 짜지 않도록 합니다.</li>
+                    <li>일반 주사기로 채혈한 경우, 채혈 후 주사바늘(needle)을 제거하고 검사용기의 기벽을 따라 천천히 흘려서 담아주어야 합니다.</li>
+                    <li>항응고제가 들어있는 검체용기는 천천히 전도혼합하여 보관해주시기 바랍니다.</li>
+                  </ul>
+                </div>
+                <div class="item">
+                  <p class="noti-tit"><span>응고(Clot)</span> 방지를 위한 주의사항</p>
+                  <ul class="dot-list">
+                    <li>적합한 항응고제와 혈액량의 비율을 위해 용기의 권장 채혈량을 준수해주십시오. 적합하지 않으면 microclot이 발생할 수 있습니다.</li>
+                    <li>항응고제와 혈액이 충분히 혼합되지 않을 경우,<br>혈액학적 검사 시 부분 응고로 인해 부정확한 결과를 초래할 수 있습니다.</li>
+                    <li>채혈 후 가능한 빠른 시간 내에 의뢰해주시기 바랍니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //tab-section -->
     </div>
     <!-- //inner-wrap -->
   </div>
@@ -85,7 +422,7 @@
 
   <!-- swiper.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script src="../static/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
   <!-- //swiper.js -->
 
   <script>
@@ -98,8 +435,9 @@
       bg: "transparent"
     })
     selectBox.initialize();
+    tabSection.initialize();
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper1 = new Swiper('.snbSwiper', {
       slidesPerView: 'auto',
       breakpoints: {
         1024: {
@@ -108,13 +446,79 @@
       },
     });
 
-    document.querySelectorAll('.swiper-container > ul > li').forEach((item) => {
+    document.querySelectorAll('.snbSwiper > ul > li').forEach((item) => {
       item.addEventListener('click', (e) => {
-        swiper.slideTo(e.currentTarget.getAttribute('data-index'));
+        swiper.slideTo(e.currentTarget.getAttribute('data-tab'));
       });
     });
 
-    
+    var $snbSwiperItem1 = $('.snbSwiper .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem1.click(function () {
+      var target1 = $(this).parent();
+      $snbSwiperItem1.parent().removeClass('is-active');
+      target1.addClass('is-active');
+    })
+
+    // table scroll
+    var swiper2 = new Swiper('.type-a', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      spaceBetween: 12,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".type-a .swiper-pagination-1",
+        type: "progressbar",
+      },
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 12,
+        },
+      },
+    });
+
+    var swiper2 = new Swiper('.type-b', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      spaceBetween: 12,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".type-b .swiper-pagination-1",
+        type: "progressbar",
+      },
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 12,
+        },
+      },
+    });
+
+    var swiper3 = new Swiper('.type-c', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      spaceBetween: 12,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".type-c .swiper-pagination-1",
+        type: "progressbar",
+      },
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 12,
+        },
+      },
+    });
   </script>
 
 </body>
