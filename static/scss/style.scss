@@ -7175,13 +7175,23 @@ input {
 								width: 100% !important;
 								height: 142px;
 								align-items: flex-start;
+								padding-top: 12px;
+								> div {
+									width: 55%;
+									display: flex;
+									flex-direction: column;
+									align-items: center;
+								}
 								.txt {
-									width: 50%;
+									padding: 0;
 								}
 								&::after {
-									width: 150px;
+									width: 152px;
 									height: 108px;
-									background: url(../../static/images/img/laboratory_national_illust_2_2.png) no-repeat;
+									left: auto;
+									right: 0;
+									transform: translateX(0);
+									background: url(../../static/images/img/laboratory_national_illust_2_3.png) no-repeat;
 								}
 							}
 						}
@@ -12415,6 +12425,7 @@ input {
 							thead {
 								th {
 									padding: 24px 20px;
+									border-bottom: 1px solid #666;
 								}
 							}
 							tbody {
@@ -12724,6 +12735,46 @@ input {
 								&::after {
 									width: 360px;
 									height: 259px;
+								}
+							}
+						}
+					}
+					&.type-2 {
+						.swiper-wrapper {
+							gap: 40px;
+							.swiper-slide {
+								width: calc(33.3% - 27px) !important;
+								padding: 60px 32px 0;
+								.txt {
+									z-index: 1;
+								}
+								&:nth-child(2) {
+									&::after {
+										width: 360px;
+										height: 259px;
+									}
+								}
+								&.wd-100 {
+									width: calc(33.3% - 27px) !important;
+									height: 480px;
+									align-items: center;
+									padding-top: 60px;
+									> div {
+										width: 100%;
+									}
+									&::after {
+										width: 360px;
+										height: 259px;
+										left: 50%;
+										right: auto;
+										transform: translateX(-50%);
+									}
+								}
+								&:hover {
+									.step-num {
+										background: #fff;
+										color: #006477;
+									}
 								}
 							}
 						}

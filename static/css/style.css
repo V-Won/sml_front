@@ -6480,14 +6480,24 @@ input {
   width: 100% !important;
   height: 142px;
   align-items: flex-start;
+  padding-top: 12px;
+}
+.tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide.wd-100 > div {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide.wd-100 .txt {
-  width: 50%;
+  padding: 0;
 }
 .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide.wd-100::after {
-  width: 150px;
+  width: 152px;
   height: 108px;
-  background: url(../../static/images/img/laboratory_national_illust_2_2.png) no-repeat;
+  left: auto;
+  right: 0;
+  transform: translateX(0);
+  background: url(../../static/images/img/laboratory_national_illust_2_3.png) no-repeat;
 }
 .tab-labSpecial.national .noti-info {
   margin-bottom: 100px;
@@ -10820,6 +10830,7 @@ input {
   }
   .tab-labSpecial .table-bg .box-common-tabTableSwiper .common-table-1 .swiper-slide table thead th {
     padding: 24px 20px;
+    border-bottom: 1px solid #666;
   }
   .tab-labSpecial .table-bg .box-common-tabTableSwiper .common-table-1 .swiper-slide table tbody td {
     padding: 23.5px 20px;
@@ -11075,6 +11086,40 @@ input {
   .tab-labSpecial.national .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(4)::after {
     width: 360px;
     height: 259px;
+  }
+  .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper {
+    gap: 40px;
+  }
+  .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide {
+    width: calc(33.3% - 27px) !important;
+    padding: 60px 32px 0;
+  }
+  .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide .txt {
+    z-index: 1;
+  }
+  .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide:nth-child(2)::after {
+    width: 360px;
+    height: 259px;
+  }
+  .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide.wd-100 {
+    width: calc(33.3% - 27px) !important;
+    height: 480px;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide.wd-100 > div {
+    width: 100%;
+  }
+  .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide.wd-100::after {
+    width: 360px;
+    height: 259px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+  .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide:hover .step-num {
+    background: #fff;
+    color: #006477;
   }
   .tab-labSpecial.national .noti-info {
     margin-bottom: 120px;
