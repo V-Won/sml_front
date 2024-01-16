@@ -1756,6 +1756,24 @@ input {
 			right: 0;
 		}
 	}
+	&.type-2 {
+		height: 32px;
+		border: 1px solid #006477;
+		background: #fff;
+		padding: 8px 18px;
+		color: #006477;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.24px;
+		span {
+			&::after {
+				width: 14px;
+				height: 14px;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M7.0026 2.33594L6.1801 3.15844L9.4351 6.41927H2.33594V7.58594H9.4351L6.1801 10.8468L7.0026 11.6693L11.6693 7.0026L7.0026 2.33594Z' fill='%23006477'/%3E%3C/svg%3E");
+			}
+		}
+	}
 }
 
 // 공통 다운로드 버튼
@@ -8382,6 +8400,7 @@ input {
 .request-step-top {
 	width: 100%;
 	position: relative;
+	margin-bottom: 100px;
 	> h5 {
 		color: var(--Primary-04, #4D4D4D);
 		font-size: 20px;
@@ -8408,6 +8427,7 @@ input {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			transition: 0.3s;
 			.step-num {
 				width: fit-content;
 				padding: 4px 10px;
@@ -8428,6 +8448,192 @@ input {
 				font-weight: 600;
 				line-height: 130%;
 				letter-spacing: 0.28px;
+			}
+			&::before {
+				content: '';
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				bottom: 30px;
+				left: 50%;
+				transform: translateX(-50%);
+				background-position: center !important;
+				background-size: cover !important;
+			}
+			&.is-active {
+				background: linear-gradient(294deg, rgba(69, 0, 138, 0.12) -3.94%, rgba(13, 147, 204, 0.12) 43.65%), linear-gradient(0deg, rgba(168, 205, 222, 0.40) 0%, rgba(168, 205, 222, 0.40) 100%), #006477;
+				border-color: transparent;
+				.step-num {
+					background: #fff;
+					color: #4D4D4D;
+				}
+				.tit {
+					color: #fff;
+				}
+			}
+			&:first-child {
+				&::before {
+					background: url(../../static/images/icon/request_step_icon_1.svg) no-repeat;
+				}
+				&.is-active {
+					&::before {
+						background: url(../../static/images/icon/request_step_icon_1_on.svg) no-repeat;
+					}
+				}
+			}
+			&:nth-child(2) {
+				&::before {
+					background: url(../../static/images/icon/request_step_icon_2.svg) no-repeat;
+				}
+				&.is-active {
+					&::before {
+						background: url(../../static/images/icon/request_step_icon_2_on.svg) no-repeat;
+					}
+				}
+			}
+			&:nth-child(3) {
+				&::before {
+					background: url(../../static/images/icon/request_step_icon_3.svg) no-repeat;
+				}
+				&.is-active {
+					&::before {
+						background: url(../../static/images/icon/request_step_icon_3_on.svg) no-repeat;
+					}
+				}
+			}
+			&:nth-child(4) {
+				&::before {
+					background: url(../../static/images/icon/request_step_icon_4.svg) no-repeat;
+				}
+				&.is-active {
+					&::before {
+						background: url(../../static/images/icon/request_step_icon_4_on.svg) no-repeat;
+					}
+				}
+			}
+			&:nth-child(5) {
+				&::before {
+					background: url(../../static/images/icon/request_step_icon_5.svg) no-repeat;
+				}
+				&.is-active {
+					&::before {
+						background: url(../../static/images/icon/request_step_icon_5_on.svg) no-repeat;
+					}
+				}
+			}
+			&:nth-child(6) {
+				&::before {
+					background: url(../../static/images/icon/request_step_icon_6.svg) no-repeat;
+				}
+				&.is-active {
+					&::before {
+						background: url(../../static/images/icon/request_step_icon_6_on.svg) no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
+.request-step-bottom {
+	width: 100%;
+	position: relative;
+	padding: 60px 20px 100px;
+	background: url(../../static/images/bg/bg_request_step.png) no-repeat;
+	background-position: center !important;
+	background-size: cover !important;
+	margin-bottom: -100px;
+	> div {
+		width: 100%;
+		position: relative;
+		max-width: 1400px;
+		margin: 0 auto;
+		h5 {
+			color: var(--Primary-04, #4D4D4D);
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 130%;
+			letter-spacing: 0.4px;
+			margin-bottom: 20px;
+		}
+	}
+	.step-item {
+		width: 100%;
+		position: relative;
+		.item {
+			width: 100%;
+			position: relative;
+			border-radius: 12px;
+			background: linear-gradient(0deg, #FFF 0%, #FFF 100%), rgba(0, 0, 0, 0.60);
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 20px;
+			.text-box {
+				width: 100%;
+				position: relative;
+				.num {
+					color: var(--Primary-01, #006477);
+					font-size: 18px;
+					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.36px;
+					margin-bottom: 12px;
+				}
+				.tit {
+					color: var(--Primary-04, #4D4D4D);
+					font-size: 20px;
+					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.4px;
+				}
+				.dot-list {
+					width: 100%;
+					margin-top: 21px;
+					li {
+						width: 100%;
+						color: var(--gray-01, #666);
+						font-size: 14px;
+						font-weight: 500;
+						line-height: 150%;
+						letter-spacing: 0.28px;
+						padding-left: 12px;
+						position: relative;
+						& + li {
+							margin-top: 12px;
+						}
+						&::before {
+							content: '';
+							width: 4px;
+							height: 4px;
+							background: #006477;
+							border-radius: 50%;
+							position: absolute;
+							top: 9px;
+							left: 0;
+						}
+					}
+				}
+				.btn-flex {
+					width: 100%;
+					position: relative;
+					margin-top: 20px;
+					display: flex;
+					align-items: center;
+					flex-wrap: wrap;
+					gap: 12px;
+				}
+			}
+			.img-holder {
+				width: 100%;
+				border-radius: 12px;
+				overflow: hidden;
+				span {
+					padding-top: 47.2%;
+				}
+			}
+			& + .item {
+				margin-top: 20px;
 			}
 		}
 	}
@@ -8980,6 +9186,20 @@ input {
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center;
+			}
+		}
+		&.type-2 {
+			height: 34px;
+			padding: 7px 14px 7px 16px;
+			font-size: 14px;
+			letter-spacing: 0.28px;
+			border-radius: 999px;
+			span {
+				padding-right: 24px;
+				&::after {
+					width: 18px;
+					height: 18px;
+				}
 			}
 		}
 	}
@@ -14069,6 +14289,86 @@ input {
 		}
 	}
 
+	// 검사 안내 > 검사의뢰 절차
+	.request-step-top {
+		margin-bottom: 120px;
+		> h5 {
+			font-size: 40px;
+			letter-spacing: 0.8px;
+			margin-bottom: 48px;
+		}
+		.step-box {
+			gap: 40px;
+			.box {
+				// width: calc(16% - 31px);
+				width: calc(33.3% - 27px);
+				height: 260px;
+				.step-num {
+					padding: 6px 12px;
+					font-size: 14px;
+					letter-spacing: 0.28px;
+				}
+				.tit {
+					font-size: 20px;
+					letter-spacing: 0.4px;
+				}
+				&::before {
+					width: 60px;
+					height: 60px;
+				}
+			}
+		}
+	}
+	.request-step-bottom {
+		padding: 80px 100px 120px;
+		margin-bottom: -120px;
+		> div {
+			h5 {
+				font-size: 40px;
+				letter-spacing: 0.8px;
+				margin-bottom: 48px;
+			}
+		}
+		.step-item {
+			.item {
+				padding: 40px;
+				flex-direction: row;
+				gap: 40px;
+				.text-box {
+					.num {
+						font-size: 20px;
+						letter-spacing: 0.4px;
+					}
+					.tit {
+						font-size: 24px;
+						letter-spacing: 0.48px;
+					}
+					.dot-list {
+						margin-top: 24px;
+						li {
+							font-size: 16px;
+							letter-spacing: 0.32px;
+						}
+					}
+					.btn-flex {
+						margin-top: 40px;
+					}
+				}
+				.img-holder {
+					max-width: 480px;
+					span {
+						padding-top: 0;
+						width: 100%;
+						height: 227px;
+					}
+				}
+				& + .item {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+
 	// PC lang(en)
 	:lang(en) {
 		// 공통 header
@@ -14609,6 +14909,33 @@ input {
 							font-size: 24px;
 							letter-spacing: 0.48px;
 						}
+					}
+				}
+			}
+		}
+	}
+
+	.request-step-top {
+		.step-box {
+			.box {
+				width: calc(16.6% - 33px);
+				max-width: 200px;
+				&::after {
+					content: '';
+					width: 12px;
+					height: 18px;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' viewBox='0 0 12 16' fill='none'%3E%3Cpath d='M10.9333 7.2C11.4667 7.6 11.4667 8.4 10.9333 8.8L1.6 15.8C0.940766 16.2944 2.10797e-06 15.824 2.09815e-06 15L1.9312e-06 1C1.92137e-06 0.175955 0.940765 -0.294427 1.6 0.2L10.9333 7.2Z' fill='%2375C9DA'/%3E%3C/svg%3E");
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: -28px;
+				}
+				&:last-child {
+					&::after {
+						display: none;
 					}
 				}
 			}
