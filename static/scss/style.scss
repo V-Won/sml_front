@@ -3297,7 +3297,7 @@ input {
 		margin-top: 40px;
 		display: none;
 		&.is-active {
-			display: block;
+			display: block !important;
 		}
 	}
 }
@@ -9617,6 +9617,125 @@ input {
 	}
 }
 
+// 검사 안내 > 검사항목 별 주의사항
+.precautions-wrap {
+	h5 {
+		color: var(--Primary-04, #4D4D4D);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.4px;
+		margin-bottom: 20px;
+	}
+	.dot-list {
+		width: 100%;
+		position: relative;
+		li {
+			color: var(--gray-01, #666);
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 150%;
+			letter-spacing: 0.32px;
+			padding-left: 12px;
+			position: relative;
+			&::before {
+				content: "";
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background: #006477;
+				position: absolute;
+				top: 9px;
+				left: 0;
+			}
+			& + li {
+				margin-top: 12px;
+			}
+			span {
+				color: var(--gray-02, #999);
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 150%;
+				letter-spacing: 0.32px;
+			}
+		}
+	}
+	.white-box {
+		width: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		.box {
+			width: 100%;
+			position: relative;
+			padding: 40px 24px;
+			border-radius: 6px;
+			border: 1px solid var(--gray-03-line, #D5D5D5);
+			background: var(--Primary-05, #FFF);
+			.img-box {
+				width: 100%;
+				position: relative;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+				&.ct-box {
+					height: 100px;
+				}
+			}
+			.tit {
+				color: var(--Primary-04, #4D4D4D);
+				text-align: center;
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.36px;
+				margin: 24px 0 16px;
+			}
+			&.flex {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+	.mint-noti {
+		color: #48ADC2;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 150%;
+		letter-spacing: 0.32px;
+		margin-bottom: 20px;
+		padding-left: 26px;
+		position: relative;
+		&::before {
+			content: "";
+			width: 18px;
+			height: 18px;
+			background-size: cover !important;
+			background-position: center !important;
+		}
+	}
+	.ct-orderStep {
+		width: 100%;
+		position: relative;
+		padding: 60px 20px 100px;
+		background: url(../../static/images/bg/precautions_bg_type1.png) no-repeat;
+		background-size: cover !important;
+		background-position: center !important;
+		margin: 100px 0 60px;
+		> div {
+			width: 100%;
+			position: relative;
+			max-width: 1400px;
+			margin: 0 auto;
+		}
+	}
+}
+
 // 재단안내 > 경영이념 > 미션과 핵심가치
 .box-altus {
 	background-image: url(../images/bg/bg_altus.jpg);
@@ -14892,7 +15011,7 @@ input {
 				}
 			}
 			.info {
-				width: 71%;
+				width: 100%;
 				padding: 0;
 			}
 			.noti {

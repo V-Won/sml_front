@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>삼광의료재단</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+
+      <!-- sub-top -->
+      <div class="sub-top" style="background: url(../static/images/@/sub_top_B.png) no-repeat; background-position: 40%">
+        <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">검사안내</a>
+              </li>
+              <li>
+                <a href="#none">검체채취 안내</a> 
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">검체채취 방법</a>
+                <ul class="list">
+                  <!-- hover시 font-weight 문제로 title 사용 -->
+                  <li><a href="#none" title="검체채취 방법">검체채취 방법</a></li>
+                  <li><a href="#none" title="검사항목 별 주의사항">검사항목 별 주의사항</a></li>
+                  <li><a href="#none" title="검체용기 일람">검체용기 일람</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">검체채취 방법</h3>
+          </div>
+        </div>
+      </div>
+      <!-- //sub-top -->
+
+      <div class="inner-gap-1">
+        <!-- Tab -->
+        <div class="common-tab type-4">
+          <div class="swiper-container snbSwiper" data-event="commonTab">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide is-active" data-index="0"><span class="btn">진단면역검사</span></li>
+              <li class="swiper-slide" data-index="1"><span class="btn">선천성 대사이상검사</span></li>
+              <li class="swiper-slide" data-index="2"><span class="btn">세포유전검사</span></li>
+              <li class="swiper-slide" data-index="3"><span class="btn">분자진단검사</span></li>
+              <li class="swiper-slide" data-index="4"><span class="btn">진단미생물검사</span></li>
+              <li class="swiper-slide" data-index="5"><span class="btn">세포병리검사</span></li>
+              <li class="swiper-slide" data-index="6"><span class="btn">조직병리검사</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //Tab -->
+      </div>
+      <!-- tab-section -->
+      <div class="tab-section precautions-wrap">
+        <div class="tab-item" data-section="0">
+          <div class="inner-gap-1">
+            <!-- common-tab -->
+            <div class="common-tab type-2 page-1" data-click="tab-type-1">
+              <div class="swiper-container snbSwiper type-2 page-1">
+                <ul class="list swiper-wrapper">
+                  <li data-tab="0" class="swiper-slide is-active"><span class="btn">결핵균 특이항원 자극 인터페론-감마검사</span></li>
+                  <li data-tab="1" class="swiper-slide"><span class="btn">NK 세포 활성도 검사</span></li>
+                  <li data-tab="2" class="swiper-slide"><span class="btn">알츠하이머병 위험도 혈액검사 (OAβ) (AlzOn)</span></li>
+                </ul>
+              </div>
+            </div>
+            <!-- //common-tab -->
+          </div>
+          <!-- tab-section -->
+          <div class="tab-section page-1">
+            <div class="tab-item is-active" data-tabSection="0">
+              <div class="inner-gap-1">
+                <!-- box-infoTop -->
+                <div class="box-infoTop flex-info fluid">
+                  <div class="info">
+                    <div class="box">
+                      <p class="tit">채취방법</p>
+                      <ul class="order-num">
+                        <li>용기는 냉장보관하였다가 채혈하기 1시간 전 용기를 실온에 두어 냉기를 가시게 합니다.</li>
+                        <li>채혈은 검체 수거 당일 오전 10시 이후에 합니다.</li>
+                        <li>채혈 후 즉시 용기 안의 시약과 잘 혼합되도록 상하로 shaking합니다.</li>
+                        <li>용기 내 TB 항원과 혈액을 잘 혼합해주어야 T-cell로부터 IFN-γ의 분비가 원활히 이뤄집니다. <br class="pc-show">혼합이 잘 이뤄지지 않으면 반응이 낮아 부정확한 결과가 나올 수 있습니다.</li>
+                        <li>의뢰서 환자정보와 채혈시간을 기입합니다.</li>
+                        <li>채혈된 전용용기는 실온상태로 세워 16시간 안에 검사실에 도착해야합니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- //box-infoTop -->
+              </div>
+              <div class="ct-orderStep">
+                <div>
+                  <h5>전용용기 채취 순서</h5>
+                  <div class="white-box">
+                    <div class="box flex">
+                      <div class="img-box ct-box">
+                        <img src="../static/images/img/ct_orderStep_1.png" class="pc-show">
+                        <img src="../static/images/img/ct_orderStep_1_mo.png" class="mo-show">
+                      </div>
+                      <div class="text-box">
+                        <p class="tit">결핵균 특이항원 자극 인터페론-감마(QTB-plus) 검사의 경우</p>
+                        <ul class="dot-list">
+                          <li>4개의 전용용기와 검사의뢰서에 환자명, 채혈시간 기록합니다.</li>
+                          <li>채혈순서는 회색(Nil)→초록(TB-1 Ag) →노랑(TB-2 Ag) →보라(Mitogen) 순으로 각 1mL 채혈 즉시 상하로 10회Shaking합니다. <span>(검사코드 : 52389)</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="box flex">
+                      <div class="img-box ct-box">
+                        <img src="../static/images/img/ct_orderStep_2.png" class="pc-show">
+                        <img src="../static/images/img/ct_orderStep_2_mo.png" class="mo-show">
+                      </div>
+                      <div class="text-box">
+                        <p class="tit">결핵균 특이항원 자극 인터페론-감마 검사의 경우</p>
+                        <ul class="dot-list">
+                          <li>3개의 전용용기와 검사의뢰서에 환자명, 채혈시간 기록합니다.</li>
+                          <li>채혈순서는 회색(Nil)→빨강(TB Ag)→ 보라(Mitogen) 순으로 각 1mL 채혈 즉시 20회 정도 흔들거나 약 30초간 Shaking합니다. <span>(검사코드 : 52393)</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-gap-1">
+                <h5>취급 주의사항</h5>
+                <p class="mint-noti">다음 사항의 경우 검사가 불가능하오니 주의하여 주시기 바랍니다.</p>
+                <div class="white-step">
+                  <div class="step">
+                    <p class="num">01.</p>
+                    <p class="txt">채혈 후 16시간 안에 검사실에 도착하지 못한 검체 (오전 10시 이전에 채혈한 경우, 채혈한 후 당일 접수하지 못한 경우)</p>
+                  </div>
+                  <div class="step">
+                    <p class="num">02.</p>
+                    <p class="txt">검체용기 내 성분과 혼합되도록 용기를 충분히 흔들지 않은 경우</p>
+                  </div>
+                  <div class="step">
+                    <p class="num">03.</p>
+                    <p class="txt">채혈한 검체용기를 냉장/동결 보관한 경우</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item" data-tabSection="1">
+              
+            </div>
+            <div class="tab-item" data-tabSection="2">
+              
+            </div>
+          </div>
+          <!-- //tab-section -->  
+        </div>
+        <div class="tab-item" data-section="1">
+
+        </div>
+        <div class="tab-item" data-section="2">
+
+        </div>
+        <div class="tab-item" data-section="3">
+
+        </div>
+        <div class="tab-item" data-section="4">
+          <div class="inner-gap-1">
+            <!-- common-tab -->
+            <div class="common-tab type-2 page-4" data-click="tab-type-2">
+              <div class="swiper-container snbSwiper type-2 page-4">
+                <ul class="list swiper-wrapper">
+                  <li data-tab="0" class="swiper-slide is-active"><span class="btn">미생물 배양검사</span></li>
+                  <li data-tab="1" class="swiper-slide"><span class="btn">바이러스 배양검사</span></li>
+                </ul>
+              </div>
+            </div>
+            <!-- //common-tab -->
+            <!-- tab-section -->
+            <div class="tab-section page-4">
+              <div class="tab-item is-active" data-tabSection="0">
+                
+              </div>
+              <div class="tab-item" data-tabSection="1">
+                
+              </div>
+            </div>
+            <!-- //tab-section -->  
+          </div>
+        </div>
+        <div class="tab-item" data-section="5">
+
+        </div>
+        <div class="tab-item" data-section="6">
+
+        </div>
+      </div>
+      <!-- //tab-section -->
+    </div>
+    <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="../static/js/includeHTML.js"></script>
+  <script src="../static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <!-- swiper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
+  <!-- //swiper.js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "transparent"
+    })
+    selectBox.initialize();
+    commonTab.initialize();
+
+    var swiper1 = new Swiper('.type-4 .snbSwiper', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 0,
+        },
+      },
+    });
+
+    document.querySelectorAll('.type-4 .snbSwiper > ul > li').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        swiper1.slideTo(e.currentTarget.getAttribute('data-index'));
+      });
+    });
+
+    var $snbSwiperItem1 = $('.type-4 .snbSwiper .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem1.click(function () {
+      var target1 = $(this).parent();
+      $snbSwiperItem1.parent().removeClass('is-active');
+      target1.addClass('is-active');
+    })
+
+    // tab Click
+    let tg = document.querySelectorAll('.common-tab.type-4 li');
+
+    const hideEvent = () => {
+      document.querySelectorAll('.tab-section .tab-item').forEach((item) => {
+        item.style.display = 'none';
+      });
+    }
+
+    hideEvent();
+
+    document.querySelector('[data-section="0"]').style.display = 'block';
+
+    tg.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        let idx = e.currentTarget.getAttribute("data-index");
+
+        hideEvent();
+
+        document.querySelector('[data-section="' + idx + '"]').style.display = 'block';
+      });
+    })
+
+    window.onscroll = (e) => {
+      let windowTop = window.scrollY;
+
+      if ( windowTop > document.querySelector('.sub-top').offsetHeight ) {
+        document.querySelector('.common-tab.type-4').classList.add('fixed');
+      } else {
+        document.querySelector('.common-tab.type-4').classList.remove('fixed');
+      }
+    }
+
+    // 검사 항목별, 요 보존제 종류 Tab click
+    var swiper2 = new Swiper('.snbSwiper.page-1', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 0,
+        },
+      },
+    });
+
+    document.querySelectorAll('.snbSwiper.page-1 ul li').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        swiper2.slideTo(e.currentTarget.getAttribute('data-tab'));
+      });
+    });
+
+    let itemTab1 = document.querySelectorAll('[data-click="tab-type-1"] li').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        // common-tab
+        document.querySelectorAll('.common-tab.page-1 li').forEach((e) => {
+          e.classList.remove('is-active');
+        })
+        e.classList.add('is-active');
+
+        // tab-section
+        let idx = e.getAttribute('data-tab');
+        document.querySelectorAll('.tab-section.page-1 .tab-item').forEach((target) => {
+          target.classList.remove('is-active');
+        })
+        document.querySelector('[data-tabSection="' + idx + '"]').classList.add('is-active');
+      })
+    });
+
+    let itemTab2 = document.querySelectorAll('[data-click="tab-type-2"] li').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        // common-tab
+        document.querySelectorAll('.common-tab.page-4 li').forEach((e) => {
+          e.classList.remove('is-active');
+        })
+        e.classList.add('is-active');
+
+        // tab-section
+        let idx = e.getAttribute('data-tab');
+        document.querySelectorAll('.tab-section.page-4 .tab-item').forEach((target) => {
+          target.classList.remove('is-active');
+        })
+        document.querySelector('[data-tabSection="' + idx + '"]').classList.add('is-active');
+      })
+    });
+  </script>
+
+</body>
+
+</html>
