@@ -7500,6 +7500,14 @@ input {
   margin-top: -60px;
   padding-top: 20px;
 }
+.box-dusgur.remove-sticky {
+  margin-top: -19px;
+}
+.box-dusgur.remove-sticky .common-tab {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
 .box-dusgur .common-tab {
   position: sticky;
   top: 0;
@@ -8565,10 +8573,12 @@ input {
 }
 
 .box-list-map {
-  margin-top: 33px;
+  margin-top: 42px;
 }
 .box-list-map .inner .map {
   height: 240px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 .box-list-map .inner .text {
   display: flex;
@@ -13206,6 +13216,12 @@ input {
     margin-top: -78px;
     padding-top: 1px;
   }
+  .box-dusgur.remove-sticky .common-tab {
+    margin-top: 18px;
+  }
+  .box-dusgur.remove-sticky .common-tab ul li {
+    margin-right: 20px !important;
+  }
   .box-dusgur .common-tab {
     padding-bottom: 40px;
     padding-top: 134px;
@@ -13727,6 +13743,52 @@ input {
   .box-dlswotkd .inner ul li .text .text-2 {
     font-size: 18px;
     letter-spacing: 0.36px;
+  }
+  .box-list-map {
+    margin-top: 24px;
+  }
+  .box-list-map .inner {
+    position: relative;
+  }
+  .box-list-map .inner .map {
+    border-radius: 12px;
+    height: 680px;
+    border: 1px solid var(--gray-03-line, #d5d5d5);
+  }
+  .box-list-map .inner .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 12px;
+    border: 1px solid var(--gray-03-line, #d5d5d5);
+    background: #fcfcfc;
+    padding: 40px;
+    width: 449px;
+    gap: 16px;
+    margin-top: 0;
+    padding: 40px;
+  }
+  .box-list-map .inner .text .text-2 {
+    color: var(--gray-01, #666);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.36px;
+  }
+  .box-list-map .inner .text dl dt {
+    color: var(--Primary-01, #006477);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.32px;
+    flex: 0 0 41px;
+  }
+  .box-list-map .inner .text dl dd {
+    color: var(--gray-01, #666);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.32px;
   }
   :lang(en) .menu-list .inner-gap-1 > ul {
     justify-content: center;

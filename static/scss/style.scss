@@ -8313,6 +8313,14 @@ input {
 .box-dusgur {
 	margin-top: -60px;
 	padding-top: 20px;
+	&.remove-sticky {
+		margin-top: -19px;
+		.common-tab {
+			position: relative;
+			padding: 0;
+			margin: 0;
+		}
+	}
 	.common-tab {
 		position: sticky;
 		top: 0;
@@ -9478,10 +9486,12 @@ input {
 
 // 재단안내 > 찾아오시는 길
 .box-list-map {
-	margin-top: 33px;
+	margin-top: 42px;
 	.inner {
 		.map {
 			height: 240px;
+			border-radius: 6px;
+			overflow: hidden;
 		}
 		.text {
 			display: flex;
@@ -9493,7 +9503,7 @@ input {
 			align-self: stretch;
 			border-top: 1px solid var(--gray-01, #666);
 			border-bottom: 1px solid var(--gray-01, #666);
-			margin:19px 0 0 0;
+			margin: 19px 0 0 0;
 			.text-1 {
 				color: var(--Primary-04, #4d4d4d);
 				font-size: 20px;
@@ -9507,14 +9517,14 @@ input {
 				font-weight: 500;
 				line-height: 150%; /* 21px */
 				letter-spacing: 0.28px;
-				margin-bottom:-5px;
+				margin-bottom: -5px;
 			}
 			dl {
 				display: flex;
 				align-items: flex-start;
 				gap: 4px;
-				&+dl{
-					margin-top:-12px;
+				& + dl {
+					margin-top: -12px;
 				}
 				dt {
 					color: var(--Primary-01, #006477);
@@ -9522,10 +9532,10 @@ input {
 					font-weight: 600;
 					line-height: 150%; /* 21px */
 					letter-spacing: 0.28px;
-					flex:0 0 34px;
+					flex: 0 0 34px;
 				}
 				dd {
-					flex:0 0 content;
+					flex: 0 0 content;
 					color: var(--gray-01, #666);
 					font-size: 14px;
 					font-weight: 400;
@@ -15126,6 +15136,16 @@ input {
 	.box-dusgur {
 		margin-top: -78px;
 		padding-top: 1px;
+		&.remove-sticky {
+			.common-tab {
+				margin-top: 18px;
+				ul {
+					li {
+						margin-right: 20px !important;
+					}
+				}
+			}
+		}
 		.common-tab {
 			padding-bottom: 40px;
 			padding-top: 134px;
@@ -15772,6 +15792,60 @@ input {
 							font-size: 18px;
 							letter-spacing: 0.36px;
 						}
+					}
+				}
+			}
+		}
+	}
+
+	// 재단안내 > 찾아오시는 길
+	.box-list-map {
+		margin-top: 24px;
+		.inner {
+			position: relative;
+			.map {
+				border-radius: 12px;
+				height: 680px;
+				border: 1px solid var(--gray-03-line, #d5d5d5);
+			}
+			.text {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				border-radius: 0px 12px;
+				border: 1px solid var(--gray-03-line, #d5d5d5);
+				background: #fcfcfc;
+				padding: 40px;
+				width: 449px;
+				gap: 16px;
+				margin-top: 0;
+				padding: 40px;
+				.text-1 {
+				}
+				.text-2 {
+					color: var(--gray-01, #666);
+					font-size: 18px;
+					font-weight: 500;
+					line-height: 150%; /* 27px */
+					letter-spacing: 0.36px;
+				}
+				dl {
+					& + dl {
+					}
+					dt {
+						color: var(--Primary-01, #006477);
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 150%; /* 24px */
+						letter-spacing: 0.32px;
+						flex: 0 0 41px;
+					}
+					dd {
+						color: var(--gray-01, #666);
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 150%; /* 24px */
+						letter-spacing: 0.32px;
 					}
 				}
 			}
