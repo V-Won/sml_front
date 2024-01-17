@@ -24,7 +24,8 @@
     <div class="inner-wrap">
 
       <!-- sub-top -->
-      <div class="sub-top" style="background: url(../static/images/@/sub_top_B.png) no-repeat; background-position: 45%">
+      <div class="sub-top"
+        style="background: url(../static/images/@/sub_top_B.png) no-repeat; background-position: 45%">
         <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
         <div class="inner-gap-1">
           <div class="text-box">
@@ -33,7 +34,7 @@
                 <a href="#none">검사안내</a>
               </li>
               <li>
-                <a href="#none">검사의뢰 안내</a> 
+                <a href="#none">검사의뢰 안내</a>
               </li>
               <li class="nav-acc" data-event="commonSelectBox">
                 <a href="#none" class="button">검사의뢰 절차</a>
@@ -49,7 +50,7 @@
         </div>
       </div>
       <!-- //sub-top -->
-      
+
       <!-- request-step-top -->
       <div class="inner-gap-1">
         <div class="request-step-top">
@@ -219,6 +220,27 @@
       bg: "transparent"
     })
     selectBox.initialize();
+
+    let stepList = document.querySelectorAll('.step-box .box'),
+      cnt = 0,
+      timer = 2000;
+
+    const goEvent = (cnt) => {
+      stepList.forEach((e) => {
+        e.classList.remove('is-active');
+      })
+
+      stepList[cnt].classList.add('is-active');
+    }
+
+    setInterval(() => {
+      if (cnt == stepList.length - 1) {
+        cnt = 0;
+      } else {
+        cnt++;
+      }
+      goEvent(cnt);
+    }, timer);
   </script>
 
 </body>
