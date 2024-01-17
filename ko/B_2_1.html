@@ -51,23 +51,23 @@
         </div>
       </div>
       <!-- //sub-top -->
-      
+
       <div class="inner-gap-1">
-        <!-- common-tab -->
+        <!-- Tab -->
         <div class="common-tab type-4">
-          <div class="swiper-container snbSwiper" data-event="tabMenu">
+          <div class="swiper-container snbSwiper" data-event="commonTab">
             <ul class="list swiper-wrapper">
-              <li class="swiper-slide is-active" data-tab="0"><span class="btn">혈액 (Blood)</span></li>
-              <li class="swiper-slide" data-tab="1"><span class="btn">소변 (Urine)</span></li>
-              <li class="swiper-slide" data-tab="2"><span class="btn">대변 (Stool)</span></li>
-              <li class="swiper-slide" data-tab="3"><span class="btn">뇌척수액 및 기타채액</span></li>
+              <li class="swiper-slide is-active" data-index="0"><span class="btn">혈액 (Blood)</span></li>
+              <li class="swiper-slide" data-index="1"><span class="btn">소변 (Urine)</span></li>
+              <li class="swiper-slide" data-index="2"><span class="btn">대변 (Stool)</span></li>
+              <li class="swiper-slide" data-index="3"><span class="btn">뇌척수액 및 기타채액</span></li>
             </ul>
           </div>
         </div>
-        <!-- //common-tab -->
+        <!-- //Tab -->
       </div>
       <!-- tab-section -->
-      <div class="tab-section col-method" data-event="tabMenu-section">
+      <div class="tab-section col-method">
         <div class="tab-item is-active" data-section="0">
           <div class="inner-gap-1">
             <!-- box-infoTop -->
@@ -403,13 +403,749 @@
           </div>
         </div>
         <div class="tab-item" data-section="1">
-
+          <div class="inner-gap-1">
+            <!-- box-infoTop -->
+            <div class="box-infoTop flex-info">
+              <p class="tit">채뇨 방법</p>
+              <div class="info">
+                <div class="box">
+                  <p class="left-tit">단회요 <br class="mo-show"><span>(Random Urine, RU)</span></p>
+                  <ul class="order-num">
+                    <li>아침 첫 요가 농축되어 있으므로 아침 첫 요의 중간요를 받습니다.</li>
+                    <li>예외적인 검사의 경우, 개별 검사의 검체 정보를 확인해주십시오.</li>
+                    <li>화학변성과 세균 번식을 방지하기 위해 냉장보관 해주십시오.</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <p class="left-tit">24시간 요 <br class="mo-show"><span>(24hours Urine, 24hU)</span></p>
+                  <ul class="order-num">
+                    <li>하루 중 그 배설이 일정치 않은 호르몬, 단백 및 전해질 등을 정량하고자 할 때에는 24시간 축뇨가 필요합니다.</li>
+                    <li>지정된 시간(ex, 오전 7시)의 첫 요는 버려 방광을 비우고, 그 후부터 다음날 지정된 시간 (오전 7시)까지의 모든 소변을 용기에 모읍니다.</li>
+                    <li>소변은 냉장 보관을 하면서 모으고, 대변을 볼 때 나오는 소변도 모아야 합니다.</li>
+                    <li>Total volume을 반드시 기입하고, 이 중 30mL정도의 요를 의뢰합니다.</li>
+                    <li>보존제 필수 검사인 경우, 지정된 보존제를 용기에 미리 넣고 24시간 동안 냉장 보관하며 채뇨합니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- //box-infoTop -->
+            <!-- preserve-infoTab -->
+            <div class="preserve-infoTab">
+              <h5>검사 항목별, 요 보존제 종류</h5>
+              <!-- common-tab -->
+              <div class="common-tab type-2" data-click="tab-type-1">
+                <div class="swiper-container snbSwiper type-2">
+                  <ul class="list swiper-wrapper">
+                    <li data-tab="0" class="swiper-slide is-active"><span class="btn">요 보존제 종류</span></li>
+                    <li data-tab="1" class="swiper-slide"><span class="btn">검사항목별 24시간 요 보존제</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //common-tab -->
+              <!-- tab-section -->
+              <div class="tab-section type-2">
+                <div class="tab-item is-active" data-tabSection="0">
+                  <!-- box-common-tabTableSwiper -->
+                  <div class="box-common-tabTableSwiper r-20">
+                    <div class="inner">
+                      <!-- common-table-1 -->
+                      <div class="swiper-container common-table-1 type-d">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <table>
+                              <colgroup>
+                                <col style="width: 16%">
+                                <col style="width: 24%;">
+                                <col style="width: 60%;">
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>보존제</th>
+                                  <th>보존제량</th>
+                                  <th>특징 </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align: center;">톨루엔<br>(Toluene)</td>
+                                  <td style="text-align: center;">2mL / 100mL Urine</td>
+                                  <td style="text-align: left;">화학적인 성분 보존에 좋으며 표면에 도포되므로 공기의 출입은 막으나 미생물의 증식은 막지 못합니다. <br class="pc-show">크게 영향을 미치지 않으므로 여러 가지 화학검사에 많이 사용됩니다.</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">티몰<br>(Thymol)</td>
+                                  <td style="text-align: center;">작은 결정체 (직경 5mm) / 100mL Urine</td>
+                                  <td style="text-align: left;">세균이나 효모발육을 억제시킵니다. <br class="pc-show">과량 투입시 단백침전 검사에 위양성을 나타내며 담즙 검사에도 영향을 미칩니다.</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">포르말린<br>(Formalin)</td>
+                                  <td style="text-align: center;">한방울 / 10mL Urine</td>
+                                  <td style="text-align: left;">세포고정 및 보존에 효과적입니다. <br class="pc-show">당검사에 위양성을 나타내며 과량을 가하면 urea를 침전시켜 요침사 및 요화학 검사를 방해합니다.</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">6N 염산<br>(HCl)</td>
+                                  <td style="text-align: center;">2mL / 100mL Urine</td>
+                                  <td style="text-align: left;">보통 요는 pH 6.0-7.0 전후(약산성)이며, 방치하면 요중에 암모니아가 증가하여 알칼리로 변성됩니다. <br class="pc-show">알칼리 물질은 Catecholamine 등의 물질을 분해하므로 산성 상태를 유지하기 위해 염산(6N HCl)을 넣을 필요가 있습니다.</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">50% 아세트산<br>(Acetic acid)</td>
+                                  <td style="text-align: center;">1.7mL / 100mL Urine</td>
+                                  <td style="text-align: left;">호르몬 검사에 사용됩니다.</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">붕산<br>(Boric acid)</td>
+                                  <td style="text-align: center;">5mg / 30mL Urine</td>
+                                  <td style="text-align: left;">요 검체 중 세균의 보존에 사용되며 과량을 가하면 배양 시에 균이 잘 자라지 못하게 됩니다. <br class="pc-show">또한 요산을 침전시키는 단점이 있습니다.</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination-1"></div>
+                      </div>
+                      <!-- //common-table-1 -->
+                    </div>
+                  </div>
+                  <!-- //box-common-tabTableSwiper -->
+                </div>
+                <div class="tab-item" data-tabSection="1">
+                  <!-- box-common-tabTableSwiper -->
+                  <div class="box-common-tabTableSwiper r-20">
+                    <div class="inner">
+                      <ul class="circle-info">
+                        <li><span class="strong">필수</span>가장 우선시 되는 보존제</li>
+                        <li><span class="circle"></span>가능</li>
+                      </ul>
+                      <!-- common-table-1 -->
+                      <div class="swiper-container common-table-1 type-e">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <table>
+                              <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>검사코드</th>
+                                  <th>검사항목</th>
+                                  <th>무첨가</th>
+                                  <th>6N HCl</th>
+                                  <th>Toluene</th>
+                                  <th>50%<br>Acetic acid</th>
+                                  <th>Boric Acid</th>
+                                  <th>Na2CO3</th>
+                                  <th>HNO3</th>
+                                  <th>보존 및 운송조건</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td style="text-align: center;">00812</td>
+                                  <td style="text-align: center;">5-HIAA 정량(HPLC)</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00825</td>
+                                  <td style="text-align: center;">5-HIAA 정량(ELISA)</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;">냉장, 차광</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00593</td>
+                                  <td style="text-align: center;">17-KS</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00613</td>
+                                  <td style="text-align: center;">17-OHCS</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00654</td>
+                                  <td style="text-align: center;">Aldosterone</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">동결</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12671</td>
+                                  <td style="text-align: center;">Aluminium (Al)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 밀봉</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10242</td>
+                                  <td style="text-align: center;">Amylase</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12685</td>
+                                  <td style="text-align: center;">Arsenic (As)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10861</td>
+                                  <td style="text-align: center;">BUN</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12693</td>
+                                  <td style="text-align: center;">Cadmium (Cd)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10071</td>
+                                  <td style="text-align: center;">Calcium (Ca)</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">02045</td>
+                                  <td style="text-align: center;">Catecholamine 2F</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">02056</td>
+                                  <td style="text-align: center;">Catecholamine 3F</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10101</td>
+                                  <td style="text-align: center;">Chloride (Cl)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12701</td>
+                                  <td style="text-align: center;">Chromium (Cr)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10520</td>
+                                  <td style="text-align: center;">Citrate</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12726</td>
+                                  <td style="text-align: center;">Copper (Cu)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00966</td>
+                                  <td style="text-align: center;">C-peptide</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 차광</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10881</td>
+                                  <td style="text-align: center;">Creatinine</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00765</td>
+                                  <td style="text-align: center;">Free Cortisol</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">11713</td>
+                                  <td style="text-align: center;">HVA 정량</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">20612</td>
+                                  <td style="text-align: center;">Immuno Fixation E.P</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12753</td>
+                                  <td style="text-align: center;">Lead (Pb)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10121</td>
+                                  <td style="text-align: center;">Magnesium (Mg)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12771</td>
+                                  <td style="text-align: center;">Manganese (Mn)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12785</td>
+                                  <td style="text-align: center;">Mercury (Hg)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00885</td>
+                                  <td style="text-align: center;">Metanephrine 2F (HPLC)</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00892</td>
+                                  <td style="text-align: center;">Metanephrine,Total (HPLC)</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10775</td>
+                                  <td style="text-align: center;">Methylmalonic acid 정량</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10001</td>
+                                  <td style="text-align: center;">Microalbumin</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12321</td>
+                                  <td style="text-align: center;">Osmolality</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10131</td>
+                                  <td style="text-align: center;">Phosphate (Pi)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10141</td>
+                                  <td style="text-align: center;">Potassium (K)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">20711</td>
+                                  <td style="text-align: center;">Protein E.P</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10151</td>
+                                  <td style="text-align: center;">Sodium (Na)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10031</td>
+                                  <td style="text-align: center;">Total Protein</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10931</td>
+                                  <td style="text-align: center;">Uric Acid</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10842</td>
+                                  <td style="text-align: center;">Urine Amylase</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">10844</td>
+                                  <td style="text-align: center;">Urine Creatinine</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장, 신속검사</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">00920</td>
+                                  <td style="text-align: center;">VMA 정량</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;">12856</td>
+                                  <td style="text-align: center;">Zinc (Zn)</td>
+                                  <td style="text-align: center;">필수</td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"><p class="circle"></p></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;"></td>
+                                  <td style="text-align: center;">냉장</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination-1"></div>
+                      </div>
+                      <!-- //common-table-1 -->
+                    </div>
+                  </div>
+                  <!-- //box-common-tabTableSwiper -->
+                </div>
+              </div>
+              <!-- //tab-section -->
+            </div>
+            <!-- preserve-infoTab -->
+          </div>
         </div>
         <div class="tab-item" data-section="2">
-
+          <div class="inner-gap-1">
+            <!-- box-infoTop -->
+            <div class="box-infoTop flex-info how-stool">
+              <p class="tit">채취방법</p>
+              <div class="info">
+                <div class="box">
+                  <p class="left-tit">단회 대변 <span>(Stool)</span></p>
+                  <ul class="order-num">
+                    <li>대변 전용용기 뚜껑에 달려있는 스틱을 이용해 대변 2~3g을 채취합니다.</li>
+                  </ul>
+                  <div class="stool-img">
+                    <div class="img">
+                      <img src="../static/images/img/stool_img_1.png">
+                    </div>
+                    <div class="img">
+                      <img src="../static/images/img/stool_img_2.png">
+                      <div class="text-box">
+                        <p>Stool 용기</p>
+                        <p>Stool 용기 <br class="mo-show">채취부분</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <p class="left-tit">24시간 대변 <span>(24hours Stool)</span></p>
+                  <ul class="order-num">
+                    <li>미리 무게를 잰, 잘 봉해진 용기에 채취한 후 전체 검체의 무게를 측정합니다.</li>
+                    <li>균등한 혼합물을 만들기 위하여 검체 내용물을 혼합합니다.</li>
+                    <li>대변 전용용기에 검사에 필요한 적당량(약 4~5g)을 채취한 후 용기를 잘 밀봉하여 냉장 보관합니다.</li>
+                    <li>검사 의뢰시 용기와 의뢰서에 환자 정보와 채취 시간, 총 무게를 기재합니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- //box-infoTop -->
+          </div>
         </div>
         <div class="tab-item" data-section="3">
-
+          <div class="inner-gap-1">
+            <!-- box-infoTop -->
+            <div class="box-infoTop flex-info fluid">
+              <div class="info">
+                <div class="box">
+                  <p class="tit">뇌척수액 <span class="pc-block">(Cerebrospinal Fluid, CSF)</span></p>
+                  <ul class="order-num">
+                    <p class="txt">뇌척수액은 무균적으로 시행되는 요추천자를 통해 얻어집니다.<br>검사의뢰 목적에 따라 3개의 무균 용기에 각각 3~5mL씩 차례대로 무균적으로 받아서 각각 화학/면역검사, 세균검사, 세포 수 산정 검사에 이용합니다.</p>
+                  </ul>
+                  <div class="csf-stepBox">
+                    <div class="inner is-active">
+                      <p class="step-num">Step. 01</p>
+                      <div class="icon step1"></div>
+                      <p class="step-tit">화학, 면역학적<br>검사</p>
+                    </div>
+                    <div class="inner">
+                      <p class="step-num">Step. 02</p>
+                      <div class="icon step2"></div>
+                      <p class="step-tit">세균검사</p>
+                    </div>
+                    <div class="inner">
+                      <p class="step-num">Step. 03</p>
+                      <div class="icon step3"></div>
+                      <p class="step-tit">세포 수 산정 및<br>백혈구 감별검사</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <p class="tit">기타 체액(Body fluid) 채취방법</p>
+                  <div class="fluid-method">
+                    <div class="method">
+                      <p class="txt">흉막강, 복막강, 심막강에 존재하는 체액은 체강으로 일회용 주사침으로 흡인 채취합니다.</p>
+                    </div>
+                    <div class="method">
+                      <p class="txt">관절액은 일회용 주사침으로 관절강을 천자하여 흡인 채취합니다.</p>
+                    </div>
+                    <div class="method">
+                      <p class="txt">세균검사 및 화학검사 시행 시, 항응고제가 무첨가된 멸균된 용기를 사용합니다.</p>
+                    </div>
+                    <div class="method">
+                      <p class="txt">세포 수 산정 및 백혈구 감별검사 의뢰 시에는 EDTA 용기를 사용합니다.</p>
+                    </div>
+                    <div class="method">
+                      <p class="txt">정확한 검사를 위해 검체 채취 후 즉시 검사실로 보내주세요.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //box-infoTop -->
+          </div>
         </div>
       </div>
       <!-- //tab-section -->
@@ -444,9 +1180,9 @@
       bg: "transparent"
     })
     selectBox.initialize();
-    tabSection.initialize();
+    commonTab.initialize();
 
-    var swiper = new Swiper('.snbSwiper', {
+    var swiper1 = new Swiper('.type-4 .snbSwiper', {
       slidesPerView: 'auto',
       preventClicks: true,
       loop: false,
@@ -460,21 +1196,92 @@
       },
     });
 
-    document.querySelectorAll('.snbSwiper > ul > li').forEach((item) => {
+    document.querySelectorAll('.type-4 .snbSwiper > ul > li').forEach((item) => {
       item.addEventListener('click', (e) => {
-        swiper.slideTo(e.currentTarget.getAttribute('data-tab'));
+        swiper1.slideTo(e.currentTarget.getAttribute('data-index'));
       });
     });
 
-    var $snbSwiperItem1 = $('.snbSwiper .swiper-wrapper .swiper-slide .btn');
+    var $snbSwiperItem1 = $('.type-4 .snbSwiper .swiper-wrapper .swiper-slide .btn');
     $snbSwiperItem1.click(function () {
       var target1 = $(this).parent();
       $snbSwiperItem1.parent().removeClass('is-active');
       target1.addClass('is-active');
     })
 
+    // tab Click
+    let tg = document.querySelectorAll('.common-tab.type-4 li');
+
+    const hideEvent = () => {
+      document.querySelectorAll('.tab-section.col-method .tab-item').forEach((item) => {
+        item.style.display = 'none';
+      });
+    }
+
+    hideEvent();
+
+    document.querySelector('[data-section="0"]').style.display = 'block';
+
+    tg.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        let idx = e.currentTarget.getAttribute("data-index");
+
+        hideEvent();
+
+        document.querySelector('[data-section="' + idx + '"]').style.display = 'block';
+      });
+    })
+
+    window.onscroll = (e) => {
+      let windowTop = window.scrollY;
+
+      if ( windowTop > document.querySelector('.sub-top').offsetHeight ) {
+        document.querySelector('.common-tab.type-4').classList.add('fixed');
+      } else {
+        document.querySelector('.common-tab.type-4').classList.remove('fixed');
+      }
+    }
+
+    // 검사 항목별, 요 보존제 종류 Tab click
+    var swiper2 = new Swiper('.snbSwiper.type-2', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 0,
+        },
+      },
+    });
+
+    document.querySelectorAll('.snbSwiper.type-2 ul li').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        swiper2.slideTo(e.currentTarget.getAttribute('data-tab'));
+      });
+    });
+
+    let itemTab = document.querySelectorAll('[data-click="tab-type-1"] li').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        // common-tab
+        document.querySelectorAll('.common-tab.type-2 li').forEach((e) => {
+          e.classList.remove('is-active');
+        })
+        e.classList.add('is-active');
+
+        // tab-section
+        let idx = e.getAttribute('data-tab');
+        document.querySelectorAll('.tab-section.type-2 .tab-item').forEach((target) => {
+          target.classList.remove('is-active');
+        })
+        document.querySelector('[data-tabSection="' + idx + '"]').classList.add('is-active');
+      })
+    });
+
     // table scroll
-    var swiper2 = new Swiper('.type-a', {
+    var tableSwiper1 = new Swiper('.type-a', {
       slidesPerView: 'auto',
       freeMode: true,
       preventClicks: true,
@@ -494,7 +1301,7 @@
       },
     });
 
-    var swiper2 = new Swiper('.type-b', {
+    var tableSwiper2 = new Swiper('.type-b', {
       slidesPerView: 'auto',
       freeMode: true,
       preventClicks: true,
@@ -514,7 +1321,7 @@
       },
     });
 
-    var swiper3 = new Swiper('.type-c', {
+    var tableSwiper3 = new Swiper('.type-c', {
       slidesPerView: 'auto',
       freeMode: true,
       preventClicks: true,
@@ -533,6 +1340,68 @@
         },
       },
     });
+
+    var tableSwiper4 = new Swiper('.type-d', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      spaceBetween: 12,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".type-d .swiper-pagination-1",
+        type: "progressbar",
+      },
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 12,
+        },
+      },
+    });
+
+    var tableSwiper5 = new Swiper('.type-e', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      spaceBetween: 12,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".type-e .swiper-pagination-1",
+        type: "progressbar",
+      },
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 12,
+        },
+      },
+    });
+
+    // 뇌척수액 step
+    let stepList = document.querySelectorAll('.csf-stepBox .inner'),
+      cnt = 0,
+      timer = 2000;
+
+    const goEvent = (cnt) => {
+      stepList.forEach((e) => {
+        e.classList.remove('is-active');
+      })
+
+      stepList[cnt].classList.add('is-active');
+    }
+
+    setInterval(() => {
+      if (cnt == stepList.length - 1) {
+        cnt = 0;
+      } else {
+        cnt++;
+      }
+      goEvent(cnt);
+    }, timer);
   </script>
 
 </body>
