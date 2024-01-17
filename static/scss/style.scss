@@ -9476,6 +9476,67 @@ input {
 	}
 }
 
+// 재단안내 > 찾아오시는 길
+.box-list-map {
+	margin-top: 33px;
+	.inner {
+		.map {
+			height: 240px;
+		}
+		.text {
+			display: flex;
+			padding: 20px 12px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 16px;
+			align-self: stretch;
+			border-top: 1px solid var(--gray-01, #666);
+			border-bottom: 1px solid var(--gray-01, #666);
+			margin:19px 0 0 0;
+			.text-1 {
+				color: var(--Primary-04, #4d4d4d);
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 130%; /* 26px */
+				letter-spacing: 0.4px;
+			}
+			.text-2 {
+				color: var(--gray-01, #666);
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 150%; /* 21px */
+				letter-spacing: 0.28px;
+				margin-bottom:-5px;
+			}
+			dl {
+				display: flex;
+				align-items: flex-start;
+				gap: 4px;
+				&+dl{
+					margin-top:-12px;
+				}
+				dt {
+					color: var(--Primary-01, #006477);
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 150%; /* 21px */
+					letter-spacing: 0.28px;
+					flex:0 0 34px;
+				}
+				dd {
+					flex:0 0 content;
+					color: var(--gray-01, #666);
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 150%; /* 21px */
+					letter-spacing: 0.28px;
+				}
+			}
+		}
+	}
+}
+
 // 모바일 lang(en)
 :lang(en) {
 	// 공통 Tab
@@ -15659,39 +15720,39 @@ input {
 
 	// 재단안내 > 채용정보 > SML 인재상
 	.box-dlswotkd {
-		margin-top:-80px;
-		margin-bottom:-120px;
-		padding-top:81px;
+		margin-top: -80px;
+		margin-bottom: -120px;
+		padding-top: 81px;
 		padding-bottom: 120px;
 		padding-left: 0;
-		padding-right:0;
+		padding-right: 0;
 		.inner {
 			max-width: 1600px;
-			padding:0 100px;
-			margin:0 auto;
+			padding: 0 100px;
+			margin: 0 auto;
 			h3 {
 				font-size: 40px;
 				letter-spacing: 0.8px;
-				padding-bottom:23px;
+				padding-bottom: 23px;
 			}
 			.text-1 {
 				font-size: 18px;
 				letter-spacing: 0.36px;
-				padding-bottom:47px;
+				padding-bottom: 47px;
 			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
-				gap:40px;
+				gap: 40px;
 				justify-content: space-between;
 				li {
 					width: calc(50% - 20px);
 					& + li {
-						margin-top:0;
+						margin-top: 0;
 					}
 					.img-holder {
-						span{
-							padding-top:68%;
+						span {
+							padding-top: 68%;
 						}
 						span,
 						&::after {
@@ -15699,13 +15760,13 @@ input {
 						}
 					}
 					.text {
-						left:40px;
-						right:40px;
-						bottom:40px;
+						left: 40px;
+						right: 40px;
+						bottom: 40px;
 						.text-1 {
 							font-size: 30px;
 							letter-spacing: 0.6px;
-							padding-bottom:14px;
+							padding-bottom: 14px;
 						}
 						.text-2 {
 							font-size: 18px;

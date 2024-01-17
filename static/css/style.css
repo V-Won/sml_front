@@ -8564,6 +8564,64 @@ input {
   letter-spacing: 0.32px;
 }
 
+.box-list-map {
+  margin-top: 33px;
+}
+.box-list-map .inner .map {
+  height: 240px;
+}
+.box-list-map .inner .text {
+  display: flex;
+  padding: 20px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  border-top: 1px solid var(--gray-01, #666);
+  border-bottom: 1px solid var(--gray-01, #666);
+  margin: 19px 0 0 0;
+}
+.box-list-map .inner .text .text-1 {
+  color: var(--Primary-04, #4d4d4d);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%; /* 26px */
+  letter-spacing: 0.4px;
+}
+.box-list-map .inner .text .text-2 {
+  color: var(--gray-01, #666);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.28px;
+  margin-bottom: -5px;
+}
+.box-list-map .inner .text dl {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.box-list-map .inner .text dl + dl {
+  margin-top: -12px;
+}
+.box-list-map .inner .text dl dt {
+  color: var(--Primary-01, #006477);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.28px;
+  flex: 0 0 34px;
+}
+.box-list-map .inner .text dl dd {
+  flex: 0 0 content;
+  color: var(--gray-01, #666);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.28px;
+}
+
 :lang(en) .common-tab.padding-top-1 {
   padding-top: 41px;
 }
