@@ -25,7 +25,7 @@
     <div class="inner-wrap">
 
       <!-- sub-top -->
-      <div class="sub-top" style="background: url(../static/images/@/sub_top_B.png) no-repeat; background-position: 45%">
+      <div class="sub-top" style="background: url(../static/images/@/sub_top_B.png) no-repeat; background-position: 40%">
         <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
         <div class="inner-gap-1">
           <div class="text-box">
@@ -67,14 +67,14 @@
         <!-- //common-tab -->
       </div>
       <!-- tab-section -->
-      <div class="tab-section" data-event="tabMenu-section">
+      <div class="tab-section col-method" data-event="tabMenu-section">
         <div class="tab-item is-active" data-section="0">
           <div class="inner-gap-1">
             <!-- box-infoTop -->
             <div class="box-infoTop">
               <p class="tit">채혈 시기</p>
               <div class="info">
-                <p class="txt">혈액성분은 운동, 식사, 정신적 스트레스 등에 의해 영향을 받는 경우가 많아 채혈은 일반적으로 아침 공복 시에 하는 것을 원칙으로 합니다. <br>그러나 부득이한 경우에는 적어도 식후 2시간 이후에 하도록 합니다. 격렬한 운동 후에는 휴식을 취하고 채혈을 하며, 동일한 환자가 같은 검사를 반복하는 경우에는 같은 시각과 같은 조건 하에서 채혈하는 것을 권장합니다.</p>
+                <p class="txt">혈액성분은 운동, 식사, 정신적 스트레스 등에 의해 영향을 받는 경우가 많아 채혈은 일반적으로 아침 공복 시에 하는 것을 원칙으로 합니다. <br>그러나 부득이한 경우에는 적어도 식후 2시간 이후에 하도록 합니다. 격렬한 운동 후에는 휴식을 취하고 채혈을 하며, <br class="pc-show">동일한 환자가 같은 검사를 반복하는 경우에는 같은 시각과 같은 조건 하에서 채혈하는 것을 권장합니다.</p>
               </div>
             </div>
             <!-- //box-infoTop -->
@@ -353,8 +353,8 @@
             <div class="how-blood">
               <h5>채혈 방법</h5>
               <p class="txt">미세한 응고와 용혈방지를 위해 일반주사기 보다는 진공채혈관으로 채혈을 권장합니다. 모든 혈액검체는 채혈 후 즉시 검사실에 운반하여 바로 검사하거나 혈청분리 후 검사에 따라 적합한 조건으로 보관합니다. 채혈 후 튜브를 필히 8~10회 inverting하여 항응고제와 혼합되도록 합니다.</p>
+              <p class="noti-tit"><span>연속 채혈 시</span>권장 채취 순서</p> 
               <div class="how-box">
-                <p class="noti-tit"><span>연속 채혈 시</span>권장 채취 순서</p> 
                 <div class="box">
                   <p class="step-num">Step. 01</p>
                   <p class="tit">혈액배양 용기</p>
@@ -402,6 +402,15 @@
             </div>
           </div>
         </div>
+        <div class="tab-item" data-section="1">
+
+        </div>
+        <div class="tab-item" data-section="2">
+
+        </div>
+        <div class="tab-item" data-section="3">
+
+        </div>
       </div>
       <!-- //tab-section -->
     </div>
@@ -437,11 +446,16 @@
     selectBox.initialize();
     tabSection.initialize();
 
-    var swiper1 = new Swiper('.snbSwiper', {
+    var swiper = new Swiper('.snbSwiper', {
       slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
       breakpoints: {
-        1024: {
-          allowTouchMove: false
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 0,
         },
       },
     });

@@ -8767,7 +8767,7 @@ input {
 					}
 					tbody {
 						td {
-							padding: 10px 0;
+							padding: 9.5px 0;
 							border-right: 1px solid #d5d5d5;
 							&:last-child {
 								border-right: none;
@@ -8901,7 +8901,7 @@ input {
 	width: 100%;
 	position: relative;
 	padding: 60px 20px 100px;
-	background-image: linear-gradient(to bottom, #fff 80%, #006477 20%);
+	background-image: linear-gradient(to bottom, #fff 81%, #006477 19%);
 	> div {
 		width: 100%;
 		position: relative;
@@ -9027,11 +9027,90 @@ input {
 		font-weight: 500;
 		line-height: 150%;
 		letter-spacing: 0.32px;
+		margin-bottom: 18px;
 	}
 	.how-box {
 		width: 100%;
 		position: relative;
 		margin-top: 20px;
+		margin: 16px 0 20px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 12px;
+		.box {
+			width: calc(50% - 6px);
+			height: 299px;
+			border-radius: 12px;
+			border: 1px solid var(--gray-03-line, #d5d5d5);
+			background: var(--Primary-05, #fff);
+			padding: 24px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.step-num {
+				padding: 6px 12px;
+				border-radius: 999px;
+				background: var(--Primary-03, #75c9da);
+				color: var(--Primary-05, #fff);
+				text-align: center;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 150%;
+				letter-spacing: 0.28px;
+				margin-bottom: 12px;
+			}
+			.tit {
+				color: var(--Primary-04, #4d4d4d);
+				text-align: center;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.32px;
+			}
+			&::after {
+				content: "";
+				width: 106px;
+				height: 140px;
+				position: absolute;
+				bottom: 24px;
+				left: 50%;
+				transform: translateX(-50%);
+				background-position: center !important;
+				background-size: cover !important;
+			}
+			&:first-child {
+				&::after {
+					background: url(../../static/images/img/how_blood_img_1.png) no-repeat;
+				}
+			}
+			&:nth-child(2) {
+				&::after {
+					background: url(../../static/images/img/how_blood_img_2.png) no-repeat;
+				}
+			}
+			&:nth-child(3) {
+				&::after {
+					background: url(../../static/images/img/how_blood_img_3.png) no-repeat;
+				}
+			}
+			&:nth-child(4) {
+				&::after {
+					background: url(../../static/images/img/how_blood_img_4.png) no-repeat;
+				}
+			}
+			&:nth-child(5) {
+				&::after {
+					background: url(../../static/images/img/how_blood_img_5.png) no-repeat;
+				}
+			}
+			&:nth-child(6) {
+				&::after {
+					background: url(../../static/images/img/how_blood_img_6.png) no-repeat;
+				}
+			}
+		}
 	}
 	.noti-tit {
 		color: var(--Primary-04, #4d4d4d);
@@ -9054,6 +9133,49 @@ input {
 			position: absolute;
 			top: 2px;
 			left: 0;
+		}
+	}
+	.noti-item {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		.item {
+			width: 100%;
+			position: relative;
+			border-radius: 6px;
+			border: 1px solid var(--gray-03-line, #d5d5d5);
+			background: var(--gray-07-bg, #f5f5f5);
+			padding: 20px;
+			.dot-list {
+				margin-top: 13px;
+				li {
+					width: 100%;
+					position: relative;
+					color: var(--gray-01, #666);
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 150%;
+					letter-spacing: 0.28px;
+					padding-left: 12px;
+					&::before {
+						content: "";
+						width: 4px;
+						height: 4px;
+						border-radius: 50%;
+						background: #006477;
+						position: absolute;
+						top: 7px;
+						left: 0;
+					}
+					& + li {
+						margin-top: 12px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -15024,6 +15146,510 @@ input {
 		}
 	}
 
+	// 검사 안내 > 검체채취 안내
+	.tab-section {
+		&.col-method {
+			.tab-item {
+				margin-top: 60px;
+				.box-infoTop {
+					.info {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.box-common-tabTableSwiper {
+		&.blood-table {
+			h5 {
+				padding-bottom: 48px;
+			}
+			.swiper-slide {
+				table {
+					thead {
+						th {
+							padding: 24px 20px;
+						}
+					}
+					tbody {
+						td {
+							padding: 24px 10px;
+							.two-line {
+								p {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+			.type-a {
+				.swiper-slide {
+					width: 100% !important;
+				}
+			}
+			.type-b {
+				.swiper-slide {
+					width: 100% !important;
+				}
+			}
+			.type-c {
+				margin: 16px 0 100px;
+				.swiper-slide {
+					width: 100% !important;
+					table {
+						thead {
+							th {
+								border-right: 1px solid #d5d5d5;
+								&:last-child {
+									border-right: none;
+								}
+							}
+							tr {
+								&:nth-child(2) {
+									th {
+										min-width: 420px;
+										padding: 10px 20px;
+										p {
+											margin: 0 auto;
+											width: fit-content;
+											padding-right: 21px;
+											position: relative;
+											span {
+												width: 15px;
+												height: 10px;
+												background-position: center !important;
+												background-size: cover !important;
+												background-repeat: no-repeat !important;
+												position: absolute;
+												top: 4px;
+												right: 0;
+												&.up {
+													background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='10' viewBox='0 0 13 10' fill='none'%3E%3Cpath d='M7.3 0.566667C6.9 0.0333337 6.1 0.0333338 5.7 0.566667L0.199996 7.9C-0.294431 8.55924 0.175951 9.5 0.999996 9.5L12 9.5C12.824 9.5 13.2944 8.55924 12.8 7.9L7.3 0.566667Z' fill='%23FF0000'/%3E%3C/svg%3E");
+												}
+												&.down {
+													background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10' fill='none'%3E%3Cpath d='M7.81923 9.32967C7.42113 9.89838 6.57887 9.89838 6.18077 9.32967L1.10143 2.07346C0.637482 1.41068 1.11163 0.499999 1.92066 0.499999L12.0793 0.5C12.8884 0.5 13.3625 1.41068 12.8986 2.07346L7.81923 9.32967Z' fill='%23000AFF'/%3E%3C/svg%3E");
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						tbody {
+							td {
+								padding: 9.5px 0;
+								border-right: 1px solid #d5d5d5;
+								&:last-child {
+									border-right: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.blood-ready {
+		width: 100%;
+		position: relative;
+		padding: 60px 20px 100px;
+		background: url(../../static/images/bg/bg_blood_ready.png) no-repeat;
+		background-size: cover !important;
+		background-position: center !important;
+		> div {
+			width: 100%;
+			position: relative;
+			max-width: 1400px;
+			margin: 0 auto;
+			h5 {
+				color: var(--Primary-04, #4d4d4d);
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.4px;
+				margin-bottom: 20px;
+			}
+		}
+		.info-box {
+			width: 100%;
+			position: relative;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+			.box {
+				width: 100%;
+				position: relative;
+				border-radius: 6px;
+				overflow: hidden;
+				.img-holder {
+					width: 100%;
+				}
+				.text-box {
+					width: 100%;
+					height: 100%;
+					padding: 20px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					.num {
+						color: var(--Primary-05, #fff);
+						font-size: 18px;
+						font-weight: 600;
+						line-height: 130%;
+						letter-spacing: 0.36px;
+						margin-bottom: 12px;
+					}
+					.tit {
+						color: var(--Primary-05, #fff);
+						font-size: 20px;
+						font-weight: 600;
+						line-height: 130%;
+						letter-spacing: 0.4px;
+					}
+					.dot-list {
+						width: 100%;
+						position: relative;
+						margin-top: 20px;
+						li {
+							color: var(--Primary-05, #fff);
+							font-size: 14px;
+							font-weight: 500;
+							line-height: 150%;
+							letter-spacing: 0.28px;
+							padding-left: 12px;
+							position: relative;
+							&::before {
+								content: "";
+								width: 4px;
+								height: 4px;
+								border-radius: 50%;
+								background: #fff;
+								position: absolute;
+								top: 7px;
+								left: 0;
+							}
+							&.not-dot {
+								padding-left: 0;
+								&::before {
+									display: none;
+								}
+								& + .not-dot {
+									margin-top: 6px;
+								}
+							}
+							& + li {
+								margin-top: 12px;
+							}
+							& + .not-dot {
+								margin-top: 8px;
+							}
+						}
+					}
+				}
+				&:last-child {
+					background: url(../../static/images/img/blood_ready_4.png) no-repeat;
+					background-position: center !important;
+					background-size: cover !important;
+					.img-holder {
+						width: 100%;
+						height: fit-content;
+						span {
+							padding-top: 0;
+							width: 100%;
+							height: 100%;
+						}
+					}
+					.text-box {
+						position: relative;
+					}
+				}
+			}
+		}
+	}
+	.how-attachment {
+		width: 100%;
+		position: relative;
+		padding: 60px 20px 100px;
+		background-image: linear-gradient(to bottom, #fff 81%, #006477 19%);
+		> div {
+			width: 100%;
+			position: relative;
+			max-width: 1400px;
+			margin: 0 auto;
+			h5 {
+				color: var(--Primary-04, #4d4d4d);
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.4px;
+				margin-bottom: 20px;
+			}
+		}
+		.how-box {
+			width: 100%;
+			position: relative;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+			.box {
+				width: 100%;
+				position: relative;
+				border-radius: 6px;
+				border: 1px solid var(--gray-03-line, #d5d5d5);
+				background: #fff;
+				padding: 30px 20px;
+				.tit {
+					color: var(--Primary-04, #4d4d4d);
+					font-size: 18px;
+					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.36px;
+					padding-left: 36px;
+					position: relative;
+					margin-bottom: 16px;
+					&::before {
+						content: "";
+						width: 24px;
+						height: 24px;
+						position: absolute;
+						top: -1px;
+						left: 0;
+						background-size: cover !important;
+						background-position: center !important;
+					}
+					&.bad {
+						&::before {
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z' fill='%23E60012'/%3E%3Cpath d='M17.5887 8.16926L15.8607 6.44126L12.0296 10.2723L8.14109 6.38379L6.41309 8.11179L10.3016 12.0003L6.41309 15.8888L8.14109 17.6168L12.0296 13.7283L15.8607 17.5594L17.5887 15.8314L13.7576 12.0003L17.5887 8.16926Z' fill='white'/%3E%3C/svg%3E");
+						}
+					}
+					&.good {
+						&::before {
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z' fill='%23006477'/%3E%3Cpath d='M18.458 9.27767L16.73 7.5498L10.5896 13.6902L7.45248 10.5532L5.72461 12.2812L8.8616 15.4182L8.86147 15.4183L10.5893 17.1463L10.5896 17.1462L10.5897 17.1463L12.3176 15.4183L12.3175 15.4182L18.458 9.27767Z' fill='white'/%3E%3C/svg%3E");
+						}
+					}
+				}
+				.dot-list {
+					width: 100%;
+					position: relative;
+					li {
+						color: var(--gray-01, #666);
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 150%;
+						letter-spacing: 0.32px;
+						padding-left: 12px;
+						position: relative;
+						& + li {
+							margin-top: 4px;
+						}
+						&::before {
+							content: "";
+							width: 4px;
+							height: 4px;
+							border-radius: 999px;
+							background: #006477;
+							position: absolute;
+							top: 8px;
+							left: 0;
+						}
+					}
+				}
+				.img-wrap {
+					width: 100%;
+					position: relative;
+					margin-top: 20px;
+					display: flex;
+					align-items: center;
+					flex-wrap: wrap;
+					gap: 12px;
+					.img {
+						width: calc(50% - 6px);
+						padding: 18px;
+						border-radius: 6px;
+						border: 1px solid var(--gray-03-line, #d5d5d5);
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+				}
+			}
+		}
+	}
+	.how-blood {
+		width: 100%;
+		position: relative;
+		padding: 60px 0 0;
+		> h5 {
+			color: var(--Primary-04, #4d4d4d);
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 130%;
+			letter-spacing: 0.4px;
+			margin-bottom: 17px;
+		}
+		.txt {
+			color: var(--gray-01, #666);
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 150%;
+			letter-spacing: 0.32px;
+			margin-bottom: 18px;
+		}
+		.how-box {
+			width: 100%;
+			position: relative;
+			margin: 16px 0 20px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 12px;
+			.box {
+				width: calc(50% - 6px);
+				height: 299px;
+				border-radius: 12px;
+				border: 1px solid var(--gray-03-line, #d5d5d5);
+				background: var(--Primary-05, #fff);
+				padding: 24px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.step-num {
+					padding: 6px 12px;
+					border-radius: 999px;
+					background: var(--Primary-03, #75c9da);
+					color: var(--Primary-05, #fff);
+					text-align: center;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 150%;
+					letter-spacing: 0.28px;
+					margin-bottom: 12px;
+				}
+				.tit {
+					color: var(--Primary-04, #4d4d4d);
+					text-align: center;
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.32px;
+				}
+				&::after {
+					content: "";
+					width: 106px;
+					height: 140px;
+					position: absolute;
+					bottom: 24px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-position: center !important;
+					background-size: cover !important;
+				}
+				&:first-child {
+					&::after {
+						background: url(../../static/images/img/how_blood_img_1.png) no-repeat;
+					}
+				}
+				&:nth-child(2) {
+					&::after {
+						background: url(../../static/images/img/how_blood_img_2.png) no-repeat;
+					}
+				}
+				&:nth-child(3) {
+					&::after {
+						background: url(../../static/images/img/how_blood_img_3.png) no-repeat;
+					}
+				}
+				&:nth-child(4) {
+					&::after {
+						background: url(../../static/images/img/how_blood_img_4.png) no-repeat;
+					}
+				}
+				&:nth-child(5) {
+					&::after {
+						background: url(../../static/images/img/how_blood_img_5.png) no-repeat;
+					}
+				}
+				&:nth-child(6) {
+					&::after {
+						background: url(../../static/images/img/how_blood_img_6.png) no-repeat;
+					}
+				}
+			}
+		}
+		.noti-tit {
+			color: var(--Primary-04, #4d4d4d);
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 130%;
+			letter-spacing: 0.36px;
+			padding-left: 26px;
+			position: relative;
+			span {
+				color: #006477;
+			}
+			&::before {
+				content: "";
+				width: 18px;
+				height: 18px;
+				background-position: center !important;
+				background-size: cover !important;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.3785 0.5H6.62147C5.64607 0.499991 4.85933 0.499984 4.22224 0.552037C3.56627 0.605631 2.99011 0.718863 2.45704 0.990471C1.61031 1.4219 0.921902 2.11031 0.490471 2.95704C0.218863 3.49011 0.105631 4.06627 0.0520367 4.72224C-1.55903e-05 5.35933 -8.52821e-06 6.14606 2.26201e-07 7.12147V11.8785C-8.52821e-06 12.8539 -1.55903e-05 13.6407 0.0520367 14.2778C0.105631 14.9337 0.218863 15.5099 0.490471 16.043C0.921902 16.8897 1.61031 17.5781 2.45704 18.0095C2.99011 18.2811 3.56627 18.3944 4.22224 18.448C4.85931 18.5 5.64601 18.5 6.62136 18.5H11.3785C12.3539 18.5 13.1407 18.5 13.7778 18.448C14.4337 18.3944 15.0099 18.2811 15.543 18.0095C16.3897 17.5781 17.0781 16.8897 17.5095 16.043C17.7811 15.5099 17.8944 14.9337 17.948 14.2778C18 13.6407 18 12.854 18 11.8786V7.12145C18 6.1461 18 5.35931 17.948 4.72224C17.8944 4.06627 17.7811 3.49011 17.5095 2.95704C17.0781 2.11031 16.3897 1.4219 15.543 0.990471C15.0099 0.718863 14.4337 0.605631 13.7778 0.552037C13.1407 0.499984 12.3539 0.499991 11.3785 0.5ZM9.9 5.9C9.9 5.40294 9.49706 5 9 5C8.50294 5 8.1 5.40294 8.1 5.9V10.4C8.1 10.8971 8.50294 11.3 9 11.3C9.49706 11.3 9.9 10.8971 9.9 10.4V5.9ZM9.9 13.1C9.9 12.6029 9.49706 12.2 9 12.2C8.50294 12.2 8.1 12.6029 8.1 13.1V13.109C8.1 13.6061 8.50294 14.009 9 14.009C9.49706 14.009 9.9 13.6061 9.9 13.109V13.1Z' fill='%23006477'/%3E%3C/svg%3E");
+				position: absolute;
+				top: 2px;
+				left: 0;
+			}
+		}
+		.noti-item {
+			width: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+			.item {
+				width: 100%;
+				position: relative;
+				border-radius: 6px;
+				border: 1px solid var(--gray-03-line, #d5d5d5);
+				background: var(--gray-07-bg, #f5f5f5);
+				padding: 20px;
+				.dot-list {
+					margin-top: 13px;
+					li {
+						width: 100%;
+						position: relative;
+						color: var(--gray-01, #666);
+						font-size: 14px;
+						font-weight: 500;
+						line-height: 150%;
+						letter-spacing: 0.28px;
+						padding-left: 12px;
+						&::before {
+							content: "";
+							width: 4px;
+							height: 4px;
+							border-radius: 50%;
+							background: #006477;
+							position: absolute;
+							top: 7px;
+							left: 0;
+						}
+						& + li {
+							margin-top: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	// 재단안내 > 경영이념 > 미션과 핵심가치
 	.box-altus {
 		border-radius: 12px;
@@ -15114,53 +15740,53 @@ input {
 
 	// 재단안내 > 경영이념 > 안전보건경영
 	.box-ruddud {
-		margin-top:80px;
-		margin-bottom:-120px;
-		padding-top:80px;
-		padding-bottom:120px;
+		margin-top: 80px;
+		margin-bottom: -120px;
+		padding-top: 80px;
+		padding-bottom: 120px;
 		.inner {
 			max-width: 860px;
 			margin: 0 auto;
 			border-radius: 12px;
-			padding:78px 79px;
-			background-size:min(72%, 386px);
+			padding: 78px 79px;
+			background-size: min(72%, 386px);
 			.top {
 				h4 {
 					font-size: 30px;
 					letter-spacing: 0.6px;
-					padding-bottom:21px;
+					padding-bottom: 21px;
 				}
 				.text-1 {
 					font-size: 20px;
 					letter-spacing: 0.4px;
-					padding-bottom:59px;
+					padding-bottom: 59px;
 				}
 			}
 			ul {
-				padding:59px 0 178px 0px;
+				padding: 59px 0 178px 0px;
 				li {
 					h5 {
 						font-size: 20px;
 						letter-spacing: 0.4px;
-						padding-bottom:9px;
+						padding-bottom: 9px;
 					}
 					.text-1 {
 						font-size: 18px;
 						letter-spacing: 0.36px;
-						padding-bottom:24px;
-						padding-right:68px;
+						padding-bottom: 24px;
+						padding-right: 68px;
 					}
 				}
 			}
 			.bottom {
-				.flex{
+				.flex {
 					display: flex;
 					justify-content: space-between;
 				}
 				h4 {
 					font-size: 18px;
 					letter-spacing: 0.36px;
-					padding-bottom:20px;
+					padding-bottom: 20px;
 				}
 				.text-1 {
 					font-size: 20px;
@@ -15169,8 +15795,8 @@ input {
 				.text-2 {
 					font-size: 20px;
 					letter-spacing: 0.4px;
-					padding-left:120px;
-					margin-top:0;
+					padding-left: 120px;
+					margin-top: 0;
 				}
 			}
 		}
