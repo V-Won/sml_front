@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>삼광의료재단</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+
+      <!-- sub-top -->
+      <div class="sub-top"
+        style="background: url(../static/images/@/sub_top_E.png) no-repeat; background-position: 55%; z-index: 20;">
+        <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">재단안내</a>
+              </li>
+              <li>
+                <a href="#none">채용정보</a>
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">SML 인재상</a>
+                <ul class="list">
+                  <!-- hover시 font-weight 문제로 title 사용 -->
+                  <li><a href="#none" title="SML 인재상">SML 인재상</a></li>
+                  <li><a href="#none" title="채용공고">채용공고</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">SML 인재상</h3>
+          </div>
+        </div>
+      </div>
+      <!-- //sub-top -->
+
+      <!-- box-dlswotkd -->
+      <div class="box-dlswotkd">
+        <div class="inner">
+          <h3>삼광의료재단이 원하는 인재상</h3>
+          <p class="text-1">삼광의료재단은 이해관계자의 생명과 안전을 지키는 일을 최우선으로 여기는 인재를 기다립니다.</p>
+          <ul>
+            <li>
+              <span class="img-holder">
+                <span>
+                  <img src="../static/images/img/img_dlswo_1.png" alt="">
+                </span>
+              </span>
+              <box class="text">
+                <p class="text-1">소통하는 인재</p>
+                <p class="text-2">열린 마음으로 상대방의 입장을 이해하고,<br class="pc-show"> 다양한 의견을 수렴해 최선의 결과를 이끌어 내는 마인드</p>
+              </box>
+            </li>
+            <li>
+              <span class="img-holder">
+                <span>
+                  <img src="../static/images/img/img_dlswo_2.png" alt="">
+                </span>
+              </span>
+              <box class="text">
+                <p class="text-1">신뢰있는 인재</p>
+                <p class="text-2">회사의 규정과 윤리를 준수하여, <br>동료와 고객에게 신뢰받는 행동을 높이는 마인드</p>
+              </box>
+            </li>
+            <li>
+              <span class="img-holder">
+                <span>
+                  <img src="../static/images/img/img_dlswo_3.png" alt="">
+                </span>
+              </span>
+              <box class="text">
+                <p class="text-1">혁신하는 인재</p>
+                <p class="text-2">변화를 수용하고 적극적으로 실행하여 모든 문제 해결을 위한<br class="pc-show"> 혁신적인 사고를 하는 마인드</p>
+              </box>
+            </li>
+            <li>
+              <span class="img-holder">
+                <span>
+                  <img src="../static/images/img/img_dlswo_4.png" alt="">
+                </span>
+              </span>
+              <box class="text">
+                <p class="text-1">행복추구 인재</p>
+                <p class="text-2">긍정적 사고로 자신의 업무에 몰입하고, 회사와 사회에 기여하는 삶을 통해<br class="pc-show"> 행복을 추구하는 마인드</p>
+              </box>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //box-dlswotkd -->
+
+    </div>
+    <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="../static/js/includeHTML.js"></script>
+  <script src="../static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "transparent"
+    })
+    selectBox.initialize();
+  </script>
+
+</body>
+
+</html>
