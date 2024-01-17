@@ -22,7 +22,7 @@
       "센터구분": "서울본원",
       "분야1": "진단검사의학과",
       "분야2": "임상화학",
-      "장비명": "DxC 700 AU ",
+      "장비명": "DxC 700 AU",
       "제조사": "Beckman Coulter",
       "용도": "자동 화학 분석기"
     },
@@ -222,7 +222,7 @@
       "용도": "자동 면역 분석기"
     },
     {
-      "img": "seoul18_Unicel DXI 800.jpg",
+      "img": "seoul18_Unicel DXI-800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul18",
@@ -521,7 +521,7 @@
       "용도": "특수건강진단 생물학적노출지표"
     },
     {
-      "img": "seoul41_HSS-GC\/MS.jpg",
+      "img": "seoul41_HSS-GCMS.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "seoul41",
@@ -854,7 +854,7 @@
       "센터구분": "서울본원",
       "분야1": "진단검사의학과",
       "분야2": "분자유전학",
-      "장비명": "CFX96™ Real-time PCR ",
+      "장비명": "CFX96™ Real-time PCR",
       "제조사": "Bio-Rad",
       "용도": "유전자 증폭"
     },
@@ -893,7 +893,7 @@
       "센터구분": "서울본원",
       "분야1": "진단검사의학과",
       "분야2": "분자유전학",
-      "장비명": "7500 Real-time PCR ",
+      "장비명": "7500 Real-time PCR",
       "제조사": "Applied Biosystems",
       "용도": "유전자 증폭"
     },
@@ -1275,7 +1275,7 @@
       "용도": "자동 요검경 장비"
     },
     {
-      "img": "jungbu6_XN-9000.jpg",
+      "img": "jungbu6_XN-9100.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu6",
@@ -1327,7 +1327,7 @@
       "용도": "ESR 장비"
     },
     {
-      "img": "jungbu11_Qwalys3.jpg",
+      "img": "jungbu10_Cobas c513.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "jungbu10",
@@ -1743,7 +1743,7 @@
       "용도": "자동혈구 분석기"
     },
     {
-      "img": "busan7_Roche p512.jpg",
+      "img": "busan7_Cobas P512.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan7",
@@ -1834,7 +1834,7 @@
       "용도": "자동 면역 분석기 "
     },
     {
-      "img": "busan14_Unicel DXI 800.jpg",
+      "img": "busan14_Unicel DXI-800.jpg",
       "Column2": ".",
       "Column3": "jpg",
       "Column4": "busan14",
@@ -2205,6 +2205,7 @@
       "NO": "생과연1",
       "센터구분": "생명과학연구소",
       "분야1": "유전체연구",
+      "분야2": " ",
       "장비명": "Nextseq550Dx",
       "제조사": "Illumina",
       "용도": "NGS 장비"
@@ -2217,6 +2218,7 @@
       "NO": "생과연2",
       "센터구분": "생명과학연구소",
       "분야1": "유전체연구",
+      "분야2": " ",
       "장비명": "MiSeqDx",
       "제조사": "Illumina",
       "용도": "NGS 장비"
@@ -2229,6 +2231,7 @@
       "NO": "생과연3",
       "센터구분": "생명과학연구소",
       "분야1": "유전체연구",
+      "분야2": " ",
       "장비명": "Ion PGM Sequencer",
       "제조사": "Thermo Fisher Scientific",
       "용도": "NGS 장비"
@@ -2241,6 +2244,7 @@
       "NO": "생과연4",
       "센터구분": "생명과학연구소",
       "분야1": "유전체연구",
+      "분야2": " ",
       "장비명": "3500xL Genetic Analyzer",
       "제조사": "Applied Biosystems",
       "용도": "염기서열 분석장비"
@@ -2253,6 +2257,7 @@
       "NO": "생과연5",
       "센터구분": "생명과학연구소",
       "분야1": "유전체연구",
+      "분야2": " ",
       "장비명": "Quantstudio 6 Real-time PCR",
       "제조사": "Applied Biosystems",
       "용도": "유전자 증폭"
@@ -2265,6 +2270,7 @@
       "NO": "생과연6",
       "센터구분": "생명과학연구소",
       "분야1": "유전체연구",
+      "분야2": " ",
       "장비명": "CFX96™ Dx Real-time PCR",
       "제조사": "Bio-Rad",
       "용도": "유전자 증폭"
@@ -2277,6 +2283,7 @@
       "NO": "생과연7",
       "센터구분": "생명과학연구소",
       "분야1": "유전체연구",
+      "분야2": " ",
       "장비명": "Maxwell Dx instrument",
       "제조사": "Promega",
       "용도": "핵산 추출장비"
@@ -2289,6 +2296,7 @@
       "NO": "생과연8",
       "센터구분": "생명과학연구소",
       "분야1": "유전체연구",
+      "분야2": " ",
       "장비명": "Genetitan system",
       "제조사": "Applied Biosystems",
       "용도": "마이크로어레이 장비"
