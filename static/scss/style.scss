@@ -10110,7 +10110,7 @@ input {
 		width: 100%;
 		position: relative;
 		counter-reset: circle 0;
-		li {
+		> li {
 			color: var(--gray-01, #666);
 			font-size: 14px;
 			font-weight: 500;
@@ -10145,7 +10145,7 @@ input {
 				height: 24px;
 				z-index: 1;
 			}
-			span {
+			> span {
 				display: block;
 				color: var(--gray-02, #999);
 				font-size: 12px;
@@ -17359,7 +17359,7 @@ input {
 			}
 		}
 		.step-order {
-			li {
+			> li {
 				font-size: 16px;
 				letter-spacing: 0.32px;
 				padding-left: 38px;
