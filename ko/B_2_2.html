@@ -751,35 +751,37 @@
                             <li>가슴이 아플 정도로 깊은 기침을 하여 객담을 3-4회 채취합니다.</li>
                             <li>객담을 받을 수 없는 소아의 경우 흡입으로 채취합니다.
                               <div class="step-img">
-                                <div class="step-imgBbox">
+                                <div class="step-imgBox">
                                   <div class="img">
                                     <img src="../static/images/img/col_step_img_1.png">
                                   </div>
                                   <p>입안을 맑은 물로 세척합니다.</p>
                                 </div>
-                                <div class="step-imgBbox">
+                                <div class="step-imgBox">
                                   <div class="img">
                                     <img src="../static/images/img/col_step_img_2.png">
                                   </div>
-                                  <p>심호흡을 3회 실시하여 폐 깊숙히 있는가래가 나올 수있도록 합니다.</p>
+                                  <p>심호흡을 3회 실시하여 폐 깊숙히 있는 가래가 나올 수있도록 합니다.</p>
                                 </div>
-                                <div class="step-imgBbox">
+                                <div class="step-imgBox">
                                   <div class="img">
                                     <img src="../static/images/img/col_step_img_3.png">
                                   </div>
-                                  <p>깊은 기침을 하여 객담을 받으며,침이 섞이지 않도록 주의합니다.</p>
+                                  <p>깊은 기침을 하여 객담을 받으며, 침이 섞이지 않도록 주의합니다.</p>
                                 </div>
                               </div>
                             </li>
-                            <li>
+                            <li >
                               검체는 채취 후 즉시 검사실로 운반하며, 지연될 경우에는 냉장 보관해야 합니다.
                               <span>침이 많이 섞이면 구강 내 상재균이 많이 포함되어 정확한 결과를 얻기 힘드므로, 검사실에서 객담도말 표본을 그람 염색 하여 100배 시야에서 상피세포와 백혈구를 관찰하여 객담의 품질을 판정합니다. Murray와 Washington 변법에서는 두 가지 세포 수의 비율에 따라 6개의 군으로 나누며, 객담의 품질 등급에 의해 4~6등급은 수용되며, 1~3등급은 부적합 검체로 판정합니다.</span>
-                              <button class="common-moveBtn type-2"><span>객담의 품질 등급표 보기</span></button>
+                              <div class="margin-box">
+                                <button class="common-moveBtn type-2" data-event="layerOpen" data-layerId="ly-1"><span>객담의 품질 등급표 보기</span></button>
+                              </div>
                               <!-- box-common-tabTableSwiper -->
                               <div class="box-common-tabTableSwiper r-20">
                                 <div class="inner">
                                   <!-- common-table-1 -->
-                                  <div class="swiper-container common-table-1 type-c swiper">
+                                  <div class="swiper-container common-table-1 type-c">
                                     <div class="swiper-wrapper">
                                       <div class="swiper-slide">
                                         <table>
@@ -847,7 +849,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="is-active">
+                    <li>
                       <button>03. <span>대변(Stool)</span></button>
                       <ul>
                         <li>
@@ -855,7 +857,7 @@
                             <li>5g(콩알 5개 정도의 크기)의 대변을 채취하여 용기에 넣습니다.</li>
                             <li>대변을 채취할 수 없을 때에는 직장에서 면봉으로 검체를 충분히 채취하여 수송배지에 수직으로 넣어서 보내주십시오.</li>
                             <div class="box-treatNotice">
-                              <p class="tit"></p>
+                              <p class="tit">유의사항</p>
                               <ul class="dot-list">
                                 <li>항생제, 지사제, 윤활제 혹은 조영제는 검사에 영향을 줄 수 있으므로 투입 전에 검체를 채취하거나, 혹은 적어도 일주일 후에 검사를 의뢰하시기 바랍니다.</li>
                                 <li>입원 3일 이후 환자의 변 배양은 권장하지 않습니다.</li>
@@ -867,7 +869,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="is-active">
+                    <li>
                       <button>04. <span>소변(Urine)</span></button>
                       <ul>
                         <li>
@@ -880,7 +882,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="is-active">
+                    <li>
                       <button>05. <span>농(고름)(Pus)</span></button>
                       <ul>
                         <li>
@@ -901,7 +903,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="is-active">
+                    <li>
                       <button>06. <span>비뇨생식기 검체</span></button>
                       <ul>
                         <li>
@@ -920,7 +922,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="is-active">
+                    <li>
                       <button>07. <span>조직(Tissue)</span></button>
                       <ul>
                         <li>
@@ -930,7 +932,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="is-active">
+                    <li>
                       <button>08. <span>혐기성 세균 배양을 위한 검체</span></button>
                       <ul>
                         <li>
@@ -948,7 +950,128 @@
               </div>
             </div>
             <div class="tab-item" data-tabSection="1">
-
+              <div class="inner-gap-1">
+                <!-- box-infoTop -->
+                <div class="box-infoTop flex-info fluid">
+                  <div class="info">
+                    <div class="box">
+                      <p class="tit">바이러스 배양검사 <br class="pc-show">의뢰시 준수 사항</p>
+                      <ul class="order-num">
+                        <li>바이러스 검체는 일반적으로 질병 경과가 길수록 바이러스 검출률이 낮아지므로, 발병 초기에 채취하여 주십시오.</li>
+                        <li>검체 채취는 무균조작으로 감염병소에서 채취하고, 각 검체에 따라 적합한 용기를 사용하여 주십시오.</li>
+                        <li>바이러스 배양용 Universal Transport Media(UTM)용기를 사용합니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- //box-infoTop -->
+              </div>
+              <div class="full-bg type-4">
+                <div>
+                  <h5>채취 방법</h5>
+                  <div class="white-step item-2">
+                    <div class="step">
+                      <p class="num">01.</p>
+                      <p class="txt">멸균된 면봉으로 검체를 Swab한 후 면봉대 윗 부분에 표시 되어진 부분을 잘라 <span class="color">바이러스 전용 수송배지</span>에 <span class="color">수직</span>으로 넣어주십시오.</p>
+                    </div>
+                    <div class="step">
+                      <p class="num">02.</p>
+                      <p class="txt">바이러스 운송 배지에는 세균의 증식을 억제하는 성분이 함유되어 있으며, <span class="color">채취 즉시</span> 검사실로 보내어 검사를 해야 합니다. 즉시 의뢰가 
+                        어려운 경우에는 <span class="color">2~3일 이내</span>에 검사가 이루어져야 합니다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-gap-1">
+                <h5>검체별 안내</h5>
+                <!-- box-common-tabTableSwiper -->
+                <div class="box-common-tabTableSwiper r-20">
+                  <div class="inner">
+                    <!-- common-table-1 -->
+                    <div class="swiper-container common-table-1 type-d">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <table>
+                            <colgroup>
+                              <col style="width: 20%">
+                              <col style="width: 20%;">
+                              <col style="width: 60%;">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th>검체종류</th>
+                                <th>용기</th>
+                                <th>검체량 및 유의사항</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="text-align: center;">Rectal swab</td>
+                                <td style="text-align: center;" rowspan="7">바이러스배양전용용기</td>
+                                <td style="text-align: left;">대변을 채취하지 못할 경우 swab을 직장 내 2~4cm 부위에서 rub and rotation 방법으로 채취</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">상부 호흡기</td>
+                                <td style="text-align: left;">
+                                  ① 비인두 흡입액 (Nasopharyngeal aspirate)<br>
+                                  ② 비인두 도말물 (Nasopharyngeal swab)<br>
+                                  ③ 인두 도말물 (Throat swab)<br>
+                                  <span class="mint">바이러스 분리율 ① > ② > ③</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">하부 호흡기</td>
+                                <td style="text-align: left;">기관지 흡입액 (Transtracheal aspirate)<br>기관지 세척액 (Bronchial washing)</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">타액 및 Body Fluid</td>
+                                <td style="text-align: left;">2~3mL 채취</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">Skin 및 mucous membrane lesion</td>
+                                <td style="text-align: left;">수포(Vesicle)를 26 gauge 주사침 혹은 tuberculin syringe를 사용하여 채취하거나 면봉을 사용하여 채취</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">Cervical 및 urethral</td>
+                                <td style="text-align: left;">면봉검체 사용</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">Eye</td>
+                                <td style="text-align: left;">면봉을 소독된 생리식염수에 적신 후 검체 채취</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;" rowspan="2">혈액(Blood)</td>
+                                <td style="text-align: center;">Heparin</td>
+                                <td style="text-align: left;" rowspan="2">Heparin 또는 Sod. Citrate가 들어있는 용기에 5~8mL 채취</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">Sod. citrate</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">뇌척수액(CSF)</td>
+                                <td style="text-align: center;" rowspan="2">멸균용기</td>
+                                <td style="text-align: left;">3~5mL 채취</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">소변(Urine)</td>
+                                <td style="text-align: center;">10mL(소아: 2~3mL) 채취</td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: center;">대변(Stool)</td>
+                                <td style="text-align: center;">대변용기</td>
+                                <td style="text-align: left;">발병 후 4일 이내 검체 3~5g (설변인 경우 : 5mL) 채취<br>기저귀 사용 시 대변을 긁어서 의뢰</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination-1"></div>
+                    </div>
+                    <!-- //common-table-1 -->
+                  </div>
+                </div>
+                <!-- //box-common-tabTableSwiper -->
+              </div>
             </div>
           </div>
           <!-- //tab-section -->  
@@ -971,78 +1094,80 @@
   <!-- //footer -->
 
   <!-- 테이블 레이어 팝업 -->
-  <div class="box-layer layer-video request" style="display: block;" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
+  <div class="box-layer layer-video request" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
     <div class="inner-layer" tabindex="0">
-      <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
+      <div class="gap" style="max-width: 540px;"><!-- max-width 설정 -->
         <div class="box">
-          <p class="table-tit">[ 객담의 품질 등급 ]<br>(Grade of sputum quality)</p>
-          <!-- box-common-tabTableSwiper -->
-          <div class="box-common-tabTableSwiper r-20">
-            <div class="inner">
-              <!-- common-table-1 -->
-              <div class="swiper-container common-table-1 type-c swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <table>
-                      <colgroup>
-                        <col style="width: 20%">
-                        <col style="width: 50%;">
-                        <col style="width: 30%;">
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th rowspan="2">Grade</th>
-                          <th colspan="2">Number of cell / Low-power field</th>
-                          <th rowspan="2">판정</th>
-                        </tr>
-                        <tr>
-                          <th>Epithelial Cell</th>
-                          <th>WBC</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td style="text-align: center;">1</td>
-                          <td style="text-align: center;">> 25</td>
-                          <td style="text-align: center;">< 10</td>
-                          <td style="text-align: center;" rowspan="3">Unacceptable</td>
-                        </tr>
-                        <tr>
-                          <td style="text-align: center;">2</td>
-                          <td style="text-align: center;">> 25</td>
-                          <td style="text-align: center;">10 - 25</td>
-                        </tr>
-                        <tr>
-                          <td style="text-align: center;">3</td>
-                          <td style="text-align: center;">> 25</td>
-                          <td style="text-align: center;">> 25</td>
-                        </tr>
-                        <tr>
-                          <td style="text-align: center;">4</td>
-                          <td style="text-align: center;">10 - 25</td>
-                          <td style="text-align: center;">> 25</td>
-                          <td style="text-align: center;" rowspan="3">Acceptable</td>
-                        </tr>
-                        <tr>
-                          <td style="text-align: center;">5</td>
-                          <td style="text-align: center;">< 10</td>
-                          <td style="text-align: center;">> 25</td>
-                        </tr>
-                        <tr>
-                          <td style="text-align: center;">6</td>
-                          <td style="text-align: center;">< 10</td>
-                          <td style="text-align: center;">< 10</td>
-                        </tr>
-                      </tbody>
-                    </table>
+          <div class="pop-tableBox">
+            <p class="table-tit">[ 객담의 품질 등급 ]<br>(Grade of sputum quality)</p>
+            <!-- box-common-tabTableSwiper -->
+            <div class="box-common-tabTableSwiper r-20">
+              <div class="inner">
+                <!-- common-table-1 -->
+                <div class="swiper-container common-table-1 type-c swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <table>
+                        <colgroup>
+                          <col style="width: 88px;">
+                          <col>
+                          <col style="width: 172px;">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th rowspan="2" style="text-align: center;">Grade</th>
+                            <th colspan="2" style="text-align: center;">Number of cell / Low-power field</th>
+                            <th rowspan="2" style="text-align: center;">판정</th>
+                          </tr>
+                          <tr>
+                            <th style="text-align: center;">Epithelial Cell</th>
+                            <th style="text-align: center;">WBC</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align: center;">1</td>
+                            <td style="text-align: center;">> 25</td>
+                            <td style="text-align: center;">< 10</td>
+                            <td style="text-align: center;" rowspan="3">Unacceptable</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: center;">2</td>
+                            <td style="text-align: center;">> 25</td>
+                            <td style="text-align: center;">10 - 25</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: center;">3</td>
+                            <td style="text-align: center;">> 25</td>
+                            <td style="text-align: center;">> 25</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: center;">4</td>
+                            <td style="text-align: center;">10 - 25</td>
+                            <td style="text-align: center;">> 25</td>
+                            <td style="text-align: center;" rowspan="3">Acceptable</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: center;">5</td>
+                            <td style="text-align: center;">< 10</td>
+                            <td style="text-align: center;">> 25</td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: center;">6</td>
+                            <td style="text-align: center;">< 10</td>
+                            <td style="text-align: center;">< 10</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
+                  <div class="swiper-pagination-1"></div>
                 </div>
-                <div class="swiper-pagination-1"></div>
+                <!-- //common-table-1 -->
               </div>
-              <!-- //common-table-1 -->
             </div>
+            <!-- //box-common-tabTableSwiper -->
           </div>
-          <!-- //box-common-tabTableSwiper -->
         </div>
         <button data-event="layerClose"></button>
       </div>
@@ -1213,7 +1338,7 @@
       },
     });
 
-    var tableSwiper1 = new Swiper('.type-b', {
+    var tableSwiper2 = new Swiper('.type-b', {
       slidesPerView: 'auto',
       freeMode: true,
       preventClicks: true,
@@ -1224,6 +1349,51 @@
       observeParents: true,
       pagination: {
         el: ".type-b .swiper-pagination-1",
+        type: "progressbar",
+      },
+      breakpoints: {
+        1024: {  //브라우저가 1024보다 클 때
+          spaceBetween: 12,
+        },
+      },
+    });
+
+    document.querySelectorAll('.common-moveBtn').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        // swiper
+        var tableSwiper3 = new Swiper('.pop-tableBox .type-c', {
+          slidesPerView: 'auto',
+          freeMode: true,
+          preventClicks: true,
+          loop: false,
+          preventClicksPropagation: false,
+          spaceBetween: 12,
+          observer: true,
+          observeParents: true,
+          pagination: {
+            el: ".pop-tableBox .type-c .swiper-pagination-1",
+            type: "progressbar",
+          },
+          breakpoints: {
+            1024: {  //브라우저가 1024보다 클 때
+              spaceBetween: 12,
+            },
+          },
+        });
+      })
+    })
+
+    var tableSwiper4 = new Swiper('.type-d', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      spaceBetween: 12,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".type-d .swiper-pagination-1",
         type: "progressbar",
       },
       breakpoints: {
