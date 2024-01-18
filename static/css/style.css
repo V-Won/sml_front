@@ -16156,7 +16156,7 @@ input {
   }
   .box-rhror {
     background-image: none;
-    padding: 80px 0;
+    padding: 80px 0 120px 0;
   }
   .box-rhror::after {
     overflow: hidden;
