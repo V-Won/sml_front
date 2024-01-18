@@ -208,6 +208,22 @@
 :lang(en) .inspect-item-swiper .mySwiper1 .swiper-slide .text-box .flex .title {
   max-width: 82px;
 }
+:lang(en) .q-controlSystem .item-wrap .item {
+  min-height: 293px;
+}
+:lang(en) .q-controlSystem .item-wrap .item .top .en {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%; /* 26px */
+  letter-spacing: 0.4px;
+}
+:lang(en) .q-controlEssential .flex-box .box .item .en {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+  letter-spacing: 0.32px;
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
@@ -459,6 +475,20 @@
   }
   :lang(en) .inspect-item-swiper .mySwiper1 .swiper-slide .text-box .flex .title {
     max-width: 117px;
+  }
+  :lang(en) .q-controlSystem > div h5 {
+    margin-bottom: 39px;
+  }
+  :lang(en) .q-controlSystem .item-wrap .item {
+    min-height: 381px;
+  }
+  :lang(en) .q-controlSystem .item-wrap .item .top .en {
+    font-size: 30px;
+  }
+  :lang(en) .q-controlEssential .flex-box .box .item .en {
+    font-size: 18px;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.36px;
   }
 }
 /* //1024 이상 */

@@ -396,7 +396,6 @@
 
 	// 인사말
 	.box-infoTop {
-		
 		.tit {
 			&.type-4 {
 				margin-bottom: 47px;
@@ -413,6 +412,38 @@
 						.title {
 							max-width: 82px;
 						}
+					}
+				}
+			}
+		}
+	}
+
+	// 검사부 안내 > 정도관리 > 정도관리 개요
+	.q-controlSystem {
+		.item-wrap {
+			.item {
+				min-height: 293px;
+				.top {
+					.en {
+						margin-bottom: 0;
+						font-size: 20px;
+						font-weight: 600;
+						line-height: 130%; /* 26px */
+						letter-spacing: 0.4px;
+					}
+				}
+			}
+		}
+	}
+	.q-controlEssential {
+		.flex-box {
+			.box {
+				.item {
+					.en {
+						font-size: 16px;
+						font-weight: 600;
+						line-height: 130%; /* 20.8px */
+						letter-spacing: 0.32px;
 					}
 				}
 			}
@@ -875,6 +906,38 @@
 							.title {
 								max-width: 117px;
 							}
+						}
+					}
+				}
+			}
+		}
+
+		// 검사부 안내 > 정도관리 > 정도관리 개요
+		.q-controlSystem {
+			> div {
+				h5 {
+					margin-bottom: 39px;
+				}
+			}
+			.item-wrap {
+				.item {
+					min-height: 381px;
+					.top {
+						.en {
+							font-size: 30px;
+						}
+					}
+				}
+			}
+		}
+		.q-controlEssential {
+			.flex-box {
+				.box {
+					.item {
+						.en {
+							font-size: 18px;
+							line-height: 130%; /* 23.4px */
+							letter-spacing: 0.36px;
 						}
 					}
 				}
