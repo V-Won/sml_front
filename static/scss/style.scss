@@ -6474,7 +6474,6 @@ input {
 							&::before {
 								width: 24px;
 								height: 24px;
-
 							}
 						}
 						&.not-num {
@@ -9826,7 +9825,7 @@ input {
 					span {
 						&.list-tit {
 							display: block;
-							color: var(--Primary-04, #4D4D4D);
+							color: var(--Primary-04, #4d4d4d);
 							font-size: 14px;
 							font-weight: 600;
 							line-height: 150%;
@@ -9943,7 +9942,8 @@ input {
 					}
 				}
 			}
-			&.type-a, &.type-b {
+			&.type-a,
+			&.type-b {
 				.swiper-slide {
 					width: 800px !important;
 					table {
@@ -9969,10 +9969,10 @@ input {
 		width: 100%;
 		position: relative;
 		border-radius: 12px;
-		background: var(--gray-07-bg, #F5F5F5);
+		background: var(--gray-07-bg, #f5f5f5);
 		padding: 20px;
 		.tit {
-			color: var(--Primary-04, #4D4D4D);
+			color: var(--Primary-04, #4d4d4d);
 			font-size: 18px;
 			font-weight: 600;
 			line-height: 130%;
@@ -10015,8 +10015,8 @@ input {
 				align-items: flex-start;
 				flex-wrap: wrap;
 				border-radius: 6px;
-				border: 1px solid var(--gray-03-line, #D5D5D5);
-				background: var(--gray-07-bg, #F5F5F5);
+				border: 1px solid var(--gray-03-line, #d5d5d5);
+				background: var(--gray-07-bg, #f5f5f5);
 				padding: 0 20px;
 				& + li {
 					margin-top: 20px;
@@ -10025,7 +10025,7 @@ input {
 					width: 100%;
 					position: relative;
 					padding: 20px 0;
-					color: var(--Primary-04, #4D4D4D);
+					color: var(--Primary-04, #4d4d4d);
 					text-align: left;
 					font-size: 16px;
 					font-weight: 600;
@@ -10080,7 +10080,7 @@ input {
 								position: absolute;
 								left: 0;
 								top: 0;
-								color: var(--Primary-04, #4D4D4D);
+								color: var(--Primary-04, #4d4d4d);
 								font-size: 14px;
 								font-weight: 500;
 								line-height: 150%;
@@ -10128,7 +10128,7 @@ input {
 				width: 24px;
 				height: 24px;
 				counter-increment: circle 1;
-				content: '0' counter(circle);
+				content: "0" counter(circle);
 				color: #fff;
 				font-size: 12px;
 				z-index: 2;
@@ -11364,7 +11364,7 @@ input {
 						margin-bottom: 23px;
 						li {
 							letter-spacing: 0.02em;
-							line-height: 14px;
+							line-height: 17px;
 						}
 					}
 				}
@@ -11566,7 +11566,14 @@ input {
 		}
 	}
 
-
+	// 인사말
+	.box-infoTop {
+		.tit {
+			&.type-4 {
+				margin-bottom: 47px;
+			}
+		}
+	}
 }
 // //모바일 lang(en)
 
@@ -16856,6 +16863,17 @@ input {
 	.box-dusgur {
 		margin-top: -78px;
 		padding-top: 1px;
+		&.type-2{
+			.common-tab{
+				&.type-4{
+					ul{
+						li{
+							margin-right:20px;
+						}
+					}
+				}
+			}
+		}
 		&.remove-sticky {
 			.common-tab {
 				margin-top: 18px;
@@ -17636,7 +17654,8 @@ input {
 						}
 					}
 				}
-				&.type-a, &.type-b {
+				&.type-a,
+				&.type-b {
 					.swiper-slide {
 						width: 100% !important;
 						table {
@@ -17647,7 +17666,8 @@ input {
 										height: 56px;
 										object-fit: contain;
 									}
-									&:first-child, &:nth-child(2) {
+									&:first-child,
+									&:nth-child(2) {
 										padding: 19.5px 40px;
 									}
 								}
@@ -18563,8 +18583,8 @@ input {
 				> ul {
 					> li {
 						border-radius: 12px;
-						flex:0 0 calc(17% + 10px) !important;
-						padding:14px 16px;
+						flex: 0 0 calc(17% + 10px) !important;
+						padding: 14px 16px;
 						height: 200px;
 						> .text-1 {
 							font-size: 18px;
@@ -18992,6 +19012,30 @@ input {
 			.form-inner {
 				.form-item {
 					gap: 0 153px;
+				}
+			}
+		}
+
+		// 인사말
+		.box-infoTop {
+			.txt {
+				& + .txt {
+					margin-top: 23px;
+				}
+			}
+			.img-cover{
+				transform: translate(10vw, 330px);
+				right:-68px;
+			}
+		}
+
+		// 재단안내 > 재단소개 > 연혁
+		.box-dusgur {
+			.box-list-dusgur{
+				.box-flex{
+					.box-img{
+						flex:0 0 35vw;
+					}
 				}
 			}
 		}
