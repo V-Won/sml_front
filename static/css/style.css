@@ -8934,6 +8934,36 @@ input {
   font-size: 16px;
   letter-spacing: 0.32px;
 }
+.precautions-wrap .white-step.dot-sub .step .tit {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+}
+.precautions-wrap .white-step.dot-sub .dot-list > li {
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.28px;
+}
+.precautions-wrap .white-step.dot-sub .dot-list > li .sub-txt {
+  display: block;
+  margin-top: 4px;
+  color: var(--gray-01, #666);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.28px;
+}
+.precautions-wrap .white-step.dot-sub .dot-list > li .sub-txt > span {
+  display: block;
+  color: var(--gray-01, #666);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+}
 .precautions-wrap .border-top {
   width: 100%;
   position: relative;
@@ -15512,10 +15542,10 @@ input {
     padding-left: 12px;
   }
   .precautions-wrap .white-step .step .dot-list-box .box .dot-list + .step-order {
-    margin-top: 24px;
+    margin-top: 25px;
   }
   .precautions-wrap .white-step .step .dot-list-box .box + .box {
-    margin-top: 40px;
+    margin-top: 44px;
     padding-top: 40px;
   }
   .precautions-wrap .white-step.pos-rel .step .txt {
@@ -15532,6 +15562,33 @@ input {
   }
   .precautions-wrap .white-step.item-2 .step {
     padding: 40px;
+  }
+  .precautions-wrap .white-step.list {
+    gap: 40px;
+  }
+  .precautions-wrap .white-step.list .step .tit {
+    margin-bottom: 35px;
+  }
+  .precautions-wrap .white-step.list .step .step-order > li {
+    padding-left: 36px;
+  }
+  .precautions-wrap .white-step.dot-sub .step .tit {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
+  .precautions-wrap .white-step.dot-sub .dot-list > li {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    padding-left: 12px;
+  }
+  .precautions-wrap .white-step.dot-sub .dot-list > li .sub-txt {
+    margin-top: 8px;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+  }
+  .precautions-wrap .white-step.dot-sub .dot-list > li .sub-txt > span {
+    font-size: 16px;
+    letter-spacing: 0.32px;
   }
   .precautions-wrap .border-top {
     padding-top: 80px;
@@ -16715,6 +16772,10 @@ input {
     line-height: 150%;
     letter-spacing: 0.4px;
     min-height: 90px;
+  }
+  .precautions-wrap .white-step.dot-sub .step {
+    width: calc(50% - 20px);
+    height: 253px;
   }
 }
 /* //1400 이상 */
