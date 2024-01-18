@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>Samkwang Medical Lab</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+
+      <!-- sub-top -->
+      <div class="sub-top"
+        style="background: url(../static/images/@/sub_top_E.png) no-repeat; background-position: 55%">
+        <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">About SML</a>
+              </li>
+              <li>
+                <a href="#none">Introduction</a>
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">Chairman Message</a>
+                <ul class="list">
+                  <!-- hover시 font-weight 문제로 title 사용 -->
+                  <li><a href="#none" title="Chairman Message">Chairman Message</a></li>
+                  <li><a href="#none" title="History">History</a></li>
+                  <li><a href="#none" title="Misson&Values">Misson&Values</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">Chairman Message</h3>
+          </div>
+        </div>
+      </div>
+      <!-- //sub-top -->
+
+      <!-- inner-gap-1 -->
+      <div class="inner-gap-1">
+        <!-- box-infoTop -->
+        <div class="box-infoTop type-4">
+          <p class="tit type-4">Samkwang Medical Foundation is based on degree and trust I will be reborn as a new medical service master.</p>
+          <div class="info gap-type-2 type-2">
+            <div class="txt">
+              Greetings,
+            </div>
+            <div class="txt">
+              Samkwang Medical Lab, based on the core values of <span class="c-1">Communication, Trust, Innovation, and Happiness</span>, is a diagnostic testing institution leading the healthcare/biotech industry, contributing to human health and a happy life with Samkwang's unique value, <span class="c-1">Smart Medical Life.</span>
+            </div>
+            <div class="txt">
+              Since its establishment in 1985, Samkwang Medical Lab has provided over 4,000 diagnostic medical and pathological testing services. These services are offered nationwide to hospitals and clinics through three major testing centers in Seoul, Daejeon, and Busan, all certified by domestic and international accreditation agencies, ensuring the highest standards. We are committed to delivering <span class="c-1">world-class</span> healthcare services and continually leading in the field of <span class="c-1">"Disease management and Prevention-focused healthcare.”</span> This commitment involves the proactive adoption of the latest medical equipment and advanced diagnostic technologies.
+            </div>
+            <div class="txt">
+              Since our establishment, we have operated on a singular management philosophy based on culture and innovation to push the bounds of value creation for the customer. In response to the digital age, Samkwang is dedicated to continuous improvement and development. All our regional testing center staff are actively working to integrate IT systems with big data, pushing the forefront of <span class="c-1">faster and more accurate results</span> that meet the demands of the digital era.
+            </div>
+            <div class="txt">
+              We sincerely appreciate Samkwang Medical Lab's ongoing interest. We promise to continue standing for the customer, based on <span class="c-1">trust and an integral</span> management system. Samkwang seeks continued support, advice, and collaboration as it endeavors to deliver the best testing services to contribute to human health and a happy life under the banner of "Smart Medical Life."
+            </div>
+            <div class="txt">
+              Thank you.
+            </div>
+          </div>
+          <div class="img-cover">
+            <img src="../static/images/en/img/img_chairman.png" alt="" class="mo-show img-1">
+            <img src="../static/images/en/img/img_chairman_pc.png" alt="" class="pc-show img-1">
+          </div>
+        </div>
+        <!-- //box-infoTop -->
+      </div>
+      <!-- //inner-gap-1 -->
+
+    </div>
+    <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="../static/js/includeHTML.js"></script>
+  <script src="../static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <!-- swiper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
+  <!-- //swiper.js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "transparent"
+    })
+    selectBox.initialize();
+  </script>
+
+</body>
+
+</html>

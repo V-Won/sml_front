@@ -11077,8 +11077,8 @@ input {
 		.flex-3 {
 			margin: 100px 0 0 0;
 			padding: 60px 20px;
-			background-image: url(../images/bg/bg_ci.jpg);
-			background-position: left top;
+			background-image: url(../images/bg/bg_ci_mo.png);
+			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			h3 {
@@ -11565,6 +11565,8 @@ input {
 			}
 		}
 	}
+
+
 }
 // //모바일 lang(en)
 
@@ -18526,6 +18528,7 @@ input {
 				margin-top: 119px;
 				background-position: center;
 				padding: 80px 0 117px 0;
+				background-image: url(../images/bg/bg_ci.jpg);
 				.gap-in {
 					max-width: 1600px;
 					padding: 0 100px;
