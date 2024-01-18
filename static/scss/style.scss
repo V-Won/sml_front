@@ -6458,6 +6458,28 @@ input {
 							height: 24px;
 							z-index: -1;
 						}
+						span {
+							&.color {
+								display: block;
+								color: #48ADC2;
+								font-size: 16px;
+								font-weight: 600;
+								line-height: 150%;
+								letter-spacing: 0.32px;
+							}
+						}
+						.mint-noti {
+							margin-bottom: 0;
+						}
+						&.not-num {
+							padding-left: 0;
+							&::before {
+								display: none;
+							}
+							&::after {
+								display: none;
+							}
+						}
 					}
 				}
 				& + .box {
@@ -9628,6 +9650,17 @@ input {
 
 // 검사 안내 > 검사항목 별 주의사항
 .precautions-wrap {
+	.tab-item {
+		margin-top: 42px;
+	}
+	.tab-section {
+		&.inner-tab {
+			margin-top: 20px;
+			.tab-item {
+				margin-top: 0;
+			}
+		}
+	}
 	h5 {
 		color: var(--Primary-04, #4d4d4d);
 		font-size: 20px;
@@ -9679,7 +9712,7 @@ input {
 		.box {
 			width: 100%;
 			position: relative;
-			padding: 40px 24px;
+			padding: 39px 24px;
 			border-radius: 6px;
 			border: 1px solid var(--gray-03-line, #d5d5d5);
 			background: var(--Primary-05, #fff);
@@ -9689,7 +9722,7 @@ input {
 				img {
 					width: 100%;
 					height: 100%;
-					object-fit: cover;
+					object-fit: contain;
 				}
 				&.ct-box {
 					height: 100px;
@@ -9702,7 +9735,8 @@ input {
 				font-weight: 600;
 				line-height: 130%;
 				letter-spacing: 0.36px;
-				margin: 24px 0 16px;
+				margin: 23px 0 15px;
+				padding: 0 20px;
 			}
 			&.flex {
 				display: flex;
@@ -9717,7 +9751,7 @@ input {
 		font-weight: 600;
 		line-height: 150%;
 		letter-spacing: 0.32px;
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 		padding-left: 26px;
 		position: relative;
 		&::before {
@@ -9726,13 +9760,101 @@ input {
 			height: 18px;
 			background-size: cover !important;
 			background-position: center !important;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.9466 2.61632C10.0799 1.11943 7.91876 1.11943 7.05214 2.61632L1.40381 12.3725C0.535394 13.8725 1.61777 15.7499 3.35102 15.7499H14.6477C16.3809 15.7499 17.4633 13.8725 16.5949 12.3725L10.9466 2.61632ZM9.74938 6.74567C9.74705 6.33146 9.40938 5.99756 8.99518 5.99989C8.58097 6.00222 8.24708 6.33988 8.2494 6.75409L8.26623 9.74935C8.26855 10.1636 8.60622 10.4974 9.02043 10.4951C9.43464 10.4928 9.76853 10.1551 9.7662 9.74092L9.74938 6.74567ZM9.74939 11.9924C9.74939 11.5782 9.4136 11.2424 8.99939 11.2424C8.58518 11.2424 8.24939 11.5782 8.24939 11.9924V11.9999C8.24939 12.4141 8.58518 12.7499 8.99939 12.7499C9.4136 12.7499 9.74939 12.4141 9.74939 11.9999V11.9924Z' fill='%2375C9DA'/%3E%3C/svg%3E");
+			position: absolute;
+			top: 2px;
+			left: 0;
 		}
 	}
-	.ct-orderStep {
+	.white-step {
+		width: 100%;
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		.step {
+			width: 100%;
+			position: relative;
+			padding: 18.5px 20px;
+			border-radius: 6px;
+			border: 1px solid var(--gray-03-line, #D5D5D5);
+			background: #fff;
+			.num {
+				color: var(--Primary-01, #006477);
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.36px;
+				margin-bottom: 20px;
+			}
+			.tit {
+				margin: -8px 0 20px;
+				color: var(--Primary-04, #4D4D4D);
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 130%;
+				letter-spacing: 0.4px;
+			}
+			.txt {
+				color: var(--gray-01, #666);
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 150%;
+				letter-spacing: 0.32px;
+			}
+			.img-holder {
+				width: 100%;
+				position: relative;
+				border-radius: 6px;
+				overflow: hidden;
+				margin-top: 40px;
+				span {
+					padding-top: 50.4%;
+				}
+			}
+		}
+	}
+	.border-top {
+		width: 100%;
+		position: relative;
+		padding-top: 60px;
+		margin-top: 60px;
+		border-top: 1px solid var(--gray-03-line, #D5D5D5);
+	}
+	.chk-tit {
+		color: var(--Primary-04, #4D4D4D);
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.36px;
+		padding-left: 32px;
+		position: relative;
+		&::before {
+			content: "";
+			width: 24px;
+			height: 24px;
+			background-position: center !important;
+			background-size: cover !important;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&.good {
+			&::before {
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z' fill='%23006477'/%3E%3Cpath d='M18.458 9.27987L16.73 7.552L10.5896 13.6924L7.45248 10.5554L5.72461 12.2834L8.8616 15.4204L8.86147 15.4205L10.5893 17.1485L10.5896 17.1484L10.5897 17.1485L12.3176 15.4205L12.3175 15.4204L18.458 9.27987Z' fill='white'/%3E%3C/svg%3E");
+			}
+		}
+		&.bad {
+			&::before {
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z' fill='%23E60012'/%3E%3Cpath d='M17.5896 8.16926L15.8616 6.44126L12.0306 10.2723L8.14206 6.38379L6.41406 8.11179L10.3026 12.0003L6.41406 15.8888L8.14206 17.6168L12.0306 13.7283L15.8616 17.5594L17.5896 15.8314L13.7586 12.0003L17.5896 8.16926Z' fill='white'/%3E%3C/svg%3E");
+			}
+		}
+	}
+	.full-bg {
 		width: 100%;
 		position: relative;
 		padding: 60px 20px 100px;
-		background: url(../../static/images/bg/precautions_bg_type1.png) no-repeat;
 		background-size: cover !important;
 		background-position: center !important;
 		margin: 100px 0 60px;
@@ -9741,6 +9863,18 @@ input {
 			position: relative;
 			max-width: 1400px;
 			margin: 0 auto;
+		}
+		&.ct-orderStep {
+			background: url(../../static/images/bg/precautions_bg_type1.png) no-repeat;
+		}
+		&.how-natural {
+			background: url(../../static/images/bg/precautions_bg_type2.png) no-repeat;
+		}
+	}
+	.box-common-tabTableSwiper {
+		padding: 0;
+		.common-table-1 {
+			margin: 16px 0 40px;
 		}
 	}
 }
@@ -11649,6 +11783,7 @@ input {
 						padding: 12px 24px;
 						font-size: 18px;
 						letter-spacing: 0.36px;
+						cursor: pointer;
 					}
 				}
 			}
@@ -14920,6 +15055,12 @@ input {
 								width: 29px;
 								height: 29px;
 							}
+							span {
+								&.color {
+									font-size: 20px;
+									letter-spacing: 0.4px;
+								}
+							}
 						}
 					}
 					& + .box {
@@ -16726,6 +16867,85 @@ input {
 		}
 	}
 
+	// 검사 안내 > 검사항목 별 주의사항
+	.precautions-wrap {
+		margin-top: 48px;
+		.tab-item {
+			margin-top: 0;
+		}
+		.tab-section {
+			&.inner-tab {
+				margin-top: 60px;
+			}
+		}
+		h5 {
+			font-size: 40px;
+			letter-spacing: 0.8px;
+			margin-bottom: 48px;
+			& + .mint-noti {
+				margin-top: -31px;
+			}
+		}
+		.white-box {
+			gap: 40px;
+			.box {
+				width: 100%;
+				padding: 40px;
+				border-radius: 12px;
+				.img-box {
+					&.ct-box {
+						flex-shrink: 0;
+						width: 200px;
+						height: 200px;
+					}
+				}
+				.tit {
+					text-align: left;
+					font-size: 24px;
+					letter-spacing: 0.48px;
+					margin: 0 0 24px;
+					padding: 0;
+				}
+				&.flex {
+					flex-direction: row;
+					gap: 24px;
+				}
+			}
+		}
+		.mint-noti {
+			font-size: 18px;
+			letter-spacing: 0.36px;
+			margin-bottom: 48px;
+			padding-left: 32px;
+			&::before {
+				width: 24px;
+				height: 24px;
+			}
+		}
+		.white-step {
+			gap: 40px;
+			.step {
+				width: 100%;
+				padding: 40px;
+				border-radius: 12px;
+				.num {
+					font-size: 20px;
+					line-height: 150%;
+					letter-spacing: 0.4px;
+					margin-bottom: 18px;
+				}
+			}
+		}
+		.border-top {
+			padding-top: 80px;
+			margin-top: 80px;
+		}
+		.full-bg {
+			padding: 80px 100px 120px;
+			margin: 120px 0 80px;
+		}
+	}
+
 	// 재단안내 > 경영이념 > 미션과 핵심가치
 	.box-altus {
 		border-radius: 12px;
@@ -17959,6 +18179,43 @@ input {
 }
 /* //1300 이상 */
 
+/* 1400 이상 */
+@media all and (min-width: 1400px) {
+	// 검사 안내 > 검사항목 별 주의사항
+	.precautions-wrap {
+		.white-step {
+			.step {
+				width: calc(33.3% - 27px);
+				.txt {
+					width: calc(100% - 80px);
+					position: absolute;
+					left: 40px;
+					bottom: 40px;
+					min-height: 72px;
+				}
+			}
+			&.height48 {
+				.step {
+					.txt {
+						min-height: 48px;
+					}
+				}
+			}
+			&.height200 {
+				.step {
+					height: 200px;
+				}
+			}
+			&.item-4 {
+				.step {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+/* //1400 이상 */
+
 /* 1600 이상 */
 @media all and (min-width: 1600px) {
 	.box-listValue {
@@ -18072,6 +18329,31 @@ input {
 			.item {
 				width: calc(50% - 20px);
 				min-height: 291px;
+			}
+		}
+	}
+
+	// 검사 안내 > 검사항목 별 주의사항
+	.precautions-wrap {
+		.white-box {
+			gap: 40px;
+			.box {
+				width: calc(50% - 20px);
+				.img-box {
+					&.ct-box {
+						height: 242px;
+					}
+				}
+				&.flex {
+					align-items: flex-start;
+				}
+			}
+		}
+		.white-step {
+			&.item-4 {
+				.step {
+					width: calc(25% - 30px);
+				}
 			}
 		}
 	}
