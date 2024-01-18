@@ -396,9 +396,25 @@
 
 	// 인사말
 	.box-infoTop {
+		
 		.tit {
 			&.type-4 {
 				margin-bottom: 47px;
+			}
+		}
+	}
+
+	// 검사부안내 > 서불본원(진단검사의학과, 병리과) and 중부센터 and 부산센터
+	.inspect-item-swiper {
+		.mySwiper1 {
+			.swiper-slide {
+				.text-box {
+					.flex {
+						.title {
+							max-width: 82px;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -832,9 +848,9 @@
 				transform: translate(10vw, 330px);
 				right: -68px;
 			}
-			.tit{
-				&.type-3{
-					margin-bottom:24px;
+			.tit {
+				&.type-3 {
+					margin-bottom: 24px;
 				}
 			}
 		}
@@ -845,6 +861,21 @@
 				.box-flex {
 					.box-img {
 						flex: 0 0 35vw;
+					}
+				}
+			}
+		}
+
+		// 검사부안내 > 서불본원(진단검사의학과, 병리과) and 중부센터 and 부산센터
+		.inspect-item-swiper {
+			.mySwiper1 {
+				.swiper-slide {
+					.text-box {
+						.flex {
+							.title {
+								max-width: 117px;
+							}
+						}
 					}
 				}
 			}

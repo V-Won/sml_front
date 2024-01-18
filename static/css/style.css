@@ -13905,7 +13905,6 @@ input {
     gap: 0 40px;
   }
   .laboratory-box .item .img-holder {
-    order: 2;
     width: 70%;
     max-width: 560px;
   }

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>Samkwang Medical Lab</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="../static/css/style_en.css"><!-- 영문 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+      <!-- sub-top -->
+      <div class="sub-top"
+        style="background: url(../static/images/@/sub_top_A.png) no-repeat; background-position: 61%">
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">Laboratory Guide</a>
+              </li>
+              <li>
+                <a href="#none">Seoul HQ</a>
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">Pathology</a>
+                <ul class="list">
+                  <!-- hover시 font-weight 문제로 title 사용 -->
+                  <li><a href="#none" title="Laboratory Medicine">Laboratory Medicine</a></li>
+                  <li><a href="#none" title="Pathology">Pathology</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">Pathology</h3>
+          </div>
+        </div>
+      </div>
+      <!-- //sub-top -->
+
+      <div class="inner-gap-1">
+        <!-- box-infoTop -->
+        <div class="box-infoTop">
+          <p class="tit">Pathology</p>
+          <div class="img-holder">
+            <span>
+              <img src="../static/images/@/laboratory_guide_2.png" alt="" class="pc-show">
+              <img src="../static/images/@/laboratory_guide_2_mo.png" alt="" class="mo-show">
+            </span>
+          </div>
+          <div class="info">
+            <p class="txt">The Department of Pathology conducts prompt and precise examinations of tissues, body fluids, and cellular specimens collected from patients, enabling the pathological diagnosis of diseases.</p>
+            <p class="txt">SML’s Pathology Department actively engages in domestic accreditation programs for quality control, participating in various research activities, and establishing a consultative framework.<br> Drawing upon specialized knowledge and accumulated experience, our pathology department delivers results reflecting the latest insights. <br>We provide clinicians with essential information for therapeutic decisions, contributing to the determination of treatment plans and prognoses for patients.</p>
+          </div>
+        </div>
+        <!-- //box-infoTop -->
+        <!-- common-tab -->
+        <div class="common-tab type-2 posi" data-event="commonTab">
+          <div class="swiper-container laboratory-swiper">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide is-active" data-index="0"><a href="#b_0" class="btn">Cytopathology</a></li>
+              <li class="swiper-slide" data-index="1"><a href="#b_1" class="btn">Histopathology</a></li>
+              <li class="swiper-slide" data-index="2"><a href="#b_2" class="btn">Special Pathology</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //common-tab -->
+        <!-- laboratory-box -->
+        <div class="laboratory-box">
+          <div class="item" id="b_0">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">Cytopathology</p>
+              <p class="txt">The Cytopathology department generates high-quality slides utilizing an automated slide preparation system for cells collected from areas of suspicion related to gynecological cancers or other malignancies. Specialized personnel interpret the morphological characteristics of these cells to provide results essential for early disease diagnosis and post-treatment recurrence assessment.</p>
+              <!-- <ul class="info-list">
+                <li>자궁경부세포 검사</li>
+                <li>체액세포 검사</li>
+                <li>흡인세포 검사</li>
+                <li>액상흡인세포 검사</li>
+              </ul> -->
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="세포병리"><span>Instruments</span></button>
+            </div>
+          </div>
+          <div class="item" id="b_1">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">Histopathology</p>
+              <p class="txt">In the department of Histopathology, the tissues obtained through biopsy and surgical excision from various organs of the human body are visually examined to identify pathological changes. Subsequently, slides are prepared, and the results are provided through the prompt and accurate interpretation of a pathologist. This final diagnosis, essential for determining the direction of patient treatment and prognosis, is crucial in offering comprehensive insights into the patient's medical condition.</p>
+              <!-- <ul class="info-list">
+                <li>조직검사</li>
+                <li>특수염색</li>
+              </ul> -->
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="조직병리"><span>Instruments</span></button>
+            </div>
+          </div>
+          <div class="item" id="b_2">
+            <div class="img-holder">
+              <span>
+                <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
+              </span>
+            </div>
+            <div class="text-box">
+              <p class="tit">Special Pathology</p>
+              <p class="txt">Immunopathology and molecular pathology tests can provide valuable assistance in achieving an accurate diagnosis when differentiation is challenging with conventional tissue staining alone. These tests are widely utilized in various aspects, including determining treatment strategies, selecting therapeutic agents, predicting prognosis, and evaluating treatment outcomes.</p>
+              <!-- <ul class="info-list">
+                <li>조직면역화학 검사</li>
+                <li>Kappa light chain, Lambda light chain in situ hybridization, EBV in situ hybridization</li>
+              </ul> -->
+              <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="특수병리"><span>Instruments</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- //laboratory-box -->
+      </div>
+    </div>
+    <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 검체용기 일람 레이어 팝업 -->
+  <div class="box-layer layer-video request" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
+    <div class="inner-layer absol" tabindex="0">
+      <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
+        <div class="box" style="max-height: fit-content;">
+          <!-- inspect-item-swiper -->
+          <div class="inspect-item-swiper">
+            <div class="common-tab type-2" data-event="commonTab">
+              <div class="swiper-container snbSwiper type-2">
+                <ul class="list swiper-wrapper"></ul>
+              </div>
+            </div>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- //inspect-item-swiper -->
+        </div>
+        <button data-event="layerClose"></button>
+      </div>
+    </div>
+    <div class="verticalAlign"></div>
+  </div>
+  <!-- //검체용기 일람 레이어 팝업 -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="../static/js/includeHTML.js"></script>
+  <script src="../static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <!-- swiper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
+  <!-- //swiper.js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "transparent"
+    })
+    selectBox.initialize();
+    layerPopup.initialize();
+
+     // 레이어 팝업 > 상단 tab
+    var swiper2 = new Swiper('.snbSwiper.type-2', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+      thumbs: {
+        swiper: swiper1,
+      },
+    });
+
+    // 레이어 팝업 > 상단 본문 이미지
+    var swiper1 = new Swiper(".mySwiper1", {
+      spaceBetween: 20,
+      loop: false,
+      loopedSlides: 1,
+      slidesPerView: 1,
+      autoHeight: true,
+      observer: true,
+      observeParents: true,
+      thumbs: {
+        swiper: swiper2,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      on: {
+        slideChange: function (index) {
+          var go = swiper1.realIndex;
+
+          swiper2.slideTo(go);
+        },
+      }
+    });
+
+    var swiper3 = new Swiper('.laboratory-swiper', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+    });
+
+    var $snbSwiperItem3 = $('.laboratory-swiper .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem3.click(function () {
+      var target3 = $(this).parent();
+      $snbSwiperItem3.parent().removeClass('is-active');
+      target3.addClass('is-active');
+    })
+
+    document.querySelectorAll('.laboratory-swiper > ul > li').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        swiper3.slideTo(e.currentTarget.getAttribute('data-index'));
+      });
+    });
+
+    document.querySelectorAll('.laboratory-swiper > ul > li .btn').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault()
+        var href = e.target.getAttribute('href');
+        var hrefRe = href.replace('#', '');
+        var location = document.getElementById(hrefRe).offsetTop + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight - 100;
+        window.scrollTo({ top: location, behavior: "smooth" });
+      });
+    });
+
+    window.onscroll = (e) => {
+      let windowTop = window.scrollY;
+
+      if ( windowTop > document.querySelector('.posi').offsetHeight + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight ) {
+        document.querySelector('.common-tab.posi').classList.add('fixed');
+      } else {
+        document.querySelector('.common-tab.posi').classList.remove('fixed');
+      }
+    }
+
+    // event reset
+    const actionEvent = () => {
+      swiper2.update();
+      swiper1.update();
+      swiper3.update();
+    }
+
+    // 레이어 팝업 > 상단 tab click
+    var $snbSwiperItem2 = $('.snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem2.click(function () {
+      var target2 = $(this).parent();
+      $snbSwiperItem2.parent().removeClass('is-active');
+      target2.addClass('is-active');
+    })
+
+    window.addEventListener('resize', () => {
+      actionEvent();
+    })
+
+    window.addEventListener('load', () => {
+      if (window.innerWidth <= 1024) {
+        actionEvent();
+      }
+    })
+
+    document.querySelectorAll('.view-btn').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        actionEvent();
+
+        swiper2.slideTo(0);
+        swiper1.slideTo(0);
+      })
+    })
+
+    // 상품 json
+    /**
+     * 엑셀 > json 파일 변환 사이트.
+     * https://products.aspose.app/cells/ko/conversion/excel-to-json
+    */
+    var requestURL = "../static/js/list_product.json";
+    var request = new XMLHttpRequest();
+    request.open("GET", requestURL);
+    request.responseType = "json";
+    request.send();
+
+    // json
+    document.querySelectorAll('[data-event="layerOpen"]').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        let name = item.currentTarget.getAttribute('data-text');
+        var updt = request.response;
+
+        swiper2.removeAllSlides();
+        swiper1.removeAllSlides();
+
+        let cnt = 0; // data-index 리셋 카운트
+        const tt = "전체",
+              localName = "서울본원";
+
+        for (var i = 0; i < updt[tt].length; i++) {
+          if ( localName == updt[tt][i]["센터구분"] && name == updt[tt][i]["분야2"] ) {
+            cnt++;
+
+            console.log(`${updt[tt][i]["센터구분"]}` + ` and ` + `${updt[tt][i]["분야2"]}`);
+
+            let img = updt[tt][i]["img"],
+              text1 = updt[tt][i]["장비명"],
+              text2 = updt[tt][i]["제조사"],
+              text3 = updt[tt][i]["용도"];
+
+            let tab = document.createElement('li'), // 레이어 팝업 상단 tab
+                content = document.createElement('div'); // 레이어 팝업 본문 이미지
+
+            // tab 랜더링
+            tab.innerHTML = `
+                <a href="#none" class="btn">${text1}</a>
+              `;
+            tab.classList.add('swiper-slide');
+            document.querySelector('.snbSwiper .swiper-wrapper').appendChild(tab);
+
+            // 본문 랜더링
+            content.innerHTML = `
+                <div class="img-box">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/equipment/${img}">
+                    </span>
+                  </div>
+                </div>
+                <p class="name">${text1}</p>
+                <div class="text-box">
+                  <div class="flex">
+                    <p class="title">Manufacturer</p>
+                    <p class="info">${text2}</p>
+                  </div>
+                </div>
+              `;
+            content.classList.add('swiper-slide');
+            content.dataset.index = `${cnt}`;
+            document.querySelector('.mySwiper1 .swiper-wrapper').appendChild(content);
+          }
+        }
+
+        actionEvent();
+      });
+    });
+    // //상품 json
+  </script>
+
+</body>
+
+</html>

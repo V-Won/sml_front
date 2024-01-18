@@ -205,6 +205,9 @@
 :lang(en) .box-infoTop .tit.type-4 {
   margin-bottom: 47px;
 }
+:lang(en) .inspect-item-swiper .mySwiper1 .swiper-slide .text-box .flex .title {
+  max-width: 82px;
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
@@ -453,6 +456,9 @@
   }
   :lang(en) .box-dusgur .box-list-dusgur .box-flex .box-img {
     flex: 0 0 35vw;
+  }
+  :lang(en) .inspect-item-swiper .mySwiper1 .swiper-slide .text-box .flex .title {
+    max-width: 117px;
   }
 }
 /* //1024 이상 */
