@@ -224,6 +224,10 @@
   line-height: 130%; /* 20.8px */
   letter-spacing: 0.32px;
 }
+:lang(en) .request-step-top .step-box .box {
+  padding: 30px 3px;
+  height: 226px;
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
