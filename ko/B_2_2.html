@@ -676,36 +676,282 @@
               </div>
             </div>
             <!-- //common-tab -->
-            <!-- tab-section -->
-            <div class="tab-section page-4">
-              <div class="tab-item is-active" data-tabSection="0">
-                <div class="inner-gap-1">
-                  <!-- box-infoTop -->
-                  <div class="box-infoTop flex-info">
-                    <p class="tit">미생물 배양검사 의뢰시 준수 사항</p>
-                    <div class="info">
-                      <p class="txt">미생물배양검사에서 가장 중요한 것은 정확한 감염부위에서 적절한 시기에 검체 채취후 보존방법을 준수하여 의뢰하는 것입니다. 부적절하게 채취된 검체 및 잘못 보존된 검체는 검사 진행시 잘못된 결과를 가져와 환자의 치료에 혼란을 줄 수 있습니다.</p>
-                      <div class="box wd100">
-                        <ul class="order-num">
-                          <li>용기는 냉장보관하였다가 채혈하기 1시간 전 용기를 실온에 두어 냉기를 가시게 합니다.</li>
-                          <li>채혈은 검체 수거 당일 오전 10시 이후에 합니다.</li>
-                          <li>채혈 후 즉시 용기 안의 시약과 잘 혼합되도록 상하로 shaking합니다.</li>
-                          <li>용기 내 TB 항원과 혈액을 잘 혼합해주어야 T-cell로부터 IFN-γ의 분비가 원활히 이뤄집니다. <br class="pc-show">혼합이 잘 이뤄지지 않으면 반응이 낮아 부정확한 결과가 나올 수 있습니다.</li>
-                          <li>의뢰서 환자정보와 채혈시간을 기입합니다.</li>
-                          <li>채혈된 전용용기는 실온상태로 세워 16시간 안에 검사실에 도착해야합니다.</li>
-                        </ul>
-                      </div>
+          </div>
+          <!-- tab-section -->
+          <div class="tab-section inner-tab page-4">
+            <div class="tab-item is-active" data-tabSection="0">
+              <div class="inner-gap-1">
+                <!-- box-infoTop -->
+                <div class="box-infoTop flex-info">
+                  <p class="tit">미생물 배양검사 의뢰시 준수 사항</p>
+                  <div class="info">
+                    <p class="txt">미생물배양검사에서 가장 중요한 것은 정확한 감염부위에서 적절한 시기에 검체 채취후 보존방법을 준수하여 의뢰하는 것입니다. 부적절하게 채취된 검체 및 잘못 보존된 검체는 검사 진행시 잘못된 결과를 가져와 환자의 치료에 혼란을 줄 수 있습니다.</p>
+                    <div class="box wd100">
+                      <ul class="order-num">
+                        <li>모든 검체 채취는 무균적으로 실시하며 용기는 지정된 멸균용기를 사용하여야 합니다.</li>
+                        <li>의뢰서는 반드시 성별, 나이, 검체종류, 채취부위, 채취시간, 임상소견, 항생제 투여 여부 등을 자세히 기록합니다.</li>
+                        <li>검체는 항생제 투여 전에 채취해야 합니다.</li>
+                        <li>피부소독은 70% 알코올로 안에서 밖으로 동심을 그리며 서너번 소독하고 2% iodine 용액으로 소독하여 검체를 채취합니다.</li>
+                        <li>Pus, wound, stool 등의 배양 의뢰 시 멸균된 면봉에 검체를 충분히 묻혀 수송배지에 수직으로 넣어 의뢰합니다.</li>
+                        <li>대부분의 병원성 세균은 온도의 적은 변화에는 영향을 받지 않아 수송배지를 즉시 배양 할 수 없을 때는 냉장 보관하여 운송합니다. <br class="pc-show">(단, 수막구균이나 임균 등 Neisseria균은 검체가 30℃ 이하로 내려가면 사멸하므로 온도가 내려가지 않도록 주의합니다.)</li>
+                      </ul>
                     </div>
                   </div>
-                  <!-- //box-infoTop -->
+                </div>
+                <!-- //box-infoTop -->
+              </div>
+              <div class="full-bg ct-orderStep">
+                <div>
+                  <h5>채취시기</h5>
+                  <p class="mint-noti">검체 채취의 가장 적절한 시기는 원인균이 가장 많이 함유되어 있다고 예상되는 시기입니다.</p>
+                  <div class="bg-item item-5">
+                    <div class="item">
+                      <p class="txt">발병 초기 혹은 급성기</p>
+                    </div>
+                    <div class="item">
+                      <p class="txt">화학요법 개시 전</p>
+                    </div>
+                    <div class="item">
+                      <p class="txt">화학요법 후 <br class="pc-show">다음 회 투약 직전</p>
+                    </div>
+                    <div class="item">
+                      <p class="txt">패혈증 등에서 이완열이 <br class="pc-show">있는 경우는 열의 상승 직전</p>
+                    </div>
+                    <div class="item">
+                      <p class="txt">화학요법 개시 후의 환자에 있어 48시간 투약 중지 후</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="tab-item" data-tabSection="1">
-                
+              <div class="inner-gap-1">
+                <h5>검체별 채취 방법</h5>
+                <div class="acc-whiteBg" data-event="listQnA">
+                  <ul>
+                    <li class="is-active"><!-- class="is-active" 활성화 -->
+                      <button>01. <span>혈액(Blood)</span></button>
+                      <ul>
+                        <li>
+                          <p class="txt">혈액으로부터 배양 분리된 균은 감염의 원인균이라고 판단됩니다.</p>
+                          <ul class="step-order">
+                            <li>채취 시 오염을 방지하기 위해 채혈부 피부를 소독용 알코올로 닦아 건조시킨 후 포비돈-요오드를 충분히 도포해 소독합니다. 채혈용기의 고무마개 또한 소독용 알코올로 소독합니다.</li>
+                            <li>배양용기에 각각 10mL씩(소아의 경우 3mL) 혈액을 주입한 후 가볍게 흔들어 혼합합니다.</li>
+                            <li>채혈한 용기는 실온 상태로 최대한 신속하게 검사실에 운송합니다.
+                              <p class="bg-txt">혈액배양검사 의뢰시 채혈 시기 : 항생제 투여 전 채혈, 발열 전 후 채혈, 채혈횟수는 2-3회 권장</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button>02. <span>객담(Sputum)</span></button>
+                      <ul>
+                        <li>
+                          <ul class="step-order">
+                            <li>아침 공복 시에 타액이 섞이지 않도록 입 안을 물이나 멸균생리식염수로 잘 헹굽니다. 타액이 섞일 경우 구강 및 상기도 상재균에 의해 오염될 수 있습니다.</li>
+                            <li>가슴이 아플 정도로 깊은 기침을 하여 객담을 3-4회 채취합니다.</li>
+                            <li>객담을 받을 수 없는 소아의 경우 흡입으로 채취합니다.
+                              <div class="step-img">
+                                <div class="step-imgBbox">
+                                  <div class="img">
+                                    <img src="../static/images/img/col_step_img_1.png">
+                                  </div>
+                                  <p>입안을 맑은 물로 세척합니다.</p>
+                                </div>
+                                <div class="step-imgBbox">
+                                  <div class="img">
+                                    <img src="../static/images/img/col_step_img_2.png">
+                                  </div>
+                                  <p>심호흡을 3회 실시하여 폐 깊숙히 있는가래가 나올 수있도록 합니다.</p>
+                                </div>
+                                <div class="step-imgBbox">
+                                  <div class="img">
+                                    <img src="../static/images/img/col_step_img_3.png">
+                                  </div>
+                                  <p>깊은 기침을 하여 객담을 받으며,침이 섞이지 않도록 주의합니다.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              검체는 채취 후 즉시 검사실로 운반하며, 지연될 경우에는 냉장 보관해야 합니다.
+                              <span>침이 많이 섞이면 구강 내 상재균이 많이 포함되어 정확한 결과를 얻기 힘드므로, 검사실에서 객담도말 표본을 그람 염색 하여 100배 시야에서 상피세포와 백혈구를 관찰하여 객담의 품질을 판정합니다. Murray와 Washington 변법에서는 두 가지 세포 수의 비율에 따라 6개의 군으로 나누며, 객담의 품질 등급에 의해 4~6등급은 수용되며, 1~3등급은 부적합 검체로 판정합니다.</span>
+                              <button class="common-moveBtn type-2"><span>객담의 품질 등급표 보기</span></button>
+                              <!-- box-common-tabTableSwiper -->
+                              <div class="box-common-tabTableSwiper r-20">
+                                <div class="inner">
+                                  <!-- common-table-1 -->
+                                  <div class="swiper-container common-table-1 type-c swiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <table>
+                                          <colgroup>
+                                            <col style="width: 20%">
+                                            <col style="width: 50%;">
+                                            <col style="width: 30%;">
+                                          </colgroup>
+                                          <thead>
+                                            <tr>
+                                              <th rowspan="2">Grade</th>
+                                              <th colspan="2">Number of cell / Low-power field</th>
+                                              <th rowspan="2">판정</th>
+                                            </tr>
+                                            <tr>
+                                              <th>Epithelial Cell</th>
+                                              <th>WBC</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td style="text-align: center;">1</td>
+                                              <td style="text-align: center;">> 25</td>
+                                              <td style="text-align: center;">< 10</td>
+                                              <td style="text-align: center;" rowspan="3">Unacceptable</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align: center;">2</td>
+                                              <td style="text-align: center;">> 25</td>
+                                              <td style="text-align: center;">10 - 25</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align: center;">3</td>
+                                              <td style="text-align: center;">> 25</td>
+                                              <td style="text-align: center;">> 25</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align: center;">4</td>
+                                              <td style="text-align: center;">10 - 25</td>
+                                              <td style="text-align: center;">> 25</td>
+                                              <td style="text-align: center;" rowspan="3">Acceptable</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align: center;">5</td>
+                                              <td style="text-align: center;">< 10</td>
+                                              <td style="text-align: center;">> 25</td>
+                                            </tr>
+                                            <tr>
+                                              <td style="text-align: center;">6</td>
+                                              <td style="text-align: center;">< 10</td>
+                                              <td style="text-align: center;">< 10</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-pagination-1"></div>
+                                  </div>
+                                  <!-- //common-table-1 -->
+                                </div>
+                              </div>
+                              <!-- //box-common-tabTableSwiper -->
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="is-active">
+                      <button>03. <span>대변(Stool)</span></button>
+                      <ul>
+                        <li>
+                          <ul class="step-order">
+                            <li>5g(콩알 5개 정도의 크기)의 대변을 채취하여 용기에 넣습니다.</li>
+                            <li>대변을 채취할 수 없을 때에는 직장에서 면봉으로 검체를 충분히 채취하여 수송배지에 수직으로 넣어서 보내주십시오.</li>
+                            <div class="box-treatNotice">
+                              <p class="tit"></p>
+                              <ul class="dot-list">
+                                <li>항생제, 지사제, 윤활제 혹은 조영제는 검사에 영향을 줄 수 있으므로 투입 전에 검체를 채취하거나, 혹은 적어도 일주일 후에 검사를 의뢰하시기 바랍니다.</li>
+                                <li>입원 3일 이후 환자의 변 배양은 권장하지 않습니다.</li>
+                                <li>동일 환자에게서 분변충란검사를 4회 이상, 대변배양검사를 3회 이상 검사하는 것은 부적합합니다.</li>
+                                <li>Campylobacter 또는 E.coli O157이 의심되는 경우는 특수 감별배지를 사용하므로 반드시 의뢰지에 기재하여 주십시오.</li>
+                              </ul>
+                            </div>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="is-active">
+                      <button>04. <span>소변(Urine)</span></button>
+                      <ul>
+                        <li>
+                          <ul class="step-order">
+                            <li>이른 아침 첫 요의 중간요를 무균적으로 채취합니다.</li>
+                            <li>요를 짧은 시간이라도 실온 방치할 경우 균의 증식을 일으키기 때문에 채취 후에 즉시 냉장 보관합니다. (임균을 의심하는 검체는 냉장보관하지 않습니다.)
+                              <span>(균뇨의 판정기준으로 되어 있는 105CFU/mL은 아침 기상 후 첫 요의 연구 결과에 의한 것으로, 첫 요 배출 후 뇨 중 균 수는 1/10 이하로 감소하는 경우가 많습니다.)</span>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="is-active">
+                      <button>05. <span>농(고름)(Pus)</span></button>
+                      <ul>
+                        <li>
+                          <ul class="step-order">
+                            <li>폐쇄성 농양 및 체액
+                              <ul class="dot-list">
+                                <li>피부 또는 점막표면을 충분히 소독한 후 주사기로 내용물을 흡인하여 과잉의 공기를 제거합니다.</li>
+                                <li>주사기 바늘 끝을 고무마개에 찔러 공기의 유입을 차단하거나 검체를 혐기성 배지에 넣어 의뢰합니다.</li>
+                              </ul>
+                            </li>
+                            <li>개방성농양
+                              <ul class="dot-list">
+                                <li>창상 주변의 피부 또는 점액을 할 수 있는 한, 잘 소독하여 심부의 농을 주사기로 흡인합니다.</li>
+                                <li>주사기를 사용할 수 없을 경우 손가락으로 상처 가장자리를 열어 멸균 면봉으로 주위의 피부나 점막에 접하지 않게 심부를 닦아 즉시 수송배지에 넣어 의뢰합니다.</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="is-active">
+                      <button>06. <span>비뇨생식기 검체</span></button>
+                      <ul>
+                        <li>
+                          <ul class="step-order">
+                            <li>여성 생식기
+                              <ul class="dot-list">
+                                <li>자궁경관에서는 질 내의 세균이 오염되지 않게 하면서, 윤활제를 쓰지 않고 질경(speculum)을 이용하여 자궁경부를 보이게 한 다음 면봉으로 점액을 제거한 후 새로운 면봉을 사용하여 자궁경부내강(endocervical canal)에 넣어 검체를 채취 후 수송배지에 넣습니다.</li>
+                              </ul>
+                            </li>
+                            <li>남성 생식기
+                              <ul class="dot-list">
+                                <li>요도 검체는 분비물이 많을 때는 면봉으로 채취하고, 적을 때는 요도의 2cm 깊이까지 가느다란 면봉을 넣어 채취 후 수송배지에 넣습니다.</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="is-active">
+                      <button>07. <span>조직(Tissue)</span></button>
+                      <ul>
+                        <li>
+                          <ul class="step-order">
+                            <li>조직 검체는 멸균용기에 멸균식염수를 넣거나 멸균식염수를 적신 거즈로 싸서 마르지 않게 검사실로 보냅니다.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="is-active">
+                      <button>08. <span>혐기성 세균 배양을 위한 검체</span></button>
+                      <ul>
+                        <li>
+                          <ul class="step-order">
+                            <li>혐기성 세균은 공기에 노출되면 사멸되기 쉬우므로 검체의 수송 및 채취가 중요하며, 산소에 노출되는 것을 막기 위해서는 CO2나 N2 가스를 채운 시험관이나 병 등을 사용합니다.</li>
+                            <li>흡인했을 때는 주사기에서 공기를 배출시킨 후, 마개로 막고 즉시 검사실로 보냅니다.
+                              <p class="bg-txt">혐기성세균이 정상 상재균으로 존재하는 검체(객담, 요, 대변, 인두액 등)는 혐기성 배양을 하지 않고, 주로 체액, 농, 경기관 흡인액, 생검 조직 및 혈액 등을 대상으로 합니다.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <!-- //tab-section -->  
+            <div class="tab-item" data-tabSection="1">
+
+            </div>
           </div>
+          <!-- //tab-section -->  
         </div>
         <div class="tab-item" data-section="5">
 
@@ -723,6 +969,87 @@
   <!-- footer -->
   <div include-html="static/include/footer.html" data-include="footer"></div>
   <!-- //footer -->
+
+  <!-- 테이블 레이어 팝업 -->
+  <div class="box-layer layer-video request" style="display: block;" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
+    <div class="inner-layer" tabindex="0">
+      <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
+        <div class="box">
+          <p class="table-tit">[ 객담의 품질 등급 ]<br>(Grade of sputum quality)</p>
+          <!-- box-common-tabTableSwiper -->
+          <div class="box-common-tabTableSwiper r-20">
+            <div class="inner">
+              <!-- common-table-1 -->
+              <div class="swiper-container common-table-1 type-c swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <table>
+                      <colgroup>
+                        <col style="width: 20%">
+                        <col style="width: 50%;">
+                        <col style="width: 30%;">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th rowspan="2">Grade</th>
+                          <th colspan="2">Number of cell / Low-power field</th>
+                          <th rowspan="2">판정</th>
+                        </tr>
+                        <tr>
+                          <th>Epithelial Cell</th>
+                          <th>WBC</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="text-align: center;">1</td>
+                          <td style="text-align: center;">> 25</td>
+                          <td style="text-align: center;">< 10</td>
+                          <td style="text-align: center;" rowspan="3">Unacceptable</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center;">2</td>
+                          <td style="text-align: center;">> 25</td>
+                          <td style="text-align: center;">10 - 25</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center;">3</td>
+                          <td style="text-align: center;">> 25</td>
+                          <td style="text-align: center;">> 25</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center;">4</td>
+                          <td style="text-align: center;">10 - 25</td>
+                          <td style="text-align: center;">> 25</td>
+                          <td style="text-align: center;" rowspan="3">Acceptable</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center;">5</td>
+                          <td style="text-align: center;">< 10</td>
+                          <td style="text-align: center;">> 25</td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center;">6</td>
+                          <td style="text-align: center;">< 10</td>
+                          <td style="text-align: center;">< 10</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="swiper-pagination-1"></div>
+              </div>
+              <!-- //common-table-1 -->
+            </div>
+          </div>
+          <!-- //box-common-tabTableSwiper -->
+        </div>
+        <button data-event="layerClose"></button>
+      </div>
+    </div>
+    <div class="verticalAlign"></div>
+  </div>
+  <!-- //테이블 레이어 팝업 -->
 
   <!-- 공통 js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
@@ -748,6 +1075,7 @@
     selectBox.initialize();
     commonTab.initialize();
     listQnA.initialize();
+    layerPopup.initialize();
 
     var swiper1 = new Swiper('.type-4 .snbSwiper', {
       slidesPerView: 'auto',
@@ -843,7 +1171,7 @@
         document.querySelectorAll('.tab-section.page-1 .tab-item').forEach((target) => {
           target.classList.remove('is-active');
         })
-        document.querySelector('[data-tabSection="' + idx + '"]').classList.add('is-active');
+        document.querySelector('.page-1 [data-tabSection="' + idx + '"]').classList.add('is-active');
       })
     });
 
@@ -860,7 +1188,7 @@
         document.querySelectorAll('.tab-section.page-4 .tab-item').forEach((target) => {
           target.classList.remove('is-active');
         })
-        document.querySelector('[data-tabSection="' + idx + '"]').classList.add('is-active');
+        document.querySelector('.page-4 [data-tabSection="' + idx + '"]').classList.add('is-active');
       })
     });
 
