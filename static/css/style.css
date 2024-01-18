@@ -1107,6 +1107,7 @@ input {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.64);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   z-index: 2200;
 }
 .box-floating.open .inner {
@@ -3277,6 +3278,7 @@ input {
   border-radius: 6px;
   background: rgba(77, 77, 77, 0.76);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   padding: 32px 20px;
 }
 .main-inspectionSearch .inner-gap-1 .gap > ul {
@@ -6543,6 +6545,7 @@ input {
   border: 1px solid var(--Primary-05, #fff);
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   overflow: hidden;
   padding: 20.5px 0;
 }
@@ -6791,6 +6794,7 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   overflow: hidden;
 }
 .q-controlSystem .item-wrap .item .top {
@@ -7377,6 +7381,7 @@ input {
   border: 1px solid var(--Primary-05, #fff);
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   color: var(--Primary-05, #fff);
   font-size: 16px;
   font-weight: 500;
@@ -9189,6 +9194,7 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 0 20px 37px 20px;
   display: flex;
   gap: 16px;
@@ -9578,6 +9584,7 @@ input {
 :lang(en) .main-inspectionSearch .inner-gap-1 .gap {
   padding: 32px 20px 21px 20px;
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li button.btn {
   color: #fff;
@@ -11234,6 +11241,7 @@ input {
   .main-inspectionSearch .inner-gap-1 .gap {
     border-radius: 12px;
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     padding: 32px 20px 38px 20px;
   }
   .main-inspectionSearch .inner-gap-1 .gap > ul {
