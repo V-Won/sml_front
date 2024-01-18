@@ -228,6 +228,9 @@
   padding: 30px 3px;
   height: 226px;
 }
+:lang(en) .box-tbdj ul li .gap .text .btn-flex button {
+  max-width: 118px;
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
@@ -493,6 +496,9 @@
     font-size: 18px;
     line-height: 130%; /* 23.4px */
     letter-spacing: 0.36px;
+  }
+  :lang(en) .box-tbdj ul li .gap .text .btn-flex button {
+    max-width: 134px;
   }
 }
 /* //1024 이상 */

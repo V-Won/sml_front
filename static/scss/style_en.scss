@@ -451,11 +451,28 @@
 	}
 
 	// 검사안내 > 검사의뢰 안내 > 검사의뢰 절차
-	.request-step-top{
-		.step-box{
-			.box{
-				padding:30px 3px;
+	.request-step-top {
+		.step-box {
+			.box {
+				padding: 30px 3px;
 				height: 226px;
+			}
+		}
+	}
+
+	// 고객서비스 > SML 새소식 > SML 홍보실 > 브로슈어
+	.box-tbdj {
+		ul {
+			li {
+				.gap {
+					.text {
+						.btn-flex {
+							button {
+								max-width: 118px;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -948,6 +965,23 @@
 							font-size: 18px;
 							line-height: 130%; /* 23.4px */
 							letter-spacing: 0.36px;
+						}
+					}
+				}
+			}
+		}
+
+		// 고객서비스 > SML 새소식 > SML 홍보실 > 브로슈어
+		.box-tbdj {
+			ul {
+				li {
+					.gap {
+						.text {
+							.btn-flex {
+								button {
+									max-width: 134px;
+								}
+							}
 						}
 					}
 				}
