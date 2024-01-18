@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>Samkwang Medical Lab</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="../static/css/style_en.css"><!-- 영문 공통 css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+
+      <!-- sub-top -->
+      <div class="sub-top"
+        style="background: url(../static/images/@/sub_top_E.png) no-repeat; background-position: 55%;z-index:20;">
+        <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <ul class="sub-nav-2">
+              <li>
+                <a href="#none">About SML</a>
+              </li>
+              <li>
+                <a href="#none">Introduction</a>
+              </li>
+              <li class="nav-acc" data-event="commonSelectBox">
+                <a href="#none" class="button">Misson&Values</a>
+                <ul class="list">
+                  <!-- hover시 font-weight 문제로 title 사용 -->
+                  <li><a href="#none" title="Chairman Message">Chairman Message</a></li>
+                  <li><a href="#none" title="History">History</a></li>
+                  <li><a href="#none" title="Misson&Values">Misson&Values</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="sub-tit">Misson&Values</h3>
+          </div>
+        </div>
+      </div>
+      <!-- //sub-top -->
+
+      <!-- inner-gap-1 -->
+      <div class="inner-gap-1">
+        <!-- box-infoTop -->
+        <div class="box-infoTop type-2">
+          <p class="tit type-3">Mission & Value</p>
+          <div class="info gap-type-2">
+            <div class="txt">
+              The shared vision of all employees at SamKwang Medical Lab is to become trusted and wise companion to customers, enabling members of society to enjoy healthy and happy lives.
+            </div>
+          </div>
+        </div>
+        <!-- //box-infoTop -->
+        <!-- box-altus -->
+        <div class="box-altus">
+          <div class="inner">
+            <h3>MISSION</h3>
+            <p class="text-1">Samkwang Medical Lab is contributing to the healthy and happy human lives through the practice of 'Smart Medical Life.'</p>
+            <div class="gap">
+              <ul>
+                <li>SMART</li>
+                <li>MEDICAL</li>
+                <li>LIFE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- //box-altus -->
+      </div>
+      <!-- //inner-gap-1 -->
+
+      <div class="inner-gap-1">
+        <!-- box-dusrn-2 -->
+        <div class="box-dusrn-2 type-2">
+          <h5>Core Value</h5>
+          <p class="text-1">All employees at Samkwang Medical Lab aim to adopt and actively practice the four core values of 'Communication, Trust, Innovation, and Happiness' as guiding principles for their actions.</p>
+          <ul>
+            <li>
+              <img src="../static/images/icon/icon_dusrn_4.png" alt="">
+              <div class="text">
+                <p class="text-1">Communication</p>
+                <p class="text-2">Open-mindedly exchanging opinions with others to create the best possible outcomes together.</p>
+              </div>
+            </li>
+            <li>
+              <img src="../static/images/icon/icon_dusrn_5.png" alt="">
+              <div class="text">
+                <p class="text-1">Trust</p>
+                <p class="text-2">The company and its employees work together to achieve common goals.</p>
+              </div>
+            </li>
+            <li>
+              <img src="../static/images/icon/icon_dusrn_6.png" alt="">
+              <div class="text">
+                <p class="text-1">Innovation</p>
+                <p class="text-2">Breaking free from past approaches, always pursuing innovation.</p>
+              </div>
+            </li>
+            <li>
+              <img src="../static/images/icon/icon_dusrn_7.png" alt="">
+              <div class="text">
+                <p class="text-1">Happiness</p>
+                <p class="text-2">Always giving our best for the happiness of the organization and customers.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- //box-dusrn-2 -->
+      </div>
+
+    </div>
+    <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="../static/js/includeHTML.js"></script>
+  <script src="../static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "transparent"
+    })
+    selectBox.initialize();
+  </script>
+
+</body>
+
+</html>
