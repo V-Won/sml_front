@@ -5675,9 +5675,6 @@ input {
   letter-spacing: 0.44px;
   margin-bottom: 20px;
 }
-.box-infoTop .tit.type-2 {
-  letter-spacing: -0.06em;
-}
 .box-infoTop .tit.type-3 {
   margin-bottom: 13px;
   letter-spacing: -0.05em;
@@ -9747,7 +9744,7 @@ input {
 }
 
 .box-dlswotkd {
-  background-image: url(../images/bg/bg_dlswotkd.jpg);
+  background: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9756,12 +9753,12 @@ input {
   margin-top: -60px;
 }
 .box-dlswotkd .inner h3 {
-  color: var(--Primary-04, #4d4d4d);
-  font-size: 20px;
+  color: var(--Primary-04, #4D4D4D);
+  font-size: 22px;
   font-weight: 600;
-  line-height: 130%; /* 26px */
-  letter-spacing: 0.4px;
-  padding-bottom: 16px;
+  line-height: 130%;
+  letter-spacing: 0.44px;
+  margin-bottom: 16px;
 }
 .box-dlswotkd .inner .text-1 {
   color: var(--gray-01, #666);
@@ -16066,7 +16063,7 @@ input {
   .box-dlswotkd .inner h3 {
     font-size: 40px;
     letter-spacing: 0.8px;
-    padding-bottom: 23px;
+    padding-bottom: 8px;
   }
   .box-dlswotkd .inner .text-1 {
     font-size: 18px;
@@ -16086,7 +16083,7 @@ input {
     margin-top: 0;
   }
   .box-dlswotkd .inner ul li .img-holder span {
-    padding-top: 68%;
+    padding-top: 67.7%;
   }
   .box-dlswotkd .inner ul li .img-holder span, .box-dlswotkd .inner ul li .img-holder::after {
     border-radius: 12px;
