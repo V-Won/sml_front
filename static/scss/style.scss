@@ -9823,7 +9823,7 @@ input {
 				letter-spacing: 0.32px;
 				> span {
 					&.color {
-						color: #48ADC2;
+						color: #48adc2;
 					}
 				}
 			}
@@ -9903,7 +9903,7 @@ input {
 			}
 			.dot-list {
 				> li {
-					color: var(--Primary-04, #4D4D4D);
+					color: var(--Primary-04, #4d4d4d);
 					font-size: 14px;
 					font-weight: 600;
 					line-height: 150%;
@@ -10072,7 +10072,7 @@ input {
 									}
 									span {
 										&.mint {
-											color: #48ADC2;
+											color: #48adc2;
 										}
 									}
 								}
@@ -10300,7 +10300,7 @@ input {
 			background-position: center !important;
 			background-size: cover !important;
 			.txt {
-				color: var(--Primary-05, #FFF);
+				color: var(--Primary-05, #fff);
 				font-size: 16px;
 				font-weight: 500;
 				line-height: 150%;
@@ -10341,8 +10341,8 @@ input {
 				width: 100%;
 				position: relative;
 				border-radius: 6px;
-				border: 1px solid #D5D5D5;
-				background: #FFF;
+				border: 1px solid #d5d5d5;
+				background: #fff;
 				padding: 0 20px;
 				> button {
 					width: 100%;
@@ -10357,7 +10357,7 @@ input {
 					> span {
 						display: block;
 						margin-top: 12px;
-						color: var(--Primary-04, #4D4D4D);
+						color: var(--Primary-04, #4d4d4d);
 						font-size: 18px;
 						font-weight: 600;
 						line-height: 130%;
@@ -10402,8 +10402,8 @@ input {
 										display: block;
 										margin-top: 18px;
 										border-radius: 12px;
-										border: 1px solid var(--gray-03-line, #D5D5D5);
-										background: var(--gray-07-bg, #F5F5F5);
+										border: 1px solid var(--gray-03-line, #d5d5d5);
+										background: var(--gray-07-bg, #f5f5f5);
 										padding: 12px;
 										color: var(--gray-01, #666);
 										font-size: 14px;
@@ -10426,7 +10426,7 @@ input {
 								padding: 20px;
 								position: relative;
 								border-radius: 6px;
-								background: #F5F5F5;
+								background: #f5f5f5;
 								display: flex;
 								align-items: center;
 								flex-wrap: wrap;
@@ -10511,7 +10511,7 @@ input {
 	position: relative;
 	padding: 40px 20px;
 	.table-tit {
-		color: var(--Primary-04, #4D4D4D);
+		color: var(--Primary-04, #4d4d4d);
 		font-size: 14px;
 		font-weight: 500;
 		line-height: 130%;
@@ -10547,7 +10547,8 @@ input {
 							border-right: 1px solid #d5d5d5;
 						}
 						tr {
-							&:first-child, &:nth-child(4) {
+							&:first-child,
+							&:nth-child(4) {
 								td {
 									&:last-child {
 										border-right: none;
@@ -10700,28 +10701,42 @@ input {
 
 // 재단안내 > 경영이념 > 안전보건경영
 .box-ruddud {
-	background-image: url(../images/bg/bg_dkswjs.jpg);
+	background-image: url(../images/bg/bg_dkswjs_mo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 60px 20px 100px;
+	padding: 39px 20px 39px;
 	margin-top: 99px;
 	margin-bottom: -100px;
+	margin: 0 20px;
+	border-radius: 6px;
+	border: 1px solid #e6e6e6;
+	box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
+	background-color: #f5f5f5;
+	position: relative;
+	&::after {
+		content: "";
+		display: block;
+		border-radius: 12px;
+		background: rgba(245, 245, 245, 0.70);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 6px;
+	}
 	.inner {
-		background-image: url(../images/bg/bg_dkswjs_logo.png);
+		z-index: 20;
+		position: relative;
+		//background-image: url(../images/bg/bg_dkswjs_logo.png);
 		background-repeat: no-repeat;
 		background-size: min(72%, 233px);
 		background-position: center 56%;
-		border-radius: 6px;
-		border: 1px solid #e6e6e6;
-		background-color: #fff;
-		box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
-		padding: 40px 20px;
 		.top {
 			text-align: center;
-			border-bottom: 1px solid #d5d5d5;
 			h4 {
 				color: var(--Primary-04, #4d4d4d);
-				font-size: 18px;
+				font-size: 20px;
 				font-weight: 600;
 				line-height: 130%; /* 23.4px */
 				letter-spacing: 0.36px;
@@ -10732,14 +10747,40 @@ input {
 				font-weight: 600;
 				line-height: 150%; /* 21px */
 				letter-spacing: 0.28px;
-				padding: 20px 0 39px;
+				padding: 20px 0 0;
 			}
 		}
 		ul {
-			padding: 41px 0 58px 0;
+			padding: 41px 0 37px 0;
+			display: flex;
+			flex-direction: column;
+			gap: 19px;
 			li {
+				border-radius: 6px;
+				border: 1px solid var(--gray-03-line, #d5d5d5);
+				background: var(--Primary-05, #fff);
+				display: flex;
+				gap: 16px;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				padding: 20px 20px 0 20px;
+				.cnt {
+					color: var(--Primary-05, #fff);
+					font-size: 12px;
+					font-weight: 600;
+					letter-spacing: 0.24px;
+					border-radius: 999px;
+					background: var(--Primary-03, #75c9da);
+					width: 24px;
+					height: 24px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: -5px;
+				}
 				h5 {
-					color: var(--Primary-01, #006477);
+					color: var(--Primary-01, #4d4d4d);
 					font-size: 16px;
 					font-weight: 600;
 					line-height: 130%; /* 20.8px */
@@ -10747,12 +10788,14 @@ input {
 					padding: 0 0 7px 0;
 				}
 				.text-1 {
+					text-align: center;
 					color: var(--gray-01, #666);
 					font-size: 14px;
-					font-weight: 500;
+					font-weight: 600;
 					line-height: 150%; /* 21px */
 					letter-spacing: 0.28px;
 					padding: 0 0 21px 0;
+					margin-top: -7px;
 				}
 			}
 		}
@@ -10762,6 +10805,13 @@ input {
 			align-items: center;
 			gap: 20px;
 			align-self: stretch;
+			&.logo {
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='46' viewBox='0 0 126 46' fill='none'%3E%3Cg clip-path='url(%23clip0_2470_77101)'%3E%3Cpath d='M59.3167 18.0234H57.748V25.7153H59.3167V22.4915H61.1072V21.1337H59.3167V18.0234Z' fill='%23888888'/%3E%3Cpath d='M53.15 22.5226C53.7288 23.7668 54.7403 24.708 56.0169 25.1786L56.0655 25.1948L56.8932 23.929L56.8174 23.902C55.0432 23.2637 53.8964 21.7058 53.8964 19.9316V18.6875H52.3115V19.9749C52.3115 21.933 51.1432 23.572 49.2662 24.2482L49.1904 24.2752L50.0343 25.5572L50.083 25.541C51.511 25.0055 52.5712 23.9615 53.1554 22.5226H53.15Z' fill='%23888888'/%3E%3Cpath d='M51.1221 31.0059H59.317V26.1484H51.1221V31.0059ZM57.7754 27.4629V29.6969H52.6799V27.4629H57.7754Z' fill='%23888888'/%3E%3Cpath d='M70.0654 24.9294L69.9572 23.734L69.8923 23.7448C68.5724 23.9287 67.1552 24.0099 66.0517 24.0585V21.6406H64.4939V24.1072C63.6338 24.118 62.79 24.118 62.0435 24.118H61.9678L62.1301 25.4V25.4595H62.195C64.2342 25.4595 67.2634 25.4054 70.0059 24.9402L70.0654 24.9294Z' fill='%23888888'/%3E%3Cpath d='M67.9386 26.207C65.2394 26.207 63.6221 27.132 63.6221 28.679C63.6221 30.2261 65.234 31.1511 67.9386 31.1511C70.6432 31.1511 72.2822 30.2261 72.2822 28.679C72.2822 27.132 70.6595 26.207 67.9386 26.207ZM67.9386 29.8528C66.2131 29.8528 65.2232 29.4255 65.2232 28.679C65.2232 27.9326 66.2131 27.5052 67.9386 27.5052C69.6642 27.5052 70.6811 27.9326 70.6811 28.679C70.6811 29.4255 69.6804 29.8528 67.9386 29.8528Z' fill='%23888888'/%3E%3Cpath d='M67.371 22.974L67.3602 23.0443L68.891 23.185L68.9018 23.1255C69.2101 21.6217 69.2101 20.4587 69.2101 19.6095V18.7656H62.7461V20.1071H67.6631C67.6468 20.8969 67.5982 21.7948 67.371 22.9686V22.974Z' fill='%23888888'/%3E%3Cpath d='M72.1855 18.0078H70.6006V26.192H72.1855V22.7787H73.8623V21.4264H72.1855V18.0078Z' fill='%23888888'/%3E%3Cpath d='M79.0329 25.3165C81.0613 25.3165 82.5381 23.975 82.5381 22.125C82.5381 20.2751 81.0668 18.9336 79.0329 18.9336C76.999 18.9336 75.5439 20.2751 75.5439 22.125C75.5439 23.975 77.0098 25.3165 79.0329 25.3165ZM79.0329 20.3346C80.2067 20.3346 80.9964 21.054 80.9964 22.125C80.9964 23.1961 80.1905 23.9209 79.0329 23.9209C77.8753 23.9209 77.0856 23.1852 77.0856 22.125C77.0856 21.0648 77.8699 20.3346 79.0329 20.3346Z' fill='%23888888'/%3E%3Cpath d='M85.416 18.0078H83.8311V31.1739H85.416V18.0078Z' fill='%23888888'/%3E%3Cpath d='M83.1334 26.6412C80.3368 27.074 77.0101 27.074 75.0249 27.074H74.9492L75.1494 28.4263H75.2035C77.6809 28.4263 80.5478 28.383 83.2524 27.8475L83.3119 27.8367L83.2037 26.625L83.1334 26.6358V26.6412Z' fill='%23888888'/%3E%3Cpath d='M96.3162 26.1657H98.177V24.8405H90.6149V23.169H97.8957V18.9336H89.0462V20.2589H96.3432V21.86H89.0732V26.1657H90.7501V28.2807H87.6885V29.633H99.2534V28.2807H96.3162V26.1657ZM94.7583 26.1657V28.2807H92.3025V26.1657H94.7583Z' fill='%23888888'/%3E%3Cpath d='M104.446 21.4599V20.8054H106.556V19.4531H100.638V20.8054H102.915V21.4599C102.915 24.2511 101.996 26.3391 100.319 27.3398L100.254 27.3776L101.217 28.5893L101.265 28.5568C102.423 27.8428 103.251 26.642 103.727 24.9813C104.235 26.4472 105.046 27.4966 106.134 28.1133L106.182 28.1403L107.053 26.9557L107.097 26.8962L107.032 26.8583C105.382 25.9766 104.441 24.0077 104.441 21.4545L104.446 21.4599Z' fill='%23888888'/%3E%3Cpath d='M109.937 23.152H108.682V18.2566H107.194V30.5572H108.682V24.5097H109.937V31.163H111.435V18.0078H109.937V23.152Z' fill='%23888888'/%3E%3Cpath d='M116.698 26.4766H115.113V30.9175H123.746V29.576H116.698V26.4766Z' fill='%23888888'/%3E%3Cpath d='M120.761 24.8831L120.61 23.5579L120.539 23.5741C119.003 23.9095 117.635 23.9744 115.352 23.9906V20.4313H119.533V19.0898H113.783V25.3429H114.87C117.397 25.3429 118.992 25.2726 120.712 24.8939L120.772 24.8831H120.761Z' fill='%23888888'/%3E%3Cpath d='M123.243 21.7402V18.0078H121.669V27.5605H123.243V23.0979H125.028V21.7402H123.243Z' fill='%23888888'/%3E%3Cpath d='M6.92842 21.6982C5.2732 21.1844 3.84516 20.7462 3.84516 19.659C3.84516 18.7556 4.60786 18.285 6.02508 18.1985C8.04813 18.0741 10.2605 19.6103 10.2605 19.6103L11.4992 17.306C11.4992 17.306 9.25438 15.2829 6.16572 15.337C4.48886 15.364 3.15278 15.813 2.10339 16.6028C1.03778 17.4033 0.46981 18.496 0.46981 19.7563C0.46981 22.7909 3.16901 23.6347 5.54366 24.3758C7.2692 24.9167 8.76214 25.3819 8.76214 26.599C8.76214 27.5997 7.58293 28.3732 6.01426 28.3949C5.99803 28.3949 5.97639 28.3949 5.96017 28.3949C4.14808 28.3949 2.26026 27.0804 2.26026 27.0804L0.388672 29.044C1.68148 30.4287 3.60175 31.159 6.06835 31.159C9.64385 31.159 12.1375 29.2171 12.1375 26.4367C12.1375 23.3156 9.24897 22.4177 6.92301 21.7037L6.92842 21.6982Z' fill='%23888888'/%3E%3Cpath d='M25.5575 15.3203C24.1511 15.3203 22.8421 15.9045 22.0469 16.8782C21.2518 15.8991 19.9427 15.3203 18.5363 15.3203C15.6586 15.3203 13.7275 17.3055 13.7275 20.2589V30.98H17.0055V20.2806C17.0055 18.9661 17.6276 18.2142 18.7094 18.2142C19.7913 18.2142 20.4133 18.9661 20.4133 20.2806V30.98H23.6913V20.2806C23.6913 18.9661 24.3134 18.2142 25.3952 18.2142C26.4771 18.2142 27.0991 18.9661 27.0991 20.2806V30.98H30.3771V20.2589C30.3771 17.3055 28.446 15.3203 25.5683 15.3203H25.5575Z' fill='%23888888'/%3E%3Cpath d='M33.9465 30.9674H43.2666C43.5966 30.0586 43.8725 29.1228 44.0834 28.16H36.2184V15.5078H32.9404V29.9234C32.9404 30.5941 33.3028 30.962 33.9465 30.962V30.9674Z' fill='%23888888'/%3E%3Cpath d='M21.8195 2.97507C26.3686 2.93721 30.8475 4.47883 34.4121 7.31326C35.9375 8.52493 37.4197 10.1477 38.4474 11.6082H41.9472C37.5603 4.14346 30.0739 0 21.9817 0H21.7978C13.6245 0.0703198 5.97587 4.52211 1.84863 11.9003H5.33217C9.11862 6.25306 15.231 3.02916 21.8195 2.97507Z' fill='url(%23paint0_linear_2470_77101)'/%3E%3Cpath d='M22.1439 43.0268C17.5947 43.0646 10.4437 41.3824 5.51051 34.3991C5.51051 34.4045 2.01074 34.3991 2.01074 34.3991C6.08388 41.5933 13.884 46.0018 21.9816 46.0018H22.1655C30.3334 45.9369 37.9712 41.4851 42.1255 34.1016C42.1201 34.1016 38.6257 34.1124 38.6257 34.1016C35.1584 39.4675 28.7269 42.9781 22.1384 43.0322L22.1439 43.0268Z' fill='url(%23paint1_linear_2470_77101)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_2470_77101' x1='33.022' y1='22.313' x2='6.71693' y2='-3.99201' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.07' stop-color='%23888888' stop-opacity='0'/%3E%3Cstop offset='0.12' stop-color='%23888888' stop-opacity='0.14'/%3E%3Cstop offset='0.2' stop-color='%23888888' stop-opacity='0.34'/%3E%3Cstop offset='0.28' stop-color='%23888888' stop-opacity='0.52'/%3E%3Cstop offset='0.37' stop-color='%23888888' stop-opacity='0.67'/%3E%3Cstop offset='0.46' stop-color='%23888888' stop-opacity='0.79'/%3E%3Cstop offset='0.55' stop-color='%23888888' stop-opacity='0.88'/%3E%3Cstop offset='0.65' stop-color='%23888888' stop-opacity='0.95'/%3E%3Cstop offset='0.75' stop-color='%23888888' stop-opacity='0.99'/%3E%3Cstop offset='0.88' stop-color='%23888888'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_2470_77101' x1='10.936' y1='23.6942' x2='37.241' y2='49.9938' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.07' stop-color='%23888888' stop-opacity='0'/%3E%3Cstop offset='0.12' stop-color='%23888888' stop-opacity='0.14'/%3E%3Cstop offset='0.2' stop-color='%23888888' stop-opacity='0.34'/%3E%3Cstop offset='0.28' stop-color='%23888888' stop-opacity='0.52'/%3E%3Cstop offset='0.37' stop-color='%23888888' stop-opacity='0.67'/%3E%3Cstop offset='0.46' stop-color='%23888888' stop-opacity='0.79'/%3E%3Cstop offset='0.55' stop-color='%23888888' stop-opacity='0.88'/%3E%3Cstop offset='0.65' stop-color='%23888888' stop-opacity='0.95'/%3E%3Cstop offset='0.75' stop-color='%23888888' stop-opacity='0.99'/%3E%3Cstop offset='0.88' stop-color='%23888888'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_2470_77101'%3E%3Crect width='125.222' height='46' fill='white' transform='translate(0.388672)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+				background-size: 126px 46px;
+				background-position: center;
+				background-repeat: no-repeat;
+				height: 46px;
+			}
 			h4 {
 				color: var(--gray-01, #666);
 				font-size: 14px;
@@ -15571,7 +15621,7 @@ input {
 			}
 			&.type-3 {
 				letter-spacing: 0.02em;
-				margin-bottom: 47px;
+				margin-bottom: 24px;
 			}
 			&.type-4 {
 				// 인사말
@@ -15812,7 +15862,7 @@ input {
 				.tit {
 					margin-bottom: 48px;
 					&.mgb18 {
-					margin-bottom: 24px;
+						margin-bottom: 24px;
 					}
 				}
 				&.fluid {
@@ -16885,12 +16935,12 @@ input {
 	.box-dusgur {
 		margin-top: -78px;
 		padding-top: 1px;
-		&.type-2{
-			.common-tab{
-				&.type-4{
-					ul{
-						li{
-							margin-right:20px;
+		&.type-2 {
+			.common-tab {
+				&.type-4 {
+					ul {
+						li {
+							margin-right: 20px;
 						}
 					}
 				}
@@ -17997,7 +18047,7 @@ input {
 								margin-right: auto;
 								.inner {
 									.txt {
-										color: var(--Primary-04, #4D4D4D);
+										color: var(--Primary-04, #4d4d4d);
 										font-size: 16px;
 										font-weight: 500;
 										line-height: 130%;
@@ -18036,14 +18086,19 @@ input {
 																border-right: none;
 															}
 														}
-														&:nth-child(2), &:nth-child(3), &:nth-child(2), &:nth-child(5), &:nth-child(6) {
+														&:nth-child(2),
+														&:nth-child(3),
+														&:nth-child(2),
+														&:nth-child(5),
+														&:nth-child(6) {
 															td {
 																&:last-child {
 																	border-right: 1px solid #d5d5d5;
 																}
 															}
 														}
-														&:nth-child(4), &:last-child {
+														&:nth-child(4),
+														&:last-child {
 															td {
 																border-bottom: none;
 															}
@@ -18178,13 +18233,21 @@ input {
 	.box-ruddud {
 		margin-top: 80px;
 		margin-bottom: -120px;
-		padding-top: 80px;
-		padding-bottom: 120px;
-		.inner {
-			max-width: 860px;
-			margin: 0 auto;
+		padding-top: 0;
+		padding-bottom: 78px;
+		max-width: 1400px;
+		padding-left:80px;
+		padding-right:80px;
+		margin: 0 auto;
+		border-radius: 12px;
+		&::after{
 			border-radius: 12px;
-			padding: 78px 79px;
+		}
+		.inner {
+			// max-width: 860px;
+			// margin: 0 auto;
+			border-radius: 12px;
+			padding: 78px 0 0 0;
 			background-size: min(72%, 386px);
 			.top {
 				h4 {
@@ -18195,26 +18258,40 @@ input {
 				.text-1 {
 					font-size: 20px;
 					letter-spacing: 0.4px;
-					padding-bottom: 59px;
+					padding-bottom: 0;
 				}
 			}
 			ul {
-				padding: 59px 0 178px 0px;
+				padding: 59px 0 60px 0px;
+				gap:24px;
 				li {
+					padding-top:39px;
+					gap:19px;
+					padding-bottom:13px;
+					border-radius: 12px;
+					.cnt{
+						font-size: 14px;
+						width: 29px;
+						height: 29px;
+					}
 					h5 {
-						font-size: 20px;
-						letter-spacing: 0.4px;
+						font-size: 24px;
+						letter-spacing: 0.48px;
 						padding-bottom: 9px;
 					}
 					.text-1 {
-						font-size: 18px;
-						letter-spacing: 0.36px;
+						font-size: 16px;
+						letter-spacing: 0.32px;
 						padding-bottom: 24px;
-						padding-right: 68px;
+						margin-top:-3px;
 					}
 				}
 			}
 			.bottom {
+				&.logo{
+					height: 80px;
+					background-size: 217px 80px;
+				}
 				.flex {
 					display: flex;
 					justify-content: space-between;
@@ -19139,7 +19216,7 @@ input {
 					width: calc(50% - 20px);
 					height: 240px;
 					.txt {
-						color: var(--Primary-04, #4D4D4D);
+						color: var(--Primary-04, #4d4d4d);
 						font-size: 20px;
 						font-weight: 500;
 						line-height: 150%;
