@@ -10819,6 +10819,9 @@ input {
     padding: 13px 12px 11px 23px;
     font-size: 16px;
   }
+  .box-layer.mo-show {
+    display: none !important;
+  }
   .box-layer.common .inner-layer .gap .box {
     border-radius: 24px;
   }
