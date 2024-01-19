@@ -8606,11 +8606,11 @@ input {
 	position: relative;
 	margin-bottom: 100px;
 	> h5 {
-		color: var(--Primary-04, #4d4d4d);
-		font-size: 20px;
+		color: var(--Primary-04, #4D4D4D);
+		font-size: 22px;
 		font-weight: 600;
 		line-height: 130%;
-		letter-spacing: 0.4px;
+		letter-spacing: 0.44px;
 		margin-bottom: 20px;
 	}
 	.step-box {
@@ -8753,11 +8753,11 @@ input {
 		max-width: 1400px;
 		margin: 0 auto;
 		h5 {
-			color: var(--Primary-04, #4d4d4d);
-			font-size: 20px;
+			color: var(--Primary-04, #4D4D4D);
+			font-size: 22px;
 			font-weight: 600;
 			line-height: 130%;
-			letter-spacing: 0.4px;
+			letter-spacing: 0.44px;
 			margin-bottom: 20px;
 		}
 	}
@@ -8838,7 +8838,7 @@ input {
 				}
 			}
 			& + .item {
-				margin-top: 20px;
+				margin-top: 21px;
 			}
 		}
 	}
@@ -10108,7 +10108,6 @@ input {
 			&.type-a,
 			&.type-b {
 				.swiper-slide {
-					width: 800px !important;
 					table {
 						width: 100%;
 						tbody {
@@ -10124,6 +10123,16 @@ input {
 							}
 						}
 					}
+				}
+			}
+			&.type-a {
+				.swiper-slide {
+					width: 578px !important;
+				}
+			}
+			&.type-b {
+				.swiper-slide {
+					width: 742px !important;
 				}
 			}
 			&.type-d {
@@ -10607,10 +10616,16 @@ input {
 									}
 								}
 							}
+							&:nth-child(2) {
+								th {
+									padding: 12px 20px;
+								}
+							}
 						}
 					}
 					tbody {
 						td {
+							padding: 12px 20px;
 							white-space: nowrap;
 							border-right: 1px solid #d5d5d5;
 						}
@@ -17355,6 +17370,7 @@ input {
 		.info-box {
 			gap: 40px;
 			.box {
+				border-radius: 12px;
 				.img-holder {
 					span {
 						padding-top: 0;
@@ -18087,7 +18103,7 @@ input {
 				gap: 40px;
 				> li {
 					border-radius: 12px;
-					padding: 0 40px;
+					padding: 0 40px 8px;
 					> button {
 						padding: 40px 0 32px;
 						font-size: 20px;
@@ -18121,7 +18137,8 @@ input {
 									}
 									p {
 										&.bg-txt {
-											width: 100%;
+											width: calc(100% - 36px);
+											margin-right: auto;
 											margin-left: 0;
 											margin-top: 28px;
 											padding: 11px 24px;
@@ -18262,6 +18279,7 @@ input {
 						}
 					}
 					&.is-active {
+						padding-bottom: 0;
 						> button {
 							&::after {
 								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M3 11L21 11V13L3 13L3 11Z' fill='%23006477'/%3E%3C/svg%3E");
@@ -19320,9 +19338,13 @@ input {
 
 	.request-step-top {
 		.step-box {
+			justify-content: space-between;
 			.box {
-				width: calc(16.6% - 33px);
+				width: calc(20% - 32px);
 				max-width: 200px;
+				&::after {
+					right: -2.3vw;
+				}
 			}
 		}
 	}
@@ -19490,6 +19512,16 @@ input {
 			}
 		}
 	}
+
+	.request-step-top {
+		.step-box {
+			.box {
+				&::after {
+					right: -3vw;
+				}
+			}
+		}
+	}
 }
 /* //1400 이상 */
 
@@ -19527,6 +19559,16 @@ input {
 			&.item-4 {
 				.step {
 					width: calc(25% - 30px);
+				}
+			}
+		}
+	}
+
+	.request-step-top {
+		.step-box {
+			.box {
+				&::after {
+					right: -30%;
 				}
 			}
 		}
