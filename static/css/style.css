@@ -8587,28 +8587,6 @@ input {
   height: 76px;
   object-fit: contain;
 }
-.how-stool .stool-img .img:nth-child(2) {
-  height: 135px;
-}
-.how-stool .stool-img .img:nth-child(2) img {
-  height: 43px;
-}
-.how-stool .stool-img .img .text-box {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 44px;
-  margin-top: 16px;
-}
-.how-stool .stool-img .img .text-box p {
-  color: var(--gray-01, #666);
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 130%;
-  letter-spacing: 0.28px;
-}
 .how-stool .stool-img .img + .img::before {
   content: "";
   width: calc(100% - 80px);
@@ -8618,6 +8596,25 @@ input {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+.how-stool .stool-img .img.text {
+  height: 135px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 30px;
+  gap: 0 40px;
+}
+.how-stool .stool-img .img.text img {
+  height: 43px;
+}
+.how-stool .stool-img .img.text p {
+  color: var(--gray-01, #666);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.28px;
+  margin-top: 16px;
 }
 
 .csf-stepBox {
@@ -15530,40 +15527,19 @@ input {
   .how-stool .stool-img {
     margin-bottom: 40px;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
   }
   .how-stool .stool-img .img {
-    width: 67.5%;
-    height: 360px;
+    width: 100%;
     padding: 0 80px;
   }
-  .how-stool .stool-img .img img {
-    height: 157px;
+  .how-stool .stool-img .img.text {
+    align-items: center;
+    padding: 0;
+    gap: 0 80px;
   }
-  .how-stool .stool-img .img .text-box {
-    gap: 1.6vw;
-  }
-  .how-stool .stool-img .img .text-box p {
-    width: 6.93vw;
+  .how-stool .stool-img .img.text p {
     font-size: 16px;
     letter-spacing: 0.32px;
-    flex-shrink: 0;
-  }
-  .how-stool .stool-img .img + .img::before {
-    width: 1px;
-    height: 160px;
-    top: 50%;
-    left: 0;
-    transform: translateX(0) translateY(-50%);
-  }
-  .how-stool .stool-img .img:nth-child(2) {
-    width: 32.5%;
-    height: 360px;
-  }
-  .how-stool .stool-img .img:nth-child(2) img {
-    height: 91px;
-    margin-top: 0;
   }
   .csf-stepBox {
     margin-top: 24px;
@@ -16984,6 +16960,58 @@ input {
 @media all and (min-width: 1400px) {
   .blood-ready .info-box .box {
     width: calc(50% - 20px);
+  }
+  .how-stool .stool-img {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .how-stool .stool-img .img {
+    width: 67.5%;
+    height: 360px;
+    padding: 0 80px;
+  }
+  .how-stool .stool-img .img img {
+    height: 157px;
+  }
+  .how-stool .stool-img .img .text-box {
+    gap: 1.6vw;
+  }
+  .how-stool .stool-img .img .text-box p {
+    width: 6.93vw;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    flex-shrink: 0;
+  }
+  .how-stool .stool-img .img + .img::before {
+    width: 1px;
+    height: 160px;
+    top: 50%;
+    left: 0;
+    transform: translateX(0) translateY(-50%);
+  }
+  .how-stool .stool-img .img.text {
+    width: 32.5%;
+    height: 360px;
+    align-items: center;
+    padding: 0;
+    gap: 0 60px;
+  }
+  .how-stool .stool-img .img.text > div {
+    max-width: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-stool .stool-img .img.text img {
+    width: 80px;
+    height: 91px;
+    margin: 0 auto;
+  }
+  .how-stool .stool-img .img.text p {
+    font-size: 16px;
+    letter-spacing: 0.32px;
   }
   .precautions-wrap .white-step .step {
     width: calc(33.3% - 27px);
