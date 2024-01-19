@@ -11698,6 +11698,28 @@ input {
 	}
 }
 
+// 메인 > 비디오
+.section-video {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.primary-video {
+	max-width: none;
+	max-height: 100vw;
+	min-width: 100vw;
+	min-height: 100vw;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
 	// 공통 pc mobile show hide
