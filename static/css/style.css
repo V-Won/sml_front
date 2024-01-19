@@ -9803,7 +9803,7 @@ input {
   margin-top: -60px;
 }
 .box-dlswotkd .inner h3 {
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   font-size: 22px;
   font-weight: 600;
   line-height: 130%;
@@ -16797,6 +16797,65 @@ input {
     width: calc(20% - 16px);
     height: 335px;
   }
+  .box-listValue > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .box-listValue > ul > li {
+    width: calc(26% - 10px);
+    margin-bottom: 120px;
+  }
+  .box-listValue > ul > li:nth-child(3) {
+    margin-right: 0;
+  }
+  .box-listValue > ul > li:nth-child(3)::after {
+    top: 100%;
+    right: 50%;
+    transform: translate(50%, 50px) rotate(90deg);
+  }
+  .box-listValue > ul > li:nth-child(4) {
+    order: 6;
+    margin-bottom: 0;
+  }
+  .box-listValue > ul > li:nth-child(4)::after {
+    display: none;
+  }
+  .box-listValue > ul > li:nth-child(5) {
+    order: 5;
+    margin-bottom: 0;
+  }
+  .box-listValue > ul > li:nth-child(6) {
+    order: 4;
+    margin-bottom: 0;
+  }
+  .box-listValue > ul > li:nth-child(4)::after, .box-listValue > ul > li:nth-child(5)::after {
+    transform: translate(calc(50% + 75px), -50%) rotate(180deg);
+  }
+  .box-listValue > ul > li::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='23' viewBox='0 0 16 23' fill='none'%3E%3Cpath d='M14.9333 10.7C15.4667 11.1 15.4667 11.9 14.9333 12.3L1.6 22.3C0.940765 22.7944 1.22585e-06 22.324 1.21602e-06 21.5L9.77524e-07 1.5C9.67697e-07 0.675954 0.940764 0.205573 1.6 0.7L14.9333 10.7Z' fill='%23999999'/%3E%3C/svg%3E");
+    width: 16px;
+    height: 23px;
+    bottom: initial;
+    top: 50%;
+    left: initial;
+    right: 0;
+    transform: translate(calc(50% + 75px), -50%);
+  }
+  .box-listValue > ul > li:last-child::after {
+    display: block;
+  }
+  .box-listValue > ul > li .box-text .text-1 {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+  .box-listValue > ul > li .box-text .text-2 {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
 }
 /* //1300 이상 */
 /* 1400 이상 */
@@ -16853,65 +16912,6 @@ input {
 /* //1400 이상 */
 /* 1600 이상 */
 @media all and (min-width: 1600px) {
-  .box-listValue > ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 40px;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-self: stretch;
-  }
-  .box-listValue > ul > li {
-    width: 340px;
-    margin-bottom: 120px;
-  }
-  .box-listValue > ul > li:nth-child(3) {
-    margin-right: 0;
-  }
-  .box-listValue > ul > li:nth-child(3)::after {
-    transform: translate(7px, 218px) rotate(90deg);
-    bottom: 50%;
-    right: 50%;
-  }
-  .box-listValue > ul > li:nth-child(4) {
-    order: 6;
-    margin-bottom: 0;
-  }
-  .box-listValue > ul > li:nth-child(4)::after {
-    display: none;
-  }
-  .box-listValue > ul > li:nth-child(5) {
-    order: 5;
-    margin-bottom: 0;
-  }
-  .box-listValue > ul > li:nth-child(6) {
-    order: 4;
-    margin-bottom: 0;
-  }
-  .box-listValue > ul > li:nth-child(4)::after, .box-listValue > ul > li:nth-child(5)::after {
-    transform: translate(0, -50%) rotate(180deg);
-  }
-  .box-listValue > ul > li::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='23' viewBox='0 0 16 23' fill='none'%3E%3Cpath d='M14.9333 10.7C15.4667 11.1 15.4667 11.9 14.9333 12.3L1.6 22.3C0.940765 22.7944 1.22585e-06 22.324 1.21602e-06 21.5L9.77524e-07 1.5C9.67697e-07 0.675954 0.940764 0.205573 1.6 0.7L14.9333 10.7Z' fill='%23999999'/%3E%3C/svg%3E");
-    width: 16px;
-    height: 23px;
-    bottom: initial;
-    top: 50%;
-    right: -83px;
-    transform: translate(0, -50%);
-    left: initial;
-  }
-  .box-listValue > ul > li:last-child::after {
-    display: block;
-  }
-  .box-listValue > ul > li .box-text .text-1 {
-    font-size: 14px;
-    letter-spacing: 0.28px;
-  }
-  .box-listValue > ul > li .box-text .text-2 {
-    font-size: 24px;
-    letter-spacing: 0.48px;
-  }
   .blood-ready .info-box {
     flex-direction: row;
     gap: 40px;
