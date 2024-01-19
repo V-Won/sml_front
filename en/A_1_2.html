@@ -80,7 +80,7 @@
         <!-- //common-tab -->
         <!-- laboratory-box -->
         <div class="laboratory-box">
-          <div class="item" id="b_0">
+          <div class="item" id="b_0" data-section="0">
             <div class="img-holder">
               <span>
                 <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
@@ -98,7 +98,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="세포병리"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="b_1">
+          <div class="item" id="b_1" data-section="1">
             <div class="img-holder">
               <span>
                 <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
@@ -114,7 +114,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="조직병리"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="b_2">
+          <div class="item" id="b_2" data-section="2">
             <div class="img-holder">
               <span>
                 <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
@@ -268,7 +268,7 @@
       });
     });
 
-    window.onscroll = (e) => {
+    window.addEventListener('scroll', (e) => {
       let windowTop = window.scrollY;
 
       if ( windowTop > document.querySelector('.posi').offsetHeight + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight ) {
@@ -276,7 +276,7 @@
       } else {
         document.querySelector('.common-tab.posi').classList.remove('fixed');
       }
-    }
+    })
 
     // event reset
     const actionEvent = () => {
@@ -384,6 +384,30 @@
       });
     });
     // //상품 json
+
+    // 본문 scroll Tab 동기화
+    let heightDe = document.querySelector('.common-tab.posi').offsetTop + 100;
+
+    window.addEventListener('scroll', (e) => {
+      let windowTop = window.scrollY;
+
+      document.querySelectorAll('.laboratory-box .item').forEach((e) => {
+        let sectionTop = e.offsetTop + heightDe,
+          itemHeight = e.clientHeight;
+
+        if (windowTop >= sectionTop && windowTop <= sectionTop + itemHeight) {
+          let cnt = e.getAttribute('data-section');
+
+          document.querySelectorAll('.common-tab.posi li').forEach(e => {
+            e.classList.remove('is-active');
+          });
+
+          document.querySelectorAll('.common-tab.posi li')[cnt].classList.add('is-active');
+
+          swiper3.slideTo(cnt);
+        }
+      });
+    });
   </script>
 
 </body>

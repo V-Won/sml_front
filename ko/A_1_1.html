@@ -547,12 +547,13 @@
     // //상품 json
 
     // 본문 scroll Tab 동기화
+    let heightDe = document.querySelector('.common-tab.posi').offsetTop + 100;
+
     window.addEventListener('scroll', (e) => {
       let windowTop = window.scrollY;
 
       document.querySelectorAll('.laboratory-box .item').forEach((e) => {
-        console.log(document.querySelector('.common-tab.posi').offsetTop);
-        let sectionTop = e.offsetTop,
+        let sectionTop = e.offsetTop + heightDe,
           itemHeight = e.clientHeight;
 
         if (windowTop >= sectionTop && windowTop <= sectionTop + itemHeight) {

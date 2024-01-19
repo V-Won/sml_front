@@ -88,7 +88,7 @@
         <!-- //common-tab -->
         <!-- laboratory-box -->
         <div class="laboratory-box">
-          <div class="item" id="a_0">
+          <div class="item" id="a_0" data-section="0">
             <div class="img-holder">
               <span>
                 <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
@@ -108,7 +108,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="임상화학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_1">
+          <div class="item" id="a_1" data-section="1">
             <div class="img-holder">
               <span>
                 <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
@@ -124,7 +124,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="요화학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_2">
+          <div class="item" id="a_2" data-section="2">
             <div class="img-holder">
               <span>
                 <img src="../static/images/@/laboratory_detail_1_3.png" alt="">
@@ -142,7 +142,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="혈액학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_3">
+          <div class="item" id="a_3" data-section="3">
             <div class="img-holder">
               <span>
                 <img src="../static/images/@/laboratory_detail_1_4.png" alt="">
@@ -162,7 +162,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="면역학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_4">
+          <div class="item" id="a_4" data-section="4">
             <div class="img-holder">
               <span>
                 <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
@@ -178,7 +178,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="핵의학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_5">
+          <div class="item" id="a_5" data-section="5">
             <div class="img-holder">
               <span>
                 <img src="../static/images/@/laboratory_detail_1_6.png" alt="">
@@ -196,7 +196,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="특수화학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_6">
+          <div class="item" id="a_6" data-section="6">
             <div class="img-holder">
               <span>
                 <img src="../static/images/@/laboratory_detail_1_7.png" alt="">
@@ -215,7 +215,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="미생물학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_7">
+          <div class="item" id="a_7" data-section="7">
             <div class="img-holder">
               <span>
                 <img src="../static/images/@/laboratory_detail_1_8.png" alt="">
@@ -237,7 +237,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="분자미생물학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_8">
+          <div class="item" id="a_8" data-section="8">
             <div class="img-holder">
               <span>
                 <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
@@ -254,7 +254,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="분자유전학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_9">
+          <div class="item" id="a_9" data-section="9">
             <div class="img-holder">
               <span>
                 <img src="../static/images/@/laboratory_detail_1_10.png" alt="">
@@ -270,7 +270,7 @@
               <button type="button" class="view-btn" data-event="layerOpen" data-layerId="ly-1" data-text="세포유전학"><span>Instruments</span></button>
             </div>
           </div>
-          <div class="item" id="a_10">
+          <div class="item" id="a_10" data-section="10">
             <div class="img-holder">
               <span>
                 <img src="../static/images/bg/bg_noImg_cover.svg" alt="">
@@ -423,7 +423,7 @@
       });
     });
 
-    window.onscroll = (e) => {
+    window.addEventListener('scroll', (e) => {
       let windowTop = window.scrollY;
 
       if ( windowTop > document.querySelector('.posi').offsetHeight + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight ) {
@@ -431,7 +431,7 @@
       } else {
         document.querySelector('.common-tab.posi').classList.remove('fixed');
       }
-    }
+    })
 
     // event reset
     const actionEvent = () => {
@@ -540,6 +540,30 @@
       });
     });
     // //상품 json
+
+    // 본문 scroll Tab 동기화
+    let heightDe = document.querySelector('.common-tab.posi').offsetTop + 100;
+
+    window.addEventListener('scroll', (e) => {
+      let windowTop = window.scrollY;
+
+      document.querySelectorAll('.laboratory-box .item').forEach((e) => {
+        let sectionTop = e.offsetTop + heightDe,
+          itemHeight = e.clientHeight;
+
+        if (windowTop >= sectionTop && windowTop <= sectionTop + itemHeight) {
+          let cnt = e.getAttribute('data-section');
+
+          document.querySelectorAll('.common-tab.posi li').forEach(e => {
+            e.classList.remove('is-active');
+          });
+
+          document.querySelectorAll('.common-tab.posi li')[cnt].classList.add('is-active');
+
+          swiper3.slideTo(cnt);
+        }
+      });
+    });
   </script>
 
 </body>
