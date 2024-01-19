@@ -15868,7 +15868,7 @@ input {
     border: 1px solid #d5d5d5;
   }
   .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox {
-    width: 240px;
+    width: 100%;
   }
   .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox .img {
     width: 140px;
@@ -15880,16 +15880,8 @@ input {
     letter-spacing: 0.32px;
   }
   .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox + .step-imgBox {
-    margin-top: 0;
-    margin-left: 128px;
-  }
-  .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox + .step-imgBox::before {
-    width: 48px;
-    height: 48px;
-    top: 50%;
-    left: -40px;
-    transform: translateX(0) translateY(-50%);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Cpath d='M16.5898 33.18L25.7498 24L16.5898 14.82L19.4098 12L31.4098 24L19.4098 36L16.5898 33.18Z' fill='%23999999'/%3E%3C/svg%3E");
+    margin-top: 72px;
+    margin-left: 0;
   }
   .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .dot-list {
     margin-top: 14px;
@@ -15948,7 +15940,7 @@ input {
   .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:nth-child(2) td:last-child, .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:nth-child(3) td:last-child, .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:nth-child(2) td:last-child, .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:nth-child(5) td:last-child, .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:nth-child(6) td:last-child {
     border-right: 1px solid #d5d5d5;
   }
-  .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:nth-child(4) td, .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:last-child td {
+  .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:nth-child(4) td:last-child, .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-common-tabTableSwiper .inner .common-table-1 .swiper-slide table tbody tr:last-child td:last-child {
     border-bottom: none;
   }
   .precautions-wrap .acc-whiteBg > ul > li > ul > li .box-treatNotice {
@@ -16907,6 +16899,39 @@ input {
   .precautions-wrap .white-step.dot-sub .step {
     width: calc(50% - 20px);
     height: 253px;
+  }
+  .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img {
+    width: calc(100% - 36px);
+    margin: 29px auto 0 0;
+    padding: 23px 40px;
+    border-radius: 12px;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #d5d5d5;
+  }
+  .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox {
+    width: 240px;
+  }
+  .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox .img {
+    width: 140px;
+    height: 140px;
+  }
+  .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox p {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+  }
+  .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox + .step-imgBox {
+    margin-top: 0;
+    margin-left: 6.7vw;
+  }
+  .precautions-wrap .acc-whiteBg > ul > li > ul > li .step-order .step-img .step-imgBox + .step-imgBox::before {
+    width: 48px;
+    height: 48px;
+    top: 50%;
+    left: -4.5vw;
+    transform: translateX(0) translateY(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Cpath d='M16.5898 33.18L25.7498 24L16.5898 14.82L19.4098 12L31.4098 24L19.4098 36L16.5898 33.18Z' fill='%23999999'/%3E%3C/svg%3E");
   }
 }
 /* //1400 이상 */
