@@ -6563,7 +6563,7 @@ input {
 			transition: all 0.3s;
 			&.fixed {
 				position: fixed;
-				padding: 60px 0 20px;
+				padding: 20px 0;
 				top: 73px;
 				left: 0;
 				z-index: 2000;
@@ -16588,9 +16588,10 @@ input {
 	.box-reser {
 		> ul {
 			display: flex;
+			flex-wrap: wrap;
 			gap: 20px;
 			> li {
-				width: 25%;
+				width: 100%;
 				height: 360px;
 				margin-bottom: 0;
 				.img-holder {
@@ -16602,13 +16603,7 @@ input {
 						padding-top: 0;
 					}
 				}
-				p {
-					top: 0;
-					transform: translate(-50%, 239px);
-					align-items: start;
-					bottom: initial;
-					font-size: 0.87vw;
-				}
+				
 			}
 		}
 	}
@@ -19582,6 +19577,29 @@ input {
 			.box {
 				&::after {
 					right: -3vw;
+				}
+			}
+		}
+	}
+
+	// 임상연구 > 임상연구 검사 > 임상연구 개요
+	.box-reser {
+		> ul {
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 20px;
+			> li {
+				width: 25%;
+				height: 360px;
+				margin-bottom: 0;
+				.img-holder {
+					border-radius: 12px;
+					&:after {
+					}
+					span {
+						height: 360px;
+						padding-top: 0;
+					}
 				}
 			}
 		}
