@@ -173,8 +173,8 @@
                     <div class="swiper-slide">
                       <table>
                         <colgroup>
-                          <col style="width: 240px;">
-                          <col style="width: calc(100% - 240px);">
+                          <col style="width: 360px;">
+                          <col style="width: calc(100% - 360px);">
                         </colgroup>
                         <thead>
                           <tr>
@@ -200,7 +200,7 @@
                           <tr>
                             <td>오랜 채식</td>
                             <td>-</td>
-                            <td>Cholesterol, LDL, VLDL, 총 지질, Phospholipid, Triglyceride(TG)</td>
+                            <td>Cholesterol, LDL, VLDL, 총 지질, Phospholipid, <br class="pc-show">Triglyceride(TG)</td>
                           </tr>
                           <tr>
                             <td>고단백, 저탄수화물</td>
@@ -290,15 +290,6 @@
                   <div class="text-box">
                     <p class="num">04.</p>
                     <p class="tit">검체 용기에 환자 정보 확인이 가능하도록 표기하고 바코드를 부착합니다.</p>
-                    <ul class="dot-list">
-                      <li>검체용기에는 적어도 2개의 식별자 (이름, 등록번호 등)가 표시되어야 합니다.</li>
-                      <li>환자 정보와 바코드 정보를 확인 후 검체용기에 바코드가 떨어지지 않도록 완전 밀착하여 부착합니다.</li>
-                      <li>손상된 바코드는 자동화 장비로 분석이 어려우므로 사용하지 않습니다.</li>
-                      <li>검체가 2개 이상인 경우 바코드를 검체 수만큼 출력하여 각각의 검체용기에 바코드를 부착해야 합니다.</li>
-                      <li>채취부위 또는 채취 시간이 다른 동일 종류의 검체로 동일 종목의 검사를 의뢰할 경우에는 각각 서로 다른 바코드를 부착해야 합니다. 바코드가 동일하면 각각 독립된 작업번호가 부여되지 않아 제대로 검사가 진행 될 수 없습니다.</li>
-                      <li>튜브 형태의 검체용기는 바코드 리더기가 읽기 용이하도록 세로 형식으로 부착하며, 검체 상태와 검체량 확인이 가능하도록 바코드를 부착합니다.</li>
-                      <li>채혈하고자 하는 환자와 부착된 검체 바코드의 환자 이름, 병원 등록번호 등을 비교하여 다시 한번 확인 후 채혈을 합니다.</li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -308,6 +299,15 @@
           <div class="how-attachment">
             <div>
               <h5>올바른 바코드 부착법</h5>
+              <ul class="dot-list">
+                <li>검체용기에는 적어도 2개의 식별자 (이름, 등록번호 등)가 표시되어야 합니다.</li>
+                <li>환자 정보와 바코드 정보를 확인 후 검체용기에 바코드가 떨어지지 않도록 완전 밀착하여 부착합니다.</li>
+                <li>손상된 바코드는 자동화 장비로 분석이 어려우므로 사용하지 않습니다.</li>
+                <li>검체가 2개 이상인 경우 바코드를 검체 수만큼 출력하여 각각의 검체용기에 바코드를 부착해야 합니다.</li>
+                <li>채취부위 또는 채취 시간이 다른 동일 종류의 검체로 동일 종목의 검사를 의뢰할 경우에는 각각 서로 다른 바코드를 부착해야 합니다. <br class="pc-show">바코드가 동일하면 각각 독립된 작업번호가 부여되지 않아 제대로 검사가 진행 될 수 없습니다.</li>
+                <li>튜브 형태의 검체용기는 바코드 리더기가 읽기 용이하도록 세로 형식으로 부착하며, 검체 상태와 검체량 확인이 가능하도록 바코드를 부착합니다.</li>
+                <li>채혈하고자 하는 환자와 부착된 검체 바코드의 환자 이름, 병원 등록번호 등을 비교하여 다시 한번 확인 후 채혈을 합니다.</li>
+              </ul>
               <div class="how-box">
                 <div class="box">
                   <p class="tit bad">부적합한 바코드 부착</p>
@@ -429,8 +429,10 @@
               </div>
             </div>
             <!-- //box-infoTop -->
-            <!-- preserve-infoTab -->
-            <div class="preserve-infoTab">
+          </div>
+          <!-- preserve-infoTab -->
+          <div class="preserve-infoTab">
+            <div>
               <h5>검사 항목별, 요 보존제 종류</h5>
               <!-- common-tab -->
               <div class="common-tab type-2" data-click="tab-type-1">
@@ -1053,8 +1055,8 @@
               </div>
               <!-- //tab-section -->
             </div>
-            <!-- preserve-infoTab -->
           </div>
+          <!-- preserve-infoTab -->
         </div>
         <div class="tab-item" data-section="2">
           <div class="inner-gap-1">
@@ -1063,22 +1065,24 @@
               <p class="tit">채취방법</p>
               <div class="info">
                 <div class="box">
-                  <p class="left-tit">단회 대변 <span>(Stool)</span></p>
-                  <ul class="order-num">
-                    <li>대변 전용용기 뚜껑에 달려있는 스틱을 이용해 대변 2~3g을 채취합니다.</li>
-                  </ul>
                   <div class="stool-img">
                     <div class="img">
-                      <img src="../static/images/img/stool_img_1.png">
+                      <img src="../static/images/img/stool_img_1.png" class="pc-show">
+                      <img src="../static/images/img/stool_img_1_mo.png" class="mo-show">
                     </div>
                     <div class="img">
-                      <img src="../static/images/img/stool_img_2.png">
+                      <img src="../static/images/img/stool_img_2.png" class="pc-show">
+                      <img src="../static/images/img/stool_img_2_mo.png" class="mo-show">
                       <div class="text-box">
                         <p>Stool 용기</p>
                         <p>Stool 용기 <br class="mo-show">채취부분</p>
                       </div>
                     </div>
                   </div>
+                  <p class="left-tit">단회 대변 <span>(Stool)</span></p>
+                  <ul class="order-num">
+                    <li>대변 전용용기 뚜껑에 달려있는 스틱을 이용해 대변 2~3g을 채취합니다.</li>
+                  </ul>
                 </div>
                 <div class="box">
                   <p class="left-tit">24시간 대변 <span>(24hours Stool)</span></p>
@@ -1097,13 +1101,16 @@
         <div class="tab-item" data-section="3">
           <div class="inner-gap-1">
             <!-- box-infoTop -->
-            <div class="box-infoTop flex-info fluid">
+            <div class="box-infoTop flex-info csf">
+              <p class="tit">채취방법</p>
               <div class="info">
                 <div class="box">
-                  <p class="tit">뇌척수액 <span class="pc-block">(Cerebrospinal Fluid, CSF)</span></p>
-                  <div class="order-num">
-                    <p class="txt">뇌척수액은 무균적으로 시행되는 요추천자를 통해 얻어집니다.<br>검사의뢰 목적에 따라 3개의 무균 용기에 각각 3~5mL씩 차례대로 무균적으로 받아서 각각 화학/면역검사, 세균검사, 세포 수 산정 검사에 이용합니다.</p>
-                  </div>
+                  <p class="left-tit">뇌척수액 <span class="pc-block">(Cerebrospinal Fluid, CSF)</span></p>
+                  <ul class="order-num">
+                    <li class="not-num">
+                      <p class="txt">뇌척수액은 무균적으로 시행되는 요추천자를 통해 얻어집니다. <br>검사의뢰 목적에 따라 3개의 무균 용기에 각각 3~5mL씩 차례대로 무균적으로 받아서 각각 화학/면역검사, 세균검사, 세포 수 산정 검사에 이용합니다.</p>
+                    </li>
+                  </ul>
                   <div class="csf-stepBox">
                     <div class="inner is-active">
                       <p class="step-num">Step. 01</p>
@@ -1123,7 +1130,7 @@
                   </div>
                 </div>
                 <div class="box">
-                  <p class="tit">기타 체액(Body fluid) 채취방법</p>
+                  <p class="left-tit mgb">기타 체액 <span>(Body fluid)</span></p>
                   <div class="fluid-method">
                     <div class="method">
                       <p class="txt">흉막강, 복막강, 심막강에 존재하는 체액은 체강으로 일회용 주사침으로 흡인 채취합니다.</p>

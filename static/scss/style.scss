@@ -2279,6 +2279,7 @@ input {
 		position: relative;
 		.sub-nav-2 {
 			margin-bottom: 20px;
+			overflow: hidden;
 			> li {
 				float: left;
 				position: relative;
@@ -2318,6 +2319,7 @@ input {
 				&.nav-acc {
 					float: none;
 					position: relative;
+					overflow: hidden;
 					& > a {
 						font-weight: 700;
 						padding-right: 28px;
@@ -6448,6 +6450,9 @@ input {
 						line-height: 130%;
 						letter-spacing: 0.28px;
 					}
+					&.mgb {
+						margin-bottom: 20px;
+					}
 				}
 				.order-num {
 					width: 100%;
@@ -6520,22 +6525,12 @@ input {
 					}
 				}
 				& + .box {
-					margin-top: 60px;
-					padding-top: 60px;
+					margin-top: 40px;
+					padding-top: 40px;
 					border-top: 1px solid var(--gray-03-line, #d5d5d5);
 				}
 				&.wd100 {
 					margin-top: 20px;
-				}
-			}
-		}
-		&.how-stool {
-			.info {
-				.box {
-					& + .box {
-						padding-top: 0;
-						border-top: none;
-					}
 				}
 			}
 		}
@@ -8951,8 +8946,9 @@ input {
 						tr {
 							&:nth-child(2) {
 								th {
-									min-width: 420px;
-									padding: 10px 20px;
+									// min-width: 420px;
+									width: 40%;
+									padding: 11px 20px;
 									p {
 										margin: 0 auto;
 										width: fit-content;
@@ -9091,23 +9087,23 @@ input {
 					}
 				}
 			}
-			&:last-child {
-				background: url(../../static/images/img/blood_ready_4.png) no-repeat;
-				background-position: center !important;
-				background-size: cover !important;
-				.img-holder {
-					width: 100%;
-					height: fit-content;
-					span {
-						padding-top: 0;
-						width: 100%;
-						height: 100%;
-					}
-				}
-				.text-box {
-					position: relative;
-				}
-			}
+			// &:last-child {
+			// 	background: url(../../static/images/img/blood_ready_4.png) no-repeat;
+			// 	background-position: center !important;
+			// 	background-size: cover !important;
+			// 	.img-holder {
+			// 		width: 100%;
+			// 		height: fit-content;
+			// 		span {
+			// 			padding-top: 0;
+			// 			width: 100%;
+			// 			height: 100%;
+			// 		}
+			// 	}
+			// 	.text-box {
+			// 		position: relative;
+			// 	}
+			// }
 		}
 	}
 }
@@ -9115,7 +9111,7 @@ input {
 	width: 100%;
 	position: relative;
 	padding: 60px 20px 100px;
-	background-image: linear-gradient(to bottom, #fff 81%, #006477 19%);
+	background-image: linear-gradient(to bottom, #fff 87%, #006477 13%);
 	> div {
 		width: 100%;
 		position: relative;
@@ -9130,13 +9126,38 @@ input {
 			margin-bottom: 20px;
 		}
 	}
+	.dot-list {
+		width: 100%;
+		position: relative;
+		li {
+			color: var(--gray-01, #666);
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 150%;
+			letter-spacing: 0.32px;
+			padding-left: 12px;
+			position: relative;
+			& + li {
+				margin-top: 4px;
+			}
+			&::before {
+				content: "";
+				width: 4px;
+				height: 4px;
+				border-radius: 999px;
+				background: #006477;
+				position: absolute;
+				top: 8px;
+				left: 0;
+			}
+		}
+	}
 	.how-box {
 		width: 100%;
 		position: relative;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: 20px;
 		.box {
 			width: 100%;
 			position: relative;
@@ -9144,6 +9165,7 @@ input {
 			border: 1px solid var(--gray-03-line, #d5d5d5);
 			background: #fff;
 			padding: 30px 20px;
+			margin-top: 18px;
 			.tit {
 				color: var(--Primary-04, #4d4d4d);
 				font-size: 18px;
@@ -9171,32 +9193,6 @@ input {
 				&.good {
 					&::before {
 						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z' fill='%23006477'/%3E%3Cpath d='M18.458 9.27767L16.73 7.5498L10.5896 13.6902L7.45248 10.5532L5.72461 12.2812L8.8616 15.4182L8.86147 15.4183L10.5893 17.1463L10.5896 17.1462L10.5897 17.1463L12.3176 15.4183L12.3175 15.4182L18.458 9.27767Z' fill='white'/%3E%3C/svg%3E");
-					}
-				}
-			}
-			.dot-list {
-				width: 100%;
-				position: relative;
-				li {
-					color: var(--gray-01, #666);
-					font-size: 16px;
-					font-weight: 500;
-					line-height: 150%;
-					letter-spacing: 0.32px;
-					padding-left: 12px;
-					position: relative;
-					& + li {
-						margin-top: 4px;
-					}
-					&::before {
-						content: "";
-						width: 4px;
-						height: 4px;
-						border-radius: 999px;
-						background: #006477;
-						position: absolute;
-						top: 8px;
-						left: 0;
 					}
 				}
 			}
@@ -9394,15 +9390,25 @@ input {
 	}
 }
 .preserve-infoTab {
-	margin-top: 160px;
+	margin-top: 100px;
+	margin-bottom: -100px;
 	width: 100%;
 	position: relative;
-	> h5 {
-		font-size: 20px;
-		font-weight: 600;
-		line-height: 130%;
-		letter-spacing: 0.4px;
-		margin-bottom: 20px;
+	background: #fcfcfc;
+	padding: 60px 0 100px;
+	> div {
+		width: 100%;
+		position: relative;
+		padding: 0 20px;
+		max-width: 1600px;
+		margin: 0 auto;
+		h5 {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 130%;
+			letter-spacing: 0.4px;
+			margin-bottom: 20px;
+		}
 	}
 	.tab-item {
 		margin-top: 0;
@@ -9504,13 +9510,14 @@ input {
 	.stool-img {
 		width: 100%;
 		position: relative;
-		margin-top: 20px;
+		// margin-top: 20px;
 		border-radius: 6px;
 		border: 1px solid var(--gray-03-line, #d5d5d5);
 		background: #fafafa;
+		margin-bottom: 20px;
 		.img {
 			width: 100%;
-			height: 180px;
+			height: 152px;
 			position: relative;
 			padding: 0 30px;
 			display: flex;
@@ -9522,15 +9529,22 @@ input {
 				height: 76px;
 				object-fit: contain;
 			}
+			&:nth-child(2) {
+				height: 135px;
+				img {
+					height: 43px;
+				}
+			}
 			.text-box {
 				width: 100%;
 				display: flex;
 				align-items: flex-start;
 				justify-content: center;
 				gap: 44px;
-				position: absolute;
-				bottom: 25px;
-				left: 0;
+				margin-top: 16px;
+				// position: absolute;
+				// bottom: 25px;
+				// left: 0;
 				p {
 					color: var(--gray-01, #666);
 					text-align: center;
@@ -9550,11 +9564,6 @@ input {
 					top: 0;
 					left: 50%;
 					transform: translateX(-50%);
-				}
-			}
-			&:nth-child(2) {
-				img {
-					margin-top: -42px;
 				}
 			}
 		}
@@ -9663,13 +9672,15 @@ input {
 		height: 228px;
 		border-radius: 12px;
 		overflow: hidden;
-		background: url(../../static/images/img/fluid_method_bg.png) no-repeat;
-		background-size: cover !important;
-		background-position: center !important;
+		// background: url(../../static/images/img/fluid_method_bg.png) no-repeat;
+		// background-size: cover !important;
+		// background-position: center !important;
+		background: #fff;
+		border: 1px solid #d5d5d5;
 		padding: 30px 20px;
 		position: relative;
 		.txt {
-			color: var(--Primary-05, #fff);
+			color: var(--Primary-04, #4D4D4D);
 			font-size: 16px;
 			font-weight: 500;
 			line-height: 150%;
@@ -9698,15 +9709,11 @@ input {
 		}
 		&:nth-child(3) {
 			&::after {
-				width: 38px;
-				height: 67px;
 				background: url(../../static/images/icon/fluid_method_icon_3.svg) no-repeat;
 			}
 		}
 		&:nth-child(4) {
 			&::after {
-				width: 72px;
-				height: 67x;
 				background: url(../../static/images/icon/fluid_method_icon_4.svg) no-repeat;
 			}
 		}
@@ -15798,6 +15805,9 @@ input {
 							font-size: 20px;
 							letter-spacing: 0.4px;
 						}
+						&.mgb {
+							margin-bottom: 48px;
+						}
 					}
 					.order-num {
 						width: calc(100% - 500px);
@@ -15835,6 +15845,14 @@ input {
 							width: 100%;
 						}
 					}
+				}
+			}
+		}
+		&.csf {
+			.info {
+				.txt {
+					font-size: 20px;
+					left: 0.4px;
 				}
 			}
 		}
@@ -17303,7 +17321,7 @@ input {
 					table {
 						thead {
 							th {
-								padding: 25.5px 20px;
+								padding: 24.5px 20px;
 							}
 							tr {
 								&:first-child {
@@ -17317,7 +17335,7 @@ input {
 						}
 						tbody {
 							td {
-								padding: 13px 20px;
+								padding: 11.5px 20px;
 							}
 						}
 					}
@@ -17341,7 +17359,7 @@ input {
 					span {
 						padding-top: 0;
 						width: 100%;
-						height: 320px;
+						height: 300px;
 					}
 				}
 				.text-box {
@@ -17370,12 +17388,19 @@ input {
 	}
 	.how-attachment {
 		padding: 80px 100px 120px;
-		background-image: linear-gradient(to bottom, #fff 60%, #006477 40%);
+		background-image: linear-gradient(to bottom, #fff 71%, #006477 29%);
 		> div {
 			h5 {
 				font-size: 40px;
 				letter-spacing: 0.8px;
-				margin-bottom: 48px;
+				margin-bottom: 24px;
+			}
+		}
+		.dot-list {
+			li {
+				+ li {
+					margin-top: 12px;
+				}
 			}
 		}
 		.how-box {
@@ -17386,6 +17411,7 @@ input {
 				height: 480px;
 				border-radius: 12px;
 				padding: 40px;
+				margin-top: 47px;
 				.tit {
 					font-size: 24px;
 					letter-spacing: 0.48px;
@@ -17394,6 +17420,13 @@ input {
 					&::before {
 						width: 32px;
 						height: 32px;
+					}
+				}
+				.dot-list {
+					li {
+						& + li {
+							margin-top: 4px;
+						}
 					}
 				}
 				.img-wrap {
@@ -17497,11 +17530,16 @@ input {
 		}
 	}
 	.preserve-infoTab {
-		margin-top: 200px;
-		> h5 {
-			font-size: 40px;
-			letter-spacing: 0.8px;
-			margin-bottom: 48px;
+		margin-top: 120px;
+		margin-bottom: -120px;
+		padding: 80px 0 100px;
+		> div {
+			padding: 0 100px;
+			h5 {
+				font-size: 40px;
+				letter-spacing: 0.8px;
+				margin-bottom: 48px;
+			}
 		}
 		.tab-section {
 			margin-top: 0;
@@ -17525,7 +17563,7 @@ input {
 							}
 						}
 						& + .common-table-1 {
-							margin-top: 24px;
+							margin-top: 20px;
 						}
 					}
 					.common-table-1 {
@@ -17570,25 +17608,24 @@ input {
 	}
 	.how-stool {
 		.stool-img {
-			margin-top: 24px;
+			margin-bottom: 40px;
 			border-radius: 12px;
 			display: flex;
 			align-items: center;
 			.img {
-				width: calc(50%);
+				width: 67.5%;
 				height: 360px;
-				padding: 0 60px;
+				padding: 0 80px;
 				img {
-					height: 165px;
-					margin-left: -16px;
+					height: 157px;
 				}
 				.text-box {
-					gap: 6vw;
-					bottom: 59px;
-					left: 18px;
+					gap: 1.6vw;
 					p {
-						font-size: 22px;
-						letter-spacing: 0.44px;
+						width: 6.93vw;
+						font-size: 16px;
+						letter-spacing: 0.32px;
+						flex-shrink: 0;
 					}
 				}
 				& + .img {
@@ -17601,7 +17638,10 @@ input {
 					}
 				}
 				&:nth-child(2) {
+					width: 32.5%;
+					height: 360px;
 					img {
+						height: 91px;
 						margin-top: 0;
 					}
 				}
@@ -17609,12 +17649,12 @@ input {
 		}
 	}
 	.csf-stepBox {
-		margin-top: 12px;
+		margin-top: 24px;
 		flex-direction: row;
 		justify-content: space-between;
 		width: 817px;
 		margin-left: auto;
-		padding: 24px 20px 44px;
+		padding: 24px 20px 22px;
 		.inner {
 			width: 200px;
 			height: 200px;
@@ -19308,16 +19348,6 @@ input {
 		}
 	}
 
-	.how-stool {
-		.stool-img {
-			.img {
-				.text-box {
-					gap: 93.5px;
-				}
-			}
-		}
-	}
-
 	.csf-stepBox {
 		width: 900px;
 		.inner {
@@ -19340,6 +19370,14 @@ input {
 
 /* 1400 이상 */
 @media all and (min-width: 1400px) {
+	.blood-ready {
+		.info-box {
+			.box {
+				width: calc(50% - 20px);
+			}
+		}
+	}
+
 	// 검사 안내 > 검사항목 별 주의사항
 	.precautions-wrap {
 		.white-step {
@@ -19457,32 +19495,6 @@ input {
 
 /* 1600 이상 */
 @media all and (min-width: 1600px) {
-	.blood-ready {
-		.info-box {
-			flex-direction: row;
-			gap: 40px;
-			.box {
-				width: calc(50% - 20px);
-				.img-holder {
-					span {
-						height: 588px;
-					}
-				}
-				&:last-child {
-					background: none;
-					height: 588px;
-					.img-holder {
-						span {
-							height: 588px;
-						}
-					}
-					.text-box {
-						position: absolute;
-					}
-				}
-			}
-		}
-	}
 
 	.how-blood {
 		.noti-item {

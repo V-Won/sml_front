@@ -1933,6 +1933,7 @@ input {
 }
 .sub-top .text-box .sub-nav-2 {
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .sub-top .text-box .sub-nav-2 > li {
   float: left;
@@ -1970,6 +1971,7 @@ input {
 .sub-top .text-box .sub-nav-2 > li.nav-acc {
   float: none;
   position: relative;
+  overflow: hidden;
 }
 .sub-top .text-box .sub-nav-2 > li.nav-acc > a {
   font-weight: 700;
@@ -5820,6 +5822,9 @@ input {
   line-height: 130%;
   letter-spacing: 0.28px;
 }
+.box-infoTop.flex-info .info .box .left-tit.mgb {
+  margin-bottom: 20px;
+}
 .box-infoTop.flex-info .info .box .order-num {
   width: 100%;
   position: relative;
@@ -5889,16 +5894,12 @@ input {
   display: none;
 }
 .box-infoTop.flex-info .info .box + .box {
-  margin-top: 60px;
-  padding-top: 60px;
+  margin-top: 40px;
+  padding-top: 40px;
   border-top: 1px solid var(--gray-03-line, #d5d5d5);
 }
 .box-infoTop.flex-info .info .box.wd100 {
   margin-top: 20px;
-}
-.box-infoTop.flex-info.how-stool .info .box + .box {
-  padding-top: 0;
-  border-top: none;
 }
 .box-infoTop + .box-common-tabTableSwiper {
   padding-top: 0;
@@ -8046,8 +8047,8 @@ input {
   border-right: none;
 }
 .box-common-tabTableSwiper.blood-table .type-c .swiper-slide table thead tr:nth-child(2) th {
-  min-width: 420px;
-  padding: 10px 20px;
+  width: 40%;
+  padding: 11px 20px;
 }
 .box-common-tabTableSwiper.blood-table .type-c .swiper-slide table thead tr:nth-child(2) th p {
   margin: 0 auto;
@@ -8180,29 +8181,12 @@ input {
 .blood-ready .info-box .box .text-box .dot-list li + .not-dot {
   margin-top: 8px;
 }
-.blood-ready .info-box .box:last-child {
-  background: url(../../static/images/img/blood_ready_4.png) no-repeat;
-  background-position: center !important;
-  background-size: cover !important;
-}
-.blood-ready .info-box .box:last-child .img-holder {
-  width: 100%;
-  height: fit-content;
-}
-.blood-ready .info-box .box:last-child .img-holder span {
-  padding-top: 0;
-  width: 100%;
-  height: 100%;
-}
-.blood-ready .info-box .box:last-child .text-box {
-  position: relative;
-}
 
 .how-attachment {
   width: 100%;
   position: relative;
   padding: 60px 20px 100px;
-  background-image: linear-gradient(to bottom, #fff 81%, #006477 19%);
+  background-image: linear-gradient(to bottom, #fff 87%, #006477 13%);
 }
 .how-attachment > div {
   width: 100%;
@@ -8218,13 +8202,38 @@ input {
   letter-spacing: 0.4px;
   margin-bottom: 20px;
 }
+.how-attachment .dot-list {
+  width: 100%;
+  position: relative;
+}
+.how-attachment .dot-list li {
+  color: var(--gray-01, #666);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  padding-left: 12px;
+  position: relative;
+}
+.how-attachment .dot-list li + li {
+  margin-top: 4px;
+}
+.how-attachment .dot-list li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: #006477;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
 .how-attachment .how-box {
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
 .how-attachment .how-box .box {
   width: 100%;
@@ -8233,6 +8242,7 @@ input {
   border: 1px solid var(--gray-03-line, #d5d5d5);
   background: #fff;
   padding: 30px 20px;
+  margin-top: 18px;
 }
 .how-attachment .how-box .box .tit {
   color: var(--Primary-04, #4d4d4d);
@@ -8259,32 +8269,6 @@ input {
 }
 .how-attachment .how-box .box .tit.good::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z' fill='%23006477'/%3E%3Cpath d='M18.458 9.27767L16.73 7.5498L10.5896 13.6902L7.45248 10.5532L5.72461 12.2812L8.8616 15.4182L8.86147 15.4183L10.5893 17.1463L10.5896 17.1462L10.5897 17.1463L12.3176 15.4183L12.3175 15.4182L18.458 9.27767Z' fill='white'/%3E%3C/svg%3E");
-}
-.how-attachment .how-box .box .dot-list {
-  width: 100%;
-  position: relative;
-}
-.how-attachment .how-box .box .dot-list li {
-  color: var(--gray-01, #666);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0.32px;
-  padding-left: 12px;
-  position: relative;
-}
-.how-attachment .how-box .box .dot-list li + li {
-  margin-top: 4px;
-}
-.how-attachment .how-box .box .dot-list li::before {
-  content: "";
-  width: 4px;
-  height: 4px;
-  border-radius: 999px;
-  background: #006477;
-  position: absolute;
-  top: 8px;
-  left: 0;
 }
 .how-attachment .how-box .box .img-wrap {
   width: 100%;
@@ -8467,11 +8451,21 @@ input {
 }
 
 .preserve-infoTab {
-  margin-top: 160px;
+  margin-top: 100px;
+  margin-bottom: -100px;
   width: 100%;
   position: relative;
+  background: #fcfcfc;
+  padding: 60px 0 100px;
 }
-.preserve-infoTab > h5 {
+.preserve-infoTab > div {
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.preserve-infoTab > div h5 {
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
@@ -8559,14 +8553,14 @@ input {
 .how-stool .stool-img {
   width: 100%;
   position: relative;
-  margin-top: 20px;
   border-radius: 6px;
   border: 1px solid var(--gray-03-line, #d5d5d5);
   background: #fafafa;
+  margin-bottom: 20px;
 }
 .how-stool .stool-img .img {
   width: 100%;
-  height: 180px;
+  height: 152px;
   position: relative;
   padding: 0 30px;
   display: flex;
@@ -8579,15 +8573,19 @@ input {
   height: 76px;
   object-fit: contain;
 }
+.how-stool .stool-img .img:nth-child(2) {
+  height: 135px;
+}
+.how-stool .stool-img .img:nth-child(2) img {
+  height: 43px;
+}
 .how-stool .stool-img .img .text-box {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 44px;
-  position: absolute;
-  bottom: 25px;
-  left: 0;
+  margin-top: 16px;
 }
 .how-stool .stool-img .img .text-box p {
   color: var(--gray-01, #666);
@@ -8606,9 +8604,6 @@ input {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-}
-.how-stool .stool-img .img:nth-child(2) img {
-  margin-top: -42px;
 }
 
 .csf-stepBox {
@@ -8712,14 +8707,13 @@ input {
   height: 228px;
   border-radius: 12px;
   overflow: hidden;
-  background: url(../../static/images/img/fluid_method_bg.png) no-repeat;
-  background-size: cover !important;
-  background-position: center !important;
+  background: #fff;
+  border: 1px solid #d5d5d5;
   padding: 30px 20px;
   position: relative;
 }
 .fluid-method .method .txt {
-  color: var(--Primary-05, #fff);
+  color: var(--Primary-04, #4D4D4D);
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -8743,13 +8737,9 @@ input {
   background: url(../../static/images/icon/fluid_method_icon_2.svg) no-repeat;
 }
 .fluid-method .method:nth-child(3)::after {
-  width: 38px;
-  height: 67px;
   background: url(../../static/images/icon/fluid_method_icon_3.svg) no-repeat;
 }
 .fluid-method .method:nth-child(4)::after {
-  width: 72px;
-  height: 67x;
   background: url(../../static/images/icon/fluid_method_icon_4.svg) no-repeat;
 }
 .fluid-method .method:nth-child(5)::after {
@@ -14037,6 +14027,9 @@ input {
     font-size: 20px;
     letter-spacing: 0.4px;
   }
+  .box-infoTop.flex-info .info .box .left-tit.mgb {
+    margin-bottom: 48px;
+  }
   .box-infoTop.flex-info .info .box .order-num {
     width: calc(100% - 500px);
   }
@@ -14070,6 +14063,10 @@ input {
   }
   .box-infoTop.flex-info .info .box.wd100 .order-num {
     width: 100%;
+  }
+  .box-infoTop.csf .info .txt {
+    font-size: 20px;
+    left: 0.4px;
   }
   .common-tab.type-2.posi.fixed {
     padding: 40px 0;
@@ -15268,13 +15265,13 @@ input {
     width: 100% !important;
   }
   .box-common-tabTableSwiper.blood-table .type-c .swiper-slide table thead th {
-    padding: 25.5px 20px;
+    padding: 24.5px 20px;
   }
   .box-common-tabTableSwiper.blood-table .type-c .swiper-slide table thead tr:first-child th:first-child {
     white-space: nowrap;
   }
   .box-common-tabTableSwiper.blood-table .type-c .swiper-slide table tbody td {
-    padding: 13px 20px;
+    padding: 11.5px 20px;
   }
   .blood-ready {
     padding: 80px 100px 120px;
@@ -15290,7 +15287,7 @@ input {
   .blood-ready .info-box .box .img-holder span {
     padding-top: 0;
     width: 100%;
-    height: 320px;
+    height: 300px;
   }
   .blood-ready .info-box .box .text-box {
     padding: 40px;
@@ -15315,12 +15312,15 @@ input {
   }
   .how-attachment {
     padding: 80px 100px 120px;
-    background-image: linear-gradient(to bottom, #fff 60%, #006477 40%);
+    background-image: linear-gradient(to bottom, #fff 71%, #006477 29%);
   }
   .how-attachment > div h5 {
     font-size: 40px;
     letter-spacing: 0.8px;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+  }
+  .how-attachment .dot-list li + li {
+    margin-top: 12px;
   }
   .how-attachment .how-box {
     align-items: flex-start;
@@ -15331,6 +15331,7 @@ input {
     height: 480px;
     border-radius: 12px;
     padding: 40px;
+    margin-top: 47px;
   }
   .how-attachment .how-box .box .tit {
     font-size: 24px;
@@ -15341,6 +15342,9 @@ input {
   .how-attachment .how-box .box .tit::before {
     width: 32px;
     height: 32px;
+  }
+  .how-attachment .how-box .box .dot-list li + li {
+    margin-top: 4px;
   }
   .how-attachment .how-box .box .img-wrap {
     width: calc(100% - 80px);
@@ -15434,9 +15438,14 @@ input {
     top: 9px;
   }
   .preserve-infoTab {
-    margin-top: 200px;
+    margin-top: 120px;
+    margin-bottom: -120px;
+    padding: 80px 0 100px;
   }
-  .preserve-infoTab > h5 {
+  .preserve-infoTab > div {
+    padding: 0 100px;
+  }
+  .preserve-infoTab > div h5 {
     font-size: 40px;
     letter-spacing: 0.8px;
     margin-bottom: 48px;
@@ -15465,7 +15474,7 @@ input {
     letter-spacing: 0.32px;
   }
   .preserve-infoTab .tab-section .tab-item .box-common-tabTableSwiper .circle-info + .common-table-1 {
-    margin-top: 24px;
+    margin-top: 20px;
   }
   .preserve-infoTab .tab-section .tab-item .box-common-tabTableSwiper .common-table-1.type-d .swiper-slide {
     width: 100% !important;
@@ -15486,28 +15495,27 @@ input {
     padding: 11.48px 20px;
   }
   .how-stool .stool-img {
-    margin-top: 24px;
+    margin-bottom: 40px;
     border-radius: 12px;
     display: flex;
     align-items: center;
   }
   .how-stool .stool-img .img {
-    width: 50%;
+    width: 67.5%;
     height: 360px;
-    padding: 0 60px;
+    padding: 0 80px;
   }
   .how-stool .stool-img .img img {
-    height: 165px;
-    margin-left: -16px;
+    height: 157px;
   }
   .how-stool .stool-img .img .text-box {
-    gap: 6vw;
-    bottom: 59px;
-    left: 18px;
+    gap: 1.6vw;
   }
   .how-stool .stool-img .img .text-box p {
-    font-size: 22px;
-    letter-spacing: 0.44px;
+    width: 6.93vw;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    flex-shrink: 0;
   }
   .how-stool .stool-img .img + .img::before {
     width: 1px;
@@ -15516,16 +15524,21 @@ input {
     left: 0;
     transform: translateX(0) translateY(-50%);
   }
+  .how-stool .stool-img .img:nth-child(2) {
+    width: 32.5%;
+    height: 360px;
+  }
   .how-stool .stool-img .img:nth-child(2) img {
+    height: 91px;
     margin-top: 0;
   }
   .csf-stepBox {
-    margin-top: 12px;
+    margin-top: 24px;
     flex-direction: row;
     justify-content: space-between;
     width: 817px;
     margin-left: auto;
-    padding: 24px 20px 44px;
+    padding: 24px 20px 22px;
   }
   .csf-stepBox .inner {
     width: 200px;
@@ -16912,9 +16925,6 @@ input {
   .how-attachment .how-box .box .img-wrap .img {
     height: 200px;
   }
-  .how-stool .stool-img .img .text-box {
-    gap: 93.5px;
-  }
   .csf-stepBox {
     width: 900px;
   }
@@ -16929,6 +16939,9 @@ input {
 /* //1300 이상 */
 /* 1400 이상 */
 @media all and (min-width: 1400px) {
+  .blood-ready .info-box .box {
+    width: calc(50% - 20px);
+  }
   .precautions-wrap .white-step .step {
     width: calc(33.3% - 27px);
   }
@@ -17014,26 +17027,6 @@ input {
 /* //1400 이상 */
 /* 1600 이상 */
 @media all and (min-width: 1600px) {
-  .blood-ready .info-box {
-    flex-direction: row;
-    gap: 40px;
-  }
-  .blood-ready .info-box .box {
-    width: calc(50% - 20px);
-  }
-  .blood-ready .info-box .box .img-holder span {
-    height: 588px;
-  }
-  .blood-ready .info-box .box:last-child {
-    background: none;
-    height: 588px;
-  }
-  .blood-ready .info-box .box:last-child .img-holder span {
-    height: 588px;
-  }
-  .blood-ready .info-box .box:last-child .text-box {
-    position: absolute;
-  }
   .how-blood .noti-item {
     flex-direction: row;
     align-items: flex-start;
