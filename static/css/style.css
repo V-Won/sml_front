@@ -11260,9 +11260,17 @@ input {
     position: absolute;
   }
   .tab-sticky {
-    top: 90px;
+    top: 96px;
     margin-top: -30px;
     margin-bottom: -30px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .tab-sticky > div {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 100px;
+    margin: 0 auto;
   }
   .tab-sticky .common-tab {
     padding-top: 30px;
