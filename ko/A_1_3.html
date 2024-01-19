@@ -52,7 +52,7 @@
       <!-- //sub-top -->
 
       <div>
-        <div class="inner-gap-1">
+        <div class="inner-gap-1 tab-sticky">
           <!-- common-tab -->
           <div class="common-tab type-1" data-event="tabMenu">
             <ul class="list">
@@ -784,6 +784,18 @@
         })
         document.querySelector('[data-tabSection="' + idx + '"]').classList.add('is-active');
       })
+    });
+
+    // tab 클릭시 스크롤 이동
+    document.querySelectorAll('.common-tab li').forEach((e) => {
+      e.addEventListener('click', function(){
+        let cnt = document.querySelector('.sub-top').clientHeight - document.querySelector('.tab-sticky').clientHeight;
+
+        window.scrollTo({
+					top: cnt,
+					behavior: 'smooth',
+				})
+      });
     });
   </script>
 

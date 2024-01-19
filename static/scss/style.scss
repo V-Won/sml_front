@@ -3170,10 +3170,24 @@ input {
 	}
 }
 
+// 공통 Tab sticky
+.tab-sticky {
+	position: sticky;
+	top: 70px;
+	z-index: 10;
+	background: #fff;
+	margin-top: -20px;
+	margin-bottom: -20px;
+	.common-tab {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
 // 공통 Tab
 .common-tab {
 	width: 100%;
 	position: relative;
+	z-index: 1;
 	&.padding-top-1 {
 		padding-top: 40px;
 	}
@@ -6271,6 +6285,7 @@ input {
 			}
 		}
 	}
+
 	.common-tab {
 		width: 100%;
 		position: relative;
@@ -9680,7 +9695,7 @@ input {
 		padding: 30px 20px;
 		position: relative;
 		.txt {
-			color: var(--Primary-04, #4D4D4D);
+			color: var(--Primary-04, #4d4d4d);
 			font-size: 16px;
 			font-weight: 500;
 			line-height: 150%;
@@ -12537,6 +12552,17 @@ input {
 					position: absolute;
 				}
 			}
+		}
+	}
+
+	// 공통 Tab sticky
+	.tab-sticky {
+		top:90px;
+		margin-top: -30px;
+		margin-bottom: -30px;
+		.common-tab {
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 	}
 
@@ -19527,7 +19553,6 @@ input {
 
 /* 1600 이상 */
 @media all and (min-width: 1600px) {
-
 	.how-blood {
 		.noti-item {
 			flex-direction: row;
