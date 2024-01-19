@@ -1374,6 +1374,13 @@
     document.querySelectorAll('.type-4 .snbSwiper > ul > li').forEach((item) => {
       item.addEventListener('click', (e) => {
         swiper1.slideTo(e.currentTarget.getAttribute('data-index'));
+        let cnt = document.querySelector('.tab-section').offsetTop - 200;
+        console.log(cnt);
+
+        window.scrollTo({
+					top: cnt,
+					behavior: 'smooth',
+				})
       });
     });
 
@@ -1556,6 +1563,19 @@
           spaceBetween: 12,
         },
       },
+    });
+
+    document.querySelectorAll('.type-4 .snbSwiper > ul > li').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        swiper1.slideTo(e.currentTarget.getAttribute('data-index'));
+        let cnt = document.querySelector('.tab-section').offsetTop - 200;
+        console.log(cnt);
+
+        window.scrollTo({
+					top: cnt,
+					behavior: 'smooth',
+				})
+      });
     });
   </script>
 
