@@ -4174,6 +4174,11 @@ input {
 					box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
 				}
 				.img {
+					&.img-holder{
+						span{
+							padding-top:80%;
+						}
+					}
 					img {
 						width: 100%;
 					}
@@ -4613,7 +4618,6 @@ input {
 		font-weight: 600;
 		line-height: 140%;
 		letter-spacing: 0.4px;
-		text-transform: uppercase;
 		margin-bottom: 18px;
 		.icon-new {
 			position: relative;
@@ -13960,6 +13964,11 @@ input {
 					&:hover {
 					}
 					.img {
+						&.img-holder{
+							span{
+								padding-top:87%;
+							}
+						}
 						img {
 						}
 					}

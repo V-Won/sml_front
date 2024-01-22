@@ -3682,6 +3682,9 @@ input {
 .box-NewTest ul li a:hover {
   box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
 }
+.box-NewTest ul li a .img.img-holder span {
+  padding-top: 80%;
+}
 .box-NewTest ul li a .img img {
   width: 100%;
 }
@@ -4100,7 +4103,6 @@ input {
   font-weight: 600;
   line-height: 140%;
   letter-spacing: 0.4px;
-  text-transform: uppercase;
   margin-bottom: 18px;
 }
 .list-board-top .tit-1 .icon-new {
@@ -12418,6 +12420,9 @@ input {
   .box-NewTest ul li {
     width: calc(25% - 30px);
     margin-bottom: 0px;
+  }
+  .box-NewTest ul li a .img.img-holder span {
+    padding-top: 87%;
   }
   .box-NewTest ul li a .text {
     padding: 25px 23px 38px 23px;
