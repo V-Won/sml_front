@@ -7477,6 +7477,9 @@ input {
 .irb-tel .inner ul li a span.mail::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'%3E%3Cpath d='M20.1673 6.00033C20.1673 4.99199 19.3423 4.16699 18.334 4.16699H3.66732C2.65898 4.16699 1.83398 4.99199 1.83398 6.00033V17.0003C1.83398 18.0087 2.65898 18.8337 3.66732 18.8337H18.334C19.3423 18.8337 20.1673 18.0087 20.1673 17.0003V6.00033ZM18.334 6.00033L11.0007 10.5837L3.66732 6.00033H18.334ZM18.334 17.0003H3.66732V7.83366L11.0007 12.417L18.334 7.83366V17.0003Z' fill='white'/%3E%3C/svg%3E");
 }
+.irb-tel .inner ul li a span.dmlfhl::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M14.058 9.52L14.978 10.44L5.91805 19.5H4.99805V18.58L14.058 9.52ZM17.658 3.5C17.408 3.5 17.148 3.6 16.958 3.79L15.128 5.62L18.878 9.37L20.708 7.54C21.098 7.15 21.098 6.52 20.708 6.13L18.368 3.79C18.168 3.59 17.918 3.5 17.658 3.5ZM14.058 6.69L2.99805 17.75V21.5H6.74805L17.808 10.44L14.058 6.69Z' fill='white'/%3E%3C/svg%3E");
+}
 
 .list-stepType-1 {
   margin-top: -18px;
@@ -14939,6 +14942,11 @@ input {
   .irb-tel .inner ul li a span.mail {
     position: relative;
     left: -8px;
+  }
+  .irb-tel .inner ul li a span.dmlfhl {
+    padding-left: 0;
+    transform: translateX(30px);
+    min-width: 44px;
   }
   .flex-type-1 {
     display: flex;
