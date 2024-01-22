@@ -1933,7 +1933,6 @@ input {
 }
 .sub-top .text-box .sub-nav-2 {
   margin-bottom: 20px;
-  overflow: hidden;
 }
 .sub-top .text-box .sub-nav-2 > li {
   float: left;
@@ -1971,7 +1970,6 @@ input {
 .sub-top .text-box .sub-nav-2 > li.nav-acc {
   float: none;
   position: relative;
-  overflow: hidden;
 }
 .sub-top .text-box .sub-nav-2 > li.nav-acc > a {
   font-weight: 700;

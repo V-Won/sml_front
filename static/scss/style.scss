@@ -2279,7 +2279,7 @@ input {
 		position: relative;
 		.sub-nav-2 {
 			margin-bottom: 20px;
-			overflow: hidden;
+			// overflow: hidden;
 			> li {
 				float: left;
 				position: relative;
@@ -2319,7 +2319,7 @@ input {
 				&.nav-acc {
 					float: none;
 					position: relative;
-					overflow: hidden;
+					// overflow: hidden;
 					& > a {
 						font-weight: 700;
 						padding-right: 28px;
