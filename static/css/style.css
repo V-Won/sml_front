@@ -14056,6 +14056,9 @@ input {
     letter-spacing: 0.4px;
     padding-left: 37px;
   }
+  .box-infoTop.flex-info .info .box .order-num li.gap-right-1 {
+    padding-right: 35px;
+  }
   .box-infoTop.flex-info .info .box .order-num li + li {
     margin-top: 24px;
   }

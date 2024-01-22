@@ -15864,6 +15864,9 @@ input {
 							font-size: 20px;
 							letter-spacing: 0.4px;
 							padding-left: 37px;
+							&.gap-right-1{
+								padding-right:35px;
+							}
 							& + li {
 								margin-top: 24px;
 							}
