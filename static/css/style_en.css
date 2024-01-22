@@ -224,10 +224,6 @@
   line-height: 130%; /* 20.8px */
   letter-spacing: 0.32px;
 }
-:lang(en) .request-step-top .step-box .box {
-  padding: 30px 3px;
-  height: 226px;
-}
 :lang(en) .box-tbdj ul li .gap .text .btn-flex button {
   max-width: 118px;
 }
