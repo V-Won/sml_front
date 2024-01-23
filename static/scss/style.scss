@@ -5221,6 +5221,10 @@ input {
 								max-width: 88px;
 								font-weight: 600;
 							}
+							&.right{
+								@include text-line-2;
+								-webkit-line-clamp: 4;
+							}
 						}
 					}
 				}
@@ -14660,6 +14664,7 @@ input {
 								}
 								&.right {
 									width: calc(100% - 140px);
+									-webkit-line-clamp: 5;
 								}
 							}
 						}

@@ -4675,6 +4675,14 @@ input {
   max-width: 88px;
   font-weight: 600;
 }
+.request-swiper .mySwiper1 .swiper-slide .flex .text-box li p.right {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
+}
 .request-swiper .mySwiper1 .swiper-button-next,
 .request-swiper .mySwiper1 .swiper-button-prev {
   width: 32px;
@@ -13027,6 +13035,7 @@ input {
   }
   .request-swiper .mySwiper1 .swiper-slide .flex .text-box li p.right {
     width: calc(100% - 140px);
+    -webkit-line-clamp: 5;
   }
   .request-swiper .mySwiper1 .swiper-button-next,
   .request-swiper .mySwiper1 .swiper-button-prev {
