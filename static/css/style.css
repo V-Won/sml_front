@@ -1160,6 +1160,16 @@ input {
 .common-btn-center.top-gap-1 {
   margin-top: 39px;
 }
+.common-btn-center.top-tap-2 {
+  margin-top: -42px;
+  margin-bottom: 65px;
+}
+.common-btn-center.top-tap-2 .common-moveBtn {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  height: fit-content;
+}
 
 .common-disabled {
   background: #eee !important;
@@ -10787,6 +10797,13 @@ input {
   }
   .common-btn-center.top-gap-1 {
     margin-top: 44px;
+  }
+  .common-btn-center.top-tap-2 {
+    margin-bottom: 90px;
+    padding: 0 0 0 23px;
+  }
+  .common-btn-center.top-tap-2 .common-moveBtn {
+    margin: 0;
   }
   .inner-gap-1 {
     max-width: 1600px;

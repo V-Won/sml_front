@@ -1370,6 +1370,17 @@ input {
 	&.top-gap-1 {
 		margin-top: 39px;
 	}
+	&.top-tap-2{
+		// 유전체 연구
+		margin-top:-42px;
+		margin-bottom:65px;
+		.common-moveBtn{
+			font-size: 14px;
+			font-weight: 600;
+			margin:0 auto;
+			height: fit-content;
+		}
+	}
 }
 .common-disabled {
 	background: #eee !important;
@@ -11986,6 +11997,14 @@ input {
 		text-align: left;
 		&.top-gap-1 {
 			margin-top: 44px;
+		}
+		&.top-tap-2{
+			// 유전체 연구
+			margin-bottom:90px;
+			padding:0 0 0 23px;
+			.common-moveBtn{
+				margin:0;
+			}
 		}
 	}
 
