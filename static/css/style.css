@@ -6973,9 +6973,6 @@ input {
   width: 100%;
   padding: 60px 20px 100px;
   margin-bottom: -100px;
-  background: url(../../static/images/img/qc_essential_bg.png) no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .q-controlEssential > div {
   width: 100%;
