@@ -7182,7 +7182,7 @@ input {
 }
 
 .box-processList {
-  background: #f5f5f5;
+  background: #FCFCFC;
   margin-top: 100px;
 }
 .box-processList h4 {
@@ -7425,9 +7425,10 @@ input {
   line-height: 130%;
   letter-spacing: 0.36px;
   padding: 20px 16px;
-  background: var(--gray-07-bg, #f5f5f5);
+  background: var(--gray-07-bg, #FCFCFC);
   position: relative;
   padding-left: 49px;
+  border-bottom: 1px solid #D5D5D5;
 }
 .box-irb .dl-type-1 h6::after {
   content: "";

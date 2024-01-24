@@ -8008,7 +8008,7 @@ input {
 
 // 임상연구 > 임상연구 분야 > 체외진단의료기기 임상적 성능평가
 .box-processList {
-	background: #f5f5f5;
+	background: #FCFCFC;
 	margin-top: 100px;
 	h4 {
 		color: var(--Primary-04, #4d4d4d);
@@ -8287,9 +8287,10 @@ input {
 			line-height: 130%;
 			letter-spacing: 0.36px;
 			padding: 20px 16px;
-			background: var(--gray-07-bg, #f5f5f5);
+			background: var(--gray-07-bg, #FCFCFC);
 			position: relative;
 			padding-left: 49px;
+			border-bottom:1px solid #D5D5D5;
 			&::after {
 				content: "";
 				display: block;
