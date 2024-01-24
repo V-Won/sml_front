@@ -6613,7 +6613,9 @@ input {
 		width: 100%;
 		position: relative;
 		& + .item {
+			padding-top: 40px;
 			margin-top: 40px;
+			border-top: 1px solid var(--gray-03-line, #D5D5D5);
 		}
 		.img-holder {
 			span {
@@ -6644,11 +6646,11 @@ input {
 			.info-list {
 				width: 100%;
 				position: relative;
-				margin-top: 20px;
+				margin-top: 16px;
 				display: flex;
 				align-items: center;
 				flex-wrap: wrap;
-				gap: 12px 0;
+				gap: 6px 0;
 				li {
 					color: var(--Primary-01, #006477);
 					font-size: 14px;
@@ -6679,8 +6681,8 @@ input {
 			.view-btn {
 				display: block;
 				width: fit-content;
-				margin: 28px auto 0;
-				padding: 10px 48px;
+				margin: 24px auto 0;
+				padding: 7px 21px;
 				border-radius: 999px;
 				border: 2px solid #006477;
 				background: #fff;
@@ -6690,6 +6692,21 @@ input {
 				font-weight: 600;
 				line-height: 130%;
 				letter-spacing: 0.28px;
+				span {
+					padding-right: 24px;
+					position: relative;
+					&::after {
+						content: "";
+						width: 18px;
+						height: 18px;
+						position: absolute;
+						top: 0;
+						right: 0;
+						background-size: cover !important;
+						background-position: center !important;
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M9.5 3L8.4425 4.0575L12.6275 8.25H3.5V9.75H12.6275L8.4425 13.9425L9.5 15L15.5 9L9.5 3Z' fill='%23006477'/%3E%3C/svg%3E");
+					}
+				}
 			}
 		}
 	}
@@ -15959,6 +15976,11 @@ input {
 			align-items: flex-start;
 			justify-content: space-between;
 			gap: 0 40px;
+			& + .item {
+				padding-top: 0;
+				margin-top: 60px;
+				border-top: none;
+			}
 			.img-holder {
 				//order: 2;
 				width: 70%;
@@ -15972,11 +15994,11 @@ input {
 			.text-box {
 				margin-top: 0;
 				order: 1;
-				padding: 24px 0;
+				padding: 12px 0;
 				.tit {
 					font-size: 30px;
 					letter-spacing: 0.6px;
-					margin-bottom: 24px;
+					margin-bottom: 12px;
 				}
 				.txt {
 					font-size: 18px;
@@ -15984,7 +16006,7 @@ input {
 					padding-right: 48px;
 				}
 				.info-list {
-					margin-top: 28px;
+					margin-top: 12px;
 					padding-right: 5vw;
 					gap: 6px 0;
 					li {
@@ -15993,10 +16015,10 @@ input {
 					}
 				}
 				.view-btn {
-					margin: 48px 0 0;
-					padding: 14px 40px;
-					font-size: 18px;
-					letter-spacing: 0.36px;
+					margin: 40px 0 0;
+					// padding: 14px 40px;
+					// font-size: 18px;
+					// letter-spacing: 0.36px;
 				}
 			}
 		}
@@ -19306,6 +19328,21 @@ input {
 
 /* 1300 이상 */
 @media all and (min-width: 1300px) {
+	// 검사부 안내
+	.laboratory-box {
+		.item {
+			.text-box {
+				height: 360px;
+				.view-btn {
+					margin: 0;
+					position: absolute;
+					left: 0;
+					bottom: 12px;
+				}
+			}
+		}
+	}
+
 	// 검사항목 조회 > 상세
 	.request-detailTop {
 		.top-info {
