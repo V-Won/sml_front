@@ -6782,7 +6782,7 @@ input {
 		margin: -10px 0 50px 0;
 		.img-holder {
 			span {
-				padding-top: 144%;
+				padding-top: 140%;
 			}
 		}
 	}
@@ -6997,8 +6997,7 @@ input {
 					width: 22px;
 					height: 22px;
 					position: absolute;
-					top: 50%;
-					transform: translateY(-50%);
+					top: 2px;
 					left: 0;
 					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'%3E%3Cpath d='M9.9 14.8H12.1V17H9.9V14.8ZM9.9 6H12.1V12.6H9.9V6ZM10.989 0.5C4.917 0.5 0 5.428 0 11.5C0 17.572 4.917 22.5 10.989 22.5C17.072 22.5 22 17.572 22 11.5C22 5.428 17.072 0.5 10.989 0.5ZM11 20.3C6.138 20.3 2.2 16.362 2.2 11.5C2.2 6.638 6.138 2.7 11 2.7C15.862 2.7 19.8 6.638 19.8 11.5C19.8 16.362 15.862 20.3 11 20.3Z' fill='%234D4D4D'/%3E%3C/svg%3E");
 					background-position: center;
@@ -7082,7 +7081,9 @@ input {
 		position: relative;
 		margin: 100px 0 0 0;
 		padding: 60px 20px 100px;
-		background: #f5f5f5;
+		background: url(../../static/images/bg/bg_group_chart.png) no-repeat;
+		background-position: center !important;
+		background-size: cover !important;
 		h5 {
 			color: #4d4d4d;
 			font-size: 20px;
@@ -7580,7 +7581,7 @@ input {
 							margin: 0;
 							&.color {
 								color: var(--Primary-01, #006477);
-								font-size: 600;
+								font-weight: 600;
 							}
 							&::before {
 								display: none;
@@ -16447,8 +16448,6 @@ input {
 					&::before {
 						width: 30px;
 						height: 30px;
-						top: 1px;
-						transform: translateY(0);
 					}
 				}
 				.dot-list {
@@ -16485,7 +16484,6 @@ input {
 		.group-chart {
 			margin: 120px 0 0 0;
 			padding: 80px 100px 120px;
-			background: #f5f5f5;
 			> div {
 				width: 100%;
 				max-width: 1400px;
