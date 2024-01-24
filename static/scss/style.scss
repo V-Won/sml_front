@@ -7328,9 +7328,9 @@ input {
 		width: 100%;
 		position: relative;
 		padding: 60px 20px 100px;
-		background: url(../../static/images/img/bookingGuide_bg.png) no-repeat;
-		background-size: cover;
-		background-position: 60%;
+		background: url(../../static/images/img/bookingGuide_bg_mo.png) no-repeat;
+		background-size: cover !important;
+		background-position: center !important;
 		> div {
 			width: 100%;
 			max-width: 1400px;
@@ -16516,6 +16516,7 @@ input {
 		}
 		.bookingGuide-box {
 			padding: 80px 100px 120px;
+			background: url(../../static/images/img/bookingGuide_bg.png) no-repeat;
 			h5 {
 				font-size: 40px;
 				letter-spacing: 0.8px;

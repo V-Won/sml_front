@@ -6632,9 +6632,9 @@ input {
   width: 100%;
   position: relative;
   padding: 60px 20px 100px;
-  background: url(../../static/images/img/bookingGuide_bg.png) no-repeat;
-  background-size: cover;
-  background-position: 60%;
+  background: url(../../static/images/img/bookingGuide_bg_mo.png) no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
 }
 .tab-labSpecial .bookingGuide-box > div {
   width: 100%;
@@ -14604,6 +14604,7 @@ input {
   }
   .tab-labSpecial .bookingGuide-box {
     padding: 80px 100px 120px;
+    background: url(../../static/images/img/bookingGuide_bg.png) no-repeat;
   }
   .tab-labSpecial .bookingGuide-box h5 {
     font-size: 40px;
