@@ -1829,7 +1829,8 @@ input {
 	}
 	h5 {
 		color: var(--Primary-04, #4d4d4d);
-		font-size: 20px;
+		// 임상연구 > 임상연구 분야 > 체외진단의료기기 임상적 성능평가 font-size: 20px; 
+		font-size: 22px;
 		font-weight: 600;
 		line-height: 130%;
 		letter-spacing: 0.4px;
@@ -1996,6 +1997,7 @@ input {
 					&.dt-1 {
 						position: relative;
 						padding-left: 12px;
+						font-weight: 600;
 						&.gap-type-1 {
 							margin-left: 0;
 							padding-left: 20px;
@@ -7962,7 +7964,7 @@ input {
 			align-items: center;
 			gap: 10px;
 			border-radius: 999px;
-			background: var(--gray-01, #666);
+			background: var(--gray-01, #75C9DA);
 			color: var(--Primary-05, #fff);
 			text-align: center;
 			font-size: 12px;
