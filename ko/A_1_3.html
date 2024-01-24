@@ -152,7 +152,7 @@
                   <!-- //common-table-1 -->
                 </div>
                 <div class="common-btn-center">
-                  <button type="button" class="more-btn">특수검진 장비 보기</button>
+                  <button type="button" class="more-btn" data-event="layerOpen" data-layerId="ly-1" data-text="직업환경의학과">특수검진 장비 보기</button>
                 </div>
               </div>
               <!-- //box-common-tabTableSwiper -->
@@ -748,6 +748,34 @@
   <div include-html="static/include/footer.html" data-include="footer"></div>
   <!-- //footer -->
 
+  <!-- 상품 팝업 -->
+  <div class="box-layer layer-video request" id="ly-1">
+    <div class="inner-layer absol" tabindex="0">
+      <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
+        <div class="box" style="max-height: fit-content;">
+          <!-- inspect-item-swiper -->
+          <div class="inspect-item-swiper">
+            <div class="common-tab type-2" data-event="commonTab">
+              <div class="swiper-container snbSwiper type-2">
+                <ul class="list swiper-wrapper"></ul>
+              </div>
+            </div>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- //inspect-item-swiper -->
+        </div>
+        <button data-event="layerClose"></button>
+      </div>
+    </div>
+    <div class="verticalAlign"></div>
+  </div>
+  <!-- //상품 팝업 -->
+
   <!-- 공통 js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
@@ -772,6 +800,7 @@
     selectBox.initialize();
     tabSection.initialize();
     listQnA.initialize();
+    layerPopup.initialize();
 
     // table scroll
     var swiper2 = new Swiper('.type-a', {
@@ -835,7 +864,7 @@
       e.addEventListener('click', function () {
         let cnt = document.querySelector('.sub-top').clientHeight - document.querySelector('.tab-sticky').clientHeight;
 
-        if ( !e.classList.contains('no-focus-link') ) {
+        if (!e.classList.contains('no-focus-link')) {
           window.scrollTo({
             top: cnt,
             behavior: 'smooth',
@@ -843,6 +872,158 @@
         }
       });
     });
+
+    // 레이어 팝업 > 상단 tab
+    var swiper2 = new Swiper('.snbSwiper.type-2', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      loop: false,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+      thumbs: {
+        swiper: swiper1,
+      },
+    });
+
+    // 레이어 팝업 > 상단 본문 이미지
+    var swiper1 = new Swiper(".mySwiper1", {
+      spaceBetween: 20,
+      loop: false,
+      loopedSlides: 1,
+      slidesPerView: 1,
+      autoHeight: true,
+      observer: true,
+      observeParents: true,
+      thumbs: {
+        swiper: swiper2,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      on: {
+        slideChange: function (index) {
+          var go = swiper1.realIndex;
+
+          swiper2.slideTo(go);
+        },
+      }
+    });
+
+    // event reset
+    const actionEvent = () => {
+      swiper2.update();
+      swiper1.update();
+    }
+
+    // 레이어 팝업 > 상단 tab click
+    var $snbSwiperItem2 = $('.snbSwiper.type-2 .swiper-wrapper .swiper-slide .btn');
+    $snbSwiperItem2.click(function () {
+      var target2 = $(this).parent();
+      $snbSwiperItem2.parent().removeClass('is-active');
+      target2.addClass('is-active');
+    })
+
+    window.addEventListener('resize', () => {
+      actionEvent();
+    })
+
+    window.addEventListener('load', () => {
+      if (window.innerWidth <= 1024) {
+        actionEvent();
+      }
+    })
+
+    document.querySelectorAll('.view-btn').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        actionEvent();
+
+        swiper2.slideTo(0);
+        swiper1.slideTo(0);
+      })
+    })
+
+    // 상품 json
+    /**
+     * 엑셀 > json 파일 변환 사이트.
+     * https://products.aspose.app/cells/ko/conversion/excel-to-json
+    */
+    var requestURL = "../static/js/list_product.json";
+    var request = new XMLHttpRequest();
+    request.open("GET", requestURL);
+    request.responseType = "json";
+    request.send();
+
+    // json
+    document.querySelectorAll('[data-event="layerOpen"]').forEach((e) => {
+      e.addEventListener('click', (item) => {
+        let name = item.currentTarget.getAttribute('data-text');
+        var updt = request.response;
+
+        swiper2.removeAllSlides();
+        swiper1.removeAllSlides();
+
+        let cnt = 0; // data-index 리셋 카운트
+        const tt = "전체",
+          localName = "서울본원";
+
+        for (var i = 0; i < updt[tt].length; i++) {
+          if (localName == updt[tt][i]["센터구분"] && name == updt[tt][i]["분야1"]) {
+            cnt++;
+
+            console.log(`${updt[tt][i]["센터구분"]}` + ` and ` + `${updt[tt][i]["분야1"]}`);
+
+            let img = updt[tt][i]["img"],
+              text1 = updt[tt][i]["장비명"],
+              text2 = updt[tt][i]["제조사"],
+              text3 = updt[tt][i]["용도"];
+
+            let tab = document.createElement('li'), // 레이어 팝업 상단 tab
+              content = document.createElement('div'); // 레이어 팝업 본문 이미지
+
+            // tab 랜더링
+            tab.innerHTML = `
+                <a href="#none" class="btn">${text1}</a>
+              `;
+            tab.classList.add('swiper-slide');
+            document.querySelector('.snbSwiper .swiper-wrapper').appendChild(tab);
+
+            // 본문 랜더링
+            content.innerHTML = `
+                <div class="img-box">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/equipment/${img}">
+                    </span>
+                  </div>
+                </div>
+                <p class="name">${text1}</p>
+                <div class="text-box">
+                  <div class="flex">
+                    <p class="title">제조사</p>
+                    <p class="info">${text2}</p>
+                  </div>
+                  <div class="flex">
+                    <p class="title">용도</p>
+                    <p class="info">${text3}</p>
+                  </div>
+                </div>
+              `;
+            content.classList.add('swiper-slide');
+            content.dataset.index = `${cnt}`;
+            document.querySelector('.mySwiper1 .swiper-wrapper').appendChild(content);
+          }
+        }
+
+        actionEvent();
+      });
+    });
+    // //상품 json
   </script>
 
 </body>
