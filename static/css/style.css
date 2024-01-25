@@ -10150,7 +10150,7 @@ input {
   background-image: url(../images/bg/bg_rhror.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 42% 100%;
   position: relative;
   padding: 62px 20px 59px 20px;
 }
@@ -10297,11 +10297,13 @@ input {
   font-weight: 600;
   line-height: 130%; /* 18.2px */
   letter-spacing: 0.28px;
-  border-radius: 6px;
+  border-radius: 999px;
   background: var(--Primary-01, #006477);
   display: flex;
   height: 42px;
-  padding: 12px 48px;
+  padding: 12px 46px;
+  width: 196px;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   gap: 6px;
@@ -10314,12 +10316,12 @@ input {
 .box-rhror .inner .list-btn a span::after {
   content: "";
   display: block;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M8.0013 2.66602L7.0613 3.60602L10.7813 7.33268H2.66797V8.66602H10.7813L7.0613 12.3927L8.0013 13.3327L13.3346 7.99935L8.0013 2.66602Z' fill='white'/%3E%3C/svg%3E");
-  width: 16px;
-  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M12.5 4L11.09 5.41L16.67 11H4.5V13H16.67L11.09 18.59L12.5 20L20.5 12L12.5 4Z' fill='white'/%3E%3C/svg%3E");
+  width: 25px;
+  height: 24px;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -3px;
   transform: translateY(-50%);
   background-size: auto;
   background-repeat: no-repeat;
@@ -10452,7 +10454,7 @@ input {
   justify-content: center;
   align-items: center;
   gap: 6px;
-  border-radius: 6px;
+  border-radius: 999px;
   background: var(--Primary-01, #006477);
 }
 .box-foqxndj .bottom-text {
@@ -16845,11 +16847,11 @@ input {
   }
   .box-rhror .inner .list-btn a {
     width: 200px;
+    margin: 0;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.4px;
     height: 66px;
-    border-radius: 12px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -16908,7 +16910,6 @@ input {
   .box-foqxndj .btn-1 {
     padding: 20px 24px;
     gap: 6px;
-    border-radius: 12px;
     font-size: 20px;
     letter-spacing: 0.4px;
     max-width: fit-content;
