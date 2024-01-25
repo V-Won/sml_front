@@ -6404,7 +6404,7 @@ input {
   position: relative;
   margin: 100px 0 0 0;
   padding: 60px 20px 100px;
-  background: #FCFCFC;
+  background: #fcfcfc;
 }
 .tab-labSpecial .group-chart h5 {
   color: #4d4d4d;
@@ -7181,7 +7181,7 @@ input {
 }
 
 .box-processList {
-  background: #FCFCFC;
+  background: #fcfcfc;
   margin-top: 100px;
 }
 .box-processList h4 {
@@ -7270,10 +7270,19 @@ input {
 }
 
 .swiperWidth-type-1 {
-  width: 180vw !important;
+  width: 1400px !important;
 }
-.swiperWidth-type-1 thead tr th {
+.swiperWidth-type-1.width-1 {
+  width: 800px !important;
+}
+.swiperWidth-type-1.width-1 thead tr th:nth-child(2) {
+  width: 600px;
+}
+.swiperWidth-type-1 thead tr th:nth-child(1) {
   width: 400px;
+}
+.swiperWidth-type-1 thead tr th:nth-child(2) {
+  width: 1000px;
 }
 
 .inner-gap-1.bg-top-2 {
@@ -7432,10 +7441,10 @@ input {
   line-height: 130%;
   letter-spacing: 0.36px;
   padding: 20px 16px;
-  background: var(--gray-07-bg, #FCFCFC);
+  background: var(--gray-07-bg, #fcfcfc);
   position: relative;
   padding-left: 49px;
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #d5d5d5;
 }
 .box-irb .dl-type-1 h6::after {
   content: "";
@@ -12951,7 +12960,7 @@ input {
     padding: 38px 22px 32px 22px;
   }
   .box-map-search .box-map .list-ct .box-search-list > ul > li.is-active {
-    background: #F5F7FA;
+    background: #f5f7fa;
   }
   .box-map-search .box-map .list-ct .box-search-list > ul > li.is-active a h4 {
     color: #006477;
