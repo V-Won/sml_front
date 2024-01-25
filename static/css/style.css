@@ -13553,6 +13553,10 @@ input {
     align-items: center;
     padding: 23.4px 0;
   }
+  .table-layout .body > ul > li a.common-downloadBtn {
+    padding: 8px 14px;
+    width: auto;
+  }
   .table-layout .body > ul > li .num {
     display: block;
     text-align: center;

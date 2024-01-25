@@ -15260,6 +15260,10 @@ input {
 						flex-direction: row;
 						align-items: center;
 						padding: 23.4px 0;
+						&.common-downloadBtn{
+							padding:8px 14px;
+							width: auto;
+						}
 					}
 					.num {
 						display: block;
