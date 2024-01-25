@@ -8039,6 +8039,7 @@ input {
 			line-height: 130%; /* 15.6px */
 			letter-spacing: 0.24px;
 			width: 27px;
+			word-break: break-all;
 		}
 		.left {
 			left: 20px;
@@ -8094,6 +8095,16 @@ input {
 					line-height: 150%;
 					letter-spacing: 0.24px;
 				}
+			}
+		}
+	}
+}
+.swiperWidth-type-1{
+	width: 180vw !important;
+	thead{
+		tr{
+			th{
+				width: 400px;
 			}
 		}
 	}
@@ -8358,7 +8369,7 @@ input {
 	background-image: url(../../static/images/img/img_irb.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 79% 100%;
+	background-position: 52% 100%;
 	position: relative;
 	margin: 99px 0 -100px 0;
 	padding: 59px 20px 100px 20px;
@@ -17063,6 +17074,20 @@ input {
 					span {
 						font-size: 16px;
 						letter-spacing: 0.32px;
+					}
+				}
+			}
+		}
+	}
+	.swiperWidth-type-1{
+		thead{
+			tr{
+				th{
+					&:nth-child(1){
+						width: 460px;
+					}
+					&:nth-child(2){
+						width: 1000px;
 					}
 				}
 			}

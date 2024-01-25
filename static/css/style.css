@@ -7212,6 +7212,7 @@ input {
   line-height: 130%; /* 15.6px */
   letter-spacing: 0.24px;
   width: 27px;
+  word-break: break-all;
 }
 .box-processList .inner .left {
   left: 20px;
@@ -7266,6 +7267,13 @@ input {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.24px;
+}
+
+.swiperWidth-type-1 {
+  width: 180vw !important;
+}
+.swiperWidth-type-1 thead tr th {
+  width: 400px;
 }
 
 .inner-gap-1.bg-top-2 {
@@ -7492,7 +7500,7 @@ input {
   background-image: url(../../static/images/img/img_irb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 79% 100%;
+  background-position: 52% 100%;
   position: relative;
   margin: 99px 0 -100px 0;
   padding: 59px 20px 100px 20px;
@@ -15065,6 +15073,12 @@ input {
   .box-processList .inner > ul > li span {
     font-size: 16px;
     letter-spacing: 0.32px;
+  }
+  .swiperWidth-type-1 thead tr th:nth-child(1) {
+    width: 460px;
+  }
+  .swiperWidth-type-1 thead tr th:nth-child(2) {
+    width: 1000px;
   }
   .inner-gap-1.bg-top-2::after, .inner-gap-1.bg-top-2::before, .inner-gap-1.bg-bottom-2::after, .inner-gap-1.bg-bottom-2::before {
     display: none;
