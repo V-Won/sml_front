@@ -6514,19 +6514,19 @@ input {
 						line-height: 150%;
 						letter-spacing: 0.32px;
 						position: relative;
-						padding-left: 32px;
+						padding-left: 26px;
 						& + li {
 							margin-top: 12px;
 						}
 						&::before {
 							position: absolute;
-							top: 0;
+							top: 3px;
 							left: 0;
 							display: flex;
 							justify-content: center;
 							align-items: center;
-							width: 24px;
-							height: 24px;
+							width: 18px;
+							height: 18px;
 							counter-increment: circle 1;
 							content: counter(circle);
 							color: #fff;
@@ -6535,13 +6535,13 @@ input {
 						&::after {
 							content: "";
 							position: absolute;
-							top: 0;
+							top: 3px;
 							left: 0;
 							display: inline-block;
 							background: var(--Primary-03, #75c9da);
 							border-radius: 50%;
-							width: 24px;
-							height: 24px;
+							width: 18px;
+							height: 18px;
 							z-index: -1;
 						}
 						span {
@@ -9646,17 +9646,26 @@ input {
 			width: 100%;
 			position: relative;
 			border-radius: 6px;
+			overflow: hidden;
 			border: 1px solid var(--gray-03-line, #d5d5d5);
-			background: #FCFCFC;
+			background: #fff;
 			padding: 0 20px 20px;
 			.noti-tit {
 				width: calc(100% + 40px);
 				margin-left: -20px;
-				padding: 20px 20px 20px 48px;
+				padding: 21px 20px 19px 48px;
 				border-bottom: 1px solid #d5d5d5;
+				line-height: 160%;
+				background: #fcfcfc;
+				&::before {
+					width: 20px;
+					height: 20px;
+					top: 24px;
+					left: 19px;
+				}
 			}
 			.dot-list {
-				margin-top: 13px;
+				margin-top: 20px;
 				li {
 					width: 100%;
 					position: relative;
@@ -9690,7 +9699,7 @@ input {
 	width: 100%;
 	position: relative;
 	background: #fcfcfc;
-	padding: 60px 0 100px;
+	padding: 0 0 83px;
 	> div {
 		width: 100%;
 		position: relative;
@@ -9767,12 +9776,12 @@ input {
 						table {
 							thead {
 								th {
-									padding: 19.5px 20px;
+									padding: 19px 20px;
 								}
 							}
 							tbody {
 								td {
-									padding: 19.5px 20px;
+									padding: 19.4px 20px;
 									min-height: 42px;
 								}
 							}
@@ -9958,15 +9967,15 @@ input {
 	gap: 20px;
 	.method {
 		width: 100%;
-		height: 228px;
-		border-radius: 12px;
+		height: fit-content;
+		border-radius: 6px;
 		overflow: hidden;
 		// background: url(../../static/images/img/fluid_method_bg.png) no-repeat;
 		// background-size: cover !important;
 		// background-position: center !important;
 		background: #fff;
 		border: 1px solid #d5d5d5;
-		padding: 30px 20px;
+		padding: 30px 20px 96px;
 		position: relative;
 		.txt {
 			color: var(--Primary-04, #4d4d4d);
@@ -9978,8 +9987,8 @@ input {
 		&::after {
 			content: "";
 			display: block;
-			width: 68px;
-			height: 68px;
+			width: 48px;
+			height: 48px;
 			background-size: cover !important;
 			background-position: center !important;
 			position: absolute;
@@ -10008,8 +10017,6 @@ input {
 		}
 		&:nth-child(5) {
 			&::after {
-				width: 54px;
-				height: 67px;
 				background: url(../../static/images/icon/fluid_method_icon_5.svg) no-repeat;
 			}
 		}
@@ -16205,7 +16212,7 @@ input {
 						li {
 							font-size: 20px;
 							letter-spacing: 0.4px;
-							padding-left: 37px;
+							padding-left: 32px;
 							&.gap-right-1 {
 								padding-right: 35px;
 							}
@@ -16213,13 +16220,15 @@ input {
 								margin-top: 24px;
 							}
 							&::before {
-								width: 29px;
-								height: 29px;
+								width: 24px;
+								height: 24px;
 								font-size: 14px;
+								top: 3px;
 							}
 							&::after {
-								width: 29px;
-								height: 29px;
+								width: 24px;
+								height: 24px;
+								top: 3px;
 							}
 							span {
 								&.color {
@@ -17810,6 +17819,8 @@ input {
 		&.blood-table {
 			padding: 0;
 			h5 {
+				font-size: 40px;
+				letter-spacing: 0.8px;
 				padding-bottom: 48px;
 			}
 			.common-table-1 {
@@ -17871,6 +17882,12 @@ input {
 										&:first-child {
 											white-space: nowrap;
 										}
+										padding: 17.5px 20px;
+									}
+								}
+								&:nth-child(2) {
+									th {
+										padding: 17.5px 20px;
 									}
 								}
 							}
@@ -18016,6 +18033,7 @@ input {
 				width: calc(33.3% - 35px);
 				height: 333px;
 				padding: 30px 24px;
+				border-radius: 12px;
 				.tit {
 					font-size: 20px;
 					letter-spacing: 0.4px;
@@ -18058,7 +18076,19 @@ input {
 		.noti-item {
 			gap: 40px;
 			.item {
-				padding: 40px;
+				padding: 0 40px 24px;
+				border-radius: 12px;
+				.noti-tit {
+					width: calc(100% + 80px);
+					margin-left: -40px;
+					padding: 20px 24px 22px 67px;
+					font-size: 20px;
+					letter-spacing: 0.4px;
+					&::before {
+						top: 27px;
+						left: 39px;
+					}
+				}
 				.dot-list {
 					margin-top: 24px;
 					li {
@@ -18075,7 +18105,7 @@ input {
 	.preserve-infoTab {
 		margin-top: 120px;
 		margin-bottom: -120px;
-		padding: 80px 0 100px;
+		padding: 0 0 100px;
 		> div {
 			padding: 0 100px;
 			h5 {
@@ -18106,11 +18136,12 @@ input {
 							}
 						}
 						& + .common-table-1 {
-							margin-top: 20px;
+							margin-top: 24px;
 						}
 					}
 					.common-table-1 {
 						&.type-d {
+							margin-top: 24px;
 							.swiper-slide {
 								width: 100% !important;
 								table {
@@ -18121,7 +18152,7 @@ input {
 									}
 									tbody {
 										td {
-											padding: 24px 20px;
+											padding: 23.5px 20px;
 										}
 									}
 								}
@@ -18215,6 +18246,8 @@ input {
 				letter-spacing: 0.4px;
 			}
 			&::after {
+				width: 68px;
+				height: 68px;
 				bottom: 40px;
 				right: 40px;
 			}
@@ -19909,13 +19942,6 @@ input {
 			}
 		}
 	}
-
-	.fluid-method {
-		.method {
-			width: calc(20% - 16px);
-			height: 335px;
-		}
-	}
 }
 /* //1300 이상 */
 
@@ -19971,6 +19997,7 @@ input {
 						display: flex;
 						flex-direction: column;
 						align-items: center;
+						padding-top: 30px;
 					}
 					img {
 						width: 80px;
@@ -19983,6 +20010,13 @@ input {
 					}
 				}
 			}
+		}
+	}
+
+	.fluid-method {
+		.method {
+			width: calc(20% - 16px);
+			height: 335px;
 		}
 	}
 
@@ -20142,7 +20176,7 @@ input {
 			align-items: flex-start;
 			.item {
 				width: calc(50% - 20px);
-				min-height: 291px;
+				min-height: 279px;
 			}
 		}
 	}
