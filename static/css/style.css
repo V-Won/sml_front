@@ -12934,6 +12934,9 @@ input {
     border-bottom: 0;
     overflow-y: scroll;
   }
+  .box-map-search .box-map .list-ct .box-search-list > ul.gap {
+    padding: 0;
+  }
   .box-map-search .box-map .list-ct .box-search-list > ul::-webkit-scrollbar {
     width: 7px;
     height: 7px;
@@ -12947,6 +12950,12 @@ input {
   }
   .box-map-search .box-map .list-ct .box-search-list > ul > li {
     padding: 38px 22px 32px 22px;
+  }
+  .box-map-search .box-map .list-ct .box-search-list > ul > li.is-active {
+    background: #F5F7FA;
+  }
+  .box-map-search .box-map .list-ct .box-search-list > ul > li.is-active a h4 {
+    color: #006477;
   }
   .box-map-search .box-map .list-ct .box-search-list > ul > li:last-child {
     border-bottom: 0;

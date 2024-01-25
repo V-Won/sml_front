@@ -14572,6 +14572,9 @@ input {
 						border-top: 0;
 						border-bottom: 0;
 						overflow-y: scroll;
+						&.gap{
+							padding:0;
+						}
 						&::-webkit-scrollbar {
 							width: 7px;
 							height: 7px;
@@ -14585,6 +14588,14 @@ input {
 						}
 						> li {
 							padding: 38px 22px 32px 22px;
+							&.is-active{
+								background: #F5F7FA;
+								a{
+									h4{
+										color: #006477;
+									}
+								}
+							}
 							&:first-child {
 								//padding-top:40px;
 							}
