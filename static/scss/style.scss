@@ -11035,8 +11035,7 @@ input {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 39px 20px 39px;
-	margin-top: 99px;
-	margin-bottom: -100px;
+	margin-top: 0;
 	//margin: 0 20px;
 	border-radius: 6px;
 	border: 1px solid #e6e6e6;
@@ -11081,7 +11080,7 @@ input {
 			}
 		}
 		ul {
-			padding: 41px 0 37px 0;
+			padding: 38px 0 37px 0;
 			display: flex;
 			flex-direction: column;
 			gap: 19px;
@@ -11094,7 +11093,7 @@ input {
 				justify-content: center;
 				flex-direction: column;
 				align-items: center;
-				padding: 20px 20px 0 20px;
+				padding: 20px 18px 0 18px;
 				.cnt {
 					color: var(--Primary-05, #fff);
 					font-size: 12px;
@@ -11102,8 +11101,8 @@ input {
 					letter-spacing: 0.24px;
 					border-radius: 999px;
 					background: var(--Primary-03, #75c9da);
-					width: 24px;
-					height: 24px;
+					width: 20px;
+					height: 20px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -11123,7 +11122,7 @@ input {
 					font-size: 14px;
 					font-weight: 600;
 					line-height: 150%; /* 21px */
-					letter-spacing: 0.28px;
+					letter-spacing: 0;
 					padding: 0 0 21px 0;
 					margin-top: -7px;
 				}
@@ -18862,8 +18861,8 @@ input {
 					border-radius: 12px;
 					.cnt {
 						font-size: 14px;
-						width: 29px;
-						height: 29px;
+						width: 24px;
+						height: 24px;
 					}
 					h5 {
 						font-size: 24px;
