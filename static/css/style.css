@@ -7973,7 +7973,7 @@ input {
   width: calc(50% - 6px);
   height: 208px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 6px;
   border: 1px solid var(--gray-03-line, #d5d5d5);
   background: var(--Primary-05, #fff);
   padding: 30px 24px;
@@ -8066,9 +8066,7 @@ input {
   width: 100%;
   position: relative;
   padding: 60px 20px 100px;
-  background: url(../../static/images/bg/bg_request_step.png) no-repeat;
-  background-position: center !important;
-  background-size: cover !important;
+  background: #fcfcfc;
   margin-bottom: -100px;
 }
 .request-step-bottom > div {
@@ -8092,8 +8090,9 @@ input {
 .request-step-bottom .step-item .item {
   width: 100%;
   position: relative;
-  border-radius: 12px;
+  border-radius: 6px;
   background: linear-gradient(0deg, #fff 0%, #fff 100%), rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--gray-03-line, #D5D5D5);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -8164,7 +8163,7 @@ input {
   padding-top: 47.2%;
 }
 .request-step-bottom .step-item .item + .item {
-  margin-top: 21px;
+  margin-top: 20px;
 }
 
 .box-common-tabTableSwiper.blood-table .swiper-slide table {
@@ -15536,6 +15535,7 @@ input {
     gap: 40px;
   }
   .request-step-top .step-box .box {
+    border-radius: 12px;
     width: calc(33.3% - 35px);
     height: 260px;
   }
@@ -15578,6 +15578,7 @@ input {
     margin-bottom: 48px;
   }
   .request-step-bottom .step-item .item {
+    border-radius: 12px;
     padding: 40px;
     flex-direction: row;
     gap: 40px;
@@ -15609,7 +15610,7 @@ input {
     height: 227px;
   }
   .request-step-bottom .step-item .item + .item {
-    margin-top: 40px;
+    margin-top: 38px;
   }
   .tab-section.col-method .tab-item {
     margin-top: 60px;
