@@ -1866,7 +1866,7 @@ input {
 			color: #006477;
 			padding-left: 28px;
 			position: relative;
-			margin-bottom: 14px;
+			margin-bottom: 16px;
 			&::before {
 				content: "";
 				display: block;
@@ -9119,6 +9119,9 @@ input {
 // 검사 안내 > 검체채취 안내
 .box-common-tabTableSwiper {
 	&.blood-table {
+		h5 {
+			font-size: 20px;
+		}
 		.swiper-slide {
 			table {
 				width: 100%;
@@ -9216,11 +9219,16 @@ input {
 							}
 						}
 						tr {
+							&:nth-child(1) {
+								th {
+									padding: 13.5px 20px;
+								}
+							}
 							&:nth-child(2) {
 								th {
 									// min-width: 420px;
 									width: 40%;
-									padding: 11px 20px;
+									padding: 15px 20px;
 									p {
 										margin: 0 auto;
 										width: fit-content;
@@ -9265,9 +9273,10 @@ input {
 	width: 100%;
 	position: relative;
 	padding: 60px 20px 100px;
-	background: url(../../static/images/bg/bg_blood_ready.png) no-repeat;
-	background-size: cover !important;
-	background-position: center !important;
+	// background: url(../../static/images/bg/bg_blood_ready.png) no-repeat;
+	// background-size: cover !important;
+	// background-position: center !important;
+	background: #fcfcfc;
 	> div {
 		width: 100%;
 		position: relative;
@@ -9478,6 +9487,7 @@ input {
 				gap: 12px;
 				.img {
 					width: calc(50% - 6px);
+					min-height: 200px;
 					padding: 18px;
 					border-radius: 6px;
 					border: 1px solid var(--gray-03-line, #d5d5d5);
@@ -9501,7 +9511,7 @@ input {
 		font-weight: 600;
 		line-height: 130%;
 		letter-spacing: 0.4px;
-		margin-bottom: 20px;
+		margin-bottom: 16px;
 	}
 	.txt {
 		color: var(--gray-01, #666);
@@ -9510,6 +9520,7 @@ input {
 		line-height: 150%;
 		letter-spacing: 0.32px;
 		margin-bottom: 18px;
+		word-break: break-all;
 	}
 	.how-box {
 		width: 100%;
@@ -9523,7 +9534,7 @@ input {
 		.box {
 			width: calc(50% - 6px);
 			height: 299px;
-			border-radius: 12px;
+			border-radius: 6px;
 			border: 1px solid var(--gray-03-line, #d5d5d5);
 			background: var(--Primary-05, #fff);
 			padding: 24px;
@@ -9616,6 +9627,12 @@ input {
 			top: 2px;
 			left: 0;
 		}
+		&.not-icon {
+			padding-left: 0;
+			&::before {
+				display: none;
+			}
+		}
 	}
 	.noti-item {
 		width: 100%;
@@ -9630,8 +9647,14 @@ input {
 			position: relative;
 			border-radius: 6px;
 			border: 1px solid var(--gray-03-line, #d5d5d5);
-			background: var(--gray-07-bg, #f5f5f5);
-			padding: 20px;
+			background: #FCFCFC;
+			padding: 0 20px 20px;
+			.noti-tit {
+				width: calc(100% + 40px);
+				margin-left: -20px;
+				padding: 20px 20px 20px 48px;
+				border-bottom: 1px solid #d5d5d5;
+			}
 			.dot-list {
 				margin-top: 13px;
 				li {
@@ -15262,6 +15285,10 @@ input {
 						flex-direction: row;
 						align-items: center;
 						padding: 23.4px 0;
+						&.common-downloadBtn{
+							padding:8px 14px;
+							width: auto;
+						}
 					}
 					.num {
 						display: block;
