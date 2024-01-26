@@ -9288,7 +9288,7 @@ input {
 .precautions-wrap .white-step.cell .step .dot-list li {
   font-size: 16px;
   letter-spacing: 0.32px;
-  color: var(--Primary-04, #4D4D4D);
+  color: var(--Primary-04, #4d4d4d);
   font-weight: 600;
 }
 .precautions-wrap .white-step.cell .step .dot-list + .step-order {
@@ -10535,14 +10535,23 @@ input {
 }
 
 .box-rhror {
+  position: relative;
+  padding: 0 20px 59px 20px;
+}
+.box-rhror .mo-bg {
+  position: sticky;
+  top: 0;
+  left: 0;
   background-image: url(../images/bg/bg_rhror_mo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  padding: 62px 20px 59px 20px;
-  overflow: auto;
-  height: 100vh;
+  width: 100vw;
+  height: calc(100vh + 60px);
+  transform: translateX(-20px);
+}
+.box-rhror .flex {
+  margin-top: -100vh;
 }
 .box-rhror::-webkit-scrollbar {
   width: 7px;
@@ -17366,6 +17375,12 @@ input {
     padding: 80px 0 120px 0;
     overflow: visible;
     height: fit-content;
+  }
+  .box-rhror .mo-bg {
+    display: none;
+  }
+  .box-rhror .flex {
+    margin-top: 0;
   }
   .box-rhror::after {
     overflow: hidden;
