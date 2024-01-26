@@ -10487,7 +10487,7 @@ input {
 		}
 		&.col-specimen {
 			// background: url(../../static/images/bg/precautions_bg_type3.png) no-repeat;
-			margin: 100px 0 60px;
+			margin: 100px 0 -100px;
 		}
 		&.type-4 {
 			margin-top: 60px;
@@ -15404,7 +15404,7 @@ input {
 			.swiper-slide {
 				padding: 0 41px;
 				.tit {
-					width: fit-content;
+					width: 100%;
 					text-align: left;
 					font-size: 32px;
 					letter-spacing: 0.64px;
@@ -19054,7 +19054,7 @@ input {
 				}
 			}
 			&.col-specimen {
-				margin: 120px 0 80px;
+				margin: 120px 0 -120px;
 			}
 			&.type-4 {
 				margin-top: 120px;

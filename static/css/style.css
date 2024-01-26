@@ -9350,7 +9350,7 @@ input {
   padding: 22.5px 24px;
 }
 .precautions-wrap .full-bg.col-specimen {
-  margin: 100px 0 60px;
+  margin: 100px 0 -100px;
 }
 .precautions-wrap .full-bg.type-4 {
   margin-top: 60px;
@@ -13624,7 +13624,7 @@ input {
     padding: 0 41px;
   }
   .request-swiper .mySwiper1 .swiper-slide .tit {
-    width: fit-content;
+    width: 100%;
     text-align: left;
     font-size: 32px;
     letter-spacing: 0.64px;
@@ -16661,7 +16661,7 @@ input {
     padding: 40px;
   }
   .precautions-wrap .full-bg.col-specimen {
-    margin: 120px 0 80px;
+    margin: 120px 0 -120px;
   }
   .precautions-wrap .full-bg.type-4 {
     margin-top: 120px;
