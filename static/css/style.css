@@ -9288,6 +9288,8 @@ input {
 .precautions-wrap .white-step.cell .step .dot-list li {
   font-size: 16px;
   letter-spacing: 0.32px;
+  color: var(--Primary-04, #4D4D4D);
+  font-weight: 600;
 }
 .precautions-wrap .white-step.cell .step .dot-list + .step-order {
   margin-top: 16px;
@@ -9662,19 +9664,19 @@ input {
   text-align: center;
 }
 .precautions-wrap .bg-item .item:first-child {
-  background: url(../../static/images/img/ct_time_1.png) no-repeat;
+  background: url(../../static/images/img/ct_time_1_mo.png) no-repeat;
 }
 .precautions-wrap .bg-item .item:nth-child(2) {
-  background: url(../../static/images/img/ct_time_2.png) no-repeat;
+  background: url(../../static/images/img/ct_time_2_mo.png) no-repeat;
 }
 .precautions-wrap .bg-item .item:nth-child(3) {
-  background: url(../../static/images/img/ct_time_3.png) no-repeat;
+  background: url(../../static/images/img/ct_time_3_mo.png) no-repeat;
 }
 .precautions-wrap .bg-item .item:nth-child(4) {
-  background: url(../../static/images/img/ct_time_4.png) no-repeat;
+  background: url(../../static/images/img/ct_time_4_mo.png) no-repeat;
 }
 .precautions-wrap .bg-item .item:nth-child(5) {
-  background: url(../../static/images/img/ct_time_5.png) no-repeat;
+  background: url(../../static/images/img/ct_time_5_mo.png) no-repeat;
 }
 .precautions-wrap .acc-whiteBg {
   width: 100%;
@@ -16597,6 +16599,9 @@ input {
     font-size: 20px;
     letter-spacing: 0.4px;
   }
+  .precautions-wrap .white-step.cell .step .dot-list li::before {
+    top: 13px;
+  }
   .precautions-wrap .white-step.cell .step .dot-list + .step-order {
     margin-top: 22px !important;
   }
@@ -16779,6 +16784,21 @@ input {
     bottom: 24px;
     width: calc(100% - 48px);
     min-height: 54px;
+  }
+  .precautions-wrap .bg-item .item:first-child {
+    background: url(../../static/images/img/ct_time_1.png) no-repeat;
+  }
+  .precautions-wrap .bg-item .item:nth-child(2) {
+    background: url(../../static/images/img/ct_time_2.png) no-repeat;
+  }
+  .precautions-wrap .bg-item .item:nth-child(3) {
+    background: url(../../static/images/img/ct_time_3.png) no-repeat;
+  }
+  .precautions-wrap .bg-item .item:nth-child(4) {
+    background: url(../../static/images/img/ct_time_4.png) no-repeat;
+  }
+  .precautions-wrap .bg-item .item:nth-child(5) {
+    background: url(../../static/images/img/ct_time_5.png) no-repeat;
   }
   .precautions-wrap .acc-whiteBg > ul {
     gap: 40px;
