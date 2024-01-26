@@ -13332,7 +13332,7 @@ input {
     padding: 0 62px 0 24px;
     border-top: 0;
     border-bottom: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .box-map-search .box-map .list-ct .box-search-list > ul.gap {
     padding: 0;
