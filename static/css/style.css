@@ -10582,6 +10582,7 @@ input {
   flex-direction: column;
   justify-content: end;
   height: 380px;
+  box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
 }
 .box-rhror .inner .list li + li {
   margin-top: 20px;
@@ -17434,6 +17435,7 @@ input {
     backdrop-filter: blur(10px);
     transition: all 0.4s;
     color: var(--Primary-04, #4d4d4d);
+    box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
   }
   .box-rhror .inner .list li.is-active {
     background: var(--Primary-05, #fff);
