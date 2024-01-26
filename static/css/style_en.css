@@ -504,10 +504,6 @@
   :lang(en) .box-tbdj ul li .gap .text .btn-flex button {
     max-width: 134px;
   }
-  :lang(en) .box-altus-2 .content .top-text h5 {
-    font-size: 30px;
-    letter-spacing: 0.6px;
-  }
 }
 /* //1024 이상 */
 /* 1300 이상 */
@@ -537,6 +533,10 @@
 /* //1300 이상 */
 /* 1600 이상 */
 @media all and (min-width: 1600px) {
+  :lang(en) .box-altus-2 .content .top-text h5 {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
   :lang(en) .box-altus-2 .content ul li {
     padding: 55px 20px 20px 138px;
     gap: 25px;

@@ -1003,18 +1003,6 @@
 				}
 			}
 		}
-
-		// 재단안내 > 경영이념 > 미션과 핵심가치
-		.box-altus-2 {
-			.content {
-				.top-text {
-					h5 {
-						font-size: 30px;
-						letter-spacing: 0.6px;
-					}
-				}
-			}
-		}
 	}
 	// //PC lang(en)
 }
@@ -1062,6 +1050,12 @@
 		// 재단안내 > 경영이념 > 미션과 핵심가치
 		.box-altus-2 {
 			.content {
+				.top-text {
+					h5 {
+						font-size: 30px;
+						letter-spacing: 0.6px;
+					}
+				}
 				ul {
 					li {
 						padding: 55px 20px 20px 138px;
