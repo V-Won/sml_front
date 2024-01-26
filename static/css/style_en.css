@@ -227,6 +227,14 @@
 :lang(en) .box-tbdj ul li .gap .text .btn-flex button {
   max-width: 118px;
 }
+:lang(en) .box-altus-2 .content .top-text h5 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+}
+:lang(en) .box-altus-2 .content .top-text::after {
+  display: none;
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
@@ -496,6 +504,10 @@
   :lang(en) .box-tbdj ul li .gap .text .btn-flex button {
     max-width: 134px;
   }
+  :lang(en) .box-altus-2 .content .top-text h5 {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
 }
 /* //1024 이상 */
 /* 1300 이상 */
@@ -522,4 +534,17 @@
     text-align: left;
   }
 }
-/* //1300 이상 *//*# sourceMappingURL=style_en.css.map */
+/* //1300 이상 */
+/* 1600 이상 */
+@media all and (min-width: 1600px) {
+  :lang(en) .box-altus-2 .content ul li {
+    padding: 55px 20px 20px 138px;
+    gap: 25px;
+  }
+  :lang(en) .box-altus-2 .content ul li:nth-child(2), :lang(en) .box-altus-2 .content ul li:nth-child(4) {
+    align-items: end;
+    text-align: right;
+    padding-right: 140px;
+  }
+}
+/* //1600 이상 *//*# sourceMappingURL=style_en.css.map */

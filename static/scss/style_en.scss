@@ -476,6 +476,22 @@
 			}
 		}
 	}
+
+	// 재단안내 > 경영이념 > 미션과 핵심가치
+	.box-altus-2 {
+		.content {
+			.top-text {
+				h5 {
+					font-size: 24px;
+					font-weight: 600;
+					letter-spacing: 0.48px;
+				}
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
 }
 // //모바일 lang(en)
 
@@ -987,6 +1003,18 @@
 				}
 			}
 		}
+
+		// 재단안내 > 경영이념 > 미션과 핵심가치
+		.box-altus-2 {
+			.content {
+				.top-text {
+					h5 {
+						font-size: 30px;
+						letter-spacing: 0.6px;
+					}
+				}
+			}
+		}
 	}
 	// //PC lang(en)
 }
@@ -1027,3 +1055,27 @@
 	}
 }
 /* //1300 이상 */
+
+/* 1600 이상 */
+@media all and (min-width: 1600px) {
+	:lang(en) {
+		// 재단안내 > 경영이념 > 미션과 핵심가치
+		.box-altus-2 {
+			.content {
+				ul {
+					li {
+						padding: 55px 20px 20px 138px;
+						gap: 25px;
+						&:nth-child(2),
+						&:nth-child(4) {
+							align-items: end;
+							text-align: right;
+							padding-right: 140px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* //1600 이상 */
