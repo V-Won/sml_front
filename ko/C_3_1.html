@@ -83,7 +83,7 @@
         <!-- list-stepType-1 -->
         <div class="list-stepType-1">
           <ul>
-            <li>
+            <li class="is-active">
               <p class="text-1">Step. 01</p>
               <p class="text-2">검사문의</p>
             </li>
@@ -362,6 +362,27 @@
         swiper1.slideTo(0);
       })
     })
+
+    let stepList = document.querySelectorAll('.list-stepType-1 li'),
+      cnt = 0,
+      timer = 2000;
+
+    const goEvent = (cnt) => {
+      stepList.forEach((e) => {
+        e.classList.remove('is-active');
+      })
+
+      stepList[cnt].classList.add('is-active');
+    }
+
+    setInterval(() => {
+      if (cnt == stepList.length - 1) {
+        cnt = 0;
+      } else {
+        cnt++;
+      }
+      goEvent(cnt);
+    }, timer);
 
     // 상품 json
     /**
