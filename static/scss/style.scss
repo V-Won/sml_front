@@ -2341,6 +2341,7 @@ input {
 						padding-right: 28px;
 						z-index: 10;
 						width: fit-content;
+						max-width: calc(50vw - 20px);
 						position: relative;
 						&::after {
 							content: "";
@@ -11807,8 +11808,8 @@ input {
 		height: calc(100vh + 60px);
 		transform: translateX(-20px);
 	}
-	.flex{
-		margin-top:-100vh;
+	.flex {
+		margin-top: -100vh;
 	}
 	&::-webkit-scrollbar {
 		width: 7px;
@@ -19935,11 +19936,11 @@ input {
 		padding: 80px 0 120px 0;
 		overflow: visible;
 		height: fit-content;
-		.mo-bg{
+		.mo-bg {
 			display: none;
 		}
-		.flex{
-			margin-top:0;
+		.flex {
+			margin-top: 0;
 		}
 		&::after {
 			//border-radius: 12px 12px 0 0;
