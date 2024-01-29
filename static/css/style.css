@@ -9564,7 +9564,7 @@ input {
 }
 .precautions-wrap .step-order > li::before {
   position: absolute;
-  top: 0;
+  top: 0.5px;
   left: -2px;
   display: flex;
   justify-content: center;
