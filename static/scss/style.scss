@@ -4225,6 +4225,7 @@ input {
 						line-height: 120%;
 						letter-spacing: 0.4px;
 						@include text-line-2;
+						width: 100%;
 					}
 					.day {
 						overflow: hidden;
@@ -4456,6 +4457,7 @@ input {
 						line-height: 140%;
 						letter-spacing: 0.4px;
 						padding: 0 57px 0 12px;
+						word-break: break-all;
 					}
 				}
 			}

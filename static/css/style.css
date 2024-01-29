@@ -3732,6 +3732,7 @@ input {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  width: 100%;
 }
 .box-NewTest ul li a .text .day {
   overflow: hidden;
@@ -3953,6 +3954,7 @@ input {
   line-height: 140%;
   letter-spacing: 0.4px;
   padding: 0 57px 0 12px;
+  word-break: break-all;
 }
 
 .box-top-search.padding-top-1 {
