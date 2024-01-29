@@ -9564,7 +9564,7 @@ input {
 }
 .precautions-wrap .step-order > li::before {
   position: absolute;
-  top: 0.5px;
+  top: 0;
   left: -2px;
   display: flex;
   justify-content: center;
@@ -9575,6 +9575,7 @@ input {
   content: counter(circle);
   color: #666;
   font-size: 12px;
+  line-height: 0;
   z-index: 2;
 }
 .precautions-wrap .step-order > li::after {
