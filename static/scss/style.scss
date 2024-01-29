@@ -12836,7 +12836,10 @@ input {
 			display: none !important;
 		}
 		.swiper-slide {
-			width: fit-content !important;
+			width: 100% !important;
+			table {
+				width: 100%;
+			}
 		}
 		table {
 			thead {
@@ -17660,6 +17663,17 @@ input {
 					}
 					&:nth-child(2) {
 						width: 1000px;
+					}
+				}
+			}
+		}
+		&.width-1 {
+			thead {
+				tr {
+					th {
+						&:nth-child(2) {
+							width: calc(100% - 460px);
+						}
 					}
 				}
 			}
