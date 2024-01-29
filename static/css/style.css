@@ -4334,6 +4334,7 @@ input {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  min-height: 19.59px;
 }
 .border-prev-next ul li a .icon-new {
   position: absolute;
@@ -5231,6 +5232,7 @@ input {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.4px;
+  width: 100%;
 }
 .table-layout.c_1_2 .body > ul > li .name {
   -webkit-line-clamp: 2;
@@ -13027,6 +13029,7 @@ input {
   .border-prev-next ul li a .gap .text {
     font-size: 18px;
     letter-spacing: 0.4px;
+    min-height: 26.83px;
   }
   .border-prev-next ul li a .gap .icon-new {
     position: absolute;

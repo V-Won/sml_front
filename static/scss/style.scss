@@ -4850,6 +4850,7 @@ input {
 					line-height: 140%; /* 19.6px */
 					letter-spacing: 0.4px;
 					@include text-line-1;
+					min-height: 19.59px;
 				}
 				.icon-new {
 					position: absolute;
@@ -5798,6 +5799,7 @@ input {
 						font-weight: 500;
 						line-height: 150%;
 						letter-spacing: 0.4px;
+						width: 100%;
 					}
 					.name {
 						-webkit-line-clamp: 2;
@@ -14696,6 +14698,7 @@ input {
 						.text {
 							font-size: 18px;
 							letter-spacing: 0.4px;
+							min-height: 26.83px;
 						}
 						.icon-new {
 							// position: relative;
