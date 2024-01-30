@@ -476,14 +476,14 @@ input {
   font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.4px;
   position: relative;
-  padding: 0 0 0 7px;
+  padding: 0 24px 0 7px;
   display: block;
-  margin: 0 -23px 17px 0;
-  word-break: auto-phrase;
+  margin: 0 0 17px 0;
+  word-break: keep-all;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > ul > li > a::after {
   content: "";
