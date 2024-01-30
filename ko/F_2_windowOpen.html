@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>삼광의료재단</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
+</head>
+
+<body id="main">
+
+  <!-- 새창 팝업 사이즈 width:450px; height:505px; -->
+
+  <!-- 일반 팝업 -->
+  <div class="box-layer common" id="ly-1" style="display: block;"><!-- 일반(공통) 팝업 class="common" -->
+    <div class="inner-layer" style="margin:0;padding:0;" tabindex="0"> <!-- position: absolute로 포지션 값 줄 때는 "inner-layer"에서 조정 -->
+      <div class="gap" style="max-width: 400px;"><!-- max-width 설정 : px값으로 조정 -->
+        <div class="box">
+          <!-- 팝업 내용 -->
+          <div class="inner-box">
+            <img src="../static/images/bg/bg_noImg_cover.svg">
+          </div>
+          <!-- //팝업 내용 -->
+          <div class="bottom-box">
+            <div class="box-check">
+              <div class="checkitem">
+                <label>
+                  <input type="checkbox" name="test1">
+                  <span>오늘 하루 그만보기</span>
+                </label>
+              </div>
+            </div>
+            <button data-event="layerClose">닫기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="verticalAlign"></div>
+  </div>
+  <!-- //일반 팝업 -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <!-- //공통 js -->
+
+</body>
+
+</html>
