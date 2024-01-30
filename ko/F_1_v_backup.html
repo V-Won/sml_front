@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <title>삼광의료재단</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="../static/images/logo/favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../static/images/logo/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
+</head>
+
+<body id="main">
+
+  <!-- header -->
+  <div include-html="static/include/header.html" data-include="header"></div>
+  <!-- //header -->
+
+  <!-- box-wrap -->
+  <div class="box-wrap">
+    <!-- inner-wrap -->
+    <div class="inner-wrap">
+
+      <!-- sub-top -->
+      <div class="sub-top">
+        <!-- headerBg 값에 따라 transparent / white 모드 (white모드일 시 bg-fff클래스 추가) -->
+        <div class="inner-gap-1">
+          <div class="text-box">
+            <h3 class="sub-tit margin-bottom-1">SEARCH</h3>
+          </div>
+        </div>
+      </div>
+      <!-- //sub-top -->
+      <div class="inner-gap-1">
+        <!-- box-top-search -->
+        <div class="box-map-search">
+          <div class="box-top-search type-3">
+            <div class="item-search">
+              <input type="text" id="form-1" class="common-input-2" placeholder="검색어를 입력해주세요">
+              <button class="icon-search">
+                <span class="pc-show">검색</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- //box-top-search -->
+        <div class="common-tab type-3 padding-top-1" data-event="commonTab">
+          <div class="swiper-container snbSwiper type-1">
+            <ul class="list swiper-wrapper">
+              <li class="swiper-slide is-active" data-index="0"><span class="btn total">전체<span>(999)</span></span>
+              </li>
+              <li class="swiper-slide" data-index="1"><span class="btn">SML 공문<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="2"><span class="btn">SML 새소식<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="3"><span class="btn">검사의뢰서<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="4"><span class="btn">SML 학술자료<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="5"><span class="btn">검사항목 조회<span>(999)</span></span></li>
+              <li class="swiper-slide" data-index="6"><span class="btn">자주하는 질문<span>(999)</span></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!--상세 (탭 클릭) 페이지에서는 tabOnly 클래스 추가, h4(타이틀) 삭제 -->
+
+        <!-- SML 공문 -->
+        <div class="tabOnly" data-content="1">
+          <!-- table-layout -->
+          <div class="table-layout d_2_1">
+            <div class="head">
+              <ul>
+                <li>번호</li>
+                <li>제목</li>
+                <li>작성일</li>
+                <li>첨부파일</li>
+              </ul>
+            </div>
+            <div class="body">
+              <ul>
+                <!-- 신규 게시글일 시 li에 "new" 클래스 추가 -->
+                <li class="new">
+                  <p class="page-num">999</p>
+                  <a href="#none" class="title-flex">
+                    <p class="num">38-52</p>
+                    <p class="name">일부 검사항목의 검사정보 변경 안내 일부 검사 항목의 검사정보 변경 안내</p>
+                    <span class="icon-new"></span>
+                  </a>
+                  <p class="date">2023.12.12</p>
+                  <div class="btn-wrap">
+                    <a href="#none" class="common-downloadBtn"><span>다운로드</span></a>
+                  </div>
+                </li>
+                <li class="new">
+                  <p class="page-num">998</p>
+                  <a href="#none" class="title-flex">
+                    <p class="num">38-51</p>
+                    <p class="name">Soluble ST2 검사재개 안내</p>
+                    <span class="icon-new"></span>
+                  </a>
+                  <p class="date">2023.12.12</p>
+                  <div class="btn-wrap">
+                    <a href="#none" class="common-downloadBtn"><span>다운로드</span></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="page-num">997</p>
+                  <a href="#none" class="title-flex">
+                    <p class="num">38-51</p>
+                    <p class="name">일부 검사항목의 검사정보 변경 안내</p>
+                    <span class="icon-new"></span>
+                  </a>
+                  <p class="date">2023.12.12</p>
+                  <div class="btn-wrap">
+                    <a href="#none" class="common-downloadBtn"><span>다운로드</span></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="page-num">996</p>
+                  <a href="#none" class="title-flex">
+                    <p class="num">38-51</p>
+                    <p class="name">일부 검사항목의 검사정보 변경 안내</p>
+                    <span class="icon-new"></span>
+                  </a>
+                  <p class="date">2023.12.12</p>
+                  <div class="btn-wrap">
+                    <a href="#none" class="common-downloadBtn"><span>다운로드</span></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="page-num">995</p>
+                  <a href="#none" class="title-flex">
+                    <p class="num">38-51</p>
+                    <p class="name">일부 검사항목의 검사정보 변경 안내</p>
+                    <span class="icon-new"></span>
+                  </a>
+                  <p class="date">2023.12.12</p>
+                  <div class="btn-wrap">
+                    <a href="#none" class="common-downloadBtn"><span>다운로드</span></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="page-num">994</p>
+                  <a href="#none" class="title-flex">
+                    <p class="num">38-51</p>
+                    <p class="name">일부 검사항목의 검사정보 변경 안내</p>
+                    <span class="icon-new"></span>
+                  </a>
+                  <p class="date">2023.12.12</p>
+                  <div class="btn-wrap">
+                    <a href="#none" class="common-downloadBtn"><span>다운로드</span></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="page-num">993</p>
+                  <a href="#none" class="title-flex">
+                    <p class="num">38-51</p>
+                    <p class="name">일부 검사항목의 검사정보 변경 안내</p>
+                    <span class="icon-new"></span>
+                  </a>
+                  <p class="date">2023.12.12</p>
+                  <div class="btn-wrap">
+                    <a href="#none" class="common-downloadBtn"><span>다운로드</span></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="page-num">992</p>
+                  <a href="#none" class="title-flex">
+                    <p class="num">38-51</p>
+                    <p class="name">일부 검사항목의 검사정보 변경 안내</p>
+                    <span class="icon-new"></span>
+                  </a>
+                  <p class="date">2023.12.12</p>
+                  <div class="btn-wrap">
+                    <a href="#none" class="common-downloadBtn"><span>다운로드</span></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- //table-layout -->
+        </div>
+        <!-- //SML 공문 -->
+
+        <!-- SML 새소식 -->
+        <div class="tabOnly" data-content="2">
+          <div class="smlNews-list">
+            <ul>
+              <!-- 신규 게시글일 시 li에 "new" 클래스 추가 -->
+              <li class="new">
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_1.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">재단소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li class="new">
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_2.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">언론보도</span>
+                    <p class="tit">대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_3.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">학회소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/kv.jpg">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">그룹소식</span>
+                    <p class="tit">2023, 직선제 대한 산부인과 개원의사회 제 16회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_1.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">재단소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_2.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">언론보도</span>
+                    <p class="tit">대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_3.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">학회소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/kv.jpg">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">그룹소식</span>
+                    <p class="tit">2023, 직선제 대한 산부인과 개원의사회 제 16회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_1.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">재단소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_2.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">언론보도</span>
+                    <p class="tit">대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_3.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">학회소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/kv.jpg">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">그룹소식</span>
+                    <p class="tit">2023, 직선제 대한 산부인과 개원의사회 제 16회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_1.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">재단소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_2.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">언론보도</span>
+                    <p class="tit">대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_3.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">학회소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/kv.jpg">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">그룹소식</span>
+                    <p class="tit">2023, 직선제 대한 산부인과 개원의사회 제 16회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_1.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">재단소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_2.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">언론보도</span>
+                    <p class="tit">대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회 대한진단검사 의학회 2023, 국제 학술 대회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/sml_specialty_3.png">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">학회소식</span>
+                    <p class="tit">삼광랩트리, 한국인칩을 이용한 질병 예측</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-holder">
+                    <span>
+                      <img src="../static/images/@/kv.jpg">
+                    </span>
+                  </div>
+                  <span class="icon-new"></span>
+                  <div class="text-box">
+                    <span class="label">그룹소식</span>
+                    <p class="tit">2023, 직선제 대한 산부인과 개원의사회 제 16회</p>
+                    <p class="date">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- //SML 새소식 -->
+
+        <!-- 검사의뢰서 -->
+        <div class="tabOnly" data-content="3">
+          <!-- request-item -->
+          <div class="request-item">
+            <div class="item">
+              <p class="title">일반 검사의뢰서일반 검사의뢰서일반 검사의뢰서</p>
+              <div class="img-holder">
+                <span>
+                  <img src="../static/images/@/request_img.png" alt="">
+                </span>
+              </div>
+              <div class="btn-flex">
+                <button type="button" class="view-btn"><span>미리보기</span></button>
+                <button type="button" class="download-btn"><span>다운로드</span></button>
+              </div>
+            </div>
+            <div class="item">
+              <p class="title">산부인과 검사의뢰서</p>
+              <div class="img-holder">
+                <span>
+                  <img src="../static/images/@/request_img.png" alt="">
+                </span>
+              </div>
+              <div class="btn-flex">
+                <button type="button" class="view-btn"><span>미리보기</span></button>
+                <button type="button" class="download-btn"><span>다운로드</span></button>
+              </div>
+            </div>
+            <div class="item">
+              <p class="title">분자 유전학 검사의뢰서</p>
+              <div class="img-holder">
+                <span>
+                  <img src="../static/images/@/request_img.png" alt="">
+                </span>
+              </div>
+              <div class="btn-flex">
+                <button type="button" class="view-btn"><span>미리보기</span></button>
+                <button type="button" class="download-btn"><span>다운로드</span></button>
+              </div>
+            </div>
+            <div class="item">
+              <p class="title">세포 유전학 검사의뢰서</p>
+              <div class="img-holder">
+                <span>
+                  <img src="../static/images/@/request_img.png" alt="">
+                </span>
+              </div>
+              <div class="btn-flex">
+                <button type="button" class="view-btn"><span>미리보기</span></button>
+                <button type="button" class="download-btn"><span>다운로드</span></button>
+              </div>
+            </div>
+            <div class="item">
+              <p class="title">일반 검사의뢰서일반 검사의뢰서일반 검사의뢰서</p>
+              <div class="img-holder">
+                <span>
+                  <img src="../static/images/@/request_img.png" alt="">
+                </span>
+              </div>
+              <div class="btn-flex">
+                <button type="button" class="view-btn"><span>미리보기</span></button>
+                <button type="button" class="download-btn"><span>다운로드</span></button>
+              </div>
+            </div>
+            <div class="item">
+              <p class="title">산부인과 검사의뢰서</p>
+              <div class="img-holder">
+                <span>
+                  <img src="../static/images/@/request_img.png" alt="">
+                </span>
+              </div>
+              <div class="btn-flex">
+                <button type="button" class="view-btn"><span>미리보기</span></button>
+                <button type="button" class="download-btn"><span>다운로드</span></button>
+              </div>
+            </div>
+            <div class="item">
+              <p class="title">분자 유전학 검사의뢰서</p>
+              <div class="img-holder">
+                <span>
+                  <img src="../static/images/@/request_img.png" alt="">
+                </span>
+              </div>
+              <div class="btn-flex">
+                <button type="button" class="view-btn"><span>미리보기</span></button>
+                <button type="button" class="download-btn"><span>다운로드</span></button>
+              </div>
+            </div>
+            <div class="item">
+              <p class="title">세포 유전학 검사의뢰서</p>
+              <div class="img-holder">
+                <span>
+                  <img src="../static/images/@/request_img.png" alt="">
+                </span>
+              </div>
+              <div class="btn-flex">
+                <button type="button" class="view-btn"><span>미리보기</span></button>
+                <button type="button" class="download-btn"><span>다운로드</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- //request-item -->
+        </div>
+        <!-- //검사의뢰서 -->
+
+        <!-- 학술자료 -->
+        <div class="tabOnly" data-content="4">
+          <div class="common-tab type-2 padding-top-1" data-event="commonTab">
+            <div class="swiper-container snbSwiper type-2">
+              <ul class="list swiper-wrapper">
+                <li class="swiper-slide is-active" data-index="0"><span class="btn">Smart New Test
+                    <span>(10)</span></span></li>
+                <li class="swiper-slide" data-index="1"><span class="btn">SML 진단길라잡이 <span>(10)</span></span></li>
+                <li class="swiper-slide" data-index="2"><span class="btn">SML 리플렛 <span>(10)</span></span></li>
+                <li class="swiper-slide" data-index="3"><span class="btn">SML Healthcare <span>(10)</span></span></li>
+                <li class="swiper-slide" data-index="4"><span class="btn">항균제내성소식 <span>(10)</span></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-NewTest">
+            <ul>
+              <li>
+                <a href="#none">
+                  <span class="img img-holder">
+                    <span><img src="http://211.54.17.228/board/10614/aaaaffff.PNG" alt=""></span>
+                  </span>
+                  <div class="text">
+                    <p class="text-1">2023년 10월 삼광의료재단 신규 검사 2023년 10월 삼광의료재단 신규 검사 2023년 10월 삼광의료재단 신규 검사 2023년 10월
+                      삼광의료재단 신규 검사</p>
+                    <p class="day">2023.11.15</p>
+                  </div>
+                  <span class="icon-new"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <span class="img img-holder">
+                    <span><img src="../static/images/@/@sam_1.jpg" alt=""></span>
+                  </span>
+                  <div class="text">
+                    <p class="text-1">유전성 유방암-난소암 검사, BRCA 1/2 gene mutation </p>
+                    <p class="day">2023.11.15</p>
+                  </div>
+                  <span class="icon-new"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <span class="img img-holder">
+                    <span><img src="../static/images/@/@sam_1.jpg" alt=""></span>
+                  </span>
+                  <div class="text">
+                    <p class="text-1">2023년 9월 삼광</p>
+                    <p class="day">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <span class="img img-holder">
+                    <span><img src="../static/images/@/@sam_1.jpg" alt=""></span>
+                  </span>
+                  <div class="text">
+                    <p class="text-1">2023년 10월 삼광의료재단 신규 검사 2023년 10월 삼광의료재단 신규 검사 2023년 10월 삼광의료재단 신규 검사 2023년 10월
+                      삼광의료재단 신규 검사</p>
+                    <p class="day">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <span class="img img-holder">
+                    <span><img src="../static/images/@/@sam_1.jpg" alt=""></span>
+                  </span>
+                  <div class="text">
+                    <p class="text-1">2023년 10월 삼광의료재단 신규 검사 2023년 10월 삼광의료재단 신규 검사 2023년 10월 삼광의료재단 신규 검사 2023년 10월
+                      삼광의료재단 신규 검사</p>
+                    <p class="day">2023.11.15</p>
+                  </div>
+                  <span class="icon-new"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <span class="img img-holder">
+                    <span><img src="../static/images/@/@sam_1.jpg" alt=""></span>
+                  </span>
+                  <div class="text">
+                    <p class="text-1">유전성 유방암-난소암 검사, BRCA 1/2 gene mutation </p>
+                    <p class="day">2023.11.15</p>
+                  </div>
+                  <span class="icon-new"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <span class="img img-holder">
+                    <span><img src="../static/images/@/@sam_1.jpg" alt=""></span>
+                  </span>
+                  <div class="text">
+                    <p class="text-1">2023년 9월 삼광</p>
+                    <p class="day">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <span class="img img-holder">
+                    <span><img src="../static/images/@/@sam_1.jpg" alt=""></span>
+                  </span>
+                  <div class="text">
+                    <p class="text-1">2023년 10월 삼광의료재단 신규 검사 2023년 10월 삼광의료재단 신규 검사 2023년 10월 삼광의료재단 신규 검사 2023년 10월
+                      삼광의료재단 신규 검사</p>
+                    <p class="day">2023.11.15</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- //학술자료 -->
+
+        <!-- 검사항목 조회 -->
+        <div class="tabOnly" data-content="5">
+          <div class="table-layout b_3_1">
+            <div class="head">
+              <ul>
+                <li>번호</li>
+                <li>검사코드</li>
+                <li>검사명</li>
+                <li>검체</li>
+                <li>검사일</li>
+                <li>소요일</li>
+                <li>보험코드</li>
+              </ul>
+            </div>
+            <div class="body">
+              <ul>
+                <li>
+                  <a href="#none">
+                    <p class="num">999</p>
+                    <p class="code">76016</p>
+                    <p class="name">unstained Slide≤3장</p>
+                    <div class="item-box">
+                      <div class="item">
+                        <p class="tit">검체</p>
+                        <p class="txt">Tissue</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">검사일</p>
+                        <p class="txt">월-금</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">소요일</p>
+                        <p class="txt">3-5일</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">보험코드</p>
+                        <p class="txt">-</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <p class="num">998</p>
+                    <p class="code">76016</p>
+                    <p class="name">unstained Slide≤3장unstained Slide≤3장unstained Slide≤3장</p>
+                    <div class="item-box">
+                      <div class="item">
+                        <p class="tit">검체</p>
+                        <p class="txt">Tissue</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">검사일</p>
+                        <p class="txt">월-금</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">소요일</p>
+                        <p class="txt">3-5일</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">보험코드</p>
+                        <p class="txt">C5601008</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <p class="num">997</p>
+                    <p class="code">76016</p>
+                    <p class="name">unstained Slide≤3장</p>
+                    <div class="item-box">
+                      <div class="item">
+                        <p class="tit">검체</p>
+                        <p class="txt">Tissue</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">검사일</p>
+                        <p class="txt">월-금</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">소요일</p>
+                        <p class="txt">3-5일</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">보험코드</p>
+                        <p class="txt">C5601008</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <p class="num">996</p>
+                    <p class="code">76016</p>
+                    <p class="name">unstained Slide≤3장</p>
+                    <div class="item-box">
+                      <div class="item">
+                        <p class="tit">검체</p>
+                        <p class="txt">Tissue</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">검사일</p>
+                        <p class="txt">월-금</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">소요일</p>
+                        <p class="txt">3-5일</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">보험코드</p>
+                        <p class="txt">C5601008</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <p class="num">995</p>
+                    <p class="code">76016</p>
+                    <p class="name">unstained Slide≤3장</p>
+                    <div class="item-box">
+                      <div class="item">
+                        <p class="tit">검체</p>
+                        <p class="txt">Tissue</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">검사일</p>
+                        <p class="txt">월-금</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">소요일</p>
+                        <p class="txt">3-5일</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">보험코드</p>
+                        <p class="txt">C5601008</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <p class="num">994</p>
+                    <p class="code">76016</p>
+                    <p class="name">unstained Slide≤3장</p>
+                    <div class="item-box">
+                      <div class="item">
+                        <p class="tit">검체</p>
+                        <p class="txt">Tissue</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">검사일</p>
+                        <p class="txt">월-금</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">소요일</p>
+                        <p class="txt">3-5일</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">보험코드</p>
+                        <p class="txt">C5601008</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <p class="num">993</p>
+                    <p class="code">76016</p>
+                    <p class="name">unstained Slide≤3장</p>
+                    <div class="item-box">
+                      <div class="item">
+                        <p class="tit">검체</p>
+                        <p class="txt">Tissue</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">검사일</p>
+                        <p class="txt">월-금</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">소요일</p>
+                        <p class="txt">3-5일</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">보험코드</p>
+                        <p class="txt">C5601008</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <p class="num">992</p>
+                    <p class="code">76016</p>
+                    <p class="name">unstained Slide≤3장</p>
+                    <div class="item-box">
+                      <div class="item">
+                        <p class="tit">검체</p>
+                        <p class="txt">Tissue</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">검사일</p>
+                        <p class="txt">월-금</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">소요일</p>
+                        <p class="txt">3-5일</p>
+                      </div>
+                      <div class="item">
+                        <p class="tit">보험코드</p>
+                        <p class="txt">C5601008</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- //검사항목 조회 -->
+
+        <!-- 자주 하는 질문 -->
+        <div class="tabOnly" data-content="6">
+          <!-- box-qna -->
+          <div class="box-qna" data-event="listQnA">
+            <ul>
+              <li><!-- class="is-active" 활성화 -->
+                <span class="cnt">999</span>
+                <button><span class="tit">검체관련</span><span class="text-1">세포/조직병리 검사는 어떤 것이 있을까요? 세포/조직병리 검사는 어떤 것이
+                    있을까요? 세포/조직병리 검사는 어떤 것이 있을까요?세포/조직병리 검사는 어떤 것이 있을까요?세포/조직병리 검사는 어떤 것이 있을까요?세포/조직병리 검사는 어떤 것이
+                    있을까요?세포/조직병리 검사는 어떤 것이 있을까요?세포/조직병리 검사는 어떤 것이 있을까요?</span></button>
+                <ul>
+                  <li>
+                    <p class="text-2">Bilirubin, 5-HIAA, δ-ALA, Carotene, DPD, Folate, Vitamin 계열, Porphyrin 계열 등의 항목이
+                      영향을 받습니다.</p>
+                    <div class="download-file">
+                      <ul>
+                        <li><button><span>38 52 일부 검사항목의 검사정보 변경 안내 목의 검사정보 변경 안내.pdf</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="cnt">98</span>
+                <button><span class="tit">보험관련</span><span class="text-1">혈액화학 검사 소요시간은 얼마나 걸리나요?</span></button>
+                <ul>
+                  <li>
+                    <p class="text-2">Bilirubin, 5-HIAA, δ-ALA, Carotene, DPD, Folate, Vitamin 계열, Porphyrin 계열 등의 항목이
+                      영향을 받습니다.</p>
+                    <div class="download-file">
+                      <ul>
+                        <li><button><span>38 52 일부 검사항목의 검사정보 변경 안내 목의 검사정보 변경 안내.pdf</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="cnt">97</span>
+                <button><span class="tit">보험관련</span><span class="text-1">혈액화학 검사 소요시간은 얼마나 걸리나요?</span></button>
+                <ul>
+                  <li>
+                    <p class="text-2">Bilirubin, 5-HIAA, δ-ALA, Carotene, DPD, Folate, Vitamin 계열, Porphyrin 계열 등의 항목이
+                      영향을 받습니다.</p>
+                    <div class="download-file">
+                      <ul>
+                        <li><button><span>38 52 일부 검사항목의 검사정보 변경 안내 목의 검사정보 변경 안내.pdf</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="cnt">96</span>
+                <button><span class="tit">보험관련</span><span class="text-1">혈액화학 검사 소요시간은 얼마나 걸리나요?</span></button>
+                <ul>
+                  <li>
+                    <p class="text-2">Bilirubin, 5-HIAA, δ-ALA, Carotene, DPD, Folate, Vitamin 계열, Porphyrin 계열 등의 항목이
+                      영향을 받습니다.</p>
+                    <div class="download-file">
+                      <ul>
+                        <li><button><span>38 52 일부 검사항목의 검사정보 변경 안내 목의 검사정보 변경 안내.pdf</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="cnt">95</span>
+                <button><span class="tit">보험관련</span><span class="text-1">혈액화학 검사 소요시간은 얼마나 걸리나요?</span></button>
+                <ul>
+                  <li>
+                    <p class="text-2">Bilirubin, 5-HIAA, δ-ALA, Carotene, DPD, Folate, Vitamin 계열, Porphyrin 계열 등의 항목이
+                      영향을 받습니다.</p>
+                    <div class="download-file">
+                      <ul>
+                        <li><button><span>38 52 일부 검사항목의 검사정보 변경 안내 목의 검사정보 변경 안내.pdf</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                        <li><button><span>첨부파일</span></button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- //box-qna -->
+        </div>
+        <!-- //자주 하는 질문 -->
+
+        <script>
+          // 로딩시 tab show
+          let showCnt = 0;
+
+          // tab event
+          const tabEvent = (cnt) => {
+            document.querySelectorAll('.tabOnly').forEach((e) => {
+              e.style.display = 'none';
+            });
+
+            if (cnt == 0) { // 전체
+              document.querySelectorAll('.tabOnly').forEach((e) => {
+                e.style.display = 'block';
+              })
+            } else { // 전체 아님
+              document.querySelector('[data-content="' + cnt + '"]').style.display = 'block';
+            }
+          }
+
+          tabEvent(showCnt);
+
+          // tab click show
+          const tabShowHide = (e) => {
+            tabEvent(e);
+          }
+
+          document.querySelectorAll('.snbSwiper.type-1 .swiper-slide').forEach((e) => {
+            e.addEventListener('click', (item) => {
+              let cnt = item.currentTarget.getAttribute('data-index');
+
+              tabShowHide(cnt);
+            })
+          });
+        </script>
+
+        <!-- common-paging -->
+        <!-- 상세 (탭 클릭) 페이지에서는 일반 paging -->
+        <div class="common-paging">
+          <div class="mobile-paging">
+            <button type="button" class="more-btn">더보기</button>
+          </div>
+          <ul>
+            <li><a href="#none" class="btn-first" title="첫 페이지 이동"></a></li>
+            <li><a href="#none" class="btn-prev" title="이전 페이지 이동"></a></li>
+            <li><a href="#none" class="is-active">1</a></li>
+            <li><a href="#none">2</a></li>
+            <li><a href="#none">3</a></li>
+            <li><a href="#none">4</a></li>
+            <li><a href="#none">5</a></li>
+            <li><a href="#none">6</a></li>
+            <li><a href="#none">7</a></li>
+            <li><a href="#none">8</a></li>
+            <li><a href="#none">9</a></li>
+            <li><a href="#none">10</a></li>
+            <li><a href="#none" class="btn-next" title="다음 페이지 이동"></a></li>
+            <li><a href="#none" class="btn-last" title="마지막 페이지 이동"></a></li>
+          </ul>
+        </div>
+        <!-- //common-paging -->
+
+      </div>
+    </div>
+    <!-- //inner-wrap -->
+  </div>
+  <!-- //box-wrap -->
+
+  <!-- footer -->
+  <div include-html="static/include/footer.html" data-include="footer"></div>
+  <!-- //footer -->
+
+  <!-- 공통 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="../static/js/includeHTML.js"></script>
+  <script src="../static/js/front.js"></script>
+  <!-- //공통 js -->
+
+  <!-- swiper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="../static/js/swiper.min.js"></script>
+  <!-- //swiper.js -->
+
+  <script>
+    /**
+     * header bg type
+     *  transparent
+     *  white
+    */
+    headerBg({
+      bg: "white"
+    })
+    selectBox.initialize();
+    commonTab.initialize();
+    listQnA.initialize();
+
+    const actionEvent = () => {
+      // tab 전체 swiper
+      var swiper = new Swiper('.mobile .snbSwiper.type-1', {
+        slidesPerView: 'auto',
+        preventClicks: true,
+        preventClicksPropagation: false,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+          1024: {
+            allowTouchMove: false
+          },
+        },
+      });
+
+      var $snbSwiperItem = $('.mobile .snbSwiper.type-1 .swiper-wrapper .swiper-slide button');
+      $snbSwiperItem.click(function () {
+        var target = $(this).parent();
+        $snbSwiperItem.parent().removeClass('on')
+        target.addClass('on');
+        muCenter(target, target.index());
+      })
+
+      function muCenter(target, idx) {
+        var snbwrap = $('.mobile .snbSwiper.type-1 .swiper-wrapper');
+        var targetPos = target.position();
+        var box = $('.mobile .snbSwiper.type-1');
+        var boxHarf = box.width() / 2;
+        var pos;
+        var listWidth = 0;
+
+        snbwrap.find('.swiper-slide').each(function () { listWidth += $(this).outerWidth(); })
+
+        var selectTargetPos = targetPos.left + target.outerWidth() / 2;
+        if (selectTargetPos <= boxHarf) { // left
+          pos = 0;
+        } else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+          pos = listWidth - box.width();
+        } else {
+          pos = selectTargetPos - boxHarf;
+        }
+      }
+
+      document.querySelectorAll('.snbSwiper.type-1 > ul > li').forEach((item) => {
+        item.addEventListener('click', (e) => {
+          swiper.slideTo(e.currentTarget.getAttribute('data-index'));
+        });
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      actionEvent();
+    })
+
+    window.addEventListener('load', () => {
+      if (window.innerWidth <= 1024) {
+        actionEvent();
+      }
+    })
+
+    // tab 학술자료 swiper
+    var swiperTab = new Swiper('.mobile .snbSwiper.type-2', {
+      slidesPerView: 'auto',
+      preventClicks: true,
+      preventClicksPropagation: false,
+      observer: true,
+      observeParents: true,
+      breakpoints: {
+        1024: {
+          allowTouchMove: false
+        },
+      },
+    });
+  </script>
+
+</body>
+
+</html>
