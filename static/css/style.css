@@ -470,6 +470,7 @@ input {
   line-height: 130%;
   letter-spacing: 0.4px;
   padding-bottom: 21px;
+  margin-right: -10px;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > ul > li > a {
   color: #fff;
@@ -480,9 +481,9 @@ input {
   line-height: 150%;
   letter-spacing: 0.4px;
   position: relative;
-  padding: 0 24px 0 7px;
+  padding: 0 0 0 7px;
   display: block;
-  margin: 0 0 17px 0;
+  margin: 0 -13px 17px 0;
   word-break: keep-all;
 }
 .box-header .menu-list .inner-gap-1 > ul > li > ul > li > ul > li > a::after {
