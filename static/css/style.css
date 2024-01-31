@@ -13639,6 +13639,8 @@ input {
   }
   .request-swiper .mySwiper1 .swiper-slide {
     padding: 0 41px;
+    min-width: 800px;
+    min-height: 260px;
   }
   .request-swiper .mySwiper1 .swiper-slide .tit {
     width: 100%;

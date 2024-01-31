@@ -15419,6 +15419,8 @@ input {
 			padding: 60px 0;
 			.swiper-slide {
 				padding: 0 41px;
+				min-width: 800px;
+				min-height: 260px;
 				.tit {
 					width: 100%;
 					text-align: left;
