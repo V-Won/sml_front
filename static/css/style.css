@@ -6301,32 +6301,32 @@ input {
 .tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:first-child::after {
   width: 140px;
   height: 122px;
-  background: url(../../static/images/img/laboratory_special_illust_1.png) no-repeat;
+  background: url(../images/img/laboratory_special_illust_1.png) no-repeat;
 }
 .tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(2)::after {
   width: 114px;
   height: 123px;
-  background: url(../../static/images/img/laboratory_special_illust_2.png) no-repeat;
+  background: url(../images/img/laboratory_special_illust_2.png) no-repeat;
 }
 .tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(3)::after {
   width: 116px;
   height: 114px;
-  background: url(../../static/images/img/laboratory_special_illust_3.png) no-repeat;
+  background: url(../images/img/laboratory_special_illust_3.png) no-repeat;
 }
 .tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(4)::after {
   width: 123px;
   height: 112px;
-  background: url(../../static/images/img/laboratory_special_illust_4.png) no-repeat;
+  background: url(../images/img/laboratory_special_illust_4.png) no-repeat;
 }
 .tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(5)::after {
   width: 112px;
   height: 129px;
-  background: url(../../static/images/img/laboratory_special_illust_5.png) no-repeat;
+  background: url(../images/img/laboratory_special_illust_5.png) no-repeat;
 }
 .tab-labSpecial .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(6)::after {
   width: 124px;
   height: 128px;
-  background: url(../../static/images/img/laboratory_special_illust_6.png) no-repeat;
+  background: url(../images/img/laboratory_special_illust_6.png) no-repeat;
 }
 .tab-labSpecial .step-info .step-info-swiper .swiper-pagination-1 {
   display: none;
@@ -6446,7 +6446,7 @@ input {
   width: 100%;
   position: relative;
   padding: 20px;
-  background: url(../../static/images/img/laboratory_special_chart_bg.png) no-repeat;
+  background: url(../images/img/laboratory_special_chart_bg.png) no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -6670,7 +6670,7 @@ input {
   width: 100%;
   position: relative;
   padding: 60px 20px 100px;
-  background: url(../../static/images/img/bookingGuide_bg_mo.png) no-repeat;
+  background: url(../images/img/bookingGuide_bg_mo.png) no-repeat;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -6804,22 +6804,22 @@ input {
 .tab-labSpecial.national .step-info .step-info-swiper .swiper-wrapper .swiper-slide:first-child::after {
   width: 72px;
   height: 106px;
-  background: url(../../static/images/img/laboratory_national_illust_1_1.png) no-repeat;
+  background: url(../images/img/laboratory_national_illust_1_1.png) no-repeat;
 }
 .tab-labSpecial.national .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(2)::after {
   width: 130px;
   height: 109px;
-  background: url(../../static/images/img/laboratory_national_illust_1_2.png) no-repeat;
+  background: url(../images/img/laboratory_national_illust_1_2.png) no-repeat;
 }
 .tab-labSpecial.national .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(3)::after {
   width: 138px;
   height: 100px;
-  background: url(../../static/images/img/laboratory_national_illust_1_3.png) no-repeat;
+  background: url(../images/img/laboratory_national_illust_1_3.png) no-repeat;
 }
 .tab-labSpecial.national .step-info .step-info-swiper .swiper-wrapper .swiper-slide:nth-child(4)::after {
   width: 130px;
   height: 94px;
-  background: url(../../static/images/img/laboratory_national_illust_1_4.png) no-repeat;
+  background: url(../images/img/laboratory_national_illust_1_4.png) no-repeat;
 }
 .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide .step-num {
   background: var(--Primary-01, #006477);
@@ -6827,7 +6827,7 @@ input {
 .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide:nth-child(2)::after {
   width: 150px;
   height: 108px;
-  background: url(../../static/images/img/laboratory_national_illust_2_2.png) no-repeat;
+  background: url(../images/img/laboratory_national_illust_2_2.png) no-repeat;
 }
 .tab-labSpecial.national .step-info .step-info-swiper.type-2 .swiper-wrapper .swiper-slide.wd-100 {
   width: 100% !important;
@@ -6850,7 +6850,7 @@ input {
   left: auto;
   right: 0;
   transform: translateX(0);
-  background: url(../../static/images/img/laboratory_national_illust_2_3.png) no-repeat;
+  background: url(../images/img/laboratory_national_illust_2_3.png) no-repeat;
 }
 .tab-labSpecial.national .noti-info {
   margin-bottom: 100px;
@@ -6929,7 +6929,7 @@ input {
 .q-controlSystem {
   width: 100%;
   padding: 60px 20px 100px;
-  background: url(../../static/images/img/qc_system_bg.png) no-repeat;
+  background: url(../images/img/qc_system_bg.png) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -7103,43 +7103,43 @@ input {
   letter-spacing: 0.32px;
 }
 .q-controlEssential .flex-box .box:first-child .item.long {
-  background: url(../../static/images/img/qc_essential_1_1.png) no-repeat;
+  background: url(../images/img/qc_essential_1_1.png) no-repeat;
 }
 .q-controlEssential .flex-box .box:first-child .item-inner .item:first-child {
-  background: url(../../static/images/img/qc_essential_1_2.png) no-repeat;
+  background: url(../images/img/qc_essential_1_2.png) no-repeat;
   background-position: 62% !important;
 }
 .q-controlEssential .flex-box .box:first-child .item-inner .item:nth-child(2) {
-  background: url(../../static/images/img/qc_essential_1_3.png) no-repeat;
+  background: url(../images/img/qc_essential_1_3.png) no-repeat;
   background-position: 42% !important;
 }
 .q-controlEssential .flex-box .box:nth-child(2) .item.long {
   background: #000;
 }
 .q-controlEssential .flex-box .box:nth-child(2) .item-inner .item:first-child {
-  background: url(../../static/images/img/qc_essential_2_1.png) no-repeat;
+  background: url(../images/img/qc_essential_2_1.png) no-repeat;
 }
 .q-controlEssential .flex-box .box:nth-child(2) .item-inner .item:nth-child(2) {
-  background: url(../../static/images/img/qc_essential_2_2.png) no-repeat;
+  background: url(../images/img/qc_essential_2_2.png) no-repeat;
 }
 .q-controlEssential .flex-box .box:nth-child(3) .item.long {
-  background: url(../../static/images/img/qc_essential_3_1.png);
+  background: url(../images/img/qc_essential_3_1.png);
 }
 .q-controlEssential .flex-box .box:nth-child(3) .item-inner .item:first-child {
-  background: url(../../static/images/img/qc_essential_3_2.png) no-repeat;
+  background: url(../images/img/qc_essential_3_2.png) no-repeat;
 }
 .q-controlEssential .flex-box .box:nth-child(3) .item-inner .item:nth-child(2) {
-  background: url(../../static/images/img/qc_essential_3_3.png) no-repeat;
+  background: url(../images/img/qc_essential_3_3.png) no-repeat;
   background-position: 0 !important;
 }
 .q-controlEssential .flex-box .box:nth-child(4) .item.long {
-  background: url(../../static/images/img/qc_essential_4_3.png);
+  background: url(../images/img/qc_essential_4_3.png);
 }
 .q-controlEssential .flex-box .box:nth-child(4) .item-inner .item:first-child {
-  background: url(../../static/images/img/qc_essential_4_1.png) no-repeat;
+  background: url(../images/img/qc_essential_4_1.png) no-repeat;
 }
 .q-controlEssential .flex-box .box:nth-child(4) .item-inner .item:nth-child(2) {
-  background: url(../../static/images/img/qc_essential_4_2.png) no-repeat;
+  background: url(../images/img/qc_essential_4_2.png) no-repeat;
 }
 
 .box-reser > ul > li {
@@ -7425,16 +7425,16 @@ input {
   margin-bottom: 0;
 }
 .box-irb .list-type-1 > li:nth-child(1) {
-  background-image: url(../../static/images/img/irb_1.png);
+  background-image: url(../images/img/irb_1.png);
 }
 .box-irb .list-type-1 > li:nth-child(2) {
-  background-image: url(../../static/images/img/irb_2.png);
+  background-image: url(../images/img/irb_2.png);
 }
 .box-irb .list-type-1 > li:nth-child(3) {
-  background-image: url(../../static/images/img/irb_3.png);
+  background-image: url(../images/img/irb_3.png);
 }
 .box-irb .list-type-1 > li:nth-child(4) {
-  background-image: url(../../static/images/img/irb_4.png);
+  background-image: url(../images/img/irb_4.png);
 }
 .box-irb .list-type-1 > li .text-1 {
   color: var(--Primary-04, #4d4d4d);
@@ -7534,7 +7534,7 @@ input {
 }
 
 .irb-tel {
-  background-image: url(../../static/images/img/img_irb.jpg);
+  background-image: url(../images/img/img_irb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 52% 100%;
@@ -8080,40 +8080,40 @@ input {
   color: #fff;
 }
 .request-step-top .step-box .box:first-child::before {
-  background: url(../../static/images/icon/request_step_icon_1.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_1.svg) no-repeat;
 }
 .request-step-top .step-box .box:first-child.is-active::before {
-  background: url(../../static/images/icon/request_step_icon_1_on.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_1_on.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(2)::before {
-  background: url(../../static/images/icon/request_step_icon_2.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_2.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(2).is-active::before {
-  background: url(../../static/images/icon/request_step_icon_2_on.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_2_on.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(3)::before {
-  background: url(../../static/images/icon/request_step_icon_3.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_3.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(3).is-active::before {
-  background: url(../../static/images/icon/request_step_icon_3_on.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_3_on.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(4)::before {
-  background: url(../../static/images/icon/request_step_icon_4.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_4.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(4).is-active::before {
-  background: url(../../static/images/icon/request_step_icon_4_on.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_4_on.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(5)::before {
-  background: url(../../static/images/icon/request_step_icon_5.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_5.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(5).is-active::before {
-  background: url(../../static/images/icon/request_step_icon_5_on.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_5_on.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(6)::before {
-  background: url(../../static/images/icon/request_step_icon_6.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_6.svg) no-repeat;
 }
 .request-step-top .step-box .box:nth-child(6).is-active::before {
-  background: url(../../static/images/icon/request_step_icon_6_on.svg) no-repeat;
+  background: url(../images/icon/request_step_icon_6_on.svg) no-repeat;
 }
 
 .request-step-bottom {
@@ -8622,22 +8622,22 @@ input {
   background-size: cover !important;
 }
 .how-blood .how-box .box:first-child::after {
-  background: url(../../static/images/img/how_blood_img_1.png) no-repeat;
+  background: url(../images/img/how_blood_img_1.png) no-repeat;
 }
 .how-blood .how-box .box:nth-child(2)::after {
-  background: url(../../static/images/img/how_blood_img_2.png) no-repeat;
+  background: url(../images/img/how_blood_img_2.png) no-repeat;
 }
 .how-blood .how-box .box:nth-child(3)::after {
-  background: url(../../static/images/img/how_blood_img_3.png) no-repeat;
+  background: url(../images/img/how_blood_img_3.png) no-repeat;
 }
 .how-blood .how-box .box:nth-child(4)::after {
-  background: url(../../static/images/img/how_blood_img_4.png) no-repeat;
+  background: url(../images/img/how_blood_img_4.png) no-repeat;
 }
 .how-blood .how-box .box:nth-child(5)::after {
-  background: url(../../static/images/img/how_blood_img_5.png) no-repeat;
+  background: url(../images/img/how_blood_img_5.png) no-repeat;
 }
 .how-blood .how-box .box:nth-child(6)::after {
-  background: url(../../static/images/img/how_blood_img_6.png) no-repeat;
+  background: url(../images/img/how_blood_img_6.png) no-repeat;
 }
 .how-blood .noti-tit {
   color: var(--Primary-04, #4d4d4d);
@@ -8917,13 +8917,13 @@ input {
   background-size: cover !important;
 }
 .csf-stepBox .inner .icon.step1 {
-  background: url(../../static/images/icon/csf_step_1.svg) no-repeat;
+  background: url(../images/icon/csf_step_1.svg) no-repeat;
 }
 .csf-stepBox .inner .icon.step2 {
-  background: url(../../static/images/icon/csf_step_2.svg) no-repeat;
+  background: url(../images/icon/csf_step_2.svg) no-repeat;
 }
 .csf-stepBox .inner .icon.step3 {
-  background: url(../../static/images/icon/csf_step_3.svg) no-repeat;
+  background: url(../images/icon/csf_step_3.svg) no-repeat;
 }
 .csf-stepBox .inner .step-tit {
   color: var(--Primary-04, #4d4d4d);
@@ -8959,13 +8959,13 @@ input {
   color: #fff;
 }
 .csf-stepBox .inner.is-active .step1 {
-  background: url(../../static/images/icon/csf_step_1_on.svg) no-repeat;
+  background: url(../images/icon/csf_step_1_on.svg) no-repeat;
 }
 .csf-stepBox .inner.is-active .step2 {
-  background: url(../../static/images/icon/csf_step_2_on.svg) no-repeat;
+  background: url(../images/icon/csf_step_2_on.svg) no-repeat;
 }
 .csf-stepBox .inner.is-active .step3 {
-  background: url(../../static/images/icon/csf_step_3_on.svg) no-repeat;
+  background: url(../images/icon/csf_step_3_on.svg) no-repeat;
 }
 
 .fluid-method {
@@ -9005,19 +9005,19 @@ input {
   right: 20px;
 }
 .fluid-method .method:first-child::after {
-  background: url(../../static/images/icon/fluid_method_icon_1.svg) no-repeat;
+  background: url(../images/icon/fluid_method_icon_1.svg) no-repeat;
 }
 .fluid-method .method:nth-child(2)::after {
-  background: url(../../static/images/icon/fluid_method_icon_2.svg) no-repeat;
+  background: url(../images/icon/fluid_method_icon_2.svg) no-repeat;
 }
 .fluid-method .method:nth-child(3)::after {
-  background: url(../../static/images/icon/fluid_method_icon_3.svg) no-repeat;
+  background: url(../images/icon/fluid_method_icon_3.svg) no-repeat;
 }
 .fluid-method .method:nth-child(4)::after {
-  background: url(../../static/images/icon/fluid_method_icon_4.svg) no-repeat;
+  background: url(../images/icon/fluid_method_icon_4.svg) no-repeat;
 }
 .fluid-method .method:nth-child(5)::after {
-  background: url(../../static/images/icon/fluid_method_icon_5.svg) no-repeat;
+  background: url(../images/icon/fluid_method_icon_5.svg) no-repeat;
 }
 
 .precautions-wrap .tab-item {
@@ -9677,19 +9677,19 @@ input {
   text-align: center;
 }
 .precautions-wrap .bg-item .item:first-child {
-  background: url(../../static/images/img/ct_time_1_mo.png) no-repeat;
+  background: url(../images/img/ct_time_1_mo.png) no-repeat;
 }
 .precautions-wrap .bg-item .item:nth-child(2) {
-  background: url(../../static/images/img/ct_time_2_mo.png) no-repeat;
+  background: url(../images/img/ct_time_2_mo.png) no-repeat;
 }
 .precautions-wrap .bg-item .item:nth-child(3) {
-  background: url(../../static/images/img/ct_time_3_mo.png) no-repeat;
+  background: url(../images/img/ct_time_3_mo.png) no-repeat;
 }
 .precautions-wrap .bg-item .item:nth-child(4) {
-  background: url(../../static/images/img/ct_time_4_mo.png) no-repeat;
+  background: url(../images/img/ct_time_4_mo.png) no-repeat;
 }
 .precautions-wrap .bg-item .item:nth-child(5) {
-  background: url(../../static/images/img/ct_time_5_mo.png) no-repeat;
+  background: url(../images/img/ct_time_5_mo.png) no-repeat;
 }
 .precautions-wrap .acc-whiteBg {
   width: 100%;
@@ -10081,7 +10081,7 @@ input {
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: url(../../static/images/bg/bg_gortlarkcl.png);
+  background-image: url(../images/bg/bg_gortlarkcl.png);
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
@@ -15107,7 +15107,7 @@ input {
   }
   .tab-labSpecial .bookingGuide-box {
     padding: 80px 100px 120px;
-    background: url(../../static/images/img/bookingGuide_bg.png) no-repeat;
+    background: url(../images/img/bookingGuide_bg.png) no-repeat;
   }
   .tab-labSpecial .bookingGuide-box h5 {
     font-size: 40px;
@@ -15581,16 +15581,16 @@ input {
     padding: 61px 20px;
   }
   .box-irb .list-type-1 > li:nth-child(1) {
-    background-image: url(../../static/images/img/irb_1_pc.png);
+    background-image: url(../images/img/irb_1_pc.png);
   }
   .box-irb .list-type-1 > li:nth-child(2) {
-    background-image: url(../../static/images/img/irb_2_pc.png);
+    background-image: url(../images/img/irb_2_pc.png);
   }
   .box-irb .list-type-1 > li:nth-child(3) {
-    background-image: url(../../static/images/img/irb_3_pc.png);
+    background-image: url(../images/img/irb_3_pc.png);
   }
   .box-irb .list-type-1 > li:nth-child(4) {
-    background-image: url(../../static/images/img/irb_4_pc.png);
+    background-image: url(../images/img/irb_4_pc.png);
   }
   .box-irb .list-type-1 > li .text-1 {
     font-size: 20px;
@@ -16829,19 +16829,19 @@ input {
     min-height: 54px;
   }
   .precautions-wrap .bg-item .item:first-child {
-    background: url(../../static/images/img/ct_time_1.png) no-repeat;
+    background: url(../images/img/ct_time_1.png) no-repeat;
   }
   .precautions-wrap .bg-item .item:nth-child(2) {
-    background: url(../../static/images/img/ct_time_2.png) no-repeat;
+    background: url(../images/img/ct_time_2.png) no-repeat;
   }
   .precautions-wrap .bg-item .item:nth-child(3) {
-    background: url(../../static/images/img/ct_time_3.png) no-repeat;
+    background: url(../images/img/ct_time_3.png) no-repeat;
   }
   .precautions-wrap .bg-item .item:nth-child(4) {
-    background: url(../../static/images/img/ct_time_4.png) no-repeat;
+    background: url(../images/img/ct_time_4.png) no-repeat;
   }
   .precautions-wrap .bg-item .item:nth-child(5) {
-    background: url(../../static/images/img/ct_time_5.png) no-repeat;
+    background: url(../images/img/ct_time_5.png) no-repeat;
   }
   .precautions-wrap .acc-whiteBg > ul {
     gap: 40px;
