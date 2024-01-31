@@ -4650,6 +4650,7 @@ input {
 }
 .request-swiper .mySwiper1 .swiper-slide {
   padding: 0 20px;
+  width: 100vw;
 }
 .request-swiper .mySwiper1 .swiper-slide .tit {
   width: 100%;
