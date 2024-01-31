@@ -976,7 +976,7 @@
           if (localName == updt[tt][i]["센터구분"] && name == updt[tt][i]["분야1"]) {
             cnt++;
 
-            console.log(`${updt[tt][i]["센터구분"]}` + ` and ` + `${updt[tt][i]["분야1"]}`);
+            console.log(updt[tt][i]["센터구분"] + ` and ` + updt[tt][i]["분야1"]);
 
             let img = updt[tt][i]["img"],
               text1 = updt[tt][i]["장비명"],
@@ -988,7 +988,7 @@
 
             // tab 랜더링
             tab.innerHTML = `
-                <a href="#none" class="btn">${text1}</a>
+                <a href="#none" class="btn">` + text1 + `</a>
               `;
             tab.classList.add('swiper-slide');
             document.querySelector('.snbSwiper .swiper-wrapper').appendChild(tab);
@@ -998,24 +998,24 @@
                 <div class="img-box">
                   <div class="img-holder">
                     <span>
-                      <img src="../static/images/equipment/${img}">
+                      <img src="../static/images/equipment/` + img + `">
                     </span>
                   </div>
                 </div>
-                <p class="name">${text1}</p>
+                <p class="name">` + text1 + `</p>
                 <div class="text-box">
                   <div class="flex">
                     <p class="title">제조사</p>
-                    <p class="info">${text2}</p>
+                    <p class="info">` + text2 + `</p>
                   </div>
                   <div class="flex">
                     <p class="title">용도</p>
-                    <p class="info">${text3}</p>
+                    <p class="info">` + text3 + `</p>
                   </div>
                 </div>
               `;
             content.classList.add('swiper-slide');
-            content.dataset.index = `${cnt}`;
+            content.dataset.index = cnt;
             document.querySelector('.mySwiper1 .swiper-wrapper').appendChild(content);
           }
         }
