@@ -5096,7 +5096,8 @@ input {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			button {
+			button,
+			a {
 				width: 50%;
 				height: 35px;
 				position: relative;
@@ -20532,9 +20533,13 @@ input {
 				}
 			}
 			.btn-flex {
-				button {
+				button,
+				a {
 					height: 68px;
 					font-size: 16px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 					span {
 						color: #666;
 						font-size: 16px;

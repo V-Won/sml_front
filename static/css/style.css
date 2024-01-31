@@ -4564,13 +4564,15 @@ input {
   align-items: center;
   justify-content: space-between;
 }
-.request-item .item .btn-flex button {
+.request-item .item .btn-flex button,
+.request-item .item .btn-flex a {
   width: 50%;
   height: 35px;
   position: relative;
   font-size: 0;
 }
-.request-item .item .btn-flex button span::after {
+.request-item .item .btn-flex button span::after,
+.request-item .item .btn-flex a span::after {
   content: "";
   background-position: center;
   background-size: contain;
@@ -4582,10 +4584,12 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.request-item .item .btn-flex button.view-btn span::after {
+.request-item .item .btn-flex button.view-btn span::after,
+.request-item .item .btn-flex a.view-btn span::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M13.421 13.1678L17.75 17.5M9 6.25V11.25M6.5 8.75H11.5M15.25 8.75C15.25 12.2018 12.4518 15 9 15C5.54822 15 2.75 12.2018 2.75 8.75C2.75 5.29822 5.54822 2.5 9 2.5C12.4518 2.5 15.25 5.29822 15.25 8.75Z' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
-.request-item .item .btn-flex button.download-btn::before {
+.request-item .item .btn-flex button.download-btn::before,
+.request-item .item .btn-flex a.download-btn::before {
   content: "";
   width: 1px;
   height: 16px;
@@ -4595,7 +4599,8 @@ input {
   left: 0;
   transform: translateY(-50%);
 }
-.request-item .item .btn-flex button.download-btn span::after {
+.request-item .item .btn-flex button.download-btn span::after,
+.request-item .item .btn-flex a.download-btn span::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cpath d='M15.7499 12.4997V14.9997H5.74992V12.4997H4.08325V14.9997C4.08325 15.9163 4.83325 16.6663 5.74992 16.6663H15.7499C16.6666 16.6663 17.4166 15.9163 17.4166 14.9997V12.4997H15.7499ZM14.9166 9.16634L13.7416 7.99134L11.5833 10.1413V3.33301H9.91658V10.1413L7.75825 7.99134L6.58325 9.16634L10.7499 13.333L14.9166 9.16634Z' fill='%23666666'/%3E%3C/svg%3E");
 }
 .request-item.oneBtn .item .title {
@@ -17876,11 +17881,16 @@ input {
     width: 193px;
     height: 260px;
   }
-  .request-item .item .btn-flex button {
+  .request-item .item .btn-flex button,
+  .request-item .item .btn-flex a {
     height: 68px;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .request-item .item .btn-flex button span {
+  .request-item .item .btn-flex button span,
+  .request-item .item .btn-flex a span {
     color: #666;
     font-size: 16px;
     font-weight: 600;
@@ -17889,11 +17899,13 @@ input {
     padding-left: 24px;
     position: relative;
   }
-  .request-item .item .btn-flex button span::after {
+  .request-item .item .btn-flex button span::after,
+  .request-item .item .btn-flex a span::after {
     left: -1px;
     transform: translate(0, -50%);
   }
-  .request-item .item .btn-flex button.view-btn span::after {
+  .request-item .item .btn-flex button.view-btn span::after,
+  .request-item .item .btn-flex a.view-btn span::after {
     width: 18px;
     height: 18px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 19 19' fill='none'%3E%3Cpath d='M12.3539 12.351L16.25 16.25M8.375 6.125V10.625M6.125 8.375H10.625M14 8.375C14 11.4816 11.4816 14 8.375 14C5.2684 14 2.75 11.4816 2.75 8.375C2.75 5.2684 5.2684 2.75 8.375 2.75C11.4816 2.75 14 5.2684 14 8.375Z' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
