@@ -15444,6 +15444,7 @@ input {
 						width: calc(100% - 260px);
 						li {
 							gap: 0 20px;
+							min-width: 400px;
 							& + li {
 								margin-top: 8px;
 							}

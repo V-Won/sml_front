@@ -13667,6 +13667,7 @@ input {
   }
   .request-swiper .mySwiper1 .swiper-slide .flex .text-box li {
     gap: 0 20px;
+    min-width: 400px;
   }
   .request-swiper .mySwiper1 .swiper-slide .flex .text-box li + li {
     margin-top: 8px;
