@@ -13683,6 +13683,7 @@ input {
   .request-swiper .mySwiper1 .swiper-slide .flex .text-box li p.right {
     width: calc(100% - 140px);
     -webkit-line-clamp: 5;
+    padding-right: 10px;
   }
   .request-swiper .mySwiper1 .swiper-button-next,
   .request-swiper .mySwiper1 .swiper-button-prev {

@@ -15458,6 +15458,7 @@ input {
 								&.right {
 									width: calc(100% - 140px);
 									-webkit-line-clamp: 5;
+									padding-right:10px;
 								}
 							}
 						}
