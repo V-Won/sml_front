@@ -5568,7 +5568,8 @@ input {
   width: 100%;
   margin-left: 0;
 }
-.request-item.certified .item .flex .img-box .btn-flex button {
+.request-item.certified .item .flex .img-box .btn-flex button,
+.request-item.certified .item .flex .img-box .btn-flex a {
   width: 100%;
 }
 .request-item.certified .item .flex .text-box {
