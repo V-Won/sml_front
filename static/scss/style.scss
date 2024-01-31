@@ -6378,6 +6378,9 @@ input {
 		border-bottom: none;
 		padding-bottom: 0;
 		margin-bottom: 119px;
+		&.mgb0 {
+			margin-bottom: 0;
+		}
 	}
 	&.type-5 {
 		// 유전체 연구
@@ -6423,7 +6426,7 @@ input {
 	.han {
 		// 인사말
 		font-family: "Noto Sans KR";
-		font-weight: 600;
+		font-weight: 400;
 	}
 	.img-holder {
 		margin-bottom: 20px;
@@ -6621,6 +6624,49 @@ input {
 	}
 	& + .box-common-tabTableSwiper {
 		padding-top: 0;
+	}
+	// 재단소개 > 인사말
+	.box-greeting {
+		width: 100%;
+		position: relative;
+		.img-holder {
+			width: 100%;
+			position: relative;
+			margin-top: 40px;
+			span {
+				padding-top: 102%;
+			}
+			.name {
+				position: absolute;
+				right: 24px;
+				bottom: 27px;
+				color: var(--Primary-05, #FFF);
+				text-align: right;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 150%;
+				letter-spacing: 0.32px;
+				.han {
+					font-size: 18px;
+					font-weight: 500;
+					letter-spacing: 1.9px;
+					margin-top: 4px;
+				}
+			}
+		}
+		.info {
+			.tit {
+				font-size: 20px;
+				font-weight: 500;
+				letter-spacing: 0.4px;
+			}
+			.txt {
+				word-break: keep-all;
+				& + .txt {
+					margin-top: 12px;
+				}
+			}
+		}
 	}
 }
 
@@ -16763,6 +16809,46 @@ input {
 		}
 		& + .noti-borderBox {
 			margin-top: 120px !important;
+		}
+		// 재단소개 > 인사말
+		.box-greeting {
+			display: flex;
+			align-items: flex-start;
+			gap: 0 60px;
+			.img-holder {
+				width: 480px;
+				flex-shrink: 0;
+				margin: -7px 0 0;
+				span {
+					padding-top: 0;
+					height: 715px;
+				}
+				.name {
+					right: 39px;
+					bottom: 43px;
+					font-size: 18px;
+					letter-spacing: 0.36px;
+					.han {
+						font-size: 20px;
+						letter-spacing: 2.1px;
+					}
+				}
+			}
+			.info {
+				padding: 0;
+				margin-top: -8px;
+				.tit {
+					font-size: 28px;
+					letter-spacing: 0.56px;
+					margin-bottom: 38px;
+				}
+				.txt {
+					word-break: keep-all;
+					& + .txt {
+						margin-top: 24px;
+					}
+				}
+			}
 		}
 	}
 

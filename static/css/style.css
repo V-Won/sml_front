@@ -5749,6 +5749,9 @@ input {
   padding-bottom: 0;
   margin-bottom: 119px;
 }
+.box-infoTop.type-4.mgb0 {
+  margin-bottom: 0;
+}
 .box-infoTop.type-5 {
   padding-bottom: 38px;
   margin-bottom: 40px;
@@ -5785,7 +5788,7 @@ input {
 }
 .box-infoTop .han {
   font-family: "Noto Sans KR";
-  font-weight: 600;
+  font-weight: 400;
 }
 .box-infoTop .img-holder {
   margin-bottom: 20px;
@@ -5974,6 +5977,46 @@ input {
 }
 .box-infoTop + .box-common-tabTableSwiper {
   padding-top: 0;
+}
+.box-infoTop .box-greeting {
+  width: 100%;
+  position: relative;
+}
+.box-infoTop .box-greeting .img-holder {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+.box-infoTop .box-greeting .img-holder span {
+  padding-top: 102%;
+}
+.box-infoTop .box-greeting .img-holder .name {
+  position: absolute;
+  right: 24px;
+  bottom: 27px;
+  color: var(--Primary-05, #FFF);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+}
+.box-infoTop .box-greeting .img-holder .name .han {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1.9px;
+  margin-top: 4px;
+}
+.box-infoTop .box-greeting .info .tit {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+.box-infoTop .box-greeting .info .txt {
+  word-break: keep-all;
+}
+.box-infoTop .box-greeting .info .txt + .txt {
+  margin-top: 12px;
 }
 
 .common-tab.type-2.posi {
@@ -14789,6 +14832,45 @@ input {
   }
   .box-infoTop + .noti-borderBox {
     margin-top: 120px !important;
+  }
+  .box-infoTop .box-greeting {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 60px;
+  }
+  .box-infoTop .box-greeting .img-holder {
+    width: 480px;
+    flex-shrink: 0;
+    margin: -7px 0 0;
+  }
+  .box-infoTop .box-greeting .img-holder span {
+    padding-top: 0;
+    height: 715px;
+  }
+  .box-infoTop .box-greeting .img-holder .name {
+    right: 39px;
+    bottom: 43px;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+  }
+  .box-infoTop .box-greeting .img-holder .name .han {
+    font-size: 20px;
+    letter-spacing: 2.1px;
+  }
+  .box-infoTop .box-greeting .info {
+    padding: 0;
+    margin-top: -8px;
+  }
+  .box-infoTop .box-greeting .info .tit {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+    margin-bottom: 38px;
+  }
+  .box-infoTop .box-greeting .info .txt {
+    word-break: keep-all;
+  }
+  .box-infoTop .box-greeting .info .txt + .txt {
+    margin-top: 24px;
   }
   .common-tab.type-2.posi.fixed {
     padding: 40px 0;

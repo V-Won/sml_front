@@ -205,6 +205,15 @@
 :lang(en) .box-infoTop .tit.type-4 {
   margin-bottom: 47px;
 }
+:lang(en) .box-infoTop .box-greeting .img-holder {
+  margin: -7px 0 20px;
+}
+:lang(en) .box-infoTop .box-greeting .img-holder .name .han {
+  letter-spacing: 0;
+}
+:lang(en) .box-infoTop .box-greeting .info .tit {
+  word-break: keep-all;
+}
 :lang(en) .inspect-item-swiper .mySwiper1 .swiper-slide .text-box .flex .title {
   max-width: 82px;
 }
@@ -481,6 +490,27 @@
   }
   :lang(en) .box-infoTop .tit.type-3 {
     margin-bottom: 24px;
+  }
+  :lang(en) .box-infoTop .box-greeting {
+    margin-top: 60px;
+  }
+  :lang(en) .box-infoTop .box-greeting .img-holder {
+    margin: 0;
+  }
+  :lang(en) .box-infoTop .box-greeting .img-holder span {
+    height: 756px;
+  }
+  :lang(en) .box-infoTop .box-greeting .info {
+    margin-top: 0;
+  }
+  :lang(en) .box-infoTop .box-greeting .info .tit {
+    font-size: 26px;
+    letter-spacing: 0.52px;
+    margin-bottom: 40px;
+  }
+  :lang(en) .box-infoTop .box-greeting .info .txt {
+    font-size: 16px;
+    letter-spacing: 0.32px;
   }
   :lang(en) .box-dusgur .box-list-dusgur .box-flex .box-img {
     flex: 0 0 35vw;

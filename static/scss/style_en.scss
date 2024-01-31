@@ -401,6 +401,21 @@
 				margin-bottom: 47px;
 			}
 		}
+		.box-greeting {
+			.img-holder {
+				margin: -7px 0 20px;
+				.name {
+					.han {
+						letter-spacing: 0;
+					}
+				}
+			}
+			.info {
+				.tit {
+					word-break: keep-all;
+				}
+			}
+		}
 	}
 
 	// 검사부안내 > 서불본원(진단검사의학과, 병리과) and 중부센터 and 부산센터
@@ -926,6 +941,27 @@
 			.tit {
 				&.type-3 {
 					margin-bottom: 24px;
+				}
+			}
+			.box-greeting {
+				margin-top: 60px;
+				.img-holder {
+					margin: 0;
+					span {
+						height: 756px;
+					}
+				}
+				.info {
+					margin-top: 0;
+					.tit {
+						font-size: 26px;
+						letter-spacing: 0.52px;
+						margin-bottom: 40px;
+					}
+					.txt {
+						font-size: 16px;
+						letter-spacing: 0.32px;
+					}
 				}
 			}
 		}
