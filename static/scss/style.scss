@@ -58,7 +58,8 @@ body {
 	font-size: 14px;
 	// color:;
 	/*-webkit-touch-callout:none;-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);*/
-	word-break: break-all;
+	/* word-break 변경 금지 */
+	word-break: keep-all;
 	word-wrap: break-word;
 }
 
