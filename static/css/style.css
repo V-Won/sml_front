@@ -10536,7 +10536,8 @@ input {
   margin-top: 42px;
 }
 .box-list-map .inner .map {
-  height: 240px;
+  width: 100% !important;
+  height: 240px !important;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -13829,6 +13830,7 @@ input {
   }
   .request-item.certified .item .flex .img-box {
     width: 100%;
+    min-width: 166px;
     max-width: 216px;
   }
   .request-item.certified .item .flex .img-box .img-holder {
@@ -17377,7 +17379,7 @@ input {
   }
   .box-list-map .inner .map {
     border-radius: 12px;
-    height: 680px;
+    height: 680px !important;
     border: 1px solid var(--gray-03-line, #d5d5d5);
   }
   .box-list-map .inner .text {
@@ -17522,13 +17524,13 @@ input {
     font-weight: 400;
   }
   .box-rhror .inner .list {
-    width: 1000px;
+    width: 335px;
     display: flex;
     padding: 0;
     align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
-    margin-left: calc(50% - 10px);
+    margin-left: auto;
     margin-top: -334px;
     transition: all 0.1s;
   }
@@ -17552,13 +17554,13 @@ input {
     color: #666;
   }
   .box-rhror .inner .list li:nth-child(2) {
-    margin-top: 240px;
+    margin-top: 0;
   }
   .box-rhror .inner .list li:nth-child(3) {
-    margin-top: -162px;
+    margin-top: 0;
   }
   .box-rhror .inner .list li:nth-child(4) {
-    margin-top: 78px;
+    margin-top: 0;
   }
   .box-rhror .inner .list li .text-1 {
     color: #fff;
@@ -17684,10 +17686,12 @@ input {
   }
   .box-foqxndj ul li .box-text {
     gap: 22px;
+    padding: 0 20px;
   }
   .box-foqxndj ul li .box-text h5 {
     font-size: 30px;
     letter-spacing: 0.6px;
+    text-align: center;
   }
   .box-foqxndj ul li .box-text .text-1 {
     font-size: 18px;
@@ -17723,7 +17727,7 @@ input {
     gap: 35px;
   }
   .box-tbdj ul li .gap .img-holder {
-    padding: 19px 27px;
+    padding: 19px 16px;
   }
   .box-tbdj ul li .gap .img-holder span {
     width: 160px;
@@ -17738,7 +17742,7 @@ input {
     letter-spacing: 0.4px;
   }
   .box-tbdj ul li .gap .text .btn-flex {
-    flex-direction: row;
+    flex-direction: column;
     gap: 24px;
   }
   .box-tbdj ul li .gap .text .btn-flex button {
@@ -18088,6 +18092,12 @@ input {
   .csf-stepBox .inner + .inner::before {
     left: -75px;
   }
+  .box-tbdj ul li .gap .img-holder {
+    padding: 19px 27px;
+  }
+  .box-tbdj ul li .gap .text .btn-flex {
+    flex-direction: row;
+  }
 }
 /* //1300 이상 */
 /* 1400 이상 */
@@ -18363,6 +18373,18 @@ input {
   }
   .box-altus-2 .content ul li .tt-1 .pc-show {
     display: block;
+  }
+  .box-rhror .inner .list {
+    width: 710px;
+  }
+  .box-rhror .inner .list li:nth-child(2) {
+    margin-top: 240px;
+  }
+  .box-rhror .inner .list li:nth-child(3) {
+    margin-top: -162px;
+  }
+  .box-rhror .inner .list li:nth-child(4) {
+    margin-top: 78px;
   }
 }
 /* //1600 이상 */

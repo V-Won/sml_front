@@ -11790,7 +11790,8 @@ input {
 	margin-top: 42px;
 	.inner {
 		.map {
-			height: 240px;
+			width: 100% !important;
+			height: 240px !important;
 			border-radius: 6px;
 			overflow: hidden;
 		}
@@ -15615,6 +15616,7 @@ input {
 					gap: 0 36px;
 					.img-box {
 						width: 100%;
+						min-width: 166px;
 						max-width: 216px;
 						.img-holder {
 							padding: 18px 0;
@@ -19907,7 +19909,7 @@ input {
 			position: relative;
 			.map {
 				border-radius: 12px;
-				height: 680px;
+				height: 680px !important;
 				border: 1px solid var(--gray-03-line, #d5d5d5);
 			}
 			.text {
@@ -20075,13 +20077,13 @@ input {
 				}
 			}
 			.list {
-				width: 1000px;
+				width: 335px;
 				display: flex;
 				padding: 0;
 				align-items: flex-start;
 				gap: 40px;
 				flex-wrap: wrap;
-				margin-left: calc(50% - 10px);
+				margin-left: auto;
 				//transform: translate(-100px, 0);
 				margin-top: -334px;
 				transition: all 0.1s;
@@ -20107,15 +20109,15 @@ input {
 					}
 					&:nth-child(2) {
 						//transform: translateY(221px);
-						margin-top: 240px;
+						margin-top: 0;
 					}
 					&:nth-child(3) {
 						//transform: translateY(39px);
-						margin-top: -162px;
+						margin-top: 0;
 					}
 					&:nth-child(4) {
 						//transform: translateY(279px);
-						margin-top: 78px;
+						margin-top: 0;
 					}
 					.text-1 {
 						color: #fff;
@@ -20265,9 +20267,11 @@ input {
 				}
 				.box-text {
 					gap: 22px;
+					padding: 0 20px;
 					h5 {
 						font-size: 30px;
 						letter-spacing: 0.6px;
+						text-align: center;
 					}
 					.text-1 {
 						font-size: 18px;
@@ -20309,7 +20313,7 @@ input {
 				.gap {
 					gap: 35px;
 					.img-holder {
-						padding: 19px 27px;
+						padding: 19px 16px;
 						span {
 							width: 160px;
 							height: 220px;
@@ -20323,7 +20327,7 @@ input {
 							letter-spacing: 0.4px;
 						}
 						.btn-flex {
-							flex-direction: row;
+							flex-direction: column;
 							gap: 24px;
 							button {
 								font-size: 14px;
@@ -20790,6 +20794,24 @@ input {
 			}
 		}
 	}
+
+	// 재단안내 > SML 홍보실 > 브로슈어
+	.box-tbdj {
+		ul {
+			li {
+				.gap {
+					.img-holder {
+						padding: 19px 27px;
+					}
+					.text {
+						.btn-flex {
+							flex-direction: row;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 /* //1300 이상 */
 
@@ -21168,6 +21190,25 @@ input {
 						.pc-show {
 							display: block;
 						}
+					}
+				}
+			}
+		}
+	}
+
+	.box-rhror {
+		.inner {
+			.list {
+				width: 710px;
+				li {
+					&:nth-child(2) {
+						margin-top: 240px;
+					}
+					&:nth-child(3) {
+						margin-top: -162px;
+					}
+					&:nth-child(4) {
+						margin-top: 78px;
 					}
 				}
 			}
