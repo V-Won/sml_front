@@ -264,7 +264,8 @@
         var href = e.target.getAttribute('href');
         var hrefRe = href.replace('#', '');
         var location = document.getElementById(hrefRe).offsetTop + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight - 100;
-        window.scrollTo({ top: location, behavior: "smooth" });
+        //window.scrollTo({ top: location, behavior: "smooth" });
+        window.scrollTo({ top: location});
       });
     });
 
