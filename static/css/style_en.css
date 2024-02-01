@@ -1109,6 +1109,12 @@
     color: #4d4d4d;
     font-weight: 600;
   }
+  :lang(en) .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li > a.is-active {
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    color: #666;
+  }
   :lang(en) .box-header .inner-gap-1 .inner .btn-etc .btn-menu {
     display: none;
   }

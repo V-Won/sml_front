@@ -1729,6 +1729,12 @@
 											color: #4d4d4d;
 											font-weight: 600;
 										}
+										&.is-active {
+											border-radius: 0;
+											border: none;
+											background: transparent;
+											color: #666;
+										}
 									}
 								}
 							}

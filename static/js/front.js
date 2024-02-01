@@ -168,6 +168,31 @@ if (window.console == undefined) { console = { log: () => { } } }
 				document.getElementsByTagName('html')[0].style.overflow = "";
 			})
 
+			// MO 1뎁스 클릭.
+			const depthClick = () => {
+				const depth1s = document.querySelectorAll('.box-header .menu-list h3');
+
+				if ( document.documentElement.lang === "en" ) {
+					if(matchMedia("screen and (max-width: 1400px)").matches){
+						for (const tg of depth1s) {
+							tg.onclick = e => {
+								e.currentTarget.parentNode.classList.toggle('is-active');
+							}
+						}
+					}
+				} else {
+					if(matchMedia("screen and (max-width: 1024px)").matches){
+						for (const tg of depth1s) {
+							tg.onclick = e => {
+								e.currentTarget.parentNode.classList.toggle('is-active');
+							}
+						}
+					}
+				}
+			}
+
+			depthClick();
+
 			// PC 햄버거 버튼 클릭 상태에서 resize
 			window.addEventListener('resize', () => {
 				if (window.innerWidth >= 1024) {
@@ -176,27 +201,12 @@ if (window.console == undefined) { console = { log: () => { } } }
 					// mo menu-list is-active remove
 					menuNoActive();
 				}
+				depthClick();
 			})
 
-			// MO 1뎁스 클릭.
-			const depth1s = document.querySelectorAll('.mobile .box-header .menu-list h3');
-			const enDepth = document.querySelectorAll('.box-header .menu-list h3');
-
-			if ( document.documentElement.lang === "en" ) {
-				if(matchMedia("screen and (max-width: 1400px)").matches){
-					for (const tg of enDepth) {
-						tg.onclick = e => {
-							e.currentTarget.parentNode.classList.toggle('is-active');
-						}
-					}
-				}
-			} else {
-				for (const tg of depth1s) {
-					tg.onclick = e => {
-						e.currentTarget.parentNode.classList.toggle('is-active');
-					}
-				}
-			}
+			window.addEventListener('load', () => {
+				depthClick();
+			})
 		}
 	};
 
