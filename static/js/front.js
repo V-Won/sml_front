@@ -180,10 +180,21 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			// MO 1뎁스 클릭.
 			const depth1s = document.querySelectorAll('.mobile .box-header .menu-list h3');
+			const enDepth = document.querySelectorAll('.box-header .menu-list h3');
 
-			for (const tg of depth1s) {
-				tg.onclick = e => {
-					e.currentTarget.parentNode.classList.toggle('is-active');
+			if ( document.documentElement.lang === "en" ) {
+				if(matchMedia("screen and (max-width: 1400px)").matches){
+					for (const tg of enDepth) {
+						tg.onclick = e => {
+							e.currentTarget.parentNode.classList.toggle('is-active');
+						}
+					}
+				}
+			} else {
+				for (const tg of depth1s) {
+					tg.onclick = e => {
+						e.currentTarget.parentNode.classList.toggle('is-active');
+					}
 				}
 			}
 		}
