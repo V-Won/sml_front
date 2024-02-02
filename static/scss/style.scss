@@ -17755,8 +17755,10 @@ input {
 					font-size: 20px;
 					line-height: 150%; /* 30px */
 					letter-spacing: 0.4px;
-					flex-direction: row;
-					height: 78px;
+					flex-direction: column;
+					// height: 78px;
+					height: auto;
+					padding: 23px 5px;
 					margin-bottom: 34px;
 					&:last-child {
 						&::after {
@@ -20714,6 +20716,19 @@ input {
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+
+	// 체외진단의료기기 임상적 성능평가
+	.box-processList {
+		.inner {
+			> ul {
+				> li {
+					flex-direction: row;
+					padding: 0;
+					height: 78px;
 				}
 			}
 		}
