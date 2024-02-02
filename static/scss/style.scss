@@ -6245,7 +6245,7 @@ input {
 						font-weight: 500;
 						line-height: 120%;
 						letter-spacing: 0.4px;
-						word-break: break-all;
+						word-break: break-word;
 					}
 				}
 			}
@@ -15649,7 +15649,8 @@ input {
 		}
 		&.certified {
 			.item {
-				width: calc(50% - 20px);
+				// width: calc(50% - 20px);
+				width: 100%;
 				padding: 40px;
 				.title {
 					margin-bottom: 24px;
@@ -21283,6 +21284,15 @@ input {
 						margin-top: 78px;
 					}
 				}
+			}
+		}
+	}
+
+	// 정도관리 > 인증내역
+	.request-item {
+		&.certified {
+			.item {
+				width: calc(50% - 20px);
 			}
 		}
 	}

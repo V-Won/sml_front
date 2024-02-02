@@ -5625,7 +5625,7 @@ input {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.4px;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .inspect-item-swiper {
@@ -13851,7 +13851,7 @@ input {
     margin-top: 24px;
   }
   .request-item.certified .item {
-    width: calc(50% - 20px);
+    width: 100%;
     padding: 40px;
   }
   .request-item.certified .item .title {
@@ -18433,6 +18433,9 @@ input {
   }
   .box-rhror .inner .list li:nth-child(4) {
     margin-top: 78px;
+  }
+  .request-item.certified .item {
+    width: calc(50% - 20px);
   }
 }
 /* //1600 이상 */
