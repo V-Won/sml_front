@@ -4408,6 +4408,7 @@ input {
 					display: block;
 					padding-top: 5px;
 					@include text-line-2;
+					word-break: break-all;
 				}
 			}
 			> ul {
@@ -5159,6 +5160,20 @@ input {
 			.btn-flex {
 				button {
 					width: 100%;
+				}
+			}
+		}
+	}
+	&.full-text {
+		.item {
+			.title {
+				-webkit-line-clamp: inherit !important;
+			}
+			.flex {
+				.text-box {
+					.txt {
+						-webkit-line-clamp: inherit !important;
+					}
 				}
 			}
 		}
@@ -6214,6 +6229,7 @@ input {
 						font-weight: 500;
 						line-height: 120%;
 						letter-spacing: 0.4px;
+						word-break: break-all;
 					}
 				}
 			}
@@ -17636,9 +17652,9 @@ input {
 			font-size: 40px;
 		}
 		.inner {
-			max-width: 1400px;
+			max-width: 1600px;
 			margin: 0 auto;
-			padding: 80px 0 38px 0;
+			padding: 80px 100px 38px 100px;
 			.left,
 			.right {
 				font-size: 16px;
@@ -17648,7 +17664,7 @@ input {
 			}
 			.left {
 				width: 60px;
-				left: 1px;
+				left: 100px;
 				bottom: 159px;
 				padding: 0 18px;
 				height: 448px;
@@ -17678,7 +17694,7 @@ input {
 			.right {
 				width: 185px;
 				height: 72px;
-				right: 0;
+				right: 100px;
 				bottom: 290px;
 				&::after {
 					content: "";
@@ -17896,7 +17912,8 @@ input {
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0.48) 100%);
 		}
 		.inner {
-			max-width: 1400px;
+			max-width: 1600px;
+			padding: 0 100px;
 			margin: 0 auto;
 			h6 {
 				font-size: 40px;
@@ -17919,11 +17936,14 @@ input {
 					& + li {
 					}
 					a {
-						padding: 0px 91px 0px 116px;
+						// padding: 0px 91px 0px 116px;
+						padding: 0;
 						font-size: 18px;
 						letter-spacing: 0.36px;
+						justify-content: center;
 						span {
 							padding: 0 0 0 56px;
+							min-width: fit-content;
 							&::after {
 								width: 24px;
 								height: 24px;
@@ -17945,10 +17965,10 @@ input {
 								}
 							}
 							&.dmlfhl {
-								padding-left: 0;
-								transform: translateX(30px);
-								min-width: 44px;
-								padding-left: 60px;
+								// padding-left: 0;
+								// transform: translateX(30px);
+								// min-width: 44px;
+								// padding-left: 60px;
 								&::after {
 								}
 							}
@@ -18310,7 +18330,8 @@ input {
 				gap: 60px;
 				align-self: stretch;
 				.box-img {
-					width: max(10vw, 670px);
+					// width: max(10vw, 670px);
+					width: calc(50% - 30px);
 					&::after {
 					}
 					img {
@@ -18323,7 +18344,9 @@ input {
 					}
 				}
 				.box-text-list {
+					width: calc(50% - 30px);
 					.list {
+						width: 100%;
 						h3 {
 							font-size: 30px;
 							letter-spacing: 0.6px;
@@ -18638,8 +18661,9 @@ input {
 					.img {
 						width: calc(25% - 9px);
 						height: 160px;
-						padding: 18px;
+						padding: 8px;
 						border-radius: 12px;
+						min-height: 160px;
 						img {
 							object-fit: contain;
 						}
@@ -20531,9 +20555,10 @@ input {
 			justify-content: space-between;
 			align-items: flex-start;
 			align-self: stretch;
-			gap: 72px 151px;
+			gap: 72px 150px;
 			> li {
-				flex: 1 1 20%;
+				// flex: 1 1 20%;
+				width: calc(33.3% - 100px);
 				&:nth-child(3) {
 					margin-right: 0;
 					&::after {
@@ -20779,6 +20804,8 @@ input {
 				.img-wrap {
 					.img {
 						height: 200px;
+						padding: 18px;
+						min-height: 200px;
 					}
 				}
 			}

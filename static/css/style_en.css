@@ -983,9 +983,6 @@
     font-size: 16px;
     letter-spacing: 0.32px;
   }
-  :lang(en) .box-dusgur .box-list-dusgur .box-flex .box-img {
-    flex: 0 0 35vw;
-  }
   :lang(en) .inspect-item-swiper .mySwiper1 .swiper-slide .text-box .flex .title {
     max-width: 117px;
   }
