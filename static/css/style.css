@@ -3953,6 +3953,7 @@ input {
   -webkit-line-clamp: 2;
 }
 .box-qna > ul > li > ul > li .text-2 {
+  width: 100%;
   color: #666;
   font-size: 12px;
   font-weight: 400;
@@ -3960,6 +3961,20 @@ input {
   letter-spacing: 0.4px;
   padding: 0 57px 0 12px;
   word-break: break-all;
+}
+.box-qna > ul > li > ul > li .text-2 > p {
+  width: 100%;
+}
+.box-qna > ul > li > ul > li .text-2 > p > span {
+  display: inline;
+  width: 100%;
+}
+.box-qna > ul > li > ul > li .text-2 > p > span i {
+  width: 100%;
+  display: block;
+}
+.box-qna > ul > li > ul > li .text-2 > p img {
+  width: 100%;
 }
 
 .box-top-search.padding-top-1 {
@@ -4041,6 +4056,7 @@ input {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  word-break: break-all;
 }
 .box-video > ul > li > a .text .text-2 {
   color: #999;
@@ -13285,6 +13301,13 @@ input {
     padding-left: 171px;
     padding-top: 23px;
   }
+  .box-qna > ul > li > ul > li .download-file > ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .box-qna > ul > li > ul > li .download-file > ul li {
+    margin-right: 0;
+  }
   .box-qna > ul > li > ul > li > button {
     flex-direction: row;
     align-items: center;
@@ -13406,6 +13429,10 @@ input {
   }
   .box-map-search .box-map.top-gap-1 {
     margin-top: 12px;
+  }
+  .box-map-search .box-map.top-gap-1 .map-ct > div {
+    height: 960px !important;
+    margin-left: 453px !important;
   }
   .box-map-search .box-map .list-ct {
     position: absolute;
@@ -13941,7 +13968,7 @@ input {
   .detail-search .detail-inner .chk-bottom {
     padding-top: 30px;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     border-top: 1px solid #d5d5d5;
   }
