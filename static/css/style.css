@@ -12109,6 +12109,9 @@ input {
     letter-spacing: 0.4px;
     padding: 0 1.5vw;
   }
+  .box-header .inner-gap-1 .inner .gnb-menu li a.is-active {
+    font-weight: bold !important;
+  }
   .box-header .inner-gap-1 .inner .btn-etc {
     padding-top: 11px;
     gap: 12px;
