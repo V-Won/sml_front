@@ -4204,7 +4204,6 @@ input {
   height: 100% !important;
 }
 .board-ct * {
-  color: #4d4d4d;
   line-height: 140%;
 }
 .board-ct .img-1 {
@@ -5352,7 +5351,6 @@ input {
 
 .board-ct.smlDocument * {
   font-family: "Pretendard";
-  color: #4d4d4d;
   font-size: 12px;
   font-weight: 500;
   line-height: 140%;
@@ -13037,9 +13035,6 @@ input {
     padding: 41px 24px 0 24px;
     overflow: hidden;
   }
-  .board-ct * {
-    color: #666;
-  }
   .board-ct .img-1 {
     margin: 40px 0;
   }
@@ -14466,7 +14461,6 @@ input {
   }
   .board-ct.smlDocument * {
     font-family: "Pretendard";
-    color: #4d4d4d;
     font-size: 12px;
     font-weight: 500;
     line-height: 140%;
