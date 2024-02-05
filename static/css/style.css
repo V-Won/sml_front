@@ -6999,9 +6999,9 @@ input {
 .q-controlSystem {
   width: 100%;
   padding: 60px 20px 100px;
-  background: url(../images/img/qc_system_bg.png) no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../images/img/qc_system_bg_mo.png) no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
 }
 .q-controlSystem > div {
   width: 100%;
@@ -7184,7 +7184,7 @@ input {
   background-position: 42% !important;
 }
 .q-controlEssential .flex-box .box:nth-child(2) .item.long {
-  background: #000;
+  background: url(../images/img/qc_essential_2_3.png) no-repeat;
 }
 .q-controlEssential .flex-box .box:nth-child(2) .item-inner .item:first-child {
   background: url(../images/img/qc_essential_2_1.png) no-repeat;
@@ -7416,7 +7416,7 @@ input {
 .box-listValue > ul > li .img-holder::after {
   content: "";
   display: block;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -10527,7 +10527,7 @@ input {
 .box-dlswotkd .inner ul li .img-holder::after {
   content: "";
   display: block;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.41%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.41%, rgba(0, 0, 0, 0.4) 100%);
   position: absolute;
   border-radius: 6px;
   top: 0;
@@ -15412,6 +15412,7 @@ input {
   }
   .q-controlSystem {
     padding: 80px 100px 120px;
+    background: url(../images/img/qc_system_bg.png) no-repeat;
   }
   .q-controlSystem > div {
     max-width: 1400px;
@@ -18110,8 +18111,8 @@ input {
     padding: 24px 40px;
   }
   .q-controlSystem .item-wrap .item .bot .dot-list li {
-    font-size: 24px;
-    letter-spacing: 0.48px;
+    font-size: 22px;
+    letter-spacing: 0.44px;
   }
   .request-step-top .step-box {
     justify-content: space-between;

@@ -124,10 +124,10 @@
 }
 :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li button.btn {
   color: #FFF;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 0.52px;
+  line-height: 130%;
+  letter-spacing: 0.36px;
   text-transform: uppercase;
   background-color: transparent;
   border: 0;
@@ -137,10 +137,48 @@
   top: 41px;
 }
 :lang(en) .gray-bg {
+  margin-top: -136px;
+  padding-top: 207px;
   padding-bottom: 62px;
+}
+:lang(en) .common-title-1 {
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 130%;
+  letter-spacing: 0.56px;
+  padding-bottom: 19px;
+}
+:lang(en) .main-news .common-title-1 {
+  padding-bottom: 19px;
+}
+:lang(en) .main-news .main-news-swiper .swiper-slide .text-box .tag {
+  font-weight: 600;
+  line-height: 130%;
+}
+:lang(en) .main-news .main-news-swiper .swiper-slide .text-box .txt-1 {
+  font-weight: 600;
+  margin: 11px 0 17px 0;
+}
+:lang(en) .main-academic {
+  padding-top: 60px;
+}
+:lang(en) .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .txt-1 {
+  margin-bottom: 12px;
+}
+:lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide .text-box {
+  transform: translateY(calc(-50% - 6px));
 }
 :lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-1 {
   text-transform: uppercase;
+  line-height: 130%;
+}
+:lang(en) .main-smlAbout .inner-gap-1 {
+  padding-top: 59px;
+}
+:lang(en) .main-smlAbout .inner-gap-1 .smlAbout-swiper .swiper-slide .text-box .txt-2 {
+  line-height: 130%;
+  letter-spacing: 0.48px;
+  margin-bottom: 13px;
 }
 :lang(en) .smlNews-list.gap-type-1 {
   margin-top: 22px;
@@ -828,8 +866,20 @@
   :lang(en) .main-kv-swiper .box-swiperControl {
     bottom: 250px;
   }
+  :lang(en) .common-title-1 {
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0.64px;
+    padding-bottom: 22px;
+  }
   :lang(en) .main-inspectionSearch .inner-gap-1 .gap {
     padding: 52px 20px 18px 20px;
+  }
+  :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li button.btn {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.52px;
   }
   :lang(en) .main-inspectionSearch .inner-gap-1 .gap > ul > li button.btn-search {
     width: 169px;
@@ -870,12 +920,48 @@
     margin-top: -121px;
     padding-bottom: 118px;
   }
+  :lang(en) .main-news .main-news-swiper .swiper-slide .text-box .tag {
+    font-weight: 500;
+    letter-spacing: 0.32px;
+  }
+  :lang(en) .main-news .main-news-swiper .swiper-slide .text-box .txt-1 {
+    font-weight: 500;
+  }
+  :lang(en) .main-academic {
+    padding-top: 125px;
+  }
   :lang(en) .main-academic .academic-sort .sort-wrap .common-swiper-button-prev-1,
   :lang(en) .main-academic .academic-sort .sort-wrap .common-swiper-button-next-1 {
     top: -61px;
   }
   :lang(en) .main-academic .academic-sort .sort-wrap .common-swiper-pagination-1 {
     top: -50px;
+  }
+  :lang(en) .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .txt-1 {
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  :lang(en) .main-academic .academic-sort .sort-wrap .academic-swiper .swiper-slide .text-box .txt-2 {
+    line-height: 150%;
+  }
+  :lang(en) .main-smlSpecialty {
+    padding-top: 119px;
+  }
+  :lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide .text-box {
+    transform: translateY(-50%);
+  }
+  :lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-1 {
+    text-transform: none;
+  }
+  :lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-2 {
+    line-height: 120%;
+    padding-top: 16px;
+  }
+  :lang(en) .main-smlAbout .inner-gap-1 {
+    padding-top: 121px;
+  }
+  :lang(en) .main-smlAbout .inner-gap-1 .common-title-1 {
+    padding-bottom: 23px;
   }
   :lang(en) .sub-top .text-box .sub-tit {
     letter-spacing: 1.04px;

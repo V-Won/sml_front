@@ -7789,9 +7789,9 @@ input {
 .q-controlSystem {
 	width: 100%;
 	padding: 60px 20px 100px;
-	background: url(../images/img/qc_system_bg.png) no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: url(../images/img/qc_system_bg_mo.png) no-repeat;
+	background-position: center !important;
+	background-size: cover !important;
 	> div {
 		width: 100%;
 		position: relative;
@@ -7831,7 +7831,7 @@ input {
 			.top {
 				width: 100%;
 				padding: 20px;
-				border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.50);
 				.en {
 					color: #fff;
 					font-size: 14px;
@@ -7985,7 +7985,7 @@ input {
 			&:nth-child(2) {
 				.item {
 					&.long {
-						background: #000;
+						background: url(../images/img/qc_essential_2_3.png) no-repeat;
 					}
 				}
 				.item-inner {
@@ -8300,7 +8300,7 @@ input {
 				&::after {
 					content: "";
 					display: block;
-					background: rgba(0, 0, 0, 0.3);
+					background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%);
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -11782,8 +11782,7 @@ input {
 					&::after {
 						content: "";
 						display: block;
-						background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.41%, rgba(0, 0, 0, 0.4) 100%),
-							linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+						background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 51.41%, rgba(0, 0, 0, 0.40) 100%);
 						position: absolute;
 						border-radius: 6px;
 						top: 0;
@@ -17506,6 +17505,7 @@ input {
 	}
 	.q-controlSystem {
 		padding: 80px 100px 120px;
+		background: url(../images/img/qc_system_bg.png) no-repeat;
 		> div {
 			max-width: 1400px;
 			margin: 0 auto;
@@ -20812,8 +20812,8 @@ input {
 					padding: 24px 40px;
 					.dot-list {
 						li {
-							font-size: 24px;
-							letter-spacing: 0.48px;
+							font-size: 22px;
+							letter-spacing: 0.44px;
 						}
 					}
 				}
