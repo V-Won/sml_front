@@ -6102,12 +6102,15 @@ a {
 							padding: 0 0 14px 0;
 						}
 						.txt-2 {
-							color: #666;
+							color: #666 !important;
 							font-size: 12px;
 							font-weight: 500;
 							line-height: 140%;
 							letter-spacing: 0.24px;
 							padding: 0 0 17px 0;
+							*{
+								color: #666 !important;
+							}
 						}
 						.list-btn {
 							display: flex;
@@ -16515,9 +16518,12 @@ a {
 									padding-bottom: 26px;
 								}
 								.txt-2 {
-									color: #fff;
+									color: #fff !important;
 									display: block;
 									padding-bottom: 40px;
+									*{
+										color: #fff !important;
+									}
 								}
 								.list-btn {
 									display: flex;

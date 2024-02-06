@@ -5487,12 +5487,15 @@ a.common-btnType-4 {
   padding: 0 0 14px 0;
 }
 .box-smart-view .box-option-list .gap > ul > li .box-show .txt-2 {
-  color: #666;
+  color: #666 !important;
   font-size: 12px;
   font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.24px;
   padding: 0 0 17px 0;
+}
+.box-smart-view .box-option-list .gap > ul > li .box-show .txt-2 * {
+  color: #666 !important;
 }
 .box-smart-view .box-option-list .gap > ul > li .box-show .list-btn {
   display: flex;
@@ -14582,9 +14585,12 @@ a.common-btnType-4 {
     padding-bottom: 26px;
   }
   .box-smart-view .box-option-list .gap > ul > li:hover .box-show .txt-2 {
-    color: #fff;
+    color: #fff !important;
     display: block;
     padding-bottom: 40px;
+  }
+  .box-smart-view .box-option-list .gap > ul > li:hover .box-show .txt-2 * {
+    color: #fff !important;
   }
   .box-smart-view .box-option-list .gap > ul > li:hover .box-show .list-btn {
     display: flex;
