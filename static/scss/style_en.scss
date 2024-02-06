@@ -1754,6 +1754,7 @@
 					.gap {
 						.text {
 							.btn-flex {
+								gap: 12px;
 								button {
 									max-width: 134px;
 								}
@@ -2339,6 +2340,21 @@
 						.btn-etc {
 							.btn-search {
 								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// 고객서비스 > SML 새소식 > SML 홍보실 > 브로슈어
+		.box-tbdj {
+			ul {
+				li {
+					.gap {
+						.text {
+							.btn-flex {
+								gap: 24px;
 							}
 						}
 					}
