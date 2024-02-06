@@ -1445,6 +1445,11 @@ input {
   transform: translate(-50%, -50%);
 }
 
+a.common-btnType-4 {
+  padding: 8px 10px 7px 20px;
+  width: fit-content;
+}
+
 .common-moveBtn {
   display: block;
   width: fit-content;
@@ -11430,6 +11435,9 @@ input {
   .common-btnType-4 span::after {
     width: 18px;
     height: 19px;
+  }
+  a.common-btnType-4 {
+    padding: 7px 6px 7px 15px;
   }
   .common-moveBtn {
     height: 64px;
