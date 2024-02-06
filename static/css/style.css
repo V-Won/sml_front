@@ -3290,7 +3290,7 @@ a.common-btnType-4 {
   transform: translateY(calc(-50% + 5px));
   left: 0;
   right: 0;
-  padding: 0 20px;
+  padding: 0 12px;
 }
 .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-1 {
   text-overflow: ellipsis;
