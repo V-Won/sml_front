@@ -7630,7 +7630,7 @@ a.common-btnType-4 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.36) -22.4%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0.48) 100%);
 }
 .irb-tel .inner {
   position: relative;
@@ -8808,7 +8808,6 @@ a.common-btnType-4 {
   margin-bottom: -100px;
   width: 100%;
   position: relative;
-  background: #fcfcfc;
   padding: 0 0 83px;
 }
 .preserve-infoTab > div {
@@ -8819,6 +8818,7 @@ a.common-btnType-4 {
   margin: 0 auto;
 }
 .preserve-infoTab > div h5 {
+  color: var(--Primary-04, #4D4D4D);
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
