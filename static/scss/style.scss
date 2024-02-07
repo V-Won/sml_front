@@ -10093,6 +10093,9 @@ a {
 			font-weight: 600;
 			line-height: 130%;
 			letter-spacing: 0.28px;
+			min-height: 36.38px;
+			display: flex;
+			align-items: center;
 		}
 		& + .inner {
 			margin-top: 56px;
@@ -18940,6 +18943,7 @@ a {
 			.step-tit {
 				font-size: 18px;
 				letter-spacing: 0.36px;
+				min-height: 45.47px;
 			}
 			& + .inner {
 				margin-top: 0;

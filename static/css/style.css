@@ -9008,6 +9008,9 @@ a.common-btnType-4 {
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 0.28px;
+  min-height: 36.38px;
+  display: flex;
+  align-items: center;
 }
 .csf-stepBox .inner + .inner {
   margin-top: 56px;
@@ -16558,6 +16561,7 @@ a.common-btnType-4 {
   .csf-stepBox .inner .step-tit {
     font-size: 18px;
     letter-spacing: 0.36px;
+    min-height: 45.47px;
   }
   .csf-stepBox .inner + .inner {
     margin-top: 0;
