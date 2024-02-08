@@ -11015,7 +11015,8 @@ a.common-btnType-4 {
   flex-direction: column;
   gap: 12px;
 }
-.box-tbdj ul li .gap .text .btn-flex button {
+.box-tbdj ul li .gap .text .btn-flex button,
+.box-tbdj ul li .gap .text .btn-flex a {
   border-radius: 999px;
   border: 1px solid var(--gray-03-line, #d5d5d5);
   background: #fff;
@@ -11027,11 +11028,13 @@ a.common-btnType-4 {
   padding: 7px 20px;
   max-width: 103px;
 }
-.box-tbdj ul li .gap .text .btn-flex button span {
+.box-tbdj ul li .gap .text .btn-flex button span,
+.box-tbdj ul li .gap .text .btn-flex a span {
   position: relative;
   padding-left: 17px;
 }
-.box-tbdj ul li .gap .text .btn-flex button span::after {
+.box-tbdj ul li .gap .text .btn-flex button span::after,
+.box-tbdj ul li .gap .text .btn-flex a span::after {
   content: "";
   display: block;
   clear: both;
@@ -17803,12 +17806,14 @@ a.common-btnType-4 {
     flex-direction: column;
     gap: 24px;
   }
-  .box-tbdj ul li .gap .text .btn-flex button {
+  .box-tbdj ul li .gap .text .btn-flex button,
+  .box-tbdj ul li .gap .text .btn-flex a {
     font-size: 14px;
     max-width: 120px;
     padding: 7px 17px 7px 21px;
   }
-  .box-tbdj ul li .gap .text .btn-flex button span::after {
+  .box-tbdj ul li .gap .text .btn-flex button span::after,
+  .box-tbdj ul li .gap .text .btn-flex a span::after {
     width: 18px;
     height: 18px;
     background-repeat: no-repeat;

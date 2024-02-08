@@ -545,7 +545,8 @@
 				.gap {
 					.text {
 						.btn-flex {
-							button {
+							button,
+							a {
 								max-width: 118px;
 							}
 						}
@@ -1755,7 +1756,8 @@
 						.text {
 							.btn-flex {
 								gap: 12px;
-								button {
+								button,
+								a {
 									max-width: 134px;
 								}
 							}

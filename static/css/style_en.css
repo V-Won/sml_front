@@ -271,7 +271,8 @@
   line-height: 130%; /* 20.8px */
   letter-spacing: 0.32px;
 }
-:lang(en) .box-tbdj ul li .gap .text .btn-flex button {
+:lang(en) .box-tbdj ul li .gap .text .btn-flex button,
+:lang(en) .box-tbdj ul li .gap .text .btn-flex a {
   max-width: 118px;
 }
 :lang(en) .box-altus-2 .content .top-text h5 {
@@ -1089,7 +1090,8 @@
   :lang(en) .box-tbdj ul li .gap .text .btn-flex {
     gap: 12px;
   }
-  :lang(en) .box-tbdj ul li .gap .text .btn-flex button {
+  :lang(en) .box-tbdj ul li .gap .text .btn-flex button,
+  :lang(en) .box-tbdj ul li .gap .text .btn-flex a {
     max-width: 134px;
   }
 }
