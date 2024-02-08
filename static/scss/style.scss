@@ -15561,6 +15561,7 @@ a {
 					.text-box {
 						order: 1;
 						width: calc(100% - 260px);
+						
 						li {
 							gap: 0 20px;
 							min-width: 400px;
@@ -15580,6 +15581,7 @@ a {
 									width: calc(100% - 140px);
 									-webkit-line-clamp: 5;
 									padding-right:10px;
+									word-break: break-all;
 								}
 							}
 						}

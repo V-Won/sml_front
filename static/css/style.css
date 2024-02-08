@@ -13782,6 +13782,7 @@ a.common-btnType-4 {
     width: calc(100% - 140px);
     -webkit-line-clamp: 5;
     padding-right: 10px;
+    word-break: break-all;
   }
   .request-swiper .mySwiper1 .swiper-button-next,
   .request-swiper .mySwiper1 .swiper-button-prev {
