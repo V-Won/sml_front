@@ -6923,10 +6923,59 @@ a {
 			width: 100%;
 			max-width: 222px;
 			margin: 0 auto;
+			position: relative;
 			img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+			}
+			.text-box {
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+				.tit {
+					color: var(--Primary-05, #FFF);
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 130%;
+					letter-spacing: 0.36px;
+					padding-bottom: 12px;
+					position: relative;
+					span {
+						color: var(--Primary-05, #FFF);
+						font-size: 20px;
+						font-weight: 700;
+						line-height: 130%;
+						letter-spacing: 0.4px;
+					}
+					&::after {
+						content: '';
+						width: 150px;
+						height: 1px;
+						background: #fff;
+						position: absolute;
+						bottom: 6px;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+				.txt {
+					color: var(--Primary-05, #FFF);
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 150%;
+					letter-spacing: 0.24px;
+					span {
+						color: var(--Primary-05, #FFF);
+						font-size: 12px;
+						font-weight: 700;
+						line-height: 150%;
+						letter-spacing: 0.24px;
+					}
+				}
 			}
 		}
 		.tit-item {
@@ -17368,6 +17417,14 @@ a {
 	}
 	.tab-labSpecial {
 		margin-bottom: -120px;
+		.center-img {
+			.pc-show {
+				display: none;
+			}
+			.mo-show {
+				display: block;
+			}
+		}
 		.table-bg {
 			padding: 0 100px;
 			.box-common-tabTableSwiper {
@@ -21445,6 +21502,37 @@ a {
 			margin-bottom: 120px;
 			.center-img {
 				max-width: 540px;
+				.pc-show {
+					display: block;
+				}
+				.mo-show {
+					display: none;
+				}
+				.text-box {
+					transform: translate(-50%, -59%);
+					.tit {
+						font-size: 30px;
+						letter-spacing: 0.6px;
+						padding-bottom: 57px;
+						span {
+							font-size: 30px;
+							letter-spacing: 0.6px;
+						}
+						&::after {
+							width: 400px;
+							bottom: 28px;
+							opacity: 0.36;
+						}
+					}
+					.txt {
+						font-size: 20px;
+						letter-spacing: 0.4px;
+						span {
+							font-size: 20px;
+							letter-spacing: 0.4px;
+						}
+					}
+				}
 			}
 			.tit-item {
 				.icon {

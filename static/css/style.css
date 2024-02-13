@@ -6246,11 +6246,60 @@ a.common-btnType-4 {
   width: 100%;
   max-width: 222px;
   margin: 0 auto;
+  position: relative;
 }
 .tab-labSpecial .tit-posi .center-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.tab-labSpecial .tit-posi .center-img .text-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.tab-labSpecial .tit-posi .center-img .text-box .tit {
+  color: var(--Primary-05, #FFF);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+  padding-bottom: 12px;
+  position: relative;
+}
+.tab-labSpecial .tit-posi .center-img .text-box .tit span {
+  color: var(--Primary-05, #FFF);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+}
+.tab-labSpecial .tit-posi .center-img .text-box .tit::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tab-labSpecial .tit-posi .center-img .text-box .txt {
+  color: var(--Primary-05, #FFF);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+}
+.tab-labSpecial .tit-posi .center-img .text-box .txt span {
+  color: var(--Primary-05, #FFF);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.24px;
 }
 .tab-labSpecial .tit-posi .tit-item {
   width: 100px;
@@ -15300,6 +15349,12 @@ a.common-btnType-4 {
   .tab-labSpecial {
     margin-bottom: -120px;
   }
+  .tab-labSpecial .center-img .pc-show {
+    display: none;
+  }
+  .tab-labSpecial .center-img .mo-show {
+    display: block;
+  }
   .tab-labSpecial .table-bg {
     padding: 0 100px;
   }
@@ -18626,6 +18681,37 @@ a.common-btnType-4 {
   }
   .tab-labSpecial .tit-posi .center-img {
     max-width: 540px;
+  }
+  .tab-labSpecial .tit-posi .center-img .pc-show {
+    display: block;
+  }
+  .tab-labSpecial .tit-posi .center-img .mo-show {
+    display: none;
+  }
+  .tab-labSpecial .tit-posi .center-img .text-box {
+    transform: translate(-50%, -59%);
+  }
+  .tab-labSpecial .tit-posi .center-img .text-box .tit {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    padding-bottom: 57px;
+  }
+  .tab-labSpecial .tit-posi .center-img .text-box .tit span {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+  .tab-labSpecial .tit-posi .center-img .text-box .tit::after {
+    width: 400px;
+    bottom: 28px;
+    opacity: 0.36;
+  }
+  .tab-labSpecial .tit-posi .center-img .text-box .txt {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+  .tab-labSpecial .tit-posi .center-img .text-box .txt span {
+    font-size: 20px;
+    letter-spacing: 0.4px;
   }
   .tab-labSpecial .tit-posi .tit-item .icon {
     width: 220px;
