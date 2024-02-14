@@ -13828,6 +13828,9 @@ a.common-btnType-4 {
   .box-map-search .box-map .list-ct .box-search-list > ul > li .common-btnMap-1 {
     display: none;
   }
+  .box-map-search .box-map .list-ct .common-noData {
+    height: 100%;
+  }
   .box-map-search .box-map .common-paging {
     border-top: 1px solid #d5d5d5;
     background-color: #fff;
