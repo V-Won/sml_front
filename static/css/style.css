@@ -1929,7 +1929,7 @@ a.common-btnType-4 {
   background-position: center;
   margin-bottom: 60px;
 }
-.sub-top::before {
+.sub-top.bg-fff::before {
   content: "";
   width: 100%;
   height: 100%;
