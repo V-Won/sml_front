@@ -22072,6 +22072,20 @@ a {
 			}
 		}
 	}
+
+	.tab-labSpecial {
+		.group-chart {
+			.groupChart-acc {
+				> ul {
+					> li {
+						&::before {
+							width: 300px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 /* //1600 이상 */
 

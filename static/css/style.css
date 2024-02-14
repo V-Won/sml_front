@@ -19095,6 +19095,9 @@ a.common-btnType-4 {
     width: 206px;
     right: -206px;
   }
+  .tab-labSpecial .group-chart .groupChart-acc > ul > li::before {
+    width: 300px;
+  }
 }
 /* //1600 이상 */
 @media print {
