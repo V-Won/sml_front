@@ -928,4 +928,8 @@ const headerBg = (item) => {
 			document.querySelector('.sub-top').classList.add('bg-fff'); // white 모드 sub 배너
 		}, 100)
 	}
+
+	setTimeout(() => {
+		document.querySelector('.sub-top').style.display = 'block';
+	}, 200)
 }

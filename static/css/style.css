@@ -1928,8 +1928,9 @@ a.common-btnType-4 {
   background-size: cover !important;
   background-position: center;
   margin-bottom: 60px;
+  display: none;
 }
-.sub-top.bg-fff::before {
+.sub-top::before {
   content: "";
   width: 100%;
   height: 100%;
