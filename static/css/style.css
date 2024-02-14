@@ -4211,6 +4211,10 @@ a.common-btnType-4 {
 .board-ct * {
   line-height: 140%;
 }
+.board-ct img {
+  width: auto;
+  max-width: 100%;
+}
 .board-ct .img-1 {
   margin: 20px 0;
   width: 100%;
@@ -4307,7 +4311,7 @@ a.common-btnType-4 {
   width: 100%;
 }
 .border-prev-next ul li.new a {
-  padding-right: 40px;
+  padding-right: 36px;
 }
 .border-prev-next ul li a {
   padding: 22px 33px 21px 86px;
@@ -4343,6 +4347,11 @@ a.common-btnType-4 {
 .border-prev-next ul li a .btn.next::after {
   transform: translateY(-50%) rotate(-180deg);
 }
+.border-prev-next ul li a .gap {
+  position: relative;
+  width: fit-content;
+  display: block;
+}
 .border-prev-next ul li a .text {
   overflow: hidden;
   color: #4d4d4d;
@@ -4359,11 +4368,12 @@ a.common-btnType-4 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   min-height: 19.59px;
+  width: fit-content;
 }
 .border-prev-next ul li a .icon-new {
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: -24px;
   transform: translateY(-50%);
 }
 .border-prev-next ul li .day {
@@ -13426,7 +13436,8 @@ a.common-btnType-4 {
   }
   .border-prev-next ul li a .gap .icon-new {
     position: absolute;
-    top: 9px;
+    top: 50%;
+    transform: translateY(-50%);
     right: -30px;
   }
   .border-prev-next ul li a .day {

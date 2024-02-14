@@ -4737,6 +4737,10 @@ a {
 		// 어드민 이슈로 삭제 color: #4d4d4d;
 		line-height: 140%;
 	}
+	img {
+		width: auto;
+		max-width: 100%;
+	}
 	.img-1 {
 		margin: 20px 0;
 		width: 100%;
@@ -4829,7 +4833,7 @@ a {
 			width: 100%;
 			&.new {
 				a {
-					padding-right: 40px;
+					padding-right: 36px;
 				}
 			}
 			a {
@@ -4869,6 +4873,11 @@ a {
 						}
 					}
 				}
+				.gap {
+					position: relative;
+					width: fit-content;
+					display: block;
+				}
 				.text {
 					overflow: hidden;
 					color: #4d4d4d;
@@ -4881,11 +4890,12 @@ a {
 					letter-spacing: 0.4px;
 					@include text-line-1;
 					min-height: 19.59px;
+					width: fit-content;
 				}
 				.icon-new {
 					position: absolute;
 					top: 50%;
-					right: 12px;
+					right: -24px;
 					transform: translateY(-50%);
 				}
 			}
@@ -15159,7 +15169,8 @@ a {
 							// top: 10px;
 							// left: 8px;
 							position: absolute;
-							top: 9px;
+							top: 50%;
+							transform: translateY(-50%);
 							right: -30px;
 						}
 					}
