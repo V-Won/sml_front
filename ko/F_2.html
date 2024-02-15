@@ -465,8 +465,14 @@
         });
 
         // // mySwiper swiper item 5개 이하라면 중앙 정렬.
-        let swiperCnt = document.querySelectorAll('.mySwiper2 .swiper-slide').length;
-        swiperCnt <= 5 ? document.querySelector('.mySwiper2').classList.add('cnt-5') : null;
+        const cntClass = () => {
+          let swiperCnt = document.querySelectorAll('.mySwiper2 .swiper-slide').length;
+          swiperCnt <= 5 ? document.querySelector('.mySwiper2 .swiper-wrapper').classList.add('cnt-5') : null;
+        }
+
+        setTimeout(() => {
+          cntClass();
+        }, 200)
       })
     })
   </script>
