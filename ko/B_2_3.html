@@ -196,35 +196,35 @@
   <!-- 검체용기 일람 레이어 팝업 -->
   <div class="box-layer layer-video request" id="ly-1"><!-- 비디오 레이어 팝업 class="layer-video" -->
     <div class="inner-layer" tabindex="0">
-      <div class="gap" style="max-width: 800px;"><!-- max-width 설정 -->
+      <div class="gap" style="max-width: 920px;"><!-- max-width 설정 -->
         <div class="box">
           <!-- request-swiper -->
           <div class="request-swiper">
             <div class="swiper mySwiper1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <p class="tit">Sodium Citrate</p>
+                  <p class="tit">중금속 전용용기 EDTA (Trace element EDTA tube)</p>
                   <div class="flex">
                     <ul class="text-box">
                       <li>
                         <p class="left">첨가제</p>
-                        <p class="right">Sodium Citrate (3.2%)</p>
+                        <p class="right">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사</p>
                       </li>
                       <li>
                         <p class="left">주요검사항목</p>
-                        <p class="right">응고관련검사</p>
+                        <p class="right">Arsenic (As)/ Cadmium (Cd) / Lead (Pb) / Chromium (Cr) Mangane (Mn)/ Mercury (Hg)/ Selenium / (Se) Cobalt (Co)</p>
                       </li>
                       <li>
                         <p class="left">채취량</p>
-                        <p class="right">2.7mL</p>
+                        <p class="right">흰색용기: 13C 복용 전 호흡채취 / 파란색용기: 복용 20분 후 호흡채취</p>
                       </li>
                       <li>
                         <p class="left">보관</p>
-                        <p class="right">실온</p>
+                        <p class="right">채취 전: 냉장 / 채취 후: 전처리 분리 후 냉장</p>
                       </li>
                       <li>
                         <p class="left">참고사항</p>
-                        <p class="right">-</p>
+                        <p class="right">채혈 직전 냉장고에서 용기를 꺼내 환자정보, 채혈시간, 배양시작 시간을 기재 후 채혈합니다. 채혈 후 상하로 부드럽게 혼합 후 반드시 용기를 세워 37℃, 20~24시간 배양합니다. 배양 후 가능한 상청액이 혈구와 혼합되지 않도록하여 새 용기(1.5mL tube)에 옮겨 의뢰해 주십시오.</p>
                       </li>
                     </ul>
                     <div class="img-holder">
@@ -546,6 +546,7 @@
         var swiper1 = new Swiper(".mySwiper1", { // 상단 본문 이미지
           spaceBetween: 20,
           loop: false,
+          autoHeight : true,
           loopedSlides: 1,
           slidesPerView: 1,
           thumbs: {
