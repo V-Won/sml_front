@@ -682,6 +682,9 @@ input {
   opacity: 1;
   pointer-events: all;
 }
+.box-header.is-search .inner-gap-1 {
+  background: #fff;
+}
 .box-header.is-search .search-wrap {
   opacity: 1;
   pointer-events: all;
@@ -12977,6 +12980,7 @@ a.common-btnType-4 {
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0.4px;
+    white-space: nowrap;
   }
   .box-footer .inner .ft-bottom .right {
     display: flex;

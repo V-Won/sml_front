@@ -801,6 +801,9 @@ input {
 		}
 	}
 	&.is-search {
+		.inner-gap-1 {
+			background: #fff;
+		}
 		.search-wrap {
 			opacity: 1;
 			pointer-events: all;
@@ -14597,6 +14600,7 @@ a {
 							font-size: 14px;
 							line-height: 100%;
 							letter-spacing: 0.4px;
+							white-space: nowrap;
 						}
 					}
 				}
