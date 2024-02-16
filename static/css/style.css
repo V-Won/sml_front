@@ -11173,7 +11173,7 @@ a.common-btnType-4 {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 40px 0 100px;
 }
 .box-rhror .inner .list-btn a {
   display: block;
@@ -11202,19 +11202,16 @@ a.common-btnType-4 {
   content: "";
   display: block;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M12.5 4L11.09 5.41L16.67 11H4.5V13H16.67L11.09 18.59L12.5 20L20.5 12L12.5 4Z' fill='white'/%3E%3C/svg%3E");
-  width: 25px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   position: absolute;
   top: 50%;
-  right: -3px;
+  right: 0;
   transform: translateY(-50%);
-  background-size: auto;
+  background-size: cover !important;
   background-repeat: no-repeat;
 }
 
-.box-foqxndj {
-  padding: 60px 0 0;
-}
 .box-foqxndj .top h4 {
   color: var(--Primary-04, #4d4d4d);
   font-size: 20px;
@@ -11327,7 +11324,7 @@ a.common-btnType-4 {
   letter-spacing: 0.32px;
 }
 .box-foqxndj .btn-1 {
-  max-width: 186px;
+  width: fit-content;
   margin: 29px auto 0 auto;
   color: #fff;
   font-size: 14px;
@@ -11342,14 +11339,30 @@ a.common-btnType-4 {
   border-radius: 999px;
   background: var(--Primary-01, #006477);
 }
+.box-foqxndj .btn-1 span {
+  padding-right: 22px;
+  position: relative;
+}
+.box-foqxndj .btn-1 span::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M8.0013 2.66602L7.0613 3.60602L10.7813 7.33268H2.66797V8.66602H10.7813L7.0613 12.3927L8.0013 13.3327L13.3346 7.99935L8.0013 2.66602Z' fill='white'/%3E%3C/svg%3E");
+  background-size: cover !important;
+  background-position: center !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
 .box-foqxndj .bottom-text {
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   color: #999;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 150%; /* 18px */
-  letter-spacing: 0.24px;
+  letter-spacing: 0.28px;
 }
 .box-foqxndj .bottom-text a {
   text-decoration-line: underline;
@@ -18354,7 +18367,7 @@ a.common-btnType-4 {
     padding-top: 80px;
   }
   .box-rhror .inner .list-btn a {
-    width: 200px;
+    width: 220px;
     margin: 0;
     font-size: 20px;
     font-weight: 600;
@@ -18363,12 +18376,19 @@ a.common-btnType-4 {
     padding-left: 32px;
     padding-right: 32px;
   }
+  .box-rhror .inner .list-btn a span {
+    padding-right: 30px;
+  }
+  .box-rhror .inner .list-btn a span::after {
+    width: 24px;
+    height: 24px;
+  }
   .box-foqxndj {
     padding-top: 79px;
   }
   .box-foqxndj .top h4 {
     font-size: 40px;
-    letter-spacing: 0.044em;
+    letter-spacing: 0.8px;
     padding-bottom: 24px;
   }
   .box-foqxndj .top .text-1 {
@@ -18418,14 +18438,22 @@ a.common-btnType-4 {
     letter-spacing: 0.36px;
   }
   .box-foqxndj .btn-1 {
-    padding: 20px 24px;
+    padding: 20px 32px;
     gap: 6px;
     font-size: 20px;
     letter-spacing: 0.4px;
     max-width: fit-content;
   }
+  .box-foqxndj .btn-1 span {
+    padding-right: 30px;
+  }
+  .box-foqxndj .btn-1 span::after {
+    width: 24px;
+    height: 24px;
+  }
   .box-foqxndj .bottom-text {
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 0.32px;
     padding-top: 20px;
   }
   .box-tbdj ul {
