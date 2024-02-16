@@ -269,7 +269,11 @@
         var hrefRe = href.replace('#', '');
         var location = document.getElementById(hrefRe).offsetTop + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight - 100;
         //window.scrollTo({ top: location, behavior: "smooth" });
-        window.scrollTo({ top: location});
+        if (window.innerWidth >= 1024) {
+          window.scrollTo({ top: location });
+        } else {
+          window.scrollTo({ top: location + 100 });
+        }
       });
     });
 

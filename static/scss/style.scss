@@ -4428,7 +4428,7 @@ a {
 					background-repeat: no-repeat;
 					background-position: center;
 					position: absolute;
-					top: 47px;
+					top: 43px;
 					right: 12px;
 					transition: all 0.4s;
 				}
@@ -4436,17 +4436,17 @@ a {
 					color: var(--Primary-01, #006477);
 					font-size: 14px;
 					font-weight: 500;
-					line-height: 24px;
+					line-height: 150%;
 					letter-spacing: 0.4px;
 				}
 				.text-1 {
 					color: #4d4d4d;
 					font-size: 14px;
 					font-weight: 500;
-					line-height: 140%;
+					line-height: 150%;
 					letter-spacing: 0.4px;
 					display: block;
-					padding-top: 5px;
+					padding-top: 3px;
 					@include text-line-2;
 					word-break: break-all;
 				}
@@ -15418,7 +15418,7 @@ a {
 				> button {
 					flex-direction: row;
 					align-items: flex-start;
-					padding: 29px 135px 29px 123px;
+					padding: 27px 135px 27px 123px;
 					height: auto;
 					&::after {
 						width: 36px;
@@ -15428,11 +15428,11 @@ a {
 						right: 40px;
 					}
 					.tit {
-						flex: 0 0 217px;
+						flex: 0 0 137px;
 						text-align: center;
 						font-size: 18px;
 						line-height: 140%;
-						letter-spacing: 0.4px;
+						letter-spacing: 0.36px;
 					}
 					.text-1 {
 						flex: 1 1 content;
@@ -15451,7 +15451,7 @@ a {
 						position: relative;
 						padding: 0 0 40px 188px;
 						.download-file {
-							padding-left: 171px;
+							padding-left: 92px;
 							padding-top: 23px;
 							> ul {
 								flex-wrap: wrap;
@@ -15486,7 +15486,7 @@ a {
 							font-size: 18px;
 							line-height: 140%;
 							letter-spacing: 0.4px;
-							padding-left: 172px;
+							padding-left: 92px;
 							padding-top: 0;
 							padding-right: 135px;
 						}
@@ -16798,11 +16798,6 @@ a {
 				font-weight: 500;
 				line-height: 140%;
 				letter-spacing: 0.4px;
-			}
-
-			img {
-				border: 1px solid #d5d5d5;
-				max-width: 633px;
 			}
 		}
 	}
@@ -20756,7 +20751,7 @@ a {
 				height: 100%;
 				background: no-repeat 50% 50% / cover;
 				z-index: 0;
-				background-attachment: fixed;
+				// background-attachment: fixed;
 				transition: opacity 0.5s;
 				opacity: 0;
 				&:nth-child(1) {
