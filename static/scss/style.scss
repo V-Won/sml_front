@@ -801,9 +801,6 @@ input {
 		}
 	}
 	&.is-search {
-		.inner-gap-1 {
-			background: #fff;
-		}
 		.search-wrap {
 			opacity: 1;
 			pointer-events: all;
@@ -5163,6 +5160,11 @@ a {
 				height: 126px;
 				padding-top: 0;
 				margin: 0 auto 24px;
+				> a {
+					width: 100%;
+					height: 100%;
+					padding-top: 0;
+				}
 			}
 		}
 		.btn-flex {
@@ -6287,6 +6289,11 @@ a {
 							height: 132px;
 							padding-top: 0;
 							margin: 0 auto;
+							> a {
+								width: 100%;
+								height: 100%;
+								padding-top: 0;
+							}
 						}
 					}
 					.btn-flex {
@@ -14499,6 +14506,9 @@ a {
 			}
 		}
 		&.is-search {
+			.inner-gap-1 {
+				background: #fff;
+			}
 			.dim {
 				opacity: 0.6;
 				background: #000;

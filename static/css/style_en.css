@@ -730,6 +730,9 @@
   :lang(en) .box-header.is-search {
     border-bottom: none;
   }
+  :lang(en) .box-header.is-search .inner-gap-1 {
+    background: transparent;
+  }
   :lang(en) .box-header.is-search .inner .logo {
     display: none;
   }
@@ -1509,6 +1512,9 @@
     bottom: 0;
     display: block;
     pointer-events: all;
+  }
+  :lang(en) .box-header.is-search .inner-gap-1 {
+    background: #fff;
   }
   :lang(en) .box-header.is-search .dim {
     opacity: 0.6;

@@ -1082,6 +1082,9 @@
 			}
 			&.is-search {
 				border-bottom: none;
+				.inner-gap-1 {
+					background: transparent;
+				}
 				.inner {
 					.logo {
 						display: none;
@@ -2237,6 +2240,9 @@
 				}
 			}
 			&.is-search {
+				.inner-gap-1 {
+					background: #fff;
+				}
 				.dim {
 					opacity: 0.6;
 					background: #000;
