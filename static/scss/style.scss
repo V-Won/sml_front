@@ -5255,6 +5255,9 @@ a {
 			}
 		}
 	}
+	&.full-text {
+		align-items: stretch;
+	}
 }
 .box-layer {
 	&.layer-video {

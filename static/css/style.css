@@ -4688,6 +4688,9 @@ a.common-btnType-4 {
 .request-item.full-text .item .flex .text-box .txt {
   -webkit-line-clamp: inherit !important;
 }
+.request-item.full-text {
+  align-items: stretch;
+}
 
 .box-layer.layer-video.request .inner-layer .gap {
   width: 100%;
