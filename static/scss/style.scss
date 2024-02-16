@@ -6726,6 +6726,29 @@ a {
 					margin-top: 20px;
 				}
 			}
+			&.research {
+				border-bottom: 1px solid var(--gray-03-line, #D5D5D5);;
+				.left-tit {
+					margin-top: -2px;
+					font-size: 20px;
+					font-weight: 600;
+					line-height: 130%;
+					letter-spacing: 0.4px;
+				}
+				.txt-box {
+					width: 100%;
+					position: relative;
+					.common-btn-center {
+						.common-moveBtn {
+							margin: 24px auto 40px;
+							font-size: 14px;
+							letter-spacing: 0.28px;
+							height: auto;
+							padding: 8px 16px;
+						}
+					}
+				}
+			}
 		}
 	}
 	& + .box-common-tabTableSwiper {
@@ -6771,6 +6794,29 @@ a {
 				& + .txt {
 					margin-top: 12px;
 				}
+			}
+		}
+	}
+	&.research {
+		padding-bottom: 0;
+		border-bottom: none;
+		margin-bottom: 80px;
+		.tit {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 130%;
+			letter-spacing: 0.4px;
+			margin-bottom: 16px;
+		}
+		.txt {
+			word-break: break-word;
+			& + .txt {
+				margin-top: 12px;
+			}
+		}
+		.common-btn-center {
+			&.top-gap-1 {
+				margin-top: 24px;
 			}
 		}
 	}
@@ -9031,13 +9077,21 @@ a {
 
 // 임상연구 > 유전체 연구
 .list-stepType-1 {
-	margin-top: -22px;
-	padding-bottom: 98px;
+	margin-top: 40px;
+	padding-bottom: 80px;
+	.tit {
+		color: var(--Primary-04, #4D4D4D);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.4px;
+		margin-bottom: 20px;
+	}
 	ul {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 17px 12px;
+		gap: 20px 12px;
 		li {
 			display: inline-flex;
 			justify-content: center;
@@ -9261,11 +9315,11 @@ a {
 }
 .box-dusrn-3 {
 	h5 {
-		color: var(--Primary-04, #4d4d4d);
-		font-size: 22px;
+		color: var(--Primary-04, #4D4D4D);
+		font-size: 20px;
 		font-weight: 600;
-		line-height: 130%; /* 28.6px */
-		letter-spacing: 0.44px;
+		line-height: 130%;
+		letter-spacing: 0.4px;
 	}
 	> .text-1 {
 		color: var(--gray-01, #666);
@@ -9273,7 +9327,8 @@ a {
 		font-weight: 500;
 		line-height: 150%; /* 24px */
 		letter-spacing: 0.32px;
-		padding: 18px 0 0 0;
+		padding: 16px 0 0 0;
+		word-break: break-word;
 	}
 	ul {
 		li {
@@ -9339,6 +9394,11 @@ a {
 					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40' fill='none'%3E%3Cg clip-path='url(%23clip0_2584_64651)'%3E%3Cpath d='M34.572 11.652C35.988 14.112 36.8 16.96 36.8 20C36.8 29.264 29.264 36.8 20 36.8C10.736 36.8 3.2 29.264 3.2 20C3.2 10.736 10.736 3.2 20 3.2C23.036 3.2 25.884 4.016 28.348 5.432L30.684 3.096C27.592 1.136 23.932 0 20 0C8.952 0 0 8.952 0 20C0 31.048 8.952 40 20 40C31.048 40 40 31.048 40 20C40 16.072 38.864 12.408 36.904 9.32L34.568 11.656L34.572 11.652Z' fill='%2375C9DA'/%3E%3Cpath d='M28.4801 9.83191L21.8521 16.4599C21.2961 16.1679 20.6681 16.0039 19.9961 16.0039C17.7881 16.0039 15.9961 17.7959 15.9961 20.0039C15.9961 22.2119 17.7881 24.0039 19.9961 24.0039C22.2041 24.0039 23.9961 22.2159 23.9961 20.0039C23.9961 19.3399 23.8321 18.7159 23.5441 18.1639L30.1761 11.5319H32.4361L40.0001 3.96391L36.0481 3.97191L36.0401 0.00390625L28.4761 7.56791V9.83591L28.4801 9.83191Z' fill='%2375C9DA'/%3E%3Cpath d='M19.9994 11.3035C21.3794 11.3035 22.6874 11.6275 23.8474 12.2035L26.2034 9.84752C24.3954 8.74352 22.2754 8.10352 20.0034 8.10352C13.4354 8.10352 8.10742 13.4275 8.10742 19.9995C8.10742 26.5715 13.4354 31.8955 20.0034 31.8955C26.5714 31.8955 31.8994 26.5675 31.8994 19.9995C31.8994 17.7315 31.2634 15.6115 30.1634 13.8075L27.8074 16.1635C28.3794 17.3195 28.6994 18.6235 28.6994 19.9955C28.6994 24.7915 24.7994 28.6915 20.0034 28.6915C15.2074 28.6915 11.3074 24.7915 11.3074 19.9955C11.3074 15.1995 15.2074 11.2995 20.0034 11.2995L19.9994 11.3035Z' fill='%2375C9DA'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2584_64651'%3E%3Crect width='40' height='40' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 				}
 			}
+		}
+	}
+	.common-btn-center {
+		&.top-gap-1 {
+			margin-top: 24px;
 		}
 	}
 }
@@ -17293,6 +17353,20 @@ a {
 						}
 					}
 				}
+				&.research {
+					margin-top: 40px;
+					.left-tit {
+						margin-top: 0;
+					}
+					.txt-box {
+						width: calc(100% - 500px);
+						.common-btn-center {
+							.common-moveBtn {
+								margin: 40px 0 60px;
+							}
+						}
+					}
+				}
 			}
 		}
 		&.csf {
@@ -17377,7 +17451,7 @@ a {
 		}
 	}
 	.laboratory-box {
-		margin-top: 40px;
+		margin-top: 60px;
 		.item {
 			display: flex;
 			align-items: flex-start;
@@ -17385,7 +17459,7 @@ a {
 			gap: 0 40px;
 			& + .item {
 				padding-top: 0;
-				margin-top: 60px;
+				margin-top: 70px;
 				border-top: none;
 			}
 			.img-holder {
@@ -18732,10 +18806,17 @@ a {
 		}
 	}
 	.list-stepType-1 {
-		padding-bottom: 148px;
+		margin-top: 60px;
+		padding-bottom: 120px;
+		.tit {
+			font-size: 30px;
+			letter-spacing: 0.6px;
+			margin-bottom: 48px;
+		}
 		ul {
-			padding: 0 24px;
+			padding: 0;
 			gap: 30px;
+			justify-content: space-between;
 			li {
 				width: min(calc(10.5vw - 5px), 200px);
 				height: min(calc(10.5vw - 5px), 200px);
@@ -18743,12 +18824,13 @@ a {
 				&::before {
 					content: "";
 					display: block;
-					width: 30px !important;
+					width: 10vw !important;
 					height: 1px;
 					background: #d9d9d9;
 					position: absolute;
 					top: 50%;
-					right: -31px !important;
+					right: -5vw !important;
+					z-index: -1;
 				}
 				&::after {
 					width: 2.5vw;
@@ -18838,6 +18920,38 @@ a {
 			}
 		}
 	}
+	.box-infoTop {
+		&.research {
+			margin-bottom: 120px;
+			.tit {
+				font-size: 30px;
+				letter-spacing: 0.6px;
+				margin-bottom: 24px;
+			}
+			.flex-type-1 {
+				padding: 0;
+				.info {
+					padding-top: 0 !important;
+					padding: 0;
+					.txt {
+						font-size: 18px;
+						font-weight: 500;
+						line-height: 150%;
+						letter-spacing: 0.36px;
+						word-break: keep-all;
+						& + .txt {
+							margin-top: 12px;
+						}
+					}
+				}
+			}
+			.common-btn-center {
+				&.top-gap-1 {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
 	.box-dusrn {
 		padding-left: 0;
 		padding-right: 0;
@@ -18908,19 +19022,23 @@ a {
 	}
 	.box-dusrn-3 {
 		h5 {
-			font-size: 40px;
+			font-size: 30px;
+			letter-spacing: 0.6px;
 		}
 		> .text-1 {
 			font-size: 18px;
-			padding-top: 21px;
+			letter-spacing: 0.36px;
+			padding-top: 24px;
+			word-break: keep-all;
 		}
 		ul {
-			margin-top: 15px;
+			margin-top: 42px;
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 			gap: 40px;
 			li {
-				padding: 40px 17px 165px 39px;
+				padding: 40px 40px 165px;
+				margin-top: 0;
 				.text {
 					.text-1 {
 						font-size: 24px;
@@ -18957,6 +19075,11 @@ a {
 						height: 54px;
 					}
 				}
+			}
+		}
+		.common-btn-center {
+			&.top-gap-1 {
+				margin-top: 40px;
 			}
 		}
 	}
