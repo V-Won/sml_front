@@ -14717,6 +14717,7 @@ a.common-btnType-4 {
     padding: 23.5px 40px;
     flex-direction: row;
     align-items: center;
+    min-height: 101px;
   }
   .table-layout.c_1_2 .body > ul > li p {
     font-size: 18px;
