@@ -1141,20 +1141,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(-15px);
-  }
-  :lang(en) .box-header .inner-gap-1 .inner .gnb-menu li a {
-    text-align: center;
-    display: block;
-    color: #fff;
-    text-align: center;
-    font-family: Pretendard;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    letter-spacing: 0.4px;
-    padding: 0 1.5vw;
   }
   :lang(en) .box-header .inner-gap-1 .inner .btn-etc {
     padding-top: 11px;
@@ -1221,7 +1207,7 @@
     background: #fff;
   }
   :lang(en) .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li > a {
-    padding: 3px 0 3px 17px;
+    padding: 3px 0 3px 16px;
     display: block;
     color: #666;
     font-size: 14px;
@@ -1239,6 +1225,12 @@
     border: none;
     background: transparent;
     color: #666;
+  }
+  :lang(en) .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li:nth-child(1) {
+    display: block;
+  }
+  :lang(en) .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li:nth-child(2) {
+    display: none;
   }
   :lang(en) .box-header .inner-gap-1 .inner .btn-etc .btn-menu {
     display: none;
@@ -1258,19 +1250,18 @@
   :lang(en) .box-header .menu-list .inner-gap-1 {
     height: auto;
     overflow: initial;
+    padding: 0 100px;
   }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-shrink: 0;
-    padding-left: 60px;
-    padding-bottom: 89px;
-    max-width: 1340px;
+    padding: 0 60px 20px;
   }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul > li {
     flex: 1 1 content;
-    padding: 40px 0 0 24px;
+    padding: 20px 0 0 24px;
     margin-bottom: 0;
     flex-shrink: 0;
     border-bottom: 0;
@@ -1279,13 +1270,13 @@
     max-width: 162px;
   }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul > li:nth-child(2) {
-    max-width: 208px;
+    max-width: 209px;
   }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul > li:nth-child(3) {
     max-width: 203px;
   }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul > li:nth-child(4) {
-    max-width: 170px;
+    max-width: 241px;
   }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul > li:nth-child(5) {
     max-width: 154px;
@@ -1341,8 +1332,8 @@
     width: auto;
   }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul > li > ul > li:first-child > a {
-    padding-top: 28px;
-    padding-bottom: 7px;
+    padding-top: 16px;
+    padding-bottom: 4px;
   }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul > li > ul > li > a {
     color: #666;
@@ -1367,7 +1358,7 @@
     line-height: 150%;
     letter-spacing: 0.4px;
     position: relative;
-    padding: 5px 0 3px 16px;
+    padding: 5px 0 0 16px;
     display: block;
     transition: all 0.2s;
     margin-bottom: 0;
