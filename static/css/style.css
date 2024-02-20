@@ -18944,6 +18944,7 @@ a.common-btnType-4 {
   }
   .box-header .search-wrap .input-wrap .search-btn span {
     padding-left: 31px;
+    position: relative;
   }
   .box-header .search-wrap .input-wrap .search-btn span::before {
     content: "";
@@ -18955,7 +18956,7 @@ a.common-btnType-4 {
     background-position: center;
     position: absolute;
     top: 50%;
-    left: 68px;
+    left: 0;
     transform: translateY(-50%);
   }
   .box-header .search-wrap .search-list {

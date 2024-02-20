@@ -21808,6 +21808,7 @@ a {
 					letter-spacing: 0.4px;
 					span {
 						padding-left: 31px;
+						position: relative;
 						&::before {
 							content: "";
 							width: 24px;
@@ -21818,7 +21819,7 @@ a {
 							background-position: center;
 							position: absolute;
 							top: 50%;
-							left: 68px;
+							left: 0;
 							transform: translateY(-50%);
 						}
 					}
