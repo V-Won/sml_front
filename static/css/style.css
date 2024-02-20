@@ -18743,11 +18743,11 @@ a.common-btnType-4 {
     justify-content: space-between;
     align-items: flex-start;
     flex-shrink: 0;
-    padding: 0 60px 20px;
+    padding: 0 60px 67px;
   }
   .box-header .menu-list .inner-gap-1 > ul > li {
     flex: 1 1 content;
-    padding: 20px 0 0 24px;
+    padding: 40px 0 0 24px;
     margin-bottom: 0;
     flex-shrink: 0;
     border-bottom: 0;
