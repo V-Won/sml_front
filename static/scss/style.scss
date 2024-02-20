@@ -7268,32 +7268,6 @@ a {
 				}
 			}
 		}
-		.more-btn {
-			margin-left: -20px;
-			width: fit-content;
-			padding: 7px 40px 7px 20px;
-			border-radius: 999px;
-			border: 2px solid #006477;
-			background: #fff;
-			color: #006477;
-			font-size: 12px;
-			font-weight: 600;
-			line-height: 130%;
-			letter-spacing: 0.24px;
-			position: relative;
-			&::after {
-				content: "";
-				width: 14px;
-				height: 14px;
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				right: 20px;
-				background-position: center !important;
-				background-size: cover !important;
-				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 15 14' fill='none'%3E%3Cpath d='M7.49967 2.33398L6.67717 3.15648L9.93218 6.41732H2.83301V7.58398H9.93218L6.67717 10.8448L7.49967 11.6673L12.1663 7.00065L7.49967 2.33398Z' fill='%23006477'/%3E%3C/svg%3E");
-			}
-		}
 	}
 	.step-info {
 		width: 100%;
@@ -7310,6 +7284,7 @@ a {
 		.step-info-swiper {
 			width: 100%;
 			position: relative;
+			margin-bottom: 40px;
 			.swiper-wrapper {
 				flex-wrap: wrap;
 				gap: 20px 12px;
@@ -8070,6 +8045,34 @@ a {
 			.bottom {
 				gap: 16px 0;
 			}
+		}
+	}
+	.more-btn {
+		display: inline-block;
+		margin-left: -20px;
+		width: fit-content;
+		padding: 8px 40px 7px 20px;
+		border-radius: 999px;
+		border: 1px solid #006477;
+		background: #fff;
+		color: #006477;
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 130%;
+		letter-spacing: 0.24px;
+		position: relative;
+		min-height: 32px;
+		&::after {
+			content: "";
+			width: 14px;
+			height: 14px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 20px;
+			background-position: center !important;
+			background-size: cover !important;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 15 14' fill='none'%3E%3Cpath d='M7.49967 2.33398L6.67717 3.15648L9.93218 6.41732H2.83301V7.58398H9.93218L6.67717 10.8448L7.49967 11.6673L12.1663 7.00065L7.49967 2.33398Z' fill='%23006477'/%3E%3C/svg%3E");
 		}
 	}
 }
@@ -17200,21 +17203,6 @@ a {
 					}
 				}
 			}
-			.common-btn-center {
-				position: absolute;
-				top: 9px;
-				right: 0;
-			}
-			.more-btn {
-				padding: 6px 37px 6px 16px;
-				font-size: 14px;
-				letter-spacing: 0.28px;
-				&::after {
-					width: 18px;
-					height: 18px;
-					right: 14px;
-				}
-			}
 		}
 		.step-info {
 			padding: 120px 0 80px;
@@ -17225,6 +17213,7 @@ a {
 			}
 			.step-info-swiper {
 				padding-bottom: 60px;
+				margin-bottom: 0;
 				.swiper-wrapper {
 					flex-wrap: nowrap;
 					gap: 0;
@@ -17309,6 +17298,9 @@ a {
 						background: var(--Primary-01, #006477);
 					}
 				}
+			}
+			.common-btn-center {
+				top: 129px;
 			}
 		}
 		.noti-info {
@@ -17450,7 +17442,7 @@ a {
 								content: "";
 								width: 40px;
 								height: 50%;
-								background: #fff;
+								background: #fcfcfc;
 								left: -4vw;
 								top: -1px;
 								position: absolute;
@@ -17461,8 +17453,8 @@ a {
 								content: "";
 								width: 40px;
 								height: 50%;
-								background: #fff;
-								left: -3.5vw;
+								background: #fcfcfc;
+								left: -3.7vw;
 								bottom: -1px;
 								position: absolute;
 							}
@@ -17487,7 +17479,7 @@ a {
 							align-items: stretch;
 							padding-top: 0;
 							gap: 0 20px;
-							background: #fff;
+							background: #fcfcfc;
 							z-index: 1;
 							> li {
 								.top {
@@ -17755,6 +17747,21 @@ a {
 			.bookingGuide-box {
 				.txt {
 					margin: 24px 0 57px;
+				}
+			}
+		}
+		.common-btn-center {
+			position: absolute;
+			top: 9px;
+			right: 0;
+			.more-btn {
+				padding:7px 37px 7px 16px;
+				font-size: 14px;
+				letter-spacing: 0.28px;
+				&::after {
+					width: 18px;
+					height: 18px;
+					right: 14px;
 				}
 			}
 		}
