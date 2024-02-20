@@ -418,6 +418,7 @@
       }
     });
 
+    // 본문 Tab
     var swiper3 = new Swiper('.laboratory-swiper', {
       slidesPerView: 'auto',
       preventClicks: true,
@@ -427,43 +428,54 @@
       observeParents: true,
     });
 
-    var $snbSwiperItem3 = $('.laboratory-swiper .swiper-wrapper .swiper-slide .btn');
-    $snbSwiperItem3.click(function () {
-      var target3 = $(this).parent();
-      $snbSwiperItem3.parent().removeClass('is-active');
-      target3.addClass('is-active');
-    })
+    const contentTab = () => {
 
-    document.querySelectorAll('.laboratory-swiper > ul > li').forEach((item) => {
-      item.addEventListener('click', (e) => {
-        swiper3.slideTo(e.currentTarget.getAttribute('data-index'));
+      var $snbSwiperItem3 = $('.laboratory-swiper .swiper-wrapper .swiper-slide .btn');
+      $snbSwiperItem3.click(function () {
+        var target3 = $(this).parent();
+        $snbSwiperItem3.parent().removeClass('is-active');
+        target3.addClass('is-active');
+      })
+
+      document.querySelectorAll('.laboratory-swiper > ul > li').forEach((item) => {
+        item.addEventListener('click', (e) => {
+          swiper3.slideTo(e.currentTarget.getAttribute('data-index'));
+        });
       });
-    });
 
-    document.querySelectorAll('.laboratory-swiper > ul > li .btn').forEach((item) => {
-      item.addEventListener('click', (e) => {
-        e.preventDefault()
-        var href = e.target.getAttribute('href');
-        var hrefRe = href.replace('#', '');
-        var location = document.getElementById(hrefRe).offsetTop + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight - 100;
-        //window.scrollTo({ top: location, behavior: "smooth" });
-        if (window.innerWidth >= 1024) {
-          window.scrollTo({ top: location });
+      document.querySelectorAll('.laboratory-swiper > ul > li .btn').forEach((item) => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault()
+          var href = e.target.getAttribute('href');
+          var hrefRe = href.replace('#', '');
+
+          var location = document.getElementById(hrefRe).offsetTop + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight - 100;
+          //window.scrollTo({ top: location, behavior: "smooth" });
+
+          if (window.innerWidth >= 1024) {
+            window.scrollTo({ top: location });
+          } else {
+            window.scrollTo({ top: location + 100 });
+          }
+        });
+      });
+
+      window.addEventListener('scroll', (e) => {
+        let windowTop = window.scrollY;
+
+        if (windowTop > document.querySelector('.posi').offsetHeight + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight) {
+          document.querySelector('.common-tab.posi').classList.add('fixed');
         } else {
-          window.scrollTo({ top: location + 100 });
+          document.querySelector('.common-tab.posi').classList.remove('fixed');
         }
       });
-    });
+    }
 
-    window.addEventListener('scroll', (e) => {
-      let windowTop = window.scrollY;
+    contentTab();
 
-      if (windowTop > document.querySelector('.posi').offsetHeight + document.querySelector('.box-infoTop').offsetHeight + document.querySelector('.sub-top').offsetHeight) {
-        document.querySelector('.common-tab.posi').classList.add('fixed');
-      } else {
-        document.querySelector('.common-tab.posi').classList.remove('fixed');
-      }
-    });
+    window.addEventListener('resize', () => {
+      contentTab();
+    })
 
     // event reset
     const actionEvent = () => {
@@ -580,28 +592,37 @@
     // //상품 json
 
     // 본문 scroll Tab 동기화
-    let heightDe = document.querySelector('.common-tab.posi').offsetTop + 100;
+    const scrollTab = () => {
+      let heightDe = document.querySelector('.common-tab.posi').offsetTop + 100;
 
-    window.addEventListener('scroll', (e) => {
-      let windowTop = window.scrollY;
+      let sectionTop,
+        itemHeight;
 
-      document.querySelectorAll('.laboratory-box .item').forEach((e) => {
-        let sectionTop = e.offsetTop + heightDe,
-          itemHeight = e.clientHeight;
+      window.addEventListener('scroll', (e) => {
+        let windowTop = window.scrollY;
 
-        if (windowTop >= sectionTop && windowTop <= sectionTop + itemHeight) {
-          let cnt = e.getAttribute('data-section');
+        document.querySelectorAll('.laboratory-box .item').forEach((e) => {
+          sectionTop = e.offsetTop + heightDe,
+            itemHeight = e.clientHeight;
 
-          document.querySelectorAll('.common-tab.posi li').forEach(e => {
-            e.classList.remove('is-active');
-          });
+          if (windowTop >= sectionTop && windowTop <= sectionTop + itemHeight) {
+            let cnt = e.getAttribute('data-section');
 
-          document.querySelectorAll('.common-tab.posi li')[cnt].classList.add('is-active');
+            document.querySelectorAll('.common-tab.posi li').forEach(e => {
+              e.classList.remove('is-active');
+            });
 
-          swiper3.slideTo(cnt);
-        }
+            document.querySelectorAll('.common-tab.posi li')[cnt].classList.add('is-active');
+
+            swiper3.slideTo(cnt);
+          }
+        });
       });
-    });
+    }
+
+    setTimeout(() => {
+      scrollTab();
+    }, 300)
   </script>
 
 </body>
