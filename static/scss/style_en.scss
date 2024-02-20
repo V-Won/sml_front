@@ -1180,6 +1180,20 @@
 							height: 60px;
 						}
 					}
+					.btn-etc {
+						.box-lang {
+							> ul {
+								> li {
+									&:nth-child(1) {
+										display: block;
+									}
+									&:nth-child(2) {
+										display: none;
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 			.menu-list {

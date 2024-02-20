@@ -632,6 +632,12 @@
     width: 163px;
     height: 60px;
   }
+  :lang(en) .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li:nth-child(1) {
+    display: block;
+  }
+  :lang(en) .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li:nth-child(2) {
+    display: none;
+  }
   :lang(en) .box-header .menu-list .inner-gap-1 > ul > li:nth-child(1) {
     max-width: 162px;
   }
