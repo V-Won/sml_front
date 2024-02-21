@@ -17940,7 +17940,7 @@ a {
 						width: 460px;
 					}
 					&:nth-child(2) {
-						width: 1000px;
+						width: calc(100% - 460px);
 					}
 				}
 			}
