@@ -12530,6 +12530,7 @@ a {
 				padding: 16px 0;
 				dl {
 					display: flex;
+					gap: 0 8px;
 					& + dl {
 						position: relative;
 						&::after {
@@ -12545,7 +12546,6 @@ a {
 						}
 					}
 					dt {
-						flex: 0 0 40px;
 						color: var(--Primary-05, #fff);
 						font-size: 12px;
 						font-weight: 500;
@@ -12553,7 +12553,6 @@ a {
 						letter-spacing: 0.24px;
 					}
 					dd {
-						flex: 0 0 content;
 						color: rgba(255, 255, 255, 0.4);
 						font-size: 12px;
 						font-weight: 500;
@@ -20472,6 +20471,7 @@ a {
 					padding: 25px 0;
 					gap: 54px;
 					dl {
+					gap: 0 12px;
 						& + dl {
 							&::after {
 								height: 12px;
@@ -20482,9 +20482,10 @@ a {
 							font-size: 16px;
 							font-weight: 500;
 							letter-spacing: 0.32px;
-							flex: 0 0 50px;
+							flex: auto;
 						}
 						dd {
+							flex: auto;
 							font-size: 16px;
 							font-weight: 500;
 							letter-spacing: 0.32px;

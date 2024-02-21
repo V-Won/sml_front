@@ -11178,6 +11178,7 @@ a.common-btnType-4 {
 }
 .box-rhror .inner .tel-text .flex-gap dl {
   display: flex;
+  gap: 0 8px;
 }
 .box-rhror .inner .tel-text .flex-gap dl + dl {
   position: relative;
@@ -11194,7 +11195,6 @@ a.common-btnType-4 {
   height: 8px;
 }
 .box-rhror .inner .tel-text .flex-gap dl dt {
-  flex: 0 0 40px;
   color: var(--Primary-05, #fff);
   font-size: 12px;
   font-weight: 500;
@@ -11202,7 +11202,6 @@ a.common-btnType-4 {
   letter-spacing: 0.24px;
 }
 .box-rhror .inner .tel-text .flex-gap dl dd {
-  flex: 0 0 content;
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   font-weight: 500;
@@ -17814,6 +17813,9 @@ a.common-btnType-4 {
     padding: 25px 0;
     gap: 54px;
   }
+  .box-rhror .inner .tel-text .flex-gap dl {
+    gap: 0 12px;
+  }
   .box-rhror .inner .tel-text .flex-gap dl + dl::after {
     height: 12px;
     transform: translate(-21px, -50%);
@@ -17822,9 +17824,10 @@ a.common-btnType-4 {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.32px;
-    flex: 0 0 50px;
+    flex: auto;
   }
   .box-rhror .inner .tel-text .flex-gap dl dd {
+    flex: auto;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.32px;
