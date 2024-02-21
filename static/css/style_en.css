@@ -233,11 +233,16 @@
 :lang(en) .request-detailInfo .info-list.column li .box {
   width: 100%;
 }
+:lang(en) .form-wrap .form-inner .form-item .label-wrap .input-label > span {
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
 :lang(en) .form-wrap .form-inner .form-item .label-wrap .input-label > span::after {
   padding-left: 0;
   position: relative;
-  left: -7px;
-  top: 1px;
+  left: 0;
+  top: 0;
 }
 :lang(en) .box-health .mySwiper2 .swiper-slide::after {
   background-image: url(../images/en/bg/bg_swiper_cover.png);

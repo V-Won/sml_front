@@ -998,7 +998,7 @@ input {
   right: 0;
 }
 .box-floating .inner .list-quick ul {
-  width: 172px;
+  width: 182px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1077,18 +1077,28 @@ input {
 .box-floating .inner .list-quick ul li.tel a {
   box-shadow: none;
   width: 100%;
-  padding: 6.5px 0;
+  padding: 6.5px 36px 6.5px 0;
   border-radius: 999px;
   background: var(--Primary-01, #006477);
   color: #fff;
-  text-align: center;
+  text-align: right;
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.36px;
+  position: relative;
 }
 .box-floating .inner .list-quick ul li.tel a::before {
-  display: none;
+  width: 14px;
+  height: 15px;
+  border-radius: 0;
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.728 14.306C7.504 13.634 6.01 12.242 4.246 10.13C3.586 9.278 2.95 8.396 2.338 7.484C1.726 6.572 1.312 5.708 1.096 4.892C0.928 4.268 0.844 3.764 0.844 3.38C0.844 3.14 0.88 2.936 0.952 2.768C1.024 2.588 1.132 2.438 1.276 2.318C1.42 2.198 1.504 2.126 1.528 2.102L2.968 1.004C3.436 0.631999 3.82 0.446 4.12 0.446C4.252 0.446 4.372 0.487999 4.48 0.571999C4.6 0.644 4.708 0.752 4.804 0.895999C4.9 1.028 4.96 1.112 4.984 1.148L6.028 2.732C6.316 3.176 6.46 3.566 6.46 3.902C6.46 4.094 6.412 4.256 6.316 4.388C6.22 4.52 6.088 4.64 5.92 4.748L4.984 5.324C5.392 5.972 5.704 6.452 5.92 6.764C6.136 7.064 6.454 7.478 6.874 8.006L7.162 8.33C7.666 8.942 8.308 9.638 9.088 10.418L9.88 9.608C10.108 9.356 10.354 9.23 10.618 9.23C10.978 9.23 11.386 9.464 11.842 9.932L13.192 11.3C13.228 11.336 13.288 11.396 13.372 11.48C13.456 11.564 13.528 11.66 13.588 11.768C13.66 11.876 13.696 11.996 13.696 12.128C13.696 12.452 13.432 12.836 12.904 13.28L11.518 14.45C11.482 14.474 11.416 14.528 11.32 14.612C11.224 14.696 11.11 14.768 10.978 14.828C10.858 14.9 10.702 14.936 10.51 14.936C10.078 14.936 9.484 14.726 8.728 14.306Z' fill='white'/%3E%3C/svg%3E%0A");
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 37px;
 }
 .box-floating .dim {
   display: none;
@@ -1152,6 +1162,7 @@ input {
   line-height: 100%;
   letter-spacing: 0.4px;
   padding-bottom: 23px;
+  display: block;
 }
 .common-title-1 > span {
   font-weight: 700;
@@ -5723,6 +5734,7 @@ a.common-btnType-4 {
   overflow: hidden;
 }
 .inspect-item-swiper .mySwiper1 .swiper-slide .img-box .img-holder span {
+  min-width: calc(100vw - 80px);
   height: 230px;
   padding-top: 0;
 }
@@ -6869,9 +6881,6 @@ a.common-btnType-4 {
   letter-spacing: 0.36px;
   text-align: left;
   position: relative;
-}
-.tab-labSpecial .group-chart .groupChart-acc > ul > li button .pc-show {
-  display: block;
 }
 .tab-labSpecial .group-chart .groupChart-acc > ul > li button::after {
   transition: 0.3s;
@@ -12968,6 +12977,10 @@ a.common-btnType-4 {
     width: 76px;
     height: 76px;
   }
+  .box-floating.open .inner .list-quick ul li.tel a::before {
+    width: 14px;
+    height: 15px;
+  }
   .main-inspectionSearch {
     position: relative;
     z-index: 10;
@@ -14730,6 +14743,9 @@ a.common-btnType-4 {
   .inspect-item-swiper .mySwiper1 .swiper-slide {
     padding: 0 40px 60px;
   }
+  .inspect-item-swiper .mySwiper1 .swiper-slide .img-box .img-holder span {
+    min-width: 720px;
+  }
   .inspect-item-swiper .mySwiper1 .swiper-slide .name {
     font-size: 30px;
     letter-spacing: 0.6px;
@@ -15275,6 +15291,9 @@ a.common-btnType-4 {
   }
   .tab-labSpecial .noti-info .dot-list li::before {
     top: 10px;
+  }
+  .tab-labSpecial .group-chart .groupChart-acc > ul > li button .pc-show {
+    display: none;
   }
   .tab-labSpecial .bookingGuide-box {
     padding: 80px 100px 120px;
@@ -18350,6 +18369,9 @@ a.common-btnType-4 {
   }
   .tab-labSpecial .group-chart .groupChart-acc > ul > li button::after {
     display: none;
+  }
+  .tab-labSpecial .group-chart .groupChart-acc > ul > li button .pc-show {
+    display: block;
   }
   .tab-labSpecial .group-chart .groupChart-acc > ul > li > ul {
     width: 90%;

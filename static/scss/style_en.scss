@@ -437,11 +437,16 @@
 			.form-item {
 				.label-wrap {
 					.input-label {
-						> span::after {
-							padding-left: 0;
-							position: relative;
-							left: -7px;
-							top: 1px;
+						> span {
+							position: absolute;
+							top: 0;
+							right: -10px;
+							&::after {
+								padding-left: 0;
+								position: relative;
+								left: 0;
+								top: 0;
+							}
 						}
 					}
 				}
