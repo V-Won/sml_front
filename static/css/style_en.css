@@ -189,6 +189,9 @@
 :lang(en) .smlNews-list ul li a .text-box .label {
   padding: 3px 7px;
 }
+:lang(en) .tabOnly .smlNews-list {
+  margin-top: 35px;
+}
 :lang(en) .tabOnly .request-item {
   margin-top: 35px;
 }
@@ -501,6 +504,9 @@
   }
   :lang(en) .request-item .item .btn-flex button span {
     letter-spacing: 0.32px;
+  }
+  :lang(en) .tabOnly .smlNews-list {
+    margin-top: 55px;
   }
   :lang(en) .tabOnly .request-item {
     margin-top: 55px;
