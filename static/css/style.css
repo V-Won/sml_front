@@ -12760,25 +12760,26 @@ a.common-btnType-4 {
     position: absolute;
     top: 0;
     left: 0;
-    background: #000;
-    opacity: 0.4;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide .text-box {
     transform: translateY(-50%);
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-1 {
     color: #fff;
-    font-size: 32px;
-    letter-spacing: 0.4px;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.6px;
     padding-bottom: 0;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
     transition: color 0.5s;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-2 {
     font-size: 18px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
+    line-height: 150%;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
-    padding-top: 18px;
+    padding-top: 12px;
     display: none;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide.swiper-slide-active .img-holder span::after {
@@ -12792,14 +12793,14 @@ a.common-btnType-4 {
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide.first .text-box .txt-1 {
     color: #fff;
-    font-size: 32px;
+    font-size: 30px;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide.first .text-box .txt-2 {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 150%;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
   }
   .main-smlSpecialty .specialty-swiper .swiper-pagination {
     display: none;
