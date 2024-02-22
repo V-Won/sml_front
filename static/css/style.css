@@ -18754,7 +18754,7 @@ a.common-btnType-4 {
   .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul {
     display: none;
     position: absolute;
-    top: 28px;
+    top: 30px;
     left: 0;
     right: 0;
     padding: 3px 0 5px 0;
@@ -18769,10 +18769,10 @@ a.common-btnType-4 {
     padding: 3px 0 3px 16px;
     display: block;
     color: #666;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 16.8px;
-    letter-spacing: 0.4px;
+    line-height: 130%;
+    letter-spacing: 0.32px;
     text-align: left;
   }
   .box-header .inner-gap-1 .inner .btn-etc .box-lang > ul > li > a:hover {

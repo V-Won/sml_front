@@ -580,6 +580,20 @@
 			}
 		}
 	}
+
+	.sub-top {
+		.text-box {
+			.sub-nav-2 {
+				> li {
+					&.nav-acc {
+						> a {
+							max-width: calc(40vw - 30px);
+						}
+					}
+				}
+			}
+		}
+	}
 }
 // //모바일 lang(en)
 

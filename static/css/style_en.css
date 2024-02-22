@@ -292,6 +292,9 @@
 :lang(en) .box-altus-2 .content .top-text::after {
   display: none;
 }
+:lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc > a {
+  max-width: calc(40vw - 30px);
+}
 
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
