@@ -13136,8 +13136,8 @@ a {
 .primary-video {
 	max-width: none;
 	max-height: 100vw;
-	min-width: 100vw;
-	min-height: 100vw;
+	min-width: 100%;
+	min-height: 100%;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -18892,6 +18892,8 @@ a {
 			}
 		}
 		.info-box {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
 			gap: 40px;
 			.box {
 				border-radius: 12px;
@@ -22019,10 +22021,8 @@ a {
 	}
 
 	.blood-ready {
-		&.info-box {
-			.box {
-				width: calc(50% - 20px);
-			}
+		.info-box {
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 

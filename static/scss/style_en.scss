@@ -477,7 +477,8 @@
 				margin: -7px 0 20px;
 				.name {
 					.han {
-						letter-spacing: 0;
+						letter-spacing: 0.4px;
+						font-family: "Pretendard", "Open Sans", "Roboto", Arial, Dotum, serif;
 					}
 				}
 			}
@@ -1017,7 +1018,19 @@
 		.form-wrap {
 			.form-inner {
 				.form-item {
-					gap: 0 153px;
+					gap: 0 100px;
+					.label-wrap {
+						max-width: 153px;
+						.input-label {
+							width: fit-content;
+							> span {
+								&::after {
+									left: 2px;
+									top: 3px;
+								}
+							}
+						}
+					}
 				}
 			}
 		}

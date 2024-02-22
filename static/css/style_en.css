@@ -255,7 +255,8 @@
   margin: -7px 0 20px;
 }
 :lang(en) .box-infoTop .box-greeting .img-holder .name .han {
-  letter-spacing: 0;
+  letter-spacing: 0.4px;
+  font-family: "Pretendard", "Open Sans", "Roboto", Arial, Dotum, serif;
 }
 :lang(en) .box-infoTop .box-greeting .info .tit {
   word-break: keep-all;
@@ -553,7 +554,17 @@
     width: calc(100% - 200px);
   }
   :lang(en) .form-wrap .form-inner .form-item {
-    gap: 0 153px;
+    gap: 0 100px;
+  }
+  :lang(en) .form-wrap .form-inner .form-item .label-wrap {
+    max-width: 153px;
+  }
+  :lang(en) .form-wrap .form-inner .form-item .label-wrap .input-label {
+    width: fit-content;
+  }
+  :lang(en) .form-wrap .form-inner .form-item .label-wrap .input-label > span::after {
+    left: 2px;
+    top: 3px;
   }
   :lang(en) .box-infoTop .txt + .txt {
     margin-top: 23px;

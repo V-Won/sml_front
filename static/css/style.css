@@ -11749,8 +11749,8 @@ a.common-btnType-4 {
 .primary-video {
   max-width: none;
   max-height: 100vw;
-  min-width: 100vw;
-  min-height: 100vw;
+  min-width: 100%;
+  min-height: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -16457,6 +16457,8 @@ a.common-btnType-4 {
     margin-bottom: 48px;
   }
   .blood-ready .info-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
   .blood-ready .info-box .box {
@@ -19087,8 +19089,8 @@ a.common-btnType-4 {
   .box-dusgur .common-tab {
     padding-top: 134px;
   }
-  .blood-ready.info-box .box {
-    width: calc(50% - 20px);
+  .blood-ready .info-box {
+    grid-template-columns: repeat(2, 1fr);
   }
   .how-stool .stool-img {
     margin-bottom: 40px;
