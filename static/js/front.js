@@ -920,7 +920,9 @@ const headerBg = (item) => {
 	}
 
 	setTimeout(() => {
-		document.querySelector('.sub-top').style.display = 'block';
+		if (document.getElementsByClassName('sub-top').length) {
+			document.querySelector('.sub-top').style.display = 'block';
+		}
 		document.querySelector('.box-wrap').style.display = 'block';
 		document.querySelector('.box-footer').style.display = 'block';
 	}, 200)
