@@ -19397,7 +19397,7 @@ a.common-btnType-4 {
   }
   .box-header,
   .box-footer {
-    display: none;
+    display: none !important;
   }
   .sub-top .inner-gap-1 {
     padding-top: 40px !important;
