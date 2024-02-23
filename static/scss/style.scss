@@ -5854,7 +5854,7 @@ a {
 				padding: 21px 12px;
 				.acc-text {
 					@include text-line-2;
-					-webkit-line-clamp: 5;
+					-webkit-line-clamp: 10;
 				}
 				&.is-open {
 					.acc-text {
@@ -16259,15 +16259,6 @@ a {
 				}
 				.acc-wrap {
 					padding: 40px;
-					.acc-text {
-						@include text-line-2;
-						-webkit-line-clamp: 5;
-					}
-					&.is-open {
-						.acc-text {
-							-webkit-line-clamp: inherit;
-						}
-					}
 				}
 				.more-btn {
 					font-size: 16px;

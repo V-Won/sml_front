@@ -5278,7 +5278,7 @@ a.common-btnType-4 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 10;
 }
 .request-detailInfo .info-list.column .acc-wrap.is-open .acc-text {
   -webkit-line-clamp: inherit;
@@ -14368,17 +14368,6 @@ a.common-btnType-4 {
   }
   .request-detailInfo .info-list.column .acc-wrap {
     padding: 40px;
-  }
-  .request-detailInfo .info-list.column .acc-wrap .acc-text {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    -webkit-line-clamp: 5;
-  }
-  .request-detailInfo .info-list.column .acc-wrap.is-open .acc-text {
-    -webkit-line-clamp: inherit;
   }
   .request-detailInfo .info-list.column .more-btn {
     font-size: 16px;
