@@ -293,7 +293,7 @@
   display: none;
 }
 :lang(en) .sub-top .text-box .sub-nav-2 > li:nth-child(2) > a {
-  max-width: calc(40vw - 30px);
+  max-width: calc(35vw - 30px);
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -302,7 +302,7 @@
   word-break: break-all;
 }
 :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc > a {
-  max-width: calc(40vw - 30px);
+  max-width: calc(35vw - 30px);
 }
 
 /* 1024 이상 */

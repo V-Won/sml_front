@@ -587,7 +587,7 @@
 				> li {
 					&:nth-child(2) {
 						> a {
-							max-width: calc(40vw - 30px);
+							max-width: calc(35vw - 30px);
 							text-overflow: ellipsis;
 							overflow: hidden;
 							display: -webkit-box;
@@ -598,7 +598,7 @@
 					}
 					&.nav-acc {
 						> a {
-							max-width: calc(40vw - 30px);
+							max-width: calc(35vw - 30px);
 						}
 					}
 				}
