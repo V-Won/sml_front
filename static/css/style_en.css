@@ -292,6 +292,15 @@
 :lang(en) .box-altus-2 .content .top-text::after {
   display: none;
 }
+:lang(en) .sub-top .text-box .sub-nav-2 > li:nth-child(2) > a {
+  max-width: calc(40vw - 30px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
 :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc > a {
   max-width: calc(40vw - 30px);
 }
@@ -562,8 +571,8 @@
     width: fit-content;
   }
   :lang(en) .form-wrap .form-inner .form-item .label-wrap .input-label > span::after {
-    left: 2px;
-    top: 3px;
+    left: 5px;
+    top: 7px;
   }
   :lang(en) .box-infoTop .txt + .txt {
     margin-top: 23px;
