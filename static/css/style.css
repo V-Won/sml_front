@@ -4420,6 +4420,7 @@ a.common-btnType-4 {
   -webkit-line-clamp: 1;
   min-height: 19.59px;
   width: fit-content;
+  word-break: break-word;
 }
 .border-prev-next ul li a .icon-new {
   position: absolute;
@@ -13135,9 +13136,10 @@ a.common-btnType-4 {
   }
   .download-file ul {
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
   }
   .download-file ul li {
-    margin-right: 12px;
     margin-bottom: 0;
   }
   .download-file ul li button {

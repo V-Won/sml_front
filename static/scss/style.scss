@@ -4947,6 +4947,7 @@ a {
 					@include text-line-1;
 					min-height: 19.59px;
 					width: fit-content;
+					word-break: break-word;
 				}
 				.icon-new {
 					position: absolute;
@@ -14844,8 +14845,9 @@ a {
 		background: #f5f5f5;
 		ul {
 			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 12px;
 			li {
-				margin-right: 12px;
 				margin-bottom: 0;
 				&:last-child {
 				}
