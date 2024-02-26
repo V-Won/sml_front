@@ -584,21 +584,26 @@
 	.sub-top {
 		.text-box {
 			.sub-nav-2 {
+				overflow: hidden;
 				> li {
-					&:nth-child(2) {
-						> a {
-							max-width: calc(35vw - 30px);
-							text-overflow: ellipsis;
-							overflow: hidden;
-							display: -webkit-box;
-							-webkit-box-orient: vertical;
-							-webkit-line-clamp: 1;
-							word-break: break-all;
-						}
-					}
+					// &:nth-child(2) {
+					// 	> a {
+					// 		max-width: calc(50vw - 30px);
+					// 		text-overflow: ellipsis;
+					// 		overflow: hidden;
+					// 		display: -webkit-box;
+					// 		-webkit-box-orient: vertical;
+					// 		-webkit-line-clamp: 1;
+					// 		word-break: break-all;
+					// 	}
+					// }
 					&.nav-acc {
 						> a {
-							max-width: calc(35vw - 30px);
+							max-width: fit-content;
+							padding-right: 0;
+							&::after {
+								display: none;
+							}
 						}
 					}
 				}
@@ -885,6 +890,19 @@
 
 		.sub-top {
 			.text-box {
+				.sub-nav-2 {
+					overflow: visible;
+					> li {
+						&.nav-acc {
+							.button {
+								padding-right: 28px;
+								&::after {
+									display: block;
+								}
+							}
+						}
+					}
+				}
 				.sub-tit {
 					letter-spacing: 1.04px;
 				}
