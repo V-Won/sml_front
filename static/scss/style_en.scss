@@ -584,11 +584,6 @@
 	.sub-top {
 		.text-box {
 			.sub-nav-2 {
-				overflow: hidden;
-				text-overflow: ellipsis;
-				display: -webkit-box;
-				-webkit-box-orient: vertical;
-				-webkit-line-clamp: 1;
 				> li {
 					// &:nth-child(2) {
 					// 	> a {
@@ -604,10 +599,6 @@
 					&.nav-acc {
 						> a {
 							max-width: calc(40vw - 30px);
-							padding-right: 0;
-							&::after {
-								display: none;
-							}
 						}
 					}
 				}
@@ -894,19 +885,6 @@
 
 		.sub-top {
 			.text-box {
-				.sub-nav-2 {
-					overflow: visible;
-					> li {
-						&.nav-acc {
-							.button {
-								padding-right: 28px;
-								&::after {
-									display: block;
-								}
-							}
-						}
-					}
-				}
 				.sub-tit {
 					letter-spacing: 1.04px;
 				}

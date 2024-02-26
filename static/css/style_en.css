@@ -292,19 +292,8 @@
 :lang(en) .box-altus-2 .content .top-text::after {
   display: none;
 }
-:lang(en) .sub-top .text-box .sub-nav-2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
 :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc > a {
   max-width: calc(40vw - 30px);
-  padding-right: 0;
-}
-:lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc > a::after {
-  display: none;
 }
 
 /* 1024 이상 */
@@ -490,15 +479,6 @@
   }
   :lang(en) .main-smlAbout .inner-gap-1 .common-title-1 {
     padding-bottom: 23px;
-  }
-  :lang(en) .sub-top .text-box .sub-nav-2 {
-    overflow: visible;
-  }
-  :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc .button {
-    padding-right: 28px;
-  }
-  :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc .button::after {
-    display: block;
   }
   :lang(en) .sub-top .text-box .sub-tit {
     letter-spacing: 1.04px;
