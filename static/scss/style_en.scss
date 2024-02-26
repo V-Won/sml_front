@@ -585,6 +585,10 @@
 		.text-box {
 			.sub-nav-2 {
 				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
 				> li {
 					// &:nth-child(2) {
 					// 	> a {
@@ -599,7 +603,7 @@
 					// }
 					&.nav-acc {
 						> a {
-							max-width: fit-content;
+							max-width: calc(40vw - 30px);
 							padding-right: 0;
 							&::after {
 								display: none;

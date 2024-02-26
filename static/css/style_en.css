@@ -294,9 +294,13 @@
 }
 :lang(en) .sub-top .text-box .sub-nav-2 {
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc > a {
-  max-width: fit-content;
+  max-width: calc(40vw - 30px);
   padding-right: 0;
 }
 :lang(en) .sub-top .text-box .sub-nav-2 > li.nav-acc > a::after {
