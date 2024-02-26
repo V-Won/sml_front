@@ -585,20 +585,20 @@
 		.text-box {
 			.sub-nav-2 {
 				> li {
-					// &:nth-child(2) {
-					// 	> a {
-					// 		max-width: calc(50vw - 30px);
-					// 		text-overflow: ellipsis;
-					// 		overflow: hidden;
-					// 		display: -webkit-box;
-					// 		-webkit-box-orient: vertical;
-					// 		-webkit-line-clamp: 1;
-					// 		word-break: break-all;
-					// 	}
-					// }
+					&:nth-child(2) {
+						> a {
+							max-width: calc(35vw - 30px);
+							text-overflow: ellipsis;
+							overflow: hidden;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 1;
+							word-break: break-all;
+						}
+					}
 					&.nav-acc {
 						> a {
-							max-width: calc(40vw - 30px);
+							max-width: calc(35vw - 30px);
 						}
 					}
 				}
