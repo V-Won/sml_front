@@ -4264,6 +4264,7 @@ a.common-btnType-4 {
 }
 .board-ct img {
   width: auto;
+  height: auto !important;
   max-width: 100%;
   object-fit: cover;
 }
