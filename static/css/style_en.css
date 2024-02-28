@@ -2,6 +2,9 @@
 :lang(en) .common-tab.padding-top-1 {
   padding-top: 41px;
 }
+:lang(en) .common-tab.padding-top-2 {
+  padding-top: 40px;
+}
 :lang(en) .common-tab.type-3 ul li.is-active .btn span {
   padding-left: 5px;
 }
@@ -354,6 +357,9 @@
   }
   :lang(en) .common-tab.padding-top-1 {
     padding-top: 81px;
+  }
+  :lang(en) .common-tab.padding-top-2 {
+    padding-top: 48px;
   }
   :lang(en) .box-footer .inner .ft-top {
     padding-bottom: 26px;
