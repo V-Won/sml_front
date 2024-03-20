@@ -492,6 +492,9 @@
   :lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide .text-box .txt-1 {
     text-transform: none;
   }
+  :lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide.first {
+    flex: 1 1 0%;
+  }
   :lang(en) .main-smlAbout .inner-gap-1 {
     padding-top: 121px;
   }

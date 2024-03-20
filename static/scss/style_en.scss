@@ -878,6 +878,9 @@
 							text-transform: none;
 						}
 					}
+					&.first {
+						flex: 1 1 0%;
+					}
 				}
 			}
 		}
