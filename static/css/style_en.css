@@ -483,6 +483,9 @@
   :lang(en) .main-smlSpecialty {
     padding-top: 119px;
   }
+  :lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide {
+    flex: 1 1 0%;
+  }
   :lang(en) .main-smlSpecialty .specialty-swiper .swiper-slide .text-box {
     transform: translateY(-50%);
   }

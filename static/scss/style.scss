@@ -14345,7 +14345,7 @@ a {
 			.swiper-slide {
 				// width: 25% !important;
 				display: flex;
-				flex: 1 1 content;
+				flex: 1 1 0%;
 				transition: all 0.5s;
 				.img-holder {
 					span {
@@ -14394,7 +14394,7 @@ a {
 					}
 				}
 				&.first {
-					flex: 0 0 50%;
+					flex: 2 1 0%;
 					.img-holder {
 						span {
 							&::after {

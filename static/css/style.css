@@ -12748,7 +12748,7 @@ a.common-btnType-4 {
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide {
     display: flex;
-    flex: 1 1 content;
+    flex: 1 1 0%;
     transition: all 0.5s;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide .img-holder span {
@@ -12789,7 +12789,7 @@ a.common-btnType-4 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.53%, rgba(0, 0, 0, 0.3) 105.2%);
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide.first {
-    flex: 0 0 50%;
+    flex: 2 1 0%;
   }
   .main-smlSpecialty .specialty-swiper .swiper-slide.first .img-holder span::after {
     display: none;
