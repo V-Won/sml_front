@@ -54,14 +54,6 @@
               <div class="box-item pc-show" style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-S-Main-Hero-Desktop-LHD);"></div>
               <!-- //pc -->
             </div>
-            <div class="swiper-slide">
-              <!-- mo -->
-              <div class="box-item mo-show" style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-Main-Hero_Desktop-LHD.jpg);"></div>
-              <!-- //mo -->
-              <!-- pc -->
-              <div class="box-item pc-show" style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-Main-Hero_Desktop-LHD.jpg);"></div>
-              <!-- //pc -->
-            </div>
           </div>
         </div>
         <div class="box-swiperControl">
@@ -474,6 +466,7 @@
 
     var swiper = new Swiper(".main-kv-swiper .mySwiper", {
       slidesPerView: 1,
+      slidesPerGroup: 1,
       spaceBetween: 0,
       //centeredSlides: true,
       loop: true,
@@ -485,9 +478,14 @@
       navigation: {
         nextEl: '.main-kv-swiper .btn-swiper-next',
       },
+      threshold: 10,
       effect: 'fade',
       fadeEffect: {
+<<<<<<< Updated upstream
         crossFade: true
+=======
+        crossFade: true,
+>>>>>>> Stashed changes
       },
       pagination: {
         el: '.main-kv-swiper .swiper-pagination',
