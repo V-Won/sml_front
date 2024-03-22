@@ -2090,6 +2090,9 @@ a {
 			font-weight: 500;
 			line-height: 16.8px;
 		}
+		&:focus::-webkit-textfield-decoration-container {
+			visibility: hidden;
+		}
 	}
 }
 
