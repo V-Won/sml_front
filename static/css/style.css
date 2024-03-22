@@ -1757,6 +1757,9 @@ a.common-btnType-4 {
   font-weight: 500;
   line-height: 16.8px;
 }
+.common-input-1 input:focus::-webkit-textfield-decoration-container {
+  visibility: hidden;
+}
 
 .common-selectbox {
   position: relative;
