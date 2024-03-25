@@ -552,10 +552,10 @@ if (window.console == undefined) { console = { log: () => { } } }
 				item.addEventListener('click', (e) => {
 
 					document.querySelectorAll(tg).forEach((item) => {
-						item.parentNode.classList.remove('is-active');
+						item.parentNode.parentNode.classList.remove('is-active');
 					})
 
-					e.target.parentNode.classList.toggle('is-active');
+					e.target.parentNode.parentNode.classList.toggle('is-active');
 				})
 			})
 		}
