@@ -36,8 +36,11 @@
               <div class="box-item pc-show" style="background-image: url(../static/images/@/sml_news_1.png);">
                 <!-- 비디오 PC -->
                 <div class="section-video pc-show">
-                  <video class="primary-video" preload="auto" playsinline="" data-autoplay-desktop="true" data-autoplay-portrait="true"data-autoplay-mobile="true" data-play-on-hover="false" muted="" loop="" data-object-fit="true" data-loaded="true" autoplay="">
-                    <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4"
+                  <video class="primary-video" preload="auto" playsinline="" data-autoplay-desktop="true"
+                    data-autoplay-portrait="true" data-autoplay-mobile="true" data-play-on-hover="false" muted=""
+                    loop="" data-object-fit="true" data-loaded="true" autoplay="">
+                    <source
+                      src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4"
                       type="video/mp4">
                   </video>
                 </div>
@@ -47,18 +50,26 @@
             </div>
             <div class="swiper-slide">
               <!-- mo -->
-              <div class="box-item mo-show" style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-S-Main-Hero-Desktop-LHD);"></div>
+              <div class="box-item mo-show"
+                style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-S-Main-Hero-Desktop-LHD);">
+              </div>
               <!-- //mo -->
               <!-- pc -->
-              <div class="box-item pc-show" style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-S-Main-Hero-Desktop-LHD);"></div>
+              <div class="box-item pc-show"
+                style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-S-Main-Hero-Desktop-LHD);">
+              </div>
               <!-- //pc -->
             </div>
             <div class="swiper-slide">
               <!-- mo -->
-              <div class="box-item mo-show" style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-Main-Hero_Desktop-LHD.jpg);"></div>
+              <div class="box-item mo-show"
+                style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-Main-Hero_Desktop-LHD.jpg);">
+              </div>
               <!-- //mo -->
               <!-- pc -->
-              <div class="box-item pc-show" style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-Main-Hero_Desktop-LHD.jpg);"></div>
+              <div class="box-item pc-show"
+                style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-X-Main-Hero_Desktop-LHD.jpg);">
+              </div>
               <!-- //pc -->
             </div>
           </div>
@@ -102,7 +113,8 @@
                       </ul>
                     </div>
                     <p class="common-input-1">
-                      <input type="text" placeholder="검사항목, 검사코드, 보험코드" title="검사항목 조회 검사항목명, 검사코드, 보험코드 입력" autocomplete="off">
+                      <input type="text" placeholder="검사항목, 검사코드, 보험코드" title="검사항목 조회 검사항목명, 검사코드, 보험코드 입력"
+                        autocomplete="off">
                     </p>
                     <button class="btn-search" title="검사항목">조회</button>
                   </div>
@@ -113,7 +125,7 @@
                   <button class="btn">검사결과 조회</button>
                   <div class="ct ct-gap">
                     <p class="common-input-1">
-                      <input type="text" placeholder="아이디" title="">
+                      <input type="text" placeholder="아이디" id="input-text" title="" inputmode="latin" />
                     </p>
                     <p class="common-input-1">
                       <input type="password" placeholder="비밀번호" title="검사결과 조회 비밀번호 입력">
@@ -821,6 +833,22 @@
       },
     });
     // //SML ABOUT swiper
+
+    // 로그인 > 아이디 > 영문 숫자 입력만 가능.
+    const inputText = document.getElementById('input-text');
+
+    inputText.addEventListener('input', (event) => {
+      const value = event.target.value;
+
+      // 영문과 숫자만 입력 가능하도록 제한
+      const regex = /[^a-zA-Z0-9]/g;
+      const filteredValue = value.replace(regex, '');
+
+      if (value !== filteredValue) {
+        event.target.value = filteredValue;
+      }
+    });
+
   </script>
 
 </body>
