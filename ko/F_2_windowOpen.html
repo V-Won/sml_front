@@ -19,12 +19,16 @@
 
   <!-- 일반 팝업 -->
   <div class="box-layer common" id="ly-1" style="display: block;"><!-- 일반(공통) 팝업 class="common" -->
-    <div class="inner-layer" style="margin:0;padding:0;" tabindex="0"> <!-- position: absolute로 포지션 값 줄 때는 "inner-layer"에서 조정 -->
+    <div class="inner-layer" style="margin:0;padding:0;" tabindex="0">
+      <!-- position: absolute로 포지션 값 줄 때는 "inner-layer"에서 조정 -->
       <div class="gap" style="max-width: 400px;"><!-- max-width 설정 : px값으로 조정 -->
         <div class="box">
           <!-- 팝업 내용 -->
           <div class="inner-box">
-            <img src="../static/images/bg/bg_noImg_cover.svg">
+            <!-- <img src="../static/images/bg/bg_noImg_cover.svg"> -->
+            <img
+              src="https://www.smlab.co.kr/board/popup/1/%EB%A6%AC%EB%89%B4%EC%96%BC%EC%98%A4%ED%94%88%ED%8C%9D%EC%97%85.jpg"
+              alt="">
           </div>
           <!-- //팝업 내용 -->
           <div class="bottom-box">
@@ -49,6 +53,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
   <!-- //공통 js -->
+
+  <script>
+    // PC를 제외 하고 레이어 팝업 dim 클릭시 hide.
+    document.querySelectorAll('.box-layer').forEach(e => {
+      e.onclick = e => {
+        if (window.innerWidth <= 1920 && event.target.classList.contains('box-layer')) {
+          layerClose();
+        }
+      }
+    });
+
+    // 레이어 팝업 [닫기] 버튼 클릭시.
+    const closeBtns = document.querySelectorAll('[data-event="layerClose"]');
+    for (const tg of closeBtns) {
+      tg.onclick = e => {
+        layerClose();
+      }
+    };
+
+    // 레이어 팝업 hide 함수.
+    const layerClose = function () {
+      document.querySelectorAll('.box-layer').forEach(e => {
+        e.style.display = 'none';
+      });
+
+      document.body.classList.remove('oh');
+    }
+  </script>
 
 </body>
 
