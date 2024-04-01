@@ -4797,6 +4797,8 @@ a {
 	* {
 		// 어드민 이슈로 삭제 color: #4d4d4d;
 		line-height: 140%;
+		// px > pt로 변경.
+		font-size: 12pt;
 	}
 	img {
 		width: auto;
@@ -6045,8 +6047,6 @@ a {
 		* {
 			font-family: "Pretendard";
 			// 어드민 이슈로 삭제 color: #4d4d4d;
-			// px 사용 x
-			font-size: 12pt;
 			font-weight: 500;
 			line-height: 140%;
 			letter-spacing: 0.4px;
@@ -14831,6 +14831,8 @@ a {
 		overflow: hidden;
 		* {
 			// 어드민 이슈로 삭제 color: #666;
+			// px > pt로 변경.
+			font-size: 12pt;
 		}
 		.img-1 {
 			margin: 40px 0;
@@ -16489,8 +16491,6 @@ a {
 			* {
 				font-family: "Pretendard";
 				// 어드민 이슈로 삭제 color: #4d4d4d;
-				// px 사용 x
-				font-size: 12pt;
 				font-weight: 500;
 				line-height: 140%;
 				letter-spacing: 0.4px;
