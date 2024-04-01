@@ -2289,7 +2289,8 @@ a {
 }
 
 // 버그 수정
-.main { // 메인
+.main {
+	// 메인
 	.box-wrap,
 	.sub-top,
 	.box-footer {
@@ -2298,7 +2299,8 @@ a {
 }
 .box-wrap,
 .sub-top,
-.box-footer { // 서브
+.box-footer {
+	// 서브
 	display: none;
 }
 
@@ -6043,7 +6045,8 @@ a {
 		* {
 			font-family: "Pretendard";
 			// 어드민 이슈로 삭제 color: #4d4d4d;
-			font-size: 12px;
+			// px 사용 x
+			font-size: 12pt;
 			font-weight: 500;
 			line-height: 140%;
 			letter-spacing: 0.4px;
@@ -14362,7 +14365,7 @@ a {
 							position: absolute;
 							top: 0;
 							left: 0;
-							background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+							background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
 						}
 					}
 				}
@@ -16486,7 +16489,8 @@ a {
 			* {
 				font-family: "Pretendard";
 				// 어드민 이슈로 삭제 color: #4d4d4d;
-				font-size: 12px;
+				// px 사용 x
+				font-size: 12pt;
 				font-weight: 500;
 				line-height: 140%;
 				letter-spacing: 0.4px;
@@ -17620,7 +17624,7 @@ a {
 			top: 9px;
 			right: 0;
 			.more-btn {
-				padding:7px 37px 7px 16px;
+				padding: 7px 37px 7px 16px;
 				font-size: 14px;
 				letter-spacing: 0.28px;
 				&::after {
@@ -20501,7 +20505,7 @@ a {
 					padding: 25px 0;
 					gap: 54px;
 					dl {
-					gap: 0 12px;
+						gap: 0 12px;
 						& + dl {
 							&::after {
 								height: 12px;
