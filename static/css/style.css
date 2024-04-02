@@ -1190,7 +1190,7 @@ input {
   color: #999 !important;
 }
 .common-disabled.radius-type-2 {
-  border: 2px solid #d5d5d5 !important;
+  border: 1px solid #d5d5d5 !important;
 }
 .common-disabled:hover {
   cursor: default;
@@ -1322,7 +1322,7 @@ input {
   padding: 10px 45px;
   gap: 6px;
   border-radius: 999px;
-  border: 2px solid var(--Primary-01, #006477);
+  border: 1px solid var(--Primary-01, #006477);
   background: #fff;
   color: var(--Primary-01, #006477);
   font-weight: 600;
@@ -1358,7 +1358,7 @@ input {
   font-size: 18px;
   letter-spacing: 0.4px;
   border-radius: 999px;
-  border: 2px solid #006477;
+  border: 1px solid #006477;
   background: #fff;
   color: #006477;
 }
@@ -2705,7 +2705,7 @@ a.common-btnType-4 {
   min-height: 41px;
   padding: 0 46px;
   border-radius: 999px;
-  border: 2px solid #006477;
+  border: 1px solid #006477;
   color: #006477;
   text-align: center;
   font-size: 14px;
@@ -6280,7 +6280,7 @@ a.common-btnType-4 {
   margin: 24px auto 0;
   padding: 7px 21px;
   border-radius: 999px;
-  border: 2px solid #006477;
+  border: 1px solid #006477;
   background: #fff;
   color: #006477;
   text-align: center;
